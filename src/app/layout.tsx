@@ -14,14 +14,14 @@ const archivo = Archivo({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://agentipedia.example"),
   title: {
-    default: "Agentipedia — the living encyclopedia of AI agents at work",
-    template: "%s — Agentipedia",
+    default: "Agentipedia by HUB Institute — the library of AI agents at work",
+    template: "%s — Agentipedia by HUB Institute",
   },
   description:
     "A self-updating catalog of real, verified AI agent deployments inside named companies, worldwide. Every entry names the company and the exact solution, with sources.",
   openGraph: {
-    title: "Agentipedia",
-    description: "Real companies. Named AI agents. Verified sources. Worldwide.",
+    title: "Agentipedia by HUB Institute",
+    description: "From AI promise to business proof: real companies, named AI agents, verified sources — worldwide.",
     type: "website",
   },
 };

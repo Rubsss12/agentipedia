@@ -124,6 +124,18 @@ export default function MethodologyPage() {
         </p>
       </section>
 
+      <section className="mt-10 rounded-2xl border border-lavender-line bg-lilac-soft p-6">
+        <h2 className="text-xl font-black uppercase tracking-tight">Who&apos;s behind this</h2>
+        <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+          Agentipedia is the AI observatory of <strong>HUB Institute</strong>,
+          the Paris-based think tank that helps decision-makers move from
+          promise to business proof — the team behind HUBFORUM and the HUB
+          Institute communities. The library exists to give those
+          decision-makers hard precedents: who deployed what, where, with which
+          results, and on whose word.
+        </p>
+      </section>
+
       <section className="mt-10 rounded-2xl border border-lavender-line p-6">
         <h2 className="text-xl font-black uppercase tracking-tight">Spotted an error?</h2>
         <p className="mt-2 text-sm leading-relaxed text-ink-soft">
