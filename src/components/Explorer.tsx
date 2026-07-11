@@ -199,7 +199,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
             <li key={e.id}>
               <Link
                 href={`/entry/${e.id}`}
-                className="group flex h-full flex-col rounded-2xl border border-lavender-line bg-paper p-5 transition-all hover:-translate-y-0.5 hover:border-mauve hover:shadow-[0_10px_30px_-12px_rgb(124_58_237/0.35)]"
+                className="group flex h-full flex-col rounded-2xl border border-lavender-line bg-paper p-5 transition-all hover:-translate-y-0.5 hover:border-mauve hover:shadow-[0_10px_30px_-12px_rgb(107_43_217/0.35)]"
               >
                 <div className="flex items-start justify-between gap-3">
                   <div>

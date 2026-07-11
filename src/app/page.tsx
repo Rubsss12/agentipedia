@@ -53,7 +53,7 @@ export default function Home() {
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
               href="#sectors"
-              className="rounded-full bg-mauve px-6 py-3 text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-mauve-deep"
+              className="rounded-full bg-white px-6 py-3 text-sm font-bold uppercase tracking-wider text-mauve-ink transition-colors hover:bg-lilac"
             >
               Browse by sector
             </a>
@@ -88,7 +88,7 @@ export default function Home() {
             <li key={s.slug}>
               <Link
                 href={`/sector/${s.slug}`}
-                className="group flex h-full flex-col rounded-2xl border border-lavender-line bg-lilac-soft p-5 transition-all hover:-translate-y-0.5 hover:border-mauve hover:shadow-[0_10px_30px_-12px_rgb(124_58_237/0.35)]"
+                className="group flex h-full flex-col rounded-2xl border border-lavender-line bg-lilac-soft p-5 transition-all hover:-translate-y-0.5 hover:border-mauve hover:shadow-[0_10px_30px_-12px_rgb(107_43_217/0.35)]"
               >
                 <div className="flex items-baseline justify-between gap-3">
                   <p className="text-[1.05rem] font-extrabold leading-snug">{s.name}</p>

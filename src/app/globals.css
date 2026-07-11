@@ -2,26 +2,28 @@
 
 @theme {
   /* ================= Agentipedia brand tokens =================
-     Palette modeled on the HUBFORUM Paris identity (paris.hubforum.com):
-     deep violet night surfaces, an electric mauve primary, lilac tints on
-     clean white, confident uppercase type. The build environment could not
-     fetch the live hubforum stylesheet, so these are a faithful
-     approximation — swap the exact brand codes HERE and the whole site
-     follows. */
-  --color-mauve: #7c3aed; /* primary brand mauve — the one to swap */
-  --color-mauve-deep: #5b21b6;
-  --color-mauve-ink: #2a1454;
-  --color-mauve-night: #180b33;
-  --color-mauve-bright: #a78bfa;
-  --color-mauve-glow: #c4b5fd;
-  --color-lilac: #ede9fe;
-  --color-lilac-soft: #f8f6ff;
-  --color-lavender-line: #e4dcf6;
-  --color-ink: #1b1327;
-  --color-ink-soft: #4a4160;
-  --color-muted: #6f6885;
+     Palette sampled from the HUBFORUM Paris "Lead the Next" site
+     (paris.hubforum.com, screenshot provided 2026-07-11): an iridescent
+     electric-blue -> violet -> magenta gradient, pure white type on the
+     gradient, white pill CTAs with deep-indigo text, and a warm coral
+     glow used sparingly. Swap any brand code HERE and the whole site
+     follows. Token names are stable — only values change. */
+  --color-mauve: #6b2bd9; /* primary violet (mid-point of the brand gradient) */
+  --color-mauve-deep: #4a1fc7; /* pressed / hover violet */
+  --color-mauve-ink: #241468; /* deep indigo — text on white pills & chips */
+  --color-mauve-night: #1d1160; /* dark base under the hero gradient + footer */
+  --color-mauve-bright: #b9c4ff; /* periwinkle — kickers/labels on the gradient */
+  --color-mauve-glow: #ffffff; /* stat numbers & highlights on the gradient */
+  --color-lilac: #ecebff; /* tint chips on light backgrounds */
+  --color-lilac-soft: #f7f7ff; /* section tint */
+  --color-lavender-line: #e0ddf7; /* hairlines */
+  --color-ink: #1b1333; /* body text */
+  --color-ink-soft: #453d66; /* secondary text */
+  --color-muted: #6d6890; /* muted text */
   --color-paper: #ffffff;
-  --color-signal: #f43f8e; /* hot accent, used sparingly */
+  --color-electric: #2439e0; /* brand gradient: electric royal blue */
+  --color-signal: #e62ec8; /* brand gradient: hot magenta */
+  --color-coral: #f2764f; /* warm corner glow, used sparingly */
   --color-ok: #0e7a5f; /* independently-sourced / high confidence */
   --color-warn: #a16207; /* vendor-sourced caution */
   --color-warn-bg: #fef3c7;
@@ -40,22 +42,27 @@
     font-family: var(--font-sans);
   }
   ::selection {
-    background-color: var(--color-mauve);
+    background-color: var(--color-signal);
     color: #fff;
   }
 }
 
-/* Event-site texture: faint grid over the dark hero. */
+/* Event-site texture: faint grid over the hero gradient. */
 .hero-grid {
   background-image:
-    linear-gradient(to right, rgb(255 255 255 / 0.045) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(255 255 255 / 0.045) 1px, transparent 1px);
+    linear-gradient(to right, rgb(255 255 255 / 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.05) 1px, transparent 1px);
   background-size: 44px 44px;
 }
+
+/* The HUBFORUM iridescent wash: blue -> violet -> magenta with a hot
+   magenta bloom top-right and a coral glow bottom-left. */
 .hero-glow {
   background:
-    radial-gradient(52rem 30rem at 78% -12%, rgb(124 58 237 / 0.55), transparent 62%),
-    radial-gradient(40rem 26rem at 8% 112%, rgb(91 33 182 / 0.5), transparent 60%);
+    radial-gradient(46rem 30rem at 86% 14%, rgb(230 46 200 / 0.62), transparent 62%),
+    radial-gradient(34rem 24rem at 4% 108%, rgb(242 118 79 / 0.5), transparent 58%),
+    radial-gradient(50rem 34rem at 55% 120%, rgb(150 43 217 / 0.55), transparent 65%),
+    linear-gradient(112deg, #2439e0 0%, #3b2fdd 34%, #6b2bd9 62%, #9a29d5 84%, #c62ecf 100%);
 }
 
 /* Uppercase micro-label used across the site. */
