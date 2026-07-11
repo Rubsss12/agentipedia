@@ -13,8 +13,11 @@ export default function Header() {
           </span>
         </Link>
         <nav className="flex items-center gap-6">
-          <Link href="/" className="kicker text-ink-soft transition-colors hover:text-mauve">
-            Index
+          <Link href="/#sectors" className="kicker text-ink-soft transition-colors hover:text-mauve">
+            Sectors
+          </Link>
+          <Link href="/#index" className="kicker text-ink-soft transition-colors hover:text-mauve">
+            Search
           </Link>
           <Link href="/methodology" className="kicker text-ink-soft transition-colors hover:text-mauve">
             Methodology

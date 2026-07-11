@@ -15,7 +15,7 @@ import fs from "node:fs";
 import path from "node:path";
 import Anthropic from "@anthropic-ai/sdk";
 import {
-  REGIONS, SOURCE_TYPES, DEPLOYMENT_STAGES,
+  REGIONS, SECTORS, SOURCE_TYPES, DEPLOYMENT_STAGES,
   validateEntry, applyConfidencePolicy, makeEntryId,
   normalizeName, normalizeUrl, VENDOR_CONFIDENCE_CAP,
 } from "./schema.mjs";
@@ -60,6 +60,7 @@ After searching, reply with ONE fenced \`\`\`json code block containing an array
   "company": "…",
   "company_country": "…",
   "region": one of ${JSON.stringify(REGIONS)},
+  "sector": one of ${JSON.stringify(SECTORS)} — the single best-fit sector for the deploying company,
   "solution_name": "…",
   "vendor": "…",
   "use_case": "one clear sentence, in your own words, of what the agent does for the company",
@@ -150,6 +151,7 @@ function shapeCandidate(raw) {
     company: normalizeName(raw.company),
     company_country: normalizeName(raw.company_country),
     region: raw.region,
+    sector: raw.sector,
     solution_name: normalizeName(raw.solution_name),
     vendor: normalizeName(raw.vendor ?? ""),
     use_case: normalizeName(raw.use_case),

@@ -48,6 +48,9 @@ export default function MethodologyPage() {
           the engine actually retrieved, the candidate is rejected. Rejections
           are recorded with a one-line reason in a public log
           (<code className="rounded bg-lilac px-1 py-0.5 text-xs">data/rejections.json</code>).
+          Accepted entries are filed on exactly one of 14 canonical sector
+          shelves, so the library can be browsed the way analysts actually
+          look for precedents: by industry.
         </p>
       </section>
 
@@ -104,7 +107,7 @@ export default function MethodologyPage() {
         <h2 className="text-xl font-black uppercase tracking-tight">How the site stays current</h2>
         <p className="mt-3 text-sm leading-relaxed text-ink-soft">
           A scheduled curation run executes daily without human input: it
-          generates fresh discovery queries across industries, regions and
+          generates fresh discovery queries across sectors, industries, regions and
           languages (the matrix rotates so non-English press is searched, not
           just US and EU coverage), searches the live web, applies the rule in
           deterministic code, deduplicates against the existing catalog — the

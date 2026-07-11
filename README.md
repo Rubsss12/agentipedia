@@ -1,7 +1,8 @@
 # Agentipedia
 
 The living encyclopedia of AI agents at work: a public, self-updating catalog
-of real deployments of AI agents inside **named companies**, worldwide. Every
+of real deployments of AI agents inside **named companies**, worldwide —
+organized as a library with 14 canonical sector shelves. Every
 entry names both the company and the exact solution powering it, and links the
 retrieved sources that prove it. **No source, no entry.**
 

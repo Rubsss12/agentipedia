@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getEntries, getEntry, isVendorSourced, SOURCE_TYPE_LABELS } from "@/lib/data";
 import { ConfidenceBadge, StageBadge, SourceTypeChip } from "@/components/badges";
+import { sectorSlug } from "@/lib/sectors";
 import { confidencePercent, formatDate, hostOf } from "@/lib/format";
 
 type Props = { params: Promise<{ id: string }> };
@@ -45,7 +46,10 @@ export default async function EntryPage({ params }: Props) {
 
       <header className="mt-6">
         <p className="kicker text-mauve">
-          {entry.region} · {entry.company_country}
+          <Link href={`/sector/${sectorSlug(entry.sector)}`} className="hover:underline">
+            {entry.sector}
+          </Link>{" "}
+          · {entry.region} · {entry.company_country}
         </p>
         <h1 className="mt-2 text-3xl font-black uppercase leading-tight tracking-tight md:text-4xl">
           {entry.company}
@@ -68,6 +72,7 @@ export default async function EntryPage({ params }: Props) {
       </section>
 
       <section className="mt-8 grid gap-3 sm:grid-cols-2 md:grid-cols-3">
+        <Fact label="Sector" value={entry.sector} />
         <Fact label="Industry" value={entry.industry} />
         <Fact label="Department" value={entry.department} />
         <Fact label="Vendor" value={entry.vendor} />

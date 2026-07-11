@@ -64,6 +64,34 @@
           "reason": "Retrieved source describes a future goal with no named product or deployment date — announced intentions without a named solution are rejected."
         }
       ]
+    },
+    {
+      "run_id": "run-2026-07-11-sector-expansion",
+      "date": "2026-07-11",
+      "operator": "manual curation pass (Claude agent session with live web search; sector-gap expansion)",
+      "model": "claude-opus-4-8 (interactive)",
+      "queries": [
+        "AXA Secure GPT employees Azure OpenAI deployment results",
+        "Lemonade AI Jim claims Maya OR \"Ping An\" askBob insurance agents deployment",
+        "Lemonade \"AI Jim\" claim seconds record insurance chatbot official",
+        "Moderna OpenAI mChat ChatGPT Enterprise GPTs OR \"Color Health\" GPT-4o cancer copilot deployment",
+        "Sanofi plai app Aily Labs AI OR Mercedes-Benz ChatGPT MO360 production Azure OpenAI",
+        "Schaeffler Siemens Industrial Copilot deployment OR Nestlé NesGPT internal AI employees",
+        "Saudi Aramco Metabrain AI model deployment employees"
+      ],
+      "candidates_seen": 12,
+      "accepted": 10,
+      "updated": 0,
+      "rejections": [
+        {
+          "candidate": "Ping An / AskBob",
+          "reason": "Only retrieved source is a third-party listicle with no primary coverage — insufficient evidence, rejected rather than guessed."
+        },
+        {
+          "candidate": "\"Over 100 companies\" using Siemens Industrial Copilot",
+          "reason": "Companies unnamed in the vendor's claim — a real, identifiable organization name is required."
+        }
+      ]
     }
   ]
 }

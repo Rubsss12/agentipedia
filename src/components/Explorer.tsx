@@ -10,6 +10,7 @@ type ConfidenceFilter = "any" | "high" | "medium" | "independent";
 
 interface Filters {
   q: string;
+  sector: string;
   region: string;
   country: string;
   industry: string;
@@ -21,6 +22,7 @@ interface Filters {
 
 const EMPTY: Filters = {
   q: "",
+  sector: "",
   region: "",
   country: "",
   industry: "",
@@ -39,6 +41,7 @@ function uniqueValues(entries: Entry[], key: keyof Entry): string[] {
 }
 
 function matches(e: Entry, f: Filters): boolean {
+  if (f.sector && e.sector !== f.sector) return false;
   if (f.region && e.region !== f.region) return false;
   if (f.country && e.company_country !== f.country) return false;
   if (f.industry && e.industry !== f.industry) return false;
@@ -50,7 +53,7 @@ function matches(e: Entry, f: Filters): boolean {
   if (f.confidence === "independent" && e.sources.every((s) => MARKETING.has(s.source_type)))
     return false;
   if (f.q) {
-    const hay = [e.company, e.solution_name, e.vendor, e.use_case, e.company_country, e.industry]
+    const hay = [e.company, e.solution_name, e.vendor, e.use_case, e.company_country, e.industry, e.sector]
       .join(" ")
       .toLowerCase();
     if (!hay.includes(f.q.toLowerCase())) return false;
@@ -114,6 +117,9 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
           className="w-full rounded-xl border border-lavender-line bg-paper px-4 py-3 text-[0.95rem] outline-none transition-colors placeholder:text-muted focus:border-mauve"
         />
         <div className="mt-4 flex flex-wrap gap-3">
+          {uniqueValues(entries, "sector").length > 1 && (
+            <Select label="Sector" value={f.sector} onChange={(v) => set({ sector: v })} options={opt(uniqueValues(entries, "sector"))} anyLabel="All sectors" />
+          )}
           <Select label="Region" value={f.region} onChange={(v) => set({ region: v })} options={opt(uniqueValues(entries, "region"))} anyLabel="All regions" />
           <Select label="Country" value={f.country} onChange={(v) => set({ country: v })} options={opt(uniqueValues(entries, "company_country"))} anyLabel="All countries" />
           <Select label="Industry" value={f.industry} onChange={(v) => set({ industry: v })} options={opt(uniqueValues(entries, "industry"))} anyLabel="All industries" />

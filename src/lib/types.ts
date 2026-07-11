@@ -30,6 +30,7 @@ export interface Entry {
   company: string;
   company_country: string;
   region: string;
+  sector: string;
   solution_name: string;
   vendor: string;
   use_case: string;

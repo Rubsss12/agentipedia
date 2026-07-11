@@ -1,11 +1,12 @@
 {
-  "updated_at": "2026-07-10T16:00:00.000Z",
+  "updated_at": "2026-07-11T11:38:56.711Z",
   "entries": [
     {
       "id": "1-800accountant--agentforce",
       "company": "1-800Accountant",
       "company_country": "United States",
       "region": "North America",
+      "sector": "Professional & Business Services",
       "solution_name": "Agentforce",
       "vendor": "Salesforce",
       "use_case": "Resolves customer chat engagements about tax and accounting services autonomously, including during peak tax season.",
@@ -37,6 +38,7 @@
       "company": "ADT",
       "company_country": "United States",
       "region": "North America",
+      "sector": "Professional & Business Services",
       "solution_name": "Sierra",
       "vendor": "Sierra",
       "use_case": "Runs conversational agents for customer service, billing questions and lead qualification in ADT's home-security business.",
@@ -69,6 +71,7 @@
       "company": "Air India",
       "company_country": "India",
       "region": "South Asia",
+      "sector": "Travel & Transportation",
       "solution_name": "AI.g",
       "vendor": "Microsoft (Azure OpenAI)",
       "use_case": "Answers customer queries such as booking changes and refunds as a generative-AI virtual agent built on Azure OpenAI GPT-4 with retrieval-augmented generation.",
@@ -124,6 +127,7 @@
       "company": "AirAsia",
       "company_country": "Malaysia",
       "region": "Southeast Asia",
+      "sector": "Travel & Transportation",
       "solution_name": "Ask Bo",
       "vendor": "",
       "use_case": "Handles passenger self-service in multiple languages — live flight status, boarding information, flight changes, refunds and baggage questions — replacing the airline's earlier chatbot AVA.",
@@ -159,10 +163,67 @@
       "confidence_reason": "Company announcement corroborated by Malaysia's national news agency and trade press; no performance metrics were reported in the retrieved sources."
     },
     {
+      "company": "AXA",
+      "company_country": "France",
+      "region": "Europe",
+      "sector": "Insurance",
+      "solution_name": "AXA Secure GPT",
+      "vendor": "Microsoft (Azure OpenAI)",
+      "use_case": "Gives employees a secured generative-AI workspace to generate, summarize, translate and correct text, images and code, built in-house on Azure OpenAI.",
+      "department": "Company-wide",
+      "industry": "Insurance",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Employees in first-stage rollout (AXA Group Operations)",
+          "value": "1,000",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Global rollout target",
+          "value": "140,000 employees",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Countries covered by first summer",
+          "value": "14",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-11",
+      "sources": [
+        {
+          "url": "https://www.axa.com/en/press/press-releases/axa-offers-securegenerative-ai-to-employees",
+          "title": "AXA offers secure Generative AI to employees",
+          "publisher": "AXA",
+          "source_type": "press_release",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://www.microsoft.com/en/customers/story/1760377839901581759-axa-gie-azure-insurance-en-france",
+          "title": "AXA harnesses the power of secure generative AI with Azure OpenAI Service",
+          "publisher": "Microsoft Customer Stories",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://www.reinsurancene.ws/axa-deploys-secure-generative-ai-to-employees/",
+          "title": "AXA deploys secure generative AI to employees",
+          "publisher": "Reinsurance News",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-11"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Company press release and vendor case study confirmed by independent insurance press; rollout figures are company-reported.",
+      "id": "axa--axa-secure-gpt"
+    },
+    {
       "id": "bank-of-america--erica",
       "company": "Bank of America",
       "company_country": "United States",
       "region": "North America",
+      "sector": "Financial Services",
       "solution_name": "Erica",
       "vendor": "In-house (Bank of America)",
       "use_case": "Acts as the bank's virtual financial assistant for clients — balances, insights, payments — and, as Erica for Employees, answers staff IT and HR questions.",
@@ -211,6 +272,7 @@
       "company": "BBVA",
       "company_country": "Spain",
       "region": "Europe",
+      "sector": "Financial Services",
       "solution_name": "ChatGPT Enterprise",
       "vendor": "OpenAI",
       "use_case": "Gives employees a general-purpose AI workbench and lets teams build custom GPTs for legal, risk, customer service, finance and marketing workflows across the bank.",
@@ -266,6 +328,7 @@
       "company": "Carrefour",
       "company_country": "France",
       "region": "Europe",
+      "sector": "Retail & E-commerce",
       "solution_name": "Hopla",
       "vendor": "OpenAI",
       "use_case": "Advises shoppers on carrefour.fr — building baskets by budget or dietary constraints and suggesting recipes — using a GPT-4-based chatbot, extended in 2026 to agentic shopping inside ChatGPT.",
@@ -311,6 +374,7 @@
       "company": "Chime",
       "company_country": "United States",
       "region": "North America",
+      "sector": "Financial Services",
       "solution_name": "Decagon",
       "vendor": "Decagon",
       "use_case": "Resolves customer support conversations for the fintech across both chat and voice channels.",
@@ -345,10 +409,44 @@
       "confidence_reason": "Customer named by the vendor and echoed by a third-party guide; the resolution metric is not independently verified."
     },
     {
+      "company": "Color Health",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Healthcare & Life Sciences",
+      "solution_name": "Color Copilot (GPT-4o)",
+      "vendor": "OpenAI",
+      "use_case": "Assists clinicians in cancer care by identifying missing diagnostics and drafting tailored workup plans, with a clinician-in-the-loop reviewing every output.",
+      "department": "Clinical operations",
+      "industry": "Healthcare technology",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-11",
+      "sources": [
+        {
+          "url": "https://openai.com/index/color-health/",
+          "title": "Color Health uses the reasoning capabilities of GPT-4o to help doctors transform cancer care",
+          "publisher": "OpenAI",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://www.color.com/blog/colors-copilot-and-partnership-with-openai/",
+          "title": "Bringing cancer expertise to a doctor near you: Color's copilot and partnership with OpenAI",
+          "publisher": "Color Health",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-11"
+        }
+      ],
+      "confidence": 0.6,
+      "confidence_reason": "Vendor case study plus the company's own announcement; no independent coverage retrieved and the copilot is described as clinician-in-the-loop, early stage.",
+      "id": "color-health--color-copilot-gpt-4o"
+    },
+    {
       "id": "commonwealth-bank--ceba",
       "company": "Commonwealth Bank",
       "company_country": "Australia",
       "region": "Oceania",
+      "sector": "Financial Services",
       "solution_name": "Ceba",
       "vendor": "",
       "use_case": "Assists banking customers 24/7 with more than 200 tasks such as activating cards, checking balances, making payments and getting cardless cash.",
@@ -385,6 +483,7 @@
       "company": "DBS Bank",
       "company_country": "Singapore",
       "region": "Southeast Asia",
+      "sector": "Financial Services",
       "solution_name": "CSO Assistant",
       "vendor": "In-house (DBS)",
       "use_case": "Transcribes customer calls in real time and searches the bank's knowledge base live so its 500 customer service officers can resolve queries faster.",
@@ -433,6 +532,7 @@
       "company": "Dubai Electricity and Water Authority (DEWA)",
       "company_country": "United Arab Emirates",
       "region": "Middle East",
+      "sector": "Energy & Utilities",
       "solution_name": "Rammas",
       "vendor": "",
       "use_case": "Serves as the utility's virtual employee, answering customer inquiries and handling procedural services like bill payment in Arabic and English, upgraded with generative AI.",
@@ -483,6 +583,7 @@
       "company": "Duolingo",
       "company_country": "United States",
       "region": "North America",
+      "sector": "Public Sector & Education",
       "solution_name": "Decagon",
       "vendor": "Decagon",
       "use_case": "Deflects the bulk of incoming learner support requests with AI agents that went live about a month after the project started.",
@@ -514,6 +615,7 @@
       "company": "Emirates NBD",
       "company_country": "United Arab Emirates",
       "region": "Middle East",
+      "sector": "Financial Services",
       "solution_name": "EVA",
       "vendor": "In-house (Emirates NBD)",
       "use_case": "Answers phone-banking customer calls with voice and chat AI in English and Arabic, the first voice-based banking assistant launched in MENA.",
@@ -564,6 +666,7 @@
       "company": "Government of Estonia",
       "company_country": "Estonia",
       "region": "Europe",
+      "sector": "Public Sector & Education",
       "solution_name": "Bürokratt",
       "vendor": "",
       "use_case": "Provides citizens one conversational front door to public services, routing voice or text requests to agents run by individual government bodies.",
@@ -614,6 +717,7 @@
       "company": "Grab",
       "company_country": "Singapore",
       "region": "Southeast Asia",
+      "sector": "Travel & Transportation",
       "solution_name": "ChatGPT Enterprise",
       "vendor": "OpenAI",
       "use_case": "Pilots ChatGPT Enterprise for employee productivity and applies OpenAI vision models to automate map-making from street imagery for GrabMaps.",
@@ -653,6 +757,7 @@
       "company": "Grupo Globo",
       "company_country": "Brazil",
       "region": "Latin America",
+      "sector": "Media & Entertainment",
       "solution_name": "Agentforce",
       "vendor": "Salesforce",
       "use_case": "Handles subscriber conversations for the Brazilian media group with an AI agent that outperformed its previous bot on retention.",
@@ -684,6 +789,7 @@
       "company": "JPMorgan Chase",
       "company_country": "United States",
       "region": "North America",
+      "sector": "Financial Services",
       "solution_name": "LLM Suite",
       "vendor": "In-house portal (OpenAI and Anthropic models)",
       "use_case": "Gives employees a portal to frontier language models for drafting, document summarization, earnings analysis and research across the bank.",
@@ -741,6 +847,7 @@
       "company": "Klarna",
       "company_country": "Sweden",
       "region": "Europe",
+      "sector": "Financial Services",
       "solution_name": "Klarna AI assistant",
       "vendor": "OpenAI",
       "use_case": "Handles customer service chats end to end — refunds, returns and payment issues — across Klarna's markets in more than 35 languages.",
@@ -792,10 +899,62 @@
       "confidence_reason": "Company press release and vendor case study with independent technical analysis; metrics are company-reported and Klarna later reintroduced human agents for complex cases."
     },
     {
+      "company": "Lemonade",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Insurance",
+      "solution_name": "AI Jim",
+      "vendor": "In-house (Lemonade)",
+      "use_case": "Handles insurance claims end to end in the Lemonade app — verifying the policy, running anti-fraud checks and paying out approved claims without human intervention.",
+      "department": "Claims",
+      "industry": "Insurance",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Fastest claim settled and paid (UK, 2023)",
+          "value": "2 seconds",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Previous record for a paid claim (2016)",
+          "value": "3 seconds",
+          "source_type": "company_official"
+        }
+      ],
+      "first_seen_date": "2026-07-11",
+      "sources": [
+        {
+          "url": "https://www.lemonade.com/blog/lemonade-sets-new-world-record/",
+          "title": "Lemonade Sets a New World Record",
+          "publisher": "Lemonade",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://www.reinsurancene.ws/lemonade-shatters-record-by-using-ai-to-settle-a-claim-in-two-seconds/",
+          "title": "Lemonade shatters record by using AI to settle a claim in two seconds",
+          "publisher": "Reinsurance News",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://www.insurancetimes.co.uk/news/how-ai-helped-an-insurtech-pay-out-a-uk-claim-in-just-two-seconds/1444812.article",
+          "title": "How AI helped an insurtech pay out a UK claim in just two seconds",
+          "publisher": "Insurance Times",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-11"
+        }
+      ],
+      "confidence": 0.8,
+      "confidence_reason": "Long-running, well-documented deployment: company blog plus independent UK insurance trade press covering the same settled claim.",
+      "id": "lemonade--ai-jim"
+    },
+    {
       "id": "mercado-libre--verdi",
       "company": "Mercado Libre",
       "company_country": "Argentina",
       "region": "Latin America",
+      "sector": "Retail & E-commerce",
       "solution_name": "Verdi",
       "vendor": "OpenAI",
       "use_case": "Serves as the internal AI development platform on GPT-4o that powers applications such as customer-service mediation and logistics workflows for the e-commerce group's 17,000 developers.",
@@ -835,10 +994,156 @@
       "confidence_reason": "Vendor case study echoed by Spanish-language tech press; metrics are vendor-reported. Retrieved sources attribute Verdi to OpenAI GPT-4o."
     },
     {
+      "company": "Mercedes-Benz",
+      "company_country": "Germany",
+      "region": "Europe",
+      "sector": "Automotive & Mobility",
+      "solution_name": "ChatGPT in MO360",
+      "vendor": "Microsoft (Azure OpenAI)",
+      "use_case": "Gives production employees a voice-based assistant inside the MO360 digital production ecosystem to analyze shop-floor data such as quality management signals.",
+      "department": "Manufacturing",
+      "industry": "Automotive",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-11",
+      "sources": [
+        {
+          "url": "https://group.mercedes-benz.com/innovation/digitalisation/industry-4-0/chatgpt-in-vehicle-production.html",
+          "title": "Mercedes-Benz tests ChatGPT in intelligent vehicle production",
+          "publisher": "Mercedes-Benz Group",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-11"
+        }
+      ],
+      "confidence": 0.6,
+      "confidence_reason": "Documented on the company's own site as a production pilot; no independent coverage retrieved in this run and no reported metrics.",
+      "id": "mercedes-benz--chatgpt-in-mo360"
+    },
+    {
+      "company": "Moderna",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Healthcare & Life Sciences",
+      "solution_name": "ChatGPT Enterprise (mChat)",
+      "vendor": "OpenAI",
+      "use_case": "Puts a company instance of ChatGPT and hundreds of purpose-built GPTs — like Dose ID for clinical dose analysis and Contract Companion for legal — in the hands of employees across the business.",
+      "department": "Company-wide",
+      "industry": "Pharmaceuticals & biotech",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Custom GPTs created (first two months)",
+          "value": "750",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Average ChatGPT Enterprise conversations per user per week",
+          "value": "120",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Initial internal adoption of mChat",
+          "value": "80%",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-11",
+      "sources": [
+        {
+          "url": "https://openai.com/index/moderna/",
+          "title": "Moderna | OpenAI",
+          "publisher": "OpenAI",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://www.modernatx.com/en-US/media-center/all-media/blogs/collaboration-with-openai",
+          "title": "Collaboration with OpenAI: Transforming the Way We Work and Innovate Through AI",
+          "publisher": "Moderna",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://www.constellationr.com/insights/news/moderna-uses-openais-chatgpt-enterprise-scale-750-gpts",
+          "title": "Moderna uses OpenAI's ChatGPT Enterprise to scale 750 GPTs",
+          "publisher": "Constellation Research",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://www.mobihealthnews.com/news/openai-expands-partnership-moderna-customizable-gpts",
+          "title": "OpenAI expands partnership with Moderna for customizable GPTs",
+          "publisher": "MobiHealthNews",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-11"
+        }
+      ],
+      "confidence": 0.8,
+      "confidence_reason": "Vendor case study, company blog and multiple independent industry outlets; usage metrics originate from Moderna/OpenAI.",
+      "id": "moderna--chatgpt-enterprise-mchat"
+    },
+    {
+      "company": "Nestlé",
+      "company_country": "Switzerland",
+      "region": "Europe",
+      "sector": "Consumer Goods & Manufacturing",
+      "solution_name": "NesGPT",
+      "vendor": "",
+      "use_case": "Provides employees an internal generative-AI assistant for writing, research and brainstorming across sales, product innovation, marketing and legal.",
+      "department": "Company-wide",
+      "industry": "Food & beverage",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Average time saved per employee per week (internal survey)",
+          "value": "45 minutes",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "North American employees using the tool (first 3 months)",
+          "value": "7,000+",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Prompts generated in that period",
+          "value": "230,000+",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-11",
+      "sources": [
+        {
+          "url": "https://www.worklife.news/technology/nesgpt-nestle-genai/",
+          "title": "A year in: Nestlé employees save 45 minutes per week using internal generative AI",
+          "publisher": "WorkLife",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://www.hrgrapevine.com/us/content/article/2024-07-23-nestl-says-its-genai-tool-saves-employees-45-minutes-a-week",
+          "title": "Nestlé says its GenAI tool saves employees 45 minutes a week",
+          "publisher": "HR Grapevine",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://www.nestleusa.com/stories/unlocking-new-opportunities-gen-ai",
+          "title": "Unlocking New Opportunities with Gen AI",
+          "publisher": "Nestlé USA",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-11"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Independent workplace-tech press plus company channels; savings figure comes from Nestlé's internal survey.",
+      "id": "nestle--nesgpt"
+    },
+    {
       "id": "notion--decagon",
       "company": "Notion",
       "company_country": "United States",
       "region": "North America",
+      "sector": "Technology & Software",
       "solution_name": "Decagon",
       "vendor": "Decagon",
       "use_case": "Automates customer support conversations for the productivity-software maker, speeding up ticket resolution.",
@@ -870,6 +1175,7 @@
       "company": "Nubank",
       "company_country": "Brazil",
       "region": "Latin America",
+      "sector": "Financial Services",
       "solution_name": "Call Center Copilot (OpenAI GPT-4o)",
       "vendor": "OpenAI",
       "use_case": "Assists call-center agents in real time with reply suggestions, chat summaries and guidance, alongside a GPT-4o customer assistant that answers chats directly before escalating.",
@@ -925,6 +1231,7 @@
       "company": "OpenTable",
       "company_country": "United States",
       "region": "North America",
+      "sector": "Hospitality & Food",
       "solution_name": "Agentforce",
       "vendor": "Salesforce",
       "use_case": "Answers restaurant and diner web queries — reservations, loyalty points, account questions — as an AI agent for the booking platform.",
@@ -956,6 +1263,7 @@
       "company": "Panasonic Connect",
       "company_country": "Japan",
       "region": "East Asia",
+      "sector": "Consumer Goods & Manufacturing",
       "solution_name": "ConnectAI",
       "vendor": "Microsoft (Azure OpenAI)",
       "use_case": "Answers employee questions and drafts documents company-wide as an internal generative-AI assistant rolled out to all domestic staff in February 2023.",
@@ -1011,6 +1319,7 @@
       "company": "Rakuten",
       "company_country": "Japan",
       "region": "East Asia",
+      "sector": "Retail & E-commerce",
       "solution_name": "OpenAI Codex",
       "vendor": "OpenAI",
       "use_case": "Runs as a core coding agent in the engineering stack, helping developers fix issues and ship code faster.",
@@ -1042,6 +1351,7 @@
       "company": "Rakuten",
       "company_country": "Japan",
       "region": "East Asia",
+      "sector": "Retail & E-commerce",
       "solution_name": "Rakuten AI",
       "vendor": "In-house (with OpenAI models and Rakuten AI 7B)",
       "use_case": "Acts as the group's branded AI assistant layer — helping employees draft sales materials and powering customer-facing tools such as Rakuten Mobile's voice assistant for 9.3 million subscribers.",
@@ -1074,6 +1384,7 @@
       "company": "Safaricom",
       "company_country": "Kenya",
       "region": "Africa",
+      "sector": "Telecommunications",
       "solution_name": "Zuri",
       "vendor": "",
       "use_case": "Handles customer care for the telecom — M-PESA reversals, bundle purchases, balance checks and subscription management — across WhatsApp, Messenger, Telegram, SMS, web and the mySafaricom app.",
@@ -1119,6 +1430,7 @@
       "company": "Salesforce",
       "company_country": "United States",
       "region": "North America",
+      "sector": "Technology & Software",
       "solution_name": "Agentforce",
       "vendor": "Salesforce",
       "use_case": "Provides 24/7 AI support on help.salesforce.com, resolving most customer questions autonomously as the company's own largest Agentforce deployment.",
@@ -1165,10 +1477,153 @@
       "confidence_reason": "Volume milestone reported independently by Fortune; resolution rates come from Salesforce's own pages about its self-deployment."
     },
     {
+      "company": "Sanofi",
+      "company_country": "France",
+      "region": "Europe",
+      "sector": "Healthcare & Life Sciences",
+      "solution_name": "plai",
+      "vendor": "Aily Labs",
+      "use_case": "Serves as an AI decision-intelligence app giving teams a real-time 360° view across the company and personalized what-if scenarios for R&D, manufacturing and commercial decisions.",
+      "department": "Company-wide",
+      "industry": "Pharmaceuticals & biotech",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Employees using plai daily",
+          "value": "15,000+",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Internal data points aggregated",
+          "value": "1 billion+",
+          "source_type": "press_release"
+        }
+      ],
+      "first_seen_date": "2026-07-11",
+      "sources": [
+        {
+          "url": "https://www.sanofi.com/en/media-room/press-releases/2023/2023-06-13-12-00-00-2687072",
+          "title": "Sanofi \"all in\" on artificial intelligence and data science to speed breakthroughs for patients",
+          "publisher": "Sanofi",
+          "source_type": "press_release",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://www.fiercepharma.com/pharma/sanofi-goes-all-ai-new-app-support-company-across-areas",
+          "title": "Sanofi goes 'all in' on AI with new app to support company's manufacturing, R&D and more",
+          "publisher": "Fierce Pharma",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://www.cio.com/article/4049083/sanofi-applies-ai-to-deliver-more-effective-and-accessible-medicines-to-patients.html",
+          "title": "Optimizing patient care at Sanofi through AI",
+          "publisher": "CIO",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-11"
+        }
+      ],
+      "confidence": 0.8,
+      "confidence_reason": "Company press release confirmed by independent pharma and IT press; usage figures are company-reported.",
+      "id": "sanofi--plai"
+    },
+    {
+      "company": "Saudi Aramco",
+      "company_country": "Saudi Arabia",
+      "region": "Middle East",
+      "sector": "Energy & Utilities",
+      "solution_name": "Aramco Metabrain AI",
+      "vendor": "In-house (Saudi Aramco)",
+      "use_case": "Acts as an internal industrial advisor trained on 90 years of company data, supporting predictive maintenance, process optimization and decision-making across operations.",
+      "department": "Operations",
+      "industry": "Oil & gas",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "AI-trained employees building use cases",
+          "value": "6,000",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "AI use cases in development",
+          "value": "430",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-11",
+      "sources": [
+        {
+          "url": "https://www.offshore-technology.com/news/saudi-aramco-unveils-industry-first-generative-ai-model/",
+          "title": "Saudi Aramco unveils industry's first generative AI model",
+          "publisher": "Offshore Technology",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://oilreviewmiddleeast.com/technical-focus/how-aramco-is-driving-ai-on-an-industrial-scale",
+          "title": "How Aramco is driving AI on an industrial scale",
+          "publisher": "Oil Review Middle East",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://europe.aramco.com/en/news-media/news/2025/aramco-deploys-ai",
+          "title": "How AI helps Aramco turn old data into new opportunity",
+          "publisher": "Aramco",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-11"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Company channels plus independent energy trade press; scale figures are company-reported.",
+      "id": "saudi-aramco--aramco-metabrain-ai"
+    },
+    {
+      "company": "Schaeffler",
+      "company_country": "Germany",
+      "region": "Europe",
+      "sector": "Consumer Goods & Manufacturing",
+      "solution_name": "Siemens Industrial Copilot",
+      "vendor": "Siemens (with Microsoft Azure OpenAI)",
+      "use_case": "Lets automation engineers generate and debug PLC code for factory machines from natural language, taking the generative-AI copilot onto the shop floor.",
+      "department": "Engineering",
+      "industry": "Industrial manufacturing",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-11",
+      "sources": [
+        {
+          "url": "https://press.siemens.com/global/en/pressrelease/ai-industry-schaeffler-and-siemens-bring-industrial-copilot-shopfloor",
+          "title": "AI for industry: Schaeffler and Siemens bring Industrial Copilot to shopfloor",
+          "publisher": "Siemens Press",
+          "source_type": "press_release",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://www.schaeffler.com/en/media/press-releases/press-releases-detail.jsp?id=88019072",
+          "title": "Artificial intelligence: Schaeffler and Siemens intensify collaboration",
+          "publisher": "Schaeffler Group",
+          "source_type": "press_release",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://www.automationworld.com/factory/digital-transformation/news/55235167/schaeffler-brings-siemens-industrial-copilot-to-its-shop-floor",
+          "title": "Schaeffler Brings Siemens Industrial Copilot to its Shop Floor",
+          "publisher": "Automation World",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-11"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Both companies' releases corroborated by independent industrial-automation trade press.",
+      "id": "schaeffler--siemens-industrial-copilot"
+    },
+    {
       "id": "siriusxm--harmony",
       "company": "SiriusXM",
       "company_country": "United States",
       "region": "North America",
+      "sector": "Media & Entertainment",
       "solution_name": "Harmony",
       "vendor": "Sierra",
       "use_case": "Serves subscribers as SiriusXM's branded AI customer-support agent, and is the first deployment of Sierra's Agent Data Platform for longer-term customer context.",
@@ -1194,6 +1649,7 @@
       "company": "Sonos",
       "company_country": "United States",
       "region": "North America",
+      "sector": "Consumer Goods & Manufacturing",
       "solution_name": "Sierra",
       "vendor": "Sierra",
       "use_case": "Handles tier-1 product support — speaker setup, troubleshooting and multi-room configuration — replacing a queue that drove millions of contacts a year.",
@@ -1226,6 +1682,7 @@
       "company": "Telkomsel",
       "company_country": "Indonesia",
       "region": "Southeast Asia",
+      "sector": "Telecommunications",
       "solution_name": "Veronika",
       "vendor": "Microsoft (Azure OpenAI)",
       "use_case": "Serves mobile customers with product information, transactions and support across MyTelkomsel, WhatsApp and social channels, upgraded with Azure OpenAI in 2023.",
@@ -1271,6 +1728,7 @@
       "company": "Telstra",
       "company_country": "Australia",
       "region": "Oceania",
+      "sector": "Telecommunications",
       "solution_name": "Ask Telstra & One Sentence Summary",
       "vendor": "Microsoft (Azure OpenAI)",
       "use_case": "Equips frontline agents with two internal genAI tools — one searches company knowledge bases, the other condenses a customer's recent history into a one-sentence brief.",
@@ -1322,10 +1780,37 @@
       "confidence_reason": "Company release and vendor story confirmed by independent HR press; pilot metrics are company-reported from 2023 trials, with full deployment planned into 2025."
     },
     {
+      "company": "thyssenkrupp Automation Engineering",
+      "company_country": "Germany",
+      "region": "Europe",
+      "sector": "Consumer Goods & Manufacturing",
+      "solution_name": "Siemens Industrial Copilot",
+      "vendor": "Siemens (with Microsoft Azure OpenAI)",
+      "use_case": "Uses the generative-AI copilot in automation engineering to streamline machine programming and address engineering labor shortages.",
+      "department": "Engineering",
+      "industry": "Industrial manufacturing",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-11",
+      "sources": [
+        {
+          "url": "https://news.microsoft.com/source/2024/10/24/siemens-and-microsoft-scale-industrial-ai/",
+          "title": "Siemens and Microsoft scale industrial AI",
+          "publisher": "Microsoft Source",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-11"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Named as a live user in the vendors' own announcement only; capped until independently confirmed.",
+      "id": "thyssenkrupp-automation-engineering--siemens-industrial-copilot"
+    },
+    {
       "id": "trip-com-group--tripgenie",
       "company": "Trip.com Group",
       "company_country": "China",
       "region": "East Asia",
+      "sector": "Travel & Transportation",
       "solution_name": "TripGenie",
       "vendor": "In-house (Trip.com Group)",
       "use_case": "Plans and books travel for users — hotel comparison, flights, attractions, live translation — as the platform's AI travel assistant, now three years in service.",
@@ -1381,6 +1866,7 @@
       "company": "Vodacom",
       "company_country": "South Africa",
       "region": "Africa",
+      "sector": "Telecommunications",
       "solution_name": "TOBi",
       "vendor": "Vodafone Group (built on Microsoft Azure)",
       "use_case": "Solves customer queries for the South African telecom via SMS, WhatsApp, the My Vodacom app and the web, escalating to human consultants on request.",
@@ -1431,6 +1917,7 @@
       "company": "Vodafone",
       "company_country": "United Kingdom",
       "region": "Europe",
+      "sector": "Telecommunications",
       "solution_name": "SuperTOBi",
       "vendor": "Microsoft (Azure OpenAI)",
       "use_case": "Answers complex customer enquiries such as billing in full sentences as the generative-AI successor to TOBi, rolled out across European markets after launching in Italy and Portugal.",
@@ -1488,6 +1975,7 @@
       "company": "Zomato",
       "company_country": "India",
       "region": "South Asia",
+      "sector": "Hospitality & Food",
       "solution_name": "Nugget",
       "vendor": "In-house (Zomato)",
       "use_case": "Runs AI-native, no-code customer support — chat, voice agents and quality audits — for Zomato, Blinkit and Hyperpure, and is now offered to other businesses.",

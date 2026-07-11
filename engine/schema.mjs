@@ -30,6 +30,25 @@ export const SOURCE_TYPES = [
 
 export const DEPLOYMENT_STAGES = ["pilot", "production", "announced", "unknown"];
 
+// Canonical sector taxonomy — the library's shelves. Every entry belongs to
+// exactly one sector; `industry` stays as the finer free-text descriptor.
+export const SECTORS = [
+  "Financial Services",
+  "Insurance",
+  "Healthcare & Life Sciences",
+  "Retail & E-commerce",
+  "Consumer Goods & Manufacturing",
+  "Automotive & Mobility",
+  "Technology & Software",
+  "Telecommunications",
+  "Media & Entertainment",
+  "Travel & Transportation",
+  "Hospitality & Food",
+  "Energy & Utilities",
+  "Public Sector & Education",
+  "Professional & Business Services",
+];
+
 // Source types that count as marketing. When an entry's evidence is ONLY
 // marketing, confidence is capped at 0.5 and metrics stay "claimed".
 export const MARKETING_SOURCE_TYPES = ["vendor_case_study", "press_release"];
@@ -156,6 +175,9 @@ export function validateEntry(e, opts = {}) {
   // --- Geography ---
   if (!REGIONS.includes(e.region)) errors.push(`region "${e.region}" not one of: ${REGIONS.join(", ")}`);
   if (!normalizeName(e.company_country)) errors.push("company_country missing");
+
+  // --- Library shelf ---
+  if (!SECTORS.includes(e.sector)) errors.push(`sector "${e.sector}" not one of: ${SECTORS.join(", ")}`);
 
   // --- Descriptive fields (use_case required; others may stay empty rather than guessed) ---
   if (!normalizeName(e.use_case)) errors.push("use_case missing");
