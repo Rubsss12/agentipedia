@@ -195,8 +195,8 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
         </div>
       ) : (
         <ul className="mt-8 grid gap-5 pb-4 md:grid-cols-2">
-          {results.map((e) => (
-            <li key={e.id}>
+          {results.map((e, i) => (
+            <li key={e.id} className="card-in" style={{ "--i": Math.min(i, 12) } as React.CSSProperties}>
               <Link
                 href={`/entry/${e.id}`}
                 className="group flex h-full flex-col rounded-2xl border border-lavender-line bg-paper p-5 transition-all hover:-translate-y-0.5 hover:border-mauve hover:shadow-[0_10px_30px_-12px_rgb(107_43_217/0.35)]"

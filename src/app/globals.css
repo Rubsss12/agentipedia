@@ -72,3 +72,70 @@
   letter-spacing: 0.22em;
   text-transform: uppercase;
 }
+
+/* ================= Motion system =================
+   Everything animates only when the visitor allows it. */
+@media (prefers-reduced-motion: no-preference) {
+  /* The gradient slowly breathes, like a live event screen. */
+  .hero-glow {
+    background-size: 170% 170%;
+    animation: hero-drift 22s ease-in-out infinite alternate;
+  }
+  @keyframes hero-drift {
+    0% { background-position: 0% 30%; }
+    50% { background-position: 60% 70%; }
+    100% { background-position: 100% 40%; }
+  }
+
+  /* Scroll reveal: elements rise into place once, softly. */
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+  [data-reveal].in {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Explorer result cards pop in with a stagger on every filter change. */
+  .card-in {
+    animation: card-pop 0.45s ease both;
+    animation-delay: calc(var(--i, 0) * 35ms);
+  }
+  @keyframes card-pop {
+    from { opacity: 0; transform: translateY(12px) scale(0.985); }
+    to { opacity: 1; transform: none; }
+  }
+
+  /* Company ticker on the hero, HUBFORUM participants-strip style. */
+  .marquee-track {
+    animation: marquee 55s linear infinite;
+  }
+  .marquee:hover .marquee-track {
+    animation-play-state: paused;
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
+
+.marquee {
+  mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+}
+.marquee-track {
+  display: inline-flex;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+/* Latest-additions rail: horizontal scroll with snap. */
+.rail {
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+}
+.rail > * {
+  scroll-snap-align: start;
+}

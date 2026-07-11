@@ -44,15 +44,15 @@ export default async function SectorPage({ params }: Props) {
           </h1>
           <div className="mt-6 flex flex-wrap items-end gap-x-10 gap-y-4">
             <div>
-              <p className="text-4xl font-black text-mauve-glow">{sector.entries}</p>
+              <p className="text-4xl font-black text-mauve-glow" data-count={sector.entries}>{sector.entries}</p>
               <p className="kicker mt-1 text-white/60">deployments</p>
             </div>
             <div>
-              <p className="text-4xl font-black text-mauve-glow">{sector.countries}</p>
+              <p className="text-4xl font-black text-mauve-glow" data-count={sector.countries}>{sector.countries}</p>
               <p className="kicker mt-1 text-white/60">{sector.countries > 1 ? "countries" : "country"}</p>
             </div>
             <div>
-              <p className="text-4xl font-black text-mauve-glow">{sector.production}</p>
+              <p className="text-4xl font-black text-mauve-glow" data-count={sector.production}>{sector.production}</p>
               <p className="kicker mt-1 text-white/60">in production</p>
             </div>
             {vendors.length > 0 && (

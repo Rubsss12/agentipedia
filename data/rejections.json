@@ -92,6 +92,42 @@
           "reason": "Companies unnamed in the vendor's claim — a real, identifiable organization name is required."
         }
       ]
+    },
+    {
+      "run_id": "run-2026-07-11-report-intake",
+      "date": "2026-07-11",
+      "operator": "manual curation pass (owner-uploaded research report used as a candidate list only; every accepted fact re-verified via live web search)",
+      "model": "claude-opus-4-8 (interactive)",
+      "queries": [
+        "Sierra AI agent customers OluKai Casper CLEAR \"Capital on Tap\" case study results",
+        "Capital One Eno virtual assistant customers OR Amazon Rufus shopping assistant results usage",
+        "Tapestry \"Kate Spade\" AI gift concierge Bedrock OR PepsiCo Agentforce restocking OR \"LY Corporation\" AI agent LINE OR JPMorgan fraud AI agent named"
+      ],
+      "candidates_seen": 11,
+      "accepted": 8,
+      "updated": 0,
+      "rejections": [
+        {
+          "candidate": "Woodside Collection / Sierra",
+          "reason": "From uploaded report; live search retrieved no source naming this deployment — no source, no entry."
+        },
+        {
+          "candidate": "LY Corporation / \"Agent i\"",
+          "reason": "From uploaded report; live search retrieved nothing confirming a solution by this name."
+        },
+        {
+          "candidate": "JPMorgan Chase / \"Fraud AI Agent\"",
+          "reason": "From uploaded report; descriptive label rather than a verifiable named solution — nothing retrieved live under this name."
+        },
+        {
+          "candidate": "CLEAR conversion metric (\"tripled membership conversion\")",
+          "reason": "Report metric not present in any live-retrieved source; entry kept without it."
+        },
+        {
+          "candidate": "Capital on Tap NPS metric (\"+33 points\")",
+          "reason": "Report metric not present in any live-retrieved source; entry kept without it."
+        }
+      ]
     }
   ]
 }

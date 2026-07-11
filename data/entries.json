@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-11T11:38:56.711Z",
+  "updated_at": "2026-07-11T16:25:52.193Z",
   "entries": [
     {
       "id": "1-800accountant--agentforce",
@@ -163,6 +163,74 @@
       "confidence_reason": "Company announcement corroborated by Malaysia's national news agency and trade press; no performance metrics were reported in the retrieved sources."
     },
     {
+      "company": "Amazon",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Retail & E-commerce",
+      "solution_name": "Rufus (Alexa for Shopping)",
+      "vendor": "In-house (Amazon, on Amazon Bedrock)",
+      "use_case": "Answers shoppers' questions, compares products and personalizes recommendations across Amazon's store as a conversational shopping assistant, renamed Alexa for Shopping in May 2026.",
+      "department": "E-commerce",
+      "industry": "E-commerce",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Customers who used the assistant this year",
+          "value": "250 million+",
+          "source_type": "company_official"
+        },
+        {
+          "metric": "Monthly average user growth (YoY)",
+          "value": "+149%",
+          "source_type": "company_official"
+        },
+        {
+          "metric": "Estimated additional annualized sales",
+          "value": "$10 billion",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Purchase likelihood when used during a session",
+          "value": "+60%",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-11",
+      "sources": [
+        {
+          "url": "https://www.aboutamazon.com/news/retail/amazon-rufus-ai-assistant-personalized-shopping-features",
+          "title": "Amazon Rufus: Amazon's AI shopping assistant gets smarter and more personal",
+          "publisher": "About Amazon",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://fortune.com/2025/11/02/amazon-rufus-ai-shopping-assistant-chatbot-10-billion-sales-monetization/",
+          "title": "Amazon says its AI shopping assistant Rufus is on pace to pull in an extra $10 billion in sales",
+          "publisher": "Fortune",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://www.modernretail.co/technology/amazon-says-its-ai-shopping-assistant-is-gaining-traction-with-rufus-users-up-115/",
+          "title": "Amazon says its AI shopping assistant is gaining traction",
+          "publisher": "Modern Retail",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://aws.amazon.com/blogs/machine-learning/how-rufus-scales-conversational-shopping-experiences-to-millions-of-amazon-customers-with-amazon-bedrock/",
+          "title": "How Rufus scales conversational shopping experiences to millions of Amazon customers with Amazon Bedrock",
+          "publisher": "AWS Machine Learning Blog",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-11"
+        }
+      ],
+      "confidence": 0.8,
+      "confidence_reason": "Company announcements corroborated by Fortune and retail trade press; sales impact is Amazon's own estimate.",
+      "id": "amazon--rufus-alexa-for-shopping"
+    },
+    {
       "company": "AXA",
       "company_country": "France",
       "region": "Europe",
@@ -324,6 +392,85 @@
       "confidence_reason": "Vendor case study corroborated by independent fintech press; adoption metrics originate from BBVA/OpenAI rather than an external audit."
     },
     {
+      "company": "Capital on Tap",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Financial Services",
+      "solution_name": "Sierra",
+      "vendor": "Sierra",
+      "use_case": "Handles servicing conversations for the small-business credit card provider as it scales, keeping support personal during rapid growth.",
+      "department": "Customer service",
+      "industry": "Fintech (SMB credit)",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-11",
+      "sources": [
+        {
+          "url": "https://sierra.ai/customers",
+          "title": "Our customers: Sierra is trusted by industry leaders with millions of customers",
+          "publisher": "Sierra",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-11"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Named on the vendor's customer page; the uploaded report's NPS claim was not retrievable live, so it is excluded and confidence is capped.",
+      "id": "capital-on-tap--sierra"
+    },
+    {
+      "company": "Capital One",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Financial Services",
+      "solution_name": "Eno",
+      "vendor": "In-house (Capital One)",
+      "use_case": "Acts as the bank's virtual assistant across app, web and SMS — answering account questions, flagging unusual charges and issuing virtual card numbers for safer online shopping.",
+      "department": "Customer service",
+      "industry": "Banking",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Customers helped",
+          "value": "millions every day",
+          "source_type": "company_official"
+        }
+      ],
+      "first_seen_date": "2026-07-11",
+      "sources": [
+        {
+          "url": "https://www.capitalone.com/digital/tools/eno/",
+          "title": "Eno, your Capital One assistant",
+          "publisher": "Capital One",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://www.capitalone.com/tech/software-engineering/how-capital-ones-intelligent-assistant-is-making-online-shopping-easier-and-safer/",
+          "title": "Intelligent Assistant Eno & Safer e-commerce",
+          "publisher": "Capital One Tech",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://www.finextra.com/newsarticle/31796/capital-one-virtual-assistant-can-now-issue-virtual-card-numbers",
+          "title": "Capital One virtual assistant can now issue virtual card numbers",
+          "publisher": "Finextra",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://www.creditcards.com/card-advice/capital-one-eno/",
+          "title": "Capital One Eno virtual assistant: Things to know",
+          "publisher": "CreditCards.com",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-11"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Long-running in-house assistant documented by company channels and independent finance press.",
+      "id": "capital-one--eno"
+    },
+    {
       "id": "carrefour--hopla",
       "company": "Carrefour",
       "company_country": "France",
@@ -370,6 +517,43 @@
       "confidence_reason": "Official company announcement confirmed by multiple independent French tech and retail outlets."
     },
     {
+      "company": "Casper",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Consumer Goods & Manufacturing",
+      "solution_name": "Sierra",
+      "vendor": "Sierra",
+      "use_case": "Runs the mattress brand's customer conversations, replacing a legacy chatbot and helping shoppers talk through sleep preferences.",
+      "department": "Customer service",
+      "industry": "Home goods",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Resolution rate",
+          "value": "74%",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "CSAT increase",
+          "value": ">20%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-07-11",
+      "sources": [
+        {
+          "url": "https://sierra.ai/customers/casper",
+          "title": "How Casper turns a big purchase into a lifelong relationship with AI",
+          "publisher": "Sierra",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-11"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Vendor case study only in this run's live retrieval; capped until independently confirmed.",
+      "id": "casper--sierra"
+    },
+    {
       "id": "chime--decagon",
       "company": "Chime",
       "company_country": "United States",
@@ -407,6 +591,32 @@
       ],
       "confidence": 0.5,
       "confidence_reason": "Customer named by the vendor and echoed by a third-party guide; the resolution metric is not independently verified."
+    },
+    {
+      "company": "CLEAR",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Travel & Transportation",
+      "solution_name": "Sierra",
+      "vendor": "Sierra",
+      "use_case": "Supports members of the identity-verification and airport-security service with a conversational agent for account and membership questions.",
+      "department": "Customer service",
+      "industry": "Travel security & identity",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-11",
+      "sources": [
+        {
+          "url": "https://sierra.ai/customers",
+          "title": "Our customers: Sierra is trusted by industry leaders with millions of customers",
+          "publisher": "Sierra",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-11"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Named on the vendor's customer page; no independent coverage or firm metrics retrieved live, so outcomes stay empty and confidence is capped.",
+      "id": "clear--sierra"
     },
     {
       "company": "Color Health",
@@ -1227,6 +1437,38 @@
       "confidence_reason": "Vendor case study confirmed by independent fintech press; performance metrics are vendor-published."
     },
     {
+      "company": "OluKai",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Consumer Goods & Manufacturing",
+      "solution_name": "Sierra",
+      "vendor": "Sierra",
+      "use_case": "Handles customer inquiries for the footwear brand around the clock, resolving most cases autonomously including holiday-season surges.",
+      "department": "Customer service",
+      "industry": "Footwear & apparel",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Inquiries resolved without human intervention",
+          "value": "≈70%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-07-11",
+      "sources": [
+        {
+          "url": "https://sierra.ai/customers/olukai",
+          "title": "How OluKai scales the Aloha Experience with Sierra",
+          "publisher": "Sierra",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-11"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Named deployment with a metric, but the only live-retrieved evidence is the vendor's case study; capped until independently confirmed.",
+      "id": "olukai--sierra"
+    },
+    {
       "id": "opentable--agentforce",
       "company": "OpenTable",
       "company_country": "United States",
@@ -1313,6 +1555,32 @@
       ],
       "confidence": 0.75,
       "confidence_reason": "Covered by Nikkei Asia and Microsoft's case study; the 448,000-hour figure comes from a secondary write-up citing the company's July 2025 press release."
+    },
+    {
+      "company": "PepsiCo",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Consumer Goods & Manufacturing",
+      "solution_name": "Agentforce",
+      "vendor": "Salesforce",
+      "use_case": "Plans to put AI agents into sales and field-service workflows — real-time inventory visibility and in-store execution support for retail partners.",
+      "department": "Sales",
+      "industry": "Food & beverage",
+      "deployment_stage": "announced",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-11",
+      "sources": [
+        {
+          "url": "https://www.pepsico.com/newsroom/press-releases/2025/pepsico-leverages-salesforces-agentforce-to-advance-ai-agenda",
+          "title": "PepsiCo leverages Salesforce's Agentforce to advance AI agenda",
+          "publisher": "PepsiCo",
+          "source_type": "press_release",
+          "retrieved_date": "2026-07-11"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Company press release announcing planned deployment; no independent confirmation of live usage retrieved, so stage is 'announced' and confidence capped.",
+      "id": "pepsico--agentforce"
     },
     {
       "id": "rakuten--openai-codex",
@@ -1676,6 +1944,39 @@
       ],
       "confidence": 0.5,
       "confidence_reason": "Deployment described by the vendor's customer page and a third-party blog; no primary press coverage retrieved."
+    },
+    {
+      "company": "Tapestry (Kate Spade)",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Retail & E-commerce",
+      "solution_name": "Kate Spade AI Gift Concierge",
+      "vendor": "AWS (Bedrock AgentCore) with Anthropic Haiku 4.5",
+      "use_case": "Guides Kate Spade shoppers to the right gift through conversational discovery, built on Amazon's retail-agent infrastructure.",
+      "department": "E-commerce",
+      "industry": "Fashion & luxury",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-11",
+      "sources": [
+        {
+          "url": "https://www.retaildive.com/news/amazon-to-offer-ai-agents-to-other-retailers/821597/",
+          "title": "Amazon offers AI agent tech to other retailers",
+          "publisher": "Retail Dive",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://www.digitalcommerce360.com/2026/06/03/amazon-applies-ai-shopping-tech-to-customer-retailer-agents-with-aws/",
+          "title": "Amazon applies AI shopping tech to customer retailer agents with AWS",
+          "publisher": "Digital Commerce 360",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-11"
+        }
+      ],
+      "confidence": 0.65,
+      "confidence_reason": "Independent retail trade press names the deployment and stack; the uploaded report's conversion metric was not retrievable live and is excluded.",
+      "id": "tapestry-kate-spade--kate-spade-ai-gift-concierge"
     },
     {
       "id": "telkomsel--veronika",
