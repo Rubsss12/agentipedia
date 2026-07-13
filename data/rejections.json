@@ -128,6 +128,59 @@
           "reason": "Report metric not present in any live-retrieved source; entry kept without it."
         }
       ]
+    },
+    {
+      "run_id": "run-2026-07-13-pdf-intake",
+      "date": "2026-07-13",
+      "operator": "manual curation pass (two owner-uploaded PDF reports used as candidate lists only; every accepted fact re-verified via live web search)",
+      "model": "claude-fable-5 (interactive)",
+      "queries": [
+        "Engine travel company Salesforce Agentforce customer case handling time reduction",
+        "Imprint credit card Sierra AI agent customer engagement",
+        "Singapore Civil Defence Force NEXA \"Digital Factory\" Copilot Studio assistant firefighters",
+        "LY Corporation \"Agent i\" LINE Yahoo Japan AI agent launch",
+        "\"Agent i\" LY Corporation launch date July 2026 press release lycorp",
+        "Rakuten AI shopping concierge \"43%\" OR \"41%\" order value product comparison time",
+        "PepsiCo Agentforce AI agents \"25%\" OR \"30%\" operational efficiency Salesforce deployment 2026",
+        "Amazon \"Alexa for Shopping\" OR Rufus \"300 million\" users \"$12 billion\" incremental sales"
+      ],
+      "candidates_seen": 24,
+      "accepted": 4,
+      "updated": 2,
+      "rejections": [
+        {
+          "candidate": "SCDF ADA (Automated Duty Assignment)",
+          "reason": "Power Apps rostering workflow; retrieved sources describe no AI/agentic capability — out of scope (not an AI agent)."
+        },
+        {
+          "candidate": "SCDF FICA (Food Indentation and Consumption)",
+          "reason": "Power Apps meal-data management app; no AI capability named in retrieved sources — out of scope."
+        },
+        {
+          "candidate": "SCDF ITA (Interactive Troubleshooting)",
+          "reason": "Step-by-step diagnostic guide app; no AI capability named in retrieved sources — out of scope."
+        },
+        {
+          "candidate": "SCDF DORA (Duty Officer Rostering)",
+          "reason": "Power Apps scheduling app; no AI capability named in retrieved sources — out of scope."
+        },
+        {
+          "candidate": "Imprint — \"doubled customer engagement metrics and listings viewed\"",
+          "reason": "Metric from the uploaded PDF not found in any retrieved source (Sierra's case study reports no such figures); entry accepted without it — empty beats invented."
+        },
+        {
+          "candidate": "JPMorgan Chase — \"Fraud AI Agent\" processing $8T daily",
+          "reason": "Re-submitted from a previous report; live search still retrieves no source naming a 'Fraud AI Agent' product — rejected again (LLM Suite entry unaffected)."
+        },
+        {
+          "candidate": "PepsiCo — \"25–30% operational efficiency gain\"",
+          "reason": "Metric not found in any retrieved source; PepsiCo/Salesforce releases announce deployment without efficiency figures. Existing 'announced' entry unchanged."
+        },
+        {
+          "candidate": "Siemens Industrial Copilot — \"complex panel visualizations in 30 seconds\"",
+          "reason": "Figure from the uploaded PDF not retrieved from any live source in this run; existing thyssenkrupp entry keeps only previously verified outcomes."
+        }
+      ]
     }
   ]
 }

@@ -133,6 +133,16 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
   const searchRef = useRef<HTMLInputElement>(null);
   const set = (patch: Partial<Filters>) => setF((prev) => ({ ...prev, ...patch }));
 
+  // The globe dispatches this when a country is clicked.
+  useEffect(() => {
+    const on = (e: Event) => {
+      const country = (e as CustomEvent).detail as string;
+      setF((prev) => ({ ...prev, country }));
+    };
+    window.addEventListener("agentipedia:country", on);
+    return () => window.removeEventListener("agentipedia:country", on);
+  }, []);
+
   // "/" focuses the search from anywhere on the page.
   useEffect(() => {
     const on = (e: KeyboardEvent) => {

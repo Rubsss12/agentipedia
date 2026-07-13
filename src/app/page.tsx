@@ -5,6 +5,9 @@ import { formatDate, formatTimestamp } from "@/lib/format";
 import Explorer from "@/components/Explorer";
 import Marquee from "@/components/Marquee";
 import Bi from "@/components/Bi";
+import Globe from "@/components/Globe";
+import GlobeCountry from "@/components/GlobeCountry";
+import { buildMarkers } from "@/lib/geo";
 import { ConfidenceBadge } from "@/components/badges";
 
 export default function Home() {
@@ -15,6 +18,11 @@ export default function Home() {
   const latest = [...entries]
     .sort((a, b) => b.first_seen_date.localeCompare(a.first_seen_date) || a.company.localeCompare(b.company))
     .slice(0, 8);
+  const countryCounts: Record<string, number> = {};
+  for (const e of entries) {
+    if (e.company_country) countryCounts[e.company_country] = (countryCounts[e.company_country] || 0) + 1;
+  }
+  const markers = buildMarkers(countryCounts);
 
   return (
     <main>
@@ -157,6 +165,43 @@ export default function Home() {
             </li>
           ))}
         </ul>
+      </section>
+
+      {/* ===== The world map ===== */}
+      <section id="map" className="relative mt-16 scroll-mt-20 overflow-hidden bg-mauve-night text-white">
+        <div className="hero-glow absolute inset-0 opacity-60" aria-hidden />
+        <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-6 py-14 md:grid-cols-[1fr_minmax(0,420px)] md:py-16">
+          <div data-reveal>
+            <Globe markers={markers} />
+            <p className="kicker mt-4 text-center text-white/50">
+              <Bi
+                en="Drag to spin · click a country to filter the index"
+                fr="Faites tourner le globe · cliquez un pays pour filtrer l'index"
+              />
+            </p>
+          </div>
+          <div data-reveal>
+            <p className="kicker text-mauve-bright">
+              <Bi en="The world map" fr="La carte du monde" />
+            </p>
+            <h2 className="mt-2 text-3xl font-black uppercase tracking-tight">
+              <Bi en="Where the agents run" fr="Où tournent les agents" />
+            </h2>
+            <p className="mt-3 max-w-md text-sm leading-relaxed text-white/70">
+              <Bi
+                en={`${stats.entries} verified deployments across ${stats.countries} countries. Dot size follows the number of catalogued agents.`}
+                fr={`${stats.entries} déploiements vérifiés dans ${stats.countries} pays. La taille des points suit le nombre d'agents catalogués.`}
+              />
+            </p>
+            <ul className="mt-6 grid grid-cols-2 gap-x-6 gap-y-2">
+              {markers.slice(0, 10).map((m) => (
+                <li key={m.country}>
+                  <GlobeCountry country={m.country} count={m.count} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </section>
 
       {/* ===== Fresh on the shelves ===== */}

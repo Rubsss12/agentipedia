@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-11T16:25:52.193Z",
+  "updated_at": "2026-07-13T08:17:41.897Z",
   "entries": [
     {
       "id": "1-800accountant--agentforce",
@@ -193,6 +193,16 @@
           "metric": "Purchase likelihood when used during a session",
           "value": "+60%",
           "source_type": "news_media"
+        },
+        {
+          "metric": "Users reached in 2025 (reported at the May 2026 rebrand)",
+          "value": "300 million+",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Estimated incremental annualized sales for 2025 (reported May 2026)",
+          "value": "$12 billion",
+          "source_type": "news_media"
         }
       ],
       "first_seen_date": "2026-07-11",
@@ -224,6 +234,13 @@
           "publisher": "AWS Machine Learning Blog",
           "source_type": "company_official",
           "retrieved_date": "2026-07-11"
+        },
+        {
+          "url": "https://www.modernretail.co/technology/marketplace-briefing-why-amazon-discontinued-its-ai-powered-rufus-chatbot-for-alexa-shopping-agent/",
+          "title": "Marketplace Briefing: Why Amazon discontinued its AI-powered Rufus chatbot for Alexa shopping agent",
+          "publisher": "Modern Retail",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
         }
       ],
       "confidence": 0.8,
@@ -1622,11 +1639,32 @@
       "sector": "Retail & E-commerce",
       "solution_name": "Rakuten AI",
       "vendor": "In-house (with OpenAI models and Rakuten AI 7B)",
-      "use_case": "Acts as the group's branded AI assistant layer — helping employees draft sales materials and powering customer-facing tools such as Rakuten Mobile's voice assistant for 9.3 million subscribers.",
+      "use_case": "Acts as the group's branded AI assistant layer — powering the agentic AI Concierge inside the Rakuten Ichiba shopping app, helping employees draft sales materials, and running Rakuten Mobile's voice assistant for 9.3 million subscribers.",
       "department": "Company-wide",
       "industry": "E-commerce",
       "deployment_stage": "production",
-      "reported_outcomes": [],
+      "reported_outcomes": [
+        {
+          "metric": "Time to purchase with AI Concierge (Jan 2026 A/B vs standard search)",
+          "value": "−43%",
+          "source_type": "company_official"
+        },
+        {
+          "metric": "Average order value with AI Concierge (Jan 2026 A/B)",
+          "value": "+41%",
+          "source_type": "company_official"
+        },
+        {
+          "metric": "Purchase decision time, first six months (July 2026 disclosure)",
+          "value": "−41%",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Average order value, first six months (July 2026 disclosure)",
+          "value": "+17%",
+          "source_type": "news_media"
+        }
+      ],
       "first_seen_date": "2026-07-10",
       "sources": [
         {
@@ -1642,10 +1680,31 @@
           "publisher": "Rakuten Today",
           "source_type": "company_official",
           "retrieved_date": "2026-07-10"
+        },
+        {
+          "url": "https://rakuten.today/blog/rakutens-new-ai-concierge-is-redefining-the-shopping-experience.html",
+          "title": "Rakuten's new AI concierge is redefining the shopping experience",
+          "publisher": "Rakuten Today",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://global.rakuten.com/corp/news/press/2026/0105_02.html",
+          "title": "Rakuten Integrates Cutting-Edge Agentic AI Tool \"Rakuten AI\" into Rakuten Ichiba Mobile App",
+          "publisher": "Rakuten Group",
+          "source_type": "press_release",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://finance.biggo.com/news/de57e327-fcb2-48a3-8340-649aa0920a84",
+          "title": "Rakuten Ichiba's AI Shopping Assistant Cuts Purchase Time 41%, Boosts Order Value 17% in First Six Months",
+          "publisher": "BigGo Finance",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
         }
       ],
-      "confidence": 0.6,
-      "confidence_reason": "Documented on the company's official channels; no independent coverage retrieved in this run and no audited metrics."
+      "confidence": 0.7,
+      "confidence_reason": "Official Rakuten channels document the deployment and the January 2026 A/B metrics; independent coverage reports the six-month figures. The two metric sets cover different periods and are both kept visible."
     },
     {
       "id": "safaricom--zuri",
@@ -2321,6 +2380,170 @@
       ],
       "confidence": 0.75,
       "confidence_reason": "Launch and usage covered by independent Indian business and tech press; volume figures originate from the company."
+    },
+    {
+      "company": "Engine",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Travel & Transportation",
+      "solution_name": "Eva (Agentforce)",
+      "vendor": "Salesforce",
+      "use_case": "Handles traveler support on Engine's business-travel platform end to end — booking modifications, cancellations and refunds — with the Eva agent resolving routine-to-complex chat cases without human intervention, across 800,000+ annual support cases.",
+      "department": "Customer service",
+      "industry": "Business travel",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Average handle time for support cases",
+          "value": "−15%",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Customer cases handled by Agentforce",
+          "value": ">30%",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Estimated annual service cost savings",
+          "value": "$2 million",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Chat cases fully resolved with no human intervention",
+          "value": "≈50%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/press-releases/2026/04/15/engine-powers-travel-experiences-with-agentforce-slack/",
+          "title": "Engine Powers Seamless Travel Experiences with Agentforce and Slack",
+          "publisher": "Salesforce",
+          "source_type": "press_release",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.salesforce.com/customer-stories/engine/",
+          "title": "Engine provides personalized service to 1 million travelers with Agentforce",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "All retrieved evidence comes from Salesforce (press release + customer story) — vendor marketing, so confidence is capped at 50%. Metrics are vendor-published claims pending independent coverage.",
+      "id": "engine--eva-agentforce"
+    },
+    {
+      "company": "Imprint",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Financial Services",
+      "solution_name": "Sierra",
+      "vendor": "Sierra",
+      "use_case": "Runs cardholder servicing for Imprint's co-branded credit cards (Booking.com, Shell, Rakuten and other partners) — a single Sierra agent that switches voice, tone and policy per brand, taking payments, checking balances and issuing replacement cards with immediate verification.",
+      "department": "Customer service",
+      "industry": "Co-branded credit cards",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://sierra.ai/customers/imprint",
+          "title": "Behind the Build: One agent, many brands at Imprint",
+          "publisher": "Sierra",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Single vendor case study (Sierra) is the only retrieved evidence — confidence capped at 50%. No quantified outcomes were published, so none are recorded.",
+      "id": "imprint--sierra"
+    },
+    {
+      "company": "Singapore Civil Defence Force",
+      "company_country": "Singapore",
+      "region": "Southeast Asia",
+      "sector": "Public Sector & Education",
+      "solution_name": "NEXA (Next Evolution Assistant)",
+      "vendor": "Microsoft (Copilot Studio)",
+      "use_case": "Conversational assistant for SCDF officers, built with HTX in the force's Digital Factory on Copilot Studio with SharePoint and Dataverse: retrieves standard operating procedures, guidelines and directives, and gamifies learning and onboarding with quizzes — the AI agent in an eight-app Power Platform portfolio.",
+      "department": "Operations & training",
+      "industry": "Emergency services",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Users benefiting from the Digital Factory portfolio (8 apps incl. NEXA)",
+          "value": "3,000+",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "App delivery timeline via Digital Factory",
+          "value": "1–3 months (vs 2–3 years conventional)",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://learn.microsoft.com/en-us/power-platform/guidance/case-studies/scdf-implements-digital-solutions",
+          "title": "Singapore Civil Defence Force implements digital solutions using Power Platform and Copilot Studio",
+          "publisher": "Microsoft Learn",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.microsoft.com/en/customers/story/18717-singapore-civil-defence-force-microsoft-365",
+          "title": "Singapore Civil Defence Force and HTX boost operational efficiency with Microsoft Power Platform",
+          "publisher": "Microsoft Customer Stories",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Documented in two Microsoft-published case studies (the platform vendor); no independent press coverage of NEXA retrieved in this run — capped at 50%.",
+      "id": "singapore-civil-defence-force--nexa-next-evolution-assistant"
+    },
+    {
+      "company": "LY Corporation",
+      "company_country": "Japan",
+      "region": "East Asia",
+      "sector": "Technology & Software",
+      "solution_name": "Agent i",
+      "vendor": "In-house (LY Corporation)",
+      "use_case": "Consumer AI agent unifying LINE and Yahoo! JAPAN, launched April 20, 2026: one tap opens Agent i, which coordinates domain agents for shopping, travel planning, weather and more across 22 lifestyle categories, with 'Agent i in chat', LINE OA AI Mode for businesses and Agent i Biz announced for later in 2026.",
+      "department": "Consumer products",
+      "industry": "Internet services",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://www.lycorp.co.jp/en/news/release/020398/",
+          "title": "LY Corporation Launches New AI Agent Brand \"Agent i\" Today",
+          "publisher": "LY Corporation",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.thelec.net/news/articleView.html?idxno=12001",
+          "title": "LY Outlines Five-Stage Companywide AI Transformation Strategy",
+          "publisher": "The Elec",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.thepickool.com/ly-corp-launches-unified-ai-agent-agent-i/",
+          "title": "LY Corp Launches Unified AI Agent 'Agent i'",
+          "publisher": "Pickool",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Official launch release confirmed by independent tech media (The Elec, Pickool). The service is live inside LINE and Yahoo! JAPAN; usage metrics are not yet reported. Rejected in the 2026-07-11 run as unverifiable — now verified after launch coverage.",
+      "id": "ly-corporation--agent-i"
     }
   ]
 }
