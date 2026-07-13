@@ -54,6 +54,20 @@ export function StageBadge({ stage }: { stage: DeploymentStage }) {
   );
 }
 
+// The unnamed collection: deployment confirmed, agent has no public name.
+export function UnnamedBadge() {
+  return (
+    <span className="inline-flex items-center gap-1 rounded-full bg-coral-bg px-2.5 py-1 text-[0.7rem] font-bold text-coral-deep">
+      <span
+        aria-hidden
+        className="inline-block h-1.5 w-1.5 rounded-full"
+        style={{ background: "#f2764f" }}
+      />
+      <Bi en="Unnamed agent" fr="Agent sans nom" />
+    </span>
+  );
+}
+
 export function SourceTypeChip({ type }: { type: SourceType }) {
   const marketing = isMarketingType(type);
   return (

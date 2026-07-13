@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getEntries, getEntry, isVendorSourced } from "@/lib/data";
 import { SOURCE_TYPE_LABELS, SOURCE_TYPE_LABELS_FR } from "@/lib/types";
-import { ConfidenceBadge, StageBadge, SourceTypeChip } from "@/components/badges";
+import { ConfidenceBadge, StageBadge, SourceTypeChip, UnnamedBadge } from "@/components/badges";
 import { sectorSlug } from "@/lib/sectors";
 import { confidencePercent, formatDate, hostOf } from "@/lib/format";
 import Bi from "@/components/Bi";
@@ -66,9 +66,18 @@ export default async function EntryPage({ params }: Props) {
           )}
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
+          {entry.solution_named === false && <UnnamedBadge />}
           <StageBadge stage={entry.deployment_stage} />
           <ConfidenceBadge entry={entry} />
         </div>
+        {entry.solution_named === false && (
+          <p className="mt-3 max-w-2xl rounded-lg bg-coral-bg px-3 py-2 text-sm font-semibold text-coral-deep">
+            <Bi
+              en="The deployment is verified by non-marketing sources, but the agent has no public product name. The descriptor above is ours; nothing is guessed."
+              fr="Le déploiement est vérifié par des sources non marketing, mais l'agent n'a pas de nom public. Le descriptif ci-dessus est le nôtre ; rien n'est deviné."
+            />
+          </p>
+        )}
       </header>
 
       <section className="mt-8">

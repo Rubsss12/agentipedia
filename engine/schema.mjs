@@ -5,6 +5,12 @@
 //   2. the specific named solution powering it.
 // Everything in this module is deterministic code, the model that proposes
 // candidates never gets to decide what enters the store.
+//
+// Second collection, the documented exception: entries with
+// solution_named === false record deployments whose existence is certain
+// (named company + at least one NON-marketing source) but whose agent has no
+// public product name. The solution_name then holds an "Unnamed …" descriptor,
+// never a guessed brand. Everything else about the rule still applies.
 
 export const REGIONS = [
   "North America",
@@ -16,6 +22,7 @@ export const REGIONS = [
   "East Asia",
   "Southeast Asia",
   "Oceania",
+  "Antarctica",
 ];
 
 export const SOURCE_TYPES = [
@@ -162,15 +169,27 @@ export function validateEntry(e, opts = {}) {
 
   if (!e || typeof e !== "object") return { ok: false, errors: ["not an object"] };
 
-  // --- The rule, field 1: a real, named company ---
+  const unnamed = e.solution_named === false;
+
+  // --- The rule, field 1: a real, named company (both collections) ---
   const company = normalizeName(e.company);
   if (!company) errors.push("company missing");
   else if (isGenericCompany(company)) errors.push(`company "${company}" is generic/anonymized, not a named organization`);
 
-  // --- The rule, field 2: a specific named solution ---
+  // --- The rule, field 2 ---
   const solution = normalizeName(e.solution_name);
-  if (!solution) errors.push("solution_name missing");
-  else if (isGenericSolution(solution)) errors.push(`solution_name "${solution}" is a generic technology description, not a named product`);
+  if (unnamed) {
+    // Unnamed collection: the descriptor must declare itself unnamed and must
+    // not smuggle in a guessed brand. Evidence bar is stricter below.
+    if (!solution) errors.push("solution_name (descriptor) missing");
+    else if (!/^Unnamed\s+\S/.test(solution)) {
+      errors.push(`unnamed entries must use an "Unnamed …" descriptor as solution_name, got "${solution}"`);
+    }
+    if (typeof e.solution_named !== "boolean") errors.push("solution_named must be boolean");
+  } else {
+    if (!solution) errors.push("solution_name missing");
+    else if (isGenericSolution(solution)) errors.push(`solution_name "${solution}" is a generic technology description, not a named product`);
+  }
 
   // --- Geography ---
   if (!REGIONS.includes(e.region)) errors.push(`region "${e.region}" not one of: ${REGIONS.join(", ")}`);
@@ -221,6 +240,14 @@ export function validateEntry(e, opts = {}) {
     errors.push(`confidence ${e.confidence} exceeds ${VENDOR_CONFIDENCE_CAP} but every source is vendor marketing`);
   }
   if (!normalizeName(e.confidence_reason)) errors.push("confidence_reason missing");
+
+  // --- Unnamed collection: stricter evidence bar ---
+  // A deployment without a public name only enters the catalog when its
+  // existence does not rest on marketing alone: require at least one
+  // company_official / earnings_call / news_media / conference_talk source.
+  if (unnamed && Array.isArray(e.sources) && e.sources.length > 0 && onlyMarketingSources(e)) {
+    errors.push("unnamed entries require at least one non-marketing source (company_official, earnings_call, news_media or conference_talk)");
+  }
 
   // --- id ---
   const expectedId = makeEntryId(company || "x", solution || "x");

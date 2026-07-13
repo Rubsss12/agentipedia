@@ -3,16 +3,18 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import type { Entry } from "@/lib/types";
-import { ConfidenceBadge, StageBadge } from "@/components/badges";
+import { ConfidenceBadge, StageBadge, UnnamedBadge } from "@/components/badges";
 import { hostOf } from "@/lib/format";
 import { useLang, type Lang } from "@/lib/lang";
 import Bi from "@/components/Bi";
 
 type ConfidenceFilter = "any" | "high" | "medium" | "independent";
+type TypeFilter = "" | "named" | "unnamed";
 type SortKey = "az" | "newest" | "confidence";
 
 interface Filters {
   q: string;
+  type: TypeFilter;
   sector: string;
   region: string;
   country: string;
@@ -25,6 +27,7 @@ interface Filters {
 
 const EMPTY: Filters = {
   q: "",
+  type: "",
   sector: "",
   region: "",
   country: "",
@@ -40,6 +43,7 @@ const MARKETING = new Set(["vendor_case_study", "press_release"]);
 const STR = {
   en: {
     placeholder: "Search company, solution, vendor or use case…  (press / to focus)",
+    type: "Type", named: "Named agents", unnamed: "Unnamed agents", allTypes: "All entries",
     sector: "Sector", region: "Region", country: "Country", industry: "Industry",
     department: "Department", vendor: "Vendor", stage: "Stage", confidence: "Confidence",
     sort: "Sort", allSectors: "All sectors", allRegions: "All regions", allCountries: "All countries",
@@ -53,6 +57,7 @@ const STR = {
   },
   fr: {
     placeholder: "Rechercher une entreprise, une solution, un éditeur…  (touche / pour cibler)",
+    type: "Type", named: "Agents nommés", unnamed: "Agents sans nom", allTypes: "Toutes les fiches",
     sector: "Secteur", region: "Région", country: "Pays", industry: "Industrie",
     department: "Département", vendor: "Éditeur", stage: "Statut", confidence: "Confiance",
     sort: "Tri", allSectors: "Tous les secteurs", allRegions: "Toutes les régions", allCountries: "Tous les pays",
@@ -73,6 +78,8 @@ function uniqueValues(entries: Entry[], key: keyof Entry): string[] {
 }
 
 function matches(e: Entry, f: Filters): boolean {
+  if (f.type === "named" && e.solution_named === false) return false;
+  if (f.type === "unnamed" && e.solution_named !== false) return false;
   if (f.sector && e.sector !== f.sector) return false;
   if (f.region && e.region !== f.region) return false;
   if (f.country && e.company_country !== f.country) return false;
@@ -133,11 +140,15 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
   const searchRef = useRef<HTMLInputElement>(null);
   const set = (patch: Partial<Filters>) => setF((prev) => ({ ...prev, ...patch }));
 
-  // The globe dispatches this when a country is clicked.
+  // The globe dispatches this when a marker is clicked: either a country
+  // name (string) or {key: "country" | "region", value} for special places
+  // such as Antarctica.
   useEffect(() => {
     const on = (e: Event) => {
-      const country = (e as CustomEvent).detail as string;
-      setF((prev) => ({ ...prev, country }));
+      const d = (e as CustomEvent).detail as string | { key: "country" | "region"; value: string };
+      if (typeof d === "string") setF((prev) => ({ ...prev, country: d }));
+      else if (d?.key === "region") setF((prev) => ({ ...prev, region: d.value, country: "" }));
+      else if (d?.key === "country") setF((prev) => ({ ...prev, country: d.value }));
     };
     window.addEventListener("agentipedia:country", on);
     return () => window.removeEventListener("agentipedia:country", on);
@@ -173,6 +184,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
   // Active-filter chips (label shown, one-click removal).
   const chips: { key: keyof Filters; label: string }[] = [];
   if (f.q) chips.push({ key: "q", label: `“${f.q}”` });
+  if (f.type) chips.push({ key: "type", label: f.type === "named" ? t.named : t.unnamed });
   (["sector", "region", "country", "industry", "department", "vendor"] as const).forEach((k) => {
     if (f[k]) chips.push({ key: k, label: f[k] });
   });
@@ -194,6 +206,16 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
           className="w-full rounded-xl border border-lavender-line bg-paper px-4 py-3 text-[0.95rem] outline-none transition-colors placeholder:text-muted focus:border-mauve"
         />
         <div className="mt-4 flex flex-wrap gap-3">
+          <Select
+            label={t.type}
+            value={f.type}
+            onChange={(v) => set({ type: v as TypeFilter })}
+            options={[
+              { value: "named", label: t.named },
+              { value: "unnamed", label: t.unnamed },
+            ]}
+            anyLabel={t.allTypes}
+          />
           {uniqueValues(entries, "sector").length > 1 && (
             <Select label={t.sector} value={f.sector} onChange={(v) => set({ sector: v })} options={opt(uniqueValues(entries, "sector"))} anyLabel={t.allSectors} />
           )}
@@ -330,6 +352,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
                   {e.use_case}
                 </p>
                 <div className="mt-4 flex flex-wrap items-center gap-2">
+                  {e.solution_named === false && <UnnamedBadge />}
                   <StageBadge stage={e.deployment_stage} />
                   <ConfidenceBadge entry={e} />
                   <span className="ml-auto text-xs text-muted">

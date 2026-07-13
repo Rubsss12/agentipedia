@@ -181,6 +181,62 @@
           "reason": "Figure from the uploaded PDF not retrieved from any live source in this run; existing thyssenkrupp entry keeps only previously verified outcomes."
         }
       ]
+    },
+    {
+      "run_id": "run-2026-07-13-unnamed-intake",
+      "date": "2026-07-13",
+      "operator": "manual curation pass introducing the unnamed collection (solution_named: false): deployments certain from non-marketing sources but with no public product name, one per continent",
+      "model": "claude-fable-5 (interactive)",
+      "queries": [
+        "MTN AI chatbot customer service deployed South Africa Zigi",
+        "SoftBank call center AI emotion canceling technology deployed operators",
+        "Verizon Google AI assistant customer service representatives deployed Reuters",
+        "Standard Bank artificial intelligence deployed customer service production 2025",
+        "Absa OR Ecobank OR KCB bank AI deployed customers production Africa 2025",
+        "Woolworths OR Qantas OR ANZ AI deployed production 2025 customers operations",
+        "Qantas CEO Hudson AI on-time performance fuel savings routing results",
+        "Petrobras inteligência artificial produção deployed wells operations 2025",
+        "SNCF intelligence artificielle maintenance prédictive déployée production TGV",
+        "Seven-Eleven Japan AI ordering system stores deployed nationwide",
+        "Antarctica research station AI deployed monitoring autonomous British Antarctic Survey 2025"
+      ],
+      "candidates_seen": 20,
+      "accepted": 12,
+      "updated": 0,
+      "rejections": [
+        {
+          "candidate": "SoftBank SoftVoice emotion-canceling AI",
+          "reason": "R&D phase with commercial introduction only expected within FY2025; not a verified deployment (and the tool is named, so it does not belong to the unnamed collection either)."
+        },
+        {
+          "candidate": "Standard Bank (South Africa), unnamed AI",
+          "reason": "Only a generic mention in a compliance listicle; no retrieved source establishes a specific AI deployment. Below the unnamed collection's evidence bar."
+        },
+        {
+          "candidate": "Ecobank, AML/sanctions screening AI",
+          "reason": "Single trade mention of compliance screening; AI capability and deployment specifics not clearly established in retrieved text."
+        },
+        {
+          "candidate": "KCB Vooma",
+          "reason": "Digital lending/payments platform; retrieved sources describe no AI agent capability. Out of scope."
+        },
+        {
+          "candidate": "Woolworths self-checkout computer-vision cameras",
+          "reason": "In-store loss-prevention camera system; not an AI agent deployment. Out of scope (Woolworths' Olive accepted separately as a named entry)."
+        },
+        {
+          "candidate": "Qantas x Sapia hiring chat",
+          "reason": "Named vendor product, but only a single analyst source retrieved this run; below the evidence bar."
+        },
+        {
+          "candidate": "Standard Chartered AI Factory",
+          "reason": "Internal platform/governance initiative, not an agent deployment; the bank's SC GPT accepted separately as a named entry."
+        },
+        {
+          "candidate": "BAS Signy Island autonomous drone dock",
+          "reason": "Proof-of-concept trial of a hardware drone dock; not an AI agent deployment and still a trial. The BAS seafloor-imagery AI accepted instead."
+        }
+      ]
     }
   ]
 }

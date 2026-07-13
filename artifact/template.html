@@ -186,6 +186,14 @@
   .b-confirmed { background:var(--ok-bg); color:var(--ok); }
   .b-reported { background:var(--chip-bg); color:var(--chip-text); }
   .b-vendor { background:var(--warn-bg); color:var(--warn); }
+  .b-unnamed { background:#fdeadf; color:#b5451f; }
+  :root[data-theme="dark"] .b-unnamed { background:#3d2417; color:#f2a583; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .b-unnamed { background:#3d2417; color:#f2a583; } }
+  .glegend { display:flex; flex-wrap:wrap; justify-content:center; gap:6px 16px; margin-top:10px;
+    font-size:.66rem; font-weight:800; color:rgba(255,255,255,.6); }
+  .glegend .dotn, .glegend .dotu { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:5px; vertical-align:-1px; }
+  .glegend .dotn { background:#e62ec8; }
+  .glegend .dotu { background:#f2764f; }
   .stype { display:inline-flex; border-radius:6px; padding:2px 7px; font-size:.62rem; font-weight:800;
     text-transform:uppercase; letter-spacing:.06em; background:var(--chip-bg); color:var(--chip-text); }
   .stype.mkt { background:var(--warn-bg); color:var(--warn); }
@@ -383,7 +391,11 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
           <canvas id="globe"></canvas>
           <div class="gtip" id="gtip"></div>
         </div>
-        <p class="ghint kicker"><span class="lang-en">Drag to spin · click a country to filter</span><span class="lang-fr">Faites tourner · cliquez un pays pour filtrer</span></p>
+        <div class="glegend">
+          <span><span class="dotn"></span><span class="lang-en">Named agents</span><span class="lang-fr">Agents nommés</span></span>
+          <span><span class="dotu"></span><span class="lang-en">Unnamed</span><span class="lang-fr">Sans nom</span></span>
+        </div>
+        <p class="ghint kicker"><span class="lang-en">Drag to spin · click a dot to filter</span><span class="lang-fr">Faites tourner · cliquez un point pour filtrer</span></p>
       </div>
     </div>
     <div class="marquee" aria-hidden="true"><div class="marquee-track kicker" id="marquee"></div></div>
@@ -412,6 +424,7 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
     <div class="toolbar">
       <input type="search" id="q" placeholder="" aria-label="Search the index / Rechercher dans l'index" />
       <div class="filters">
+        <label><span class="kicker"><span class="lang-en">Type</span><span class="lang-fr">Type</span></span><select id="f-type"></select></label>
         <label><span class="kicker"><span class="lang-en">Sector</span><span class="lang-fr">Secteur</span></span><select id="f-sector"></select></label>
         <label><span class="kicker"><span class="lang-en">Region</span><span class="lang-fr">Région</span></span><select id="f-region"></select></label>
         <label><span class="kicker"><span class="lang-en">Country</span><span class="lang-fr">Pays</span></span><select id="f-country"></select></label>
@@ -458,6 +471,10 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
         <li><span class="lang-en"><b>Claimed is not confirmed.</b> Every source is typed. Vendor case studies and press releases are marketing: usable, but labeled, and their metrics are shown as claims.</span><span class="lang-fr"><b>Déclaré n'est pas confirmé.</b> Chaque source est typée. Cas clients et communiqués sont du marketing : utilisables, mais étiquetés, et leurs métriques affichées comme des déclarations.</span></li>
         <li><span class="lang-en"><b>Conflicts stay visible.</b> When sources disagree, both are kept and the confidence drops.</span><span class="lang-fr"><b>Les conflits restent visibles.</b> Quand les sources divergent, les deux sont conservées et la confiance baisse.</span></li>
       </ul>
+      <div class="rulecard" style="border-color:#f2764f">
+        <h3 style="color:#b5451f"><span class="lang-en">The unnamed collection</span><span class="lang-fr">La collection sans nom</span></h3>
+        <p style="margin:10px 0 0; font-size:.9rem"><span class="lang-en">Some deployments are certain, yet the agent has no public product name. They live in a second, clearly separated collection: the entry is badged "Unnamed agent", the solution field carries our descriptor (never a guessed brand), and the evidence bar is stricter: at least one non-marketing source is required. On the globe they appear as coral dots.</span><span class="lang-fr">Certains déploiements sont certains, mais l'agent n'a pas de nom public. Ils vivent dans une seconde collection clairement séparée : la fiche porte le badge « Agent sans nom », le champ solution contient notre descriptif (jamais une marque devinée), et la barre de preuve est plus stricte : au moins une source non marketing est exigée. Sur le globe, ils apparaissent en points corail.</span></p>
+      </div>
       <div class="policy">
         <div class="warnrow"><span class="lang-en">Entries whose only evidence is vendor marketing are capped at 50% confidence, whatever the marketing says.</span><span class="lang-fr">Les fiches dont la seule preuve est le marketing d'un éditeur sont plafonnées à 50 % de confiance, quoi qu'en dise le marketing.</span></div>
         <div class="okrow"><span class="lang-en">“Confirmed” (≥ 70%) requires at least one independent source: news media, an earnings call, a conference talk or an official company channel.</span><span class="lang-fr">« Confirmé » (≥ 70 %) exige au moins une source indépendante : presse, résultats financiers, conférence ou canal officiel de l'entreprise.</span></div>
@@ -507,13 +524,15 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
   var KEY="agentipedia-lang";
   var lang = document.documentElement.dataset.lang==="fr" ? "fr" : "en";
   var L = {
-    en: { allSectors:"All sectors", allRegions:"All regions", allCountries:"All countries", allIndustries:"All industries",
+    en: { allTypes:"All entries", tNamed:"Named agents", tUnnamed:"Unnamed agents",
+      allSectors:"All sectors", allRegions:"All regions", allCountries:"All countries", allIndustries:"All industries",
       allDepartments:"All departments", allVendors:"All vendors", allStages:"All stages",
       stProd:"In production", stPilot:"Pilot", stAnnounced:"Announced", stUnknown:"Unknown",
       anyConf:"Any confidence", confHigh:"High (≥ 70%)", confMed:"Medium+ (≥ 50%)", confInd:"Independently sourced",
       sortAz:"Company A–Z", sortNew:"Newest first", sortConf:"Confidence",
       placeholder:"Search company, solution, vendor or use case…  (press / to focus)" },
-    fr: { allSectors:"Tous les secteurs", allRegions:"Toutes les régions", allCountries:"Tous les pays", allIndustries:"Toutes les industries",
+    fr: { allTypes:"Toutes les fiches", tNamed:"Agents nommés", tUnnamed:"Agents sans nom",
+      allSectors:"Tous les secteurs", allRegions:"Toutes les régions", allCountries:"Tous les pays", allIndustries:"Toutes les industries",
       allDepartments:"Tous les départements", allVendors:"Tous les éditeurs", allStages:"Tous les statuts",
       stProd:"En production", stPilot:"Pilote", stAnnounced:"Annoncé", stUnknown:"Inconnu",
       anyConf:"Toute confiance", confHigh:"Élevée (≥ 70 %)", confMed:"Moyenne+ (≥ 50 %)", confInd:"Source indépendante",
@@ -551,6 +570,8 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
     var cls=v?"b-vendor":(c>=0.7?"b-confirmed":"b-reported");
     var lab=v?bi("Vendor-sourced","Source éditeur"):(c>=0.7?bi("Confirmed","Confirmé"):bi("Reported","Rapporté"));
     return '<span class="badge '+cls+'" title="'+esc(e.confidence_reason)+'">'+lab+"<span>· "+pct(c)+"</span></span>"; }
+  function unnamedBadge(e){ return e.solution_named===false
+    ? '<span class="badge b-unnamed">'+bi("Unnamed agent","Agent sans nom")+"</span>" : ""; }
   function stageBadge(s){ return '<span class="badge '+(STAGECLS[s]||"b-unknown")+'">'+bi(esc(STAGE_EN[s]||s),esc(STAGE_FR[s]||s))+"</span>"; }
   function stype(ty){ return '<span class="stype'+(MKT[ty]?" mkt":"")+'">'+bi(esc(STYPE_EN[ty]||ty),esc(STYPE_FR[ty]||ty))+"</span>"; }
 
@@ -570,7 +591,7 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
   document.getElementById("foot-updated").innerHTML=updatedHtml;
 
   /* ---- filters ---- */
-  var els={ q:document.getElementById("q"), sector:document.getElementById("f-sector"), region:document.getElementById("f-region"),
+  var els={ q:document.getElementById("q"), type:document.getElementById("f-type"), sector:document.getElementById("f-sector"), region:document.getElementById("f-region"),
     country:document.getElementById("f-country"), industry:document.getElementById("f-industry"), department:document.getElementById("f-department"),
     vendor:document.getElementById("f-vendor"), stage:document.getElementById("f-stage"), confidence:document.getElementById("f-confidence"),
     sort:document.getElementById("f-sort") };
@@ -586,6 +607,10 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
       uniq(d[2]).forEach(function(v){ o+='<option value="'+esc(v)+'">'+esc(v)+"</option>"; });
       sel.innerHTML=o; sel.value=keep;
     });
+    var keepT=els.type.value;
+    els.type.innerHTML='<option value="">'+esc(t("allTypes"))+'</option><option value="named">'+esc(t("tNamed"))+
+      '</option><option value="unnamed">'+esc(t("tUnnamed"))+"</option>";
+    els.type.value=keepT;
     var keepS=els.stage.value;
     els.stage.innerHTML='<option value="">'+esc(t("allStages"))+'</option><option value="production">'+esc(t("stProd"))+
       '</option><option value="pilot">'+esc(t("stPilot"))+'</option><option value="announced">'+esc(t("stAnnounced"))+
@@ -615,6 +640,8 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
   bEn.addEventListener("click",function(){ setLang("en"); });
 
   function match(e){
+    if(els.type.value==="named" && e.solution_named===false) return false;
+    if(els.type.value==="unnamed" && e.solution_named!==false) return false;
     if(els.sector.value && e.sector!==els.sector.value) return false;
     if(els.region.value && e.region!==els.region.value) return false;
     if(els.country.value && e.company_country!==els.country.value) return false;
@@ -630,13 +657,14 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
       if(hay.indexOf(q)<0) return false; }
     return true;
   }
-  function active(){ return els.q.value || els.sector.value || els.region.value || els.country.value || els.industry.value ||
+  function active(){ return els.q.value || els.type.value || els.sector.value || els.region.value || els.country.value || els.industry.value ||
     els.department.value || els.vendor.value || els.stage.value || els.confidence.value; }
 
   /* one-click removable chips for every active filter */
   function renderChips(){
     var h="";
     if(els.q.value) h+='<button class="fchip" data-key="q" type="button">“'+esc(els.q.value)+'”<span class="x">✕</span></button>';
+    if(els.type.value) h+='<button class="fchip" data-key="type" type="button">'+bi(esc(els.type.value==="named"?"Named agents":"Unnamed agents"),esc(els.type.value==="named"?"Agents nommés":"Agents sans nom"))+'<span class="x">✕</span></button>';
     [["sector"],["region"],["country"],["industry"],["department"],["vendor"]].forEach(function(d){
       var k=d[0]; if(els[k].value) h+='<button class="fchip" data-key="'+k+'" type="button">'+esc(els[k].value)+'<span class="x">✕</span></button>';
     });
@@ -658,7 +686,7 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
       '<div class="sol">'+esc(e.solution_name)+vend+"</div></div>"+
       '<span class="chip region">'+esc(e.region)+"</span></div>"+
       '<p class="use">'+esc(e.use_case)+"</p>"+
-      '<div class="meta">'+stageBadge(e.deployment_stage)+confBadge(e)+
+      '<div class="meta">'+unnamedBadge(e)+stageBadge(e.deployment_stage)+confBadge(e)+
       '<span class="srcs">'+e.sources.length+" source"+(e.sources.length>1?"s":"")+(e.sources[0]?" · "+esc(host(e.sources[0].url)):"")+"</span></div>"+
       "</button></li>";
   }
@@ -737,7 +765,10 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
       '<p class="kicker" style="color:var(--accent)">'+esc(e.sector)+" · "+esc(e.region)+" · "+esc(e.company_country)+"</p>"+
       '<h3 class="company" id="m-company">'+esc(e.company)+"</h3>"+
       '<div class="sol">'+esc(e.solution_name)+vend+"</div>"+
-      '<div class="badges">'+stageBadge(e.deployment_stage)+confBadge(e)+"</div>"+
+      '<div class="badges">'+unnamedBadge(e)+stageBadge(e.deployment_stage)+confBadge(e)+"</div>"+
+      (e.solution_named===false?'<p style="margin:10px 0 0;background:#fdeadf;color:#b5451f;border-radius:10px;padding:8px 12px;font-size:.82rem;font-weight:700">'+
+        bi("The deployment is verified by non-marketing sources, but the agent has no public product name. The descriptor above is ours; nothing is guessed.",
+           "Le déploiement est vérifié par des sources non marketing, mais l'agent n'a pas de nom public. Le descriptif ci-dessus est le nôtre ; rien n'est deviné.")+"</p>":"")+
       "<h4>"+bi("What the agent does","Ce que fait l'agent")+"</h4><p class=\"use\">"+esc(e.use_case)+"</p>"+
       '<p class="datanote lang-fr">Fiche rédigée en anglais, au plus près des sources.</p>'+
       '<div class="facts">'+fact(bi("Sector","Secteur"),e.sector)+fact(bi("Industry","Industrie"),e.industry)+
@@ -776,7 +807,7 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
   (function(){
     var canvas=document.getElementById("globe"); if(!canvas) return;
     var wrap=canvas.parentElement, gtip=document.getElementById("gtip"), ctx=canvas.getContext("2d");
-    var COORDS={ "Argentina":[-34.6,-64], "Australia":[-25.3,133.8], "Brazil":[-10.8,-52.9], "Canada":[56.1,-106.3],
+    var COORDS={ "Antarctica":[-76,15], "Nigeria":[9.1,8.7], "Argentina":[-34.6,-64], "Australia":[-25.3,133.8], "Brazil":[-10.8,-52.9], "Canada":[56.1,-106.3],
       "China":[35,103], "Estonia":[58.7,25], "France":[46.6,2.4], "Germany":[51.1,10.4], "India":[22,79],
       "Indonesia":[-2.5,118], "Italy":[42.8,12.8], "Japan":[36.2,138.3], "Kenya":[0.2,37.9], "Malaysia":[4.2,102],
       "Mexico":[23.9,-102.5], "Netherlands":[52.2,5.3], "Saudi Arabia":[24,45], "Singapore":[1.35,103.82],
@@ -792,20 +823,36 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
     for(var j=0;j<nLand;j++){ var la=(i16[j*2]/10)*D2R, lo=(i16[j*2+1]/10)*D2R;
       land[j*3]=Math.cos(la)*Math.cos(lo); land[j*3+1]=Math.cos(la)*Math.sin(lo); land[j*3+2]=Math.sin(la); }
 
-    // markers from the store
-    var counts={}; ENTRIES.forEach(function(e){ if(e.company_country) counts[e.company_country]=(counts[e.company_country]||0)+1; });
-    var mks=Object.keys(counts).filter(function(c){return COORDS[c];}).map(function(c){
-      var la=COORDS[c][0]*D2R, lo=COORDS[c][1]*D2R;
-      return { country:c, count:counts[c], X:Math.cos(la)*Math.cos(lo), Y:Math.cos(la)*Math.sin(lo), Z:Math.sin(la),
-        sx:0, sy:0, r:0, visible:false };
-    }).sort(function(a,b){ return b.count-a.count || a.country.localeCompare(b.country); });
-    var maxCount=mks.reduce(function(m,x){return Math.max(m,x.count);},1);
+    // markers from the store: one dot per place per collection (named / unnamed).
+    // Entries deployed in Antarctica are pinned to the continent.
+    var counts={};
+    ENTRIES.forEach(function(e){
+      var place = e.region==="Antarctica" ? "Antarctica" : e.company_country;
+      if(!place || !COORDS[place]) return;
+      var c=counts[place]=counts[place]||{named:0,unnamed:0};
+      if(e.solution_named===false) c.unnamed++; else c.named++;
+    });
+    function vec(lat,lon){ var la=lat*D2R, lo=lon*D2R;
+      return {X:Math.cos(la)*Math.cos(lo), Y:Math.cos(la)*Math.sin(lo), Z:Math.sin(la)}; }
+    var maxNamed=1, maxUnnamed=1;
+    Object.keys(counts).forEach(function(pl){ maxNamed=Math.max(maxNamed,counts[pl].named); maxUnnamed=Math.max(maxUnnamed,counts[pl].unnamed); });
+    var mks=[];
+    Object.keys(counts).forEach(function(pl){
+      var c=counts[pl], base=COORDS[pl];
+      var fk = pl==="Antarctica" ? "region" : "country";
+      if(c.named>0){ var v=vec(base[0],base[1]);
+        mks.push({place:pl,filterKey:fk,kind:"named",count:c.named,X:v.X,Y:v.Y,Z:v.Z,sx:0,sy:0,r:0,visible:false}); }
+      if(c.unnamed>0){ var off=c.named>0; var v2=vec(base[0]-(off?4.5:0),base[1]+(off?7:0));
+        mks.push({place:pl,filterKey:fk,kind:"unnamed",count:c.unnamed,X:v2.X,Y:v2.Y,Z:v2.Z,sx:0,sy:0,r:0,visible:false}); }
+    });
     var nCountries=Object.keys(counts).length;
 
     var gcount=document.getElementById("gcount");
-    if(gcount) gcount.innerHTML=nCountries+bi(" countries"," pays");
-    function filterCountry(c){
-      els.country.value=c; render();
+    if(gcount) gcount.innerHTML=nCountries+bi(" places"," lieux");
+    function filterPlace(m){
+      if(m.filterKey==="region"){ els.region.value=m.place; els.country.value=""; }
+      else { els.country.value=m.place; }
+      render();
       document.getElementById("index").scrollIntoView({behavior:"smooth"});
     }
 
@@ -852,14 +899,15 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
         var T2=m.X*cosL+m.Y*sinL, dep=sinP*m.Z+cosP*T2;
         m.visible=dep>0.04; if(!m.visible) continue;
         var px=CX+(m.Y*cosL-m.X*sinL)*R, py=CY-(cosP*m.Z-sinP*T2)*R;
-        var r=3+Math.sqrt(m.count/maxCount)*11;
+        var r = m.kind==="named" ? 3+Math.sqrt(m.count/maxNamed)*11 : 3+Math.sqrt(m.count/maxUnnamed)*7;
         m.sx=px; m.sy=py; m.r=r;
+        var gc = m.kind==="named" ? "rgba(230,46,200," : "rgba(242,118,79,";
         var glow=ctx.createRadialGradient(px,py,0,px,py,r*2.4);
-        glow.addColorStop(0,"rgba(230,46,200,0.5)"); glow.addColorStop(1,"rgba(230,46,200,0)");
+        glow.addColorStop(0,gc+"0.5)"); glow.addColorStop(1,gc+"0)");
         ctx.fillStyle=glow; ctx.beginPath(); ctx.arc(px,py,r*2.4,0,Math.PI*2); ctx.fill();
         ctx.beginPath(); ctx.arc(px,py,r,0,Math.PI*2);
         ctx.fillStyle=hover===m?"#ffffff":"rgba(255,255,255,0.92)"; ctx.fill();
-        ctx.strokeStyle="rgba(230,46,200,0.9)"; ctx.lineWidth=hover===m?2.5:1.5; ctx.stroke();
+        ctx.strokeStyle=gc+"0.9)"; ctx.lineWidth=hover===m?2.5:1.5; ctx.stroke();
         if(r>=8){
           ctx.fillStyle="#241468"; ctx.font="800 "+Math.max(9,r*0.95)+"px system-ui, sans-serif";
           ctx.textAlign="center"; ctx.textBaseline="middle";
@@ -895,8 +943,11 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
       canvas.style.cursor=m?"pointer":"grab";
       if(m){
         gtip.style.opacity="1"; gtip.style.left=m.sx+"px"; gtip.style.top=(m.sy-m.r-12)+"px";
-        gtip.innerHTML="<b>"+esc(m.country)+"</b> · "+m.count+" "+
-          bi("deployment"+(m.count>1?"s":"")+", click to filter","déploiement"+(m.count>1?"s":"")+", cliquer pour filtrer");
+        var lab = m.kind==="named"
+          ? bi("named agent"+(m.count>1?"s":""),"agent"+(m.count>1?"s":"")+" nommé"+(m.count>1?"s":""))
+          : bi("unnamed agent"+(m.count>1?"s":""),"agent"+(m.count>1?"s":"")+" sans nom");
+        gtip.innerHTML="<b>"+esc(m.place)+"</b> · "+m.count+" "+lab+" "+
+          bi("· click to filter","· cliquer pour filtrer");
       } else { gtip.style.opacity="0"; }
     });
     canvas.addEventListener("pointerup",function(e){
@@ -904,7 +955,7 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
       if(movedPx<6){
         var rect=canvas.getBoundingClientRect();
         var m=pick(e.clientX-rect.left,e.clientY-rect.top);
-        if(m) filterCountry(m.country);
+        if(m) filterPlace(m);
       }
     });
     canvas.addEventListener("pointerleave",function(){ hover=null; gtip.style.opacity="0"; });

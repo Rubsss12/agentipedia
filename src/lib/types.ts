@@ -32,6 +32,8 @@ export interface Entry {
   region: string;
   sector: string;
   solution_name: string;
+  /** false = confirmed deployment whose agent has no public name (the "unnamed" collection). Absent means named. */
+  solution_named?: boolean;
   vendor: string;
   use_case: string;
   department: string;
@@ -57,6 +59,10 @@ export function isVendorSourced(entry: Entry): boolean {
 
 export function isMarketingType(t: SourceType): boolean {
   return MARKETING_TYPES.includes(t);
+}
+
+export function isUnnamed(entry: Entry): boolean {
+  return entry.solution_named === false;
 }
 
 export const SOURCE_TYPE_LABELS: Record<SourceType, string> = {

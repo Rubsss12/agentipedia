@@ -112,6 +112,42 @@ export default function MethodologyPage() {
         </p>
       </section>
 
+      <section className="mt-10 rounded-2xl border border-lavender-line bg-coral-bg/40 p-6">
+        <h2 className="text-xl font-black uppercase tracking-tight text-coral-deep">
+          <Bi en="The unnamed collection" fr="La collection sans nom" />
+        </h2>
+        <p className="mt-3 text-sm leading-relaxed text-ink-soft">
+          <Bi
+            en={
+              <>
+                Some deployments are certain, yet the agent has no public product name: a CEO
+                quantifies its impact on an earnings call, official pages describe it, the press
+                covers it. Refusing them would hide real adoption; inventing a name would break the
+                rule. So they live in a second, clearly separated collection: the entry is marked{" "}
+                <strong className="text-coral-deep">Unnamed agent</strong>, the solution field
+                carries our descriptor (never a guessed brand), and the evidence bar is stricter:
+                at least one non-marketing source (company official, earnings call, news media or
+                conference talk) is required. On the globe they appear as coral dots.
+              </>
+            }
+            fr={
+              <>
+                Certains déploiements sont certains, mais l&apos;agent n&apos;a pas de nom public :
+                un PDG chiffre son impact en résultats, les pages officielles le décrivent, la
+                presse le couvre. Les refuser cacherait une adoption réelle ; inventer un nom
+                briserait la règle. Ils vivent donc dans une seconde collection clairement
+                séparée : la fiche porte le badge{" "}
+                <strong className="text-coral-deep">Agent sans nom</strong>, le champ solution
+                contient notre descriptif (jamais une marque devinée), et la barre de preuve est
+                plus stricte : au moins une source non marketing (officiel entreprise, résultats
+                financiers, presse ou conférence) est exigée. Sur le globe, ils apparaissent en
+                points corail.
+              </>
+            }
+          />
+        </p>
+      </section>
+
       <section className="mt-10">
         <h2 className="text-xl font-black uppercase tracking-tight">
           <Bi en="The sourcing standard" fr="Le standard de sourcing" />

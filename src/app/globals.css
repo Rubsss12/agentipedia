@@ -27,6 +27,8 @@
   --color-ok: #0e7a5f; /* independently-sourced / high confidence */
   --color-warn: #a16207; /* vendor-sourced caution */
   --color-warn-bg: #fef3c7;
+  --color-coral-deep: #b5451f; /* unnamed-collection badge text */
+  --color-coral-bg: #fdeadf; /* unnamed-collection badge ground */
   --color-ok-bg: #d9f2ea;
 }
 

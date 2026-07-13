@@ -5,9 +5,25 @@ import { LAND_B64 } from "@/lib/land";
 import type { GlobeMarker } from "@/lib/geo";
 
 // Orthographic canvas globe, zero dependencies. Land is a dot-cloud; each
-// marker is a country with its deployment count. Auto-rotates when idle,
-// drag to spin, hover for a tooltip, click to filter the index by country
-// (dispatches "agentipedia:country", which Explorer listens for).
+// place carries up to two dots: magenta for named agents, coral for the
+// unnamed collection. Auto-rotates when idle, drag to spin, hover for a
+// tooltip, click to filter the index (dispatches "agentipedia:country" with
+// {key, value}, which Explorer listens for).
+const NAMED_RING = "rgba(230,46,200,0.9)";
+const NAMED_GLOW = "rgba(230,46,200,0.5)";
+const UNNAMED_RING = "rgba(242,118,79,0.95)";
+const UNNAMED_GLOW = "rgba(242,118,79,0.55)";
+
+type Dot = {
+  place: string;
+  filterKey: "country" | "region";
+  kind: "named" | "unnamed";
+  count: number;
+  X: number; Y: number; Z: number;
+  sx: number; sy: number; r: number;
+  visible: boolean;
+};
+
 export default function Globe({ markers }: { markers: GlobeMarker[] }) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -19,7 +35,7 @@ export default function Globe({ markers }: { markers: GlobeMarker[] }) {
     const tip = tipRef.current!;
     const ctx = canvas.getContext("2d")!;
 
-    // ---- decode land points into unit vectors (X=coslat·coslon, Y=coslat·sinlon, Z=sinlat)
+    // ---- decode land points into unit vectors
     const raw = atob(LAND_B64);
     const buf = new ArrayBuffer(raw.length);
     const u8 = new Uint8Array(buf);
@@ -35,35 +51,75 @@ export default function Globe({ markers }: { markers: GlobeMarker[] }) {
       land[i * 3 + 1] = Math.cos(la) * Math.sin(lo);
       land[i * 3 + 2] = Math.sin(la);
     }
-    const mks = markers.map((m) => {
-      const la = m.lat * D2R, lo = m.lon * D2R;
-      return {
-        ...m,
-        X: Math.cos(la) * Math.cos(lo),
-        Y: Math.cos(la) * Math.sin(lo),
-        Z: Math.sin(la),
-        sx: 0, sy: 0, r: 0, visible: false,
-      };
-    });
-    const maxCount = Math.max(...markers.map((m) => m.count), 1);
+
+    // ---- build dots: one per place per collection; offset the unnamed dot
+    // when the place also has named agents so both stay visible.
+    const maxNamed = Math.max(...markers.map((m) => m.named), 1);
+    const maxUnnamed = Math.max(...markers.map((m) => m.unnamed), 1);
+    const dots: Dot[] = [];
+    const toVec = (lat: number, lon: number) => {
+      const la = lat * D2R, lo = lon * D2R;
+      return { X: Math.cos(la) * Math.cos(lo), Y: Math.cos(la) * Math.sin(lo), Z: Math.sin(la) };
+    };
+    for (const m of markers) {
+      if (m.named > 0) {
+        dots.push({
+          place: m.place, filterKey: m.filterKey, kind: "named", count: m.named,
+          ...toVec(m.lat, m.lon), sx: 0, sy: 0, r: 0, visible: false,
+        });
+      }
+      if (m.unnamed > 0) {
+        const off = m.named > 0;
+        dots.push({
+          place: m.place, filterKey: m.filterKey, kind: "unnamed", count: m.unnamed,
+          ...toVec(m.lat - (off ? 4.5 : 0), m.lon + (off ? 7 : 0)), sx: 0, sy: 0, r: 0, visible: false,
+        });
+      }
+    }
 
     // ---- view state
-    let lam = -25 * D2R;   // center longitude (Atlantic view: Americas + Europe + Africa)
-    let phi = 16 * D2R;    // center latitude
-    let vLam = 0;          // drag inertia
+    let lam = -25 * D2R;
+    let phi = 16 * D2R;
+    let vLam = 0;
     let W = 0, H = 0, DPR = 1, R = 0, CX = 0, CY = 0;
     let dragging = false, lastX = 0, lastY = 0, lastInteract = 0, moved = 0;
-    let hover: (typeof mks)[number] | null = null;
+    let hover: Dot | null = null;
     let raf = 0;
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     function resize() {
       const rect = wrap.getBoundingClientRect();
       DPR = Math.min(window.devicePixelRatio || 1, 2);
-      W = rect.width; H = rect.width; // square
+      W = rect.width; H = rect.width;
       canvas.width = W * DPR; canvas.height = H * DPR;
       canvas.style.height = `${H}px`;
       R = W * 0.46; CX = W / 2; CY = H / 2;
+    }
+
+    function drawDot(d: Dot, px: number, py: number, r: number) {
+      const ring = d.kind === "named" ? NAMED_RING : UNNAMED_RING;
+      const glowC = d.kind === "named" ? NAMED_GLOW : UNNAMED_GLOW;
+      const glow = ctx.createRadialGradient(px, py, 0, px, py, r * 2.4);
+      glow.addColorStop(0, glowC);
+      glow.addColorStop(1, glowC.replace(/[\d.]+\)$/, "0)"));
+      ctx.fillStyle = glow;
+      ctx.beginPath();
+      ctx.arc(px, py, r * 2.4, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.beginPath();
+      ctx.arc(px, py, r, 0, Math.PI * 2);
+      ctx.fillStyle = hover === d ? "#ffffff" : "rgba(255,255,255,0.92)";
+      ctx.fill();
+      ctx.strokeStyle = ring;
+      ctx.lineWidth = hover === d ? 2.5 : 1.5;
+      ctx.stroke();
+      if (r >= 8) {
+        ctx.fillStyle = "#241468";
+        ctx.font = `800 ${Math.max(9, r * 0.95)}px system-ui, sans-serif`;
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillText(String(d.count), px, py + 0.5);
+      }
     }
 
     function draw(now: number) {
@@ -74,7 +130,6 @@ export default function Globe({ markers }: { markers: GlobeMarker[] }) {
       ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
       ctx.clearRect(0, 0, W, H);
 
-      // sphere ground + rim
       const g = ctx.createRadialGradient(CX - R * 0.35, CY - R * 0.4, R * 0.1, CX, CY, R * 1.05);
       g.addColorStop(0, "#2b1a72");
       g.addColorStop(0.55, "#1d1160");
@@ -83,7 +138,6 @@ export default function Globe({ markers }: { markers: GlobeMarker[] }) {
       ctx.arc(CX, CY, R, 0, Math.PI * 2);
       ctx.fillStyle = g;
       ctx.fill();
-      // magenta bloom top-right, echoing the hero
       const bloom = ctx.createRadialGradient(CX + R * 0.75, CY - R * 0.75, 0, CX + R * 0.75, CY - R * 0.75, R * 1.1);
       bloom.addColorStop(0, "rgba(230,46,200,0.28)");
       bloom.addColorStop(1, "rgba(230,46,200,0)");
@@ -99,7 +153,6 @@ export default function Globe({ markers }: { markers: GlobeMarker[] }) {
       const sinL = Math.sin(lam), cosL = Math.cos(lam);
       const sinP = Math.sin(phi), cosP = Math.cos(phi);
 
-      // land dots
       ctx.fillStyle = "rgba(185,196,255,0.8)";
       for (let i = 0; i < nLand; i++) {
         const X = land[i * 3], Y = land[i * 3 + 1], Z = land[i * 3 + 2];
@@ -108,57 +161,35 @@ export default function Globe({ markers }: { markers: GlobeMarker[] }) {
         if (depth <= 0.02) continue;
         const sx = Y * cosL - X * sinL;
         const sy = cosP * Z - sinP * T;
-        const a = 0.16 + depth * 0.5;
-        ctx.globalAlpha = a;
-        const px = CX + sx * R, py = CY - sy * R;
-        ctx.fillRect(px, py, 1.4, 1.4);
+        ctx.globalAlpha = 0.16 + depth * 0.5;
+        ctx.fillRect(CX + sx * R, CY - sy * R, 1.4, 1.4);
       }
       ctx.globalAlpha = 1;
 
-      // markers
-      for (const m of mks) {
-        const T = m.X * cosL + m.Y * sinL;
-        const depth = sinP * m.Z + cosP * T;
-        m.visible = depth > 0.04;
-        if (!m.visible) continue;
-        const sx = m.Y * cosL - m.X * sinL;
-        const sy = cosP * m.Z - sinP * T;
-        const px = CX + sx * R, py = CY - sy * R;
-        const r = 3 + Math.sqrt(m.count / maxCount) * 11;
-        m.sx = px; m.sy = py; m.r = r;
-        const glow = ctx.createRadialGradient(px, py, 0, px, py, r * 2.4);
-        glow.addColorStop(0, "rgba(230,46,200,0.5)");
-        glow.addColorStop(1, "rgba(230,46,200,0)");
-        ctx.fillStyle = glow;
-        ctx.beginPath();
-        ctx.arc(px, py, r * 2.4, 0, Math.PI * 2);
-        ctx.fill();
-        ctx.beginPath();
-        ctx.arc(px, py, r, 0, Math.PI * 2);
-        ctx.fillStyle = hover === m ? "#ffffff" : "rgba(255,255,255,0.92)";
-        ctx.fill();
-        ctx.strokeStyle = "rgba(230,46,200,0.9)";
-        ctx.lineWidth = hover === m ? 2.5 : 1.5;
-        ctx.stroke();
-        if (r >= 8) {
-          ctx.fillStyle = "#241468";
-          ctx.font = `800 ${Math.max(9, r * 0.95)}px system-ui, sans-serif`;
-          ctx.textAlign = "center";
-          ctx.textBaseline = "middle";
-          ctx.fillText(String(m.count), px, py + 0.5);
-        }
+      for (const d of dots) {
+        const T = d.X * cosL + d.Y * sinL;
+        const depth = sinP * d.Z + cosP * T;
+        d.visible = depth > 0.04;
+        if (!d.visible) continue;
+        const px = CX + (d.Y * cosL - d.X * sinL) * R;
+        const py = CY - (cosP * d.Z - sinP * T) * R;
+        const r = d.kind === "named"
+          ? 3 + Math.sqrt(d.count / maxNamed) * 11
+          : 3 + Math.sqrt(d.count / maxUnnamed) * 7;
+        d.sx = px; d.sy = py; d.r = r;
+        drawDot(d, px, py, r);
       }
 
       raf = requestAnimationFrame(draw);
     }
 
     function pick(x: number, y: number) {
-      let best: (typeof mks)[number] | null = null;
+      let best: Dot | null = null;
       let bd = 1e9;
-      for (const m of mks) {
-        if (!m.visible) continue;
-        const d = Math.hypot(m.sx - x, m.sy - y);
-        if (d < Math.max(14, m.r + 6) && d < bd) { bd = d; best = m; }
+      for (const d of dots) {
+        if (!d.visible) continue;
+        const dist = Math.hypot(d.sx - x, d.sy - y);
+        if (dist < Math.max(14, d.r + 6) && dist < bd) { bd = dist; best = d; }
       }
       return best;
     }
@@ -177,23 +208,24 @@ export default function Globe({ markers }: { markers: GlobeMarker[] }) {
         moved += Math.abs(dx) + Math.abs(dy);
         lam -= dx * k;
         vLam = -dx * k * 0.35;
-        phi += dy * k;
-        phi = Math.max(-1.25, Math.min(1.25, phi));
+        phi = Math.max(-1.35, Math.min(1.35, phi + dy * k));
         lastX = e.clientX; lastY = e.clientY; lastInteract = performance.now();
         tip.style.opacity = "0";
         return;
       }
-      const m = pick(x, y);
-      hover = m;
-      canvas.style.cursor = m ? "pointer" : "grab";
-      if (m) {
+      const d = pick(x, y);
+      hover = d;
+      canvas.style.cursor = d ? "pointer" : "grab";
+      if (d) {
         tip.style.opacity = "1";
-        tip.style.left = `${m.sx}px`;
-        tip.style.top = `${m.sy - m.r - 12}px`;
+        tip.style.left = `${d.sx}px`;
+        tip.style.top = `${d.sy - d.r - 12}px`;
+        const label = d.kind === "named"
+          ? `<span class="lang-en">named agent${d.count > 1 ? "s" : ""}</span><span class="lang-fr">agent${d.count > 1 ? "s" : ""} nommé${d.count > 1 ? "s" : ""}</span>`
+          : `<span class="lang-en">unnamed agent${d.count > 1 ? "s" : ""}</span><span class="lang-fr">agent${d.count > 1 ? "s" : ""} sans nom</span>`;
         tip.innerHTML =
-          `<b>${m.country}</b> · ${m.count} ` +
-          `<span class="lang-en">deployment${m.count > 1 ? "s" : ""}, click to filter</span>` +
-          `<span class="lang-fr">déploiement${m.count > 1 ? "s" : ""}, cliquer pour filtrer</span>`;
+          `<b>${d.place}</b> · ${d.count} ${label} ` +
+          `<span class="lang-en">· click to filter</span><span class="lang-fr">· cliquer pour filtrer</span>`;
       } else {
         tip.style.opacity = "0";
       }
@@ -203,9 +235,11 @@ export default function Globe({ markers }: { markers: GlobeMarker[] }) {
       lastInteract = performance.now();
       if (moved < 6) {
         const rect = canvas.getBoundingClientRect();
-        const m = pick(e.clientX - rect.left, e.clientY - rect.top);
-        if (m) {
-          window.dispatchEvent(new CustomEvent("agentipedia:country", { detail: m.country }));
+        const d = pick(e.clientX - rect.left, e.clientY - rect.top);
+        if (d) {
+          window.dispatchEvent(
+            new CustomEvent("agentipedia:country", { detail: { key: d.filterKey, value: d.place } }),
+          );
           document.getElementById("index")?.scrollIntoView({ behavior: "smooth" });
         }
       }

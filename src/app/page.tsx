@@ -7,7 +7,7 @@ import Marquee from "@/components/Marquee";
 import Bi from "@/components/Bi";
 import Globe from "@/components/Globe";
 import { buildMarkers } from "@/lib/geo";
-import { ConfidenceBadge } from "@/components/badges";
+import { ConfidenceBadge, UnnamedBadge } from "@/components/badges";
 
 export default function Home() {
   const entries = getEntries();
@@ -17,11 +17,8 @@ export default function Home() {
   const latest = [...entries]
     .sort((a, b) => b.first_seen_date.localeCompare(a.first_seen_date) || a.company.localeCompare(b.company))
     .slice(0, 8);
-  const countryCounts: Record<string, number> = {};
-  for (const e of entries) {
-    if (e.company_country) countryCounts[e.company_country] = (countryCounts[e.company_country] || 0) + 1;
-  }
-  const markers = buildMarkers(countryCounts);
+  const markers = buildMarkers(entries);
+  const unnamedCount = entries.filter((e) => e.solution_named === false).length;
 
   return (
     <main>
@@ -126,10 +123,20 @@ export default function Home() {
                 </p>
               </div>
               <Globe markers={markers} />
-              <p className="kicker mt-3 text-center text-white/50">
+              <div className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-[0.68rem] font-bold text-white/60">
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="h-2 w-2 rounded-full" style={{ background: "#e62ec8" }} aria-hidden />
+                  <Bi en="Named agents" fr="Agents nommés" />
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="h-2 w-2 rounded-full" style={{ background: "#f2764f" }} aria-hidden />
+                  <Bi en={`Unnamed (${unnamedCount})`} fr={`Sans nom (${unnamedCount})`} />
+                </span>
+              </div>
+              <p className="kicker mt-2 text-center text-white/50">
                 <Bi
-                  en="Drag to spin · click a country to filter"
-                  fr="Faites tourner · cliquez un pays pour filtrer"
+                  en="Drag to spin · click a dot to filter"
+                  fr="Faites tourner · cliquez un point pour filtrer"
                 />
               </p>
             </div>
@@ -231,7 +238,8 @@ export default function Home() {
               <p className="kicker text-muted">{formatDate(e.first_seen_date)}</p>
               <p className="mt-2 text-base font-extrabold leading-snug">{e.company}</p>
               <p className="mt-0.5 truncate text-sm font-bold text-mauve">{e.solution_name}</p>
-              <div className="mt-3">
+              <div className="mt-3 flex flex-wrap gap-2">
+                {e.solution_named === false && <UnnamedBadge />}
                 <ConfidenceBadge entry={e} />
               </div>
             </Link>

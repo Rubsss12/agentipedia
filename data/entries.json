@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-13T08:17:41.897Z",
+  "updated_at": "2026-07-13T12:32:33.349Z",
   "entries": [
     {
       "id": "1-800accountant--agentforce",
@@ -2544,6 +2544,473 @@
       "confidence": 0.75,
       "confidence_reason": "Official launch release confirmed by independent tech media (The Elec, Pickool). The service is live inside LINE and Yahoo! JAPAN; usage metrics are not yet reported. Rejected in the 2026-07-11 run as unverifiable: now verified after launch coverage.",
       "id": "ly-corporation--agent-i"
+    },
+    {
+      "company": "MTN Nigeria",
+      "company_country": "Nigeria",
+      "region": "Africa",
+      "sector": "Telecommunications",
+      "solution_name": "Zigi",
+      "vendor": "Microsoft / OpenAI (ChatGPT)",
+      "use_case": "Runs customer care for MTN Nigeria as a ChatGPT-powered assistant across WhatsApp, Telegram, Facebook Messenger and the myMTN app: airtime purchases, data bundle subscriptions and 24/7 support.",
+      "department": "Customer service",
+      "industry": "Telecommunications",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://www.mtn.ng/helppersonal/chatbot-zigi/",
+          "title": "Zigi Chatbot",
+          "publisher": "MTN Nigeria",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.zawya.com/en/world/africa/mtn-nigeria-unveils-africas-first-ai-powered-chatbot-f7umzwn7",
+          "title": "MTN Nigeria unveils Africa's first AI-powered Chatbot",
+          "publisher": "Zawya",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Official MTN Nigeria product page plus independent regional press. Rejected in the bootstrap run for lacking a named solution; the name (Zigi) is now verified. No usage metrics reported.",
+      "id": "mtn-nigeria--zigi"
+    },
+    {
+      "company": "Standard Chartered",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Financial Services",
+      "solution_name": "SC GPT",
+      "vendor": "In-house (Standard Chartered)",
+      "use_case": "Group-wide generative AI workbench used by employees for tasks from risk analysis to engineering support, deployed across the bank's markets alongside a broader safety-first AI governance push.",
+      "department": "Company-wide",
+      "industry": "Banking",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Markets where SC GPT is deployed",
+          "value": "41",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Employees with access",
+          "value": "≈80,000",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://www.sc.com/en/about/innovation/artificial-intelligence/",
+          "title": "Artificial Intelligence | Standard Chartered",
+          "publisher": "Standard Chartered",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://thedigitalbanker.com/standard-chartereds-ai-journey-accelerates-with-research-safety-first-integration-and-governance/",
+          "title": "Standard Chartered's AI journey accelerates with research, safety-first integration and governance",
+          "publisher": "The Digital Banker",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.computerweekly.com/news/366641549/In-the-AI-race-a-global-bank-bets-on-the-human-touch",
+          "title": "In the AI race, a global bank bets on the human touch",
+          "publisher": "Computer Weekly",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Official company AI page plus two independent publications covering the deployment and its scale (41 markets, ~80,000 employees).",
+      "id": "standard-chartered--sc-gpt"
+    },
+    {
+      "company": "Absa",
+      "company_country": "South Africa",
+      "region": "Africa",
+      "sector": "Financial Services",
+      "solution_name": "Abby",
+      "vendor": "Salesforce (Agentforce)",
+      "use_case": "Customer-facing agentic AI assistant on the Absa Banking App, website and business banking portal: contextual conversations about loans, investments and cross-border payments in all 11 official South African languages.",
+      "department": "Customer service",
+      "industry": "Banking",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://www.absa.africa/our-stories/our-voices/2026/sa-banks-are-already-using-agentic-ai-heres-why-it-matters-for-customers/",
+          "title": "SA Banks Are Already Using Agentic AI. Here's Why It Matters for Customers",
+          "publisher": "Absa Group",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://iafrica.com/absa-becomes-first-african-bank-to-launch-agentic-ai-for-customers/",
+          "title": "Absa Becomes First African Bank To Launch Agentic AI For Customers",
+          "publisher": "iAfrica",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.itnewsafrica.com/2026/03/absa-on-next-generation-ai-in-banking/",
+          "title": "Absa on Next-Generation AI in Banking",
+          "publisher": "IT News Africa",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Official Absa channel plus independent African tech press; described as the first customer-facing agentic AI at an African bank. No quantified outcomes yet.",
+      "id": "absa--abby"
+    },
+    {
+      "company": "Woolworths",
+      "company_country": "Australia",
+      "region": "Oceania",
+      "sector": "Retail & E-commerce",
+      "solution_name": "Olive",
+      "vendor": "In-house (agentic upgrade on Google Gemini)",
+      "use_case": "Customer-service chatbot handling thousands of daily interactions for the grocery chain, in service for seven years and being upgraded with agentic capabilities on Google Cloud's Gemini.",
+      "department": "Customer service",
+      "industry": "Grocery retail",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://www.itnews.com.au/news/woolworths-to-incorporate-agentic-ai-into-its-olive-chatbot-622907",
+          "title": "Woolworths to incorporate agentic AI into its Olive chatbot",
+          "publisher": "iTnews",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.grocerytradenews.com/retail-technology-in-australia-2025/",
+          "title": "Retail Technology in Australia 2025: Inside Woolworths & Coles",
+          "publisher": "Grocery Trade News",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Independent trade press documents seven years of production service and the agentic upgrade; volume figures are qualitative (thousands of daily interactions), so none are recorded as metrics.",
+      "id": "woolworths--olive"
+    },
+    {
+      "company": "Petrobras",
+      "company_country": "Brazil",
+      "region": "Latin America",
+      "sector": "Energy & Utilities",
+      "solution_name": "ChatPetrobras",
+      "vendor": "Microsoft (Azure OpenAI Service)",
+      "use_case": "Generative AI workbench on Azure OpenAI supporting more than 100,000 workers across exploration and production, reservoirs and wells, and administrative functions.",
+      "department": "Company-wide",
+      "industry": "Oil & gas",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Workers supported",
+          "value": "100,000+",
+          "source_type": "company_official"
+        }
+      ],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://agencia.petrobras.com.br/w/petrobras-cria-ferramenta-com-inteligencia-artificial-generativa-para-apoiar-mais-de-100-mil-trabalhadores",
+          "title": "Petrobras cria ferramenta com Inteligência Artificial Generativa para apoiar mais de 100 mil trabalhadores",
+          "publisher": "Agência Petrobras",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.65,
+      "confidence_reason": "Official company newsroom only; no independent coverage retrieved in this run, so confidence stays moderate despite the scale claim.",
+      "id": "petrobras--chatpetrobras"
+    },
+    {
+      "company": "Verizon",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Telecommunications",
+      "solution_name": "Unnamed rep-assist AI (on Google Gemini)",
+      "solution_named": false,
+      "vendor": "Google (Gemini)",
+      "use_case": "On-screen assistant for Verizon's 28,000 customer service representatives, built by feeding about 15,000 internal documents into Google's Gemini models: finds answers faster, cuts call times and frees reps to sell. Deployed from July 2024 and fully scaled by January 2025.",
+      "department": "Customer service",
+      "industry": "Telecommunications",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Sales through the 28,000-person service team since deployment",
+          "value": "+≈40%",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://www.investing.com/news/stock-market-news/verizon-says-google-ai-for-customer-service-agents-has-led-to-sales-jump-3976363",
+          "title": "Verizon says Google AI for customer service agents has led to sales jump (Reuters)",
+          "publisher": "Reuters via Investing.com",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.lightreading.com/ai-machine-learning/verizon-emerges-as-google-cloud-s-latest-ai-trophy",
+          "title": "Verizon emerges as Google Cloud's latest AI trophy",
+          "publisher": "Light Reading",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Reuters reporting plus independent trade press confirm the deployment, scale and sales impact; Verizon has not published a product name for the assistant.",
+      "id": "verizon--unnamed-rep-assist-ai-on-google-gemini"
+    },
+    {
+      "company": "Qantas",
+      "company_country": "Australia",
+      "region": "Oceania",
+      "sector": "Travel & Transportation",
+      "solution_name": "Unnamed AI operations suite",
+      "solution_named": false,
+      "vendor": "",
+      "use_case": "AI tools embedded in daily operational planning: flight routing, predictive maintenance, crew and aircraft allocation and turnaround scheduling. CEO Vanessa Hudson publicly credits them for measurable punctuality and fuel gains, without naming the systems.",
+      "department": "Operations",
+      "industry": "Airline",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "On-time performance attributed to AI (CEO)",
+          "value": "+3-4 points",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Fuel savings per sector from AI routing (CEO)",
+          "value": "1-2%",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://australianaviation.com.au/2026/01/qantas-to-embrace-ai-in-2026-says-hudson/",
+          "title": "Qantas to embrace AI in 2026, says Hudson",
+          "publisher": "Australian Aviation",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.eplaneai.com/news/qantas-chief-defends-airlines-use-of-ai-beyond-staffing",
+          "title": "Qantas Chief Defends Airline's Use of AI Beyond Staffing",
+          "publisher": "ePlane AI News",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "CEO statements reported by independent aviation press with specific outcome figures; the underlying systems have no public product name.",
+      "id": "qantas--unnamed-ai-operations-suite"
+    },
+    {
+      "company": "SNCF",
+      "company_country": "France",
+      "region": "Europe",
+      "sector": "Travel & Transportation",
+      "solution_name": "Unnamed predictive-maintenance AI",
+      "solution_named": false,
+      "vendor": "",
+      "use_case": "AI models layered onto thousands of sensors per train to anticipate breakdowns across a network carrying 5 million passengers a day, extended to the new TGV M generation, part of the group's publicly stated 'zero breakdowns by 2034' goal.",
+      "department": "Maintenance & engineering",
+      "industry": "Rail",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://www.groupe-sncf.com/fr/innovation/digitalisation/maintenance-predictive",
+          "title": "Leaders de la maintenance prédictive",
+          "publisher": "Groupe SNCF",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.europe1.fr/societe/fini-les-pannes-de-train-la-sncf-mise-sur-lintelligence-artificielle-pour-y-arriver-4267030",
+          "title": "Fini les pannes de train ? La SNCF mise sur l'intelligence artificielle pour y arriver",
+          "publisher": "Europe 1",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Official group page plus national press confirm AI-based predictive maintenance in production; the models carry no public product name and no audited metrics were retrieved.",
+      "id": "sncf--unnamed-predictive-maintenance-ai"
+    },
+    {
+      "company": "Seven-Eleven Japan",
+      "company_country": "Japan",
+      "region": "East Asia",
+      "sector": "Retail & E-commerce",
+      "solution_name": "Unnamed AI ordering system",
+      "solution_named": false,
+      "vendor": "",
+      "use_case": "AI-assisted ordering and demand forecasting across roughly 21,000 stores nationwide: store managers adjust orders on tablets using real-time signals such as weather, local events and point-of-sale trends, on top of a cloud-based store system overhaul.",
+      "department": "Merchandising & supply chain",
+      "industry": "Convenience retail",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Product-planning meetings",
+          "value": "-80%",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Sales of AI-assisted product lines vs traditional",
+          "value": "+ over a third",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://www.pymnts.com/news/retail/2026/7-eleven-japan-wrote-blueprint-retail-ai-era/",
+          "title": "7-Eleven Japan Wrote the Blueprint for Retail's AI Era",
+          "publisher": "PYMNTS",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.newsonjapan.com/article/146940.php",
+          "title": "Seven-Eleven Completes Major Store System Overhaul After Five Years",
+          "publisher": "News On Japan",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Two independent publications document the nationwide AI ordering deployment and outcomes; the system itself has no public product name.",
+      "id": "seven-eleven-japan--unnamed-ai-ordering-system"
+    },
+    {
+      "company": "Absa",
+      "company_country": "South Africa",
+      "region": "Africa",
+      "sector": "Financial Services",
+      "solution_name": "Unnamed internal agent pilots",
+      "solution_named": false,
+      "vendor": "",
+      "use_case": "Three autonomous AI agents in internal testing at the bank alongside the customer-facing Abby: the first is a co-pilot supporting relationship managers; the others are undisclosed.",
+      "department": "Internal operations",
+      "industry": "Banking",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://iafrica.com/absa-becomes-first-african-bank-to-launch-agentic-ai-for-customers/",
+          "title": "Absa Becomes First African Bank To Launch Agentic AI For Customers",
+          "publisher": "iAfrica",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.absa.africa/our-stories/our-voices/2026/sa-banks-are-already-using-agentic-ai-heres-why-it-matters-for-customers/",
+          "title": "SA Banks Are Already Using Agentic AI. Here's Why It Matters for Customers",
+          "publisher": "Absa Group",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.6,
+      "confidence_reason": "News and official channel confirm three internal agents in testing, but names, scope and results are undisclosed; recorded as an unnamed pilot.",
+      "id": "absa--unnamed-internal-agent-pilots"
+    },
+    {
+      "company": "British Antarctic Survey",
+      "company_country": "United Kingdom",
+      "region": "Antarctica",
+      "sector": "Public Sector & Education",
+      "solution_name": "Unnamed seafloor-imagery detection AI",
+      "solution_named": false,
+      "vendor": "",
+      "use_case": "AI developed by the BAS AI Lab and used in Antarctic science operations to detect animals in seafloor photographs and video, part of a wider embedding of AI across oceanography, iceberg tracking and station monitoring.",
+      "department": "Science operations",
+      "industry": "Polar research",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Seafloor image analysis time",
+          "value": "hours to seconds per image",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://www.bas.ac.uk/team/science-teams/ai-lab/",
+          "title": "Artificial Intelligence Lab",
+          "publisher": "British Antarctic Survey",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://phys.org/news/2025-10-artificial-intelligence-supercharges-science-antarctic.html",
+          "title": "Artificial intelligence supercharges science on the Antarctic seafloor",
+          "publisher": "Phys.org",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.bas.ac.uk/news/artificial-intelligence-supercharges-science-on-the-antarctic-seafloor/",
+          "title": "Artificial Intelligence supercharges science on the Antarctic seafloor",
+          "publisher": "British Antarctic Survey",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Official BAS pages plus independent science press document the tool in active Antarctic use; it has no public product name. Region recorded as Antarctica (deployment location); the organization is UK-based.",
+      "id": "british-antarctic-survey--unnamed-seafloor-imagery-detection-ai"
+    },
+    {
+      "company": "Petrobras",
+      "company_country": "Brazil",
+      "region": "Latin America",
+      "sector": "Energy & Utilities",
+      "solution_name": "Unnamed reservoir-modeling AI",
+      "solution_named": false,
+      "vendor": "",
+      "use_case": "AI applied to oil reservoir modeling in exploration and production workflows, reported to cut one modeling stage by 80 percent as part of the company's AI-accelerated reservoir programs.",
+      "department": "Exploration & production",
+      "industry": "Oil & gas",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Reservoir modeling stage duration",
+          "value": "-80%",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://en.clickpetroleoegas.com.br/petrobras-usa-inteligencia-artificial-e-reduz-em-80-etapa-da-modelagem-de-reservatorios-de-petroleo/",
+          "title": "Petrobras uses Artificial Intelligence to reduce oil reservoir modeling by 80%",
+          "publisher": "Click Petróleo e Gás",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.6,
+      "confidence_reason": "Single independent trade publication; the modeling AI has no public product name. Kept at moderate confidence pending further coverage.",
+      "id": "petrobras--unnamed-reservoir-modeling-ai"
     }
   ]
 }

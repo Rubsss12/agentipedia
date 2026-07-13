@@ -1,6 +1,9 @@
 // Country centroid coordinates [lat, lon] for the deployment globe.
 // Geography constants only; deployment data always comes from the store.
+import type { Entry } from "@/lib/types";
+
 export const COUNTRY_COORDS: Record<string, [number, number]> = {
+  Antarctica: [-76.0, 15.0],
   Argentina: [-34.6, -64.0],
   Australia: [-25.3, 133.8],
   Brazil: [-10.8, -52.9],
@@ -17,6 +20,7 @@ export const COUNTRY_COORDS: Record<string, [number, number]> = {
   Malaysia: [4.2, 102.0],
   Mexico: [23.9, -102.5],
   Netherlands: [52.2, 5.3],
+  Nigeria: [9.1, 8.7],
   "Saudi Arabia": [24.0, 45.0],
   Singapore: [1.35, 103.82],
   "South Africa": [-29.0, 25.0],
@@ -29,14 +33,41 @@ export const COUNTRY_COORDS: Record<string, [number, number]> = {
   "United States": [39.8, -98.6],
 };
 
-export type GlobeMarker = { country: string; count: number; lat: number; lon: number };
+export type GlobeMarker = {
+  /** Country name, or "Antarctica" for entries deployed there. */
+  place: string;
+  /** Filter to apply when clicked: country for real countries, region for Antarctica. */
+  filterKey: "country" | "region";
+  named: number;
+  unnamed: number;
+  lat: number;
+  lon: number;
+};
 
-export function buildMarkers(countryCounts: Record<string, number>): GlobeMarker[] {
-  return Object.entries(countryCounts)
-    .filter(([country]) => COUNTRY_COORDS[country])
-    .map(([country, count]) => {
-      const [lat, lon] = COUNTRY_COORDS[country];
-      return { country, count, lat, lon };
+// One marker per place, with named/unnamed counts. Entries whose region is
+// Antarctica are pinned to the continent (the deployment location) instead of
+// the operating organization's home country.
+export function buildMarkers(entries: Entry[]): GlobeMarker[] {
+  const acc = new Map<string, { named: number; unnamed: number }>();
+  for (const e of entries) {
+    const place = e.region === "Antarctica" ? "Antarctica" : e.company_country;
+    if (!place || !COUNTRY_COORDS[place]) continue;
+    const slot = acc.get(place) ?? { named: 0, unnamed: 0 };
+    if (e.solution_named === false) slot.unnamed += 1;
+    else slot.named += 1;
+    acc.set(place, slot);
+  }
+  return [...acc.entries()]
+    .map(([place, c]) => {
+      const [lat, lon] = COUNTRY_COORDS[place];
+      return {
+        place,
+        filterKey: (place === "Antarctica" ? "region" : "country") as "country" | "region",
+        named: c.named,
+        unnamed: c.unnamed,
+        lat,
+        lon,
+      };
     })
-    .sort((a, b) => b.count - a.count || a.country.localeCompare(b.country));
+    .sort((a, b) => b.named + b.unnamed - (a.named + a.unnamed) || a.place.localeCompare(b.place));
 }
