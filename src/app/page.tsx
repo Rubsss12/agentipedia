@@ -123,7 +123,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== The shelves ===== */}
+      {/* ===== The shelves (compact) ===== */}
       <section id="sectors" className="mx-auto max-w-6xl scroll-mt-20 px-6 pt-14">
         <div className="flex flex-wrap items-baseline justify-between gap-3" data-reveal>
           <div>
@@ -141,30 +141,49 @@ export default function Home() {
             />
           </p>
         </div>
-        <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-6 grid gap-2.5 sm:grid-cols-2 lg:grid-cols-4">
           {sectors.map((s, i) => (
-            <li key={s.slug} data-reveal style={{ "--reveal-delay": `${(i % 6) * 60}ms` } as React.CSSProperties}>
+            <li key={s.slug} data-reveal style={{ "--reveal-delay": `${(i % 8) * 40}ms` } as React.CSSProperties}>
               <Link
                 href={`/sector/${s.slug}`}
-                className="group flex h-full flex-col rounded-2xl border border-lavender-line bg-lilac-soft p-5 transition-all hover:-translate-y-0.5 hover:border-mauve hover:shadow-[0_10px_30px_-12px_rgb(107_43_217/0.35)]"
+                className="group flex h-full items-center gap-3 rounded-xl border border-lavender-line bg-lilac-soft px-3.5 py-2.5 transition-all hover:-translate-y-0.5 hover:border-mauve hover:shadow-[0_10px_30px_-14px_rgb(107_43_217/0.4)]"
               >
-                <div className="flex items-baseline justify-between gap-3">
-                  <p className="text-[1.05rem] font-extrabold leading-snug">{s.name}</p>
-                  <span className="text-2xl font-black text-mauve">{s.entries}</span>
-                </div>
-                <p className="mt-2 flex-1 text-xs leading-relaxed text-muted">
-                  {s.companies.join(" · ")}
-                  {s.entries > s.companies.length ? " …" : ""}
-                </p>
-                <p className="kicker mt-3 text-muted">
-                  {s.countries}{" "}
-                  {s.countries > 1 ? <Bi en="countries" fr="pays" /> : <Bi en="country" fr="pays" />} ·{" "}
-                  {s.production} <Bi en="in production" fr="en production" />
-                </p>
+                <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-mauve/10 text-sm font-black text-mauve">
+                  {s.entries}
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-[0.82rem] font-extrabold leading-tight">{s.name}</span>
+                  <span className="mt-0.5 block truncate text-[0.7rem] text-muted">
+                    {s.countries}{" "}
+                    {s.countries > 1 ? <Bi en="countries" fr="pays" /> : <Bi en="country" fr="pays" />} ·{" "}
+                    {s.production} <Bi en="in prod." fr="en prod." />
+                  </span>
+                </span>
               </Link>
             </li>
           ))}
         </ul>
+      </section>
+
+      {/* ===== Index (filters + everything), right after the shelves ===== */}
+      <section id="index" className="mx-auto max-w-6xl scroll-mt-20 px-6 pt-14">
+        <div className="flex flex-wrap items-baseline justify-between gap-3" data-reveal>
+          <div>
+            <p className="kicker text-mauve">
+              <Bi en="Deployment index" fr="Index des déploiements" />
+            </p>
+            <h2 className="mt-2 text-3xl font-black uppercase tracking-tight">
+              <Bi en="Who runs what, where" fr="Qui déploie quoi, où" />
+            </h2>
+          </div>
+          <p className="max-w-md text-sm text-muted">
+            <Bi
+              en="Search companies, solutions and vendors, or narrow by sector, geography, industry, department, stage and confidence."
+              fr="Cherchez entreprises, solutions et éditeurs, ou filtrez par secteur, géographie, industrie, département, stade et confiance."
+            />
+          </p>
+        </div>
+        <Explorer entries={entries} />
       </section>
 
       {/* ===== The world map ===== */}
@@ -238,27 +257,6 @@ export default function Home() {
             </Link>
           ))}
         </div>
-      </section>
-
-      {/* ===== Index ===== */}
-      <section id="index" className="mx-auto max-w-6xl scroll-mt-20 px-6 pt-16">
-        <div className="flex flex-wrap items-baseline justify-between gap-3" data-reveal>
-          <div>
-            <p className="kicker text-mauve">
-              <Bi en="Deployment index" fr="Index des déploiements" />
-            </p>
-            <h2 className="mt-2 text-3xl font-black uppercase tracking-tight">
-              <Bi en="Who runs what, where" fr="Qui déploie quoi, où" />
-            </h2>
-          </div>
-          <p className="max-w-md text-sm text-muted">
-            <Bi
-              en="Search companies, solutions and vendors, or narrow by sector, geography, industry, department, stage and confidence."
-              fr="Cherchez entreprises, solutions et éditeurs, ou filtrez par secteur, géographie, industrie, département, stade et confiance."
-            />
-          </p>
-        </div>
-        <Explorer entries={entries} />
       </section>
     </main>
   );
