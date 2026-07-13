@@ -235,14 +235,26 @@
 
   /* footer */
   footer.site { margin-top:60px; background:var(--hero-bg); color:#fff; }
-  footer .wrap { padding:44px 24px; display:grid; gap:26px; grid-template-columns:1.4fr 1fr; }
-  @media (max-width:720px){ footer .wrap { grid-template-columns:1fr; } }
+  footer .wrap { padding:40px 24px 44px; }
+  footer .brandrow { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:20px;
+    padding-bottom:26px; border-bottom:1px solid rgba(255,255,255,.1); }
+  footer .hubside { display:flex; align-items:center; gap:10px; text-decoration:none; opacity:.9; }
+  footer .hubside:hover { opacity:1; }
+  footer .hubside .mark { width:32px; height:32px; border-radius:9px; font-size:.58rem; }
+  footer .hubside .t1 { display:block; font-size:.88rem; font-weight:800; letter-spacing:.03em; color:#fff; }
+  footer .hubside .t2 { display:block; font-size:.62rem; color:rgba(255,255,255,.6); }
+  footer .cols { display:grid; gap:26px; grid-template-columns:1.3fr 1fr 1fr; padding-top:26px; }
+  @media (max-width:720px){ footer .cols { grid-template-columns:1fr; } }
+  footer .cols .kicker { color:var(--accent-glow); }
+  footer .cols p, footer .cols ul { margin-top:10px; }
   footer .name { font-weight:800; text-transform:uppercase; letter-spacing:.06em; font-size:1.1rem; }
   footer .name b { color:var(--accent-glow); }
   footer p, footer li { color:rgba(255,255,255,.72); font-size:.88rem; }
   footer ul { list-style:none; margin:8px 0 0; padding:0; display:grid; gap:6px; }
   footer .bar { border-top:1px solid rgba(255,255,255,.12); }
-  footer .bar p { padding:16px 24px; margin:0 auto; max-width:1120px; font-size:.76rem; color:rgba(255,255,255,.5); }
+  footer .bar .barin { display:flex; align-items:center; gap:12px; padding:16px 24px; margin:0 auto; max-width:1120px; }
+  footer .bar .mark { width:24px; height:24px; border-radius:6px; font-size:.42rem; flex:none; }
+  footer .bar p { margin:0; font-size:.76rem; color:rgba(255,255,255,.5); }
 
   /* modal */
   .overlay { position:fixed; inset:0; z-index:50; display:none; align-items:flex-start; justify-content:center;
@@ -485,23 +497,43 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
 
 <footer class="site">
   <div class="wrap">
-    <div>
+    <div class="brandrow">
       <a class="brand" style="pointer-events:none">
         <span class="mark">HUB</span>
         <span class="stack"><span class="name">Agentipedia</span><span class="byline">by HUB Institute</span></span>
       </a>
-      <p><span class="lang-en">The AI observatory of the HUB Institute think tank: from AI promise to business proof. Real companies, named solutions, verified sources, worldwide.</span><span class="lang-fr">L'observatoire IA du think tank HUB Institute : de la promesse de l'IA à la preuve business. Entreprises réelles, solutions nommées, sources vérifiées, dans le monde entier.</span></p>
+      <a class="hubside" href="https://www.hubinstitute.com" target="_blank" rel="noopener noreferrer">
+        <span class="mark" style="display:grid;place-items:center;color:#fff;font-weight:900;background:linear-gradient(135deg,#2439e0 0%,#6b2bd9 55%,#c62ecf 100%)">HUB</span>
+        <span><span class="t1">HUB Institute</span><span class="t2">Insights &amp; Experiences · Paris</span></span>
+      </a>
     </div>
-    <div>
-      <p class="kicker" style="color:var(--accent-glow)"><span class="lang-en">Status</span><span class="lang-fr">État</span></p>
-      <ul>
-        <li><span id="foot-entries">0</span> <span class="lang-en">verified deployments</span><span class="lang-fr">déploiements vérifiés</span></li>
-        <li><span id="foot-countries">0</span> <span class="lang-en">countries</span><span class="lang-fr">pays</span> · <span id="foot-regions">0</span> <span class="lang-en">regions</span><span class="lang-fr">régions</span></li>
-        <li id="foot-updated"></li>
-      </ul>
+    <div class="cols">
+      <div>
+        <p class="kicker"><span class="lang-en">About</span><span class="lang-fr">À propos</span></p>
+        <p><span class="lang-en">The AI observatory of the HUB Institute think tank: from AI promise to business proof. Real companies, named solutions, verified sources, worldwide.</span><span class="lang-fr">L'observatoire IA du think tank HUB Institute : de la promesse de l'IA à la preuve business. Entreprises réelles, solutions nommées, sources vérifiées, dans le monde entier.</span></p>
+      </div>
+      <div>
+        <p class="kicker"><span class="lang-en">Explore</span><span class="lang-fr">Explorer</span></p>
+        <ul>
+          <li><a href="#sectors" style="text-decoration:none"><span class="lang-en">Sector shelves</span><span class="lang-fr">Rayons sectoriels</span></a></li>
+          <li><a href="#index" style="text-decoration:none"><span class="lang-en">Deployment index</span><span class="lang-fr">Index des déploiements</span></a></li>
+          <li><a href="#methodology" style="text-decoration:none"><span class="lang-en">Methodology</span><span class="lang-fr">Méthodologie</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="kicker"><span class="lang-en">Status</span><span class="lang-fr">État</span></p>
+        <ul>
+          <li><span id="foot-entries">0</span> <span class="lang-en">verified deployments</span><span class="lang-fr">déploiements vérifiés</span></li>
+          <li><span id="foot-countries">0</span> <span class="lang-en">countries</span><span class="lang-fr">pays</span> · <span id="foot-regions">0</span> <span class="lang-en">regions</span><span class="lang-fr">régions</span></li>
+          <li id="foot-updated"></li>
+        </ul>
+      </div>
     </div>
   </div>
-  <div class="bar"><p><span class="lang-en">Agentipedia · Insights &amp; Experiences · by HUB Institute, Paris. Updated autonomously by the curation engine. Entries that cannot name both the company and the exact solution are rejected, and every rejection is logged.</span><span class="lang-fr">Agentipedia · Insights &amp; Experiences · par HUB Institute, Paris. Mis à jour de façon autonome par le moteur de curation. Toute fiche qui ne nomme pas à la fois l'entreprise et la solution exacte est rejetée, et chaque rejet est journalisé.</span></p></div>
+  <div class="bar"><div class="barin">
+    <span class="mark" aria-hidden="true" style="display:grid;place-items:center;color:#fff;font-weight:900;background:linear-gradient(135deg,#2439e0 0%,#6b2bd9 55%,#c62ecf 100%)">HUB</span>
+    <p><span class="lang-en">Agentipedia · Insights &amp; Experiences · by HUB Institute, Paris. Updated autonomously by the curation engine. Entries that cannot name both the company and the exact solution are rejected, and every rejection is logged.</span><span class="lang-fr">Agentipedia · Insights &amp; Experiences · par HUB Institute, Paris. Mis à jour de façon autonome par le moteur de curation. Toute fiche qui ne nomme pas à la fois l'entreprise et la solution exacte est rejetée, et chaque rejet est journalisé.</span></p>
+  </div></div>
 </footer>
 
 <button class="totop" id="totop" aria-label="Back to top / Retour en haut" type="button">↑</button>
