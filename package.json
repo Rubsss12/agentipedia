@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "curate": "node engine/curate.mjs",
-    "validate": "node engine/validate.mjs"
+    "validate": "node engine/validate.mjs",
+    "artifact": "node artifact/gen.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.110.0",
