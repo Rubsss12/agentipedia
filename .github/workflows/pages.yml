@@ -5,8 +5,12 @@
 name: pages
 
 on:
-  push:
-    branches: [main]
+  # GitHub Pages was unpublished by the owner, so auto-deploy on push is
+  # disabled to avoid failing runs. To publish the github.io mirror again,
+  # re-enable Pages (Settings -> Pages -> Source: GitHub Actions) and
+  # uncomment the push trigger below.
+  # push:
+  #   branches: [main]
   workflow_dispatch:
 
 permissions:
