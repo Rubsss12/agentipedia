@@ -44,6 +44,9 @@ jobs:
       - name: Run curation engine (live web search)
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Optional: set a repository variable AGENTIPEDIA_MODEL to override the
+          # model (e.g. if your key does not have access to the default).
+          AGENTIPEDIA_MODEL: ${{ vars.AGENTIPEDIA_MODEL || 'claude-opus-4-8' }}
         run: node engine/curate.mjs --queries "${{ github.event.inputs.queries || '10' }}"
 
       - name: Validate store against the rule
