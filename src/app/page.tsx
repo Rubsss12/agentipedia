@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <main>
-      {/* ===== Hero — HUBFORUM living gradient ===== */}
+      {/* ===== Hero · HUBFORUM living gradient ===== */}
       <section className="relative overflow-hidden bg-mauve-night text-white">
         <div className="hero-glow absolute inset-0" aria-hidden />
         <div className="hero-grid absolute inset-0" aria-hidden />
@@ -55,8 +55,8 @@ export default function Home() {
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/75 md:text-lg">
             <Bi
-              en="From AI promise to business proof: Agentipedia catalogs the deployments that actually run — real companies, named solutions, shelved by sector for decision-makers. Every entry links the sources that prove it. No source, no entry."
-              fr="De la promesse de l'IA à la preuve business : Agentipedia recense les déploiements qui tournent vraiment — entreprises réelles, solutions nommées, classés par secteur pour les décideurs. Chaque fiche cite les sources qui la prouvent. Pas de source, pas de fiche."
+              en="From AI promise to business proof: Agentipedia catalogs the deployments that actually run: real companies, named solutions, shelved by sector for decision-makers. Every entry links the sources that prove it. No source, no entry."
+              fr="De la promesse de l'IA à la preuve business : Agentipedia recense les déploiements qui tournent vraiment : entreprises réelles, solutions nommées, classés par secteur pour les décideurs. Chaque fiche cite les sources qui la prouvent. Pas de source, pas de fiche."
             />
           </p>
 

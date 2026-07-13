@@ -192,8 +192,8 @@ export default function Globe({ markers }: { markers: GlobeMarker[] }) {
         tip.style.top = `${m.sy - m.r - 12}px`;
         tip.innerHTML =
           `<b>${m.country}</b> · ${m.count} ` +
-          `<span class="lang-en">deployment${m.count > 1 ? "s" : ""} — click to filter</span>` +
-          `<span class="lang-fr">déploiement${m.count > 1 ? "s" : ""} — cliquer pour filtrer</span>`;
+          `<span class="lang-en">deployment${m.count > 1 ? "s" : ""}, click to filter</span>` +
+          `<span class="lang-fr">déploiement${m.count > 1 ? "s" : ""}, cliquer pour filtrer</span>`;
       } else {
         tip.style.opacity = "0";
       }

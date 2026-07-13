@@ -93,7 +93,7 @@ export function generateQueries(dateStr, n = 10) {
   const queries = [];
   const pick = (arr, i) => arr[(seed + i * 7) % arr.length];
 
-  // 1) Region-led queries — walk regions starting at a date-dependent offset.
+  // 1) Region-led queries, walk regions starting at a date-dependent offset.
   for (let i = 0; queries.length < Math.ceil(n * 0.5); i++) {
     const region = REGIONS[(seed + i) % REGIONS.length];
     const industry = pick(INDUSTRIES, i);

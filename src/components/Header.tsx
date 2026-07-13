@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-lavender-line bg-paper/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-3">
-        <Link href="/" aria-label="Agentipedia by HUB Institute — home" className="shrink-0">
+        <Link href="/" aria-label="Agentipedia by HUB Institute, home" className="shrink-0">
           <Logo on="light" />
         </Link>
         <div className="flex min-w-0 items-center gap-4 sm:gap-6">

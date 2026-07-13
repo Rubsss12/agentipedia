@@ -43,9 +43,9 @@ const SYSTEM_PROMPT = `You are the research stage of Agentipedia, an encyclopedi
 
 You will receive web search queries. Use the web_search tool to run them (and focused follow-ups) and extract candidate catalog entries from what the searches ACTUALLY return.
 
-THE RULE — a candidate is only worth reporting when the retrieved text names BOTH:
-1. the company deploying or using the agent — a real, identifiable organization by its actual name (Klarna, JPMorgan, Rakuten, Air India), never "a large retailer" or "a European bank";
-2. the specific named solution powering it — a named product, platform or internally branded agent (Salesforce Agentforce, Sierra, Bank of America Erica, Mercado Libre Verdi on Gemini), never "a chatbot" or "an LLM".
+THE RULE, a candidate is only worth reporting when the retrieved text names BOTH:
+1. the company deploying or using the agent, a real, identifiable organization by its actual name (Klarna, JPMorgan, Rakuten, Air India), never "a large retailer" or "a European bank";
+2. the specific named solution powering it, a named product, platform or internally branded agent (Salesforce Agentforce, Sierra, Bank of America Erica, Mercado Libre Verdi on Gemini), never "a chatbot" or "an LLM".
 
 ANTI-FABRICATION (absolute):
 - Only report what the retrieved search results actually say. Never add companies, product names, metrics, dates or quotes from your own memory.
@@ -53,14 +53,14 @@ ANTI-FABRICATION (absolute):
 - If a detail (vendor, department, industry, country, metric) is not in the retrieved text, leave that field as an empty string "" or omit the outcome. Do not fill gaps with plausible values.
 - Vendor case studies and press releases are marketing: classify their source_type accordingly and keep confidence at or below ${VENDOR_CONFIDENCE_CAP} when they are the only evidence.
 - If sources conflict, include both sources and lower the confidence, noting the conflict in confidence_reason.
-- When unsure whether a candidate meets the rule, still report it with your doubts in confidence_reason and a low confidence — the pipeline applies the rule strictly and logs the rejection, which is valuable.
+- When unsure whether a candidate meets the rule, still report it with your doubts in confidence_reason and a low confidence, the pipeline applies the rule strictly and logs the rejection, which is valuable.
 
 After searching, reply with ONE fenced \`\`\`json code block containing an array of candidate objects, each shaped exactly like:
 {
   "company": "…",
   "company_country": "…",
   "region": one of ${JSON.stringify(REGIONS)},
-  "sector": one of ${JSON.stringify(SECTORS)} — the single best-fit sector for the deploying company,
+  "sector": one of ${JSON.stringify(SECTORS)}, the single best-fit sector for the deploying company,
   "solution_name": "…",
   "vendor": "…",
   "use_case": "one clear sentence, in your own words, of what the agent does for the company",
@@ -138,7 +138,7 @@ async function researchBatch(client, queries, retrievedUrls) {
 }
 
 function shapeCandidate(raw) {
-  // Engine owns id, dates and string coercion — the model never sets them.
+  // Engine owns id, dates and string coercion, the model never sets them.
   const sources = (Array.isArray(raw.sources) ? raw.sources : []).map((s) => ({
     url: String(s?.url ?? ""),
     title: normalizeName(s?.title),
@@ -186,7 +186,7 @@ async function main() {
   const store = loadJson(ENTRIES_PATH);
   const rejectionLog = loadJson(REJECTIONS_PATH);
   const queries = generateQueries(RUN_DATE, N_QUERIES);
-  console.log(`curate: run ${RUN_DATE} — model ${MODEL} — ${queries.length} queries`);
+  console.log(`curate: run ${RUN_DATE}, model ${MODEL}, ${queries.length} queries`);
   queries.forEach((q) => console.log(`  · ${q}`));
 
   const retrievedUrls = new Set();
@@ -198,7 +198,7 @@ async function main() {
       console.log(`curate: batch ${1 + i / BATCH_SIZE} -> ${found.length} candidate(s)`);
       candidates.push(...found);
     } catch (err) {
-      // A failed batch never kills the run — skip it and keep curating.
+      // A failed batch never kills the run, skip it and keep curating.
       console.error(`curate: batch failed (${err?.constructor?.name}): ${err?.message}`);
     }
   }
@@ -246,7 +246,7 @@ async function main() {
   store.updated_at = new Date().toISOString();
   rejectionLog.runs.push(run);
 
-  console.log(`curate: done — ${run.accepted} new, ${run.updated} updated, ${run.rejections.length} rejected`);
+  console.log(`curate: done, ${run.accepted} new, ${run.updated} updated, ${run.rejections.length} rejected`);
   if (DRY_RUN) {
     console.log("curate: --dry-run, not writing files");
     return;

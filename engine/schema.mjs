@@ -3,7 +3,7 @@
 // An entry is valid only when BOTH are named and verifiable:
 //   1. the company that deploys the agent (a real, identifiable organization), and
 //   2. the specific named solution powering it.
-// Everything in this module is deterministic code — the model that proposes
+// Everything in this module is deterministic code, the model that proposes
 // candidates never gets to decide what enters the store.
 
 export const REGIONS = [
@@ -30,7 +30,7 @@ export const SOURCE_TYPES = [
 
 export const DEPLOYMENT_STAGES = ["pilot", "production", "announced", "unknown"];
 
-// Canonical sector taxonomy — the library's shelves. Every entry belongs to
+// Canonical sector taxonomy, the library's shelves. Every entry belongs to
 // exactly one sector; `industry` stays as the finer free-text descriptor.
 export const SECTORS = [
   "Financial Services",
@@ -152,7 +152,7 @@ function isIsoDate(s) {
  * @param {object} [opts]
  * @param {Set<string>|null} [opts.retrievedUrls] - normalized URLs actually
  *   retrieved by live search during this run. When provided, every cited
- *   source URL must be in this set — a citation the run never saw is treated
+ *   source URL must be in this set, a citation the run never saw is treated
  *   as fabricated and rejects the entry.
  * @returns {{ok: boolean, errors: string[]}}
  */
@@ -188,7 +188,7 @@ export function validateEntry(e, opts = {}) {
 
   // --- Evidence: no source, no entry ---
   if (!Array.isArray(e.sources) || e.sources.length === 0) {
-    errors.push("no sources — no source, no entry");
+    errors.push("no sources, no source, no entry");
   } else {
     e.sources.forEach((s, i) => {
       if (!isValidHttpUrl(s?.url)) errors.push(`sources[${i}].url invalid`);

@@ -28,7 +28,7 @@ function Fact({ label, value }: { label: React.ReactNode; value: string }) {
   return (
     <div className="rounded-xl border border-lavender-line bg-lilac-soft px-4 py-3">
       <p className="kicker text-muted">{label}</p>
-      <p className="mt-1 text-sm font-bold">{value || "—"}</p>
+      <p className="mt-1 text-sm font-bold">{value || "-"}</p>
     </div>
   );
 }

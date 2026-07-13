@@ -1,4 +1,4 @@
-// Client-safe types and pure helpers — no Node imports here.
+// Client-safe types and pure helpers; no Node imports here.
 
 export type SourceType =
   | "company_official"

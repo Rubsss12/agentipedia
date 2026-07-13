@@ -1,8 +1,7 @@
 # Agentipedia
 
 The living encyclopedia of AI agents at work: a public, self-updating catalog
-of real deployments of AI agents inside **named companies**, worldwide —
-organized as a library with 14 canonical sector shelves. Every
+of real deployments of AI agents inside **named companies**, worldwide, organized as a library with 14 canonical sector shelves. Every
 entry names both the company and the exact solution powering it, and links the
 retrieved sources that prove it. **No source, no entry.**
 
@@ -15,9 +14,9 @@ current.
 An entry is valid only when both fields are named and verified against a
 retrieved source:
 
-1. **The company** — a real, identifiable organization by its actual name
+1. **The company**, a real, identifiable organization by its actual name
    (Klarna, JPMorgan, Rakuten, Air India), never “a large retailer”.
-2. **The named solution** — a named product, platform or internally branded
+2. **The named solution**, a named product, platform or internally branded
    agent (Salesforce Agentforce, Sierra, Bank of America Erica), never
    “a chatbot”.
 
@@ -28,7 +27,7 @@ the rejection is logged with a one-line reason.
 
 ```
 data/
-  entries.json      the store — single source of truth, human-auditable
+  entries.json      the store, single source of truth, human-auditable
   rejections.json   every curation run with every rejection and its reason
 engine/
   schema.mjs        data model + the rule, enforced in deterministic code
@@ -47,7 +46,7 @@ src/                the website (reads data/entries.json at build time)
 ```bash
 npm install
 npm run dev        # http://localhost:3000
-npm run build      # static export in ./out — deploy on any static host
+npm run build      # static export in ./out, deploy on any static host
 ```
 
 ## Run the curation engine
@@ -79,7 +78,7 @@ for project pages set `NEXT_BASE_PATH=/<repo>` in the build step.
 The interface follows the HUB Institute / HUBFORUM Paris look: mauve and
 violet on clean light backgrounds, dark violet hero, confident uppercase
 typography (Archivo), generous whitespace. All colors live in CSS variables at
-the top of `src/app/globals.css` — swap the exact brand mauve in one place.
+the top of `src/app/globals.css`, swap the exact brand mauve in one place.
 
 ## Correcting an entry
 

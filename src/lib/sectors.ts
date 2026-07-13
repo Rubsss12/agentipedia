@@ -1,4 +1,4 @@
-// Server-side sector aggregation — the library's shelves, derived from the store.
+// Server-side sector aggregation: the library's shelves, derived from the store.
 import { getEntries } from "./data";
 import type { Entry } from "./types";
 

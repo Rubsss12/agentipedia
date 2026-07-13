@@ -13,8 +13,8 @@ export default function Footer() {
           <Logo on="dark" />
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/70">
             <Bi
-              en="The AI observatory of the HUB Institute think tank: from AI promise to business proof. Real companies, named solutions, verified sources — worldwide."
-              fr="L'observatoire IA du think tank HUB Institute : de la promesse de l'IA à la preuve business. Entreprises réelles, solutions nommées, sources vérifiées — dans le monde entier."
+              en="The AI observatory of the HUB Institute think tank: from AI promise to business proof. Real companies, named solutions, verified sources, worldwide."
+              fr="L'observatoire IA du think tank HUB Institute : de la promesse de l'IA à la preuve business. Entreprises réelles, solutions nommées, sources vérifiées, dans le monde entier."
             />
           </p>
         </div>
@@ -66,8 +66,8 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <p className="mx-auto max-w-6xl px-6 py-5 text-xs text-white/50">
           <Bi
-            en="Agentipedia · Insights & Experiences · by HUB Institute, Paris. Updated autonomously by the curation engine — entries that cannot name both the company and the exact solution are rejected, and every rejection is logged."
-            fr="Agentipedia · Insights & Experiences · par HUB Institute, Paris. Mis à jour de façon autonome par le moteur de curation — toute fiche qui ne nomme pas à la fois l'entreprise et la solution exacte est rejetée, et chaque rejet est journalisé."
+            en="Agentipedia · Insights & Experiences · by HUB Institute, Paris. Updated autonomously by the curation engine. Entries that cannot name both the company and the exact solution are rejected, and every rejection is logged."
+            fr="Agentipedia · Insights & Experiences · par HUB Institute, Paris. Mis à jour de façon autonome par le moteur de curation. Toute fiche qui ne nomme pas à la fois l'entreprise et la solution exacte est rejetée, et chaque rejet est journalisé."
           />
         </p>
       </div>

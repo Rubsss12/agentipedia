@@ -1,5 +1,5 @@
 // Country centroid coordinates [lat, lon] for the deployment globe.
-// Geography constants only — deployment data always comes from the store.
+// Geography constants only; deployment data always comes from the store.
 export const COUNTRY_COORDS: Record<string, [number, number]> = {
   Argentina: [-34.6, -64.0],
   Australia: [-25.3, 133.8],

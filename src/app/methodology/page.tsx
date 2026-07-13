@@ -21,8 +21,8 @@ export default function MethodologyPage() {
       </h1>
       <p className="mt-4 text-lg leading-relaxed text-ink-soft">
         <Bi
-          en="Agentipedia is curated by an autonomous engine that searches the live web, extracts candidate deployments and applies one strict rule. A smaller accurate encyclopedia beats a larger fabricated one, so the engine rejects anything it cannot verify — and logs every rejection."
-          fr="Agentipedia est alimenté par un moteur autonome qui interroge le web en direct, extrait des déploiements candidats et applique une règle stricte. Une encyclopédie plus petite mais exacte vaut mieux qu'une grande inventée : le moteur rejette tout ce qu'il ne peut pas vérifier — et journalise chaque rejet."
+          en="Agentipedia is curated by an autonomous engine that searches the live web, extracts candidate deployments and applies one strict rule. A smaller accurate encyclopedia beats a larger fabricated one, so the engine rejects anything it cannot verify, and logs every rejection."
+          fr="Agentipedia est alimenté par un moteur autonome qui interroge le web en direct, extrait des déploiements candidats et applique une règle stricte. Une encyclopédie plus petite mais exacte vaut mieux qu'une grande inventée : le moteur rejette tout ce qu'il ne peut pas vérifier, et journalise chaque rejet."
         />
       </p>
 
@@ -40,7 +40,7 @@ export default function MethodologyPage() {
             fr={
               <>
                 Une fiche n&apos;existe que si une source réellement consultée nomme{" "}
-                <strong>les deux</strong> :
+                <strong>les deux</strong>{" "}:
               </>
             }
           />
@@ -50,15 +50,15 @@ export default function MethodologyPage() {
             <Bi
               en={
                 <>
-                  <strong className="text-mauve-deep">1 · The company.</strong> A real,
-                  identifiable organization by its actual name — Klarna, JPMorgan, Rakuten, Air
+                  <strong className="text-mauve-deep">1 · The company.</strong>{" "}A real,
+                  identifiable organization by its actual name: Klarna, JPMorgan, Rakuten, Air
                   India. Never &ldquo;a large retailer&rdquo; or &ldquo;a European bank&rdquo;.
                 </>
               }
               fr={
                 <>
-                  <strong className="text-mauve-deep">1 · L&apos;entreprise.</strong> Une
-                  organisation réelle, identifiable par son vrai nom — Klarna, JPMorgan, Rakuten,
+                  <strong className="text-mauve-deep">1 · L&apos;entreprise.</strong>{" "}Une
+                  organisation réelle, identifiable par son vrai nom : Klarna, JPMorgan, Rakuten,
                   Air India. Jamais « un grand distributeur » ou « une banque européenne ».
                 </>
               }
@@ -68,16 +68,16 @@ export default function MethodologyPage() {
             <Bi
               en={
                 <>
-                  <strong className="text-mauve-deep">2 · The named solution.</strong> A named
-                  product, platform or internally branded agent — Salesforce Agentforce, Sierra,
+                  <strong className="text-mauve-deep">2 · The named solution.</strong>{" "}A named
+                  product, platform or internally branded agent: Salesforce Agentforce, Sierra,
                   Bank of America Erica, Mercado Libre Verdi on Gemini. Never &ldquo;a
                   chatbot&rdquo; or &ldquo;an LLM&rdquo;.
                 </>
               }
               fr={
                 <>
-                  <strong className="text-mauve-deep">2 · La solution nommée.</strong> Un produit,
-                  une plateforme ou un agent interne avec un nom — Salesforce Agentforce, Sierra,
+                  <strong className="text-mauve-deep">2 · La solution nommée.</strong>{" "}Un produit,
+                  une plateforme ou un agent interne avec un nom : Salesforce Agentforce, Sierra,
                   Bank of America Erica, Mercado Libre Verdi sur Gemini. Jamais « un chatbot » ou
                   « un LLM ».
                 </>
@@ -121,18 +121,17 @@ export default function MethodologyPage() {
             <Bi
               en={
                 <>
-                  <strong className="text-ink">No source, no entry.</strong> Every entry traces to
+                  <strong className="text-ink">No source, no entry.</strong>{" "}Every entry traces to
                   at least one source retrieved through live web search during a curation run.
-                  Cited URLs must have appeared in that run&apos;s search results — a URL the run
+                  Cited URLs must have appeared in that run&apos;s search results. A URL the run
                   never saw is treated as fabricated and the candidate is rejected.
                 </>
               }
               fr={
                 <>
-                  <strong className="text-ink">Pas de source, pas de fiche.</strong> Chaque fiche
+                  <strong className="text-ink">Pas de source, pas de fiche.</strong>{" "}Chaque fiche
                   remonte à au moins une source récupérée par recherche web en direct pendant une
-                  curation. Les URL citées doivent être apparues dans les résultats de cette
-                  session — une URL jamais vue est traitée comme fabriquée et le candidat est
+                  curation. Les URL citées doivent être apparues dans les résultats de cette session. Une URL jamais vue est traitée comme fabriquée et le candidat est
                   rejeté.
                 </>
               }
@@ -142,15 +141,14 @@ export default function MethodologyPage() {
             <Bi
               en={
                 <>
-                  <strong className="text-ink">Empty beats invented.</strong> If a detail — vendor,
-                  department, metric, date — is not in a source, the field stays empty. Gaps are
+                  <strong className="text-ink">Empty beats invented.</strong>{" "}If a detail (vendor,
+                  department, metric, date) is not in a source, the field stays empty. Gaps are
                   never filled with plausible guesses.
                 </>
               }
               fr={
                 <>
-                  <strong className="text-ink">Vide plutôt qu&apos;inventé.</strong> Si un détail —
-                  éditeur, département, métrique, date — n&apos;est pas dans une source, le champ
+                  <strong className="text-ink">Vide plutôt qu&apos;inventé.</strong>{" "}Si un détail (éditeur, département, métrique, date) n&apos;est pas dans une source, le champ
                   reste vide. Les trous ne sont jamais comblés par des suppositions plausibles.
                 </>
               }
@@ -160,18 +158,18 @@ export default function MethodologyPage() {
             <Bi
               en={
                 <>
-                  <strong className="text-ink">Claimed is not confirmed.</strong> Every source is
+                  <strong className="text-ink">Claimed is not confirmed.</strong>{" "}Every source is
                   typed: company official, earnings call, news media, conference talk, vendor case
                   study, press release, or other. Vendor case studies and press releases are
-                  marketing — usable, but always labeled, and their metrics are shown as claims.
+                  marketing: usable, but always labeled, and their metrics are shown as claims.
                 </>
               }
               fr={
                 <>
-                  <strong className="text-ink">Déclaré n&apos;est pas confirmé.</strong> Chaque
+                  <strong className="text-ink">Déclaré n&apos;est pas confirmé.</strong>{" "}Chaque
                   source est typée : officiel entreprise, résultats financiers, presse, conférence,
                   cas client éditeur, communiqué, ou autre. Les cas clients et communiqués sont du
-                  marketing — utilisables, mais toujours étiquetés, et leurs métriques affichées
+                  marketing : utilisables, mais toujours étiquetés, et leurs métriques affichées
                   comme des déclarations.
                 </>
               }
@@ -181,14 +179,14 @@ export default function MethodologyPage() {
             <Bi
               en={
                 <>
-                  <strong className="text-ink">Conflicts stay visible.</strong> When sources
+                  <strong className="text-ink">Conflicts stay visible.</strong>{" "}When sources
                   disagree, both are kept and the confidence drops, with the conflict noted in the
                   confidence reason.
                 </>
               }
               fr={
                 <>
-                  <strong className="text-ink">Les conflits restent visibles.</strong> Quand les
+                  <strong className="text-ink">Les conflits restent visibles.</strong>{" "}Quand les
                   sources divergent, les deux sont conservées et la confiance baisse, le conflit
                   étant noté dans la justification.
                 </>
@@ -217,8 +215,8 @@ export default function MethodologyPage() {
           </li>
           <li className="rounded-xl bg-ok-bg p-4 font-semibold text-ok">
             <Bi
-              en="“Confirmed” (≥ 70%) requires at least one independent source — news media, an earnings call, a conference talk or an official company channel."
-              fr="« Confirmé » (≥ 70 %) exige au moins une source indépendante — presse, résultats financiers, conférence ou canal officiel de l'entreprise."
+              en="“Confirmed” (≥ 70%) requires at least one independent source: news media, an earnings call, a conference talk or an official company channel."
+              fr="« Confirmé » (≥ 70 %) exige au moins une source indépendante : presse, résultats financiers, conférence ou canal officiel de l'entreprise."
             />
           </li>
         </ul>
@@ -236,8 +234,7 @@ export default function MethodologyPage() {
                 discovery queries across sectors, industries, regions and languages (the matrix
                 rotates so non-English press is searched, not just US and EU coverage), searches
                 the live web, applies the rule in deterministic code, deduplicates against the
-                existing catalog — the same company plus the same solution is an update, never a
-                second entry — and rebuilds this site. The data store (
+                existing catalog (the same company plus the same solution is an update, never a second entry) and rebuilds this site. The data store (
                 <code className="rounded bg-lilac px-1 py-0.5 text-xs">data/entries.json</code>) is
                 the single source of truth, so any entry can be audited or corrected by hand.
               </>
@@ -248,8 +245,8 @@ export default function MethodologyPage() {
                 génère de nouvelles requêtes de découverte par secteur, industrie, région et langue
                 (la matrice tourne pour couvrir la presse non anglophone, pas seulement les États-Unis
                 et l&apos;Europe), interroge le web en direct, applique la règle dans du code
-                déterministe, déduplique contre le catalogue — même entreprise plus même solution
-                égale mise à jour, jamais un doublon — et reconstruit ce site. Le magasin de données
+                déterministe, déduplique contre le catalogue (même entreprise plus même solution
+                égale mise à jour, jamais un doublon) et reconstruit ce site. Le magasin de données
                 (<code className="rounded bg-lilac px-1 py-0.5 text-xs">data/entries.json</code>)
                 est l&apos;unique source de vérité : toute fiche peut être auditée ou corrigée à la
                 main.
@@ -264,7 +261,7 @@ export default function MethodologyPage() {
           {stats.updatedAt ? (
             formatTimestamp(stats.updatedAt)
           ) : (
-            <Bi en="— awaiting first run" fr="— en attente de la première curation" />
+            <Bi en="(awaiting first run)" fr="(en attente de la première curation)" />
           )}
           .
         </p>
@@ -279,7 +276,7 @@ export default function MethodologyPage() {
             en={
               <>
                 Agentipedia is the AI observatory of <strong>HUB Institute</strong>, the Paris-based
-                think tank that helps decision-makers move from promise to business proof — the
+                think tank that helps decision-makers move from promise to business proof, the
                 team behind HUBFORUM and the HUB Institute communities. The library exists to give
                 those decision-makers hard precedents: who deployed what, where, with which
                 results, and on whose word.
@@ -288,8 +285,7 @@ export default function MethodologyPage() {
             fr={
               <>
                 Agentipedia est l&apos;observatoire IA du <strong>HUB Institute</strong>, le think
-                tank parisien qui aide les décideurs à passer de la promesse à la preuve business —
-                l&apos;équipe derrière HUBFORUM et les communautés HUB Institute. La bibliothèque
+                tank parisien qui aide les décideurs à passer de la promesse à la preuve business, l&apos;équipe derrière HUBFORUM et les communautés HUB Institute. La bibliothèque
                 existe pour donner à ces décideurs des précédents solides : qui a déployé quoi, où,
                 avec quels résultats, et sur la parole de qui.
               </>
@@ -308,16 +304,14 @@ export default function MethodologyPage() {
               <>
                 Every entry links its sources, so you can check any claim in one click. If a
                 deployment was discontinued or a detail is wrong, correct the entry in{" "}
-                <code className="rounded bg-lilac px-1 py-0.5 text-xs">data/entries.json</code> via
-                a pull request — the store is designed to be audited by humans.
+                <code className="rounded bg-lilac px-1 py-0.5 text-xs">data/entries.json</code> via a pull request. The store is designed to be audited by humans.
               </>
             }
             fr={
               <>
                 Chaque fiche cite ses sources : toute affirmation se vérifie en un clic. Si un
                 déploiement a été arrêté ou qu&apos;un détail est faux, corrigez la fiche dans{" "}
-                <code className="rounded bg-lilac px-1 py-0.5 text-xs">data/entries.json</code> via
-                une pull request — le magasin est conçu pour être audité par des humains.
+                <code className="rounded bg-lilac px-1 py-0.5 text-xs">data/entries.json</code> via une pull request. Le magasin est conçu pour être audité par des humains.
               </>
             }
           />

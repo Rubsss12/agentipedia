@@ -27,7 +27,7 @@ export function findExisting(entries, candidate) {
 
 /**
  * Merge a duplicate candidate into the existing entry.
- * Returns { entry, changed, changes[] } — changed=false means the candidate
+ * Returns { entry, changed, changes[] }, changed=false means the candidate
  * brought nothing new and is a pure duplicate.
  */
 export function mergeUpdate(existing, candidate) {

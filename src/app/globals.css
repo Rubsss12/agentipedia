@@ -7,12 +7,12 @@
      electric-blue -> violet -> magenta gradient, pure white type on the
      gradient, white pill CTAs with deep-indigo text, and a warm coral
      glow used sparingly. Swap any brand code HERE and the whole site
-     follows. Token names are stable — only values change. */
+     follows. Token names are stable, only values change. */
   --color-mauve: #6b2bd9; /* primary violet (mid-point of the brand gradient) */
   --color-mauve-deep: #4a1fc7; /* pressed / hover violet */
-  --color-mauve-ink: #241468; /* deep indigo — text on white pills & chips */
+  --color-mauve-ink: #241468; /* deep indigo, text on white pills & chips */
   --color-mauve-night: #1d1160; /* dark base under the hero gradient + footer */
-  --color-mauve-bright: #b9c4ff; /* periwinkle — kickers/labels on the gradient */
+  --color-mauve-bright: #b9c4ff; /* periwinkle, kickers/labels on the gradient */
   --color-mauve-glow: #ffffff; /* stat numbers & highlights on the gradient */
   --color-lilac: #ecebff; /* tint chips on light backgrounds */
   --color-lilac-soft: #f7f7ff; /* section tint */

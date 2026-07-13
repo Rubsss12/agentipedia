@@ -39,4 +39,4 @@ if (failures) {
   console.error(`validate: ${failures} problem(s) in ${store.entries.length} entries`);
   process.exit(1);
 }
-console.log(`validate: OK — ${store.entries.length} entries, all pass the rule`);
+console.log(`validate: OK, ${store.entries.length} entries, all pass the rule`);

@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const sector = getSectorBySlug(slug);
   if (!sector) return {};
   return {
-    title: `${sector.name} — AI agent deployments`,
+    title: `${sector.name}: AI agent deployments`,
     description: `${sector.entries} verified AI agent deployments inside named ${sector.name.toLowerCase()} companies, with sources.`,
   };
 }

@@ -37,23 +37,23 @@
       "rejections": [
         {
           "candidate": "\"40% of the Fortune 50\" (Sierra customers) / Sierra",
-          "reason": "Company not named: Sierra's market-reach claim covers unnamed Fortune 50 companies — a real, identifiable organization name is required."
+          "reason": "Company not named: Sierra's market-reach claim covers unnamed Fortune 50 companies: a real, identifiable organization name is required."
         },
         {
           "candidate": "MTN / (unnamed AI assistant)",
-          "reason": "No retrieved source names a specific solution deployed by MTN — solution field missing, no entry."
+          "reason": "No retrieved source names a specific solution deployed by MTN: solution field missing, no entry."
         },
         {
           "candidate": "Standard Bank / (unnamed AI agent)",
-          "reason": "No retrieved source names a specific solution deployed by Standard Bank — solution field missing, no entry."
+          "reason": "No retrieved source names a specific solution deployed by Standard Bank: solution field missing, no entry."
         },
         {
           "candidate": "Swiggy / (unnamed AI assistant)",
-          "reason": "Search returned no source naming a Swiggy AI assistant deployment — no source, no entry."
+          "reason": "Search returned no source naming a Swiggy AI assistant deployment: no source, no entry."
         },
         {
           "candidate": "Emirates NBD / Empathy Assistant",
-          "reason": "Single passing mention in one article with no deployment detail or corroboration — insufficient evidence, rejected rather than guessed."
+          "reason": "Single passing mention in one article with no deployment detail or corroboration: insufficient evidence, rejected rather than guessed."
         },
         {
           "candidate": "Rakuten Viber / ChatGPT integration",
@@ -61,7 +61,7 @@
         },
         {
           "candidate": "JPMorgan Chase / AI-powered client concierges",
-          "reason": "Retrieved source describes a future goal with no named product or deployment date — announced intentions without a named solution are rejected."
+          "reason": "Retrieved source describes a future goal with no named product or deployment date: announced intentions without a named solution are rejected."
         }
       ]
     },
@@ -85,11 +85,11 @@
       "rejections": [
         {
           "candidate": "Ping An / AskBob",
-          "reason": "Only retrieved source is a third-party listicle with no primary coverage — insufficient evidence, rejected rather than guessed."
+          "reason": "Only retrieved source is a third-party listicle with no primary coverage: insufficient evidence, rejected rather than guessed."
         },
         {
           "candidate": "\"Over 100 companies\" using Siemens Industrial Copilot",
-          "reason": "Companies unnamed in the vendor's claim — a real, identifiable organization name is required."
+          "reason": "Companies unnamed in the vendor's claim: a real, identifiable organization name is required."
         }
       ]
     },
@@ -109,7 +109,7 @@
       "rejections": [
         {
           "candidate": "Woodside Collection / Sierra",
-          "reason": "From uploaded report; live search retrieved no source naming this deployment — no source, no entry."
+          "reason": "From uploaded report; live search retrieved no source naming this deployment: no source, no entry."
         },
         {
           "candidate": "LY Corporation / \"Agent i\"",
@@ -117,7 +117,7 @@
         },
         {
           "candidate": "JPMorgan Chase / \"Fraud AI Agent\"",
-          "reason": "From uploaded report; descriptive label rather than a verifiable named solution — nothing retrieved live under this name."
+          "reason": "From uploaded report; descriptive label rather than a verifiable named solution: nothing retrieved live under this name."
         },
         {
           "candidate": "CLEAR conversion metric (\"tripled membership conversion\")",
@@ -150,34 +150,34 @@
       "rejections": [
         {
           "candidate": "SCDF ADA (Automated Duty Assignment)",
-          "reason": "Power Apps rostering workflow; retrieved sources describe no AI/agentic capability — out of scope (not an AI agent)."
+          "reason": "Power Apps rostering workflow; retrieved sources describe no AI/agentic capability: out of scope (not an AI agent)."
         },
         {
           "candidate": "SCDF FICA (Food Indentation and Consumption)",
-          "reason": "Power Apps meal-data management app; no AI capability named in retrieved sources — out of scope."
+          "reason": "Power Apps meal-data management app; no AI capability named in retrieved sources: out of scope."
         },
         {
           "candidate": "SCDF ITA (Interactive Troubleshooting)",
-          "reason": "Step-by-step diagnostic guide app; no AI capability named in retrieved sources — out of scope."
+          "reason": "Step-by-step diagnostic guide app; no AI capability named in retrieved sources: out of scope."
         },
         {
           "candidate": "SCDF DORA (Duty Officer Rostering)",
-          "reason": "Power Apps scheduling app; no AI capability named in retrieved sources — out of scope."
+          "reason": "Power Apps scheduling app; no AI capability named in retrieved sources: out of scope."
         },
         {
-          "candidate": "Imprint — \"doubled customer engagement metrics and listings viewed\"",
-          "reason": "Metric from the uploaded PDF not found in any retrieved source (Sierra's case study reports no such figures); entry accepted without it — empty beats invented."
+          "candidate": "Imprint: \"doubled customer engagement metrics and listings viewed\"",
+          "reason": "Metric from the uploaded PDF not found in any retrieved source (Sierra's case study reports no such figures); entry accepted without it: empty beats invented."
         },
         {
-          "candidate": "JPMorgan Chase — \"Fraud AI Agent\" processing $8T daily",
-          "reason": "Re-submitted from a previous report; live search still retrieves no source naming a 'Fraud AI Agent' product — rejected again (LLM Suite entry unaffected)."
+          "candidate": "JPMorgan Chase: \"Fraud AI Agent\" processing $8T daily",
+          "reason": "Re-submitted from a previous report; live search still retrieves no source naming a 'Fraud AI Agent' product: rejected again (LLM Suite entry unaffected)."
         },
         {
-          "candidate": "PepsiCo — \"25–30% operational efficiency gain\"",
+          "candidate": "PepsiCo: \"25–30% operational efficiency gain\"",
           "reason": "Metric not found in any retrieved source; PepsiCo/Salesforce releases announce deployment without efficiency figures. Existing 'announced' entry unchanged."
         },
         {
-          "candidate": "Siemens Industrial Copilot — \"complex panel visualizations in 30 seconds\"",
+          "candidate": "Siemens Industrial Copilot: \"complex panel visualizations in 30 seconds\"",
           "reason": "Figure from the uploaded PDF not retrieved from any live source in this run; existing thyssenkrupp entry keeps only previously verified outcomes."
         }
       ]
