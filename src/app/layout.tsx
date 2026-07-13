@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Motion from "@/components/Motion";
+import ToTop from "@/components/ToTop";
+import { LANG_BOOT_SCRIPT } from "@/lib/lang-boot";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -30,12 +32,16 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={archivo.variable}>
+    <html lang="en" className={archivo.variable} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: LANG_BOOT_SCRIPT }} />
+      </head>
       <body className="font-sans antialiased">
         <Header />
         {children}
         <Footer />
         <Motion />
+        <ToTop />
       </body>
     </html>
   );

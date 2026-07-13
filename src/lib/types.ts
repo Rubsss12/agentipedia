@@ -75,3 +75,21 @@ export const STAGE_LABELS: Record<DeploymentStage, string> = {
   announced: "Announced",
   unknown: "Stage unknown",
 };
+
+// French labels for the bilingual chrome (data stays in English).
+export const SOURCE_TYPE_LABELS_FR: Record<SourceType, string> = {
+  company_official: "Officiel entreprise",
+  earnings_call: "Résultats financiers",
+  news_media: "Presse",
+  conference_talk: "Conférence",
+  vendor_case_study: "Cas client éditeur",
+  press_release: "Communiqué de presse",
+  other: "Autre",
+};
+
+export const STAGE_LABELS_FR: Record<DeploymentStage, string> = {
+  production: "En production",
+  pilot: "Pilote",
+  announced: "Annoncé",
+  unknown: "Statut inconnu",
+};

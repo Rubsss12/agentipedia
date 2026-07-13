@@ -1,12 +1,15 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import type { Entry } from "@/lib/types";
 import { ConfidenceBadge, StageBadge } from "@/components/badges";
 import { hostOf } from "@/lib/format";
+import { useLang, type Lang } from "@/lib/lang";
+import Bi from "@/components/Bi";
 
 type ConfidenceFilter = "any" | "high" | "medium" | "independent";
+type SortKey = "az" | "newest" | "confidence";
 
 interface Filters {
   q: string;
@@ -33,6 +36,35 @@ const EMPTY: Filters = {
 };
 
 const MARKETING = new Set(["vendor_case_study", "press_release"]);
+
+const STR = {
+  en: {
+    placeholder: "Search company, solution, vendor or use case…  (press / to focus)",
+    sector: "Sector", region: "Region", country: "Country", industry: "Industry",
+    department: "Department", vendor: "Vendor", stage: "Stage", confidence: "Confidence",
+    sort: "Sort", allSectors: "All sectors", allRegions: "All regions", allCountries: "All countries",
+    allIndustries: "All industries", allDepartments: "All departments", allVendors: "All vendors",
+    allStages: "All stages", anyConfidence: "Any confidence",
+    prod: "In production", pilot: "Pilot", announced: "Announced", unknown: "Unknown",
+    high: "High (≥ 70%)", medium: "Medium+ (≥ 50%)", independent: "Independently sourced",
+    az: "Company A–Z", newest: "Newest first", conf: "Confidence first",
+    of: "of", deployments: "deployments", reset: "Reset all filters",
+    dataNote: "Entry records are written in English.",
+  },
+  fr: {
+    placeholder: "Rechercher une entreprise, une solution, un éditeur…  (touche / pour cibler)",
+    sector: "Secteur", region: "Région", country: "Pays", industry: "Industrie",
+    department: "Département", vendor: "Éditeur", stage: "Statut", confidence: "Confiance",
+    sort: "Tri", allSectors: "Tous les secteurs", allRegions: "Toutes les régions", allCountries: "Tous les pays",
+    allIndustries: "Toutes les industries", allDepartments: "Tous les départements", allVendors: "Tous les éditeurs",
+    allStages: "Tous les statuts", anyConfidence: "Toute confiance",
+    prod: "En production", pilot: "Pilote", announced: "Annoncé", unknown: "Inconnu",
+    high: "Élevée (≥ 70 %)", medium: "Moyenne+ (≥ 50 %)", independent: "Sources indépendantes",
+    az: "Entreprise A–Z", newest: "Plus récents", conf: "Confiance d'abord",
+    of: "sur", deployments: "déploiements", reset: "Réinitialiser les filtres",
+    dataNote: "Les fiches sont rédigées en anglais.",
+  },
+} satisfies Record<Lang, Record<string, string>>;
 
 function uniqueValues(entries: Entry[], key: keyof Entry): string[] {
   return [...new Set(entries.map((e) => String(e[key])).filter(Boolean))].sort((a, b) =>
@@ -95,71 +127,133 @@ function Select({
 
 export default function Explorer({ entries }: { entries: Entry[] }) {
   const [f, setF] = useState<Filters>(EMPTY);
+  const [sort, setSort] = useState<SortKey>("az");
+  const [lang] = useLang();
+  const t = STR[lang];
+  const searchRef = useRef<HTMLInputElement>(null);
   const set = (patch: Partial<Filters>) => setF((prev) => ({ ...prev, ...patch }));
 
-  const results = useMemo(
-    () => entries.filter((e) => matches(e, f)).sort((a, b) => a.company.localeCompare(b.company)),
-    [entries, f],
-  );
+  // "/" focuses the search from anywhere on the page.
+  useEffect(() => {
+    const on = (e: KeyboardEvent) => {
+      if (e.key !== "/" || e.metaKey || e.ctrlKey || e.altKey) return;
+      const tag = (e.target as HTMLElement)?.tagName;
+      if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return;
+      e.preventDefault();
+      searchRef.current?.focus();
+      searchRef.current?.scrollIntoView({ block: "center" });
+    };
+    window.addEventListener("keydown", on);
+    return () => window.removeEventListener("keydown", on);
+  }, []);
+
+  const results = useMemo(() => {
+    const list = entries.filter((e) => matches(e, f));
+    if (sort === "newest")
+      list.sort((a, b) => b.first_seen_date.localeCompare(a.first_seen_date) || a.company.localeCompare(b.company));
+    else if (sort === "confidence")
+      list.sort((a, b) => b.confidence - a.confidence || a.company.localeCompare(b.company));
+    else list.sort((a, b) => a.company.localeCompare(b.company));
+    return list;
+  }, [entries, f, sort]);
+
   const active = JSON.stringify(f) !== JSON.stringify(EMPTY);
   const opt = (vals: string[]) => vals.map((v) => ({ value: v, label: v }));
+
+  // Active-filter chips (label shown, one-click removal).
+  const chips: { key: keyof Filters; label: string }[] = [];
+  if (f.q) chips.push({ key: "q", label: `“${f.q}”` });
+  (["sector", "region", "country", "industry", "department", "vendor"] as const).forEach((k) => {
+    if (f[k]) chips.push({ key: k, label: f[k] });
+  });
+  if (f.stage) chips.push({ key: "stage", label: { production: t.prod, pilot: t.pilot, announced: t.announced, unknown: t.unknown }[f.stage] ?? f.stage });
+  if (f.confidence !== "any")
+    chips.push({ key: "confidence", label: { high: t.high, medium: t.medium, independent: t.independent, any: "" }[f.confidence] });
 
   return (
     <div className="mt-8">
       {/* ===== Toolbar ===== */}
       <div className="rounded-2xl border border-lavender-line bg-lilac-soft p-4 md:p-5">
         <input
+          ref={searchRef}
           type="search"
           value={f.q}
           onChange={(e) => set({ q: e.target.value })}
-          placeholder="Search company, solution, vendor or use case…"
-          aria-label="Search the index"
+          placeholder={t.placeholder}
+          aria-label={t.placeholder}
           className="w-full rounded-xl border border-lavender-line bg-paper px-4 py-3 text-[0.95rem] outline-none transition-colors placeholder:text-muted focus:border-mauve"
         />
         <div className="mt-4 flex flex-wrap gap-3">
           {uniqueValues(entries, "sector").length > 1 && (
-            <Select label="Sector" value={f.sector} onChange={(v) => set({ sector: v })} options={opt(uniqueValues(entries, "sector"))} anyLabel="All sectors" />
+            <Select label={t.sector} value={f.sector} onChange={(v) => set({ sector: v })} options={opt(uniqueValues(entries, "sector"))} anyLabel={t.allSectors} />
           )}
-          <Select label="Region" value={f.region} onChange={(v) => set({ region: v })} options={opt(uniqueValues(entries, "region"))} anyLabel="All regions" />
-          <Select label="Country" value={f.country} onChange={(v) => set({ country: v })} options={opt(uniqueValues(entries, "company_country"))} anyLabel="All countries" />
-          <Select label="Industry" value={f.industry} onChange={(v) => set({ industry: v })} options={opt(uniqueValues(entries, "industry"))} anyLabel="All industries" />
-          <Select label="Department" value={f.department} onChange={(v) => set({ department: v })} options={opt(uniqueValues(entries, "department"))} anyLabel="All departments" />
-          <Select label="Vendor" value={f.vendor} onChange={(v) => set({ vendor: v })} options={opt(uniqueValues(entries, "vendor"))} anyLabel="All vendors" />
+          <Select label={t.region} value={f.region} onChange={(v) => set({ region: v })} options={opt(uniqueValues(entries, "region"))} anyLabel={t.allRegions} />
+          <Select label={t.country} value={f.country} onChange={(v) => set({ country: v })} options={opt(uniqueValues(entries, "company_country"))} anyLabel={t.allCountries} />
+          <Select label={t.industry} value={f.industry} onChange={(v) => set({ industry: v })} options={opt(uniqueValues(entries, "industry"))} anyLabel={t.allIndustries} />
+          <Select label={t.department} value={f.department} onChange={(v) => set({ department: v })} options={opt(uniqueValues(entries, "department"))} anyLabel={t.allDepartments} />
+          <Select label={t.vendor} value={f.vendor} onChange={(v) => set({ vendor: v })} options={opt(uniqueValues(entries, "vendor"))} anyLabel={t.allVendors} />
           <Select
-            label="Stage"
+            label={t.stage}
             value={f.stage}
             onChange={(v) => set({ stage: v })}
             options={[
-              { value: "production", label: "In production" },
-              { value: "pilot", label: "Pilot" },
-              { value: "announced", label: "Announced" },
-              { value: "unknown", label: "Unknown" },
+              { value: "production", label: t.prod },
+              { value: "pilot", label: t.pilot },
+              { value: "announced", label: t.announced },
+              { value: "unknown", label: t.unknown },
             ]}
-            anyLabel="All stages"
+            anyLabel={t.allStages}
           />
           <Select
-            label="Confidence"
+            label={t.confidence}
             value={f.confidence}
             onChange={(v) => set({ confidence: v as ConfidenceFilter })}
             options={[
-              { value: "high", label: "High (≥ 70%)" },
-              { value: "medium", label: "Medium+ (≥ 50%)" },
-              { value: "independent", label: "Independently sourced" },
+              { value: "high", label: t.high },
+              { value: "medium", label: t.medium },
+              { value: "independent", label: t.independent },
             ]}
-            anyLabel="Any confidence"
+            anyLabel={t.anyConfidence}
+          />
+          <Select
+            label={t.sort}
+            value={sort}
+            onChange={(v) => setSort(v as SortKey)}
+            options={[
+              { value: "newest", label: t.newest },
+              { value: "confidence", label: t.conf },
+            ]}
+            anyLabel={t.az}
           />
         </div>
-        <div className="mt-4 flex items-center justify-between gap-3">
+
+        {chips.length > 0 && (
+          <div className="mt-4 flex flex-wrap items-center gap-2">
+            {chips.map((c) => (
+              <button
+                key={c.key}
+                onClick={() => set({ [c.key]: c.key === "confidence" ? "any" : "" } as Partial<Filters>)}
+                className="inline-flex items-center gap-1.5 rounded-full bg-mauve px-3 py-1 text-xs font-bold text-white transition-colors hover:bg-mauve-deep"
+              >
+                {c.label}
+                <span aria-hidden>✕</span>
+              </button>
+            ))}
+          </div>
+        )}
+
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
           <p className="text-sm text-muted">
-            <span className="font-bold text-ink">{results.length}</span>
-            {" "}of {entries.length} deployments
+            <span className="font-bold text-ink">{results.length}</span> {t.of} {entries.length}{" "}
+            {t.deployments}
+            <span className="lang-fr"> · {STR.fr.dataNote}</span>
           </p>
           {active && (
             <button
               onClick={() => setF(EMPTY)}
               className="text-sm font-bold text-mauve transition-colors hover:text-mauve-deep"
             >
-              Reset all filters
+              {t.reset}
             </button>
           )}
         </div>
@@ -170,25 +264,32 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
         <div className="mt-10 rounded-2xl border border-dashed border-lavender-line p-12 text-center">
           {entries.length === 0 ? (
             <>
-              <p className="text-lg font-bold">The catalog is empty right now.</p>
+              <p className="text-lg font-bold">
+                <Bi en="The catalog is empty right now." fr="Le catalogue est vide pour le moment." />
+              </p>
               <p className="mx-auto mt-2 max-w-md text-sm text-muted">
-                The curation engine has not completed its first discovery run
-                yet. Entries appear here automatically once verified deployments
-                are found.
+                <Bi
+                  en="The curation engine has not completed its first discovery run yet. Entries appear here automatically once verified deployments are found."
+                  fr="Le moteur de curation n'a pas encore terminé sa première collecte. Les fiches apparaîtront ici dès que des déploiements vérifiés seront trouvés."
+                />
               </p>
             </>
           ) : (
             <>
-              <p className="text-lg font-bold">No deployment matches these filters.</p>
+              <p className="text-lg font-bold">
+                <Bi en="No deployment matches these filters." fr="Aucun déploiement ne correspond à ces filtres." />
+              </p>
               <p className="mx-auto mt-2 max-w-md text-sm text-muted">
-                Your search and filters excluded every entry. Loosen a filter or
-                clear everything to start over.
+                <Bi
+                  en="Your search and filters excluded every entry. Loosen a filter or clear everything to start over."
+                  fr="Votre recherche et vos filtres excluent toutes les fiches. Élargissez un filtre ou réinitialisez tout pour repartir de zéro."
+                />
               </p>
               <button
                 onClick={() => setF(EMPTY)}
                 className="mt-5 rounded-full bg-mauve px-5 py-2.5 text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-mauve-deep"
               >
-                Reset all filters
+                {t.reset}
               </button>
             </>
           )}

@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { getEntries, getEntry, isVendorSourced, SOURCE_TYPE_LABELS } from "@/lib/data";
+import { getEntries, getEntry, isVendorSourced } from "@/lib/data";
+import { SOURCE_TYPE_LABELS, SOURCE_TYPE_LABELS_FR } from "@/lib/types";
 import { ConfidenceBadge, StageBadge, SourceTypeChip } from "@/components/badges";
 import { sectorSlug } from "@/lib/sectors";
 import { confidencePercent, formatDate, hostOf } from "@/lib/format";
+import Bi from "@/components/Bi";
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -22,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-function Fact({ label, value }: { label: string; value: string }) {
+function Fact({ label, value }: { label: React.ReactNode; value: string }) {
   return (
     <div className="rounded-xl border border-lavender-line bg-lilac-soft px-4 py-3">
       <p className="kicker text-muted">{label}</p>
@@ -40,7 +42,7 @@ export default async function EntryPage({ params }: Props) {
     <main className="mx-auto max-w-4xl px-6 pb-8 pt-10">
       <nav className="text-sm text-muted">
         <Link href="/" className="font-bold text-mauve transition-colors hover:text-mauve-deep">
-          ← Back to the index
+          <Bi en="← Back to the index" fr="← Retour à l'index" />
         </Link>
       </nav>
 
@@ -57,7 +59,10 @@ export default async function EntryPage({ params }: Props) {
         <p className="mt-2 text-xl font-bold text-mauve-deep">
           {entry.solution_name}
           {entry.vendor && entry.vendor !== entry.solution_name && (
-            <span className="text-muted"> · vendor: {entry.vendor}</span>
+            <span className="text-muted">
+              {" "}
+              · <Bi en="vendor:" fr="éditeur :" /> {entry.vendor}
+            </span>
           )}
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
@@ -67,26 +72,33 @@ export default async function EntryPage({ params }: Props) {
       </header>
 
       <section className="mt-8">
-        <p className="kicker text-muted">What the agent does</p>
+        <p className="kicker text-muted">
+          <Bi en="What the agent does" fr="Ce que fait l'agent" />
+        </p>
         <p className="mt-2 text-lg leading-relaxed text-ink-soft">{entry.use_case}</p>
+        <p className="lang-fr mt-1 text-xs text-muted">Fiche rédigée en anglais, au plus près des sources.</p>
       </section>
 
       <section className="mt-8 grid gap-3 sm:grid-cols-2 md:grid-cols-3">
-        <Fact label="Sector" value={entry.sector} />
-        <Fact label="Industry" value={entry.industry} />
-        <Fact label="Department" value={entry.department} />
-        <Fact label="Vendor" value={entry.vendor} />
-        <Fact label="Country" value={entry.company_country} />
-        <Fact label="Region" value={entry.region} />
-        <Fact label="First catalogued" value={formatDate(entry.first_seen_date)} />
+        <Fact label={<Bi en="Sector" fr="Secteur" />} value={entry.sector} />
+        <Fact label={<Bi en="Industry" fr="Industrie" />} value={entry.industry} />
+        <Fact label={<Bi en="Department" fr="Département" />} value={entry.department} />
+        <Fact label={<Bi en="Vendor" fr="Éditeur" />} value={entry.vendor} />
+        <Fact label={<Bi en="Country" fr="Pays" />} value={entry.company_country} />
+        <Fact label={<Bi en="Region" fr="Région" />} value={entry.region} />
+        <Fact label={<Bi en="First catalogued" fr="Ajouté le" />} value={formatDate(entry.first_seen_date)} />
       </section>
 
       <section className="mt-10">
-        <h2 className="text-xl font-black uppercase tracking-tight">Reported outcomes</h2>
+        <h2 className="text-xl font-black uppercase tracking-tight">
+          <Bi en="Reported outcomes" fr="Résultats rapportés" />
+        </h2>
         {entry.reported_outcomes.length === 0 ? (
           <p className="mt-3 text-sm text-muted">
-            No measurable outcomes were reported in the sources. Fields stay
-            empty rather than guessed.
+            <Bi
+              en="No measurable outcomes were reported in the sources. Fields stay empty rather than guessed."
+              fr="Aucun résultat mesurable n'est rapporté dans les sources. Les champs restent vides plutôt que devinés."
+            />
           </p>
         ) : (
           <ul className="mt-4 space-y-3">
@@ -102,9 +114,11 @@ export default async function EntryPage({ params }: Props) {
                 <div className="text-right">
                   <SourceTypeChip type={o.source_type} />
                   <p className="mt-1 text-[0.7rem] text-muted">
-                    {o.source_type === "vendor_case_study" || o.source_type === "press_release"
-                      ? "claimed, not independently confirmed"
-                      : "as reported by this source type"}
+                    {o.source_type === "vendor_case_study" || o.source_type === "press_release" ? (
+                      <Bi en="claimed, not independently confirmed" fr="déclaré, non confirmé indépendamment" />
+                    ) : (
+                      <Bi en="as reported by this source type" fr="tel que rapporté par ce type de source" />
+                    )}
                   </p>
                 </div>
               </li>
@@ -115,14 +129,15 @@ export default async function EntryPage({ params }: Props) {
 
       <section className="mt-10 rounded-2xl border border-lavender-line bg-lilac-soft p-5">
         <h2 className="text-xl font-black uppercase tracking-tight">
-          Confidence: {confidencePercent(entry.confidence)}
+          <Bi en="Confidence:" fr="Confiance :" /> {confidencePercent(entry.confidence)}
         </h2>
         <p className="mt-2 text-sm leading-relaxed text-ink-soft">{entry.confidence_reason}</p>
         {isVendorSourced(entry) && (
           <p className="mt-3 rounded-lg bg-warn-bg px-3 py-2 text-sm font-semibold text-warn">
-            All evidence for this entry comes from vendor marketing (case
-            studies or press releases). Confidence is capped at 50% until an
-            independent source confirms it.
+            <Bi
+              en="All evidence for this entry comes from vendor marketing (case studies or press releases). Confidence is capped at 50% until an independent source confirms it."
+              fr="Toutes les preuves de cette fiche viennent du marketing de l'éditeur (cas clients ou communiqués). La confiance est plafonnée à 50 % tant qu'une source indépendante ne la confirme pas."
+            />
           </p>
         )}
       </section>
@@ -136,7 +151,7 @@ export default async function EntryPage({ params }: Props) {
                 <SourceTypeChip type={s.source_type} />
                 <span className="text-xs font-bold text-muted">{s.publisher}</span>
                 <span className="ml-auto text-xs text-muted">
-                  retrieved {formatDate(s.retrieved_date)}
+                  <Bi en="retrieved" fr="consulté le" /> {formatDate(s.retrieved_date)}
                 </span>
               </div>
               <a
@@ -152,11 +167,20 @@ export default async function EntryPage({ params }: Props) {
           ))}
         </ul>
         <p className="mt-4 text-xs text-muted">
-          Source types explained on the{" "}
-          <Link href="/methodology" className="font-bold text-mauve hover:underline">
-            methodology page
-          </Link>
-          . Types: {Object.values(SOURCE_TYPE_LABELS).join(", ").toLowerCase()}.
+          <span className="lang-en">
+            Source types explained on the{" "}
+            <Link href="/methodology" className="font-bold text-mauve hover:underline">
+              methodology page
+            </Link>
+            . Types: {Object.values(SOURCE_TYPE_LABELS).join(", ").toLowerCase()}.
+          </span>
+          <span className="lang-fr">
+            Les types de sources sont expliqués sur la{" "}
+            <Link href="/methodology" className="font-bold text-mauve hover:underline">
+              page méthodologie
+            </Link>
+            . Types : {Object.values(SOURCE_TYPE_LABELS_FR).join(", ").toLowerCase()}.
+          </span>
         </p>
       </section>
     </main>

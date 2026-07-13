@@ -139,3 +139,27 @@
 .rail > * {
   scroll-snap-align: start;
 }
+
+/* ================= Bilingual chrome (FR/EN) =================
+   Both languages are rendered server-side; the toggle flips data-lang on
+   <html> and CSS shows exactly one. Instant, static-friendly, no reload. */
+html { scroll-behavior: smooth; }
+:root[data-lang="fr"] .lang-en { display: none !important; }
+:root:not([data-lang="fr"]) .lang-fr { display: none !important; }
+
+/* Back-to-top button */
+.to-top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 50;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: none;
+}
