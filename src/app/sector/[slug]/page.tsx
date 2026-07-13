@@ -44,7 +44,7 @@ export default async function SectorPage({ params }: Props) {
           <p className="kicker mt-6 text-mauve-bright">
             <Bi en="Sector shelf" fr="Rayon sectoriel" />
           </p>
-          <h1 className="mt-2 text-3xl font-black uppercase tracking-tight md:text-5xl">
+          <h1 className="mt-2 text-3xl font-extrabold tracking-tight md:text-4xl">
             {sector.name}
           </h1>
           <div className="mt-6 flex flex-wrap items-end gap-x-10 gap-y-4">
