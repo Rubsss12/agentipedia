@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-13T12:32:33.349Z",
+  "updated_at": "2026-07-13T12:58:47.343Z",
   "entries": [
     {
       "id": "1-800accountant--agentforce",
@@ -3011,6 +3011,663 @@
       "confidence": 0.6,
       "confidence_reason": "Single independent trade publication; the modeling AI has no public product name. Kept at moderate confidence pending further coverage.",
       "id": "petrobras--unnamed-reservoir-modeling-ai"
+    },
+    {
+      "company": "Bharti Airtel",
+      "company_country": "India",
+      "region": "South Asia",
+      "sector": "Telecommunications",
+      "solution_name": "Unnamed spam and fraud detection AI",
+      "solution_named": false,
+      "vendor": "In-house (Airtel data scientists)",
+      "use_case": "Dual-layer AI shield on Airtel's network and IT systems that screens every call and SMS in real time, processing 1.5 billion messages and 2.5 billion calls a day in about 2 milliseconds, and extended in 2025-2026 to fraudulent-link and OTP-fraud protection.",
+      "department": "Network operations",
+      "industry": "Telecommunications",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Traffic screened daily",
+          "value": "1.5B messages + 2.5B calls (in ~2 ms)",
+          "source_type": "company_official"
+        },
+        {
+          "metric": "Spam calls identified over one year",
+          "value": "48.3 billion",
+          "source_type": "company_official"
+        },
+        {
+          "metric": "Financial fraud loss value on network (per I4C data)",
+          "value": "-68.7%",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://www.airtel.in/press-release/09-2024/airtel-cracks-down-on-spam-launches-indias-first-ai-powered-network-solution-for-spam-detection/",
+          "title": "Airtel cracks down on SPAM, launches India's first AI-powered network solution for SPAM detection",
+          "publisher": "Airtel",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.telecomtv.com/content/digital-platforms-services/airtel-launches-india-s-first-ai-powered-network-solution-for-spam-detection-51375/",
+          "title": "Airtel launches India's first AI-powered network solution for Spam detection",
+          "publisher": "TelecomTV",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://telcomagazine.com/news/why-airtels-ai-cuts-customer-fraud-losses-in-india",
+          "title": "Why Airtel's AI Cuts Customer Fraud Losses in India",
+          "publisher": "Telco Magazine",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Official Airtel releases plus independent telecom press document the in-house system, its scale and impact; it carries no product name.",
+      "id": "bharti-airtel--unnamed-spam-and-fraud-detection-ai"
+    },
+    {
+      "company": "Delta Air Lines",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Travel & Transportation",
+      "solution_name": "Unnamed AI fare-pricing model",
+      "solution_named": false,
+      "vendor": "Fetcherr",
+      "use_case": "Generative AI model from Fetcherr that sets prices on part of Delta's domestic network; president Glen Hauenstein told investors it covered about 3% of the network with a target of about 20% by end of year, while Delta publicly states it does not price on personal data.",
+      "department": "Revenue management",
+      "industry": "Airline",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [
+        {
+          "metric": "Share of domestic network priced by AI",
+          "value": "≈3%, target ≈20% by end of year (per investor remarks)",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://abcnews.com/GMA/Travel/delta-ai-ticket-pricing-means-air-travel/story?id=124343088",
+          "title": "How Delta is using AI for ticket pricing and what it means for air travel",
+          "publisher": "ABC News",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://news.delta.com/delta-responds-misinformation-around-ai-pricing",
+          "title": "Delta responds to misinformation around AI pricing",
+          "publisher": "Delta News Hub",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.pymnts.com/travel-payments/2025/delta-air-lines-tests-ai-powered-personalized-pricing/",
+          "title": "Delta Air Lines Tests AI-Powered Personalized Pricing",
+          "publisher": "PYMNTS",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Investor remarks reported by national press, with Delta's own clarification page; the pricing model itself has no public name (Fetcherr is the vendor). Still described as in heavy testing, so recorded as a pilot.",
+      "id": "delta-air-lines--unnamed-ai-fare-pricing-model"
+    },
+    {
+      "company": "American Express",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Financial Services",
+      "solution_name": "Unnamed transaction-fraud detection AI",
+      "solution_named": false,
+      "vendor": "In-house (served on NVIDIA infrastructure)",
+      "use_case": "Long-running machine learning stack (LSTM plus gradient boosting) that scores every card transaction worldwide in milliseconds, monitoring more than $1.2 trillion in transaction value a year within a ~2 ms latency budget.",
+      "department": "Risk & fraud",
+      "industry": "Payments",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Transaction value monitored yearly",
+          "value": "$1.2 trillion+",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Fraud detection accuracy in specific segments",
+          "value": "+ up to 6%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://www.forbes.com/sites/cognitiveworld/2020/09/06/how-american-express-uses-ai-to-enhance-security-interview-with-rajat-jain-global-head-for-identity-and-authentication-strategy-at-american-express/",
+          "title": "How American Express Uses AI To Enhance Security",
+          "publisher": "Forbes",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/american-express-nvidia-ai/",
+          "title": "American Express Adopts NVIDIA AI to Help Prevent Fraud and Foil Cybercrime",
+          "publisher": "NVIDIA Blog",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Independent press plus vendor material converge on a production system running for years at full transaction scale; Amex has never given it a public product name.",
+      "id": "american-express--unnamed-transaction-fraud-detection-ai"
+    },
+    {
+      "company": "Air New Zealand",
+      "company_country": "New Zealand",
+      "region": "Oceania",
+      "sector": "Travel & Transportation",
+      "solution_name": "Unnamed meal-tray image-recognition AI",
+      "solution_named": false,
+      "vendor": "",
+      "use_case": "Computer-vision AI used to analyse around 30,000 photographed meal trays, quantifying what passengers leave uneaten to cut catering waste and refine onboard menus.",
+      "department": "Catering & inflight",
+      "industry": "Airline",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Meal trays analysed",
+          "value": "≈30,000",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://newsroom.co.nz/2025/03/14/if-ai-is-a-battlefield-this-might-be-what-decides-who-wins/",
+          "title": "If AI is a battlefield, this might decide who wins",
+          "publisher": "Newsroom NZ",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.6,
+      "confidence_reason": "Single independent publication documents the deployment and volume; the system has no public name. Moderate confidence pending further coverage.",
+      "id": "air-new-zealand--unnamed-meal-tray-image-recognition-ai"
+    },
+    {
+      "company": "Codelco",
+      "company_country": "Chile",
+      "region": "Latin America",
+      "sector": "Energy & Utilities",
+      "solution_name": "Unnamed copper-processing optimization AI",
+      "solution_named": false,
+      "vendor": "",
+      "use_case": "Advanced analytics and machine learning applied since 2020 to the copper concentrate production chain at Chuquicamata, processing mineral-characteristics data so engineers can tune the process in near real time; Microsoft and Huawei agreements extend the program.",
+      "department": "Operations",
+      "industry": "Copper mining",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Additional fine copper attributed to AI at Chuquicamata",
+          "value": "≈8,000 tonnes (+ over 2%)",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://energiminas.com/chuquicamata-inteligencia-artificial-en-codelco-ha-aumentado-produccion-en-8-000-toneladas-mas-de-cobre-fino/",
+          "title": "Chuquicamata: inteligencia artificial en Codelco ha aumentado producción en 8.000 toneladas más de cobre fino",
+          "publisher": "Energiminas",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.df.cl/codelco-recurre-a-inteligencia-artificial-para-extraer-mas-cobre-de",
+          "title": "Codelco apuesta por Inteligencia Artificial para extraer más cobre de minas envejecidas",
+          "publisher": "Diario Financiero",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Two independent Chilean business publications document the production system and its output impact; the system has no public product name.",
+      "id": "codelco--unnamed-copper-processing-optimization-ai"
+    },
+    {
+      "company": "Australian Antarctic Division",
+      "company_country": "Australia",
+      "region": "Antarctica",
+      "sector": "Public Sector & Education",
+      "solution_name": "Unnamed whale-call detection AI",
+      "solution_named": false,
+      "vendor": "",
+      "use_case": "Machine learning built with Cornell's K. Lisa Yang Center and Curtin University that detects blue-whale D-calls in hundreds of thousands of hours of Southern Ocean acoustic recordings faster and more accurately than human analysts, feeding AAD's population monitoring; ship-mounted 360-degree camera AI for live whale detection is in development.",
+      "department": "Science operations",
+      "industry": "Polar research",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://www.antarctica.gov.au/news/2024/listening-to-giants-the-search-for-the-elusive-antarctic-blue-whale/",
+          "title": "Listening to giants: the search for the elusive Antarctic blue whale",
+          "publisher": "Australian Antarctic Program",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.antarctica.gov.au/news/2023/video-tracking-of-antarctic-blue-whales-provides-behavioural-insights-and-spurs-ai-development/",
+          "title": "From video to AI: learning more about Antarctic blue whales",
+          "publisher": "Australian Antarctic Program",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.65,
+      "confidence_reason": "Official Australian Antarctic Program pages document the models in active analysis use; no public product name and no quantified metrics. Region recorded as Antarctica (deployment theatre); the agency is Australian.",
+      "id": "australian-antarctic-division--unnamed-whale-call-detection-ai"
+    },
+    {
+      "company": "TSMC",
+      "company_country": "Taiwan",
+      "region": "East Asia",
+      "sector": "Technology & Software",
+      "solution_name": "Unnamed fab defect-detection AI",
+      "solution_named": false,
+      "vendor": "NVIDIA (Metropolis, TAO)",
+      "use_case": "Deep-learning defect detection and classification deployed across TSMC's fabs, trained on billions of wafer images to spot nanometer-scale defects, alongside a die-level manufacturing execution system for yield prediction and real-time dispatching.",
+      "department": "Manufacturing & quality",
+      "industry": "Semiconductors",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Defect identification and classification accuracy",
+          "value": "≈95%",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://tech.yahoo.com/ai/articles/nvidia-tsmc-deploy-ai-chip-135126635.html",
+          "title": "Nvidia and TSMC deploy AI in chip fabs to improve yields",
+          "publisher": "Yahoo Tech",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-tsmc-bring-ai-into-fabs-to-advance-semiconductor-design-and-manufacturing",
+          "title": "NVIDIA and TSMC Bring AI Into Fabs to Advance Semiconductor Design and Manufacturing",
+          "publisher": "NVIDIA Newsroom",
+          "source_type": "press_release",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Independent tech press plus the vendor announcement document fab-wide deployment; TSMC's internal systems carry no public product names.",
+      "id": "tsmc--unnamed-fab-defect-detection-ai"
+    },
+    {
+      "company": "TotalEnergies",
+      "company_country": "France",
+      "region": "Europe",
+      "sector": "Energy & Utilities",
+      "solution_name": "Unnamed production-forecasting and maintenance AI",
+      "solution_named": false,
+      "vendor": "",
+      "use_case": "AI used for years across exploration and production to forecast and refine output at oil and gas fields, improve predictive maintenance and detect equipment anomalies, industrialized through the company's Digital Factory and its roughly 300 AI and digital experts.",
+      "department": "Exploration & production",
+      "industry": "Oil & gas",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://totalenergies.com/news/news/ia-expediting-energy-transition",
+          "title": "At TotalEnergies, AI accelerates the energy transition",
+          "publisher": "TotalEnergies",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.65,
+      "confidence_reason": "Official company page states years of production use across E&P; no independent coverage retrieved this run and no public product name, so confidence stays moderate.",
+      "id": "totalenergies--unnamed-production-forecasting-and-maintenance-ai"
+    },
+    {
+      "company": "Safaricom",
+      "company_country": "Kenya",
+      "region": "Africa",
+      "sector": "Telecommunications",
+      "solution_name": "Unnamed M-PESA fraud-detection AI",
+      "solution_named": false,
+      "vendor": "AWS (Bedrock, SageMaker)",
+      "use_case": "Machine learning models, including graph neural networks, that screen M-PESA mobile-money activity for identity theft and social-engineering fraud and block suspect transactions, expanded in the Fintech 2.0 upgrade of the platform.",
+      "department": "Risk & fraud",
+      "industry": "Mobile money",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Social-engineering fraud detection (F1 score)",
+          "value": "up to 89%",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://newsroom.safaricom.co.ke/innovation/confronting-the-cybersecurity-headache/",
+          "title": "Confronting the cybersecurity headache",
+          "publisher": "Safaricom Newsroom",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://kenyanwallstreet.com/how-safaricom-is-leveraging-ai-to-bolster-m-pesa-security-and-efficiency",
+          "title": "How Safaricom is Leveraging AI to Bolster M-Pesa Security and Efficiency",
+          "publisher": "The Kenyan Wall Street",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.the-star.co.ke/news/big-read/2025-03-27-how-m-pesa-has-tackled-fraud-security-worries",
+          "title": "How M-PESA has tackled fraud, security worries",
+          "publisher": "The Star Kenya",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Official newsroom plus two independent Kenyan publications document the deployed models and their measured performance; the system has no public name.",
+      "id": "safaricom--unnamed-m-pesa-fraud-detection-ai"
+    },
+    {
+      "company": "HCA Healthcare",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Healthcare & Life Sciences",
+      "solution_name": "Nurse Handoff",
+      "vendor": "Google Cloud (MedLM)",
+      "use_case": "Generative AI app that drafts shift-change summaries from the electronic health record so nurses review and edit instead of writing from scratch, piloted in five hospitals of America's largest hospital network.",
+      "department": "Nursing",
+      "industry": "Hospitals",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [
+        {
+          "metric": "Nurse-rated accuracy in pilot",
+          "value": ">85% of cases",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Nurse-rated usefulness in pilot",
+          "value": ">90% of the time",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://investor.hcahealthcare.com/news/news-details/2023/HCA-Healthcare-Collaborates-With-Google-Cloud-to-Bring-Generative-AI-to-Hospitals/default.aspx",
+          "title": "HCA Healthcare Collaborates With Google Cloud to Bring Generative AI to Hospitals",
+          "publisher": "HCA Healthcare",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.beckershospitalreview.com/healthcare-information-technology/digital-health/google-powered-nurse-handoff-gains-traction-at-hca/",
+          "title": "Google-powered nurse handoff gains traction at HCA",
+          "publisher": "Becker's Hospital Review",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/ai-already-playing-role-countrys-largest-profit-hospital-chain",
+          "title": "How HCA Healthcare has deployed AI across its hospitals",
+          "publisher": "Fierce Healthcare",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Official announcement plus independent healthcare press; still a five-hospital pilot, with nurse-rated quality figures from the pilot.",
+      "id": "hca-healthcare--nurse-handoff"
+    },
+    {
+      "company": "Octopus Energy",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Energy & Utilities",
+      "solution_name": "Arlo",
+      "vendor": "Kraken Technologies",
+      "use_case": "AI email assistant built with Kraken that answers straightforward customer emails about tariff renewals, payment dates and account details, with every AI-written reply labelled and human escalation on demand.",
+      "department": "Customer service",
+      "industry": "Energy retail",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [
+        {
+          "metric": "Emails handled per week in trial",
+          "value": "≈8,000 (4% of all customer emails)",
+          "source_type": "company_official"
+        },
+        {
+          "metric": "Customer satisfaction vs human replies",
+          "value": "76% vs 72%",
+          "source_type": "company_official"
+        }
+      ],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://octopus.energy/press/more-news-press-releases/octopus-energy-s-ai-trial-wins-customer-approval/",
+          "title": "Octopus Energy's AI trial wins customer approval",
+          "publisher": "Octopus Energy",
+          "source_type": "company_official",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.techregister.co.uk/octopus-energy-ai-trial-wins-customer-approval/",
+          "title": "Octopus Energy AI Trial Wins Customer Approval",
+          "publisher": "Techregister",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.65,
+      "confidence_reason": "Company announcement echoed by tech press; three-month trial figures, so recorded as a pilot with its own satisfaction benchmark.",
+      "id": "octopus-energy--arlo"
+    },
+    {
+      "company": "Westpac",
+      "company_country": "Australia",
+      "region": "Oceania",
+      "sector": "Financial Services",
+      "solution_name": "JESS",
+      "vendor": "In-house (Westpac)",
+      "use_case": "AI assistant that helps bankers spot scams in real time during customer calls, part of a bank-wide AI program in which generative AI tools reach more than 15,000 employees.",
+      "department": "Customer service",
+      "industry": "Banking",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Calls assisted",
+          "value": "20,000+",
+          "source_type": "earnings_call"
+        },
+        {
+          "metric": "Employees using the bank's generative AI tools",
+          "value": "15,000+",
+          "source_type": "earnings_call"
+        }
+      ],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/719245/000110465925105149/tm2528795d6_ex1.htm",
+          "title": "Westpac Banking Corp Form 6-K (FY2025 results material)",
+          "publisher": "Westpac via SEC EDGAR",
+          "source_type": "earnings_call",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Disclosed in the bank's own results filing on SEC EDGAR; regulatory filings are strong evidence, though no independent press was retrieved this run.",
+      "id": "westpac--jess"
+    },
+    {
+      "company": "Fonterra",
+      "company_country": "New Zealand",
+      "region": "Oceania",
+      "sector": "Consumer Goods & Manufacturing",
+      "solution_name": "Co-op GPT",
+      "vendor": "Microsoft (Copilot ecosystem)",
+      "use_case": "The dairy co-operative's own generative AI assistant, used alongside Copilot Chat, Copilot Studio agents and GitHub Copilot across the workforce, with AI also monitoring butter packaging lines at the Clandeboye site.",
+      "department": "Company-wide",
+      "industry": "Dairy",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Global workforce actively using AI tools (Feb 2026)",
+          "value": "35%",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "AI interactions in a single month",
+          "value": "≈1 million",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://news.microsoft.com/source/asia/features/how-ai-is-helping-fonterra-work-differently-across-the-co-operative/",
+          "title": "How AI is helping Fonterra work differently across the co-operative",
+          "publisher": "Microsoft Source Asia",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Single vendor-published case study is the only retrieved evidence, so confidence is capped at 50% despite the named tool and usage figures.",
+      "id": "fonterra--co-op-gpt"
+    },
+    {
+      "company": "Kenya Airways",
+      "company_country": "Kenya",
+      "region": "Africa",
+      "sector": "Travel & Transportation",
+      "solution_name": "Jupiter 5.0",
+      "vendor": "FlyNava Technologies",
+      "use_case": "AI and machine learning pricing platform fully integrated into the airline's revenue management, recalculating and executing ticket pricing across 42 destinations including 33 African routes.",
+      "department": "Revenue management",
+      "industry": "Airline",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://hapakenya.com/2026/05/19/how-kenya-airways-is-using-ai-to-offer-competitive-ticket-pricing-to-customers/",
+          "title": "How Kenya Airways is using AI in its ticket pricing to customers",
+          "publisher": "HapaKenya",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.ghanamma.com/2026/05/20/kenya-airways-deploys-advanced-ai-pricing-engine-to-optimize-global-fares/",
+          "title": "Kenya Airways Deploys Advanced AI Pricing Engine To Optimize Global Fares",
+          "publisher": "Ghanamma",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        },
+        {
+          "url": "https://www.travelandtourworld.com/news/article/ay5lvcd77hv8/",
+          "title": "Kenya Airways Uses AI to Offer Smarter, Faster, and More Competitive Travel Fares",
+          "publisher": "Travel And Tour World",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Multiple independent outlets name both the airline and the FlyNava platform and describe full integration; no outcome figures yet.",
+      "id": "kenya-airways--jupiter-5-0"
+    },
+    {
+      "company": "Ethiopian Airlines",
+      "company_country": "Ethiopia",
+      "region": "Africa",
+      "sector": "Travel & Transportation",
+      "solution_name": "Jupiter 5.0",
+      "vendor": "FlyNava Technologies",
+      "use_case": "AI pricing platform adopted by Africa's largest carrier, cited alongside Kenya Airways and RwandAir as pioneering AI-based fare optimization on the continent.",
+      "department": "Revenue management",
+      "industry": "Airline",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://www.travelandtourworld.com/news/article/0xedtcmffqi3/",
+          "title": "Kenya Airways joins Ethiopian Airlines & RwandAir in Pioneering AI Pricing With Jupiter 5.0",
+          "publisher": "Travel And Tour World",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.6,
+      "confidence_reason": "Named in independent coverage of the platform's African adopters, but only one retrieved source covers Ethiopian specifically; moderate confidence.",
+      "id": "ethiopian-airlines--jupiter-5-0"
+    },
+    {
+      "company": "Qatar Airways",
+      "company_country": "Qatar",
+      "region": "Middle East",
+      "sector": "Travel & Transportation",
+      "solution_name": "Sama",
+      "vendor": "In-house (with UneeQ digital-human technology)",
+      "use_case": "AI-powered digital human cabin crew that fronts the airline's booking and travel-question experience across its app and website, extended by the AI Skyways program with Accenture across the group.",
+      "department": "Customer experience",
+      "industry": "Airline",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://www.aviationbusinessme.com/analysis/how-ai-is-reshaping-aviation-for-airlines-and-airports",
+          "title": "How AI Is Reshaping Aviation For Airlines And Airports",
+          "publisher": "Aviation Business Middle East",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.6,
+      "confidence_reason": "Independent trade coverage names Sama and its role; only one source retrieved this run, so confidence stays moderate.",
+      "id": "qatar-airways--sama"
+    },
+    {
+      "company": "Etihad Airways",
+      "company_country": "United Arab Emirates",
+      "region": "Middle East",
+      "sector": "Travel & Transportation",
+      "solution_name": "PROS RM",
+      "vendor": "PROS",
+      "use_case": "AI-powered revenue management that forecasts demand and optimizes bid prices across the network, recognized with a 2024 PROS customer award for profit impact.",
+      "department": "Revenue management",
+      "industry": "Airline",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-07-13",
+      "sources": [
+        {
+          "url": "https://www.aviationbusinessme.com/analysis/how-ai-is-reshaping-aviation-for-airlines-and-airports",
+          "title": "How AI Is Reshaping Aviation For Airlines And Airports",
+          "publisher": "Aviation Business Middle East",
+          "source_type": "news_media",
+          "retrieved_date": "2026-07-13"
+        }
+      ],
+      "confidence": 0.6,
+      "confidence_reason": "Independent trade coverage names the airline and the PROS RM deployment; single retrieved source, so confidence stays moderate.",
+      "id": "etihad-airways--pros-rm"
     }
   ]
 }

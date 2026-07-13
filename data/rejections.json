@@ -237,6 +237,69 @@
           "reason": "Proof-of-concept trial of a hardware drone dock; not an AI agent deployment and still a trial. The BAS seafloor-imagery AI accepted instead."
         }
       ]
+    },
+    {
+      "run_id": "run-2026-07-13-unnamed-deep-pass",
+      "date": "2026-07-13",
+      "operator": "manual curation pass deepening the unnamed collection to 2+ per continent, plus named finds along the way",
+      "model": "claude-fable-5 (interactive)",
+      "queries": [
+        "Airtel AI spam detection network deployed billion messages India",
+        "Nippon Steel AI blast furnace anomaly detection deployed production",
+        "HCA Healthcare AI nurse handoff tool Google deployed hospitals",
+        "Octopus Energy AI customer emails handles work of people Kraken",
+        "Delta Air Lines AI pricing fares percentage earnings Fetcherr",
+        "Air New Zealand OR Westpac OR Fonterra AI deployed production 2025 results",
+        "Codelco OR Vale OR Ecopetrol OR YPF inteligencia artificial operaciones producción desplegada minería",
+        "Jumia OR Nedbank OR Kenya Airways OR Ethiopian Airlines AI deployed production customers",
+        "Australian Antarctic Division AI whale krill detection monitoring deployed",
+        "TSMC OR Foxconn AI deployed fab production defect detection yield",
+        "EDF OR TotalEnergies OR Orange intelligence artificielle déployée production maintenance centrales",
+        "Emirates OR Etihad OR Qatar Airways AI operations deployed 2025 efficiency",
+        "American Express AI fraud detection milliseconds deployed machine learning models",
+        "Safaricom M-PESA AI fraud detection deployed network machine learning"
+      ],
+      "candidates_seen": 34,
+      "accepted": 17,
+      "updated": 0,
+      "rejections": [
+        {
+          "candidate": "Nippon Steel blast-furnace AI",
+          "reason": "No retrieved source names a specific Nippon Steel deployment; only vendor blogs and generic listicles. No source, no entry."
+        },
+        {
+          "candidate": "Foxconn CoDoctor / Nurabot in Taiwan hospitals",
+          "reason": "Provider-side story; the deploying hospitals are not clearly named in the retrieved text, so neither collection's company field can be satisfied cleanly."
+        },
+        {
+          "candidate": "EDF unnamed maintenance AI",
+          "reason": "Retrieved pages are R&D showcases; deployment status in the operating fleet is not established. Below the unnamed collection's bar."
+        },
+        {
+          "candidate": "Etihad unnamed safety-management AI",
+          "reason": "Only an official headline retrieved, without deployment detail; kept out pending substance."
+        },
+        {
+          "candidate": "Emirates x OpenAI partnership",
+          "reason": "Partnership announcement to embed AI in operations; no named solution and no deployment evidence yet."
+        },
+        {
+          "candidate": "Fonterra unnamed butter-packaging vision AI",
+          "reason": "Only a vendor case study covers it, below the unnamed collection's non-marketing bar (the named Co-op GPT entry carries the reference)."
+        },
+        {
+          "candidate": "Kenya Airways unnamed chatbots / predictive maintenance",
+          "reason": "Retrieved text says 'poised to' deploy; intent, not deployment."
+        },
+        {
+          "candidate": "Westpac Financial Crime Coworkers / FM Virtual Assistant",
+          "reason": "Listed in results material as launches under continued development; kept out until production evidence, JESS accepted instead."
+        },
+        {
+          "candidate": "DPD unnamed customer chatbot",
+          "reason": "Post-incident status of the AI element is unclear in available coverage; not pursued this run."
+        }
+      ]
     }
   ]
 }
