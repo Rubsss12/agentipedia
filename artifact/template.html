@@ -437,6 +437,7 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
       <input type="search" id="q" placeholder="" aria-label="Search the index / Rechercher dans l'index" />
       <div class="filters">
         <label><span class="kicker"><span class="lang-en">Type</span><span class="lang-fr">Type</span></span><select id="f-type"></select></label>
+        <label><span class="kicker"><span class="lang-en">Regulation</span><span class="lang-fr">Régulation</span></span><select id="f-reg"></select></label>
         <label><span class="kicker"><span class="lang-en">Sector</span><span class="lang-fr">Secteur</span></span><select id="f-sector"></select></label>
         <label><span class="kicker"><span class="lang-en">Region</span><span class="lang-fr">Région</span></span><select id="f-region"></select></label>
         <label><span class="kicker"><span class="lang-en">Country</span><span class="lang-fr">Pays</span></span><select id="f-country"></select></label>
@@ -486,6 +487,10 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
       <div class="rulecard" style="border-color:#f2764f">
         <h3 style="color:#b5451f"><span class="lang-en">The unnamed collection</span><span class="lang-fr">La collection sans nom</span></h3>
         <p style="margin:10px 0 0; font-size:.9rem"><span class="lang-en">Some deployments are certain, yet the agent has no public product name. They live in a second, clearly separated collection: the entry is badged "Unnamed agent", the solution field carries our descriptor (never a guessed brand), and the evidence bar is stricter: at least one non-marketing source is required. On the globe they appear as coral dots.</span><span class="lang-fr">Certains déploiements sont certains, mais l'agent n'a pas de nom public. Ils vivent dans une seconde collection clairement séparée : la fiche porte le badge « Agent sans nom », le champ solution contient notre descriptif (jamais une marque devinée), et la barre de preuve est plus stricte : au moins une source non marketing est exigée. Sur le globe, ils apparaissent en points corail.</span></p>
+      </div>
+      <div class="rulecard" style="border-color:var(--border)">
+        <h3 style="color:var(--text)"><span class="lang-en">The regulation axis</span><span class="lang-fr">L'axe réglementaire</span></h3>
+        <p style="margin:10px 0 0; font-size:.9rem"><span class="lang-en">Entries can be filtered by AI-regulation regime (EU AI Act, North America, China, Asia-Pacific and so on), derived from the deploying organization's home country. It is jurisdictional context for decision-makers, never a claim that the deployment itself is compliant.</span><span class="lang-fr">Les fiches se filtrent par cadre de régulation IA (AI Act européen, Amérique du Nord, Chine, Asie-Pacifique, etc.), déduit du pays de l'organisation. C'est un contexte juridictionnel pour les décideurs, jamais une affirmation de conformité du déploiement.</span></p>
       </div>
       <div class="policy">
         <div class="warnrow"><span class="lang-en">Entries whose only evidence is vendor marketing are capped at 50% confidence, whatever the marketing says.</span><span class="lang-fr">Les fiches dont la seule preuve est le marketing d'un éditeur sont plafonnées à 50 % de confiance, quoi qu'en dise le marketing.</span></div>
@@ -575,6 +580,34 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
   /* both languages in every rendered string; CSS shows one */
   function bi(en,fr){ return '<span class="lang-en">'+en+'</span><span class="lang-fr">'+fr+"</span>"; }
 
+  /* AI-regulation regimes, derived from the deploying org's home country. */
+  var REGIMES=[
+    {key:"eu_ai_act", en:"EU AI Act", fr:"AI Act européen",
+     nEn:"Binding risk-based regulation, in force since August 2024.", nFr:"Règlement contraignant par niveaux de risque, en vigueur depuis août 2024.",
+     c:["France","Germany","Spain","Italy","Sweden","Netherlands","Estonia"]},
+    {key:"europe_non_eu", en:"Europe non-EU (UK, Switzerland)", fr:"Europe hors UE (R-U, Suisse)",
+     nEn:"National, principles-based approaches outside the EU AI Act.", nFr:"Approches nationales fondées sur des principes, hors AI Act.",
+     c:["United Kingdom","Switzerland"]},
+    {key:"north_america", en:"North America (sectoral & state laws)", fr:"Amérique du Nord (lois sectorielles)",
+     nEn:"No federal AI act in the US; sectoral rules, executive orders and state laws.", nFr:"Pas de loi IA fédérale aux États-Unis ; règles sectorielles, décrets et lois d'États.",
+     c:["United States","Canada"]},
+    {key:"china", en:"China (binding AI measures)", fr:"Chine (règles contraignantes)",
+     nEn:"Binding generative AI measures and algorithm regulations (CAC).", nFr:"Mesures contraignantes sur l'IA générative et les algorithmes (CAC).",
+     c:["China"]},
+    {key:"apac", en:"Asia-Pacific (AI acts & frameworks)", fr:"Asie-Pacifique (lois et cadres IA)",
+     nEn:"Mixed landscape: Korea's AI Basic Act, Japan's AI law, Singapore's model framework.", nFr:"Paysage mixte : AI Basic Act coréen, loi IA japonaise, cadre modèle singapourien.",
+     c:["Japan","South Korea","Singapore","India","Indonesia","Malaysia","Taiwan","Australia","New Zealand"]},
+    {key:"mea", en:"Middle East & Africa (strategies)", fr:"Moyen-Orient & Afrique (stratégies)",
+     nEn:"National AI strategies and guidelines; binding horizontal laws are still rare.", nFr:"Stratégies et lignes directrices nationales ; lois horizontales contraignantes rares.",
+     c:["United Arab Emirates","Saudi Arabia","Qatar","Kenya","Nigeria","South Africa","Ethiopia"]},
+    {key:"latam", en:"Latin America (draft bills)", fr:"Amérique latine (projets de loi)",
+     nEn:"AI bills advancing (e.g. Brazil's PL 2338); no binding horizontal act yet.", nFr:"Projets de loi IA en cours (ex. PL 2338 au Brésil) ; pas encore de loi horizontale.",
+     c:["Brazil","Argentina","Chile","Mexico"]}
+  ];
+  var REG_BY_COUNTRY={};
+  REGIMES.forEach(function(r){ r.c.forEach(function(cc){ REG_BY_COUNTRY[cc]=r; }); });
+  function regimeOf(e){ return REG_BY_COUNTRY[e.company_country]||null; }
+
   var STYPE_EN = { company_official:"Company official", earnings_call:"Earnings call", news_media:"News media",
     conference_talk:"Conference talk", vendor_case_study:"Vendor case study", press_release:"Press release", other:"Other" };
   var STYPE_FR = { company_official:"Officiel entreprise", earnings_call:"Résultats financiers", news_media:"Presse",
@@ -623,7 +656,7 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
   document.getElementById("foot-updated").innerHTML=updatedHtml;
 
   /* ---- filters ---- */
-  var els={ q:document.getElementById("q"), type:document.getElementById("f-type"), sector:document.getElementById("f-sector"), region:document.getElementById("f-region"),
+  var els={ q:document.getElementById("q"), type:document.getElementById("f-type"), reg:document.getElementById("f-reg"), sector:document.getElementById("f-sector"), region:document.getElementById("f-region"),
     country:document.getElementById("f-country"), industry:document.getElementById("f-industry"), department:document.getElementById("f-department"),
     vendor:document.getElementById("f-vendor"), stage:document.getElementById("f-stage"), confidence:document.getElementById("f-confidence"),
     sort:document.getElementById("f-sort") };
@@ -643,6 +676,10 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
     els.type.innerHTML='<option value="">'+esc(t("allTypes"))+'</option><option value="named">'+esc(t("tNamed"))+
       '</option><option value="unnamed">'+esc(t("tUnnamed"))+"</option>";
     els.type.value=keepT;
+    var keepR=els.reg.value;
+    var ro='<option value="">'+(lang==="fr"?"Tous les cadres":"All regimes")+"</option>";
+    REGIMES.forEach(function(r){ ro+='<option value="'+r.key+'">'+esc(lang==="fr"?r.fr:r.en)+"</option>"; });
+    els.reg.innerHTML=ro; els.reg.value=keepR;
     var keepS=els.stage.value;
     els.stage.innerHTML='<option value="">'+esc(t("allStages"))+'</option><option value="production">'+esc(t("stProd"))+
       '</option><option value="pilot">'+esc(t("stPilot"))+'</option><option value="announced">'+esc(t("stAnnounced"))+
@@ -674,6 +711,7 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
   function match(e){
     if(els.type.value==="named" && e.solution_named===false) return false;
     if(els.type.value==="unnamed" && e.solution_named!==false) return false;
+    if(els.reg.value){ var rg=regimeOf(e); if(!rg || rg.key!==els.reg.value) return false; }
     if(els.sector.value && e.sector!==els.sector.value) return false;
     if(els.region.value && e.region!==els.region.value) return false;
     if(els.country.value && e.company_country!==els.country.value) return false;
@@ -689,7 +727,7 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
       if(hay.indexOf(q)<0) return false; }
     return true;
   }
-  function active(){ return els.q.value || els.type.value || els.sector.value || els.region.value || els.country.value || els.industry.value ||
+  function active(){ return els.q.value || els.type.value || els.reg.value || els.sector.value || els.region.value || els.country.value || els.industry.value ||
     els.department.value || els.vendor.value || els.stage.value || els.confidence.value; }
 
   /* one-click removable chips for every active filter */
@@ -697,6 +735,8 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
     var h="";
     if(els.q.value) h+='<button class="fchip" data-key="q" type="button">“'+esc(els.q.value)+'”<span class="x">✕</span></button>';
     if(els.type.value) h+='<button class="fchip" data-key="type" type="button">'+bi(esc(els.type.value==="named"?"Named agents":"Unnamed agents"),esc(els.type.value==="named"?"Agents nommés":"Agents sans nom"))+'<span class="x">✕</span></button>';
+    if(els.reg.value){ var rgc=null; REGIMES.forEach(function(r){ if(r.key===els.reg.value) rgc=r; });
+      if(rgc) h+='<button class="fchip" data-key="reg" type="button">'+bi(esc(rgc.en),esc(rgc.fr))+'<span class="x">✕</span></button>'; }
     [["sector"],["region"],["country"],["industry"],["department"],["vendor"]].forEach(function(d){
       var k=d[0]; if(els[k].value) h+='<button class="fchip" data-key="'+k+'" type="button">'+esc(els[k].value)+'<span class="x">✕</span></button>';
     });
@@ -807,6 +847,8 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
         fact(bi("Department","Département"),e.department)+fact(bi("Vendor","Éditeur"),e.vendor)+
         fact(bi("Country","Pays"),e.company_country)+fact(bi("Region","Région"),e.region)+
         fact(bi("First catalogued","Ajouté le"),null,fmtDual(e.first_seen_date))+"</div>"+
+      (function(){ var rg=regimeOf(e); if(!rg) return "";
+        return '<div class="conf" style="margin-top:12px"><h4 style="margin:0;color:var(--text)">'+bi("AI regulation context","Cadre réglementaire IA")+"</h4><p><b>"+bi(esc(rg.en),esc(rg.fr))+"</b> · "+bi(esc(rg.nEn),esc(rg.nFr))+" "+bi("Derived from the organization's home country; jurisdictional context, not a compliance assessment.","Déduit du pays de l'organisation ; contexte juridictionnel, pas une évaluation de conformité.")+"</p></div>"; })()+
       "<h4>"+bi("Reported outcomes","Résultats rapportés")+"</h4><div class=\"out\">"+out+"</div>"+
       '<div class="conf"><h4 style="margin:0;color:var(--text)">'+bi("Confidence: ","Confiance : ")+pct(e.confidence)+"</h4><p>"+esc(e.confidence_reason)+"</p>"+vendNote+"</div>"+
       "<h4>Sources</h4><div class=\"sources\">"+srcs+"</div>";

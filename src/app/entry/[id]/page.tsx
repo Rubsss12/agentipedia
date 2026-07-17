@@ -6,6 +6,7 @@ import { SOURCE_TYPE_LABELS, SOURCE_TYPE_LABELS_FR } from "@/lib/types";
 import { ConfidenceBadge, StageBadge, SourceTypeChip, UnnamedBadge } from "@/components/badges";
 import { sectorSlug } from "@/lib/sectors";
 import { confidencePercent, formatDate, hostOf } from "@/lib/format";
+import { regimeOf } from "@/lib/regulation";
 import Bi from "@/components/Bi";
 
 type Props = { params: Promise<{ id: string }> };
@@ -37,6 +38,7 @@ export default async function EntryPage({ params }: Props) {
   const { id } = await params;
   const entry = getEntry(id);
   if (!entry) notFound();
+  const regime = regimeOf(entry);
 
   return (
     <main className="mx-auto max-w-4xl px-6 pb-8 pt-10">
@@ -97,6 +99,24 @@ export default async function EntryPage({ params }: Props) {
         <Fact label={<Bi en="Region" fr="Région" />} value={entry.region} />
         <Fact label={<Bi en="First catalogued" fr="Ajouté le" />} value={formatDate(entry.first_seen_date)} />
       </section>
+
+      {regime && (
+        <section className="mt-4 rounded-xl border border-lavender-line bg-lilac-soft px-4 py-3">
+          <p className="kicker text-muted">
+            <Bi en="AI regulation context" fr="Cadre réglementaire IA" />
+          </p>
+          <p className="mt-1 text-sm font-bold">
+            <Bi en={regime.en} fr={regime.fr} />
+          </p>
+          <p className="mt-1 text-xs leading-relaxed text-muted">
+            <Bi en={regime.noteEn} fr={regime.noteFr} />{" "}
+            <Bi
+              en="Derived from the deploying organization's home country; this is jurisdictional context, not a compliance assessment."
+              fr="Déduit du pays de l'organisation ; c'est un contexte juridictionnel, pas une évaluation de conformité."
+            />
+          </p>
+        </section>
+      )}
 
       <section className="mt-10">
         <h2 className="text-xl font-black uppercase tracking-tight">

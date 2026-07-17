@@ -148,6 +148,18 @@ export default function MethodologyPage() {
         </p>
       </section>
 
+      <section className="mt-10 rounded-2xl border border-lavender-line p-6">
+        <h2 className="text-xl font-black uppercase tracking-tight">
+          <Bi en="The regulation axis" fr="L'axe réglementaire" />
+        </h2>
+        <p className="mt-3 text-sm leading-relaxed text-ink-soft">
+          <Bi
+            en="Every entry can be filtered by AI-regulation regime (EU AI Act, North America, China, Asia-Pacific and so on). The regime is derived deterministically from the deploying organization's home country, the applicable jurisdiction. It describes the regulatory context a decision-maker operates in; it is never a claim that the deployment itself is compliant or certified."
+            fr="Chaque fiche peut être filtrée par cadre de régulation IA (AI Act européen, Amérique du Nord, Chine, Asie-Pacifique, etc.). Le cadre est déduit de façon déterministe du pays de l'organisation, la juridiction applicable. Il décrit le contexte réglementaire dans lequel évolue un décideur ; ce n'est jamais une affirmation que le déploiement lui-même est conforme ou certifié."
+          />
+        </p>
+      </section>
+
       <section className="mt-10">
         <h2 className="text-xl font-black uppercase tracking-tight">
           <Bi en="The sourcing standard" fr="Le standard de sourcing" />
