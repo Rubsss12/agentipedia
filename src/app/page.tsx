@@ -8,6 +8,8 @@ import Bi from "@/components/Bi";
 import Globe from "@/components/Globe";
 import { buildMarkers } from "@/lib/geo";
 import { ConfidenceBadge, UnnamedBadge } from "@/components/badges";
+import CodaMatrix from "@/components/CodaMatrix";
+import type { CodaKey } from "@/lib/coda";
 
 export default function Home() {
   const entries = getEntries();
@@ -19,6 +21,8 @@ export default function Home() {
     .slice(0, 8);
   const markers = buildMarkers(entries);
   const unnamedCount = entries.filter((e) => e.solution_named === false).length;
+  const codaCounts = { C: 0, D: 0, O: 0, A: 0 } as Record<CodaKey, number>;
+  for (const e of entries) if (e.coda) codaCounts[e.coda]++;
 
   return (
     <main>
@@ -187,6 +191,33 @@ export default function Home() {
             </li>
           ))}
         </ul>
+      </section>
+
+      {/* ===== CODA lens: four postures of adoption, click to filter the index ===== */}
+      <section id="coda" className="mx-auto max-w-6xl scroll-mt-20 px-6 pt-14">
+        <div className="flex flex-wrap items-baseline justify-between gap-3" data-reveal>
+          <div>
+            <p className="kicker text-mauve">
+              <Bi en="The CODA ladder · HUB Institute" fr="L'échelle CODA · HUB Institute" />
+            </p>
+            <h2 className="mt-2 text-2xl font-extrabold tracking-tight md:text-3xl">
+              <Bi en="Four maturity levels, N1 to N4" fr="Quatre niveaux de maturité, N1 à N4" />
+            </h2>
+          </div>
+          <p className="max-w-md text-sm text-muted">
+            <Bi
+              en="HUB Institute reads every deployment on two axes, agent autonomy and business scope, and numbers the four quadrants N1 to N4. Pick a level to filter the index by maturity."
+              fr="Le HUB Institute lit chaque déploiement sur deux axes, l'autonomie de l'agent et sa portée business, et numérote les quatre quadrants de N1 à N4. Choisissez un niveau pour filtrer l'index par maturité."
+            />
+          </p>
+        </div>
+        <CodaMatrix counts={codaCounts} />
+        <p className="mt-5 text-xs text-muted" data-reveal>
+          <Bi
+            en="Placement is our analytical reading of each deployment, never a claim made by the source."
+            fr="Le placement est notre lecture analytique de chaque déploiement, jamais une affirmation de la source."
+          />
+        </p>
       </section>
 
       {/* ===== Index (filters + everything), right after the shelves ===== */}

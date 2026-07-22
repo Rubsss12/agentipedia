@@ -39,6 +39,8 @@ export interface Entry {
   department: string;
   industry: string;
   deployment_stage: DeploymentStage;
+  /** CODA quadrant (HUB Institute matrix): C copilot, D delegated, O orchestrated, A agentic. */
+  coda?: "C" | "D" | "O" | "A";
   reported_outcomes: Outcome[];
   first_seen_date: string;
   sources: Source[];

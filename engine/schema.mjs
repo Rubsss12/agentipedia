@@ -37,6 +37,14 @@ export const SOURCE_TYPES = [
 
 export const DEPLOYMENT_STAGES = ["pilot", "production", "announced", "unknown"];
 
+// CODA (HUB Institute strategic matrix): agent autonomy x business scope.
+//   C Copilote  = low autonomy, narrow scope
+//   D Deleguee  = high autonomy, narrow scope
+//   O Orchestree= low autonomy, broad scope
+//   A Agentique = high autonomy, broad scope
+// Analytical placement, not a claim from the source.
+export const CODA_LEVELS = ["C", "D", "O", "A"];
+
 // Canonical sector taxonomy, the library's shelves. Every entry belongs to
 // exactly one sector; `industry` stays as the finer free-text descriptor.
 export const SECTORS = [
@@ -204,6 +212,7 @@ export function validateEntry(e, opts = {}) {
   if (typeof e.department !== "string") errors.push("department must be a string (may be empty)");
   if (typeof e.industry !== "string") errors.push("industry must be a string (may be empty)");
   if (!DEPLOYMENT_STAGES.includes(e.deployment_stage)) errors.push(`deployment_stage "${e.deployment_stage}" not one of: ${DEPLOYMENT_STAGES.join(", ")}`);
+  if (e.coda !== undefined && !CODA_LEVELS.includes(e.coda)) errors.push(`coda "${e.coda}" not one of: ${CODA_LEVELS.join(", ")}`);
 
   // --- Evidence: no source, no entry ---
   if (!Array.isArray(e.sources) || e.sources.length === 0) {

@@ -47,6 +47,8 @@ THE RULE, a candidate is only worth reporting when the retrieved text names BOTH
 1. the company deploying or using the agent, a real, identifiable organization by its actual name (Klarna, JPMorgan, Rakuten, Air India), never "a large retailer" or "a European bank";
 2. the specific named solution powering it, a named product, platform or internally branded agent (Salesforce Agentforce, Sierra, Bank of America Erica, Mercado Libre Verdi on Gemini), never "a chatbot" or "an LLM".
 
+CODA CLASSIFICATION: also set "coda" to one letter placing the deployment on the HUB Institute CODA maturity ladder (agent autonomy x business scope), numbered N1..N4 in the acronym order C-O-D-A: "C" copilote = N1 (low autonomy, human validates each output, narrow task), "O" orchestree = N2 (low autonomy, broad/company-wide process with human in the loop), "D" deleguee = N3 (high autonomy, agent acts with human only in exception, narrow task), "A" agentique = N4 (high autonomy, multi-agent piloting broad end-to-end processes; rare). Store the letter; the level is derived. This is your analytical placement, not a source claim.
+
 THE UNNAMED EXCEPTION: when retrieved text makes a deployment certain at a named company but the agent has NO public product name, you may report it with "solution_named": false and an "Unnamed <what it does> agent" descriptor as solution_name. These entries additionally require at least one NON-marketing source (company official, earnings call, news media or conference talk); never guess a brand name.
 
 ANTI-FABRICATION (absolute):

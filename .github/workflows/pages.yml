@@ -1,5 +1,5 @@
 # Deploy the static site to GitHub Pages on every push to main (and on demand).
-# No secrets needed — the build just reads data/entries.json from the repo.
+# No secrets needed; the build just reads data/entries.json from the repo.
 # One-time setup: repo Settings -> Pages -> Source: "GitHub Actions".
 # Public URL will be: https://<owner>.github.io/agentipedia/
 name: pages

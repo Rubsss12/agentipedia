@@ -7,6 +7,8 @@ import { ConfidenceBadge, StageBadge, SourceTypeChip, UnnamedBadge } from "@/com
 import { sectorSlug } from "@/lib/sectors";
 import { confidencePercent, formatDate, hostOf } from "@/lib/format";
 import { regimeOf } from "@/lib/regulation";
+import { CODA } from "@/lib/coda";
+import { CodaBadge } from "@/components/badges";
 import Bi from "@/components/Bi";
 
 type Props = { params: Promise<{ id: string }> };
@@ -39,6 +41,7 @@ export default async function EntryPage({ params }: Props) {
   const entry = getEntry(id);
   if (!entry) notFound();
   const regime = regimeOf(entry);
+  const coda = entry.coda ? CODA[entry.coda] : null;
 
   return (
     <main className="mx-auto max-w-4xl px-6 pb-8 pt-10">
@@ -68,6 +71,7 @@ export default async function EntryPage({ params }: Props) {
           )}
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
+          {entry.coda && <CodaBadge coda={entry.coda} />}
           {entry.solution_named === false && <UnnamedBadge />}
           <StageBadge stage={entry.deployment_stage} />
           <ConfidenceBadge entry={entry} />
@@ -99,6 +103,24 @@ export default async function EntryPage({ params }: Props) {
         <Fact label={<Bi en="Region" fr="Région" />} value={entry.region} />
         <Fact label={<Bi en="First catalogued" fr="Ajouté le" />} value={formatDate(entry.first_seen_date)} />
       </section>
+
+      {coda && (
+        <section className="mt-4 rounded-xl border-l-4 bg-lilac-soft px-4 py-3" style={{ borderColor: coda.color }}>
+          <p className="kicker text-muted">
+            <Bi en="CODA maturity level (HUB Institute)" fr="Niveau de maturité CODA (HUB Institute)" />
+          </p>
+          <p className="mt-1 text-sm font-bold" style={{ color: coda.color }}>
+            {coda.n} · <Bi en={coda.en} fr={coda.fr} /> · <Bi en={coda.taglineEn} fr={coda.taglineFr} />
+          </p>
+          <p className="mt-1 text-xs leading-relaxed text-muted">
+            <Bi en={coda.descEn} fr={coda.descFr} />{" "}
+            <Bi
+              en="Analytical placement on the HUB Institute CODA matrix, not a claim from the source."
+              fr="Placement analytique sur la matrice CODA du HUB Institute, pas une affirmation de la source."
+            />
+          </p>
+        </section>
+      )}
 
       {regime && (
         <section className="mt-4 rounded-xl border border-lavender-line bg-lilac-soft px-4 py-3">

@@ -160,6 +160,50 @@ export default function MethodologyPage() {
         </p>
       </section>
 
+      <section className="mt-10 rounded-2xl border border-lavender-line p-6">
+        <h2 className="text-xl font-black uppercase tracking-tight">
+          <Bi en="The CODA levels (N1 to N4)" fr="Les niveaux CODA (N1 à N4)" />
+        </h2>
+        <p className="mt-3 text-sm leading-relaxed text-ink-soft">
+          <Bi
+            en="CODA is the HUB Institute strategic framework for reading agent maturity. It places every deployment on two axes, the autonomy the agent holds and the business scope it covers, then numbers the four resulting levels in the order of the acronym C-O-D-A. The level is our priority lens: it reads how far a deployment goes, and where the human still stands."
+            fr="CODA est la grille stratégique du HUB Institute pour lire la maturité des agents. Elle place chaque déploiement sur deux axes, l'autonomie de l'agent et sa portée business, puis numérote les quatre niveaux obtenus dans l'ordre de l'acronyme C-O-D-A. Le niveau est notre lecture prioritaire : il dit jusqu'où va un déploiement, et où se tient encore l'humain."
+          />
+        </p>
+        <ol className="mt-4 space-y-2 text-sm leading-relaxed">
+          <li className="rounded-xl bg-lilac-soft p-3">
+            <Bi
+              en={<><strong className="text-ink">N1 · Copilot.</strong>{" "}Punctual assistant; a person validates each output. The starting point for most companies.</>}
+              fr={<><strong className="text-ink">N1 · Copilote.</strong>{" "}Assistant ponctuel ; un humain valide chaque sortie. Le point de départ de la plupart.</>}
+            />
+          </li>
+          <li className="rounded-xl bg-lilac-soft p-3">
+            <Bi
+              en={<><strong className="text-ink">N2 · Orchestrated.</strong>{" "}AI coordinates a whole process, but the human stays in the loop at every critical step.</>}
+              fr={<><strong className="text-ink">N2 · Orchestrée.</strong>{" "}L&apos;IA coordonne un processus entier, mais l&apos;humain reste dans la boucle à chaque étape critique.</>}
+            />
+          </li>
+          <li className="rounded-xl bg-lilac-soft p-3">
+            <Bi
+              en={<><strong className="text-ink">N3 · Delegated.</strong>{" "}The agent runs targeted tasks on its own; the human steps in only by exception.</>}
+              fr={<><strong className="text-ink">N3 · Déléguée.</strong>{" "}L&apos;agent exécute des tâches ciblées en autonomie ; l&apos;humain n&apos;intervient qu&apos;en exception.</>}
+            />
+          </li>
+          <li className="rounded-xl bg-lilac-soft p-3">
+            <Bi
+              en={<><strong className="text-ink">N4 · Agentic.</strong>{" "}Multi-agent systems run processes end to end; the human designs, supervises and arbitrates.</>}
+              fr={<><strong className="text-ink">N4 · Agentique.</strong>{" "}Des systèmes multi-agents pilotent des processus de bout en bout ; l&apos;humain conçoit, supervise et arbitre.</>}
+            />
+          </li>
+        </ol>
+        <p className="mt-4 text-sm leading-relaxed text-ink-soft">
+          <Bi
+            en="Placement is our analytical judgment from what the sources describe, never a label the company or vendor applied. When the sources are too thin to place a deployment with confidence, the level is left unset."
+            fr="Le placement relève de notre jugement analytique à partir de ce que décrivent les sources, jamais d'une étiquette posée par l'entreprise ou l'éditeur. Quand les sources sont trop minces pour trancher, le niveau reste vide."
+          />
+        </p>
+      </section>
+
       <section className="mt-10">
         <h2 className="text-xl font-black uppercase tracking-tight">
           <Bi en="The sourcing standard" fr="Le standard de sourcing" />

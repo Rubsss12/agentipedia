@@ -31,7 +31,8 @@
         }
       ],
       "confidence": 0.5,
-      "confidence_reason": "Named deployment with a concrete metric, but the only retrieved evidence is the vendor's own success-story page; capped until independently confirmed."
+      "confidence_reason": "Named deployment with a concrete metric, but the only retrieved evidence is the vendor's own success-story page; capped until independently confirmed.",
+      "coda": "D"
     },
     {
       "id": "adt--sierra",
@@ -64,7 +65,8 @@
         }
       ],
       "confidence": 0.5,
-      "confidence_reason": "Deployment is named on the vendor's customer page and described by a third-party blog; no primary press coverage or metrics retrieved."
+      "confidence_reason": "Deployment is named on the vendor's customer page and described by a third-party blog; no primary press coverage or metrics retrieved.",
+      "coda": "D"
     },
     {
       "id": "air-india--ai-g",
@@ -120,7 +122,8 @@
         }
       ],
       "confidence": 0.7,
-      "confidence_reason": "Company press release plus vendor case study and independent Indian press; usage metrics come from the vendor side and are not independently audited."
+      "confidence_reason": "Company press release plus vendor case study and independent Indian press; usage metrics come from the vendor side and are not independently audited.",
+      "coda": "D"
     },
     {
       "id": "airasia--ask-bo",
@@ -160,7 +163,8 @@
         }
       ],
       "confidence": 0.7,
-      "confidence_reason": "Company announcement corroborated by Malaysia's national news agency and trade press; no performance metrics were reported in the retrieved sources."
+      "confidence_reason": "Company announcement corroborated by Malaysia's national news agency and trade press; no performance metrics were reported in the retrieved sources.",
+      "coda": "D"
     },
     {
       "company": "Amazon",
@@ -245,7 +249,8 @@
       ],
       "confidence": 0.8,
       "confidence_reason": "Company announcements corroborated by Fortune and retail trade press; sales impact is Amazon's own estimate.",
-      "id": "amazon--rufus-alexa-for-shopping"
+      "id": "amazon--rufus-alexa-for-shopping",
+      "coda": "D"
     },
     {
       "company": "AXA",
@@ -301,7 +306,8 @@
       ],
       "confidence": 0.75,
       "confidence_reason": "Company press release and vendor case study confirmed by independent insurance press; rollout figures are company-reported.",
-      "id": "axa--axa-secure-gpt"
+      "id": "axa--axa-secure-gpt",
+      "coda": "O"
     },
     {
       "id": "bank-of-america--erica",
@@ -350,7 +356,8 @@
         }
       ],
       "confidence": 0.8,
-      "confidence_reason": "Long-running deployment documented by the bank's own newsroom and covered by independent trade press; usage figures are company-reported."
+      "confidence_reason": "Long-running deployment documented by the bank's own newsroom and covered by independent trade press; usage figures are company-reported.",
+      "coda": "D"
     },
     {
       "id": "bbva--chatgpt-enterprise",
@@ -406,7 +413,8 @@
         }
       ],
       "confidence": 0.75,
-      "confidence_reason": "Vendor case study corroborated by independent fintech press; adoption metrics originate from BBVA/OpenAI rather than an external audit."
+      "confidence_reason": "Vendor case study corroborated by independent fintech press; adoption metrics originate from BBVA/OpenAI rather than an external audit.",
+      "coda": "O"
     },
     {
       "company": "Capital on Tap",
@@ -432,7 +440,8 @@
       ],
       "confidence": 0.5,
       "confidence_reason": "Named on the vendor's customer page; the uploaded report's NPS claim was not retrievable live, so it is excluded and confidence is capped.",
-      "id": "capital-on-tap--sierra"
+      "id": "capital-on-tap--sierra",
+      "coda": "D"
     },
     {
       "company": "Capital One",
@@ -485,7 +494,8 @@
       ],
       "confidence": 0.75,
       "confidence_reason": "Long-running in-house assistant documented by company channels and independent finance press.",
-      "id": "capital-one--eno"
+      "id": "capital-one--eno",
+      "coda": "D"
     },
     {
       "id": "carrefour--hopla",
@@ -531,7 +541,8 @@
         }
       ],
       "confidence": 0.8,
-      "confidence_reason": "Official company announcement confirmed by multiple independent French tech and retail outlets."
+      "confidence_reason": "Official company announcement confirmed by multiple independent French tech and retail outlets.",
+      "coda": "D"
     },
     {
       "company": "Casper",
@@ -568,7 +579,8 @@
       ],
       "confidence": 0.5,
       "confidence_reason": "Vendor case study only in this run's live retrieval; capped until independently confirmed.",
-      "id": "casper--sierra"
+      "id": "casper--sierra",
+      "coda": "D"
     },
     {
       "id": "chime--decagon",
@@ -607,7 +619,8 @@
         }
       ],
       "confidence": 0.5,
-      "confidence_reason": "Customer named by the vendor and echoed by a third-party guide; the resolution metric is not independently verified."
+      "confidence_reason": "Customer named by the vendor and echoed by a third-party guide; the resolution metric is not independently verified.",
+      "coda": "D"
     },
     {
       "company": "CLEAR",
@@ -633,7 +646,8 @@
       ],
       "confidence": 0.5,
       "confidence_reason": "Named on the vendor's customer page; no independent coverage or firm metrics retrieved live, so outcomes stay empty and confidence is capped.",
-      "id": "clear--sierra"
+      "id": "clear--sierra",
+      "coda": "D"
     },
     {
       "company": "Color Health",
@@ -666,7 +680,8 @@
       ],
       "confidence": 0.6,
       "confidence_reason": "Vendor case study plus the company's own announcement; no independent coverage retrieved and the copilot is described as clinician-in-the-loop, early stage.",
-      "id": "color-health--color-copilot-gpt-4o"
+      "id": "color-health--color-copilot-gpt-4o",
+      "coda": "C"
     },
     {
       "id": "commonwealth-bank--ceba",
@@ -703,7 +718,8 @@
         }
       ],
       "confidence": 0.6,
-      "confidence_reason": "Named deployment on the bank's own newsroom; only one source retrieved and no recent independent coverage in this run."
+      "confidence_reason": "Named deployment on the bank's own newsroom; only one source retrieved and no recent independent coverage in this run.",
+      "coda": "D"
     },
     {
       "id": "dbs-bank--cso-assistant",
@@ -752,7 +768,8 @@
         }
       ],
       "confidence": 0.75,
-      "confidence_reason": "Bank press release plus independent Computer Weekly coverage including an innovation award; pilot metrics are bank-reported."
+      "confidence_reason": "Bank press release plus independent Computer Weekly coverage including an innovation award; pilot metrics are bank-reported.",
+      "coda": "C"
     },
     {
       "id": "dubai-electricity-and-water-authority-dewa--rammas",
@@ -803,7 +820,8 @@
         }
       ],
       "confidence": 0.75,
-      "confidence_reason": "Official utility communications confirmed by independent regional media; volume figures are self-reported by DEWA."
+      "confidence_reason": "Official utility communications confirmed by independent regional media; volume figures are self-reported by DEWA.",
+      "coda": "D"
     },
     {
       "id": "duolingo--decagon",
@@ -835,7 +853,8 @@
         }
       ],
       "confidence": 0.5,
-      "confidence_reason": "Only the vendor's own case study was retrieved; capped until an independent source confirms the deployment."
+      "confidence_reason": "Only the vendor's own case study was retrieved; capped until an independent source confirms the deployment.",
+      "coda": "D"
     },
     {
       "id": "emirates-nbd--eva",
@@ -886,7 +905,8 @@
         }
       ],
       "confidence": 0.7,
-      "confidence_reason": "Bank announcement with independent banking-press coverage and usage figures reported by The Asian Banker."
+      "confidence_reason": "Bank announcement with independent banking-press coverage and usage figures reported by The Asian Banker.",
+      "coda": "D"
     },
     {
       "id": "government-of-estonia--burokratt",
@@ -937,7 +957,8 @@
         }
       ],
       "confidence": 0.75,
-      "confidence_reason": "Public-sector deployment documented by official e-Estonia channels and independent government-technology press."
+      "confidence_reason": "Public-sector deployment documented by official e-Estonia channels and independent government-technology press.",
+      "coda": "A"
     },
     {
       "id": "grab--chatgpt-enterprise",
@@ -977,7 +998,8 @@
         }
       ],
       "confidence": 0.55,
-      "confidence_reason": "Partnership and pilot confirmed by company release and independent press, but retrieved sources describe intent and early pilots rather than measured production results."
+      "confidence_reason": "Partnership and pilot confirmed by company release and independent press, but retrieved sources describe intent and early pilots rather than measured production results.",
+      "coda": "O"
     },
     {
       "id": "grupo-globo--agentforce",
@@ -1009,7 +1031,8 @@
         }
       ],
       "confidence": 0.5,
-      "confidence_reason": "Named customer and metric, but the only retrieved evidence is the vendor's success-story page; capped until independently confirmed."
+      "confidence_reason": "Named customer and metric, but the only retrieved evidence is the vendor's success-story page; capped until independently confirmed.",
+      "coda": "D"
     },
     {
       "id": "jpmorgan-chase--llm-suite",
@@ -1067,7 +1090,8 @@
         }
       ],
       "confidence": 0.85,
-      "confidence_reason": "Extensively covered by independent business press (CNBC, American Banker, CIO Dive) plus company channels; earlier 140K-employee figure grew to ≈250K as the rollout expanded."
+      "confidence_reason": "Extensively covered by independent business press (CNBC, American Banker, CIO Dive) plus company channels; earlier 140K-employee figure grew to ≈250K as the rollout expanded.",
+      "coda": "O"
     },
     {
       "id": "klarna--klarna-ai-assistant",
@@ -1123,7 +1147,8 @@
         }
       ],
       "confidence": 0.8,
-      "confidence_reason": "Company press release and vendor case study with independent technical analysis; metrics are company-reported and Klarna later reintroduced human agents for complex cases."
+      "confidence_reason": "Company press release and vendor case study with independent technical analysis; metrics are company-reported and Klarna later reintroduced human agents for complex cases.",
+      "coda": "D"
     },
     {
       "company": "Lemonade",
@@ -1174,7 +1199,8 @@
       ],
       "confidence": 0.8,
       "confidence_reason": "Long-running, well-documented deployment: company blog plus independent UK insurance trade press covering the same settled claim.",
-      "id": "lemonade--ai-jim"
+      "id": "lemonade--ai-jim",
+      "coda": "D"
     },
     {
       "id": "mercado-libre--verdi",
@@ -1218,7 +1244,8 @@
         }
       ],
       "confidence": 0.6,
-      "confidence_reason": "Vendor case study echoed by Spanish-language tech press; metrics are vendor-reported. Retrieved sources attribute Verdi to OpenAI GPT-4o."
+      "confidence_reason": "Vendor case study echoed by Spanish-language tech press; metrics are vendor-reported. Retrieved sources attribute Verdi to OpenAI GPT-4o.",
+      "coda": "O"
     },
     {
       "company": "Mercedes-Benz",
@@ -1244,7 +1271,8 @@
       ],
       "confidence": 0.6,
       "confidence_reason": "Documented on the company's own site as a production pilot; no independent coverage retrieved in this run and no reported metrics.",
-      "id": "mercedes-benz--chatgpt-in-mo360"
+      "id": "mercedes-benz--chatgpt-in-mo360",
+      "coda": "C"
     },
     {
       "company": "Moderna",
@@ -1307,7 +1335,8 @@
       ],
       "confidence": 0.8,
       "confidence_reason": "Vendor case study, company blog and multiple independent industry outlets; usage metrics originate from Moderna/OpenAI.",
-      "id": "moderna--chatgpt-enterprise-mchat"
+      "id": "moderna--chatgpt-enterprise-mchat",
+      "coda": "O"
     },
     {
       "company": "Nestlé",
@@ -1363,7 +1392,8 @@
       ],
       "confidence": 0.75,
       "confidence_reason": "Independent workplace-tech press plus company channels; savings figure comes from Nestlé's internal survey.",
-      "id": "nestle--nesgpt"
+      "id": "nestle--nesgpt",
+      "coda": "O"
     },
     {
       "id": "notion--decagon",
@@ -1395,7 +1425,8 @@
         }
       ],
       "confidence": 0.5,
-      "confidence_reason": "Named on the vendor's site with a metric; no independent source retrieved, so confidence is capped."
+      "confidence_reason": "Named on the vendor's site with a metric; no independent source retrieved, so confidence is capped.",
+      "coda": "D"
     },
     {
       "id": "nubank--call-center-copilot-openai-gpt-4o",
@@ -1451,7 +1482,8 @@
         }
       ],
       "confidence": 0.7,
-      "confidence_reason": "Vendor case study confirmed by independent fintech press; performance metrics are vendor-published."
+      "confidence_reason": "Vendor case study confirmed by independent fintech press; performance metrics are vendor-published.",
+      "coda": "C"
     },
     {
       "company": "OluKai",
@@ -1483,7 +1515,8 @@
       ],
       "confidence": 0.5,
       "confidence_reason": "Named deployment with a metric, but the only live-retrieved evidence is the vendor's case study; capped until independently confirmed.",
-      "id": "olukai--sierra"
+      "id": "olukai--sierra",
+      "coda": "D"
     },
     {
       "id": "opentable--agentforce",
@@ -1515,7 +1548,8 @@
         }
       ],
       "confidence": 0.5,
-      "confidence_reason": "Named customer and metric from the vendor's success-story page only; capped until independently confirmed."
+      "confidence_reason": "Named customer and metric from the vendor's success-story page only; capped until independently confirmed.",
+      "coda": "D"
     },
     {
       "id": "panasonic-connect--connectai",
@@ -1571,7 +1605,8 @@
         }
       ],
       "confidence": 0.75,
-      "confidence_reason": "Covered by Nikkei Asia and Microsoft's case study; the 448,000-hour figure comes from a secondary write-up citing the company's July 2025 press release."
+      "confidence_reason": "Covered by Nikkei Asia and Microsoft's case study; the 448,000-hour figure comes from a secondary write-up citing the company's July 2025 press release.",
+      "coda": "O"
     },
     {
       "company": "PepsiCo",
@@ -1597,7 +1632,8 @@
       ],
       "confidence": 0.5,
       "confidence_reason": "Company press release announcing planned deployment; no independent confirmation of live usage retrieved, so stage is 'announced' and confidence capped.",
-      "id": "pepsico--agentforce"
+      "id": "pepsico--agentforce",
+      "coda": "O"
     },
     {
       "id": "rakuten--openai-codex",
@@ -1629,7 +1665,8 @@
         }
       ],
       "confidence": 0.5,
-      "confidence_reason": "Only the vendor's case study was retrieved for this specific deployment; capped until independently confirmed."
+      "confidence_reason": "Only the vendor's case study was retrieved for this specific deployment; capped until independently confirmed.",
+      "coda": "C"
     },
     {
       "id": "rakuten--rakuten-ai",
@@ -1704,7 +1741,8 @@
         }
       ],
       "confidence": 0.7,
-      "confidence_reason": "Official Rakuten channels document the deployment and the January 2026 A/B metrics; independent coverage reports the six-month figures. The two metric sets cover different periods and are both kept visible."
+      "confidence_reason": "Official Rakuten channels document the deployment and the January 2026 A/B metrics; independent coverage reports the six-month figures. The two metric sets cover different periods and are both kept visible.",
+      "coda": "O"
     },
     {
       "id": "safaricom--zuri",
@@ -1750,7 +1788,8 @@
         }
       ],
       "confidence": 0.7,
-      "confidence_reason": "Company channels plus independent African tech press; usage figures are company-reported."
+      "confidence_reason": "Company channels plus independent African tech press; usage figures are company-reported.",
+      "coda": "D"
     },
     {
       "id": "salesforce--agentforce",
@@ -1801,7 +1840,8 @@
         }
       ],
       "confidence": 0.75,
-      "confidence_reason": "Volume milestone reported independently by Fortune; resolution rates come from Salesforce's own pages about its self-deployment."
+      "confidence_reason": "Volume milestone reported independently by Fortune; resolution rates come from Salesforce's own pages about its self-deployment.",
+      "coda": "D"
     },
     {
       "company": "Sanofi",
@@ -1852,7 +1892,8 @@
       ],
       "confidence": 0.8,
       "confidence_reason": "Company press release confirmed by independent pharma and IT press; usage figures are company-reported.",
-      "id": "sanofi--plai"
+      "id": "sanofi--plai",
+      "coda": "O"
     },
     {
       "company": "Saudi Aramco",
@@ -1903,7 +1944,8 @@
       ],
       "confidence": 0.75,
       "confidence_reason": "Company channels plus independent energy trade press; scale figures are company-reported.",
-      "id": "saudi-aramco--aramco-metabrain-ai"
+      "id": "saudi-aramco--aramco-metabrain-ai",
+      "coda": "O"
     },
     {
       "company": "Schaeffler",
@@ -1943,7 +1985,8 @@
       ],
       "confidence": 0.75,
       "confidence_reason": "Both companies' releases corroborated by independent industrial-automation trade press.",
-      "id": "schaeffler--siemens-industrial-copilot"
+      "id": "schaeffler--siemens-industrial-copilot",
+      "coda": "C"
     },
     {
       "id": "siriusxm--harmony",
@@ -1969,7 +2012,8 @@
         }
       ],
       "confidence": 0.5,
-      "confidence_reason": "Branded agent named in the vendor's announcement only; capped until independent coverage confirms it."
+      "confidence_reason": "Branded agent named in the vendor's announcement only; capped until independent coverage confirms it.",
+      "coda": "D"
     },
     {
       "id": "sonos--sierra",
@@ -2002,7 +2046,8 @@
         }
       ],
       "confidence": 0.5,
-      "confidence_reason": "Deployment described by the vendor's customer page and a third-party blog; no primary press coverage retrieved."
+      "confidence_reason": "Deployment described by the vendor's customer page and a third-party blog; no primary press coverage retrieved.",
+      "coda": "D"
     },
     {
       "company": "Tapestry (Kate Spade)",
@@ -2035,7 +2080,8 @@
       ],
       "confidence": 0.65,
       "confidence_reason": "Independent retail trade press names the deployment and stack; the uploaded report's conversion metric was not retrievable live and is excluded.",
-      "id": "tapestry-kate-spade--kate-spade-ai-gift-concierge"
+      "id": "tapestry-kate-spade--kate-spade-ai-gift-concierge",
+      "coda": "D"
     },
     {
       "id": "telkomsel--veronika",
@@ -2081,7 +2127,8 @@
         }
       ],
       "confidence": 0.65,
-      "confidence_reason": "Company announcement (in Indonesian) plus vendor case studies; the self-service metric is vendor/company-reported with no independent verification retrieved."
+      "confidence_reason": "Company announcement (in Indonesian) plus vendor case studies; the self-service metric is vendor/company-reported with no independent verification retrieved.",
+      "coda": "D"
     },
     {
       "id": "telstra--ask-telstra-one-sentence-summary",
@@ -2137,7 +2184,8 @@
         }
       ],
       "confidence": 0.7,
-      "confidence_reason": "Company release and vendor story confirmed by independent HR press; pilot metrics are company-reported from 2023 trials, with full deployment planned into 2025."
+      "confidence_reason": "Company release and vendor story confirmed by independent HR press; pilot metrics are company-reported from 2023 trials, with full deployment planned into 2025.",
+      "coda": "C"
     },
     {
       "company": "thyssenkrupp Automation Engineering",
@@ -2163,7 +2211,8 @@
       ],
       "confidence": 0.5,
       "confidence_reason": "Named as a live user in the vendors' own announcement only; capped until independently confirmed.",
-      "id": "thyssenkrupp-automation-engineering--siemens-industrial-copilot"
+      "id": "thyssenkrupp-automation-engineering--siemens-industrial-copilot",
+      "coda": "C"
     },
     {
       "id": "trip-com-group--tripgenie",
@@ -2219,7 +2268,8 @@
         }
       ],
       "confidence": 0.7,
-      "confidence_reason": "Three years of deployment documented by company newsroom and syndicated release, picked up by travel trade press; growth metrics are company-reported."
+      "confidence_reason": "Three years of deployment documented by company newsroom and syndicated release, picked up by travel trade press; growth metrics are company-reported.",
+      "coda": "D"
     },
     {
       "id": "vodacom--tobi",
@@ -2270,7 +2320,8 @@
         }
       ],
       "confidence": 0.65,
-      "confidence_reason": "Company pages and vendor story with some trade coverage; daily-volume figures are company-reported."
+      "confidence_reason": "Company pages and vendor story with some trade coverage; daily-volume figures are company-reported.",
+      "coda": "D"
     },
     {
       "id": "vodafone--supertobi",
@@ -2328,7 +2379,8 @@
         }
       ],
       "confidence": 0.7,
-      "confidence_reason": "Company newsroom, vendor story and independent UK tech press; retrieved sources conflict on the investment figure (£120m vs £140m), so both are kept and confidence is lowered."
+      "confidence_reason": "Company newsroom, vendor story and independent UK tech press; retrieved sources conflict on the investment figure (£120m vs £140m), so both are kept and confidence is lowered.",
+      "coda": "D"
     },
     {
       "id": "zomato--nugget",
@@ -2379,7 +2431,8 @@
         }
       ],
       "confidence": 0.75,
-      "confidence_reason": "Launch and usage covered by independent Indian business and tech press; volume figures originate from the company."
+      "confidence_reason": "Launch and usage covered by independent Indian business and tech press; volume figures originate from the company.",
+      "coda": "D"
     },
     {
       "company": "Engine",
@@ -2433,7 +2486,8 @@
       ],
       "confidence": 0.5,
       "confidence_reason": "All retrieved evidence comes from Salesforce (press release + customer story): vendor marketing, so confidence is capped at 50%. Metrics are vendor-published claims pending independent coverage.",
-      "id": "engine--eva-agentforce"
+      "id": "engine--eva-agentforce",
+      "coda": "D"
     },
     {
       "company": "Imprint",
@@ -2459,7 +2513,8 @@
       ],
       "confidence": 0.5,
       "confidence_reason": "Single vendor case study (Sierra) is the only retrieved evidence: confidence capped at 50%. No quantified outcomes were published, so none are recorded.",
-      "id": "imprint--sierra"
+      "id": "imprint--sierra",
+      "coda": "D"
     },
     {
       "company": "Singapore Civil Defence Force",
@@ -2503,7 +2558,8 @@
       ],
       "confidence": 0.5,
       "confidence_reason": "Documented in two Microsoft-published case studies (the platform vendor); no independent press coverage of NEXA retrieved in this run: capped at 50%.",
-      "id": "singapore-civil-defence-force--nexa-next-evolution-assistant"
+      "id": "singapore-civil-defence-force--nexa-next-evolution-assistant",
+      "coda": "C"
     },
     {
       "company": "LY Corporation",
@@ -2543,7 +2599,8 @@
       ],
       "confidence": 0.75,
       "confidence_reason": "Official launch release confirmed by independent tech media (The Elec, Pickool). The service is live inside LINE and Yahoo! JAPAN; usage metrics are not yet reported. Rejected in the 2026-07-11 run as unverifiable: now verified after launch coverage.",
-      "id": "ly-corporation--agent-i"
+      "id": "ly-corporation--agent-i",
+      "coda": "A"
     },
     {
       "company": "MTN Nigeria",
@@ -2576,7 +2633,8 @@
       ],
       "confidence": 0.7,
       "confidence_reason": "Official MTN Nigeria product page plus independent regional press. Rejected in the bootstrap run for lacking a named solution; the name (Zigi) is now verified. No usage metrics reported.",
-      "id": "mtn-nigeria--zigi"
+      "id": "mtn-nigeria--zigi",
+      "coda": "D"
     },
     {
       "company": "Standard Chartered",
@@ -2627,7 +2685,8 @@
       ],
       "confidence": 0.75,
       "confidence_reason": "Official company AI page plus two independent publications covering the deployment and its scale (41 markets, ~80,000 employees).",
-      "id": "standard-chartered--sc-gpt"
+      "id": "standard-chartered--sc-gpt",
+      "coda": "O"
     },
     {
       "company": "Absa",
@@ -2667,7 +2726,8 @@
       ],
       "confidence": 0.75,
       "confidence_reason": "Official Absa channel plus independent African tech press; described as the first customer-facing agentic AI at an African bank. No quantified outcomes yet.",
-      "id": "absa--abby"
+      "id": "absa--abby",
+      "coda": "D"
     },
     {
       "company": "Woolworths",
@@ -2700,7 +2760,8 @@
       ],
       "confidence": 0.7,
       "confidence_reason": "Independent trade press documents seven years of production service and the agentic upgrade; volume figures are qualitative (thousands of daily interactions), so none are recorded as metrics.",
-      "id": "woolworths--olive"
+      "id": "woolworths--olive",
+      "coda": "D"
     },
     {
       "company": "Petrobras",
@@ -2732,7 +2793,8 @@
       ],
       "confidence": 0.65,
       "confidence_reason": "Official company newsroom only; no independent coverage retrieved in this run, so confidence stays moderate despite the scale claim.",
-      "id": "petrobras--chatpetrobras"
+      "id": "petrobras--chatpetrobras",
+      "coda": "O"
     },
     {
       "company": "Verizon",
@@ -2772,7 +2834,8 @@
       ],
       "confidence": 0.75,
       "confidence_reason": "Reuters reporting plus independent trade press confirm the deployment, scale and sales impact; Verizon has not published a product name for the assistant.",
-      "id": "verizon--unnamed-rep-assist-ai-on-google-gemini"
+      "id": "verizon--unnamed-rep-assist-ai-on-google-gemini",
+      "coda": "C"
     },
     {
       "company": "Qantas",
@@ -2817,7 +2880,8 @@
       ],
       "confidence": 0.7,
       "confidence_reason": "CEO statements reported by independent aviation press with specific outcome figures; the underlying systems have no public product name.",
-      "id": "qantas--unnamed-ai-operations-suite"
+      "id": "qantas--unnamed-ai-operations-suite",
+      "coda": "O"
     },
     {
       "company": "SNCF",
@@ -2851,7 +2915,8 @@
       ],
       "confidence": 0.7,
       "confidence_reason": "Official group page plus national press confirm AI-based predictive maintenance in production; the models carry no public product name and no audited metrics were retrieved.",
-      "id": "sncf--unnamed-predictive-maintenance-ai"
+      "id": "sncf--unnamed-predictive-maintenance-ai",
+      "coda": "C"
     },
     {
       "company": "Seven-Eleven Japan",
@@ -2896,7 +2961,8 @@
       ],
       "confidence": 0.7,
       "confidence_reason": "Two independent publications document the nationwide AI ordering deployment and outcomes; the system itself has no public product name.",
-      "id": "seven-eleven-japan--unnamed-ai-ordering-system"
+      "id": "seven-eleven-japan--unnamed-ai-ordering-system",
+      "coda": "C"
     },
     {
       "company": "Absa",
@@ -2930,7 +2996,8 @@
       ],
       "confidence": 0.6,
       "confidence_reason": "News and official channel confirm three internal agents in testing, but names, scope and results are undisclosed; recorded as an unnamed pilot.",
-      "id": "absa--unnamed-internal-agent-pilots"
+      "id": "absa--unnamed-internal-agent-pilots",
+      "coda": "C"
     },
     {
       "company": "British Antarctic Survey",
@@ -2977,7 +3044,8 @@
       ],
       "confidence": 0.75,
       "confidence_reason": "Official BAS pages plus independent science press document the tool in active Antarctic use; it has no public product name. Region recorded as Antarctica (deployment location); the organization is UK-based.",
-      "id": "british-antarctic-survey--unnamed-seafloor-imagery-detection-ai"
+      "id": "british-antarctic-survey--unnamed-seafloor-imagery-detection-ai",
+      "coda": "D"
     },
     {
       "company": "Petrobras",
@@ -3010,7 +3078,8 @@
       ],
       "confidence": 0.6,
       "confidence_reason": "Single independent trade publication; the modeling AI has no public product name. Kept at moderate confidence pending further coverage.",
-      "id": "petrobras--unnamed-reservoir-modeling-ai"
+      "id": "petrobras--unnamed-reservoir-modeling-ai",
+      "coda": "C"
     },
     {
       "company": "Bharti Airtel",
@@ -3067,7 +3136,8 @@
       ],
       "confidence": 0.75,
       "confidence_reason": "Official Airtel releases plus independent telecom press document the in-house system, its scale and impact; it carries no product name.",
-      "id": "bharti-airtel--unnamed-spam-and-fraud-detection-ai"
+      "id": "bharti-airtel--unnamed-spam-and-fraud-detection-ai",
+      "coda": "D"
     },
     {
       "company": "Delta Air Lines",
@@ -3114,7 +3184,8 @@
       ],
       "confidence": 0.75,
       "confidence_reason": "Investor remarks reported by national press, with Delta's own clarification page; the pricing model itself has no public name (Fetcherr is the vendor). Still described as in heavy testing, so recorded as a pilot.",
-      "id": "delta-air-lines--unnamed-ai-fare-pricing-model"
+      "id": "delta-air-lines--unnamed-ai-fare-pricing-model",
+      "coda": "D"
     },
     {
       "company": "American Express",
@@ -3159,7 +3230,8 @@
       ],
       "confidence": 0.7,
       "confidence_reason": "Independent press plus vendor material converge on a production system running for years at full transaction scale; Amex has never given it a public product name.",
-      "id": "american-express--unnamed-transaction-fraud-detection-ai"
+      "id": "american-express--unnamed-transaction-fraud-detection-ai",
+      "coda": "D"
     },
     {
       "company": "Air New Zealand",
@@ -3192,7 +3264,8 @@
       ],
       "confidence": 0.6,
       "confidence_reason": "Single independent publication documents the deployment and volume; the system has no public name. Moderate confidence pending further coverage.",
-      "id": "air-new-zealand--unnamed-meal-tray-image-recognition-ai"
+      "id": "air-new-zealand--unnamed-meal-tray-image-recognition-ai",
+      "coda": "C"
     },
     {
       "company": "Codelco",
@@ -3232,7 +3305,8 @@
       ],
       "confidence": 0.7,
       "confidence_reason": "Two independent Chilean business publications document the production system and its output impact; the system has no public product name.",
-      "id": "codelco--unnamed-copper-processing-optimization-ai"
+      "id": "codelco--unnamed-copper-processing-optimization-ai",
+      "coda": "C"
     },
     {
       "company": "Australian Antarctic Division",
@@ -3266,7 +3340,8 @@
       ],
       "confidence": 0.65,
       "confidence_reason": "Official Australian Antarctic Program pages document the models in active analysis use; no public product name and no quantified metrics. Region recorded as Antarctica (deployment theatre); the agency is Australian.",
-      "id": "australian-antarctic-division--unnamed-whale-call-detection-ai"
+      "id": "australian-antarctic-division--unnamed-whale-call-detection-ai",
+      "coda": "D"
     },
     {
       "company": "TSMC",
@@ -3306,7 +3381,8 @@
       ],
       "confidence": 0.7,
       "confidence_reason": "Independent tech press plus the vendor announcement document fab-wide deployment; TSMC's internal systems carry no public product names.",
-      "id": "tsmc--unnamed-fab-defect-detection-ai"
+      "id": "tsmc--unnamed-fab-defect-detection-ai",
+      "coda": "D"
     },
     {
       "company": "TotalEnergies",
@@ -3333,7 +3409,8 @@
       ],
       "confidence": 0.65,
       "confidence_reason": "Official company page states years of production use across E&P; no independent coverage retrieved this run and no public product name, so confidence stays moderate.",
-      "id": "totalenergies--unnamed-production-forecasting-and-maintenance-ai"
+      "id": "totalenergies--unnamed-production-forecasting-and-maintenance-ai",
+      "coda": "O"
     },
     {
       "company": "Safaricom",
@@ -3380,7 +3457,8 @@
       ],
       "confidence": 0.7,
       "confidence_reason": "Official newsroom plus two independent Kenyan publications document the deployed models and their measured performance; the system has no public name.",
-      "id": "safaricom--unnamed-m-pesa-fraud-detection-ai"
+      "id": "safaricom--unnamed-m-pesa-fraud-detection-ai",
+      "coda": "D"
     },
     {
       "company": "HCA Healthcare",
@@ -3431,7 +3509,8 @@
       ],
       "confidence": 0.7,
       "confidence_reason": "Official announcement plus independent healthcare press; still a five-hospital pilot, with nurse-rated quality figures from the pilot.",
-      "id": "hca-healthcare--nurse-handoff"
+      "id": "hca-healthcare--nurse-handoff",
+      "coda": "C"
     },
     {
       "company": "Octopus Energy",
@@ -3475,7 +3554,8 @@
       ],
       "confidence": 0.65,
       "confidence_reason": "Company announcement echoed by tech press; three-month trial figures, so recorded as a pilot with its own satisfaction benchmark.",
-      "id": "octopus-energy--arlo"
+      "id": "octopus-energy--arlo",
+      "coda": "D"
     },
     {
       "company": "Westpac",
@@ -3512,7 +3592,8 @@
       ],
       "confidence": 0.7,
       "confidence_reason": "Disclosed in the bank's own results filing on SEC EDGAR; regulatory filings are strong evidence, though no independent press was retrieved this run.",
-      "id": "westpac--jess"
+      "id": "westpac--jess",
+      "coda": "C"
     },
     {
       "company": "Fonterra",
@@ -3549,7 +3630,8 @@
       ],
       "confidence": 0.5,
       "confidence_reason": "Single vendor-published case study is the only retrieved evidence, so confidence is capped at 50% despite the named tool and usage figures.",
-      "id": "fonterra--co-op-gpt"
+      "id": "fonterra--co-op-gpt",
+      "coda": "O"
     },
     {
       "company": "Kenya Airways",
@@ -3589,7 +3671,8 @@
       ],
       "confidence": 0.7,
       "confidence_reason": "Multiple independent outlets name both the airline and the FlyNava platform and describe full integration; no outcome figures yet.",
-      "id": "kenya-airways--jupiter-5-0"
+      "id": "kenya-airways--jupiter-5-0",
+      "coda": "D"
     },
     {
       "company": "Ethiopian Airlines",
@@ -3615,7 +3698,8 @@
       ],
       "confidence": 0.6,
       "confidence_reason": "Named in independent coverage of the platform's African adopters, but only one retrieved source covers Ethiopian specifically; moderate confidence.",
-      "id": "ethiopian-airlines--jupiter-5-0"
+      "id": "ethiopian-airlines--jupiter-5-0",
+      "coda": "D"
     },
     {
       "company": "Qatar Airways",
@@ -3641,7 +3725,8 @@
       ],
       "confidence": 0.6,
       "confidence_reason": "Independent trade coverage names Sama and its role; only one source retrieved this run, so confidence stays moderate.",
-      "id": "qatar-airways--sama"
+      "id": "qatar-airways--sama",
+      "coda": "D"
     },
     {
       "company": "Etihad Airways",
@@ -3667,7 +3752,8 @@
       ],
       "confidence": 0.6,
       "confidence_reason": "Independent trade coverage names the airline and the PROS RM deployment; single retrieved source, so confidence stays moderate.",
-      "id": "etihad-airways--pros-rm"
+      "id": "etihad-airways--pros-rm",
+      "coda": "D"
     }
   ]
 }

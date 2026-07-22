@@ -68,6 +68,23 @@ export function UnnamedBadge() {
   );
 }
 
+import { CODA, type CodaKey } from "@/lib/coda";
+
+export function CodaBadge({ coda }: { coda: CodaKey }) {
+  const q = CODA[coda];
+  return (
+    <span
+      className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[0.7rem] font-bold text-white"
+      style={{ background: q.color }}
+      title={`${q.taglineEn} / ${q.taglineFr}`}
+    >
+      <span className="font-black tabular-nums">{q.n}</span>
+      <span className="lang-en">{q.en}</span>
+      <span className="lang-fr">{q.fr}</span>
+    </span>
+  );
+}
+
 export function SourceTypeChip({ type }: { type: SourceType }) {
   const marketing = isMarketingType(type);
   return (
