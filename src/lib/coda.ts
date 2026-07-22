@@ -45,7 +45,7 @@ export const CODA: Record<CodaKey, CodaQuadrant> = {
   },
   A: {
     key: "A", letter: "A", level: 4, n: "N4", en: "Agentic", fr: "Agentique",
-    autonomy: "high", scope: "broad", color: "#7c5ce0",
+    autonomy: "high", scope: "broad", color: "#6b2bd9",
     taglineEn: "High autonomy, broad scope", taglineFr: "Autonomie forte, périmètre large",
     descEn: "Multi-agent systems pilot entire processes end to end; the human designs, supervises and arbitrates. A few pioneers in 2026.",
     descFr: "Des systèmes multi-agents pilotent des processus entiers de bout en bout ; l'humain conçoit, supervise, arbitre. Quelques pionniers en 2026.",
