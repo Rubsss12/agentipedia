@@ -8,8 +8,8 @@ import Bi from "@/components/Bi";
 import Globe from "@/components/Globe";
 import { buildMarkers } from "@/lib/geo";
 import { ConfidenceBadge, UnnamedBadge } from "@/components/badges";
-import CodaMatrix from "@/components/CodaMatrix";
-import type { CodaKey } from "@/lib/coda";
+import CodaMatrix, { type CodaPoint } from "@/components/CodaMatrix";
+import { codaDeclared, codaQuadrant, codaScope } from "@/lib/coda";
 
 export default function Home() {
   const entries = getEntries();
@@ -21,8 +21,13 @@ export default function Home() {
     .slice(0, 8);
   const markers = buildMarkers(entries);
   const unnamedCount = entries.filter((e) => e.solution_named === false).length;
-  const codaCounts = { C: 0, D: 0, O: 0, A: 0 } as Record<CodaKey, number>;
-  for (const e of entries) if (e.coda) codaCounts[e.coda]++;
+  const codaPoints: CodaPoint[] = entries
+    .filter((e) => e.coda)
+    .map((e) => {
+      const a = e.coda!;
+      const declared = codaDeclared(a);
+      return { q: codaQuadrant(a)!, declared, scope: codaScope(a.links), capped: a.observed > declared };
+    });
 
   return (
     <main>
@@ -198,24 +203,24 @@ export default function Home() {
         <div className="flex flex-wrap items-baseline justify-between gap-3" data-reveal>
           <div>
             <p className="kicker text-mauve">
-              <Bi en="The CODA ladder · HUB Institute" fr="L'échelle CODA · HUB Institute" />
+              <Bi en="The CODA scoring map · HUB Institute" fr="La carte du scoring CODA · HUB Institute" />
             </p>
             <h2 className="mt-2 text-2xl font-extrabold tracking-tight md:text-3xl">
-              <Bi en="Four maturity levels, N1 to N4" fr="Quatre niveaux de maturité, N1 à N4" />
+              <Bi en="Every agent, placed on two axes" fr="Chaque agent, placé sur deux axes" />
             </h2>
           </div>
           <p className="max-w-md text-sm text-muted">
             <Bi
-              en="HUB Institute reads every deployment on two axes, agent autonomy and business scope, and numbers the four quadrants N1 to N4. Pick a level to filter the index by maturity."
-              fr="Le HUB Institute lit chaque déploiement sur deux axes, l'autonomie de l'agent et sa portée business, et numérote les quatre quadrants de N1 à N4. Choisissez un niveau pour filtrer l'index par maturité."
+              en="Autonomy N1-N4 as the journals attest it (the 24-hour test), instrumented value-chain maillons 1-10 as the scope. The quadrant follows from the two axes; each entry carries its own score card."
+              fr="L'autonomie N1-N4 telle que les journaux l'attestent (le test des 24 heures), les maillons instrumentés 1-10 comme portée. Le quadrant découle des deux axes ; chaque fiche porte sa propre score card."
             />
           </p>
         </div>
-        <CodaMatrix counts={codaCounts} />
+        <CodaMatrix points={codaPoints} />
         <p className="mt-5 text-xs text-muted" data-reveal>
           <Bi
-            en="Placement is our analytical reading of each deployment, never a claim made by the source."
-            fr="Le placement est notre lecture analytique de chaque déploiement, jamais une affirmation de la source."
+            en="Declared = min(observed, authorized by the documented locks) - the anti agent-washing clause. Placement is our analytical reading of each deployment, never a claim made by the source."
+            fr="Déclaré = min(observé, autorisé par les verrous documentés) - la clause anti agent-washing. Le placement est notre lecture analytique de chaque déploiement, jamais une affirmation de la source."
           />
         </p>
       </section>

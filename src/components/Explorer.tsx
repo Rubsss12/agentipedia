@@ -7,7 +7,7 @@ import { ConfidenceBadge, StageBadge, UnnamedBadge } from "@/components/badges";
 import { hostOf } from "@/lib/format";
 import { useLang, type Lang } from "@/lib/lang";
 import { REGIMES, regimeOf, type RegimeKey } from "@/lib/regulation";
-import { CODA, CODA_ORDER, codaRank, type CodaKey } from "@/lib/coda";
+import { CODA, CODA_ORDER, codaQuadrant, codaRank, type CodaKey } from "@/lib/coda";
 import { CodaBadge } from "@/components/badges";
 import Bi from "@/components/Bi";
 
@@ -52,7 +52,7 @@ const STR = {
     placeholder: "Search company, solution, vendor or use case…  (press / to focus)",
     type: "Type", named: "Named agents", unnamed: "Unnamed agents", allTypes: "All entries",
     regulation: "Regulation", allRegimes: "All regimes",
-    coda: "CODA level", allCoda: "All CODA levels", codaSort: "Maturity N1→N4",
+    coda: "CODA quadrant", allCoda: "All quadrants", codaSort: "CODA maturity (level × scope)",
     sector: "Sector", region: "Region", country: "Country", industry: "Industry",
     department: "Department", vendor: "Vendor", stage: "Stage", confidence: "Confidence",
     sort: "Sort", allSectors: "All sectors", allRegions: "All regions", allCountries: "All countries",
@@ -68,7 +68,7 @@ const STR = {
     placeholder: "Rechercher une entreprise, une solution, un éditeur…  (touche / pour cibler)",
     type: "Type", named: "Agents nommés", unnamed: "Agents sans nom", allTypes: "Toutes les fiches",
     regulation: "Régulation", allRegimes: "Tous les cadres",
-    coda: "Niveau CODA", allCoda: "Tous les niveaux CODA", codaSort: "Maturité N1→N4",
+    coda: "Quadrant CODA", allCoda: "Tous les quadrants", codaSort: "Maturité CODA (niveau × portée)",
     sector: "Secteur", region: "Région", country: "Pays", industry: "Industrie",
     department: "Département", vendor: "Éditeur", stage: "Statut", confidence: "Confiance",
     sort: "Tri", allSectors: "Tous les secteurs", allRegions: "Toutes les régions", allCountries: "Tous les pays",
@@ -91,7 +91,7 @@ function uniqueValues(entries: Entry[], key: keyof Entry): string[] {
 function matches(e: Entry, f: Filters): boolean {
   if (f.type === "named" && e.solution_named === false) return false;
   if (f.type === "unnamed" && e.solution_named !== false) return false;
-  if (f.coda && e.coda !== f.coda) return false;
+  if (f.coda && codaQuadrant(e.coda) !== f.coda) return false;
   if (f.regulation && regimeOf(e)?.key !== f.regulation) return false;
   if (f.sector && e.sector !== f.sector) return false;
   if (f.region && e.region !== f.region) return false;
@@ -206,7 +206,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
   const chips: { key: keyof Filters; label: string }[] = [];
   if (f.q) chips.push({ key: "q", label: `“${f.q}”` });
   if (f.type) chips.push({ key: "type", label: f.type === "named" ? t.named : t.unnamed });
-  if (f.coda) chips.push({ key: "coda", label: `${CODA[f.coda].n} · ${lang === "fr" ? CODA[f.coda].fr : CODA[f.coda].en}` });
+  if (f.coda) chips.push({ key: "coda", label: `${f.coda} · ${lang === "fr" ? CODA[f.coda].fr : CODA[f.coda].en}` });
   if (f.regulation) {
     const r = REGIMES.find((x) => x.key === f.regulation);
     if (r) chips.push({ key: "regulation", label: lang === "fr" ? r.fr : r.en });
@@ -246,7 +246,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
             label={t.coda}
             value={f.coda}
             onChange={(v) => set({ coda: v as Filters["coda"] })}
-            options={CODA_ORDER.map((k) => ({ value: k, label: `${CODA[k].n} · ${lang === "fr" ? CODA[k].fr : CODA[k].en}` }))}
+            options={CODA_ORDER.map((k) => ({ value: k, label: `${k} · ${lang === "fr" ? CODA[k].fr : CODA[k].en}` }))}
             anyLabel={t.allCoda}
           />
           <Select

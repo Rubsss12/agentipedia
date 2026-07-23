@@ -1,4 +1,5 @@
 // Client-safe types and pure helpers; no Node imports here.
+import type { CodaAssessment } from "./coda";
 
 export type SourceType =
   | "company_official"
@@ -39,8 +40,12 @@ export interface Entry {
   department: string;
   industry: string;
   deployment_stage: DeploymentStage;
-  /** CODA quadrant (HUB Institute matrix): C copilot, D delegated, O orchestrated, A agentic. */
-  coda?: "C" | "D" | "O" | "A";
+  /**
+   * CODA score (HUB Institute matrix): observed autonomy N1-N4, documented
+   * locks, and the instrumented maillons of the entry's value-chain frieze.
+   * Declared level, scope and quadrant are derived (see lib/coda.ts).
+   */
+  coda?: CodaAssessment;
   reported_outcomes: Outcome[];
   first_seen_date: string;
   sources: Source[];

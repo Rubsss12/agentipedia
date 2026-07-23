@@ -37,13 +37,19 @@ export const SOURCE_TYPES = [
 
 export const DEPLOYMENT_STAGES = ["pilot", "production", "announced", "unknown"];
 
-// CODA (HUB Institute strategic matrix): agent autonomy x business scope.
-//   C Copilote  = low autonomy, narrow scope
-//   D Deleguee  = high autonomy, narrow scope
-//   O Orchestree= low autonomy, broad scope
-//   A Agentique = high autonomy, broad scope
+// CODA (HUB Institute strategic matrix), two measured axes per entry:
+//   observed: autonomy ladder 1..4 (N1 proposes, N2 prepares - answering is
+//     not executing, N3 executes and commits, N4 transacts end to end),
+//     capped at 2 when only vendor marketing attests the autonomy;
+//   chain + links: the entry's 10-maillon value-chain frieze and one status
+//     per maillon (0 none, 1 partial, 2 full) - scope, declared level and
+//     quadrant are derived by the site (declared = min(observed, locks)).
 // Analytical placement, not a claim from the source.
-export const CODA_LEVELS = ["C", "D", "O", "A"];
+export const CODA_CHAINS = [
+  "care", "commerce", "achats", "fonctions", "pilotage", "ops", "fraude",
+  "revenue", "claims", "soin", "delivery", "science", "public", "supply", "vente",
+];
+export const CODA_LOCKS = ["data", "mandate", "supervision", "compliance"];
 
 // Canonical sector taxonomy, the library's shelves. Every entry belongs to
 // exactly one sector; `industry` stays as the finer free-text descriptor.
@@ -212,7 +218,20 @@ export function validateEntry(e, opts = {}) {
   if (typeof e.department !== "string") errors.push("department must be a string (may be empty)");
   if (typeof e.industry !== "string") errors.push("industry must be a string (may be empty)");
   if (!DEPLOYMENT_STAGES.includes(e.deployment_stage)) errors.push(`deployment_stage "${e.deployment_stage}" not one of: ${DEPLOYMENT_STAGES.join(", ")}`);
-  if (e.coda !== undefined && !CODA_LEVELS.includes(e.coda)) errors.push(`coda "${e.coda}" not one of: ${CODA_LEVELS.join(", ")}`);
+  if (e.coda !== undefined) {
+    const c = e.coda;
+    if (typeof c !== "object" || c === null) errors.push("coda must be an object (chain, links, observed, locks, basis_en, basis_fr)");
+    else {
+      if (!CODA_CHAINS.includes(c.chain)) errors.push(`coda.chain "${c.chain}" not one of: ${CODA_CHAINS.join(", ")}`);
+      if (!Array.isArray(c.links) || c.links.length !== 10 || c.links.some((v) => ![0, 1, 2].includes(v)))
+        errors.push("coda.links must be 10 statuses of 0|1|2");
+      else if (!c.links.some((v) => v > 0)) errors.push("coda.links must instrument at least one maillon");
+      if (![1, 2, 3, 4].includes(c.observed)) errors.push("coda.observed must be 1..4");
+      if (!Array.isArray(c.locks) || c.locks.some((k) => !CODA_LOCKS.includes(k)))
+        errors.push(`coda.locks must be a subset of: ${CODA_LOCKS.join(", ")}`);
+      if (!normalizeName(c.basis_en) || !normalizeName(c.basis_fr)) errors.push("coda.basis_en / basis_fr missing (the proof line)");
+    }
+  }
 
   // --- Evidence: no source, no entry ---
   if (!Array.isArray(e.sources) || e.sources.length === 0) {

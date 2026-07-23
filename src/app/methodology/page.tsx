@@ -162,44 +162,62 @@ export default function MethodologyPage() {
 
       <section className="mt-10 rounded-2xl border border-lavender-line p-6">
         <h2 className="text-xl font-black uppercase tracking-tight">
-          <Bi en="The CODA levels (N1 to N4)" fr="Les niveaux CODA (N1 à N4)" />
+          <Bi en="The CODA score card (HUB Institute)" fr="La CODA Score Card (HUB Institute)" />
         </h2>
         <p className="mt-3 text-sm leading-relaxed text-ink-soft">
           <Bi
-            en="CODA is the HUB Institute strategic framework for reading agent maturity. It places every deployment on two axes, the autonomy the agent holds and the business scope it covers, then numbers the four resulting levels in the order of the acronym C-O-D-A. The level is our priority lens: it reads how far a deployment goes, and where the human still stands."
-            fr="CODA est la grille stratégique du HUB Institute pour lire la maturité des agents. Elle place chaque déploiement sur deux axes, l'autonomie de l'agent et sa portée business, puis numérote les quatre niveaux obtenus dans l'ordre de l'acronyme C-O-D-A. Le niveau est notre lecture prioritaire : il dit jusqu'où va un déploiement, et où se tient encore l'humain."
+            en="Every entry carries a CODA score card: its position on the HUB Institute matrix, built from two measured axes. The vertical axis is the autonomy ladder N1-N4; the horizontal axis counts the maillons of the entry's value-chain frieze that the agent measurably instruments. The quadrant - Copiloted, Orchestrated, Delegated, Agentic - follows from the two axes (high autonomy = N3+, broad scope = 6+ maillons); it is never assigned directly."
+            fr="Chaque fiche porte une CODA Score Card : sa position sur la matrice du HUB Institute, construite à partir de deux axes mesurés. L'axe vertical est l'escalier d'autonomie N1-N4 ; l'axe horizontal compte les maillons de la frise de la chaîne de valeur que l'agent instrumente de façon mesurable. Le quadrant - Copiloté, Orchestré, Délégué, Agentique - découle des deux axes (autonomie forte = N3+, portée large = 6 maillons et plus) ; il n'est jamais attribué directement."
           />
         </p>
         <ol className="mt-4 space-y-2 text-sm leading-relaxed">
           <li className="rounded-xl bg-lilac-soft p-3">
             <Bi
-              en={<><strong className="text-ink">N1 · Copilot.</strong>{" "}Punctual assistant; a person validates each output. The starting point for most companies.</>}
-              fr={<><strong className="text-ink">N1 · Copilote.</strong>{" "}Assistant ponctuel ; un humain valide chaque sortie. Le point de départ de la plupart.</>}
+              en={<><strong className="text-ink">N1 · Assistance.</strong>{" "}The agent proposes, the human does. Every output is reworked: writing, analysis and code copilots.</>}
+              fr={<><strong className="text-ink">N1 · Assistance.</strong>{" "}L&apos;agent propose, l&apos;humain fait. Chaque sortie est reprise : copilotes de rédaction, d&apos;analyse, de code.</>}
             />
           </li>
           <li className="rounded-xl bg-lilac-soft p-3">
             <Bi
-              en={<><strong className="text-ink">N2 · Orchestrated.</strong>{" "}AI coordinates a whole process, but the human stays in the loop at every critical step.</>}
-              fr={<><strong className="text-ink">N2 · Orchestrée.</strong>{" "}L&apos;IA coordonne un processus entier, mais l&apos;humain reste dans la boucle à chaque étape critique.</>}
+              en={<><strong className="text-ink">N2 · Validated execution.</strong>{" "}The agent does, the human validates before impact. Answering is not executing: a purely informational agent stays at N2 even when no one reviews each reply.</>}
+              fr={<><strong className="text-ink">N2 · Exécution validée.</strong>{" "}L&apos;agent fait, l&apos;humain valide avant impact. Répondre n&apos;est pas exécuter : un agent purement informationnel reste en N2 même quand personne ne relit chaque réponse.</>}
             />
           </li>
           <li className="rounded-xl bg-lilac-soft p-3">
             <Bi
-              en={<><strong className="text-ink">N3 · Delegated.</strong>{" "}The agent runs targeted tasks on its own; the human steps in only by exception.</>}
-              fr={<><strong className="text-ink">N3 · Déléguée.</strong>{" "}L&apos;agent exécute des tâches ciblées en autonomie ; l&apos;humain n&apos;intervient qu&apos;en exception.</>}
+              en={<><strong className="text-ink">N3 · Delegation under mandate.</strong>{" "}The agent does and commits (refunds, blocks, publishes prices); the human handles exceptions within written bounds.</>}
+              fr={<><strong className="text-ink">N3 · Délégation sous mandat.</strong>{" "}L&apos;agent fait et engage (rembourse, bloque, publie des prix) ; l&apos;humain traite les exceptions dans des bornes écrites.</>}
             />
           </li>
           <li className="rounded-xl bg-lilac-soft p-3">
             <Bi
-              en={<><strong className="text-ink">N4 · Agentic.</strong>{" "}Multi-agent systems run processes end to end; the human designs, supervises and arbitrates.</>}
-              fr={<><strong className="text-ink">N4 · Agentique.</strong>{" "}Des systèmes multi-agents pilotent des processus de bout en bout ; l&apos;humain conçoit, supervise et arbitre.</>}
+              en={<><strong className="text-ink">N4 · Audited autonomy.</strong>{" "}The agent chains decisions end to end; the human governs through reviews, journals and veto rights.</>}
+              fr={<><strong className="text-ink">N4 · Autonomie auditée.</strong>{" "}L&apos;agent enchaîne les décisions de bout en bout ; l&apos;humain gouverne par les revues, les journaux et le droit de veto.</>}
             />
           </li>
         </ol>
+        <p className="mt-4 rounded-xl bg-lilac-soft p-3 text-sm leading-relaxed text-ink-soft">
+          <Bi
+            en={<><strong className="text-ink">The 24-hour test.</strong>{" "}&ldquo;If the human does nothing for 24 hours, does the decision still get made?&rdquo; No: N1-N2. Yes, within written bounds: N3. Yes, re-arbitrations included, under reviews: N4. One proof criterion: what the journals attest, not what the agent&apos;s manager declares - so a vendor-only sourced entry can never be observed beyond N2.</>}
+            fr={<><strong className="text-ink">Le test des 24 heures.</strong>{" "}« Si l&apos;humain ne fait rien pendant 24 heures, la décision se prend-elle ? » Non : N1-N2. Oui, dans des bornes écrites : N3. Oui, ré-arbitrages compris, sous revues : N4. Un seul critère de preuve : ce que les journaux constatent, pas ce que le gestionnaire d&apos;agent déclare - une fiche sourcée uniquement éditeur ne peut donc jamais être observée au-delà de N2.</>}
+          />
+        </p>
+        <p className="mt-3 rounded-xl bg-lilac-soft p-3 text-sm leading-relaxed text-ink-soft">
+          <Bi
+            en={<><strong className="text-ink">The counting rule (X axis).</strong>{" "}Each entry is read against a 10-maillon frieze of its own process (customer-care journey, purchase journey, procurement, claims, fraud, pricing, and so on). A maillon counts when the agent does measurable work there - reading, analysis, action; a maillon merely fed by its results does not. Scope = full maillons + half the partial ones: restricted 1-2, intermediate 3-6, extended 7-10.</>}
+            fr={<><strong className="text-ink">La règle de comptage (axe X).</strong>{" "}Chaque fiche est lue contre une frise de 10 maillons propre à son processus (parcours service client, parcours d&apos;achat, achats, sinistres, fraude, pricing, etc.). Un maillon compte si l&apos;agent y accomplit un travail mesurable - lecture, analyse, action ; un maillon simplement alimenté par ses résultats ne compte pas. Portée = maillons pleins + moitié des partiels : restreint 1-2, intermédiaire 3-6, étendu 7-10.</>}
+          />
+        </p>
+        <p className="mt-3 rounded-xl bg-lilac-soft p-3 text-sm leading-relaxed text-ink-soft">
+          <Bi
+            en={<><strong className="text-ink">The four locks and the anti agent-washing clause.</strong>{" "}Reliable data, a written mandate and tooled supervision open level N3; audited compliance opens N4. Declared level = min(observed level, level authorized by the locks) - and a lock without public evidence counts as closed. When an agent&apos;s observed autonomy exceeds what its documented locks authorize, the card shows both: the solid dot is the declared level, the amber outline the observed one.</>}
+            fr={<><strong className="text-ink">Les quatre verrous et la clause anti agent-washing.</strong>{" "}La donnée fiable, le mandat écrit et la supervision outillée ouvrent le niveau N3 ; la conformité auditée ouvre le N4. Niveau déclaré = min(niveau observé, niveau autorisé par les verrous) - et un verrou sans preuve publique est réputé fermé. Quand l&apos;autonomie observée d&apos;un agent dépasse ce que ses verrous documentés autorisent, la carte montre les deux : le point plein est le niveau déclaré, le contour ambre le niveau observé.</>}
+          />
+        </p>
         <p className="mt-4 text-sm leading-relaxed text-ink-soft">
           <Bi
-            en="Placement is our analytical judgment from what the sources describe, never a label the company or vendor applied. When the sources are too thin to place a deployment with confidence, the level is left unset."
-            fr="Le placement relève de notre jugement analytique à partir de ce que décrivent les sources, jamais d'une étiquette posée par l'entreprise ou l'éditeur. Quand les sources sont trop minces pour trancher, le niveau reste vide."
+            en="The same grid reads agentic commerce: there the mandate is the purchase itself - an agent that discovers, compares and prepares while the customer confirms and pays holds no mandate (N2 on the purchase journey); the level rises only when the agent transacts within bounds the customer wrote. Placement is our analytical judgment from public sources, never a label the company or vendor applied; when the sources are too thin to place a deployment, the card stays unset."
+            fr="La même grille lit le commerce agentique : le mandat y est l'achat lui-même - un agent qui découvre, compare et prépare pendant que le client confirme et paie n'a pas de mandat (N2 sur le parcours d'achat) ; le niveau ne monte que quand l'agent transige dans des bornes écrites par le client. Le placement relève de notre jugement analytique sur sources publiques, jamais d'une étiquette posée par l'entreprise ou l'éditeur ; quand les sources sont trop minces, la carte reste vide."
           />
         </p>
       </section>

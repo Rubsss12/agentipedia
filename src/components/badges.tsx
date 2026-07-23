@@ -68,19 +68,32 @@ export function UnnamedBadge() {
   );
 }
 
-import { CODA, type CodaKey } from "@/lib/coda";
+import { CODA, codaDeclared, codaQuadrant, codaScope, type CodaAssessment } from "@/lib/coda";
 
-export function CodaBadge({ coda }: { coda: CodaKey }) {
-  const q = CODA[coda];
+// Quadrant pill computed from the two axes; the amber ring flags an entry
+// whose observed autonomy exceeds what its documented locks authorize.
+export function CodaBadge({ coda }: { coda: CodaAssessment }) {
+  const key = codaQuadrant(coda);
+  if (!key) return null;
+  const q = CODA[key];
+  const declared = codaDeclared(coda);
+  const capped = coda.observed > declared;
   return (
     <span
       className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[0.7rem] font-bold text-white"
       style={{ background: q.color }}
-      title={`${q.taglineEn} / ${q.taglineFr}`}
+      title={`${q.taglineEn} / ${q.taglineFr} · ${codaScope(coda.links)}/10`}
     >
-      <span className="font-black tabular-nums">{q.n}</span>
+      <span className="font-black tabular-nums">N{declared}</span>
       <span className="lang-en">{q.en}</span>
       <span className="lang-fr">{q.fr}</span>
+      {capped && (
+        <span
+          aria-hidden
+          title="observed > declared"
+          className="inline-block h-2 w-2 rounded-full border-2 border-[#ffd9a8] bg-transparent"
+        />
+      )}
     </span>
   );
 }
