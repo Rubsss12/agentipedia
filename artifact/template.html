@@ -215,6 +215,23 @@
   .codalvl .tx .lt, .codalvl .tx .ct { color:var(--text-muted); font-weight:700; font-size:.78rem; margin-left:6px; }
   .codalvl .tx .d { display:block; color:var(--text-muted); font-size:.78rem; line-height:1.35; margin-top:1px; }
   .codatest { margin:14px 0 0; background:var(--card-soft); border-radius:10px; padding:10px 12px; font-size:.78rem; line-height:1.45; color:var(--text-muted); }
+  .methodstrip { display:grid; gap:12px; grid-template-columns:repeat(3,1fr); margin-top:22px; }
+  @media (max-width:860px){ .methodstrip { grid-template-columns:1fr; } }
+  .methodstrip .mcard { border:1px solid var(--border); border-radius:14px; padding:16px; background:var(--card); }
+  .methodstrip .mcard h3 { margin:0; font-size:.92rem; }
+  .methodstrip .mcard p { margin:8px 0 0; font-size:.8rem; line-height:1.5; color:var(--text-muted); }
+  .codabar { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:0 0 14px; }
+  .codabar .cbk { flex-basis:100%; margin-bottom:2px; color:var(--text-muted); }
+  .codabar button { border:1.5px solid var(--border); background:var(--card); border-radius:999px; padding:6px 12px;
+    font:inherit; font-size:.76rem; font-weight:800; cursor:pointer; color:var(--text);
+    display:inline-flex; gap:6px; align-items:center; transition:transform .15s ease, box-shadow .15s ease; }
+  .codabar button:hover { transform:translateY(-1px); }
+  .codabar button .n { font-variant-numeric:tabular-nums; font-weight:700; opacity:.65; }
+  .codabar button.on { color:#fff; }
+  .codabar button.on .n { opacity:.85; }
+  .codabar .sep { width:1px; height:22px; background:var(--border); margin:0 4px; }
+  .codabar .amberb { border-color:#b45309; color:#b45309; }
+  .codabar .amberb.on { background:#b45309; border-color:#b45309; color:#fff; }
   /* the per-entry score card in the modal */
   .scorecard { margin-top:14px; border:1px solid var(--border); border-radius:14px; overflow:hidden; }
   .scorecard .sc-head { display:flex; flex-wrap:wrap; gap:6px 12px; justify-content:space-between; align-items:baseline; background:var(--card-soft); border-bottom:1px solid var(--border); padding:10px 14px; }
@@ -418,6 +435,7 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
       </span>
     </a>
     <nav>
+      <a href="#coda" class="kicker"><span class="lang-en">The CODA method</span><span class="lang-fr">La méthode CODA</span></a>
       <a href="#index" class="kicker"><span class="lang-en">Index</span><span class="lang-fr">Index</span></a>
       <a href="#methodology" class="kicker"><span class="lang-en">Methodology</span><span class="lang-fr">Méthodologie</span></a>
     </nav>
@@ -436,7 +454,7 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
       <div class="hcopy">
       <p class="kicker" style="color:var(--mauve-bright)"><span class="lang-en">The AI observatory by HUB Institute · updated autonomously</span><span class="lang-fr">L'observatoire IA du HUB Institute · mis à jour de façon autonome</span></p>
       <h1><span class="lang-en">The library of <em>AI agents</em> inside the world's companies</span><span class="lang-fr">La bibliothèque des <em>agents IA</em> déployés dans les entreprises du monde</span></h1>
-      <p class="lead"><span class="lang-en">From AI promise to business proof: Agentipedia catalogs the deployments that actually run: real companies, named solutions, shelved by sector for decision-makers. Every entry links the sources that prove it. No source, no entry.</span><span class="lang-fr">De la promesse de l'IA à la preuve business : Agentipedia recense les déploiements qui tournent vraiment : entreprises réelles, solutions nommées, classés par secteur pour les décideurs. Chaque fiche cite les sources qui la prouvent. Pas de source, pas de fiche.</span></p>
+      <p class="lead"><span class="lang-en">From AI promise to business proof: Agentipedia catalogs the deployments that actually run, and scores every one on the HUB Institute CODA matrix - measured autonomy N1-N4, instrumented maillons 1-10, documented locks. Every entry links the sources that prove it. No source, no entry; no evidence, no level.</span><span class="lang-fr">De la promesse de l'IA à la preuve business : Agentipedia recense les déploiements qui tournent vraiment et score chacun sur la matrice CODA du HUB Institute - autonomie mesurée N1-N4, maillons instrumentés 1-10, verrous documentés. Chaque fiche cite les sources qui la prouvent. Pas de source, pas de fiche ; pas de preuve, pas de niveau.</span></p>
       <div class="stats">
         <div><div class="n" id="stat-entries">0</div><div class="l kicker"><span class="lang-en">Verified deployments</span><span class="lang-fr">Déploiements vérifiés</span></div></div>
         <div><div class="n" id="stat-sectors">0</div><div class="l kicker"><span class="lang-en">Sectors</span><span class="lang-fr">Secteurs</span></div></div>
@@ -444,8 +462,8 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
         <div><div class="n" id="stat-regions">0</div><div class="l kicker"><span class="lang-en">World regions</span><span class="lang-fr">Régions du monde</span></div></div>
       </div>
       <div class="cta">
-        <a href="#sectors" class="btn primary"><span class="lang-en">Browse by sector</span><span class="lang-fr">Parcourir par secteur</span></a>
-        <a href="#methodology" class="btn ghost"><span class="lang-en">How entries are verified</span><span class="lang-fr">Comment les fiches sont vérifiées</span></a>
+        <a href="#coda" class="btn primary"><span class="lang-en">The CODA scoring map</span><span class="lang-fr">La carte du scoring CODA</span></a>
+        <a href="#sectors" class="btn ghost"><span class="lang-en">Browse by sector</span><span class="lang-fr">Parcourir par secteur</span></a>
         <span class="updated" id="updated"></span>
       </div>
       </div>
@@ -468,24 +486,13 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
     <div class="marquee" aria-hidden="true"><div class="marquee-track kicker" id="marquee"></div></div>
   </section>
 
-  <section class="block wrap" id="sectors">
-    <div class="head">
-      <div>
-        <p class="kicker"><span class="lang-en">The shelves</span><span class="lang-fr">Les rayons</span></p>
-        <h2><span class="lang-en">Browse by sector</span><span class="lang-fr">Parcourir par secteur</span></h2>
-      </div>
-      <p><span class="lang-en">Every deployment is filed on exactly one shelf. Open a sector to see who runs what inside it.</span><span class="lang-fr">Chaque déploiement est rangé sur un seul rayon. Ouvrez un secteur pour voir qui y déploie quoi.</span></p>
-    </div>
-    <ul class="shelves" id="shelves"></ul>
-  </section>
-
   <section class="block wrap" id="coda">
     <div class="head">
       <div>
-        <p class="kicker"><span class="lang-en">The CODA scoring map · HUB Institute</span><span class="lang-fr">La carte du scoring CODA · HUB Institute</span></p>
-        <h2><span class="lang-en">Every agent, placed on two axes</span><span class="lang-fr">Chaque agent, placé sur deux axes</span></h2>
+        <p class="kicker"><span class="lang-en">The CODA method · HUB Institute</span><span class="lang-fr">La méthode CODA · HUB Institute</span></p>
+        <h2><span class="lang-en">Score the agents, don't take their word</span><span class="lang-fr">Scorer les agents, pas les croire sur parole</span></h2>
       </div>
-      <p><span class="lang-en">Autonomy N1-N4 as the journals attest it (the 24-hour test), instrumented value-chain maillons 1-10 as the scope. The quadrant follows from the two axes; each entry carries its own score card. Click a quadrant to filter the index.</span><span class="lang-fr">L'autonomie N1-N4 telle que les journaux l'attestent (le test des 24 heures), les maillons instrumentés 1-10 comme portée. Le quadrant découle des deux axes ; chaque fiche porte sa propre score card. Cliquer un quadrant filtre l'index.</span></p>
+      <p><span class="lang-en">Every entry is placed on the CODA matrix by two measured axes: autonomy N1-N4 as the journals attest it (the 24-hour test), and the value-chain maillons 1-10 the agent really instruments. The quadrant follows from the axes, the locks cap what may be declared, and each entry carries its own score card. Click a quadrant to filter the index.</span><span class="lang-fr">Chaque fiche est placée sur la matrice CODA par deux axes mesurés : l'autonomie N1-N4 telle que les journaux l'attestent (le test des 24 heures), et les maillons 1-10 de la chaîne de valeur que l'agent instrumente réellement. Le quadrant découle des axes, les verrous plafonnent le déclarable, et chaque fiche porte sa propre score card. Cliquer un quadrant filtre l'index.</span></p>
     </div>
     <div class="codamap" id="codamap"></div>
     <div class="codawrap2">
@@ -499,7 +506,32 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
         <p class="codatest" id="codatest"></p>
       </div>
     </div>
-    <p style="margin-top:18px;color:var(--text-muted);font-size:.82rem"><span class="lang-en">Declared = min(observed, authorized by the documented locks) - the anti agent-washing clause. Placement is our analytical reading of each deployment, never a claim made by the source.</span><span class="lang-fr">Déclaré = min(observé, autorisé par les verrous documentés) - la clause anti agent-washing. Le placement est notre lecture analytique de chaque déploiement, jamais une affirmation de la source.</span></p>
+    <div class="methodstrip">
+      <div class="mcard">
+        <h3><span class="lang-en">The counting rule (X axis)</span><span class="lang-fr">La règle de comptage (axe X)</span></h3>
+        <p><span class="lang-en">Each agent is read against a 10-maillon frieze of its own process (care journey, purchase journey, procurement, claims, fraud, pricing…). A maillon counts when the agent does measurable work there; one merely fed by its results does not. Scope = full maillons + half the partials.</span><span class="lang-fr">Chaque agent est lu contre une frise de 10 maillons propre à son processus (parcours client, parcours d'achat, achats, sinistres, fraude, pricing…). Un maillon compte si l'agent y accomplit un travail mesurable ; un maillon simplement alimenté par ses résultats, non. Portée = maillons pleins + moitié des partiels.</span></p>
+      </div>
+      <div class="mcard">
+        <h3><span class="lang-en">The four locks</span><span class="lang-fr">Les quatre verrous</span></h3>
+        <p><span class="lang-en">Reliable data, a written mandate and tooled supervision open level N3; audited compliance opens N4. Each lock has a test - and a lock without public evidence counts as closed. The N2 → N3 step is not crossed with technology: it is crossed with locks.</span><span class="lang-fr">La donnée fiable, le mandat écrit et la supervision outillée ouvrent le niveau N3 ; la conformité auditée ouvre le N4. Chaque verrou a un test - et un verrou sans preuve publique est réputé fermé. La marche N2 → N3 ne se franchit pas à la technologie : elle se franchit aux verrous.</span></p>
+      </div>
+      <div class="mcard">
+        <h3><span class="lang-en">The anti agent-washing clause</span><span class="lang-fr">La clause anti agent-washing</span></h3>
+        <p><span class="lang-en">Declared = min(observed, authorized by the locks). Answering is not executing, vendor-only evidence caps the observed level at N2, and the amber outline marks agents observed above what their locks authorize. In agentic commerce the mandate is the purchase itself: as long as the customer confirms and pays, the agent holds no mandate.</span><span class="lang-fr">Déclaré = min(observé, autorisé par les verrous). Répondre n'est pas exécuter, une preuve uniquement éditeur plafonne l'observé à N2, et le contour ambre marque les agents observés au-dessus de leurs verrous. En commerce agentique, le mandat est l'achat lui-même : tant que le client confirme et paie, l'agent n'a pas de mandat.</span></p>
+      </div>
+    </div>
+    <p style="margin-top:14px;color:var(--text-muted);font-size:.82rem"><span class="lang-en">Placement is our analytical reading of each deployment, never a claim made by the source. Full method on the methodology section; the source frameworks are the HUB Institute masterclass "L'Entreprise Agentique".</span><span class="lang-fr">Le placement est notre lecture analytique de chaque déploiement, jamais une affirmation de la source. Méthode complète dans la section méthodologie ; le cadre source est la masterclass HUB Institute « L'Entreprise Agentique ».</span></p>
+  </section>
+
+  <section class="block wrap" id="sectors">
+    <div class="head">
+      <div>
+        <p class="kicker"><span class="lang-en">The shelves</span><span class="lang-fr">Les rayons</span></p>
+        <h2><span class="lang-en">Browse by sector</span><span class="lang-fr">Parcourir par secteur</span></h2>
+      </div>
+      <p><span class="lang-en">Every deployment is filed on exactly one shelf. Open a sector to see who runs what inside it.</span><span class="lang-fr">Chaque déploiement est rangé sur un seul rayon. Ouvrez un secteur pour voir qui y déploie quoi.</span></p>
+    </div>
+    <ul class="shelves" id="shelves"></ul>
   </section>
 
   <section class="block wrap" id="index">
@@ -508,14 +540,15 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
         <p class="kicker"><span class="lang-en">Deployment index</span><span class="lang-fr">Index des déploiements</span></p>
         <h2><span class="lang-en">Who runs what, where</span><span class="lang-fr">Qui déploie quoi, où</span></h2>
       </div>
-      <p><span class="lang-en">Search companies, solutions and vendors, or narrow by geography, industry, department, stage and confidence.</span><span class="lang-fr">Cherchez entreprises, solutions et éditeurs, ou filtrez par géographie, industrie, département, stade et confiance.</span></p>
+      <p><span class="lang-en">Filter by the CODA matrix first - quadrant, declared level, agents observed above their locks - then narrow by geography, industry, department, stage and confidence. Sorted by CODA maturity by default.</span><span class="lang-fr">Filtrez d'abord par la matrice CODA - quadrant, niveau déclaré, agents observés au-dessus de leurs verrous - puis affinez par géographie, industrie, département, stade et confiance. Trié par maturité CODA par défaut.</span></p>
     </div>
 
     <div class="toolbar">
+      <div class="codabar" id="codabar"></div>
+      <input type="hidden" id="f-coda" /><input type="hidden" id="f-codan" /><input type="hidden" id="f-amber" />
       <input type="search" id="q" placeholder="" aria-label="Search the index / Rechercher dans l'index" />
       <div class="filters">
         <label><span class="kicker"><span class="lang-en">Type</span><span class="lang-fr">Type</span></span><select id="f-type"></select></label>
-        <label><span class="kicker"><span class="lang-en">CODA level</span><span class="lang-fr">Niveau CODA</span></span><select id="f-coda"></select></label>
         <label><span class="kicker"><span class="lang-en">Regulation</span><span class="lang-fr">Régulation</span></span><select id="f-reg"></select></label>
         <label><span class="kicker"><span class="lang-en">Sector</span><span class="lang-fr">Secteur</span></span><select id="f-sector"></select></label>
         <label><span class="kicker"><span class="lang-en">Region</span><span class="lang-fr">Région</span></span><select id="f-region"></select></label>
@@ -649,14 +682,14 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
       allDepartments:"All departments", allVendors:"All vendors", allStages:"All stages",
       stProd:"In production", stPilot:"Pilot", stAnnounced:"Announced", stUnknown:"Unknown",
       anyConf:"Any confidence", confHigh:"High (≥ 70%)", confMed:"Medium+ (≥ 50%)", confInd:"Independently sourced",
-      sortAz:"Company A–Z", sortNew:"Newest first", sortConf:"Confidence", sortCoda:"CODA maturity (level × scope)",
+      sortAz:"Company A–Z", sortNew:"Newest first", sortConf:"Confidence", sortCoda:"CODA maturity (N4 → N1)",
       placeholder:"Search company, solution, vendor or use case…  (press / to focus)" },
     fr: { allTypes:"Toutes les fiches", tNamed:"Agents nommés", tUnnamed:"Agents sans nom",
       allSectors:"Tous les secteurs", allRegions:"Toutes les régions", allCountries:"Tous les pays", allIndustries:"Toutes les industries",
       allDepartments:"Tous les départements", allVendors:"Tous les éditeurs", allStages:"Tous les statuts",
       stProd:"En production", stPilot:"Pilote", stAnnounced:"Annoncé", stUnknown:"Inconnu",
       anyConf:"Toute confiance", confHigh:"Élevée (≥ 70 %)", confMed:"Moyenne+ (≥ 50 %)", confInd:"Source indépendante",
-      sortAz:"Entreprise A–Z", sortNew:"Plus récents d'abord", sortConf:"Confiance", sortCoda:"Maturité CODA (niveau × portée)",
+      sortAz:"Entreprise A–Z", sortNew:"Plus récents d'abord", sortConf:"Confiance", sortCoda:"Maturité CODA (N4 → N1)",
       placeholder:"Rechercher une entreprise, une solution, un éditeur…  (touche / pour cibler)" }
   };
   function t(k){ return L[lang][k]!==undefined ? L[lang][k] : L.en[k]; }
@@ -744,7 +777,7 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
   function codaDeclared(a){ return Math.min(a.observed, locksAllow(a.locks)); }
   function quadOf(level,scope){ if(level>=3) return scope>=6?"A":"D"; return scope>=6?"O":"C"; }
   function codaQuad(a){ if(!a) return null; return quadOf(codaDeclared(a), codaScope(a.links)); }
-  function codaRank(a){ if(!a) return 9999; return codaDeclared(a)*100+codaScope(a.links); }
+  function codaRank(a){ if(!a) return -1; return codaDeclared(a)*100+codaScope(a.links); }
 
   var STYPE_EN = { company_official:"Company official", earnings_call:"Earnings call", news_media:"News media",
     conference_talk:"Conference talk", vendor_case_study:"Vendor case study", press_release:"Press release", other:"Other" };
@@ -778,7 +811,7 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
   function stageBadge(s){ return '<span class="badge '+(STAGECLS[s]||"b-unknown")+'">'+bi(esc(STAGE_EN[s]||s),esc(STAGE_FR[s]||s))+"</span>"; }
   function codaBadge(e){ var a=e.coda; if(!a) return ""; var k=codaQuad(a), q=CODA[k];
     var d=codaDeclared(a), capped=a.observed>d;
-    return '<span class="badge b-coda" style="background:'+q.color+'" title="'+esc(q.tagEn+" / "+q.tagFr+" · "+codaScope(a.links)+"/10")+'"><b>N'+d+"</b> "+bi(esc(q.en),esc(q.fr))+(capped?' <span class="obsring" title="observed N'+a.observed+'"></span>':"")+"</span>"; }
+    return '<span class="badge b-coda" style="background:'+q.color+'" title="'+esc(q.tagEn+" / "+q.tagFr)+'"><b>N'+d+"</b> "+bi(esc(q.en),esc(q.fr))+" · "+codaScope(a.links)+"/10"+(capped?' <span class="obsring" title="observed N'+a.observed+'"></span>':"")+"</span>"; }
   function stype(ty){ return '<span class="stype'+(MKT[ty]?" mkt":"")+'">'+bi(esc(STYPE_EN[ty]||ty),esc(STYPE_FR[ty]||ty))+"</span>"; }
 
   /* ---- stats ---- */
@@ -800,6 +833,7 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
   var els={ q:document.getElementById("q"), type:document.getElementById("f-type"), coda:document.getElementById("f-coda"), reg:document.getElementById("f-reg"), sector:document.getElementById("f-sector"), region:document.getElementById("f-region"),
     country:document.getElementById("f-country"), industry:document.getElementById("f-industry"), department:document.getElementById("f-department"),
     vendor:document.getElementById("f-vendor"), stage:document.getElementById("f-stage"), confidence:document.getElementById("f-confidence"),
+    codan:document.getElementById("f-codan"), amber:document.getElementById("f-amber"),
     sort:document.getElementById("f-sort") };
   var cards=document.getElementById("cards"), empty=document.getElementById("empty"),
       rescount=document.getElementById("rescount"), restotal=document.getElementById("restotal"),
@@ -817,10 +851,6 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
     els.type.innerHTML='<option value="">'+esc(t("allTypes"))+'</option><option value="named">'+esc(t("tNamed"))+
       '</option><option value="unnamed">'+esc(t("tUnnamed"))+"</option>";
     els.type.value=keepT;
-    var keepCoda=els.coda.value;
-    var co='<option value="">'+(lang==="fr"?"Tous les niveaux":"All levels")+"</option>";
-    CODA_ORDER.forEach(function(k){ co+='<option value="'+k+'">'+esc(k+" · "+(lang==="fr"?CODA[k].fr:CODA[k].en))+"</option>"; });
-    els.coda.innerHTML=co; els.coda.value=keepCoda;
     var keepR=els.reg.value;
     var ro='<option value="">'+(lang==="fr"?"Tous les cadres":"All regimes")+"</option>";
     REGIMES.forEach(function(r){ ro+='<option value="'+r.key+'">'+esc(lang==="fr"?r.fr:r.en)+"</option>"; });
@@ -834,7 +864,7 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
     els.confidence.innerHTML='<option value="">'+esc(t("anyConf"))+'</option><option value="high">'+esc(t("confHigh"))+
       '</option><option value="medium">'+esc(t("confMed"))+'</option><option value="independent">'+esc(t("confInd"))+"</option>";
     els.confidence.value=keepC;
-    var keepSort=els.sort.value||"az";
+    var keepSort=els.sort.value||"coda";
     els.sort.innerHTML='<option value="az">'+esc(t("sortAz"))+'</option><option value="newest">'+esc(t("sortNew"))+
       '</option><option value="confidence">'+esc(t("sortConf"))+'</option><option value="coda">'+esc(t("sortCoda"))+"</option>";
     els.sort.value=keepSort;
@@ -858,6 +888,8 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
     if(els.type.value==="named" && e.solution_named===false) return false;
     if(els.type.value==="unnamed" && e.solution_named!==false) return false;
     if(els.coda.value && codaQuad(e.coda)!==els.coda.value) return false;
+    if(els.codan.value){ if(!e.coda || codaDeclared(e.coda)!==+els.codan.value) return false; }
+    if(els.amber.value){ if(!e.coda || e.coda.observed<=codaDeclared(e.coda)) return false; }
     if(els.reg.value){ var rg=regimeOf(e); if(!rg || rg.key!==els.reg.value) return false; }
     if(els.sector.value && e.sector!==els.sector.value) return false;
     if(els.region.value && e.region!==els.region.value) return false;
@@ -884,6 +916,9 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
     if(els.type.value) h+='<button class="fchip" data-key="type" type="button">'+bi(esc(els.type.value==="named"?"Named agents":"Unnamed agents"),esc(els.type.value==="named"?"Agents nommés":"Agents sans nom"))+'<span class="x">✕</span></button>';
     if(els.coda.value && CODA[els.coda.value]){ var qc=CODA[els.coda.value];
       h+='<button class="fchip" data-key="coda" type="button">'+esc(els.coda.value)+" · "+bi(esc(qc.en),esc(qc.fr))+'<span class="x">✕</span></button>'; }
+    if(els.codan.value && LEVELS[+els.codan.value]){ var lc=LEVELS[+els.codan.value];
+      h+='<button class="fchip" data-key="codan" type="button">'+esc(lc.n)+" · "+bi(esc(lc.en),esc(lc.fr))+'<span class="x">✕</span></button>'; }
+    if(els.amber.value){ h+='<button class="fchip" data-key="amber" type="button">'+bi("observed &gt; declared","observé &gt; déclaré")+'<span class="x">✕</span></button>'; }
     if(els.reg.value){ var rgc=null; REGIMES.forEach(function(r){ if(r.key===els.reg.value) rgc=r; });
       if(rgc) h+='<button class="fchip" data-key="reg" type="button">'+bi(esc(rgc.en),esc(rgc.fr))+'<span class="x">✕</span></button>'; }
     [["sector"],["region"],["country"],["industry"],["department"],["vendor"]].forEach(function(d){
@@ -914,11 +949,11 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
 
   function render(){
     var list=ENTRIES.filter(match);
-    var sk=els.sort.value||"az";
+    var sk=els.sort.value||"coda";
     list.sort(function(a,b){
       if(sk==="newest"){ return b.first_seen_date.localeCompare(a.first_seen_date) || a.company.localeCompare(b.company); }
       if(sk==="confidence"){ return b.confidence-a.confidence || a.company.localeCompare(b.company); }
-      if(sk==="coda"){ return codaRank(a.coda)-codaRank(b.coda) || a.company.localeCompare(b.company); }
+      if(sk==="coda"){ return codaRank(b.coda)-codaRank(a.coda) || a.company.localeCompare(b.company); }
       return a.company.localeCompare(b.company);
     });
     rescount.textContent=list.length;
@@ -928,6 +963,8 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
     if(list.length===0){ cards.innerHTML=""; empty.hidden=false; return; }
     empty.hidden=true; cards.innerHTML=list.map(function(e,i){ return cardHtml(e,i); }).join("");
   }
+  var _render0=render;
+  render=function(){ _render0(); renderCodaBar(); };
 
   /* ---- sector shelves ---- */
   var shelves=document.getElementById("shelves");
@@ -992,7 +1029,27 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
       h+='<rect data-coda="'+k+'" x="'+x+'" y="'+y+'" width="'+(PW/2)+'" height="'+(PH/2)+'" fill="transparent" style="cursor:pointer"><title>'+esc((lang==="fr"?q.fr:q.en))+"</title></rect>"; }); }
     return h+"</svg>";
   }
+  var CODA_STATS=(function(){
+    var q={C:0,O:0,D:0,A:0}, n={1:0,2:0,3:0,4:0}, amber=0;
+    ENTRIES.forEach(function(e){ var a=e.coda; if(!a) return;
+      var d=codaDeclared(a); q[quadOf(d,codaScope(a.links))]++; n[d]++; if(a.observed>d) amber++; });
+    return {q:q,n:n,amber:amber};
+  })();
+  function renderCodaBar(){
+    var bar=document.getElementById("codabar"); if(!bar) return;
+    var h='<span class="cbk kicker">'+(lang==="fr"?"Lecture CODA · quadrant, niveau déclaré, écart observé":"CODA lens · quadrant, declared level, observed gap")+"</span>";
+    CODA_ORDER.forEach(function(k){ var q=CODA[k], on=els.coda.value===k;
+      h+='<button type="button" data-cq="'+k+'" class="'+(on?"on":"")+'" style="'+(on?"background:"+q.color+";border-color:"+q.color:"border-color:"+q.color+";color:"+q.color)+'">'+k+" · "+(lang==="fr"?q.fr:q.en)+' <span class="n">'+CODA_STATS.q[k]+"</span></button>"; });
+    h+='<span class="sep" aria-hidden="true"></span>';
+    [1,2,3,4].forEach(function(nv){ var l=LEVELS[nv], on=els.codan.value===String(nv);
+      h+='<button type="button" data-cn="'+nv+'" class="'+(on?"on":"")+'" style="'+(on?"background:"+l.color+";border-color:"+l.color:"")+'">'+l.n+' <span class="n">'+CODA_STATS.n[nv]+"</span></button>"; });
+    h+='<span class="sep" aria-hidden="true"></span>';
+    var aon=!!els.amber.value;
+    h+='<button type="button" data-camber="1" class="amberb '+(aon?"on":"")+'">◌ '+(lang==="fr"?"observé &gt; déclaré":"observed &gt; declared")+' <span class="n">'+CODA_STATS.amber+"</span></button>";
+    bar.innerHTML=h;
+  }
   function renderCodaHome(){
+    renderCodaBar();
     var counts={C:0,O:0,D:0,A:0}, lvls={1:0,2:0,3:0,4:0}, groups={}, capped=0;
     ENTRIES.forEach(function(e){ var a=e.coda; if(!a) return;
       var d=codaDeclared(a), sc=codaScope(a.links), q=quadOf(d,sc);
@@ -1029,6 +1086,13 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
     }); }
   })();
 
+  document.getElementById("codabar").addEventListener("click",function(ev){
+    var b=ev.target.closest("button"); if(!b) return;
+    if(b.hasAttribute("data-cq")){ var k=b.getAttribute("data-cq"); els.coda.value=(els.coda.value===k?"":k); }
+    else if(b.hasAttribute("data-cn")){ var n=b.getAttribute("data-cn"); els.codan.value=(els.codan.value===n?"":n); }
+    else if(b.hasAttribute("data-camber")){ els.amber.value=els.amber.value?"":"1"; }
+    render();
+  });
   cards.addEventListener("click",function(ev){ var b=ev.target.closest(".card"); if(b) openModal(b.getAttribute("data-id")); });
   Object.keys(els).forEach(function(k){ els[k].addEventListener(k==="q"?"input":"change",render); });
   reset.addEventListener("click",function(){
