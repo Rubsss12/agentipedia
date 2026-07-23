@@ -39,8 +39,9 @@ export function ConfidenceBadge({ entry }: { entry: Entry }) {
   );
 }
 
+// Production is a factual status, not a highlight: slate ink, never the brand mauve.
 const STAGE_TONES: Record<DeploymentStage, string> = {
-  production: "bg-mauve text-white",
+  production: "bg-[#3f4657] text-white",
   pilot: "bg-mauve-ink/10 text-mauve-ink",
   announced: "bg-lilac text-mauve-deep",
   unknown: "bg-ink/5 text-muted",
