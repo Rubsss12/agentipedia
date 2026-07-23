@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-13T12:58:47.343Z",
+ "updated_at": "2026-07-23T12:08:17Z",
  "entries": [
   {
    "id": "1-800accountant--agentforce",
@@ -5392,6 +5392,252 @@
     ],
     "basis_en": "Demand forecasting and bid-price optimization across the network, recognized for profit impact: bid prices flow into distribution continuously under RM bounds and supervision. Observed N3.",
     "basis_fr": "Prévision de demande et optimisation des bid prices sur tout le réseau, primées pour l'impact profit : les prix alimentent la distribution en continu dans les bornes du RM. Observé N3."
+   }
+  },
+  {
+   "id": "walmart--sparky",
+   "company": "Walmart",
+   "company_country": "United States",
+   "region": "North America",
+   "sector": "Retail & E-commerce",
+   "solution_name": "Sparky",
+   "vendor": "Walmart (in-house)",
+   "use_case": "Serves as Walmart's agentic shopping assistant across the website, app and stores: shoppers state goals (a cookout, weeknight dinners) and Sparky plans, recommends and assembles solutions, with personalized replenishment and meal planning; since March 2026 it also runs inside ChatGPT and Google Gemini.",
+   "department": "E-commerce",
+   "industry": "Retail",
+   "deployment_stage": "production",
+   "reported_outcomes": [
+    {
+     "metric": "Average order value of Sparky users vs non-users",
+     "value": "+≈35%",
+     "source_type": "news_media"
+    },
+    {
+     "metric": "Shoppers who used Sparky to check products before purchasing (Walmart survey)",
+     "value": "81%",
+     "source_type": "news_media"
+    }
+   ],
+   "first_seen_date": "2026-07-23",
+   "sources": [
+    {
+     "url": "https://corporate.walmart.com/news/2025/06/06/walmart-the-future-of-shopping-is-agentic-meet-sparky",
+     "title": "Walmart: The Future of Shopping Is Agentic - Meet Sparky",
+     "publisher": "Walmart",
+     "source_type": "company_official",
+     "retrieved_date": "2026-07-23"
+    },
+    {
+     "url": "https://www.digitalcommerce360.com/2026/05/22/walmart-sparky-agent-ai-sales-supply-chain/",
+     "title": "Walmart credits Sparky AI agent with lifting AOV, unit sales growth",
+     "publisher": "Digital Commerce 360",
+     "source_type": "news_media",
+     "retrieved_date": "2026-07-23"
+    },
+    {
+     "url": "https://www.adweek.com/commerce/walmart-opens-up-ads-in-gen-ai-shopping-agent-sparky/",
+     "title": "Walmart Opens Up Ads in Gen AI Shopping Agent Sparky",
+     "publisher": "Adweek",
+     "source_type": "news_media",
+     "retrieved_date": "2026-07-23"
+    },
+    {
+     "url": "https://www.constellationr.com/insights/news/walmarts-sparky-ai-agent-increases-order-value",
+     "title": "Walmart's Sparky AI agent increases order value",
+     "publisher": "Constellation Research",
+     "source_type": "other",
+     "retrieved_date": "2026-07-23"
+    }
+   ],
+   "confidence": 0.75,
+   "confidence_reason": "Company launch materials corroborated by independent retail press reporting concrete order-value and adoption figures.",
+   "coda": {
+    "chain": "commerce",
+    "links": [
+     1,
+     2,
+     2,
+     2,
+     1,
+     0,
+     1,
+     0,
+     0,
+     1
+    ],
+    "observed": 2,
+    "locks": [],
+    "basis_en": "Plans, compares and assembles baskets at goal level, with an order-value lift of about 35% reported by independent press - but the shopper confirms and pays, in Walmart surfaces as in ChatGPT and Gemini. The purchase mandate stays human: observed N2 on the purchase journey.",
+    "basis_fr": "Planifie, compare et compose des paniers au niveau de l'objectif, avec un panier moyen supérieur d'environ 35 % rapporté par la presse indépendante - mais l'acheteur confirme et paie, chez Walmart comme dans ChatGPT et Gemini. Le mandat d'achat reste humain : observé N2 sur le parcours d'achat."
+   }
+  },
+  {
+   "id": "aviva--zowie",
+   "company": "Aviva",
+   "company_country": "United Kingdom",
+   "region": "Europe",
+   "sector": "Insurance",
+   "solution_name": "Zowie",
+   "vendor": "Zowie",
+   "use_case": "Runs customer service on the MyAviva platform with autonomous agents: answering policy inquiries and, per the vendor, verifying identity, modifying policies and managing payments, with refund and policy decisions executed as deterministic code and every automated decision logged for compliance review.",
+   "department": "Customer service",
+   "industry": "Insurance",
+   "deployment_stage": "production",
+   "reported_outcomes": [
+    {
+     "metric": "Share of inquiries fully resolved by AI",
+     "value": "90%",
+     "source_type": "vendor_case_study"
+    }
+   ],
+   "first_seen_date": "2026-07-23",
+   "sources": [
+    {
+     "url": "https://getzowie.com/blog/most-accurate-ai-customer-service-agents-2026",
+     "title": "Most Accurate AI Customer Service Agents in 2026",
+     "publisher": "Zowie",
+     "source_type": "vendor_case_study",
+     "retrieved_date": "2026-07-23"
+    },
+    {
+     "url": "https://www.aiagentsacademy.ai/blog/ai-customer-service-platforms-scale-millions-without-hallucinations-2026",
+     "title": "AI Customer Service Platforms: Scale Without Hallucinations (2026)",
+     "publisher": "AI Agents Academy",
+     "source_type": "other",
+     "retrieved_date": "2026-07-23"
+    }
+   ],
+   "confidence": 0.5,
+   "confidence_reason": "The 90% autonomous-resolution figure and the action catalogue come from the vendor's own publications, echoed by aggregator blogs; capped until the insurer or independent press confirms.",
+   "coda": {
+    "chain": "care",
+    "links": [
+     2,
+     1,
+     2,
+     2,
+     1,
+     1,
+     0,
+     1,
+     0,
+     0
+    ],
+    "observed": 2,
+    "locks": [],
+    "basis_en": "90% of inquiries resolved by AI on MyAviva, identity checks and policy changes included - but every figure and the action catalogue are the vendor's own. Journals must attest delegation, not the agent's maker: observed capped at N2.",
+    "basis_fr": "90 % des demandes résolues par l'IA sur MyAviva, vérification d'identité et modifications de police comprises - mais chaque chiffre et le catalogue d'actions viennent de l'éditeur lui-même. Ce sont les journaux qui attestent la délégation, pas le fabricant de l'agent : observé plafonné à N2."
+   }
+  },
+  {
+   "id": "booking-com--ai-trip-planner",
+   "company": "Booking.com",
+   "company_country": "Netherlands",
+   "region": "Europe",
+   "sector": "Travel & Transportation",
+   "solution_name": "AI Trip Planner",
+   "vendor": "Booking.com (on OpenAI models)",
+   "use_case": "Puts an agentic layer over trip planning: AI Trip Planner builds personalized itineraries, Smart Filters turn free-form requests into search, Property Q&A answers stay questions in-app, and since October 2025 Booking.com runs as one of the first travel apps inside ChatGPT.",
+   "department": "E-commerce",
+   "industry": "Online travel",
+   "deployment_stage": "production",
+   "reported_outcomes": [
+    {
+     "metric": "Travelers intending to use AI for trip planning (37,000-respondent survey)",
+     "value": "89%",
+     "source_type": "company_official"
+    }
+   ],
+   "first_seen_date": "2026-07-23",
+   "sources": [
+    {
+     "url": "https://news.booking.com/bookingcom-debuts-agentic-ai-innovations-adding-to-its-robust-suite-of-genai-tools-for-customers/",
+     "title": "Booking.com Debuts Agentic AI Innovations, Adding to its Robust Suite of GenAI Tools for Customers",
+     "publisher": "Booking.com",
+     "source_type": "company_official",
+     "retrieved_date": "2026-07-23"
+    },
+    {
+     "url": "https://openai.com/index/booking-com/",
+     "title": "Booking.com and OpenAI personalize travel at scale",
+     "publisher": "OpenAI",
+     "source_type": "vendor_case_study",
+     "retrieved_date": "2026-07-23"
+    },
+    {
+     "url": "https://www.cnbc.com/2026/03/11/ai-travel-planners-tourism-popularity-trust-hallucinations.html",
+     "title": "Travelers are turning to AI to plan trips - but hallucinations and trust gaps remain",
+     "publisher": "CNBC",
+     "source_type": "news_media",
+     "retrieved_date": "2026-07-23"
+    }
+   ],
+   "confidence": 0.65,
+   "confidence_reason": "Official newsroom detail plus a vendor case study; independent coverage addresses the category's adoption and trust gaps more than this deployment's own metrics.",
+   "coda": {
+    "chain": "commerce",
+    "links": [
+     1,
+     2,
+     2,
+     2,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1
+    ],
+    "observed": 2,
+    "locks": [],
+    "basis_en": "Itineraries, smart filters and property Q&A prepare the whole discovery-to-comparison stretch, on Booking.com and inside ChatGPT - the traveler still confirms and pays. Observed N2 on the purchase journey.",
+    "basis_fr": "Itinéraires, filtres intelligents et Q&A propriété préparent tout le segment découverte-comparaison, sur Booking.com comme dans ChatGPT - le voyageur confirme et paie toujours. Observé N2 sur le parcours d'achat."
+   }
+  },
+  {
+   "id": "financial-services-agency-japan--unnamed-regional-bank-customer-service-agent",
+   "company": "Financial Services Agency (Japan)",
+   "company_country": "Japan",
+   "region": "East Asia",
+   "sector": "Public Sector & Education",
+   "solution_name": "Unnamed regional-bank customer service agent",
+   "solution_named": false,
+   "vendor": "",
+   "use_case": "Japan's financial regulator is developing an AI agent to help regional banks handle customer service, as reported by The Japan Times in May 2026 - a government-built agent intended to be shared across the country's regional banking sector.",
+   "department": "Public services",
+   "industry": "Government / financial regulation",
+   "deployment_stage": "announced",
+   "reported_outcomes": [],
+   "first_seen_date": "2026-07-23",
+   "sources": [
+    {
+     "url": "https://www.japantimes.co.jp/business/2026/05/08/tech/fsa-ai-regional-banks/",
+     "title": "FSA to develop AI agent to help with customer service at regional banks",
+     "publisher": "The Japan Times",
+     "source_type": "news_media",
+     "retrieved_date": "2026-07-23"
+    }
+   ],
+   "confidence": 0.6,
+   "confidence_reason": "Reported by an independent national newspaper; the program is announced and in development, with no production results yet.",
+   "coda": {
+    "chain": "care",
+    "links": [
+     1,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "observed": 1,
+    "locks": [],
+    "basis_en": "Announced and in development: nothing runs in production to observe yet. Provisional N1 at announcement stage.",
+    "basis_fr": "Annoncé et en développement : rien ne tourne encore en production à constater. N1 provisoire au stade de l'annonce."
    }
   }
  ]
