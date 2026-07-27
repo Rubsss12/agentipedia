@@ -94,7 +94,7 @@ export default function MethodologyPage() {
                 one-line reason in a public log (
                 <code className="rounded bg-lilac px-1 py-0.5 text-xs">data/rejections.json</code>
                 ). Accepted entries are filed on exactly one of 14 canonical sector shelves, so the
-                library can be browsed the way analysts actually look for precedents: by industry.
+                Index Live can be browsed the way analysts actually look for precedents: by industry.
               </>
             }
             fr={
@@ -104,7 +104,7 @@ export default function MethodologyPage() {
                 consigné avec sa raison dans un journal public (
                 <code className="rounded bg-lilac px-1 py-0.5 text-xs">data/rejections.json</code>
                 ). Les fiches acceptées sont rangées sur un seul des 14 rayons sectoriels, pour
-                parcourir la bibliothèque comme les analystes cherchent leurs précédents : par
+                parcourir l&apos;Index Live comme les analystes cherchent leurs précédents : par
                 industrie.
               </>
             }
@@ -387,7 +387,7 @@ export default function MethodologyPage() {
               <>
                 Agentipedia is the AI observatory of <strong>HUB Institute</strong>, the Paris-based
                 think tank that helps decision-makers move from promise to business proof, the
-                team behind HUBFORUM and the HUB Institute communities. The library exists to give
+                team behind HUBFORUM and the HUB Institute communities. The Index Live exists to give
                 those decision-makers hard precedents: who deployed what, where, with which
                 results, and on whose word.
               </>
@@ -395,7 +395,7 @@ export default function MethodologyPage() {
             fr={
               <>
                 Agentipedia est l&apos;observatoire IA du <strong>HUB Institute</strong>, le think
-                tank parisien qui aide les décideurs à passer de la promesse à la preuve business, l&apos;équipe derrière HUBFORUM et les communautés HUB Institute. La bibliothèque
+                tank parisien qui aide les décideurs à passer de la promesse à la preuve business, l&apos;équipe derrière HUBFORUM et les communautés HUB Institute. L&apos;Index Live
                 existe pour donner à ces décideurs des précédents solides : qui a déployé quoi, où,
                 avec quels résultats, et sur la parole de qui.
               </>

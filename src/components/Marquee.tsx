@@ -5,7 +5,7 @@ import Bi from "@/components/Bi";
 // seamless; hover pauses it.
 export default function Marquee({ items }: { items: string[] }) {
   const row = items.join("  ·  ");
-  const prefix = <Bi en="In the library" fr="Dans la bibliothèque" />;
+  const prefix = <Bi en="In the Index Live" fr="Dans l'Index Live" />;
   return (
     <div className="marquee overflow-hidden border-t border-white/15 py-3" aria-hidden>
       <div className="marquee-track kicker gap-0 text-white/70">
