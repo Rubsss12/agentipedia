@@ -206,8 +206,9 @@ Resources:`;for(let t of c){if(!t||typeof t!=`string`)throw Error(`@supabase/aut
           <label for="email" data-i18n="emlabel">Email professionnel</label>
           <div class="field">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
-            <input id="email" type="email" autocomplete="email" required placeholder="vous@entreprise.com" />
+            <input id="email" type="email" autocomplete="email" required placeholder="vous@hubinstitute.com" />
           </div>
+          <p id="emailerr" hidden style="color:#e0526b;font-size:.8rem;font-weight:700;margin:6px 0 0"></p>
         </div>
         <button class="btn primary" type="submit" data-i18n="cta">Recevoir mon lien de connexion</button>
       </form>
@@ -227,7 +228,7 @@ Resources:`;for(let t of c){if(!t||typeof t!=`string`)throw Error(`@supabase/aut
 
       <div class="reassure">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        <span data-i18n="reassure">Lien à usage unique, valable 15 minutes. Accès réservé aux comptes HUB Institute et partenaires.</span>
+        <span data-i18n="reassure">Lien à usage unique, valable 15 minutes. Accès réservé aux adresses @hubinstitute.com.</span>
       </div>
 
       <!-- success state -->
@@ -263,7 +264,7 @@ Resources:`;for(let t of c){if(!t||typeof t!=`string`)throw Error(`@supabase/aut
       motif:"La carte du scoring CODA", st1:"déploiements vérifiés", st2:"autonomie au constat", st3:"continents",
       title:"Connexion", lead:"Entrez votre email professionnel : nous vous envoyons un lien de connexion sécurisé. Aucun mot de passe.",
       emlabel:"Email professionnel", cta:"Recevoir mon lien de connexion", or:"ou",
-      reassure:"Lien à usage unique, valable 15 minutes. Accès réservé aux comptes HUB Institute et partenaires.",
+      reassure:"Lien à usage unique, valable 15 minutes. Accès réservé aux adresses @hubinstitute.com.",
       sentTitle:"Vérifiez votre boîte mail", sentBody:"Nous avons envoyé un lien de connexion à <strong id=\"sentTo\"></strong>. Cliquez dessus pour accéder à Agentipedia.",
       sentAgain:"Rien reçu ?", resend:"Renvoyer", change:"Changer d'adresse",
       okTitle:"Bienvenue", okAs:"Connecté en tant que", enter:"Entrer dans Agentipedia →", logout:"Se déconnecter",
@@ -274,7 +275,7 @@ Resources:`;for(let t of c){if(!t||typeof t!=`string`)throw Error(`@supabase/aut
       motif:"The CODA scoring map", st1:"verified deployments", st2:"autonomy, as attested", st3:"continents",
       title:"Sign in", lead:"Enter your work email: we send you a secure sign-in link. No password.",
       emlabel:"Work email", cta:"Email me a sign-in link", or:"or",
-      reassure:"One-time link, valid 15 minutes. Access reserved for HUB Institute accounts and partners.",
+      reassure:"One-time link, valid 15 minutes. Access reserved for @hubinstitute.com addresses.",
       sentTitle:"Check your inbox", sentBody:"We sent a sign-in link to <strong id=\"sentTo\"></strong>. Click it to reach Agentipedia.",
       sentAgain:"Nothing yet?", resend:"Resend", change:"Change address",
       okTitle:"Welcome", okAs:"Signed in as", enter:"Enter Agentipedia →", logout:"Sign out",
@@ -311,18 +312,27 @@ Resources:`;for(let t of c){if(!t||typeof t!=`string`)throw Error(`@supabase/aut
   // (Authentication → Users) can get a link; unknown emails are refused.
   // false = anyone who enters an email can join (open sign-up).
   var INVITE_ONLY = false;
+  // Domain gate (client-side UX guard): only these emails may request a link. "" = any.
+  var ALLOWED_DOMAIN = "hubinstitute.com";
+  // Email magic-link only while the domain gate is on (hide Google/Microsoft).
+  var EMAIL_ONLY = true;
   var redirectTo = location.origin + location.pathname;
   var sb = (CONFIGURED && window.supabase) ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
 
   var form=document.getElementById("form"), email=document.getElementById("email");
 
   function needConfig(){ alert("Supabase n'est pas encore configuré : collez la clé anon dans SUPABASE_ANON_KEY."); }
+  function showEmailErr(){ var el=document.getElementById("emailerr"); if(el){ el.textContent=(lang==="fr"?"Accès réservé aux adresses @"+ALLOWED_DOMAIN+" pour le moment.":"Access reserved for @"+ALLOWED_DOMAIN+" addresses for now."); el.hidden=false; } email.style.borderColor="#e0526b"; email.focus(); }
+  email.addEventListener("input", function(){ var el=document.getElementById("emailerr"); if(el) el.hidden=true; email.style.borderColor=""; });
+  // Domain gate on: email-only, hide the SSO providers.
+  if(EMAIL_ONLY){ var _d=document.querySelector(".divider"); if(_d) _d.style.display="none"; var _g=document.querySelector(".ssogrid"); if(_g) _g.style.display="none"; }
 
   // email → passwordless magic link → our "check your inbox" state
   form.addEventListener("submit", async function(e){
     e.preventDefault();
     var v=email.value.trim();
     if(!v || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){ email.focus(); email.style.borderColor="#e0526b"; return; }
+    if(ALLOWED_DOMAIN && v.toLowerCase().slice(-(ALLOWED_DOMAIN.length+1)) !== "@"+ALLOWED_DOMAIN){ showEmailErr(); return; }
     if(!sb){ needConfig(); return; }
     var btn=form.querySelector("button[type=submit]"); btn.disabled=true;
     var r=await sb.auth.signInWithOtp({ email:v, options:{ emailRedirectTo:redirectTo, shouldCreateUser: !INVITE_ONLY } });
