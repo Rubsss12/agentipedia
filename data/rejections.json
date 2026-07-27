@@ -300,6 +300,43 @@
           "reason": "Post-incident status of the AI element is unclear in available coverage; not pursued this run."
         }
       ]
+    },
+    {
+      "run_id": "run-2026-07-27-ms316yez",
+      "date": "2026-07-27",
+      "operator": "engine",
+      "model": "claude-opus-4-8",
+      "queries": [
+        "telecom company in Africa deploys named AI agent platform production results",
+        "African bank telecom launches AI assistant name customers",
+        "\"utilities\" South Asia \"AI agent\" customer deployment case named company 2025 2026",
+        "India company deploys named AI agent customer service results",
+        "East Asia enterprise AI agent deployment announcement named product",
+        "Sierra AI agent customer company",
+        "Ada CX AI agent customer",
+        "Microsoft Copilot Studio agent enterprise customer deployment",
+        "company launches named AI agent 2026 announcement customers",
+        "earnings call AI agents deployment named company 2026"
+      ],
+      "candidates_seen": 21,
+      "accepted": 17,
+      "updated": 2,
+      "rejections": [
+        {
+          "candidate": "Loop / Ada",
+          "reason": "company_country missing",
+          "all_errors": [
+            "company_country missing"
+          ]
+        },
+        {
+          "candidate": "Tilt / Ada",
+          "reason": "company_country missing",
+          "all_errors": [
+            "company_country missing"
+          ]
+        }
+      ]
     }
   ]
 }
