@@ -246,9 +246,10 @@ Resources:`;for(let t of c){if(!t||typeof t!=`string`)throw Error(`@supabase/aut
       <div class="session" id="session" hidden>
         <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
         <div>
-          <b data-i18n="okTitle">Vous êtes connecté</b>
+          <b data-i18n="okTitle">Bienvenue</b>
           <p class="hint" style="margin-top:6px"><span data-i18n="okAs">Connecté en tant que</span> <strong id="who"></strong>.</p>
         </div>
+        <a class="btn primary" href="./" data-i18n="enter">Entrer dans Agentipedia →</a>
         <button class="linkbtn" id="logout" type="button" data-i18n="logout">Se déconnecter</button>
       </div>
     </section>
@@ -265,6 +266,7 @@ Resources:`;for(let t of c){if(!t||typeof t!=`string`)throw Error(`@supabase/aut
       reassure:"Lien à usage unique, valable 15 minutes. Accès réservé aux comptes HUB Institute et partenaires.",
       sentTitle:"Vérifiez votre boîte mail", sentBody:"Nous avons envoyé un lien de connexion à <strong id=\"sentTo\"></strong>. Cliquez dessus pour accéder à Agentipedia.",
       sentAgain:"Rien reçu ?", resend:"Renvoyer", change:"Changer d'adresse",
+      okTitle:"Bienvenue", okAs:"Connecté en tant que", enter:"Entrer dans Agentipedia →", logout:"Se déconnecter",
       legal:"En continuant, vous acceptez les <a href=\"#\">conditions d'utilisation</a> et la <a href=\"#\">politique de confidentialité</a> du HUB Institute." },
     en:{ byline:"the observatory of the agentic enterprise",
       h1:"AI agents,<br><em>as attested.</em>",
@@ -275,6 +277,7 @@ Resources:`;for(let t of c){if(!t||typeof t!=`string`)throw Error(`@supabase/aut
       reassure:"One-time link, valid 15 minutes. Access reserved for HUB Institute accounts and partners.",
       sentTitle:"Check your inbox", sentBody:"We sent a sign-in link to <strong id=\"sentTo\"></strong>. Click it to reach Agentipedia.",
       sentAgain:"Nothing yet?", resend:"Resend", change:"Change address",
+      okTitle:"Welcome", okAs:"Signed in as", enter:"Enter Agentipedia →", logout:"Sign out",
       legal:"By continuing you accept the HUB Institute <a href=\"#\">terms of use</a> and <a href=\"#\">privacy policy</a>." }
   };
   var lang="fr";
