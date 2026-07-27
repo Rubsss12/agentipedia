@@ -3,8 +3,9 @@ import { Archivo } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Motion from "@/components/Motion";
 import ToTop from "@/components/ToTop";
+import ChromeGate from "@/components/AppChrome";
+import Motion from "@/components/Motion";
 import { LANG_BOOT_SCRIPT } from "@/lib/lang-boot";
 
 const archivo = Archivo({
@@ -37,11 +38,11 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: LANG_BOOT_SCRIPT }} />
       </head>
       <body className="font-sans antialiased">
-        <Header />
+        <ChromeGate><Header /></ChromeGate>
         {children}
-        <Footer />
+        <ChromeGate><Footer /></ChromeGate>
         <Motion />
-        <ToTop />
+        <ChromeGate><ToTop /></ChromeGate>
       </body>
     </html>
   );

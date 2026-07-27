@@ -37,7 +37,7 @@ export default async function SectorPage({ params }: Props) {
         <div className="hero-grid absolute inset-0" aria-hidden />
         <div className="relative mx-auto max-w-6xl px-6 py-14">
           <nav className="text-sm">
-            <Link href="/#sectors" className="font-bold text-mauve-glow transition-colors hover:text-white">
+            <Link href="/explorer#sectors" className="font-bold text-mauve-glow transition-colors hover:text-white">
               <Bi en="← All sectors" fr="← Tous les secteurs" />
             </Link>
           </nav>

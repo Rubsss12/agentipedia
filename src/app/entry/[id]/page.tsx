@@ -45,7 +45,7 @@ export default async function EntryPage({ params }: Props) {
   return (
     <main className="mx-auto max-w-4xl px-6 pb-8 pt-10">
       <nav className="text-sm text-muted">
-        <Link href="/" className="font-bold text-mauve transition-colors hover:text-mauve-deep">
+        <Link href="/explorer" className="font-bold text-mauve transition-colors hover:text-mauve-deep">
           <Bi en="← Back to the index" fr="← Retour à l'index" />
         </Link>
       </nav>

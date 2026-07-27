@@ -15,7 +15,7 @@ export default function NotFound() {
         />
       </p>
       <Link
-        href="/"
+        href="/explorer"
         className="mt-8 rounded-full bg-mauve px-6 py-3 text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-mauve-deep"
       >
         <Bi en="Back to the index" fr="Retour à l'index" />
