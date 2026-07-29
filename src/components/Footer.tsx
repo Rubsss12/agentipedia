@@ -71,12 +71,12 @@ export default function Footer() {
             </p>
             <ul className="mt-3 space-y-2 text-sm text-white/80">
               <li>
-                <Link href="/explorer#sectors" className="transition-colors hover:text-mauve-glow">
+                <Link href="/#sectors" className="transition-colors hover:text-mauve-glow">
                   <Bi en="Sector shelves" fr="Rayons sectoriels" />
                 </Link>
               </li>
               <li>
-                <Link href="/explorer#index" className="transition-colors hover:text-mauve-glow">
+                <Link href="/#index" className="transition-colors hover:text-mauve-glow">
                   <Bi en="Deployment index" fr="Index des déploiements" />
                 </Link>
               </li>

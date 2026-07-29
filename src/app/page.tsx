@@ -1,241 +1,287 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { supabase, ALLOWED_DOMAIN } from "@/lib/supabase";
-import { useLang } from "@/lib/lang";
+import { getEntries, getStats } from "@/lib/data";
+import { getSectors } from "@/lib/sectors";
+import { formatDate, formatTimestamp } from "@/lib/format";
+import Explorer from "@/components/Explorer";
+import Marquee from "@/components/Marquee";
 import Bi from "@/components/Bi";
-import s from "./login.module.css";
+import Globe from "@/components/Globe";
+import { buildMarkers } from "@/lib/geo";
+import { ConfidenceBadge, UnnamedBadge } from "@/components/badges";
+import CodaMatrix, { type CodaPoint } from "@/components/CodaMatrix";
+import { codaDeclared, codaQuadrant, codaScope } from "@/lib/coda";
 
-// The Agentipedia front door. Passwordless magic link, restricted to
-// @hubinstitute.com for now. Lives at "/", full-screen (no app chrome); the
-// catalog lives behind it at /explorer. Because Supabase's default Site URL is
-// the app root, the magic link returns here and the session is captured.
-
-const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
-
-export default function LoginPage() {
-  const [lang, setLang] = useLang();
-  const fr = lang === "fr";
-  const [email, setEmail] = useState("");
-  const [err, setErr] = useState<string | null>(null);
-  const [sending, setSending] = useState(false);
-  const [sent, setSent] = useState(false);
-  const [who, setWho] = useState<string | null>(null);
-  const redirectTo = useRef<string>("");
-
-  useEffect(() => {
-    redirectTo.current = window.location.origin + window.location.pathname;
-    supabase.auth.getSession().then(({ data }) => setWho(data.session?.user?.email ?? null));
-    const { data: sub } = supabase.auth.onAuthStateChange((_e, session) => {
-      setWho(session?.user?.email ?? null);
+export default function Home() {
+  const entries = getEntries();
+  const stats = getStats();
+  const sectors = getSectors();
+  const companies = [...new Set(entries.map((e) => e.company))].sort((a, b) => a.localeCompare(b));
+  const latest = [...entries]
+    .sort((a, b) => b.first_seen_date.localeCompare(a.first_seen_date) || a.company.localeCompare(b.company))
+    .slice(0, 8);
+  const markers = buildMarkers(entries);
+  const unnamedCount = entries.filter((e) => e.solution_named === false).length;
+  const codaPoints: CodaPoint[] = entries
+    .filter((e) => e.coda)
+    .map((e) => {
+      const a = e.coda!;
+      const declared = codaDeclared(a);
+      return { q: codaQuadrant(a)!, declared, scope: codaScope(a.links), capped: a.observed > declared };
     });
-    return () => sub.subscription.unsubscribe();
-  }, []);
-
-  async function submit(e: React.FormEvent) {
-    e.preventDefault();
-    const v = email.trim();
-    if (!EMAIL_RE.test(v)) {
-      setErr(fr ? "Entrez une adresse email valide." : "Enter a valid email address.");
-      return;
-    }
-    if (ALLOWED_DOMAIN && v.toLowerCase().slice(-(ALLOWED_DOMAIN.length + 1)) !== "@" + ALLOWED_DOMAIN) {
-      setErr(
-        fr
-          ? `Accès réservé aux adresses @${ALLOWED_DOMAIN} pour le moment.`
-          : `Access reserved for @${ALLOWED_DOMAIN} addresses for now.`,
-      );
-      return;
-    }
-    setErr(null);
-    setSending(true);
-    const { error } = await supabase.auth.signInWithOtp({
-      email: v,
-      options: { emailRedirectTo: redirectTo.current, shouldCreateUser: true },
-    });
-    setSending(false);
-    if (error) {
-      setErr(error.message);
-      return;
-    }
-    setSent(true);
-  }
-
-  async function logout() {
-    await supabase.auth.signOut();
-    setWho(null);
-    setSent(false);
-  }
 
   return (
-    <main className={s.page}>
-      <div className={s.shell}>
-        {/* ===== brand panel ===== */}
-        <section className={s.brand}>
-          <div className={s.gridLines} aria-hidden />
-          <div className={s.hubmark}>
-            <span className={s.sq}>
-              HUB<small>INSTITUTE</small>
-            </span>
-            <span className={s.wm}>
-              <Bi en="the observatory of the agentic enterprise" fr="l'observatoire de l'entreprise agentique" />
-            </span>
-          </div>
-
-          <div className={s.lead}>
-            <p className={s.eyebrow}>Agentipedia</p>
-            <h1>
-              <Bi
-                en={<>AI agents,<br /><em>as attested.</em></>}
-                fr={<>Les agents IA<br /><em>au constat.</em></>}
-              />
-            </h1>
-            <p className={s.sub}>
-              <Bi
-                en="The catalog of verified deployments, each scored on the HUB Institute CODA matrix. Sign in to reach the diagnostic."
-                fr="Le catalogue des déploiements vérifiés, chacun scoré sur la matrice CODA du HUB Institute. Connectez-vous pour accéder au diagnostic."
-              />
-            </p>
-          </div>
-
-          <div className={s.motif}>
-            <p className={s.cap}>
-              <Bi en="The CODA scoring map" fr="La carte du scoring CODA" />
-            </p>
-            <svg viewBox="0 0 360 150" role="img" aria-label="CODA scoring map">
-              <rect x="30" y="8" width="150" height="61" fill="#e0a43b" opacity=".16" />
-              <rect x="180" y="8" width="150" height="61" fill="#8f7bff" opacity=".18" />
-              <rect x="30" y="69" width="150" height="61" fill="#9aa6b8" opacity=".12" />
-              <rect x="180" y="69" width="150" height="61" fill="#4e77b0" opacity=".16" />
-              <line x1="180" y1="8" x2="180" y2="130" stroke="#fff" strokeOpacity=".35" strokeWidth="1" />
-              <line x1="30" y1="69" x2="330" y2="69" stroke="#fff" strokeOpacity=".35" strokeWidth="1" />
-              <text x="20" y="24" fill="#fff" fillOpacity=".55" fontSize="8" fontWeight="700" textAnchor="end">N4</text>
-              <text x="20" y="55" fill="#fff" fillOpacity=".55" fontSize="8" fontWeight="700" textAnchor="end">N3</text>
-              <text x="20" y="86" fill="#fff" fillOpacity=".55" fontSize="8" fontWeight="700" textAnchor="end">N2</text>
-              <text x="20" y="117" fill="#fff" fillOpacity=".55" fontSize="8" fontWeight="700" textAnchor="end">N1</text>
-              <g>
-                <circle cx="66" cy="112" r="3.2" fill="#9aa6b8" /><circle cx="86" cy="104" r="3.2" fill="#9aa6b8" />
-                <circle cx="104" cy="112" r="3.2" fill="#9aa6b8" /><circle cx="120" cy="96" r="3.2" fill="#9aa6b8" />
-                <circle cx="138" cy="104" r="3.2" fill="#9aa6b8" /><circle cx="96" cy="88" r="3.2" fill="#9aa6b8" />
-                <circle cx="212" cy="96" r="3.2" fill="#4e77b0" /><circle cx="236" cy="104" r="3.2" fill="#4e77b0" />
-                <circle cx="120" cy="50" r="3.4" fill="#e0a43b" /><circle cx="140" cy="42" r="3.4" fill="#e0a43b" />
-                <circle cx="158" cy="50" r="3.4" fill="#e0a43b" /><circle cx="132" cy="58" r="3.4" fill="#e0a43b" />
-                <circle cx="210" cy="46" r="3.6" fill="#c9b6ff" />
-                <circle cx="150" cy="50" r="6.4" fill="none" stroke="#f2b25a" strokeWidth="1.6" />
-              </g>
-            </svg>
-          </div>
-
-          <div className={s.stats}>
-            <div><div className={s.n}>90</div><div className={s.l}><Bi en="verified deployments" fr="déploiements vérifiés" /></div></div>
-            <div><div className={s.n}>N1–N4</div><div className={s.l}><Bi en="autonomy, as attested" fr="autonomie au constat" /></div></div>
-            <div><div className={s.n}>7</div><div className={s.l}><Bi en="continents" fr="continents" /></div></div>
-          </div>
-        </section>
-
-        {/* ===== auth card ===== */}
-        <section className={s.auth}>
-          <div className={s.topbar}>
-            <button type="button" className={fr ? s.on : ""} onClick={() => setLang("fr")}>FR</button>
-            <button type="button" className={!fr ? s.on : ""} onClick={() => setLang("en")}>EN</button>
-          </div>
-
-          {who ? (
-            <div className={s.session}>
-              <div className={s.sentIc}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
-              </div>
-              <div>
-                <b><Bi en="Welcome" fr="Bienvenue" /></b>
-                <p className={s.hintText} style={{ marginTop: 6 }}>
-                  <Bi en="Signed in as" fr="Connecté en tant que" /> <strong>{who}</strong>.
-                </p>
-              </div>
-              <Link className={`${s.btn} ${s.primary}`} href="/explorer">
-                <Bi en="Enter Agentipedia →" fr="Entrer dans Agentipedia →" />
-              </Link>
-              <button type="button" className={s.linkbtn} onClick={logout}>
-                <Bi en="Sign out" fr="Se déconnecter" />
-              </button>
-            </div>
-          ) : sent ? (
-            <div className={s.sent}>
-              <div className={s.sentIc}>
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M22 6 12 13 2 6" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg>
-              </div>
-              <div>
-                <b><Bi en="Check your inbox" fr="Vérifiez votre boîte mail" /></b>
-                <p className={s.hintText} style={{ marginTop: 8 }}>
-                  <Bi en="We sent a sign-in link to" fr="Nous avons envoyé un lien de connexion à" />{" "}
-                  <strong>{email.trim()}</strong>.{" "}
-                  <Bi en="Click it to enter Agentipedia." fr="Cliquez dessus pour entrer dans Agentipedia." />
-                </p>
-              </div>
-              <p className={s.foot}>
-                <Bi en="Nothing yet?" fr="Rien reçu ?" />{" "}
-                <button type="button" className={s.linkbtn} onClick={() => submit(new Event("submit") as unknown as React.FormEvent)}>
-                  <Bi en="Resend" fr="Renvoyer" />
-                </button>{" "}·{" "}
-                <button type="button" className={s.linkbtn} onClick={() => setSent(false)}>
-                  <Bi en="Change address" fr="Changer d'adresse" />
-                </button>
-              </p>
-            </div>
-          ) : (
-            <>
-              <h2><Bi en="Sign in" fr="Connexion" /></h2>
-              <p className={s.hintText}>
+    <main>
+      {/* ===== Hero: copy on the left, interactive globe card top-right ===== */}
+      <section className="relative overflow-hidden bg-mauve-night text-white">
+        <div className="hero-glow absolute inset-0" aria-hidden />
+        <div className="hero-grid absolute inset-0" aria-hidden />
+        <div className="relative mx-auto max-w-6xl px-6 pb-10 pt-14 md:pb-14 md:pt-20">
+          <div className="grid items-center gap-10 md:grid-cols-[1.05fr_minmax(0,440px)]">
+            {/* left: copy */}
+            <div>
+              <p className="kicker text-mauve-bright">
                 <Bi
-                  en="Enter your work email: we send you a secure sign-in link. No password."
-                  fr="Entrez votre email professionnel : nous vous envoyons un lien de connexion sécurisé. Aucun mot de passe."
+                  en="The AI observatory by HUB Institute · updated autonomously"
+                  fr="L'observatoire IA du HUB Institute · mis à jour de façon autonome"
+                />
+              </p>
+              <h1 className="mt-4 max-w-xl text-3xl font-extrabold leading-[1.1] tracking-tight sm:text-4xl md:text-5xl">
+                <span className="lang-en">
+                  The Index Live of <span className="text-mauve-bright">AI agents</span>{" "}
+                  inside the world&apos;s companies
+                </span>
+                <span className="lang-fr">
+                  L&apos;Index Live des <span className="text-mauve-bright">agents IA</span>{" "}
+                  déployés dans les entreprises du monde
+                </span>
+              </h1>
+              <p className="mt-5 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">
+                <Bi
+                  en="From AI promise to business proof: the deployments that actually run, real companies and named solutions, with the sources that prove it. No source, no entry."
+                  fr="De la promesse de l'IA à la preuve business : les déploiements qui tournent vraiment, entreprises réelles et solutions nommées, avec les sources qui le prouvent. Pas de source, pas de fiche."
                 />
               </p>
 
-              <form className={s.form} onSubmit={submit} noValidate>
+              <div className="mt-8 flex flex-wrap gap-x-8 gap-y-5">
                 <div>
-                  <label className={s.label} htmlFor="email"><Bi en="Work email" fr="Email professionnel" /></label>
-                  <div className={s.field}>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m22 7-10 5L2 7" /></svg>
-                    <input
-                      id="email"
-                      className={`${s.input} ${err ? s.bad : ""}`}
-                      type="email"
-                      autoComplete="email"
-                      placeholder="vous@hubinstitute.com"
-                      value={email}
-                      onChange={(e) => { setEmail(e.target.value); if (err) setErr(null); }}
-                    />
-                  </div>
-                  {err && <p className={s.err}>{err}</p>}
+                  <p className="text-4xl font-black text-mauve-glow md:text-5xl" data-count={stats.entries}>
+                    {stats.entries}
+                  </p>
+                  <p className="kicker mt-1 text-white/60">
+                    <Bi en="verified deployments" fr="déploiements vérifiés" />
+                  </p>
                 </div>
-                <button className={`${s.btn} ${s.primary}`} type="submit" disabled={sending}>
-                  {sending
-                    ? <Bi en="Sending…" fr="Envoi…" />
-                    : <Bi en="Email me a sign-in link" fr="Recevoir mon lien de connexion" />}
-                </button>
-              </form>
+                <div>
+                  <p className="text-4xl font-black text-mauve-glow md:text-5xl" data-count={sectors.length}>
+                    {sectors.length}
+                  </p>
+                  <p className="kicker mt-1 text-white/60">
+                    <Bi en="sectors" fr="secteurs" />
+                  </p>
+                </div>
+                <div>
+                  <p className="text-4xl font-black text-mauve-glow md:text-5xl" data-count={stats.countries}>
+                    {stats.countries}
+                  </p>
+                  <p className="kicker mt-1 text-white/60">
+                    <Bi en="countries" fr="pays" />
+                  </p>
+                </div>
+                <div>
+                  <p className="text-4xl font-black text-mauve-glow md:text-5xl" data-count={stats.regions}>
+                    {stats.regions}
+                  </p>
+                  <p className="kicker mt-1 text-white/60">
+                    <Bi en="world regions" fr="régions du monde" />
+                  </p>
+                </div>
+              </div>
 
-              <div className={s.reassure}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
-                <span>
-                  <Bi
-                    en={`One-time link, valid 15 minutes. Access reserved for @${ALLOWED_DOMAIN} addresses.`}
-                    fr={`Lien à usage unique, valable 15 minutes. Accès réservé aux adresses @${ALLOWED_DOMAIN}.`}
-                  />
+              <div className="mt-8 flex flex-wrap items-center gap-4">
+                <a
+                  href="#sectors"
+                  className="rounded-full bg-white px-6 py-3 text-sm font-bold uppercase tracking-wider text-mauve-ink transition-colors hover:bg-lilac"
+                >
+                  <Bi en="Browse by sector" fr="Parcourir par secteur" />
+                </a>
+                <a
+                  href="#index"
+                  className="rounded-full border border-white/25 px-6 py-3 text-sm font-bold uppercase tracking-wider text-white/90 transition-colors hover:border-mauve-bright hover:text-mauve-glow"
+                >
+                  <Bi en="Search everything" fr="Tout rechercher" />
+                </a>
+                <p className="text-xs text-white/50">
+                  <Bi en="Last updated:" fr="Dernière mise à jour :" />{" "}
+                  {stats.updatedAt ? (
+                    formatTimestamp(stats.updatedAt)
+                  ) : (
+                    <Bi en="awaiting first curation run" fr="en attente de la première curation" />
+                  )}
+                </p>
+              </div>
+            </div>
+
+            {/* right: the globe, in its own interactive card */}
+            <div className="rounded-3xl border border-white/15 bg-white/[0.05] p-4 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.8)] backdrop-blur-sm md:p-5">
+              <div className="mb-2 flex items-baseline justify-between gap-3">
+                <p className="kicker text-mauve-bright">
+                  <Bi en="Where the agents run" fr="Où tournent les agents" />
+                </p>
+                <p className="text-xs text-white/55">
+                  {stats.countries} <Bi en="countries" fr="pays" />
+                </p>
+              </div>
+              <Globe markers={markers} />
+              <div className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-[0.68rem] font-bold text-white/60">
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="h-2 w-2 rounded-full" style={{ background: "#e62ec8" }} aria-hidden />
+                  <Bi en="Named agents" fr="Agents nommés" />
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="h-2 w-2 rounded-full" style={{ background: "#f2764f" }} aria-hidden />
+                  <Bi en={`Unnamed (${unnamedCount})`} fr={`Sans nom (${unnamedCount})`} />
                 </span>
               </div>
-
-              <p className={s.foot}>
+              <p className="kicker mt-2 text-center text-white/50">
                 <Bi
-                  en={<>By continuing you accept the HUB Institute <a href="https://www.hubinstitute.com">terms</a> and privacy policy.</>}
-                  fr={<>En continuant, vous acceptez les <a href="https://www.hubinstitute.com">conditions</a> et la politique de confidentialité du HUB Institute.</>}
+                  en="Drag to spin · click a dot to filter"
+                  fr="Faites tourner · cliquez un point pour filtrer"
                 />
               </p>
-            </>
-          )}
-        </section>
-      </div>
+            </div>
+          </div>
+        </div>
+        <div className="relative">
+          <Marquee items={companies} />
+        </div>
+      </section>
+
+      {/* ===== The shelves (compact) ===== */}
+      <section id="sectors" className="mx-auto max-w-6xl scroll-mt-20 px-6 pt-14">
+        <div className="flex flex-wrap items-baseline justify-between gap-3" data-reveal>
+          <div>
+            <p className="kicker text-mauve">
+              <Bi en="The shelves" fr="Les rayons" />
+            </p>
+            <h2 className="mt-2 text-2xl font-extrabold tracking-tight md:text-3xl">
+              <Bi en="Browse by sector" fr="Parcourir par secteur" />
+            </h2>
+          </div>
+          <p className="max-w-md text-sm text-muted">
+            <Bi
+              en="Every deployment is filed on exactly one shelf. Open a sector to see who runs what inside it."
+              fr="Chaque déploiement est rangé sur un seul rayon. Ouvrez un secteur pour voir qui y déploie quoi."
+            />
+          </p>
+        </div>
+        <ul className="mt-6 grid gap-2.5 sm:grid-cols-2 lg:grid-cols-4">
+          {sectors.map((s, i) => (
+            <li key={s.slug} data-reveal style={{ "--reveal-delay": `${(i % 8) * 40}ms` } as React.CSSProperties}>
+              <Link
+                href={`/sector/${s.slug}`}
+                className="group flex h-full items-center gap-3 rounded-xl border border-lavender-line bg-lilac-soft px-3.5 py-2.5 transition-all hover:-translate-y-0.5 hover:border-mauve hover:shadow-[0_10px_30px_-14px_rgb(107_43_217/0.4)]"
+              >
+                <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-mauve/10 text-sm font-black text-mauve">
+                  {s.entries}
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-[0.82rem] font-extrabold leading-tight">{s.name}</span>
+                  <span className="mt-0.5 block truncate text-[0.7rem] text-muted">
+                    {s.countries}{" "}
+                    {s.countries > 1 ? <Bi en="countries" fr="pays" /> : <Bi en="country" fr="pays" />} ·{" "}
+                    {s.production} <Bi en="in prod." fr="en prod." />
+                  </span>
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* ===== CODA lens: four postures of adoption, click to filter the index ===== */}
+      <section id="coda" className="mx-auto max-w-6xl scroll-mt-20 px-6 pt-14">
+        <div className="flex flex-wrap items-baseline justify-between gap-3" data-reveal>
+          <div>
+            <p className="kicker text-mauve">
+              <Bi en="The CODA scoring map · HUB Institute" fr="La carte du scoring CODA · HUB Institute" />
+            </p>
+            <h2 className="mt-2 text-2xl font-extrabold tracking-tight md:text-3xl">
+              <Bi en="Every agent, placed on two axes" fr="Chaque agent, placé sur deux axes" />
+            </h2>
+          </div>
+          <p className="max-w-md text-sm text-muted">
+            <Bi
+              en="Autonomy N1-N4 as the journals attest it (the 24-hour test), instrumented value-chain maillons 1-10 as the scope. The quadrant follows from the two axes; each entry carries its own score card."
+              fr="L'autonomie N1-N4 telle que les journaux l'attestent (le test des 24 heures), les maillons instrumentés 1-10 comme portée. Le quadrant découle des deux axes ; chaque fiche porte sa propre score card."
+            />
+          </p>
+        </div>
+        <CodaMatrix points={codaPoints} />
+        <p className="mt-5 text-xs text-muted" data-reveal>
+          <Bi
+            en="Declared = min(observed, authorized by the documented locks) - the anti agent-washing clause. Placement is our analytical reading of each deployment, never a claim made by the source."
+            fr="Déclaré = min(observé, autorisé par les verrous documentés) - la clause anti agent-washing. Le placement est notre lecture analytique de chaque déploiement, jamais une affirmation de la source."
+          />
+        </p>
+      </section>
+
+      {/* ===== Index (filters + everything), right after the shelves ===== */}
+      <section id="index" className="mx-auto max-w-6xl scroll-mt-20 px-6 pt-14">
+        <div className="flex flex-wrap items-baseline justify-between gap-3" data-reveal>
+          <div>
+            <p className="kicker text-mauve">
+              <Bi en="Deployment index" fr="Index des déploiements" />
+            </p>
+            <h2 className="mt-2 text-2xl font-extrabold tracking-tight md:text-3xl">
+              <Bi en="Who runs what, where" fr="Qui déploie quoi, où" />
+            </h2>
+          </div>
+          <p className="max-w-md text-sm text-muted">
+            <Bi
+              en="Search companies, solutions and vendors, or narrow by sector, geography, industry, department, stage and confidence."
+              fr="Cherchez entreprises, solutions et éditeurs, ou filtrez par secteur, géographie, industrie, département, stade et confiance."
+            />
+          </p>
+        </div>
+        <Explorer entries={entries} />
+      </section>
+
+      {/* ===== Fresh on the shelves ===== */}
+      <section className="mx-auto max-w-6xl px-6 pt-16">
+        <div className="flex flex-wrap items-baseline justify-between gap-3" data-reveal>
+          <div>
+            <p className="kicker text-mauve">
+              <Bi en="Fresh on the shelves" fr="Nouveautés" />
+            </p>
+            <h2 className="mt-2 text-2xl font-extrabold tracking-tight md:text-3xl">
+              <Bi en="Latest additions" fr="Derniers ajouts" />
+            </h2>
+          </div>
+          <p className="max-w-md text-sm text-muted">
+            <Bi
+              en="The most recently verified deployments. Scroll sideways."
+              fr="Les déploiements vérifiés le plus récemment. Faites défiler horizontalement."
+            />
+          </p>
+        </div>
+        <div className="rail -mx-6 mt-8 flex gap-4 overflow-x-auto px-6 pb-3" data-reveal>
+          {latest.map((e) => (
+            <Link
+              key={e.id}
+              href={`/entry/${e.id}`}
+              className="group w-72 shrink-0 rounded-2xl border border-lavender-line bg-paper p-5 transition-all hover:-translate-y-0.5 hover:border-mauve hover:shadow-[0_10px_30px_-12px_rgb(107_43_217/0.35)]"
+            >
+              <p className="kicker text-muted">{formatDate(e.first_seen_date)}</p>
+              <p className="mt-2 text-base font-extrabold leading-snug">{e.company}</p>
+              <p className="mt-0.5 truncate text-sm font-bold text-mauve">{e.solution_name}</p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {e.solution_named === false && <UnnamedBadge />}
+                <ConfidenceBadge entry={e} />
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </main>
   );
 }
