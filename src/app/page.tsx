@@ -1,14 +1,13 @@
 import Link from "next/link";
 import { getEntries, getStats } from "@/lib/data";
 import { getSectors } from "@/lib/sectors";
-import { formatDate, formatTimestamp } from "@/lib/format";
+import { formatTimestamp } from "@/lib/format";
 import Explorer from "@/components/Explorer";
 import Marquee from "@/components/Marquee";
 import OffersLead from "@/components/OffersLead";
 import Bi from "@/components/Bi";
 import Globe from "@/components/Globe";
 import { buildMarkers } from "@/lib/geo";
-import { ConfidenceBadge, UnnamedBadge } from "@/components/badges";
 import CodaMatrix, { type CodaPoint } from "@/components/CodaMatrix";
 import { codaDeclared, codaQuadrant, codaScope } from "@/lib/coda";
 
@@ -17,9 +16,6 @@ export default function Home() {
   const stats = getStats();
   const sectors = getSectors();
   const companies = [...new Set(entries.map((e) => e.company))].sort((a, b) => a.localeCompare(b));
-  const latest = [...entries]
-    .sort((a, b) => b.first_seen_date.localeCompare(a.first_seen_date) || a.company.localeCompare(b.company))
-    .slice(0, 8);
   const markers = buildMarkers(entries);
   const unnamedCount = entries.filter((e) => e.solution_named === false).length;
   const codaPoints: CodaPoint[] = entries
@@ -245,43 +241,6 @@ export default function Home() {
           </p>
         </div>
         <Explorer entries={entries} />
-      </section>
-
-      {/* ===== Fresh on the shelves ===== */}
-      <section className="mx-auto max-w-6xl px-6 pt-16">
-        <div className="flex flex-wrap items-baseline justify-between gap-3" data-reveal>
-          <div>
-            <p className="kicker text-mauve">
-              <Bi en="Fresh on the shelves" fr="Nouveautés" />
-            </p>
-            <h2 className="mt-2 text-2xl font-extrabold tracking-tight md:text-3xl">
-              <Bi en="Latest additions" fr="Derniers ajouts" />
-            </h2>
-          </div>
-          <p className="max-w-md text-sm text-muted">
-            <Bi
-              en="The most recently verified deployments. Scroll sideways."
-              fr="Les déploiements vérifiés le plus récemment. Faites défiler horizontalement."
-            />
-          </p>
-        </div>
-        <div className="rail -mx-6 mt-8 flex gap-4 overflow-x-auto px-6 pb-3" data-reveal>
-          {latest.map((e) => (
-            <Link
-              key={e.id}
-              href={`/entry/${e.id}`}
-              className="group w-72 shrink-0 rounded-2xl border border-lavender-line bg-paper p-5 transition-all hover:-translate-y-0.5 hover:border-mauve hover:shadow-[0_10px_30px_-12px_rgb(107_43_217/0.35)]"
-            >
-              <p className="kicker text-muted">{formatDate(e.first_seen_date)}</p>
-              <p className="mt-2 text-base font-extrabold leading-snug">{e.company}</p>
-              <p className="mt-0.5 truncate text-sm font-bold text-mauve">{e.solution_name}</p>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {e.solution_named === false && <UnnamedBadge />}
-                <ConfidenceBadge entry={e} />
-              </div>
-            </Link>
-          ))}
-        </div>
       </section>
 
       {/* ===== Lead-gen band: HUB Institute offers + contact form ===== */}
