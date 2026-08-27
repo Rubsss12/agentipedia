@@ -68,15 +68,15 @@ export default function MethodologyPage() {
             <Bi
               en={
                 <>
-                  <strong className="text-mauve-deep">2 · The named solution.</strong>{" "}A named
-                  product, platform or internally branded agent: Salesforce Agentforce, Sierra,
+                  <strong className="text-mauve-deep">2 · The identified solution.</strong>{" "}An
+                  identified product, platform or internally branded agent: Salesforce Agentforce, Sierra,
                   Bank of America Erica, Mercado Libre Verdi on Gemini. Never &ldquo;a
                   chatbot&rdquo; or &ldquo;an LLM&rdquo;.
                 </>
               }
               fr={
                 <>
-                  <strong className="text-mauve-deep">2 · La solution nommée.</strong>{" "}Un produit,
+                  <strong className="text-mauve-deep">2 · La solution identifiée.</strong>{" "}Un produit,
                   une plateforme ou un agent interne avec un nom : Salesforce Agentforce, Sierra,
                   Bank of America Erica, Mercado Libre Verdi sur Gemini. Jamais « un chatbot » ou
                   « un LLM ».

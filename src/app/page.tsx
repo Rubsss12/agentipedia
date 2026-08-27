@@ -5,6 +5,7 @@ import { formatTimestamp } from "@/lib/format";
 import Explorer from "@/components/Explorer";
 import Marquee from "@/components/Marquee";
 import OffersLead from "@/components/OffersLead";
+import HashScroll from "@/components/HashScroll";
 import Bi from "@/components/Bi";
 import Globe from "@/components/Globe";
 import { buildMarkers } from "@/lib/geo";
@@ -28,6 +29,7 @@ export default function Home() {
 
   return (
     <main>
+      <HashScroll />
       {/* ===== Hero: copy on the left, interactive globe card top-right ===== */}
       <section className="relative overflow-hidden bg-mauve-night text-white">
         <div className="hero-glow absolute inset-0" aria-hidden />
@@ -54,8 +56,8 @@ export default function Home() {
               </h1>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">
                 <Bi
-                  en="From AI promise to business proof: the deployments that actually run, real companies and named solutions, with the sources that prove it. No source, no entry."
-                  fr="De la promesse de l'IA à la preuve business : les déploiements qui tournent vraiment, entreprises réelles et solutions nommées, avec les sources qui le prouvent. Pas de source, pas de fiche."
+                  en="From AI promise to business proof: the deployments that actually run, real companies and identified solutions, with the sources that prove it. No source, no entry."
+                  fr="De la promesse de l'IA à la preuve business : les déploiements qui tournent vraiment, entreprises réelles et solutions identifiées, avec les sources qui le prouvent. Pas de source, pas de fiche."
                 />
               </p>
 
@@ -186,7 +188,7 @@ export default function Home() {
                   <span className="mt-0.5 block truncate text-[0.7rem] text-muted">
                     {s.countries}{" "}
                     {s.countries > 1 ? <Bi en="countries" fr="pays" /> : <Bi en="country" fr="pays" />} ·{" "}
-                    {s.production} <Bi en="in prod." fr="en prod." />
+                    {s.production} <Bi en="in production" fr="en production" />
                   </span>
                 </span>
               </Link>

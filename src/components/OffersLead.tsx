@@ -73,7 +73,7 @@ export default function OffersLead() {
       <div className="border-t border-lavender-line bg-lilac-soft">
         <div className="mx-auto max-w-6xl px-6 py-16">
           {/* heading: tie the proof on the site to HUB Institute action */}
-          <div className="max-w-2xl" data-reveal>
+          <div className="max-w-2xl">
             <p className="kicker text-mauve">
               <Bi en="Go further with HUB Institute" fr="Aller plus loin avec le HUB Institute" />
             </p>
@@ -93,14 +93,12 @@ export default function OffersLead() {
 
           {/* offer cards */}
           <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {OFFERS.map((o, i) => (
+            {OFFERS.map((o) => (
               <a
                 key={o.href}
                 href={o.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                data-reveal
-                style={{ "--reveal-delay": `${(i % 4) * 60}ms` } as React.CSSProperties}
                 className={`group flex h-full flex-col rounded-2xl border p-5 transition-all hover:-translate-y-0.5 hover:shadow-[0_16px_40px_-18px_rgb(107_43_217/0.45)] ${
                   o.featured
                     ? "border-transparent bg-mauve-night text-white"
@@ -131,7 +129,7 @@ export default function OffersLead() {
           </div>
 
           {/* contact: pitch + embedded HUB Institute form */}
-          <div className="mt-14 grid gap-8 rounded-3xl border border-lavender-line bg-paper p-6 md:grid-cols-[1fr_1.1fr] md:p-10" data-reveal>
+          <div className="mt-14 grid gap-8 rounded-3xl border border-lavender-line bg-paper p-6 md:grid-cols-[1fr_1.1fr] md:p-10">
             <div className="flex flex-col justify-center">
               <p className="kicker text-mauve">
                 <Bi en="Let's talk about your projects" fr="Parlons de vos projets" />

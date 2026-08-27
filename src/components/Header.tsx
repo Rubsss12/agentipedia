@@ -21,15 +21,15 @@ export default function Header() {
             <Link href="/#index" className="kicker text-white/75 transition-colors hover:text-mauve-glow">
               <Bi en="Search" fr="Recherche" />
             </Link>
-            <Link href="/methodology" className="kicker hidden text-white/75 transition-colors hover:text-mauve-glow sm:inline">
-              <Bi en="Methodology" fr="Méthodologie" />
-            </Link>
           </nav>
           <Link
             href="/#offres"
             className="shrink-0 rounded-full bg-white px-4 py-1.5 text-[0.7rem] font-extrabold uppercase tracking-[0.1em] text-mauve-ink shadow-sm transition-colors hover:bg-lilac"
           >
             <Bi en="Our offers" fr="Nos offres" />
+          </Link>
+          <Link href="/methodology" className="kicker hidden shrink-0 text-white/75 transition-colors hover:text-mauve-glow sm:inline">
+            <Bi en="Methodology" fr="Méthodologie" />
           </Link>
           <LangToggle on="dark" />
         </div>
