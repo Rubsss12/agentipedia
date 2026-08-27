@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { getSectors, getSectorBySlug } from "@/lib/sectors";
 import Explorer from "@/components/Explorer";
 import Bi from "@/components/Bi";
+import JsonLd from "@/components/JsonLd";
+import { SITE_URL } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -15,9 +17,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const sector = getSectorBySlug(slug);
   if (!sector) return {};
+  const title = `${sector.name}: AI agent deployments`;
+  const description = `${sector.entries} verified AI agent deployments inside named ${sector.name.toLowerCase()} companies, with sources.`;
+  const path = `/sector/${sector.slug}`;
   return {
-    title: `${sector.name}: AI agent deployments`,
-    description: `${sector.entries} verified AI agent deployments inside named ${sector.name.toLowerCase()} companies, with sources.`,
+    title,
+    description,
+    alternates: { canonical: path },
+    openGraph: { title: `${title} · Agentipedia`, description, url: path, type: "website", siteName: "Agentipedia by HUB Institute" },
   };
 }
 
@@ -29,9 +36,30 @@ export default async function SectorPage({ params }: Props) {
   const vendors = [...new Set(sector.list.map((e) => e.vendor).filter(Boolean))];
   const vendorHead = vendors.slice(0, 4).join(", ");
   const vendorMore = vendors.length - 4;
+  const url = `${SITE_URL}/sector/${sector.slug}`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        name: `${sector.name} — AI agent deployments`,
+        description: `${sector.entries} verified AI-agent deployments in the ${sector.name} sector, with named companies, named solutions and sources.`,
+        url,
+        isPartOf: { "@type": "WebSite", name: "Agentipedia", url: SITE_URL },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Agentipedia", item: SITE_URL },
+          { "@type": "ListItem", position: 2, name: sector.name, item: url },
+        ],
+      },
+    ],
+  };
 
   return (
     <main>
+      <JsonLd data={jsonLd} />
       <section className="relative overflow-hidden bg-mauve-night text-white">
         <div className="hero-glow absolute inset-0" aria-hidden />
         <div className="hero-grid absolute inset-0" aria-hidden />

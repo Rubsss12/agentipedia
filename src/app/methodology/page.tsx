@@ -7,6 +7,15 @@ export const metadata: Metadata = {
   title: "Methodology",
   description:
     "The two-field rule, the sourcing standard and the confidence policy behind every Agentipedia entry.",
+  alternates: { canonical: "/methodology" },
+  openGraph: {
+    title: "Methodology · Agentipedia",
+    description:
+      "The two-field rule, the sourcing standard and the confidence policy behind every Agentipedia entry.",
+    url: "/methodology",
+    type: "website",
+    siteName: "Agentipedia by HUB Institute",
+  },
 };
 
 export default function MethodologyPage() {

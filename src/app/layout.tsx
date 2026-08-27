@@ -7,6 +7,7 @@ import ToTop from "@/components/ToTop";
 import ChromeGate from "@/components/AppChrome";
 import Motion from "@/components/Motion";
 import { LANG_BOOT_SCRIPT } from "@/lib/lang-boot";
+import { SITE_URL } from "@/lib/site";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -15,7 +16,7 @@ const archivo = Archivo({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://agentipedia.hubinstitute.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Agentipedia by HUB Institute: the Index Live of AI agents at work",
     template: "%s · Agentipedia by HUB Institute",

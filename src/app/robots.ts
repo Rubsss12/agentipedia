@@ -1,8 +1,7 @@
 import type { MetadataRoute } from "next";
+import { SITE_URL as BASE } from "@/lib/site";
 
 export const dynamic = "force-static";
-
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || "https://agentipedia.hubinstitute.com";
 
 // GEO + SEO: the catalog is public and *wants* to be surfaced, both by classic
 // search engines and by generative engines. We allow everything, and call out

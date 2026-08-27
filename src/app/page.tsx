@@ -1,11 +1,16 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getEntries, getStats } from "@/lib/data";
+
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 import { getSectors } from "@/lib/sectors";
 import { formatTimestamp } from "@/lib/format";
 import Explorer from "@/components/Explorer";
 import Marquee from "@/components/Marquee";
 import OffersLead from "@/components/OffersLead";
 import HashScroll from "@/components/HashScroll";
+import JsonLd from "@/components/JsonLd";
+import { SITE_URL, PUBLISHER } from "@/lib/site";
 import Bi from "@/components/Bi";
 import Globe from "@/components/Globe";
 import { buildMarkers } from "@/lib/geo";
@@ -27,8 +32,47 @@ export default function Home() {
       return { q: codaQuadrant(a)!, declared, scope: codaScope(a.links), capped: a.observed > declared };
     });
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        name: "Agentipedia",
+        alternateName: "Agentipedia by HUB Institute",
+        url: SITE_URL,
+        inLanguage: ["en", "fr"],
+        publisher: PUBLISHER,
+      },
+      {
+        "@type": "Dataset",
+        name: "Agentipedia — AI agent deployments at work",
+        description:
+          "A curated, source-verified catalog of real AI-agent deployments inside named companies worldwide, each scored on the CODA maturity matrix. From AI promise to business proof.",
+        url: SITE_URL,
+        creator: PUBLISHER,
+        publisher: PUBLISHER,
+        isAccessibleForFree: true,
+        keywords: ["AI agents", "agentic AI", "enterprise AI", "AI deployments", "case studies", "CODA maturity"],
+        variableMeasured: `${stats.entries} verified deployments across ${stats.countries} countries and ${sectors.length} sectors`,
+        ...(stats.updatedAt ? { dateModified: stats.updatedAt } : {}),
+      },
+      {
+        "@type": "Organization",
+        name: "HUB Institute",
+        url: "https://www.hubinstitute.com",
+        sameAs: [
+          "https://www.linkedin.com/company/hub-institute/",
+          "https://twitter.com/HUBInstitute",
+          "https://www.instagram.com/hubinstitute/",
+          "https://www.youtube.com/@Hubinstitute",
+        ],
+      },
+    ],
+  };
+
   return (
     <main>
+      <JsonLd data={jsonLd} />
       <HashScroll />
       {/* ===== Hero: copy on the left, interactive globe card top-right ===== */}
       <section className="relative overflow-hidden bg-mauve-night text-white">

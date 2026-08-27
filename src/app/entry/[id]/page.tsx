@@ -10,6 +10,8 @@ import { regimeOf } from "@/lib/regulation";
 import { CodaBadge } from "@/components/badges";
 import CodaCard from "@/components/CodaCard";
 import Bi from "@/components/Bi";
+import JsonLd from "@/components/JsonLd";
+import { SITE_URL, PUBLISHER } from "@/lib/site";
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -21,9 +23,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const e = getEntry(id);
   if (!e) return {};
+  const title = `${e.company} × ${e.solution_name}`;
+  const path = `/entry/${e.id}`;
   return {
-    title: `${e.company} × ${e.solution_name}`,
+    title,
     description: e.use_case,
+    keywords: [e.company, e.solution_name, e.vendor, e.sector, e.industry, "AI agent", "agentic AI"].filter(Boolean) as string[],
+    alternates: { canonical: path },
+    openGraph: {
+      title: `${title} · Agentipedia`,
+      description: e.use_case,
+      url: path,
+      type: "article",
+      siteName: "Agentipedia by HUB Institute",
+    },
   };
 }
 
@@ -41,9 +54,51 @@ export default async function EntryPage({ params }: Props) {
   const entry = getEntry(id);
   if (!entry) notFound();
   const regime = regimeOf(entry);
+  const url = `${SITE_URL}/entry/${entry.id}`;
+  const title = `${entry.company} × ${entry.solution_name}`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        headline: title,
+        description: entry.use_case,
+        url,
+        datePublished: entry.first_seen_date,
+        inLanguage: "en",
+        isAccessibleForFree: true,
+        about: {
+          "@type": "Organization",
+          name: entry.company,
+          ...(entry.company_country
+            ? { address: { "@type": "PostalAddress", addressCountry: entry.company_country } }
+            : {}),
+        },
+        mentions: {
+          "@type": "SoftwareApplication",
+          name: entry.solution_name,
+          applicationCategory: "AI agent",
+          ...(entry.vendor ? { author: { "@type": "Organization", name: entry.vendor } } : {}),
+        },
+        keywords: [entry.sector, entry.industry, entry.vendor, "AI agent", "agentic AI"].filter(Boolean).join(", "),
+        isPartOf: { "@type": "WebSite", name: "Agentipedia", url: SITE_URL },
+        publisher: PUBLISHER,
+        ...(entry.sources?.length ? { citation: entry.sources.map((s) => s.url) } : {}),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Agentipedia", item: SITE_URL },
+          { "@type": "ListItem", position: 2, name: entry.sector, item: `${SITE_URL}/sector/${sectorSlug(entry.sector)}` },
+          { "@type": "ListItem", position: 3, name: title, item: url },
+        ],
+      },
+    ],
+  };
 
   return (
     <main className="mx-auto max-w-4xl px-6 pb-8 pt-10">
+      <JsonLd data={jsonLd} />
       <nav className="text-sm text-muted">
         <Link href="/" className="font-bold text-mauve transition-colors hover:text-mauve-deep">
           <Bi en="← Back to the index" fr="← Retour à l'index" />
