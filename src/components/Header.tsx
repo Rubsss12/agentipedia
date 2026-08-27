@@ -25,6 +25,12 @@ export default function Header() {
               <Bi en="Methodology" fr="Méthodologie" />
             </Link>
           </nav>
+          <Link
+            href="/#offres"
+            className="shrink-0 rounded-full bg-white px-4 py-1.5 text-[0.7rem] font-extrabold uppercase tracking-[0.1em] text-mauve-ink shadow-sm transition-colors hover:bg-lilac"
+          >
+            <Bi en="Our offers" fr="Nos offres" />
+          </Link>
           <LangToggle on="dark" />
         </div>
       </div>

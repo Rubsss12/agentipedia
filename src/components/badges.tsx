@@ -91,7 +91,7 @@ export function CodaBadge({ coda }: { coda: CodaAssessment }) {
       {capped && (
         <span
           aria-hidden
-          title="observed > declared"
+          title="observed > declared / observé > déclaré"
           className="inline-block h-2 w-2 rounded-full border-2 border-[#ffd9a8] bg-transparent"
         />
       )}
