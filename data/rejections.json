@@ -337,6 +337,113 @@
           ]
         }
       ]
+    },
+    {
+      "run_id": "run-2026-08-27-mtb86bvf",
+      "date": "2026-08-27",
+      "operator": "engine",
+      "model": "claude-opus-4-8",
+      "queries": [
+        "hospitality procurement AI agent named solution rollout company",
+        "India company deploys named AI agent customer service results",
+        "retail company in East Asia deploys named AI agent platform production results",
+        "기업 AI 에이전트 도입 사례",
+        "\"automotive\" Southeast Asia \"AI agent\" customer deployment case named company 2025 2026",
+        "Singapore Thailand Vietnam company AI agent deployment named",
+        "Oceania enterprise AI agent deployment announcement named product",
+        "Australia New Zealand company AI agent deployment named assistant results",
+        "Ada CX AI agent customer",
+        "Microsoft Copilot Studio agent enterprise customer deployment",
+        "Parloa AI agent customer",
+        "OpenAI enterprise customer AI agent deployment",
+        "Salesforce Agentforce customer deployed",
+        "company launches named AI agent 2026 announcement customers",
+        "earnings call AI agents deployment named company 2026"
+      ],
+      "candidates_seen": 0,
+      "accepted": 0,
+      "updated": 0,
+      "rejections": []
+    },
+    {
+      "run_id": "ingest-2026-08-27-mtb95aii",
+      "date": "2026-08-27",
+      "operator": "ingest",
+      "candidates_seen": 131,
+      "accepted": 130,
+      "updated": 0,
+      "rejections": [
+        {
+          "candidate": "The Home Depot / Magic Apron",
+          "reason": "company \"The Home Depot\" is generic/anonymized, not a named organization",
+          "all_errors": [
+            "company \"The Home Depot\" is generic/anonymized, not a named organization"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "ingest-2026-08-27-mtb96nkn",
+      "date": "2026-08-27",
+      "operator": "ingest",
+      "candidates_seen": 1,
+      "accepted": 1,
+      "updated": 0,
+      "rejections": []
+    },
+    {
+      "run_id": "ingest-2026-08-27-mtb9qiey",
+      "date": "2026-08-27",
+      "operator": "ingest",
+      "candidates_seen": 145,
+      "accepted": 145,
+      "updated": 0,
+      "rejections": []
+    },
+    {
+      "run_id": "ingest-2026-08-27-mtba9028",
+      "date": "2026-08-27",
+      "operator": "ingest",
+      "candidates_seen": 88,
+      "accepted": 83,
+      "updated": 0,
+      "rejections": [
+        {
+          "candidate": "The New York Times / Echo",
+          "reason": "company \"The New York Times\" is generic/anonymized, not a named organization",
+          "all_errors": [
+            "company \"The New York Times\" is generic/anonymized, not a named organization"
+          ]
+        },
+        {
+          "candidate": "The All England Lawn Tennis Club (Wimbledon) / Match Chat",
+          "reason": "company \"The All England Lawn Tennis Club (Wimbledon)\" is generic/anonymized, not a named organization",
+          "all_errors": [
+            "company \"The All England Lawn Tennis Club (Wimbledon)\" is generic/anonymized, not a named organization"
+          ]
+        },
+        {
+          "candidate": "The Guardian / Guardian MCP",
+          "reason": "company \"The Guardian\" is generic/anonymized, not a named organization",
+          "all_errors": [
+            "company \"The Guardian\" is generic/anonymized, not a named organization"
+          ]
+        },
+        {
+          "candidate": "The University of Texas at Austin / UT Sage",
+          "reason": "company \"The University of Texas at Austin\" is generic/anonymized, not a named organization",
+          "all_errors": [
+            "company \"The University of Texas at Austin\" is generic/anonymized, not a named organization"
+          ]
+        },
+        {
+          "candidate": "The Adecco Group / Agentforce",
+          "reason": "company \"The Adecco Group\" is generic/anonymized, not a named organization",
+          "all_errors": [
+            "company \"The Adecco Group\" is generic/anonymized, not a named organization"
+          ]
+        }
+      ]
     }
   ]
 }

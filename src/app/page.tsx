@@ -4,6 +4,7 @@ import { getSectors } from "@/lib/sectors";
 import { formatDate, formatTimestamp } from "@/lib/format";
 import Explorer from "@/components/Explorer";
 import Marquee from "@/components/Marquee";
+import OffersLead from "@/components/OffersLead";
 import Bi from "@/components/Bi";
 import Globe from "@/components/Globe";
 import { buildMarkers } from "@/lib/geo";
@@ -282,6 +283,9 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* ===== Lead-gen band: HUB Institute offers + contact form ===== */}
+      <OffersLead />
     </main>
   );
 }

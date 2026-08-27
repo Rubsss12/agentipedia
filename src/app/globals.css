@@ -165,3 +165,61 @@ html { scroll-behavior: smooth; }
   pointer-events: auto;
   transform: none;
 }
+
+/* ================= Embedded HUB Institute contact form (HubSpot) =================
+   The classic hbspt.forms.create renders inline; skin it to the brand so it
+   reads as part of the page. The newer iframe embed self-styles and ignores
+   this (it just sits in the white card). */
+.hub-hs-form .hs-form-field { margin-bottom: 0.9rem; }
+.hub-hs-form label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--color-ink-soft);
+  margin-bottom: 0.3rem;
+}
+.hub-hs-form input[type="text"],
+.hub-hs-form input[type="email"],
+.hub-hs-form input[type="tel"],
+.hub-hs-form input[type="number"],
+.hub-hs-form select,
+.hub-hs-form textarea {
+  width: 100%;
+  border: 1px solid var(--color-lavender-line);
+  border-radius: 10px;
+  background: #fff;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.9rem;
+  color: var(--color-ink);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.hub-hs-form input:focus,
+.hub-hs-form select:focus,
+.hub-hs-form textarea:focus {
+  outline: none;
+  border-color: var(--color-mauve);
+  box-shadow: 0 0 0 3px rgb(107 43 217 / 0.15);
+}
+.hub-hs-form .hs-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 999px;
+  background: var(--color-mauve);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  padding: 0.7rem 1.6rem;
+  margin-top: 0.4rem;
+  transition: background 0.15s ease;
+}
+.hub-hs-form .hs-button:hover { background: var(--color-mauve-deep); }
+.hub-hs-form .hs-error-msg,
+.hub-hs-form .hs-error-msgs label { color: #c0362c; font-weight: 600; }
+.hub-hs-form .legal-consent-container,
+.hub-hs-form .hs-richtext { font-size: 0.72rem; color: var(--color-muted); line-height: 1.5; }
+.hub-hs-form .inputs-list { list-style: none; margin: 0; padding: 0; }

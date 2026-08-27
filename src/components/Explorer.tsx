@@ -47,6 +47,10 @@ const EMPTY: Filters = {
 
 const MARKETING = new Set(["vendor_case_study", "press_release"]);
 
+// The index paginates client-side: only the first PAGE cards ship in the static
+// HTML (keeps the home page short), the rest reveal in batches on demand.
+const PAGE = 20;
+
 const STR = {
   en: {
     placeholder: "Search company, solution, vendor or use case…  (press / to focus)",
@@ -62,6 +66,7 @@ const STR = {
     high: "High (≥ 70%)", medium: "Medium+ (≥ 50%)", independent: "Independently sourced",
     az: "Company A–Z", newest: "Newest first", conf: "Confidence first",
     of: "of", deployments: "deployments", reset: "Reset all filters",
+    showMore: "Show more", showAll: "Show all", showing: "Showing",
     dataNote: "Entry records are written in English.",
   },
   fr: {
@@ -78,6 +83,7 @@ const STR = {
     high: "Élevée (≥ 70 %)", medium: "Moyenne+ (≥ 50 %)", independent: "Sources indépendantes",
     az: "Entreprise A–Z", newest: "Plus récents", conf: "Confiance d'abord",
     of: "sur", deployments: "déploiements", reset: "Réinitialiser les filtres",
+    showMore: "Voir plus", showAll: "Tout afficher", showing: "Affichage",
     dataNote: "Les fiches sont rédigées en anglais.",
   },
 } satisfies Record<Lang, Record<string, string>>;
@@ -148,10 +154,14 @@ function Select({
 export default function Explorer({ entries }: { entries: Entry[] }) {
   const [f, setF] = useState<Filters>(EMPTY);
   const [sort, setSort] = useState<SortKey>("az");
+  const [visible, setVisible] = useState(PAGE);
   const [lang] = useLang();
   const t = STR[lang];
   const searchRef = useRef<HTMLInputElement>(null);
   const set = (patch: Partial<Filters>) => setF((prev) => ({ ...prev, ...patch }));
+
+  // Any change to the filters or sort collapses the list back to the first batch.
+  useEffect(() => setVisible(PAGE), [f, sort]);
 
   // The globe dispatches this when a marker is clicked: either a country
   // name (string) or {key: "country" | "region", value} for special places
@@ -368,8 +378,9 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
           )}
         </div>
       ) : (
+        <>
         <ul className="mt-8 grid gap-5 pb-4 md:grid-cols-2">
-          {results.map((e, i) => (
+          {results.slice(0, visible).map((e, i) => (
             <li key={e.id} className="card-in" style={{ "--i": Math.min(i, 12) } as React.CSSProperties}>
               <Link
                 href={`/entry/${e.id}`}
@@ -406,6 +417,28 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
             </li>
           ))}
         </ul>
+        {visible < results.length && (
+          <div className="mt-8 flex flex-col items-center gap-3">
+            <p className="text-sm text-muted">
+              {t.showing} {Math.min(visible, results.length)} {t.of} {results.length}
+            </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <button
+                onClick={() => setVisible((v) => v + PAGE)}
+                className="rounded-full bg-mauve px-6 py-2.5 text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-mauve-deep"
+              >
+                {t.showMore} (+{Math.min(PAGE, results.length - visible)})
+              </button>
+              <button
+                onClick={() => setVisible(results.length)}
+                className="rounded-full border border-lavender-line px-6 py-2.5 text-sm font-bold uppercase tracking-wider text-mauve transition-colors hover:border-mauve"
+              >
+                {t.showAll} ({results.length})
+              </button>
+            </div>
+          </div>
+        )}
+        </>
       )}
     </div>
   );

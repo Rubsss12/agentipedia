@@ -683,6 +683,7 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
 <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="m-company">
   <div class="modal" id="modal">
     <button class="close" id="close" aria-label="Close / Fermer">✕</button>
+    <button id="export-slide" title="Exporter cette fiche en slide PNG 16:9">⤓ Slide</button>
     <div id="modal-body"></div>
   </div>
 </div>
@@ -1250,6 +1251,43 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
   function closeModal(){ overlay.classList.remove("open"); if(lastFocus) lastFocus.focus(); openEntryId=null; writeHash(); }
   document.getElementById("close").addEventListener("click",closeModal);
   overlay.addEventListener("click",function(ev){ if(ev.target===overlay) closeModal(); });
+
+  /* ---- export current fiche as a 16:9 PNG slide (downloads capability) ---- */
+  var DL=null;
+  if(window.claude&&claude.use){ claude.use("downloads").then(function(d){ DL=d; if(d) document.body.classList.add("dl-ok"); }).catch(function(){}); }
+  (function(){ var st=document.createElement("style"); st.textContent="#export-slide{display:none;position:absolute;top:16px;right:60px;border:0;background:#6b2bd9;color:#fff;font:700 14px/1 var(--sans,inherit);padding:9px 14px;border-radius:8px;cursor:pointer;z-index:5}#export-slide:hover{background:#5a20bd}body.dl-ok #export-slide{display:inline-flex}"; document.head.appendChild(st); })();
+  function _wrap(c,t,x,y,mw,lh,ml){ var w=String(t||"").split(/\s+/),ln="",L=[],i; for(i=0;i<w.length;i++){ var tt=ln?ln+" "+w[i]:w[i]; if(c.measureText(tt).width>mw&&ln){L.push(ln);ln=w[i];}else ln=tt;} if(ln)L.push(ln); if(ml&&L.length>ml){L=L.slice(0,ml);L[ml-1]=L[ml-1]+"…";} for(i=0;i<L.length;i++)c.fillText(L[i],x,y+i*lh); return y+L.length*lh; }
+  function drawSlide(e){
+    var W=1920,H=1080,cv=document.createElement("canvas");cv.width=W;cv.height=H;var c=cv.getContext("2d");
+    var F="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif";
+    c.fillStyle="#ffffff";c.fillRect(0,0,W,H);c.fillStyle="#6b2bd9";c.fillRect(0,0,20,H);
+    var PAD=130,x=PAD,MW=W-PAD-PAD;c.textBaseline="alphabetic";c.textAlign="left";
+    c.fillStyle="#6b2bd9";c.font="700 30px "+F;c.fillText("AGENTIPEDIA · HUB INSTITUTE",x,96);
+    c.fillStyle="#8b93a3";c.font="600 26px "+F;c.fillText([e.sector,e.region,e.company_country].filter(Boolean).join("   ·   ").toUpperCase(),x,150);
+    c.fillStyle="#14161c";c.font="800 100px "+F;var y=_wrap(c,e.company,x,268,MW,108,2)+14;
+    c.fillStyle="#3a3f4b";c.font="600 46px "+F;y=_wrap(c,e.solution_name+(e.vendor&&e.vendor!==e.solution_name?"  ·  "+e.vendor:""),x,y+24,MW,56,2)+16;
+    if(e.coda){var d=codaDeclared(e.coda),sc=codaScope(e.coda.links),q=quadOf(d,sc),qo=CODA[q]||{},lv=LEVELS[d]||{};
+      var lab=(lv.n||("N"+d))+"   "+(qo.fr||q)+"   ·   portée "+sc+"/10";
+      c.font="700 34px "+F;var tw=c.measureText(lab).width,cw=tw+64,ch=74,cyy=y+14;
+      c.fillStyle=(qo.color||"#6b2bd9");if(c.roundRect){c.beginPath();c.roundRect(x,cyy,cw,ch,37);c.fill();}else c.fillRect(x,cyy,cw,ch);
+      c.fillStyle="#ffffff";c.fillText(lab,x+32,cyy+48);y=cyy+ch+42;}
+    c.fillStyle="#2c313b";c.font="400 40px "+F;_wrap(c,e.use_case,x,y+8,MW,54,4);
+    c.strokeStyle="#e4e7ee";c.lineWidth=2;c.beginPath();c.moveTo(x,H-190);c.lineTo(W-PAD,H-190);c.stroke();
+    var by=H-118;
+    if(e.reported_outcomes&&e.reported_outcomes.length){var o=e.reported_outcomes[0];
+      c.fillStyle="#6b2bd9";c.font="800 52px "+F;c.fillText(String(o.value),x,by);
+      c.fillStyle="#6b7280";c.font="500 28px "+F;_wrap(c,o.metric,x,by+40,MW*0.6,34,2);}
+    else{c.fillStyle="#9aa3b2";c.font="italic 30px "+F;c.fillText("Aucun résultat chiffré rapporté.",x,by);}
+    c.textAlign="right";c.fillStyle="#8b93a3";c.font="600 26px "+F;
+    c.fillText("Confiance "+Math.round((e.confidence||0)*100)+"%   ·   "+((e.sources&&e.sources[0])?host(e.sources[0].url):""),W-PAD,by);
+    c.textAlign="left";c.fillStyle="#8b93a3";c.font="600 24px "+F;
+    c.fillText("agentipedia.hubinstitute.com  ·  Index Live  ·  scoré sur la matrice CODA du HUB Institute",x,H-50);
+    return cv;
+  }
+  function _slug(e){ return (String((e.company||"")+"-"+(e.solution_name||"")).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"").slice(0,60))||"agentipedia-slide"; }
+  function exportSlide(){ if(!openEntryId)return; var e=ENTRIES.filter(function(z){return z.id===openEntryId;})[0]; if(!e)return;
+    drawSlide(e).toBlob(function(b){ if(!DL||!b)return; DL.save({filename:_slug(e)+".png",data:b}).catch(function(err){ if(err&&err.code&&err.code!=="declined") console.warn("save:",err.code); }); },"image/png"); }
+  document.getElementById("export-slide").addEventListener("click",exportSlide);
   document.addEventListener("keydown",function(ev){ if(ev.key==="Escape" && overlay.classList.contains("open")) closeModal(); });
 
   /* "/" focuses the search from anywhere */
