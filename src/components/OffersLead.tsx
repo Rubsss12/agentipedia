@@ -16,7 +16,7 @@ type Offer = {
   descEn: string;
   descFr: string;
   href: string;
-  featured?: boolean;
+  tone?: "navy" | "mauve";
 };
 
 const OFFERS: Offer[] = [
@@ -28,7 +28,7 @@ const OFFERS: Offer[] = [
     descEn: "Frame and deploy your AI agents — from strategy to execution — with the team behind this observatory.",
     descFr: "Cadrez et déployez vos agents IA — de la stratégie à l'exécution — avec l'équipe derrière cet observatoire.",
     href: `${base}/conseil/agentic-business-advisory?${UTM}`,
-    featured: true,
+    tone: "navy",
   },
   {
     eyebrowEn: "Consulting",
@@ -50,12 +50,13 @@ const OFFERS: Offer[] = [
   },
   {
     eyebrowEn: "Membership",
-    eyebrowFr: "Adhésion",
+    eyebrowFr: "Membership",
     titleEn: "HUB Institute membership",
-    titleFr: "Adhésion HUB Institute",
+    titleFr: "Membership HUB Institute",
     descEn: "Join 120 member companies and 2,000 decision-makers: intelligence, foresight and direct access to our analysts.",
     descFr: "Rejoignez 120 entreprises adhérentes et 2 000 décideurs : veille, prospective et accès direct à nos analystes.",
     href: `${base}/membership?${UTM}`,
+    tone: "mauve",
   },
 ];
 
@@ -93,30 +94,33 @@ export default function OffersLead() {
 
           {/* offer cards */}
           <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {OFFERS.map((o) => (
+            {OFFERS.map((o) => {
+              const dark = !!o.tone;
+              const bg = o.tone === "mauve" ? "bg-mauve" : "bg-mauve-night";
+              return (
               <a
                 key={o.href}
                 href={o.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`group flex h-full flex-col rounded-2xl border p-5 transition-all hover:-translate-y-0.5 hover:shadow-[0_16px_40px_-18px_rgb(107_43_217/0.45)] ${
-                  o.featured
-                    ? "border-transparent bg-mauve-night text-white"
+                  dark
+                    ? `border-transparent ${bg} text-white`
                     : "border-lavender-line bg-paper hover:border-mauve"
                 }`}
               >
-                <p className={`kicker ${o.featured ? "text-mauve-bright" : "text-mauve"}`}>
+                <p className={`kicker ${dark ? "text-mauve-bright" : "text-mauve"}`}>
                   <Bi en={o.eyebrowEn} fr={o.eyebrowFr} />
                 </p>
                 <p className="mt-2 text-lg font-extrabold leading-tight">
                   <Bi en={o.titleEn} fr={o.titleFr} />
                 </p>
-                <p className={`mt-2 flex-1 text-sm leading-relaxed ${o.featured ? "text-white/75" : "text-muted"}`}>
+                <p className={`mt-2 flex-1 text-sm leading-relaxed ${dark ? "text-white/75" : "text-muted"}`}>
                   <Bi en={o.descEn} fr={o.descFr} />
                 </p>
                 <span
                   className={`mt-4 inline-flex items-center gap-1.5 text-sm font-bold ${
-                    o.featured ? "text-mauve-bright" : "text-mauve"
+                    dark ? "text-mauve-bright" : "text-mauve"
                   }`}
                 >
                   <Bi en="Discover" fr="Découvrir" />
@@ -125,7 +129,8 @@ export default function OffersLead() {
                   </span>
                 </span>
               </a>
-            ))}
+              );
+            })}
           </div>
 
           {/* contact: pitch + embedded HUB Institute form */}

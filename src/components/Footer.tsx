@@ -11,7 +11,7 @@ const HUB = "https://www.hubinstitute.com";
 const UTM = "utm_source=agentipedia&utm_medium=referral&utm_campaign=footer";
 const hub = (path: string) => `${HUB}${path}${path.includes("?") ? "&" : "?"}${UTM}`;
 
-type L = { en: string; fr: string; href: string; accent?: boolean };
+type L = { en: string; fr: string; href: string };
 
 const INSIGHTS: L[] = [
   { en: "Latest articles", fr: "Les derniers articles", href: hub("/tous-les-articles") },
@@ -24,7 +24,7 @@ const COMMUNITIES: L[] = [
   { en: "Access the platform", fr: "Accéder au site", href: "https://communities.hubinstitute.com" },
 ];
 const EXPERTISE: L[] = [
-  { en: "Membership", fr: "Membership", href: hub("/membership"), accent: true },
+  { en: "Membership", fr: "Membership", href: hub("/membership") },
   { en: "Agentic Business Advisory", fr: "Agentic Business Advisory", href: hub("/conseil/agentic-business-advisory") },
   { en: "Generative AI consulting", fr: "Conseil en IA générative", href: hub("/ai-consulting") },
   { en: "Digital transformation consulting", fr: "Conseil en transformation digitale", href: hub("/regie-expert") },
@@ -53,7 +53,6 @@ const SOCIALS: { name: string; href: string; path: string }[] = [
 ];
 
 const linkCls = "text-[0.82rem] font-semibold uppercase tracking-wide text-white/75 transition-colors hover:text-white";
-const accentCls = "text-[0.82rem] font-extrabold uppercase tracking-wide text-[#c25ef5] transition-colors hover:text-[#d98bff]";
 
 function Heading({ en, fr }: { en: string; fr: string }) {
   return (
@@ -68,15 +67,14 @@ function Col({ items }: { items: L[] }) {
     <ul className="space-y-3">
       {items.map((l) => {
         const external = !l.href.startsWith("/");
-        const cls = l.accent ? accentCls : linkCls;
         return (
           <li key={l.href}>
             {external ? (
-              <a href={l.href} target="_blank" rel="noopener noreferrer" className={cls}>
+              <a href={l.href} target="_blank" rel="noopener noreferrer" className={linkCls}>
                 <Bi en={l.en} fr={l.fr} />
               </a>
             ) : (
-              <Link href={l.href} className={cls}>
+              <Link href={l.href} className={linkCls}>
                 <Bi en={l.en} fr={l.fr} />
               </Link>
             )}
