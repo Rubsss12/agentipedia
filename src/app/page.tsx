@@ -46,11 +46,11 @@ export default function Home() {
               </p>
               <h1 className="mt-4 max-w-xl text-3xl font-extrabold leading-[1.1] tracking-tight sm:text-4xl md:text-5xl">
                 <span className="lang-en">
-                  The Index Live of <span style={{ color: "#c4a2ff" }}>AI agents</span>{" "}
+                  The Index Live of <span style={{ color: "#e879f9" }}>AI agents</span>{" "}
                   inside the world&apos;s companies
                 </span>
                 <span className="lang-fr">
-                  L&apos;Index Live des <span style={{ color: "#c4a2ff" }}>agents IA</span>{" "}
+                  L&apos;Index Live des <span style={{ color: "#e879f9" }}>agents IA</span>{" "}
                   déployés dans les entreprises du monde
                 </span>
               </h1>
