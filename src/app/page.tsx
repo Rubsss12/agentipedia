@@ -47,12 +47,12 @@ export default function Home() {
         "@type": "Dataset",
         name: "Agentipedia — AI agent deployments at work",
         description:
-          "A curated, source-verified catalog of real AI-agent deployments inside named companies worldwide, each scored on the CODA maturity matrix. From AI promise to business proof.",
+          "A curated, source-verified catalog of real AI-agent deployments inside named companies worldwide, each scored on the CODA™ maturity matrix. From AI promise to business proof.",
         url: SITE_URL,
         creator: PUBLISHER,
         publisher: PUBLISHER,
         isAccessibleForFree: true,
-        keywords: ["AI agents", "agentic AI", "enterprise AI", "AI deployments", "case studies", "CODA maturity"],
+        keywords: ["AI agents", "agentic AI", "enterprise AI", "AI deployments", "case studies", "CODA™ maturity"],
         variableMeasured: `${stats.entries} verified deployments across ${stats.countries} countries and ${sectors.length} sectors`,
         ...(stats.updatedAt ? { dateModified: stats.updatedAt } : {}),
       },
@@ -246,7 +246,7 @@ export default function Home() {
         <div className="flex flex-wrap items-baseline justify-between gap-3" data-reveal>
           <div>
             <p className="kicker text-mauve">
-              <Bi en="The CODA scoring map · HUB Institute" fr="La carte du scoring CODA · HUB Institute" />
+              <Bi en="The CODA™ scoring map · HUB Institute" fr="La carte du scoring CODA™ · HUB Institute" />
             </p>
             <h2 className="mt-2 text-2xl font-extrabold tracking-tight md:text-3xl">
               <Bi en="Every agent, placed on two axes" fr="Chaque agent, placé sur deux axes" />

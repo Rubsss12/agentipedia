@@ -171,12 +171,12 @@ export default function MethodologyPage() {
 
       <section className="mt-10 rounded-2xl border border-lavender-line p-6">
         <h2 className="text-xl font-black uppercase tracking-tight">
-          <Bi en="The CODA score card (HUB Institute)" fr="La CODA Score Card (HUB Institute)" />
+          <Bi en="The CODA™ score card (HUB Institute)" fr="La CODA™ Score Card (HUB Institute)" />
         </h2>
         <p className="mt-3 text-sm leading-relaxed text-ink-soft">
           <Bi
-            en="Every entry carries a CODA score card: its position on the HUB Institute matrix, built from two measured axes. The vertical axis is the autonomy ladder N1-N4; the horizontal axis counts the maillons of the entry's value-chain frieze that the agent measurably instruments. The quadrant - Copiloted, Orchestrated, Delegated, Agentic - follows from the two axes (high autonomy = N3+, broad scope = 6+ maillons); it is never assigned directly."
-            fr="Chaque fiche porte une CODA Score Card : sa position sur la matrice du HUB Institute, construite à partir de deux axes mesurés. L'axe vertical est l'escalier d'autonomie N1-N4 ; l'axe horizontal compte les maillons de la frise de la chaîne de valeur que l'agent instrumente de façon mesurable. Le quadrant - Copiloté, Orchestré, Délégué, Agentique - découle des deux axes (autonomie forte = N3+, portée large = 6 maillons et plus) ; il n'est jamais attribué directement."
+            en="Every entry carries a CODA™ score card: its position on the HUB Institute matrix, built from two measured axes. The vertical axis is the autonomy ladder N1-N4; the horizontal axis counts the maillons of the entry's value-chain frieze that the agent measurably instruments. The quadrant - Copiloted, Orchestrated, Delegated, Agentic - follows from the two axes (high autonomy = N3+, broad scope = 6+ maillons); it is never assigned directly."
+            fr="Chaque fiche porte une CODA™ Score Card : sa position sur la matrice du HUB Institute, construite à partir de deux axes mesurés. L'axe vertical est l'escalier d'autonomie N1-N4 ; l'axe horizontal compte les maillons de la frise de la chaîne de valeur que l'agent instrumente de façon mesurable. Le quadrant - Copiloté, Orchestré, Délégué, Agentique - découle des deux axes (autonomie forte = N3+, portée large = 6 maillons et plus) ; il n'est jamais attribué directement."
           />
         </p>
         <ol className="mt-4 space-y-2 text-sm leading-relaxed">

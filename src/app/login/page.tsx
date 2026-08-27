@@ -93,15 +93,15 @@ export default function LoginPage() {
             </h1>
             <p className={s.sub}>
               <Bi
-                en="The catalog of verified deployments, each scored on the HUB Institute CODA matrix. Sign in to reach the diagnostic."
-                fr="Le catalogue des déploiements vérifiés, chacun scoré sur la matrice CODA du HUB Institute. Connectez-vous pour accéder au diagnostic."
+                en="The catalog of verified deployments, each scored on the HUB Institute CODA™ matrix. Sign in to reach the diagnostic."
+                fr="Le catalogue des déploiements vérifiés, chacun scoré sur la matrice CODA™ du HUB Institute. Connectez-vous pour accéder au diagnostic."
               />
             </p>
           </div>
 
           <div className={s.motif}>
             <p className={s.cap}>
-              <Bi en="The CODA scoring map" fr="La carte du scoring CODA" />
+              <Bi en="The CODA™ scoring map" fr="La carte du scoring CODA™" />
             </p>
             <svg viewBox="0 0 360 150" role="img" aria-label="CODA scoring map">
               <rect x="30" y="8" width="150" height="61" fill="#e0a43b" opacity=".16" />
