@@ -44,11 +44,11 @@ export default function Home() {
               </p>
               <h1 className="mt-4 max-w-xl text-3xl font-extrabold leading-[1.1] tracking-tight sm:text-4xl md:text-5xl">
                 <span className="lang-en">
-                  The Index Live of <span className="text-mauve-bright">AI agents</span>{" "}
+                  The Index Live of <span style={{ color: "#c4a2ff" }}>AI agents</span>{" "}
                   inside the world&apos;s companies
                 </span>
                 <span className="lang-fr">
-                  L&apos;Index Live des <span className="text-mauve-bright">agents IA</span>{" "}
+                  L&apos;Index Live des <span style={{ color: "#c4a2ff" }}>agents IA</span>{" "}
                   déployés dans les entreprises du monde
                 </span>
               </h1>
@@ -158,7 +158,7 @@ export default function Home() {
         <div className="flex flex-wrap items-baseline justify-between gap-3" data-reveal>
           <div>
             <p className="kicker text-mauve">
-              <Bi en="The shelves" fr="Les rayons" />
+              <Bi en="Sectors" fr="Secteurs" />
             </p>
             <h2 className="mt-2 text-2xl font-extrabold tracking-tight md:text-3xl">
               <Bi en="Browse by sector" fr="Parcourir par secteur" />
@@ -166,8 +166,8 @@ export default function Home() {
           </div>
           <p className="max-w-md text-sm text-muted">
             <Bi
-              en="Every deployment is filed on exactly one shelf. Open a sector to see who runs what inside it."
-              fr="Chaque déploiement est rangé sur un seul rayon. Ouvrez un secteur pour voir qui y déploie quoi."
+              en="Every deployment is filed under exactly one sector. Open one to see who runs what inside it."
+              fr="Chaque déploiement est rangé dans un seul secteur. Ouvrez-en un pour voir qui y déploie quoi."
             />
           </p>
         </div>
