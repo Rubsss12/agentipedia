@@ -129,9 +129,9 @@ export default function OffersLead() {
           </div>
 
           {/* contact: pitch + embedded HUB Institute form */}
-          <div className="mt-14 grid gap-8 rounded-3xl border border-lavender-line bg-paper p-6 md:grid-cols-[1fr_1.1fr] md:p-10">
+          <div className="mt-14 grid gap-8 rounded-3xl border border-white/10 bg-mauve-night p-6 text-white shadow-[0_30px_80px_-40px_rgba(29,17,96,0.9)] md:grid-cols-[1fr_1.1fr] md:p-10">
             <div className="flex flex-col justify-center">
-              <p className="kicker text-mauve">
+              <p className="kicker text-mauve-bright">
                 <Bi en="Let's talk about your projects" fr="Parlons de vos projets" />
               </p>
               <h3 className="mt-2 text-xl font-extrabold tracking-tight md:text-2xl">
@@ -140,7 +140,7 @@ export default function OffersLead() {
                   fr="Dites-nous où vous voulez faire travailler des agents IA"
                 />
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-ink-soft">
+              <p className="mt-3 text-sm leading-relaxed text-white/70">
                 <Bi
                   en="Send us a line and our team gets back to you to scope your priorities — audit, use cases, roadmap or training."
                   fr="Écrivez-nous et notre équipe revient vers vous pour cadrer vos priorités — audit, cas d'usage, feuille de route ou formation."
@@ -148,32 +148,32 @@ export default function OffersLead() {
               </p>
               <dl className="mt-6 flex flex-wrap gap-x-8 gap-y-4">
                 <div>
-                  <dt className="text-2xl font-black text-mauve">45 000</dt>
-                  <dd className="kicker mt-0.5 text-muted">
+                  <dt className="text-2xl font-black text-mauve-bright">45 000</dt>
+                  <dd className="kicker mt-0.5 text-white/50">
                     <Bi en="executives trained" fr="cadres accompagnés" />
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-2xl font-black text-mauve">120</dt>
-                  <dd className="kicker mt-0.5 text-muted">
+                  <dt className="text-2xl font-black text-mauve-bright">120</dt>
+                  <dd className="kicker mt-0.5 text-white/50">
                     <Bi en="member companies" fr="entreprises adhérentes" />
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-2xl font-black text-mauve">2 000</dt>
-                  <dd className="kicker mt-0.5 text-muted">
+                  <dt className="text-2xl font-black text-mauve-bright">2 000</dt>
+                  <dd className="kicker mt-0.5 text-white/50">
                     <Bi en="decision-makers" fr="décideurs membres" />
                   </dd>
                 </div>
               </dl>
-              <p className="mt-6 text-xs text-muted">
+              <p className="mt-6 text-xs text-white/60">
                 <Bi en="Prefer email?" fr="Vous préférez l'email ?" />{" "}
-                <a href="mailto:contact@hubinstitute.com" className="font-semibold text-mauve hover:underline">
+                <a href="mailto:contact@hubinstitute.com" className="font-semibold text-mauve-bright hover:underline">
                   contact@hubinstitute.com
                 </a>
               </p>
             </div>
-            <div className="rounded-2xl bg-lilac-soft p-5 md:p-6">
+            <div className="rounded-2xl bg-white p-5 shadow-sm md:p-6">
               <HubspotForm />
             </div>
           </div>
