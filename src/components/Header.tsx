@@ -5,24 +5,24 @@ import Bi from "@/components/Bi";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b border-lavender-line bg-paper/90 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-white/10 bg-mauve-night/90 text-white backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-3">
         <Link href="/" aria-label="Agentipedia by HUB Institute, home" className="shrink-0">
-          <Logo on="light" />
+          <Logo on="dark" />
         </Link>
         <div className="flex min-w-0 items-center gap-4 sm:gap-6">
           <nav className="flex items-center gap-4 overflow-x-auto whitespace-nowrap sm:gap-6">
-            <Link href="/#sectors" className="kicker text-ink-soft transition-colors hover:text-mauve">
+            <Link href="/#sectors" className="kicker text-white/75 transition-colors hover:text-mauve-glow">
               <Bi en="Sectors" fr="Secteurs" />
             </Link>
-            <Link href="/#index" className="kicker text-ink-soft transition-colors hover:text-mauve">
+            <Link href="/#index" className="kicker text-white/75 transition-colors hover:text-mauve-glow">
               <Bi en="Search" fr="Recherche" />
             </Link>
-            <Link href="/methodology" className="kicker hidden text-ink-soft transition-colors hover:text-mauve sm:inline">
+            <Link href="/methodology" className="kicker hidden text-white/75 transition-colors hover:text-mauve-glow sm:inline">
               <Bi en="Methodology" fr="Méthodologie" />
             </Link>
           </nav>
-          <LangToggle on="light" />
+          <LangToggle on="dark" />
         </div>
       </div>
     </header>

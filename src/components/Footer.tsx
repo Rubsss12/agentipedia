@@ -86,8 +86,8 @@ export default function Footer() {
         <div className="mx-auto flex max-w-6xl items-center gap-3 px-6 py-5">
           <p className="text-xs leading-relaxed text-white/50">
             <Bi
-              en="Agentipedia · Insights & Experiences · by HUB Institute, Paris. Updated autonomously by the curation engine. Entries that cannot name both the company and the exact solution are rejected, and every rejection is logged."
-              fr="Agentipedia · Insights & Experiences · par HUB Institute, Paris. Mis à jour de façon autonome par le moteur de curation. Toute fiche qui ne nomme pas à la fois l'entreprise et la solution exacte est rejetée, et chaque rejet est journalisé."
+              en="Agentipedia · Insights & Experiences · by HUB Institute, Paris. Entries that cannot name both the company and the exact solution are rejected, and every rejection is logged."
+              fr="Agentipedia · Insights & Experiences · par HUB Institute, Paris. Toute fiche qui ne nomme pas à la fois l'entreprise et la solution exacte est rejetée, et chaque rejet est journalisé."
             />
           </p>
         </div>
