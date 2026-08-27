@@ -30,8 +30,8 @@ export default function Footer() {
             </p>
             <p className="mt-3 max-w-sm text-sm leading-relaxed text-white/70">
               <Bi
-                en="The AI observatory of the HUB Institute think tank: from AI promise to business proof. Real companies, named solutions, verified sources, worldwide."
-                fr="L'observatoire IA du think tank HUB Institute : de la promesse de l'IA à la preuve business. Entreprises réelles, solutions nommées, sources vérifiées, dans le monde entier."
+                en="The AI & Agentic observatory by HUB Institute: from AI promise to business proof. Real companies, named solutions, verified sources, worldwide."
+                fr="L'observatoire IA et Agentique du HUB Institute : de la promesse de l'IA à la preuve business. Entreprises réelles, solutions nommées, sources vérifiées, dans le monde entier."
               />
             </p>
           </div>
@@ -42,7 +42,7 @@ export default function Footer() {
             <ul className="mt-3 space-y-2 text-sm text-white/80">
               <li>
                 <Link href="/#sectors" className="transition-colors hover:text-mauve-glow">
-                  <Bi en="Sector shelves" fr="Rayons sectoriels" />
+                  <Bi en="Sectors" fr="Secteurs" />
                 </Link>
               </li>
               <li>

@@ -42,7 +42,7 @@ export default async function SectorPage({ params }: Props) {
             </Link>
           </nav>
           <p className="kicker mt-6 text-mauve-bright">
-            <Bi en="Sector shelf" fr="Rayon sectoriel" />
+            <Bi en="Sector" fr="Secteur" />
           </p>
           <h1 className="mt-2 text-3xl font-extrabold tracking-tight md:text-4xl">
             {sector.name}
@@ -69,11 +69,11 @@ export default async function SectorPage({ params }: Props) {
             {vendors.length > 0 && (
               <p className="max-w-md text-xs leading-relaxed text-white/60">
                 <span className="lang-en">
-                  Solutions on this shelf come from {vendorHead}
+                  This sector&apos;s AI solutions come, among others, from {vendorHead}
                   {vendorMore > 0 ? ` and ${vendorMore} more` : ""}.
                 </span>
                 <span className="lang-fr">
-                  Les solutions de ce rayon viennent de {vendorHead}
+                  Les solutions IA de ce secteur viennent entre autres de {vendorHead}
                   {vendorMore > 0 ? ` et ${vendorMore} autres` : ""}.
                 </span>
               </p>

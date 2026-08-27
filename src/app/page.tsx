@@ -42,8 +42,8 @@ export default function Home() {
             <div>
               <p className="kicker text-mauve-bright">
                 <Bi
-                  en="The AI observatory by HUB Institute · updated autonomously"
-                  fr="L'observatoire IA du HUB Institute · mis à jour de façon autonome"
+                  en="The AI & Agentic observatory by HUB Institute"
+                  fr="L'observatoire IA et Agentique du HUB Institute"
                 />
               </p>
               <h1 className="mt-4 max-w-xl text-3xl font-extrabold leading-[1.1] tracking-tight sm:text-4xl md:text-5xl">
