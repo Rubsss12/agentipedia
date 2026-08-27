@@ -4,7 +4,7 @@ import { getSectors } from "@/lib/sectors";
 
 export const dynamic = "force-static";
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || "https://agentipedia.example";
+const BASE = process.env.NEXT_PUBLIC_SITE_URL || "https://agentipedia.hubinstitute.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

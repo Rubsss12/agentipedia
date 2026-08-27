@@ -15,7 +15,7 @@ const archivo = Archivo({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://agentipedia.example"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://agentipedia.hubinstitute.com"),
   title: {
     default: "Agentipedia by HUB Institute: the Index Live of AI agents at work",
     template: "%s · Agentipedia by HUB Institute",
