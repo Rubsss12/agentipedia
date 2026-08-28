@@ -120,7 +120,7 @@ export default async function EntryPage({ params }: Props) {
           {entry.vendor && entry.vendor !== entry.solution_name && (
             <span className="text-muted">
               {" "}
-              · <Bi en="vendor:" fr="éditeur :" /> {entry.vendor}
+              · <Bi en="Vendor:" fr="Éditeur :" /> {entry.vendor}
             </span>
           )}
         </p>
@@ -271,6 +271,27 @@ export default async function EntryPage({ params }: Props) {
             . Types : {Object.values(SOURCE_TYPE_LABELS_FR).join(", ").toLowerCase()}.
           </span>
         </p>
+      </section>
+
+      {/* Who's behind Agentipedia — trust + attribution block */}
+      <section className="mt-12 rounded-2xl border border-lavender-line bg-lilac-soft p-6 md:p-8">
+        <p className="kicker text-mauve">
+          <Bi en="Who's behind this?" fr="Qui est derrière ?" />
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-ink-soft md:text-base">
+          <Bi
+            en="Agentipedia is the AI & Agentic observatory of HUB Institute, the business-transformation consultancy that helps companies move from promise to business proof. Agentipedia shares concrete use cases with decision-makers: who deployed what, where, and with what results."
+            fr="Agentipedia est l'observatoire IA et Agentique du HUB Institute, le cabinet de conseil en transformation business qui accompagne les entreprises pour passer de la promesse à la preuve business. Agentipedia partage aux décideurs des cas d'usage concrets : qui a déployé quoi, où, avec quels résultats."
+          />
+        </p>
+        <a
+          href="https://www.hubinstitute.com?utm_source=agentipedia&utm_medium=referral&utm_campaign=entry-about"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-mauve transition-colors hover:text-mauve-deep"
+        >
+          <Bi en="Discover HUB Institute" fr="Découvrir le HUB Institute" /> →
+        </a>
       </section>
     </main>
   );
