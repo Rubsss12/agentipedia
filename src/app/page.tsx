@@ -168,7 +168,7 @@ export default function Home() {
             <div className="rounded-3xl border border-white/15 bg-white/[0.05] p-4 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.8)] backdrop-blur-sm md:p-5">
               <div className="mb-2 flex items-baseline justify-between gap-3">
                 <p className="kicker text-mauve-bright">
-                  <Bi en="Where the agents run" fr="Où tournent les agents" />
+                  <Bi en="Top use cases" fr="Les meilleurs cas d'usage" />
                 </p>
                 <p className="text-xs text-white/55">
                   {stats.countries} <Bi en="countries" fr="pays" />
