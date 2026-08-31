@@ -273,25 +273,26 @@ export default async function EntryPage({ params }: Props) {
         </p>
       </section>
 
-      {/* Who's behind Agentipedia — trust + attribution block */}
-      <section className="mt-12 rounded-2xl border border-lavender-line bg-lilac-soft p-6 md:p-8">
-        <p className="kicker text-mauve">
-          <Bi en="Who's behind this?" fr="Qui est derrière ?" />
+      {/* Dig deeper into this use case — lead CTA */}
+      <section className="mt-12 rounded-2xl bg-mauve-night p-6 text-white md:p-8">
+        <p className="kicker text-mauve-bright">
+          <Bi en="Dig deeper into this use case" fr="Creuser ce cas d'usage" />
         </p>
-        <p className="mt-3 text-sm leading-relaxed text-ink-soft md:text-base">
+        <h2 className="mt-2 text-xl font-extrabold tracking-tight md:text-2xl">
+          <Bi en="Want to run an agent like this?" fr="Envie de déployer un agent comme celui-ci ?" />
+        </h2>
+        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/75 md:text-base">
           <Bi
-            en="Agentipedia is the AI & Agentic observatory of HUB Institute, the business-transformation consultancy that helps companies move from promise to business proof. Agentipedia shares concrete use cases with decision-makers: who deployed what, where, and with what results."
-            fr="Agentipedia est l'observatoire IA et Agentique du HUB Institute, le cabinet de conseil en transformation business qui accompagne les entreprises pour passer de la promesse à la preuve business. Agentipedia partage aux décideurs des cas d'usage concrets : qui a déployé quoi, où, avec quels résultats."
+            en={`Understand in detail how ${entry.company} runs ${entry.solution_name}, or launch a similar project in your company. HUB Institute's experts support you, from audit to execution.`}
+            fr={`Comprendre en détail comment ${entry.company} déploie ${entry.solution_name}, ou lancer un projet similaire dans votre entreprise : les experts du HUB Institute vous accompagnent, de l'audit à l'exécution.`}
           />
         </p>
-        <a
-          href="https://www.hubinstitute.com?utm_source=agentipedia&utm_medium=referral&utm_campaign=entry-about"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-mauve transition-colors hover:text-mauve-deep"
+        <Link
+          href="/#offres"
+          className="mt-5 inline-flex items-center gap-2 rounded-full bg-[#e11e8c] px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-[#c4157a]"
         >
-          <Bi en="Discover HUB Institute" fr="Découvrir le HUB Institute" /> →
-        </a>
+          <Bi en="Talk to an expert" fr="Parler à un expert" /> →
+        </Link>
       </section>
     </main>
   );
