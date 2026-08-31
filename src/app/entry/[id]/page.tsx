@@ -145,7 +145,7 @@ export default async function EntryPage({ params }: Props) {
           <Bi en="What the agent does" fr="Ce que fait l'agent" />
         </p>
         <p className="mt-2 text-lg leading-relaxed text-ink-soft">{entry.use_case}</p>
-        <p className="lang-fr mt-1 text-xs text-muted">Fiche rédigée en anglais, au plus près des sources.</p>
+        <p className="lang-fr mt-1 text-xs text-muted">Fiche rédigée en anglais.</p>
       </section>
 
       <section className="mt-8 grid gap-3 sm:grid-cols-2 md:grid-cols-3">
