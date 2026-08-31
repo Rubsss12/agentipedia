@@ -182,7 +182,7 @@ export default function CodaCard({ a, name }: { a: CodaAssessment; name: string 
           <Bi en="CODA™ Score Card · HUB Institute" fr="CODA™ Score Card · HUB Institute" />
         </p>
         <p className="text-xs font-bold text-muted">
-          <Bi en="Scored from public evidence" fr="Scorée au constat des sources publiques" />
+          <Bi en="Scored from public sources" fr="Scoré sur la base de sources publiques" />
         </p>
       </header>
 
@@ -284,7 +284,7 @@ export default function CodaCard({ a, name }: { a: CodaAssessment; name: string 
           <Bi en={TEST_24H.en} fr={TEST_24H.fr} />{" "}
           <Bi
             en="Analytical placement on the HUB Institute CODA™ matrix, from public sources; never a claim made by the company."
-            fr="Placement analytique sur la matrice CODA™ du HUB Institute, au constat des sources publiques ; jamais une affirmation de l'entreprise."
+            fr="Placement analytique sur la matrice CODA™ du HUB Institute, sur la base de sources publiques ; jamais une affirmation de l'entreprise."
           />
         </p>
       </div>
