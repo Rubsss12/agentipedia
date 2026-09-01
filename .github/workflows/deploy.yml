@@ -1,0 +1,62 @@
+# Deploy the static site to Cloudflare Pages on every push to main.
+#
+# This removes the dependency on a local `wrangler login`, whose OAuth token
+# expires and cannot be refreshed non-interactively.
+#
+# One-time setup — repo Settings -> Secrets and variables -> Actions:
+#   CLOUDFLARE_API_TOKEN   API token with "Account · Cloudflare Pages · Edit"
+#                          (dash.cloudflare.com -> My Profile -> API Tokens)
+#   CLOUDFLARE_ACCOUNT_ID  Account ID, shown in the Cloudflare dashboard sidebar
+#
+# Until both secrets exist the deploy job is skipped with a clear message, so
+# pushes never fail because of it.
+name: deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Validate store against the rule
+        run: node engine/validate.mjs
+
+      - name: Build static site
+        run: npm run build
+
+      - name: Check Cloudflare credentials
+        id: creds
+        env:
+          TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -n "$TOKEN" ] && [ -n "$ACCOUNT" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID not set — build OK, deploy skipped."
+          fi
+
+      - name: Deploy to Cloudflare Pages
+        if: steps.creds.outputs.ready == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4 pages deploy out --project-name agentipedia --branch main --commit-dirty=true
