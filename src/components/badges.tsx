@@ -111,3 +111,22 @@ export function SourceTypeChip({ type }: { type: SourceType }) {
     </span>
   );
 }
+
+/**
+ * Marks a fiche the HUB Institute team added by hand (client cases, cases
+ * spotted off-engine) rather than one the curation engine discovered. The rule
+ * is identical either way — named company, named solution, sourced — this only
+ * makes the provenance explicit.
+ */
+export function ManualBadge() {
+  return (
+    <span className="inline-flex items-center gap-1 rounded-full bg-lilac px-2.5 py-1 text-[0.7rem] font-bold text-mauve-deep">
+      <span
+        aria-hidden
+        className="inline-block h-1.5 w-1.5 rounded-full"
+        style={{ background: "#6b2bd9" }}
+      />
+      <Bi en="Added by HUB Institute" fr="Ajouté par le HUB Institute" />
+    </span>
+  );
+}

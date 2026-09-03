@@ -9,7 +9,8 @@
     "lint": "eslint",
     "curate": "node engine/curate.mjs",
     "validate": "node engine/validate.mjs",
-    "artifact": "node artifact/gen.mjs"
+    "artifact": "node artifact/gen.mjs",
+    "add-case": "node scripts/add-case.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.110.0",

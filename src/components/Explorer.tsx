@@ -160,8 +160,16 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
   const searchRef = useRef<HTMLInputElement>(null);
   const set = (patch: Partial<Filters>) => setF((prev) => ({ ...prev, ...patch }));
 
-  // Any change to the filters or sort collapses the list back to the first batch.
-  useEffect(() => setVisible(PAGE), [f, sort]);
+  // Any change to the filters or sort collapses the list back to the first
+  // batch. Adjusted during render (React's documented pattern for resetting
+  // state when an input changes) rather than in an effect, which would render
+  // the long list once before shrinking it back.
+  const batchKey = `${JSON.stringify(f)}|${sort}`;
+  const [prevBatchKey, setPrevBatchKey] = useState(batchKey);
+  if (prevBatchKey !== batchKey) {
+    setPrevBatchKey(batchKey);
+    setVisible(PAGE);
+  }
 
   // The globe dispatches this when a marker is clicked: either a country
   // name (string) or {key: "country" | "region", value} for special places

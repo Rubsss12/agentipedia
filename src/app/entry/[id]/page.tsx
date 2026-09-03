@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getEntries, getEntry, isVendorSourced } from "@/lib/data";
 import { SOURCE_TYPE_LABELS, SOURCE_TYPE_LABELS_FR } from "@/lib/types";
-import { ConfidenceBadge, StageBadge, SourceTypeChip, UnnamedBadge } from "@/components/badges";
+import { ConfidenceBadge, StageBadge, SourceTypeChip, UnnamedBadge, ManualBadge } from "@/components/badges";
 import { sectorSlug } from "@/lib/sectors";
 import { confidencePercent, formatDate, hostOf } from "@/lib/format";
 import { regimeOf } from "@/lib/regulation";
@@ -127,6 +127,7 @@ export default async function EntryPage({ params }: Props) {
         <div className="mt-4 flex flex-wrap gap-2">
           {entry.coda && <CodaBadge coda={entry.coda} />}
           {entry.solution_named === false && <UnnamedBadge />}
+          {entry.provenance === "manual" && <ManualBadge />}
           <StageBadge stage={entry.deployment_stage} />
           <ConfidenceBadge entry={entry} />
         </div>

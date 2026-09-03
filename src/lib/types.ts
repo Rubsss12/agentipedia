@@ -51,6 +51,12 @@ export interface Entry {
   sources: Source[];
   confidence: number;
   confidence_reason: string;
+  /**
+   * How the entry entered the index. Absent (or "engine") means the curation
+   * engine found it on the live web; "manual" means the HUB Institute team
+   * added it by hand via `npm run add-case` — shown with a badge on the fiche.
+   */
+  provenance?: "engine" | "manual";
 }
 
 export interface Store {

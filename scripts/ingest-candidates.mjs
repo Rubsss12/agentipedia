@@ -9,7 +9,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import {
-  validateEntry, applyConfidencePolicy, makeEntryId, normalizeName, normalizeUrl, onlyMarketingSources,
+  validateEntry, applyConfidencePolicy, makeEntryId, normalizeName, onlyMarketingSources,
 } from "../engine/schema.mjs";
 
 // Quality gate: a candidate whose ONLY evidence is a bare vendor "customers"/
