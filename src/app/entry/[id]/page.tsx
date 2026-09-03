@@ -127,7 +127,7 @@ export default async function EntryPage({ params }: Props) {
         <div className="mt-4 flex flex-wrap gap-2">
           {entry.coda && <CodaBadge coda={entry.coda} />}
           {entry.solution_named === false && <UnnamedBadge />}
-          {entry.provenance === "manual" && <ManualBadge />}
+          {entry.provenance === "manual" && entry.sources.length > 0 && <ManualBadge />}
           <StageBadge stage={entry.deployment_stage} />
           <ConfidenceBadge entry={entry} />
         </div>
@@ -237,8 +237,8 @@ export default async function EntryPage({ params }: Props) {
         {entry.sources.length === 0 && (
           <p className="mt-4 rounded-xl border border-lavender-line bg-lilac-soft px-4 py-3 text-sm text-ink-soft">
             <Bi
-              en="Case shared by the HUB Institute team; no public source to date."
-              fr="Cas transmis par l'équipe HUB Institute ; pas de source publique à ce jour."
+              en="Client-sourced: shared with HUB Institute by the company itself, with no public source to date."
+              fr="Source client : cas transmis au HUB Institute par l'entreprise elle-même, sans source publique à ce jour."
             />
           </p>
         )}

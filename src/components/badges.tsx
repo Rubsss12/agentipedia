@@ -14,6 +14,19 @@ import Bi from "@/components/Bi";
 // <= 0.5 usually vendor-marketing-capped. Vendor-only entries always show the
 // caution treatment no matter the number.
 export function ConfidenceBadge({ entry }: { entry: Entry }) {
+  // A case the team entered with no public source is labelled for what it is —
+  // the client told us — rather than borrowing the confidence scale, which
+  // measures public evidence.
+  if (entry.sources.length === 0) {
+    return (
+      <span
+        className="inline-flex items-center gap-1 rounded-full bg-lilac px-2.5 py-1 text-[0.7rem] font-bold text-mauve-deep"
+        title={entry.confidence_reason}
+      >
+        <Bi en="Client-sourced" fr="Source client" />
+      </span>
+    );
+  }
   const vendor = isVendorSourced(entry);
   const c = entry.confidence;
   const tone = vendor

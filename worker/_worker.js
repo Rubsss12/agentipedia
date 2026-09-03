@@ -97,7 +97,7 @@ function toEntry(d) {
     sources,
     confidence: unsourced || onlyMarketing ? 0.5 : 0.75,
     confidence_reason: unsourced
-      ? "Cas transmis par l'équipe HUB Institute ; pas de source publique à ce jour."
+      ? "Source client : transmis au HUB Institute par l'entreprise, sans source publique à ce jour."
       : onlyMarketing
         ? "Ajoutée à la main par l'équipe HUB Institute ; sources marketing uniquement, confiance plafonnée."
         : "Ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées.",
