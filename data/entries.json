@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T07:56:22.927Z",
+  "updated_at": "2026-09-03T08:21:53.815Z",
   "entries": [
     {
       "id": "1-800accountant--agentforce",
@@ -113,6 +113,57 @@
         "locks": [],
         "basis_en": "Harvey's legal AI drafts contract reviews and legal research that lawyers rework; reported 30% cut in review time and 2-3h saved weekly. Copilot proposing in the legal/compliance function.",
         "basis_fr": "L'IA juridique Harvey prepare revues de contrats et recherches que les avocats retravaillent; 30% de temps de revue en moins et 2-3h economisees par semaine. Copilote qui propose sur la fonction juridique/conformite."
+      }
+    },
+    {
+      "id": "aaa-washington--agentforce",
+      "company": "AAA Washington",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Automotive & Mobility",
+      "solution_name": "Agentforce",
+      "vendor": "Salesforce",
+      "use_case": "Autonomously handles tow-truck dispatching and pushes live status updates to stranded members, with humans stepping in for urgent or high-priority situations; also aims to surface membership renewal and cross-sell offers.",
+      "department": "Roadside assistance",
+      "industry": "Motor club / roadside assistance",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Expected increase in membership retention from cross-sell/upsell targeting",
+          "value": "5%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-08-31",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/customer-stories/aaa-washington/",
+          "title": "AAA Washington provides fast, always-on support with Agentforce.",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-08-31"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Named company and named platform, but the only retrieved evidence is Salesforce's own customer-story page; capped until independently confirmed.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          1,
+          1,
+          1,
+          2,
+          0,
+          1,
+          1,
+          2,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Only Salesforce's case study describes Agentforce autonomously dispatching tow trucks and pushing live updates to stranded members, with humans handling urgent cases; vendor-only evidence caps observed at N2.",
+        "basis_fr": "Seul le cas client Salesforce decrit Agentforce depechant de maniere autonome des depanneuses et envoyant des mises a jour en direct aux membres bloques, l'humain prenant le relais pour les cas urgents ; une preuve uniquement editeur plafonne l'observe a N2."
       }
     },
     {
@@ -5193,6 +5244,65 @@
       }
     },
     {
+      "id": "cityblue-hotels--inntelo-ai",
+      "company": "CityBlue Hotels",
+      "company_country": "Kenya",
+      "region": "Africa",
+      "sector": "Hospitality & Food",
+      "solution_name": "Inntelo AI",
+      "vendor": "Inntelo AI",
+      "use_case": "Conversational and agentic AI concierge agents coordinate guest interactions and service requests and prioritize tasks across CityBlue's hotels in Kenya, Rwanda and Tanzania, freeing staff for in-person service.",
+      "department": "Guest services",
+      "industry": "Hotels",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-08-31",
+      "sources": [
+        {
+          "url": "https://techafricanews.com/2026/04/01/cityblue-hotels-partners-inntelo-ai-to-deploy-ai-native-concierge-agents-across-africa/",
+          "title": "CityBlue Hotels Partners Inntelo AI to Deploy AI-Native Concierge Agents Across Africa",
+          "publisher": "TechAfrica News",
+          "source_type": "news_media",
+          "retrieved_date": "2026-08-31"
+        },
+        {
+          "url": "https://www.intelligentcio.com/africa/2026/04/01/cityblue-hotels-and-inntelo-ai-sign-first-ai-native-hospitality-venture-in-sub-saharan-africa/",
+          "title": "CityBlue Hotels and Inntelo AI sign first AI-native hospitality venture in Sub-Saharan Africa",
+          "publisher": "Intelligent CIO Africa",
+          "source_type": "news_media",
+          "retrieved_date": "2026-08-31"
+        },
+        {
+          "url": "https://www.zawya.com/en/press-release/africa-press-releases/africas-fastest-growing-hotel-group-cityblue-hotels-selects-inntelo-ai-to-deploy-artificial-intelligence-ai-rjdaf2fo",
+          "title": "Africa's fastest-growing hotel group CityBlue Hotels selects Inntelo AI to deploy Artificial Intelligence (AI)-native operations across portfolio",
+          "publisher": "Zawya",
+          "source_type": "press_release",
+          "retrieved_date": "2026-08-31"
+        }
+      ],
+      "confidence": 0.6,
+      "confidence_reason": "Named hotel group and named AI vendor/product confirmed by independent African trade press (TechAfrica News, Intelligent CIO Africa) in addition to a press release, so not marketing-only; capped short of higher confidence pending measured outcomes.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          1,
+          2,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Independent African trade press confirms Inntelo AI's concierge agents coordinate guest requests and prioritize tasks across CityBlue's Kenya, Rwanda and Tanzania properties, with hotel staff still delivering the service; observed N2 pending evidence of autonomous commitments.",
+        "basis_fr": "La presse specialisee africaine confirme que les agents concierges d'Inntelo AI coordonnent les demandes des clients et priorisent les taches dans les hotels CityBlue au Kenya, au Rwanda et en Tanzanie, le personnel assurant toujours le service ; observe N2 en l'absence de preuve d'engagement autonome."
+      }
+    },
+    {
       "id": "clara--financial-analyst",
       "company": "Clara",
       "company_country": "Mexico",
@@ -5750,6 +5860,52 @@
       }
     },
     {
+      "id": "commonwealth-bank--unnamed-ai-fraud-detection-agent",
+      "company": "Commonwealth Bank",
+      "company_country": "Australia",
+      "region": "Oceania",
+      "sector": "Financial Services",
+      "solution_name": "Unnamed AI fraud detection agent",
+      "solution_named": false,
+      "vendor": "",
+      "use_case": "An agentic AI system detects emerging fraud and scam patterns in transaction and payments data and generates the rules needed to help intercept them, part of the bank's broader annual investment in fraud, scam and cyber defence.",
+      "department": "Fraud and financial crime",
+      "industry": "Banking",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-08-31",
+      "sources": [
+        {
+          "url": "https://www.commbank.com.au/articles/newsroom/2026/04/ai-agent-spots-fraud-in-real-time.html",
+          "title": "CommBank develops AI agent that spots new fraud and helps build defences",
+          "publisher": "CommBank Newsroom",
+          "source_type": "company_official",
+          "retrieved_date": "2026-08-31"
+        }
+      ],
+      "confidence": 0.55,
+      "confidence_reason": "Named bank confirmed via the bank's own newsroom describing a real, deployed agent with no public product name; single company_official source keeps confidence moderate.",
+      "coda": {
+        "chain": "fraude",
+        "links": [
+          2,
+          2,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "CommBank's own newsroom describes an agentic AI system that detects emerging fraud and scam patterns and generates candidate rules to intercept them as part of a $1bn annual fraud, scam and cyber investment; it detects and proposes with no evidence of autonomously deploying blocks, so observed N2.",
+        "basis_fr": "Le site d'actualites de CommBank decrit un systeme d'IA agentique qui detecte de nouveaux schemas de fraude et genere des regles candidates pour les intercepter, dans le cadre d'un investissement annuel d'un milliard de dollars contre la fraude et la cybercriminalite ; il detecte et propose sans preuve de blocage autonome, donc observe N2."
+      }
+    },
+    {
       "id": "commonwealth-of-pennsylvania-office-of-administration--chatgpt-enterprise",
       "company": "Commonwealth of Pennsylvania (Office of Administration)",
       "company_country": "United States",
@@ -6002,6 +6158,65 @@
         "locks": [],
         "basis_en": "Live transcription and knowledge-base search for 500 human officers; the officer resolves. The agent proposes, the human does: observed N1.",
         "basis_fr": "Transcription en direct et recherche documentaire pour 500 conseillers humains ; le conseiller résout. L'agent propose, l'humain fait : observé N1."
+      }
+    },
+    {
+      "id": "dbs-bank--dbs-joy",
+      "company": "DBS Bank",
+      "company_country": "Singapore",
+      "region": "Southeast Asia",
+      "sector": "Financial Services",
+      "solution_name": "DBS Joy",
+      "vendor": "",
+      "use_case": "A generative-AI virtual assistant for corporate and SME customers that became fully agentic in Singapore, letting customers go beyond Q&A to complete simple banking tasks in a single chat, such as checking whether a payment was completed, whether money reached a named recipient, or how much was paid in fees.",
+      "department": "Corporate banking / customer service",
+      "industry": "Banking",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-08-31",
+      "sources": [
+        {
+          "url": "https://www.dbs.com/newsroom/DBS_scales_agentic_AI_to_transform_way_of_working_for_corporate_bankers_freeing_up_time_for_more_strategic_client_engagements",
+          "title": "DBS scales agentic AI to transform way of working for corporate bankers, freeing up time for more strategic client engagements",
+          "publisher": "DBS Bank Newsroom",
+          "source_type": "company_official",
+          "retrieved_date": "2026-08-31"
+        },
+        {
+          "url": "https://www.crowdfundinsider.com/2026/08/300467-dbs-rolls-out-agentic-ai-tools-to-1500-bankers-aiming-to-significantly-cut-credit-assessment-time/",
+          "title": "DBS Rolls Out Agentic AI Tools To 1,500 Bankers, Aiming To Significantly Cut Credit Assessment Time",
+          "publisher": "Crowdfund Insider",
+          "source_type": "news_media",
+          "retrieved_date": "2026-08-31"
+        },
+        {
+          "url": "https://www.finews.asia/finance/45016-dbs-agentic-ai-virtual-banking-assistants",
+          "title": "DBS Turns Virtual Assistants Into Banking Agents",
+          "publisher": "finews.asia",
+          "source_type": "news_media",
+          "retrieved_date": "2026-08-31"
+        }
+      ],
+      "confidence": 0.68,
+      "confidence_reason": "Named bank and named assistant confirmed by the bank's own newsroom and corroborated by independent finance press (Crowdfund Insider, finews.asia); the described actions are data-backed lookups rather than confirmed committed transactions.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          1,
+          1,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "DBS's own announcement and independent coverage describe Joy going agentic for corporate and SME customers, answering data-backed questions on payment status, transfers and fees within a single chat; the reported actions are lookups rather than committed transactions, so observed N2.",
+        "basis_fr": "L'annonce de DBS et la presse independante decrivent Joy devenant agentique pour les clients corporate et PME, repondant a des questions sur le statut des paiements, les virements et les frais au sein d'une seule conversation ; les actions rapportees sont des consultations, pas des transactions engagees, donc observe N2."
       }
     },
     {
@@ -7694,6 +7909,65 @@
         "locks": [],
         "basis_en": "≈500,000 calls a month answered in two languages, independently reported - answering, with no executed banking action documented. Observed N2.",
         "basis_fr": "≈500 000 appels par mois traités en deux langues, rapporté indépendamment - de la réponse, sans action bancaire exécutée documentée. Observé N2."
+      }
+    },
+    {
+      "id": "emirates-nbd--unnamed-ai-fraud-detection-and-monitoring-system",
+      "company": "Emirates NBD",
+      "company_country": "United Arab Emirates",
+      "region": "Middle East",
+      "sector": "Financial Services",
+      "solution_name": "Unnamed AI fraud-detection and monitoring system",
+      "solution_named": false,
+      "vendor": "",
+      "use_case": "AI-powered monitoring across more than 50 active AI use cases at the bank, credited with a reduction in fraud losses; part of the bank's wider generative-AI transformation of business operations.",
+      "department": "Fraud and risk",
+      "industry": "Banking",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Reduction in fraud losses after deploying AI-powered monitoring",
+          "value": "40%",
+          "source_type": "company_official"
+        }
+      ],
+      "first_seen_date": "2026-08-31",
+      "sources": [
+        {
+          "url": "https://www.emiratesnbd.com/en/media-center/emirates-nbd-to-transform-business-operations-and-enhance-productivity-with-generative-ai",
+          "title": "Emirates NBD to transform business operations and enhance productivity with generative AI",
+          "publisher": "Emirates NBD Media Center",
+          "source_type": "company_official",
+          "retrieved_date": "2026-08-31"
+        },
+        {
+          "url": "https://www.khaleejtimes.com/business/tech/emirates-nbd-fab-and-mashreq-among-gccs-most-ai-advanced-banks",
+          "title": "Emirates NBD, FAB and Mashreq among GCC's most AI-advanced banks",
+          "publisher": "Khaleej Times",
+          "source_type": "news_media",
+          "retrieved_date": "2026-08-31"
+        }
+      ],
+      "confidence": 0.58,
+      "confidence_reason": "Named bank confirmed via its own media center and independent regional business press describing a real fraud-monitoring deployment with a concrete loss-reduction figure, but no public product name for the system.",
+      "coda": {
+        "chain": "fraude",
+        "links": [
+          2,
+          1,
+          2,
+          2,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Emirates NBD's own media center reports AI-powered monitoring cutting fraud losses by 40% across more than 50 active AI use cases; the bank does not disclose autonomous blocking or transaction authority for the system, so observed N2.",
+        "basis_fr": "Le centre de presse d'Emirates NBD rapporte qu'une surveillance par IA reduit les pertes liees a la fraude de 40% sur plus de 50 cas d'usage actifs ; la banque ne divulgue pas de pouvoir de blocage ou de transaction autonome pour ce systeme, donc observe N2."
       }
     },
     {
@@ -11616,6 +11890,65 @@
       }
     },
     {
+      "id": "itau--itau-emps",
+      "company": "Itaú",
+      "company_country": "Brazil",
+      "region": "Latin America",
+      "sector": "Financial Services",
+      "solution_name": "Itaú Emps",
+      "vendor": "",
+      "use_case": "A digital-banking app for micro and small businesses built around a generative-AI advisor that answers contextual questions about cash flow, expenses and receivables ('why did my expenses go up?', 'can I anticipate my receivables now?'), replacing human account managers with self-service.",
+      "department": "Small-business banking",
+      "industry": "Banking",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-08-31",
+      "sources": [
+        {
+          "url": "https://finsidersbrasil.com.br/bancos-digitais/itau-troca-gerentes-por-ia-em-novo-app-para-atender-pequenas-empresas/",
+          "title": "\"Gerente Artificial\": em novo app, Itaú usa IA para atender pequenas empresas",
+          "publisher": "Finsiders Brasil",
+          "source_type": "news_media",
+          "retrieved_date": "2026-08-31"
+        },
+        {
+          "url": "https://tiinside.com.br/22/09/2025/itau-emps-adota-ia-generativa-como-condutor-da-contratacao-do-pronampe/",
+          "title": "Itaú Emps adota IA generativa como condutor da contratação do Pronampe",
+          "publisher": "TI Inside",
+          "source_type": "news_media",
+          "retrieved_date": "2026-08-31"
+        },
+        {
+          "url": "https://consumidormoderno.com.br/itau-emps-banco-ia/",
+          "title": "Conheça o Itaú Emps, o banco digital com IA para pequenos e médios empreendedores",
+          "publisher": "Consumidor Moderno",
+          "source_type": "news_media",
+          "retrieved_date": "2026-08-31"
+        }
+      ],
+      "confidence": 0.62,
+      "confidence_reason": "Named bank and named app confirmed by multiple independent Brazilian trade-press outlets, not vendor marketing; capped short of higher confidence because no independently measured usage or resolution metric was retrieved.",
+      "coda": {
+        "chain": "pilotage",
+        "links": [
+          2,
+          1,
+          1,
+          1,
+          2,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Independent Brazilian fintech press describes Itaú Emps' embedded generative-AI advisor answering causal questions on cash flow and expenses and suggesting actions for small-business owners, with self-service replacing human account managers; it advises rather than executing bank transactions itself, so observed N2.",
+        "basis_fr": "La presse fintech bresilienne independante decrit le conseiller IA generative integre a Itau Emps, qui repond a des questions causales sur la tresorerie et les depenses et suggere des actions pour les petits entrepreneurs, le libre-service remplacant les gestionnaires humains ; il conseille sans executer lui-meme les operations bancaires, donc observe N2."
+      }
+    },
+    {
       "id": "j-b-hunt-transport-services--overroute",
       "company": "J.B. Hunt Transport Services",
       "company_country": "United States",
@@ -13249,6 +13582,62 @@
       }
     },
     {
+      "id": "live-nation--agentforce",
+      "company": "Live Nation",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Media & Entertainment",
+      "solution_name": "Agentforce",
+      "vendor": "Salesforce",
+      "use_case": "A headless 'Venue Agent' built on Agentforce Service and Data 360 answers venue-specific fan questions embedded across 120 venue websites, deflecting routine support cases and escalating safety concerns or out-of-scope questions to staff via Slack.",
+      "department": "Customer service",
+      "industry": "Live events",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Share of fan support cases deflected by Venue Agent",
+          "value": "95%",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Annual fan inquiries projected to be automated",
+          "value": "300,000+",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-08-31",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/customer-stories/live-nation/agentic-venue-support/",
+          "title": "Live Nation delivers agentic support for fans across its venue platform",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-08-31"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Named company and named platform with concrete deflection metrics, but the only retrieved evidence is Salesforce's own customer-story page; capped until independently confirmed.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          1,
+          1,
+          2,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Salesforce's case study reports Venue Agent deflecting 95% of fan support cases and automating 300,000+ annual inquiries across 120 venues, with defined Slack escalation rules for humans; vendor-only evidence caps observed at N2.",
+        "basis_fr": "Le cas client Salesforce rapporte que Venue Agent traite 95% des demandes de support des fans et automatise plus de 300 000 requetes annuelles sur 120 salles, avec des regles d'escalade Slack definies vers l'humain ; une preuve uniquement editeur plafonne l'observe a N2."
+      }
+    },
+    {
       "id": "liverpool-el-puerto-de-liverpool--commercetools-ai-hub-and-agent-gateway",
       "company": "Liverpool (El Puerto de Liverpool)",
       "company_country": "Mexico",
@@ -14124,6 +14513,65 @@
         "locks": [],
         "basis_en": "Conversational search interprets a traveller's query, infers trip purpose and returns curated results from ~10,000 verified properties for Bonvoy members; it discovers and answers, member books. Rollout planned to 283M members.",
         "basis_fr": "Recherche conversationnelle qui interprete la requete, deduit l'objet du voyage et renvoie des resultats cures parmi ~10 000 etablissements verifies pour les membres Bonvoy; il decouvre et repond, le membre reserve. Deploiement prevu a 283M membres."
+      }
+    },
+    {
+      "id": "marriott-international--renai-by-renaissance",
+      "company": "Marriott International",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Hospitality & Food",
+      "solution_name": "RENAI by Renaissance",
+      "vendor": "",
+      "use_case": "AI-powered virtual concierge for Renaissance Hotels guests: scan a QR code to chat by text or WhatsApp and get local restaurant, bar and activity recommendations curated by hotel staff, plus special deals.",
+      "department": "Guest services",
+      "industry": "Hotels",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-08-31",
+      "sources": [
+        {
+          "url": "https://news.marriott.com/news/2023/12/06/meet-renai-by-renaissance-the-pilot-program-for-renaissance-hotels-new-ai-powered-virtual-concierge-service",
+          "title": "Meet RENAI By Renaissance: the Pilot Program for Renaissance Hotels' New AI-powered Virtual Concierge Service",
+          "publisher": "Marriott International Newsroom",
+          "source_type": "company_official",
+          "retrieved_date": "2026-08-31"
+        },
+        {
+          "url": "https://skift.com/2023/12/12/renaissance-hotels-launches-renai-its-new-ai-powered-virtual-concierge/",
+          "title": "IDEAS: Renaissance Hotels Launches RENAI, its New AI-powered Virtual Concierge",
+          "publisher": "Skift",
+          "source_type": "news_media",
+          "retrieved_date": "2026-08-31"
+        },
+        {
+          "url": "https://www.hoteldive.com/news/marriott-renaissance-hotels-ai-powered-virtual-concierge/701843/",
+          "title": "Marriott's Renaissance Hotels debuts AI-powered 'virtual concierge'",
+          "publisher": "Hotel Dive",
+          "source_type": "news_media",
+          "retrieved_date": "2026-08-31"
+        }
+      ],
+      "confidence": 0.65,
+      "confidence_reason": "Named brand and named solution confirmed by the company's own newsroom and independent trade press (Skift, Hotel Dive), not vendor marketing; however this was a small pilot (three hotels) and no evidence of wider production rollout was retrieved.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          1,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "RENAI answers guest chat requests via QR-code text or WhatsApp with local recommendations and deals curated by hotel staff; it informs but does not book, transact or resolve technical issues, so observed N2.",
+        "basis_fr": "RENAI repond aux demandes des clients par texto ou WhatsApp via QR code avec des recommandations locales et des offres selectionnees par le personnel de l'hotel ; il informe sans reserver, transiger ni resoudre de probleme technique, donc observe N2."
       }
     },
     {
@@ -17766,6 +18214,64 @@
         "locks": [],
         "basis_en": "Ada customer-service agents deployed after a trust-and-safety readiness audit of 300+ evaluations; a vendor case study alone documents a service agent answering, capping at N2.",
         "basis_fr": "Agents de service client Ada deployes apres un audit trust-and-safety de 300+ evaluations; un seul cas client fournisseur documente un agent qui repond, plafonne a N2."
+      }
+    },
+    {
+      "id": "precina-health--agentforce",
+      "company": "Precina Health",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Healthcare & Life Sciences",
+      "solution_name": "Agentforce",
+      "vendor": "Salesforce",
+      "use_case": "Uses Agentforce with Data Cloud and Health Cloud to automate routine patient communication, 24/7 Q&A and appointment scheduling within Precina's virtual diabetes-care program.",
+      "department": "Patient engagement",
+      "industry": "Digital health / diabetes care",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [
+        {
+          "metric": "Average A1C (blood sugar marker) change in a 50-patient rural Louisiana pilot over 12 weeks",
+          "value": "9.6% to 6.4%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-08-31",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/customer-stories/precina/",
+          "title": "Precina revolutionizes diabetes care with Agentforce.",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-08-31"
+        },
+        {
+          "url": "https://www.salesforce.com/news/stories/precina-scale-operations-tailored-care/",
+          "title": "Precina Set to Deliver 24/7, Personalized Diabetes Care Nationally with Agentforce",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-08-31"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Named company and named platform with a specific clinical pilot metric, but every retrieved source is Salesforce's own case-study content; the A1C outcome reflects Precina's broader care program, not the agent in isolation, and is capped until independently confirmed.",
+      "coda": {
+        "chain": "soin",
+        "links": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Salesforce's case study credits Agentforce with automating routine patient communication and scheduling in Precina's diabetes program, alongside a reported A1C drop from 9.6% to 6.4% in a 50-patient pilot; vendor-only evidence caps observed at N2 and the clinical result reflects the program, not the agent alone.",
+        "basis_fr": "Le cas client Salesforce attribue a Agentforce l'automatisation de la communication patient et de la prise de rendez-vous dans le programme diabete de Precina, avec une baisse d'HbA1c de 9,6% a 6,4% sur un pilote de 50 patients ; une preuve uniquement editeur plafonne l'observe a N2, et le resultat clinique reflete le programme, pas seulement l'agent."
       }
     },
     {
