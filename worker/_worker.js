@@ -26,8 +26,37 @@ const CHAINS = ["care","commerce","achats","fonctions","pilotage","ops","fraude"
 const LOCKS = ["data","mandate","supervision","compliance"];
 const MARKETING = new Set(["vendor_case_study","press_release"]);
 
-const json = (obj, status = 200) =>
-  new Response(JSON.stringify(obj), { status, headers: { "content-type": "application/json; charset=utf-8" } });
+// The custom domain sits behind the hubinstitute.com bot challenge, which
+// answers API calls with an HTML interstitial instead of letting them through.
+// The form therefore posts to the pages.dev origin, so /api/ needs CORS.
+const ALLOWED_ORIGINS = [
+  "https://agentipedia.hubinstitute.com",
+  "https://agentipedia.pages.dev",
+];
+
+function corsHeaders(request) {
+  const origin = request.headers.get("origin") || "";
+  const allowed = ALLOWED_ORIGINS.includes(origin)
+    || /^https:\/\/[0-9a-f]+\.agentipedia\.pages\.dev$/.test(origin);
+  return allowed
+    ? {
+        "access-control-allow-origin": origin,
+        "access-control-allow-methods": "POST, OPTIONS",
+        "access-control-allow-headers": "content-type",
+        "access-control-max-age": "86400",
+        vary: "origin",
+      }
+    : {};
+}
+
+const json = (obj, status = 200, request = null) =>
+  new Response(JSON.stringify(obj), {
+    status,
+    headers: {
+      "content-type": "application/json; charset=utf-8",
+      ...(request ? corsHeaders(request) : {}),
+    },
+  });
 
 const clean = (v) => (typeof v === "string" ? v.trim() : "");
 
@@ -127,23 +156,23 @@ const gh = (env, path, init = {}) =>
 
 async function addCase(request, env) {
   if (!env.GITHUB_TOKEN || !env.ADD_CASE_PASSWORD) {
-    return json({ ok: false, errors: ["Le formulaire n'est pas encore configuré (variables manquantes côté Cloudflare)."] }, 503);
+    return json({ ok: false, errors: ["Le formulaire n'est pas encore configuré (variables manquantes côté Cloudflare)."] }, 503, request);
   }
   let body;
-  try { body = await request.json(); } catch { return json({ ok: false, errors: ["Requête illisible."] }, 400); }
+  try { body = await request.json(); } catch { return json({ ok: false, errors: ["Requête illisible."] }, 400, request); }
 
   if (clean(body.password) !== env.ADD_CASE_PASSWORD) {
-    return json({ ok: false, errors: ["Mot de passe incorrect."] }, 401);
+    return json({ ok: false, errors: ["Mot de passe incorrect."] }, 401, request);
   }
 
   const errors = validate(body);
-  if (errors.length) return json({ ok: false, errors }, 422);
+  if (errors.length) return json({ ok: false, errors }, 422, request);
 
   const entry = toEntry(body);
 
   // Read the current manual file (small by design), append, commit.
   const res = await gh(env, `contents/${FILE}`);
-  if (!res.ok) return json({ ok: false, errors: [`Lecture du dépôt impossible (${res.status}).`] }, 502);
+  if (!res.ok) return json({ ok: false, errors: [`Lecture du dépôt impossible (${res.status}).`] }, 502, request);
   const meta = await res.json();
   let list;
   try {
@@ -154,7 +183,7 @@ async function addCase(request, env) {
   if (!Array.isArray(list)) list = [];
 
   if (list.some((e) => e.id === entry.id)) {
-    return json({ ok: false, errors: ["Cette fiche existe déjà (même entreprise et même solution)."] }, 409);
+    return json({ ok: false, errors: ["Cette fiche existe déjà (même entreprise et même solution)."] }, 409, request);
   }
   list.push(entry);
   list.sort((a, b) => a.id.localeCompare(b.id));
@@ -172,9 +201,9 @@ async function addCase(request, env) {
   });
   if (!put.ok) {
     const detail = await put.text();
-    return json({ ok: false, errors: [`Écriture refusée par GitHub (${put.status}). ${detail.slice(0, 160)}`] }, 502);
+    return json({ ok: false, errors: [`Écriture refusée par GitHub (${put.status}). ${detail.slice(0, 160)}`] }, 502, request);
   }
-  return json({ ok: true, id: entry.id, company: entry.company, solution: entry.solution_name });
+  return json({ ok: true, id: entry.id, company: entry.company, solution: entry.solution_name }, 200, request);
 }
 
 export default {
@@ -182,11 +211,12 @@ export default {
     try {
       const url = new URL(request.url);
       if (url.pathname === "/api/add-case") {
-        if (request.method !== "POST") return json({ ok: false, errors: ["Méthode non autorisée."] }, 405);
+        if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: corsHeaders(request) });
+        if (request.method !== "POST") return json({ ok: false, errors: ["Méthode non autorisée."] }, 405, request);
         return await addCase(request, env);
       }
     } catch (err) {
-      return json({ ok: false, errors: [`Erreur interne : ${err && err.message}`] }, 500);
+      return json({ ok: false, errors: [`Erreur interne : ${err && err.message}`] }, 500, request);
     }
     // Everything else is the statically exported site.
     return env.ASSETS.fetch(request);

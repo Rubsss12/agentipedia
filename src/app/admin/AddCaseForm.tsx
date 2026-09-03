@@ -51,16 +51,29 @@ export default function AddCaseForm() {
         observed: Number(f.observed), locks, basis_fr: f.basis, basis_en: f.basis,
       };
     }
+    // Posted to the pages.dev origin on purpose: on the custom domain the
+    // hubinstitute.com bot challenge answers /api/ with an HTML interstitial
+    // before the request ever reaches the worker.
+    const endpoint = "https://agentipedia.pages.dev/api/add-case";
     try {
-      const res = await fetch("/api/add-case", {
+      const res = await fetch(endpoint, {
         method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body),
       });
-      const data = await res.json();
-      if (!res.ok || !data.ok) { setErrors(data.errors || ["Erreur inconnue."]); setState("idle"); return; }
-      setAdded({ company: data.company, solution: data.solution });
+      const raw = await res.text();
+      let data: { ok?: boolean; errors?: string[]; company?: string; solution?: string };
+      try {
+        data = JSON.parse(raw);
+      } catch {
+        setErrors([`Réponse inattendue du serveur (code ${res.status}). Réessayez, et si cela persiste prévenez Rubens.`]);
+        setState("idle");
+        return;
+      }
+      if (!res.ok || !data.ok) { setErrors(data.errors || [`Erreur ${res.status}.`]); setState("idle"); return; }
+      setAdded({ company: data.company!, solution: data.solution! });
       setState("done");
-    } catch {
-      setErrors(["Impossible de joindre le serveur. Réessayez."]); setState("idle");
+    } catch (err) {
+      setErrors([`Connexion au serveur impossible (${err instanceof Error ? err.message : "réseau"}). Vérifiez votre connexion et réessayez.`]);
+      setState("idle");
     }
   }
 
