@@ -234,6 +234,14 @@ export default async function EntryPage({ params }: Props) {
 
       <section className="mt-10">
         <h2 className="text-xl font-black uppercase tracking-tight">Sources</h2>
+        {entry.sources.length === 0 && (
+          <p className="mt-4 rounded-xl border border-lavender-line bg-lilac-soft px-4 py-3 text-sm text-ink-soft">
+            <Bi
+              en="Case shared by the HUB Institute team; no public source to date."
+              fr="Cas transmis par l'équipe HUB Institute ; pas de source publique à ce jour."
+            />
+          </p>
+        )}
         <ul className="mt-4 space-y-3">
           {entry.sources.map((s, i) => (
             <li key={i} className="rounded-xl border border-lavender-line px-4 py-3">

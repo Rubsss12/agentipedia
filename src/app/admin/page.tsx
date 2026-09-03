@@ -16,13 +16,8 @@ export default function AdminPage() {
       </h1>
       <p className="mt-4 max-w-2xl text-base leading-relaxed text-ink-soft">
         Pour les cas clients et les déploiements repérés hors du moteur de curation.
-        La fiche passe <strong>la même règle</strong> que le reste de l&apos;index : entreprise
-        nommée, solution nommée, et au moins une source publique vérifiable.
-      </p>
-      <p className="mt-3 max-w-2xl rounded-lg bg-warn-bg px-4 py-3 text-sm text-warn">
-        Un cas client sans trace publique ne peut pas entrer dans l&apos;index : c&apos;est la promesse
-        du site, et une question de confidentialité. Demandez au client de publier
-        (post LinkedIn, communiqué, page site) — cette trace devient la source.
+        Entreprise et solution doivent être nommées. La source est recommandée mais
+        facultative : sans elle, la fiche est publiée comme cas transmis par l&apos;équipe.
       </p>
       <AddCaseForm />
     </main>

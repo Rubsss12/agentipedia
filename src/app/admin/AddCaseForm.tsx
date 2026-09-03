@@ -39,7 +39,9 @@ export default function AddCaseForm() {
       company: f.company, solution_name: f.solution_name, company_country: f.company_country,
       region: f.region, sector: f.sector, industry: f.industry, department: f.department,
       vendor: f.vendor, use_case: f.use_case, deployment_stage: f.deployment_stage,
-      sources: [{ url: f.src_url, title: f.src_title, publisher: f.src_publisher, source_type: f.src_type, retrieved_date: f.src_date }],
+      sources: f.src_url.trim()
+        ? [{ url: f.src_url, title: f.src_title, publisher: f.src_publisher, source_type: f.src_type, retrieved_date: f.src_date }]
+        : [],
       reported_outcomes: f.out_metric && f.out_value ? [{ metric: f.out_metric, value: f.out_value, source_type: f.src_type }] : [],
     };
     if (f.chain) {
@@ -102,12 +104,12 @@ export default function AddCaseForm() {
       </div>
 
       <div className="mt-8 border-t border-lavender-line pt-6">
-        <p className="kicker text-mauve">La source</p>
-        <p className="mt-1 text-sm text-muted">Sans source publique vérifiable, la fiche est refusée — c&apos;est la règle de l&apos;index.</p>
+        <p className="kicker text-mauve">La source <span className="normal-case tracking-normal text-muted">(facultative)</span></p>
+        <p className="mt-1 text-sm text-muted">Avec une source, la fiche est marquée « Confirmé ». Sans source, elle est publiée comme cas transmis par l&apos;équipe.</p>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
-          <div className="sm:col-span-2"><label className={label}>URL *</label><input className={input} required type="url" value={f.src_url} onChange={(e) => set("src_url", e.target.value)} placeholder="https://…" /></div>
-          <div><label className={label}>Titre de la page *</label><input className={input} required value={f.src_title} onChange={(e) => set("src_title", e.target.value)} /></div>
-          <div><label className={label}>Éditeur de la page *</label><input className={input} required value={f.src_publisher} onChange={(e) => set("src_publisher", e.target.value)} /></div>
+          <div className="sm:col-span-2"><label className={label}>URL</label><input className={input} type="url" value={f.src_url} onChange={(e) => set("src_url", e.target.value)} placeholder="https://…" /></div>
+          <div><label className={label}>Titre de la page</label><input className={input} value={f.src_title} onChange={(e) => set("src_title", e.target.value)} /></div>
+          <div><label className={label}>Éditeur de la page</label><input className={input} value={f.src_publisher} onChange={(e) => set("src_publisher", e.target.value)} /></div>
           <div><label className={label}>Type</label><select className={input} value={f.src_type} onChange={(e) => set("src_type", e.target.value)}>{STYPES.map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select></div>
           <div><label className={label}>Date de consultation</label><input className={input} value={f.src_date} onChange={(e) => set("src_date", e.target.value)} placeholder="AAAA-MM-JJ" /></div>
         </div>

@@ -47,8 +47,10 @@ function validate(d) {
   if (!REGIONS.includes(d.region)) errors.push("Région invalide.");
   if (!STAGES.includes(d.deployment_stage)) errors.push("Stade invalide.");
 
+  // La source est facultative : une fiche transmise par l'équipe peut être
+  // publiée sans trace publique. Si une source est fournie, elle doit être
+  // complète et valide.
   const sources = Array.isArray(d.sources) ? d.sources : [];
-  if (sources.length === 0) errors.push("Au moins une source est obligatoire — pas de source, pas de fiche.");
   sources.forEach((s, i) => {
     let ok = false;
     try { const u = new URL(s?.url); ok = u.protocol === "http:" || u.protocol === "https:"; } catch { ok = false; }
@@ -78,7 +80,8 @@ function toEntry(d) {
     url: clean(s.url), title: clean(s.title), publisher: clean(s.publisher),
     source_type: s.source_type, retrieved_date: s.retrieved_date,
   }));
-  const onlyMarketing = sources.every((s) => MARKETING.has(s.source_type));
+  const unsourced = sources.length === 0;
+  const onlyMarketing = !unsourced && sources.every((s) => MARKETING.has(s.source_type));
   const e = {
     id: `${slug(d.company)}--${slug(d.solution_name)}`,
     company: clean(d.company), company_country: clean(d.company_country),
@@ -88,14 +91,16 @@ function toEntry(d) {
     use_case: clean(d.use_case), deployment_stage: d.deployment_stage,
     reported_outcomes: Array.isArray(d.reported_outcomes)
       ? d.reported_outcomes.filter((o) => clean(o?.metric) && clean(o?.value))
-          .map((o) => ({ metric: clean(o.metric), value: clean(o.value), source_type: o.source_type || sources[0].source_type }))
+          .map((o) => ({ metric: clean(o.metric), value: clean(o.value), source_type: o.source_type || (sources[0] && sources[0].source_type) || "other" }))
       : [],
     first_seen_date: new Date().toISOString().slice(0, 10),
     sources,
-    confidence: onlyMarketing ? 0.5 : 0.75,
-    confidence_reason: onlyMarketing
-      ? "Ajoutée à la main par l'équipe HUB Institute ; sources marketing uniquement, confiance plafonnée."
-      : "Ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées.",
+    confidence: unsourced || onlyMarketing ? 0.5 : 0.75,
+    confidence_reason: unsourced
+      ? "Cas transmis par l'équipe HUB Institute ; pas de source publique à ce jour."
+      : onlyMarketing
+        ? "Ajoutée à la main par l'équipe HUB Institute ; sources marketing uniquement, confiance plafonnée."
+        : "Ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées.",
     provenance: "manual",
   };
   if (d.coda) {
