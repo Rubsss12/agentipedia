@@ -15,6 +15,18 @@ const root = path.join(dir, "..");
 const tpl = fs.readFileSync(path.join(dir, "template.html"), "utf8");
 const store = JSON.parse(fs.readFileSync(path.join(root, "data", "entries.json"), "utf8"));
 
+// Cases added by hand live in their own file (see lib/data.ts) — fold them in
+// so the artifact shows the same catalog as the site.
+const manualPath = path.join(root, "data", "manual-cases.json");
+if (fs.existsSync(manualPath)) {
+  const manual = JSON.parse(fs.readFileSync(manualPath, "utf8"));
+  const seen = new Set(store.entries.map((e) => e.id));
+  for (const e of manual) {
+    if (!seen.has(e.id)) { seen.add(e.id); store.entries.push({ ...e, provenance: "manual" }); }
+  }
+  store.entries.sort((a, b) => a.id.localeCompare(b.id));
+}
+
 // Neutralize "<" so the JSON can't break out of <script type="application/json">.
 const json = JSON.stringify(store).split("<").join("\\u003c");
 const out = tpl.replace("__ENTRIES_JSON__", json);

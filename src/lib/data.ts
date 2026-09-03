@@ -10,8 +10,26 @@ let cache: Store | null = null;
 
 export function getStore(): Store {
   if (cache) return cache;
-  const raw = fs.readFileSync(path.join(process.cwd(), "data", "entries.json"), "utf8");
-  cache = JSON.parse(raw) as Store;
+  const dir = path.join(process.cwd(), "data");
+  const store = JSON.parse(fs.readFileSync(path.join(dir, "entries.json"), "utf8")) as Store;
+
+  // Cases added by hand (admin form on the site, or `npm run add-case`) live in
+  // their own small file: entries.json is over GitHub's 1MB Contents API limit,
+  // so the form could never rewrite it. They are merged in at build time and
+  // carry provenance:"manual", which shows a badge on the fiche.
+  const manualPath = path.join(dir, "manual-cases.json");
+  if (fs.existsSync(manualPath)) {
+    const manual = JSON.parse(fs.readFileSync(manualPath, "utf8")) as Entry[];
+    const seen = new Set(store.entries.map((e) => e.id));
+    for (const e of manual) {
+      if (seen.has(e.id)) continue;
+      seen.add(e.id);
+      store.entries.push({ ...e, provenance: "manual" });
+    }
+    store.entries.sort((a, b) => a.id.localeCompare(b.id));
+  }
+
+  cache = store;
   return cache;
 }
 

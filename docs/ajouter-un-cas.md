@@ -21,9 +21,26 @@ trouvées par le moteur :
 > communiqué, page site, intervention en conférence) — cette trace devient
 > la source.
 
-## Trois façons de faire
+## Quatre façons de faire
 
-### 1. Saisie guidée (la plus simple)
+### 1. Le formulaire sur le site (recommandé)
+
+Rendez-vous sur **https://agentipedia.hubinstitute.com/admin**, saisissez le mot
+de passe d'équipe et remplissez le formulaire. La fiche est validée, ajoutée au
+dépôt, et **le site se reconstruit tout seul** : elle est en ligne une à deux
+minutes plus tard.
+
+C'est le seul chemin qui met à jour le site sans passer par un terminal.
+
+*Mise en place (une fois)* — dans Cloudflare → Pages → `agentipedia` →
+Settings → Variables and Secrets, ajouter deux variables **chiffrées** :
+
+| Variable | Valeur |
+|---|---|
+| `ADD_CASE_PASSWORD` | le mot de passe que l'équipe saisira |
+| `GITHUB_TOKEN` | un jeton GitHub *fine-grained* avec **Contents : Read and write** sur `Rubsss12/agentipedia` |
+
+### 2. Saisie guidée en terminal
 
 ```bash
 npm run add-case
@@ -34,7 +51,7 @@ Le script pose les questions une par une, propose les valeurs autorisées
 puis écrit dans `data/entries.json`. **Rien n'est écrit si la fiche est
 invalide** : les erreurs sont listées pour correction.
 
-### 2. À partir d'un modèle JSON
+### 3. À partir d'un modèle JSON
 
 ```bash
 npm run add-case -- --template          # crée nouvelle-fiche.json
@@ -45,7 +62,7 @@ npm run add-case -- nouvelle-fiche.json
 Le fichier peut aussi contenir un **tableau** de fiches pour en ajouter
 plusieurs d'un coup.
 
-### 3. Demander à Claude
+### 4. Demander à Claude
 
 Donnez-lui les infos et les liens : il rédige la fiche, la score sur la
 matrice CODA™ et l'ajoute.
@@ -60,6 +77,9 @@ Le déploiement Cloudflare part tout seul (workflow `deploy.yml`).
 
 ## Bon à savoir
 
+- Les fiches ajoutées à la main sont stockées dans `data/manual-cases.json`,
+  séparé de `data/entries.json` (qui dépasse la limite de 1 Mo de l'API GitHub).
+  Le site et l'artifact fusionnent les deux fichiers à la construction.
 - Les fiches ajoutées à la main portent `provenance: "manual"` et affichent le
   badge **« Ajouté par le HUB Institute »** sur leur page.
 - Le moteur de curation ne les écrasera jamais : il n'ajoute que des sources ou

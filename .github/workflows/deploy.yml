@@ -41,6 +41,9 @@ jobs:
       - name: Build static site
         run: npm run build
 
+      - name: Add the Pages worker (serves the site, plus /api/add-case)
+        run: cp worker/_worker.js out/_worker.js
+
       - name: Check Cloudflare credentials
         id: creds
         env:
