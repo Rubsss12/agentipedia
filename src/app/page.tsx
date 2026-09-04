@@ -90,12 +90,10 @@ export default function Home() {
               </p>
               <h1 className="mt-4 max-w-xl text-3xl font-extrabold leading-[1.1] tracking-tight sm:text-4xl md:text-5xl">
                 <span className="lang-en">
-                  The Index Live of <span style={{ color: "#c25ef5" }}>AI agents</span>{" "}
-                  inside the world&apos;s companies
+                  The AI &amp; <span style={{ color: "#c25ef5" }}>Agentic</span> index
                 </span>
                 <span className="lang-fr">
-                  L&apos;Index Live des <span style={{ color: "#c25ef5" }}>agents IA</span>{" "}
-                  déployés dans les entreprises du monde
+                  L&apos;index de l&apos;IA et de <span style={{ color: "#c25ef5" }}>l&apos;agentique</span>
                 </span>
               </h1>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">
