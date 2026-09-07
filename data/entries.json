@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T08:21:53.815Z",
+  "updated_at": "2026-09-07T06:14:48.764Z",
   "entries": [
     {
       "id": "1-800accountant--agentforce",
@@ -4066,6 +4066,71 @@
         "locks": [],
         "basis_en": "EE's Aimee handles up to 60,000 routine customer conversations per week and automates common journeys, with automation success approaching 50% on some flows; it answers and triages, escalating the rest.",
         "basis_fr": "Aimee d'EE traite jusqu'a 60 000 conversations clients routinieres par semaine et automatise des parcours courants, avec un taux de reussite proche de 50% sur certains flux; il repond et trie, escaladant le reste."
+      }
+    },
+    {
+      "id": "burger-king--patty",
+      "company": "Burger King",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Hospitality & Food",
+      "solution_name": "Patty",
+      "vendor": "OpenAI",
+      "use_case": "Voice AI running in staff headsets that coaches crew members on guest-friendliness phrases in real time, answers operational questions, and surfaces maintenance and low-stock alerts that update kiosk and drive-thru menu boards.",
+      "department": "Store operations",
+      "industry": "Quick-service restaurants",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [
+        {
+          "metric": "Restaurants piloting Patty",
+          "value": "500",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-09-07",
+      "sources": [
+        {
+          "url": "https://www.nrn.com/quick-service/burger-king-is-launching-an-ai-powered-employee-assistant",
+          "title": "Burger King is launching an AI-powered employee assistant",
+          "publisher": "Nation's Restaurant News",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-07"
+        },
+        {
+          "url": "https://www.today.com/food/restaurants/burger-king-ai-headsets-track-employee-friendliness-rcna260858",
+          "title": "Burger King To Use AI Chatbot to Track Employee Friendliness",
+          "publisher": "TODAY",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-07"
+        },
+        {
+          "url": "https://www.convenience.org/stay-current/news/2026/march/2/3-burger-king-tests-ai-agent-to-coach-workers_tech",
+          "title": "Burger King Tests AI Agent to Coach Workers",
+          "publisher": "NACS (Convenience.org)",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-07"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Named chain and named assistant (Patty) reported consistently across multiple independent trade and consumer outlets, not a vendor case study.",
+      "coda": {
+        "chain": "ops",
+        "links": [
+          2,
+          2,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Patty captures headset audio to detect friendliness keywords and answer crew questions, and surfaces maintenance/low-stock alerts that prompt menu-board updates; it coaches and informs, staff still act, so observed N2.",
+        "basis_fr": "Patty capte l'audio du casque pour detecter les mots-cles de convivialite et repondre aux questions du personnel, et signale les alertes de maintenance/stock qui declenchent des mises a jour des ecrans de menu ; il conseille et informe, le personnel agit toujours, donc observe N2."
       }
     },
     {
@@ -8356,6 +8421,81 @@
         ],
         "basis_en": "Demand forecasting and bid-price optimization across the network, recognized for profit impact: bid prices flow into distribution continuously under RM bounds and supervision. Observed N3.",
         "basis_fr": "Prévision de demande et optimisation des bid prices sur tout le réseau, primées pour l'impact profit : les prix alimentent la distribution en continu dans les bornes du RM. Observé N3."
+      }
+    },
+    {
+      "id": "evm-energieversorgung-mittelrhein--eva",
+      "company": "EVM (Energieversorgung Mittelrhein)",
+      "company_country": "Germany",
+      "region": "Europe",
+      "sector": "Energy & Utilities",
+      "solution_name": "Eva",
+      "vendor": "",
+      "use_case": "AI chatbot on the evm website that lets residential customers submit meter readings, adjust payment installments, and request credit refunds without contacting a human agent.",
+      "department": "Customer service",
+      "industry": "Energy utility",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Conversations with customers in 2025",
+          "value": "more than 40,000",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Meter readings submitted via Eva in 2025",
+          "value": "more than 6,400",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Credit refunds initiated via Eva in 2025",
+          "value": "more than 1,100",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-09-07",
+      "sources": [
+        {
+          "url": "https://www.evm.de/ueber-uns/presse/pressemitteilungen-2026/schneller-einfacher-effizienter-ki-einsatz-verbessert-kundenservice/",
+          "title": "Schneller, einfacher, effizienter: KI-Einsatz verbessert Kundenservice",
+          "publisher": "evm (Energieversorgung Mittelrhein)",
+          "source_type": "press_release",
+          "retrieved_date": "2026-09-07"
+        },
+        {
+          "url": "https://www.energie-und-management.de/nachrichten/alle/detail/evm-testet-ki-chatbot-eva-2.0-242938",
+          "title": "EVM testet KI-Chatbot Eva 2.0",
+          "publisher": "Energie & Management (E&M)",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-07"
+        },
+        {
+          "url": "https://www.blick-aktuell.de/Wirtschaft/Schneller-einfacher-effizienter-KI-Einsatz-verbessert-Kundenservice-655730.html",
+          "title": "Schneller, einfacher, effizienter: KI-Einsatz verbessert Kundenservice",
+          "publisher": "Blick aktuell",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-07"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Named utility and named chatbot (Eva) with specific 2025 usage metrics, corroborated by both the company's own announcement and independent local/trade press (E&M, Blick aktuell).",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          1,
+          1,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Eva handles meter-reading submissions and initiates payment adjustments and credit refunds through chat, but does not resolve technical issues or manage escalation; account actions are completed, financial refunds are only initiated, so observed N2.",
+        "basis_fr": "Eva traite la soumission des releves de compteur et declenche les ajustements de paiement et les remboursements de credit par chat, mais ne resout pas les problemes techniques ni ne gere l'escalade ; les actions sur le compte sont completes, les remboursements financiers sont seulement inities, donc observe N2."
       }
     },
     {
@@ -19967,6 +20107,71 @@
       }
     },
     {
+      "id": "ruya-bank--magoneai",
+      "company": "Ruya Bank",
+      "company_country": "United Arab Emirates",
+      "region": "Middle East",
+      "sector": "Financial Services",
+      "solution_name": "MagOneAI",
+      "vendor": "Magure",
+      "use_case": "Agentic AI platform handling business-account onboarding and transaction-processing workflows, including document analysis, verification checks and case summaries, for Ruya Bank employees.",
+      "department": "Business banking operations",
+      "industry": "Digital / Islamic banking",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Agentic AI use cases live at launch",
+          "value": "3",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-09-07",
+      "sources": [
+        {
+          "url": "https://www.khaleejtimes.com/business/uae-digital-bank-ruya-deploys-agentic-ai-targets-ai-native-future",
+          "title": "UAE digital bank ruya deploys agentic AI, targets AI-native future",
+          "publisher": "Khaleej Times",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-07"
+        },
+        {
+          "url": "https://mena.entrepreneur.com/business-news/uae-islamic-bank-ruya-partners-with-magure-to-build-an-ai-native-banking-model",
+          "title": "UAE Islamic Bank ruya Partners With Magure to Build an AI-Native Banking Model",
+          "publisher": "Entrepreneur Middle East",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-07"
+        },
+        {
+          "url": "https://www.gccbusinessnews.com/uaes-ruya-partners-with-magure/",
+          "title": "UAE's ruya partners with Magure to build AI-native bank",
+          "publisher": "GCC Business News",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-07"
+        }
+      ],
+      "confidence": 0.65,
+      "confidence_reason": "Named bank and named vendor platform (Magure's MagOneAI) with three live use cases described consistently across independent regional business press, not a vendor case study.",
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The platform performs document analysis, verification checks and case summaries for business-account onboarding so 'employees focus on decision-making'; it prepares the file, staff decide, so observed N2.",
+        "basis_fr": "La plateforme effectue l'analyse documentaire, les controles de verification et les resumes de dossier pour l'onboarding des comptes professionnels afin que 'les employes se concentrent sur la decision' ; elle prepare le dossier, le personnel decide, donc observe N2."
+      }
+    },
+    {
       "company": "Safaricom",
       "company_country": "Kenya",
       "region": "Africa",
@@ -21837,6 +22042,65 @@
       }
     },
     {
+      "id": "sri-lanka-insurance-corporation-general-limited--beechat",
+      "company": "Sri Lanka Insurance Corporation General Limited",
+      "company_country": "Sri Lanka",
+      "region": "South Asia",
+      "sector": "Insurance",
+      "solution_name": "Beechat",
+      "vendor": "",
+      "use_case": "Generative AI insurance assistant that gives customers instant, trilingual (Sinhala, Tamil, English) access to policy information and real-time claim status updates, 24/7.",
+      "department": "Customer service",
+      "industry": "Insurance",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-09-07",
+      "sources": [
+        {
+          "url": "https://island.lk/sri-lankas-first-generative-ai%E2%80%91powered-trilingual-insurance-assistant/",
+          "title": "Sri Lanka's first generative AI-powered, trilingual insurance assistant",
+          "publisher": "The Island",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-07"
+        },
+        {
+          "url": "https://www.lankabusinessnews.com/sri-lanka-insurance-corporation-general-limited-launches-beechat-sri-lankas-first-generative-ai-powered-trilingual-insurance-assistant/",
+          "title": "Sri Lanka Insurance Corporation General Limited launches 'Beechat'",
+          "publisher": "Lanka Business News",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-07"
+        },
+        {
+          "url": "https://www.dailymirror.lk/print/business-news/Sri-Lanka-Insurance-Corporation-General-introduces-Beechat-AI-assistant/273-345446",
+          "title": "Sri Lanka Insurance Corporation General introduces Beechat AI assistant",
+          "publisher": "Daily Mirror",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-07"
+        }
+      ],
+      "confidence": 0.55,
+      "confidence_reason": "Named insurer and named assistant (Beechat) reported with identical wording across several Sri Lankan outlets, indicating a single company announcement amplified rather than independently investigated; no usage metrics found yet.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Beechat answers policy-information and claim-status questions instantly in three languages but does not act on accounts or transact; purely informational, so observed N2.",
+        "basis_fr": "Beechat repond instantanement aux questions sur les polices et le statut des sinistres en trois langues, mais n'agit pas sur les comptes et ne transige pas ; purement informationnel, donc observe N2."
+      }
+    },
+    {
       "company": "Standard Chartered",
       "company_country": "United Kingdom",
       "region": "Europe",
@@ -23421,6 +23685,71 @@
       }
     },
     {
+      "id": "uae-cabinet--cabinet-ai-advisor",
+      "company": "UAE Cabinet",
+      "company_country": "United Arab Emirates",
+      "region": "Middle East",
+      "sector": "Public Sector & Education",
+      "solution_name": "Cabinet AI Advisor",
+      "vendor": "",
+      "use_case": "System of 32 specialized AI agents that analyzes policies, legislation and strategies, assesses their impact, and gives UAE ministers round-the-clock recommendations and follow-up on decision implementation.",
+      "department": "Government / Cabinet Office",
+      "industry": "Public administration",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Specialized AI agents in the system",
+          "value": "32",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-09-07",
+      "sources": [
+        {
+          "url": "https://www.khaleejtimes.com/uae/uae-launches-cabinet-ai-advisor-support-government-decision-making",
+          "title": "UAE launches 32 AI Cabinet advisers to support government decision-making",
+          "publisher": "Khaleej Times",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-07"
+        },
+        {
+          "url": "https://www.arabianbusiness.com/business/technology/uae-launches-32-ai-advisers-to-work-with-ministers-24-hours-a-day",
+          "title": "UAE launches 32 AI advisers to work with ministers 24 hours a day",
+          "publisher": "Arabian Business",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-07"
+        },
+        {
+          "url": "https://gulfnews.com/uae/government/uae-launches-ai-cabinet-adviser-as-sheikh-mohammed-bin-rashid-sets-priorities-for-new-government-season-1.500661016",
+          "title": "UAE Launches AI Cabinet Adviser as Sheikh Mohammed Sets Government Priorities",
+          "publisher": "Gulf News",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-07"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Named government body and named system (Cabinet AI Advisor) reported consistently across multiple independent Gulf news outlets covering the same official September 2, 2026 announcement.",
+      "coda": {
+        "chain": "pilotage",
+        "links": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The 32 agents analyze policy impact and generate recommendations for ministers 24/7, but cabinet members retain the arbitration and decision step; purely advisory, so observed N2.",
+        "basis_fr": "Les 32 agents analysent l'impact des politiques et generent des recommandations pour les ministres 24h/24, mais les membres du cabinet conservent l'etape d'arbitrage et de decision ; purement consultatif, donc observe N2."
+      }
+    },
+    {
       "id": "uae-ministry-of-energy-and-infrastructure-moei--ask-moei",
       "company": "UAE Ministry of Energy and Infrastructure (MOEI)",
       "company_country": "United Arab Emirates",
@@ -24434,6 +24763,64 @@
       }
     },
     {
+      "id": "vision-bank--noura",
+      "company": "Vision Bank",
+      "company_country": "Saudi Arabia",
+      "region": "Middle East",
+      "sector": "Financial Services",
+      "solution_name": "Noura",
+      "vendor": "",
+      "use_case": "Conversational AI banking assistant embedded in the Vision Bank app that lets customers check balances, track spending, open accounts, add beneficiaries and transfer money through natural-language chat.",
+      "department": "Retail banking",
+      "industry": "Digital / Islamic banking",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Vision Bank app downloads on Google Play since launch",
+          "value": "more than 50,000",
+          "source_type": "press_release"
+        }
+      ],
+      "first_seen_date": "2026-09-07",
+      "sources": [
+        {
+          "url": "https://economymiddleeast.com/news/saudi-arabia-next-phase-banking-growth-will-be-digital-ai-led-conversational/",
+          "title": "Saudi Arabia's next phase of banking growth will be digital, AI-led and conversational",
+          "publisher": "Economy Middle East",
+          "source_type": "press_release",
+          "retrieved_date": "2026-09-07"
+        },
+        {
+          "url": "https://www.forbesmiddleeast.com/leadership/leaders-insights/vision-bank-saudi-arabias-next-phase-of-banking-growth-will-be-digital-ai-led-and-conversational",
+          "title": "Vision Bank: Saudi Arabia's Next Phase Of Banking Growth Will Be Digital, AI-led, And Conversational",
+          "publisher": "Forbes Middle East",
+          "source_type": "press_release",
+          "retrieved_date": "2026-09-07"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Named bank and named assistant (Noura), but every retrieved source is the same syndicated leadership/PR piece (Economy Middle East, Forbes Middle East leadership section, also mirrored on MEA Finance and a sponsored Lovin Dubai post); capped at 0.5 pending independent confirmation.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          1,
+          1,
+          2,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The only evidence is the bank's own syndicated leadership piece describing Noura opening accounts, adding beneficiaries and transferring money; vendor/press-only sourcing caps observed at N2 despite the transactional description.",
+        "basis_fr": "La seule preuve est le texte de direction syndique de la banque elle-meme decrivant Noura ouvrant des comptes, ajoutant des beneficiaires et transferant de l'argent ; une source uniquement editeur/presse plafonne l'observe a N2 malgre la description transactionnelle."
+      }
+    },
+    {
       "id": "visma--cognition-devin",
       "company": "Visma",
       "company_country": "Norway",
@@ -25416,6 +25803,69 @@
         "locks": [],
         "basis_en": "Agent Hub 'Super Agents' trained on proprietary data carry out marketing tasks under a stated governance framework; they prepare marketing outputs, so N2, no quantified outcomes and no detailed governance evidence.",
         "basis_fr": "Les 'Super Agents' de l'Agent Hub entraines sur des donnees proprietaires realisent des taches marketing sous un cadre de gouvernance annonce; ils preparent des livrables, donc N2, sans resultats chiffres ni preuve detaillee de gouvernance."
+      }
+    },
+    {
+      "id": "wtw-willis-towers-watson--willis-navigator",
+      "company": "WTW (Willis Towers Watson)",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Insurance",
+      "solution_name": "Willis Navigator",
+      "vendor": "WTW (own Neuron platform, integrated from Newfront's Navigator)",
+      "use_case": "AI agents that work across WTW's insurance-broking systems to generate schedules of insurance, allocate real-estate premiums, and draft contract redlines that previously took hours or weeks.",
+      "department": "Broking operations",
+      "industry": "Insurance brokerage / Professional services",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Time to generate a schedule of insurance",
+          "value": "about 5 minutes, down from about 4 hours",
+          "source_type": "earnings_call"
+        },
+        {
+          "metric": "Time to complete real-estate premium allocations",
+          "value": "minutes, down from 2 to 4 weeks",
+          "source_type": "earnings_call"
+        }
+      ],
+      "first_seen_date": "2026-09-07",
+      "sources": [
+        {
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/07/30/wtw-wtw-q2-2026-earnings-call-transcript/",
+          "title": "WTW (WTW) Q2 2026 Earnings Call Transcript",
+          "publisher": "The Motley Fool",
+          "source_type": "earnings_call",
+          "retrieved_date": "2026-09-07"
+        },
+        {
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-wtw-tops-q2-2026-estimates-as-shares-rise-42-93CH-4825085",
+          "title": "Earnings call transcript: WTW tops Q2 2026 estimates as shares rise 4.2%",
+          "publisher": "Investing.com",
+          "source_type": "earnings_call",
+          "retrieved_date": "2026-09-07"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Named broker and named tool (Willis Navigator) with quantified before/after processing-time metrics disclosed by management on a public Q2 2026 earnings call.",
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Agents generate schedules of insurance, premium allocations and contract redlines management describes as 'live and in daily use', but the earnings call gives no evidence these outputs skip broker review before delivery, so observed N2.",
+        "basis_fr": "Les agents generent des attestations d'assurance, des allocations de primes et des redlines de contrats que la direction decrit comme 'utilises quotidiennement en production', mais l'earnings call ne prouve pas que ces sorties evitent la revue du courtier avant livraison, donc observe N2."
       }
     },
     {
