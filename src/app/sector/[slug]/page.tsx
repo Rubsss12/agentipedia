@@ -5,7 +5,7 @@ import { getSectors, getSectorBySlug } from "@/lib/sectors";
 import Explorer from "@/components/Explorer";
 import Bi from "@/components/Bi";
 import JsonLd from "@/components/JsonLd";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, OG_IMAGE } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description,
     alternates: { canonical: path },
-    openGraph: { title: `${title} · Agentipedia`, description, url: path, type: "website", siteName: "Agentipedia by HUB Institute" },
+    openGraph: { title: `${title} · Agentipedia`, description, url: path, type: "website", siteName: "Agentipedia by HUB Institute", images: [OG_IMAGE] },
   };
 }
 

@@ -27,6 +27,19 @@ export const metadata: Metadata = {
     title: "Agentipedia by HUB Institute",
     description: "From AI promise to business proof: real companies, named AI agents, verified sources, worldwide.",
     type: "website",
+    // og:url and og:site_name are what make a shared link render as a branded
+    // card rather than a bare URL; the image itself comes from the
+    // opengraph-image.png file convention next to this layout.
+    url: SITE_URL,
+    siteName: "Agentipedia",
+    locale: "en_US",
+  },
+  twitter: {
+    // "summary" crops to a small square thumbnail; the large card is the one
+    // that actually shows the 1200x630 image on X, LinkedIn and Slack.
+    card: "summary_large_image",
+    title: "Agentipedia by HUB Institute",
+    description: "From AI promise to business proof: real companies, named AI agents, verified sources, worldwide.",
   },
 };
 

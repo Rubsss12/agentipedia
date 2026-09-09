@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getStats } from "@/lib/data";
 import { formatTimestamp } from "@/lib/format";
 import Bi from "@/components/Bi";
+import { OG_IMAGE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Methodology",
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     url: "/methodology",
     type: "website",
     siteName: "Agentipedia by HUB Institute",
+    images: [OG_IMAGE],
   },
 };
 

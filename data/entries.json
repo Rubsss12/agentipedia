@@ -403,15 +403,15 @@
       "first_seen_date": "2026-08-27",
       "sources": [
         {
-          "url": "https://www.accessbankplc.com/ways-to-bank/tamada",
-          "title": "TAMADA: Your Banking Assistant",
-          "publisher": "Access Bank Plc",
-          "source_type": "company_official",
-          "retrieved_date": "2026-08-27"
+          "url": "https://digitalbankerafrica.com/access-bank-helping-customers-access-more/",
+          "title": "Access Bank: Helping customers access more",
+          "publisher": "Digital Banker Africa",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-09"
         }
       ],
-      "confidence": 0.75,
-      "confidence_reason": "Named assistant confirmed on Access Bank's official site; limited independent outcome data.",
+      "confidence": 0.6,
+      "confidence_reason": "Named assistant attested by independent trade press, which lists Tamada among the bank's self-service channels; the bank's own product page has since been taken down, and no outcome metrics are public.",
       "coda": {
         "chain": "care",
         "links": [
@@ -4379,13 +4379,6 @@
           "retrieved_date": "2026-07-11"
         },
         {
-          "url": "https://www.capitalone.com/tech/software-engineering/how-capital-ones-intelligent-assistant-is-making-online-shopping-easier-and-safer/",
-          "title": "Intelligent Assistant Eno & Safer e-commerce",
-          "publisher": "Capital One Tech",
-          "source_type": "company_official",
-          "retrieved_date": "2026-07-11"
-        },
-        {
           "url": "https://www.finextra.com/newsarticle/31796/capital-one-virtual-assistant-can-now-issue-virtual-card-numbers",
           "title": "Capital One virtual assistant can now issue virtual card numbers",
           "publisher": "Finextra",
@@ -5562,13 +5555,6 @@
       "first_seen_date": "2026-07-13",
       "sources": [
         {
-          "url": "https://energiminas.com/chuquicamata-inteligencia-artificial-en-codelco-ha-aumentado-produccion-en-8-000-toneladas-mas-de-cobre-fino/",
-          "title": "Chuquicamata: inteligencia artificial en Codelco ha aumentado producción en 8.000 toneladas más de cobre fino",
-          "publisher": "Energiminas",
-          "source_type": "news_media",
-          "retrieved_date": "2026-07-13"
-        },
-        {
           "url": "https://www.df.cl/codelco-recurre-a-inteligencia-artificial-para-extraer-mas-cobre-de",
           "title": "Codelco apuesta por Inteligencia Artificial para extraer más cobre de minas envejecidas",
           "publisher": "Diario Financiero",
@@ -5783,15 +5769,15 @@
       "first_seen_date": "2026-08-27",
       "sources": [
         {
-          "url": "https://blogs.oracle.com/digitalassistant/talk-with-zaki-the-arabic-speaking-chatbot-at-cib",
-          "title": "Talk with Zaki, the arabic speaking chatbot at CIB",
-          "publisher": "Oracle",
-          "source_type": "vendor_case_study",
-          "retrieved_date": "2026-08-27"
+          "url": "https://www.dailynewsegypt.com/2022/04/10/cib-egypt-details-its-digital-transformation-results-amid-covid-19/",
+          "title": "CIB Egypt details its digital transformation results amid COVID-19",
+          "publisher": "Daily News Egypt",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-09"
         }
       ],
-      "confidence": 0.5,
-      "confidence_reason": "Named assistant, bank and vendor confirmed; original deployment 2019 (pre-window) via Oracle vendor blog. Capped at 0.5: only vendor marketing sources.",
+      "confidence": 0.65,
+      "confidence_reason": "Named assistant confirmed by independent press, including the rollout to the bank's Business Banking segment; original deployment 2019 (pre-window) and no outcome metrics disclosed.",
       "coda": {
         "chain": "care",
         "links": [
@@ -13257,15 +13243,15 @@
           "retrieved_date": "2026-08-27"
         },
         {
-          "url": "https://www.loreal.com/en/articles/science-and-technology/loreal-paris-beauty-genius/",
-          "title": "L'Oréal Paris Beauty Genius",
-          "publisher": "L'Oréal",
-          "source_type": "company_official",
-          "retrieved_date": "2026-08-27"
+          "url": "https://theindustry.beauty/loreal-paris-launches-game-changing-ai-assistant-beauty-genius/",
+          "title": "L'Oréal Paris launches game-changing AI assistant 'Beauty Genius'",
+          "publisher": "TheIndustry.beauty",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-09"
         }
       ],
       "confidence": 0.7,
-      "confidence_reason": "Named agent and vendor confirmed by both a Microsoft case study and L'Oréal's own site, though metrics come from vendor marketing.",
+      "confidence_reason": "Vendor case study plus independent trade press covering the consumer rollout; L'Oréal's own product page has since been taken down, and no outcome metrics are public.",
       "coda": {
         "chain": "commerce",
         "links": [
@@ -15076,15 +15062,15 @@
       "first_seen_date": "2026-07-11",
       "sources": [
         {
-          "url": "https://group.mercedes-benz.com/innovation/digitalisation/industry-4-0/chatgpt-in-vehicle-production.html",
-          "title": "Mercedes-Benz tests ChatGPT in intelligent vehicle production",
-          "publisher": "Mercedes-Benz Group",
-          "source_type": "company_official",
-          "retrieved_date": "2026-07-11"
+          "url": "https://www.automotivemanufacturingsolutions.com/oems/mercedes-benz-to-implement-chatgpt-across-its-mo360-digital-production-system/538149",
+          "title": "Mercedes-Benz to implement ChatGPT across its MO360 digital production system",
+          "publisher": "Automotive Manufacturing Solutions",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-09"
         }
       ],
-      "confidence": 0.6,
-      "confidence_reason": "Documented on the company's own site as a production pilot; no independent coverage retrieved in this run and no reported metrics.",
+      "confidence": 0.7,
+      "confidence_reason": "Independent trade press documents the ChatGPT rollout across MO360 via Azure OpenAI; the company's own page has since been removed, and no outcome metrics were published.",
       "id": "mercedes-benz--chatgpt-in-mo360",
       "coda": {
         "chain": "ops",
@@ -15523,13 +15509,6 @@
       ],
       "first_seen_date": "2026-08-27",
       "sources": [
-        {
-          "url": "https://seekingalpha.com/pr/20152164-morgan-stanley-wins-two-2025-celent-model-wealth-manager-awards-for-technology-innovation-in",
-          "title": "Morgan Stanley Wins Two 2025 Celent Model Wealth Manager Awards",
-          "publisher": "Seeking Alpha / Morgan Stanley PR",
-          "source_type": "press_release",
-          "retrieved_date": "2026-08-27"
-        },
         {
           "url": "https://www.ai-street.co/p/goldman-joins-jpm-morgan-stanley-releasing-ai-tool",
           "title": "Goldman Joins JPM, Morgan Stanley Releasing AI Tool",
@@ -18811,13 +18790,6 @@
       "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
-        {
-          "url": "https://www.qib.com.qa/en/news/paving-the-way-to-conversational-banking-qib-the-first-bank-in-qatar-to-launch-ai-virtual-assistant-zaki/",
-          "title": "QIB, the first bank in Qatar, to launch AI Virtual Assistant Zaki",
-          "publisher": "Qatar Islamic Bank",
-          "source_type": "company_official",
-          "retrieved_date": "2026-08-27"
-        },
         {
           "url": "https://ibsintelligence.com/ibsi-news/active-ai-powers-zaki-qatar-islamic-bank-ai-virtual-assistant/",
           "title": "Active.Ai powers 'Zaki', Qatar Islamic Bank AI virtual assistant",

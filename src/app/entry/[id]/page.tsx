@@ -11,7 +11,7 @@ import { CodaBadge } from "@/components/badges";
 import CodaCard from "@/components/CodaCard";
 import Bi from "@/components/Bi";
 import JsonLd from "@/components/JsonLd";
-import { SITE_URL, PUBLISHER } from "@/lib/site";
+import { SITE_URL, PUBLISHER, OG_IMAGE } from "@/lib/site";
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -36,6 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: path,
       type: "article",
       siteName: "Agentipedia by HUB Institute",
+      images: [OG_IMAGE],
     },
   };
 }
