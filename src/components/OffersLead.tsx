@@ -136,6 +136,14 @@ export default function OffersLead() {
           {/* contact: pitch + embedded HUB Institute form */}
           <div className="mt-14 grid gap-8 rounded-3xl border border-white/10 bg-mauve-night p-6 text-white shadow-[0_30px_80px_-40px_rgba(29,17,96,0.9)] md:grid-cols-[1fr_1.1fr] md:p-10">
             <div className="flex flex-col justify-center">
+              {/* The HUB mark signs the lead block: the form goes to HUB Institute,
+                  not to Agentipedia, so the brand belongs here rather than the site logo. */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/hub-institute-logo-white.svg"
+                alt="HUB Institute"
+                className="mb-7 h-16 w-auto self-start md:h-[5.5rem]"
+              />
               <p className="kicker text-mauve-bright">
                 <Bi en="Let's talk about your projects" fr="Parlons de vos projets" />
               </p>
