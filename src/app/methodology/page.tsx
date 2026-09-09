@@ -414,30 +414,6 @@ export default function MethodologyPage() {
           />
         </p>
       </section>
-
-      <section className="mt-10 rounded-2xl border border-lavender-line p-6">
-        <h2 className="text-xl font-black uppercase tracking-tight">
-          <Bi en="Spotted an error?" fr="Une erreur ?" />
-        </h2>
-        <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-          <Bi
-            en={
-              <>
-                Every entry links its sources, so you can check any claim in one click. If a
-                deployment was discontinued or a detail is wrong, correct the entry in{" "}
-                <code className="rounded bg-lilac px-1 py-0.5 text-xs">data/entries.json</code> via a pull request. The store is designed to be audited by humans.
-              </>
-            }
-            fr={
-              <>
-                Chaque fiche cite ses sources : toute affirmation se vérifie en un clic. Si un
-                déploiement a été arrêté ou qu&apos;un détail est faux, corrigez la fiche dans{" "}
-                <code className="rounded bg-lilac px-1 py-0.5 text-xs">data/entries.json</code> via une pull request. Le magasin est conçu pour être audité par des humains.
-              </>
-            }
-          />
-        </p>
-      </section>
     </main>
   );
 }
