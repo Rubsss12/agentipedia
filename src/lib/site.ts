@@ -10,7 +10,7 @@ export const OG_IMAGE = {
   url: "/opengraph-image.png",
   width: 1200,
   height: 630,
-  alt: "Agentipedia by HUB Institute — the AI & Agentic index",
+  alt: "Agentipedia by HUB Institute, the AI & Agentic index",
 } as const;
 
 export const PUBLISHER = {

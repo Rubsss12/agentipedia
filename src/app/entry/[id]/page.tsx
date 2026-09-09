@@ -12,6 +12,7 @@ import CodaCard from "@/components/CodaCard";
 import Bi from "@/components/Bi";
 import JsonLd from "@/components/JsonLd";
 import { SITE_URL, PUBLISHER, OG_IMAGE } from "@/lib/site";
+import { takeaways, takeawaySentence } from "@/lib/takeaway";
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -64,6 +65,7 @@ export default async function EntryPage({ params }: Props) {
         "@type": "Article",
         headline: title,
         description: entry.use_case,
+        abstract: takeawaySentence(entry),
         url,
         datePublished: entry.first_seen_date,
         inLanguage: "en",
@@ -141,6 +143,24 @@ export default async function EntryPage({ params }: Props) {
           </p>
         )}
       </header>
+
+      {/* Key facts first: the block a reader, or a model, can lift whole,
+          assembled from the fiche's own fields so it reads in both languages. */}
+      <section className="mt-8 rounded-2xl border border-lavender-line bg-lilac-soft px-5 py-5">
+        <p className="kicker text-mauve">
+          <Bi en="Key facts" fr="Ce qu'il faut retenir" />
+        </p>
+        <ul className="mt-3 grid gap-2.5">
+          {takeaways(entry).map((t, i) => (
+            <li key={i} className="flex gap-2.5 text-sm leading-relaxed text-ink-soft">
+              <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-mauve" />
+              <span>
+                <Bi en={t.en} fr={t.fr} />
+              </span>
+            </li>
+          ))}
+        </ul>
+      </section>
 
       <section className="mt-8">
         <p className="kicker text-muted">
@@ -283,7 +303,7 @@ export default async function EntryPage({ params }: Props) {
         </p>
       </section>
 
-      {/* Dig deeper into this use case — lead CTA */}
+      {/* Dig deeper into this use case: lead CTA */}
       <section className="mt-12 rounded-2xl bg-mauve-night p-6 text-white md:p-8">
         <p className="kicker text-mauve-bright">
           <Bi en="Dig deeper into this use case" fr="Creuser ce cas d'usage" />

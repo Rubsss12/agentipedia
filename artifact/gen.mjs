@@ -15,7 +15,7 @@ const root = path.join(dir, "..");
 const tpl = fs.readFileSync(path.join(dir, "template.html"), "utf8");
 const store = JSON.parse(fs.readFileSync(path.join(root, "data", "entries.json"), "utf8"));
 
-// Cases added by hand live in their own file (see lib/data.ts) — fold them in
+// Cases added by hand live in their own file (see lib/data.ts), so fold them in
 // so the artifact shows the same catalog as the site.
 const manualPath = path.join(root, "data", "manual-cases.json");
 if (fs.existsSync(manualPath)) {

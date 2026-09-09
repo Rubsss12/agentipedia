@@ -45,7 +45,7 @@ export default function Home() {
       },
       {
         "@type": "Dataset",
-        name: "Agentipedia — AI agent deployments at work",
+        name: "Agentipedia: AI agent deployments at work",
         description:
           "A curated, source-verified catalog of real AI-agent deployments inside named companies worldwide, each scored on the CODA™ maturity matrix. From AI promise to business proof.",
         url: SITE_URL,

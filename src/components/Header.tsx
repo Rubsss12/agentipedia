@@ -31,6 +31,9 @@ export default function Header() {
           <Link href="/methodology" className="kicker hidden shrink-0 text-white/75 transition-colors hover:text-mauve-glow sm:inline">
             <Bi en="Methodology" fr="Méthodologie" />
           </Link>
+          <Link href="/figures" className="kicker hidden shrink-0 text-white/75 transition-colors hover:text-mauve-glow lg:inline">
+            <Bi en="Figures" fr="Chiffres" />
+          </Link>
           <LangToggle on="dark" />
         </div>
       </div>

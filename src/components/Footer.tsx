@@ -34,6 +34,14 @@ const EXPERTISE: L[] = [
   { en: "Events", fr: "Événements", href: hub("/tous-les-events") },
   { en: "Become a partner", fr: "Devenir partenaire", href: hub("/devenir-partenaire") },
 ];
+// Agentipedia's own pages. Internal links, so `Col` renders them with <Link>.
+const AGENTIPEDIA: L[] = [
+  { en: "The index", fr: "L'index", href: "/#index" },
+  { en: "Browse by sector", fr: "Parcourir par secteur", href: "/#sectors" },
+  { en: "The index in figures", fr: "L'index en chiffres", href: "/figures/" },
+  { en: "Methodology", fr: "Méthodologie", href: "/methodology/" },
+  { en: "FAQ", fr: "FAQ", href: "/faq/" },
+];
 const CONTACT: L[] = [
   { en: "contact@hubinstitute.com", fr: "contact@hubinstitute.com", href: "mailto:contact@hubinstitute.com" },
   { en: "Media kit", fr: "Media kit", href: hub("/a-propos/media-kit") },
@@ -97,10 +105,14 @@ export default function Footer() {
             <img src="/hub-institute-logo-white.svg" alt="HUB Institute" className="h-16 w-auto" />
             <p className="mt-5 max-w-[13rem] text-xs leading-relaxed text-white/55">
               <Bi
-                en="Agentipedia — the AI & Agentic observatory by HUB Institute."
-                fr="Agentipedia — l'observatoire IA et Agentique du HUB Institute."
+                en="Agentipedia, the AI & Agentic observatory by HUB Institute."
+                fr="Agentipedia, l'observatoire IA et Agentique du HUB Institute."
               />
             </p>
+            <div className="mt-10">
+              <Heading en="Agentipedia" fr="Agentipedia" />
+              <Col items={AGENTIPEDIA} />
+            </div>
           </div>
 
           {/* Insights + Communities */}
@@ -155,7 +167,7 @@ export default function Footer() {
               fr="© Agentipedia · Insights & Experiences · par HUB Institute, Paris."
             />{" "}
             · {stats.entries} <Bi en="deployments" fr="déploiements" /> ·{" "}
-            <Bi en="updated" fr="màj" /> {stats.updatedAt ? formatTimestamp(stats.updatedAt) : "—"}
+            <Bi en="updated" fr="màj" /> {stats.updatedAt ? formatTimestamp(stats.updatedAt) : "n/a"}
           </p>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-1 text-xs text-white/45">
             <a href={`${HUB}/mentions-legales`} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-white">

@@ -3,8 +3,8 @@
 import { useEffect } from "react";
 
 // The home page is long and reveals sections lazily (opacity 0 until scrolled
-// into view). When arriving from another route with a hash — e.g. "/#offres"
-// clicked from /methodology — the framework's own scroll (to top, or to an
+// into view). When arriving from another route with a hash, e.g. "/#offres"
+// clicked from /methodology, the framework's own scroll (to top, or to an
 // anchor that isn't laid out yet) can leave the target off-screen and hidden.
 // We resolve the hash ourselves and re-apply the scroll a few times over ~1.5s
 // so it wins after the framework's scroll and after the page reflows, while

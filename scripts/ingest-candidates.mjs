@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Ingest hand-researched candidate entries into data/entries.json, reusing the
-// engine's strict validation and duplicate check — same quality bar as the
+// engine's strict validation and duplicate check: same quality bar as the
 // curation engine, minus the LLM discovery stage. Candidates come from JSON
 // files (each an array of candidate objects) in a directory.
 //
@@ -14,7 +14,7 @@ import {
 
 // Quality gate: a candidate whose ONLY evidence is a bare vendor "customers"/
 // "case-studies" INDEX page (no specific customer slug) is a logo-on-a-wall,
-// not a documented deployment — reject to keep the bar high.
+// not a documented deployment, so reject it to keep the bar high.
 const BARE_LIST = /\/(customers|case-studies|success-stories|customer-stories|testimonials|examples(-[a-z-]*)?)\/?(\?.*)?$/i;
 function isThinListOnly(e) {
   return Array.isArray(e.sources) && e.sources.length === 1 &&

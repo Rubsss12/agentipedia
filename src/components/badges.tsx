@@ -14,8 +14,8 @@ import Bi from "@/components/Bi";
 // <= 0.5 usually vendor-marketing-capped. Vendor-only entries always show the
 // caution treatment no matter the number.
 export function ConfidenceBadge({ entry }: { entry: Entry }) {
-  // A case the team entered with no public source is labelled for what it is —
-  // the client told us — rather than borrowing the confidence scale, which
+  // A case the team entered with no public source is labelled for what it is,
+  // the client told us, rather than borrowing the confidence scale, which
   // measures public evidence.
   if (entry.sources.length === 0) {
     return (
@@ -128,7 +128,7 @@ export function SourceTypeChip({ type }: { type: SourceType }) {
 /**
  * Marks a fiche the HUB Institute team added by hand (client cases, cases
  * spotted off-engine) rather than one the curation engine discovered. The rule
- * is identical either way — named company, named solution, sourced — this only
+ * is identical either way (named company, named solution, sourced); this only
  * makes the provenance explicit.
  */
 export function ManualBadge() {

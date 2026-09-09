@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Extract the final ```json fenced array from each agent transcript (JSONL) and
-// write it to <dest>/<basename>.json — WITHOUT dumping the transcript to stdout.
+// write it to <dest>/<basename>.json, WITHOUT dumping the transcript to stdout.
 //   node scripts/extract-agent-json.mjs <dest-dir> <file1.output> [file2 ...]
 import fs from "node:fs";
 import path from "node:path";

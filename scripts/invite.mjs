@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Génère un magic link Supabase SANS envoyer d'email — pour connecter
+// Génère un magic link Supabase SANS envoyer d'email, pour connecter
 // manuellement quelques VIP (Vincent & co) tant que le domaine d'envoi Resend
 // n'est pas vérifié. Tu envoies le lien obtenu à la personne par ton canal
 // habituel (mail perso, Slack). Elle clique → connectée sur Agentipedia.
@@ -68,7 +68,7 @@ async function linkFor(email) {
 console.log(`invite: redirection après login → ${REDIRECT_TO}\n`);
 for (const email of emails) {
   if (!email.toLowerCase().endsWith("@" + ALLOWED_DOMAIN)) {
-    console.log(`⚠️  ${email} — hors @${ALLOWED_DOMAIN}, ignoré (règle Agentipedia).`);
+    console.log(`⚠️  ${email} : hors @${ALLOWED_DOMAIN}, ignoré (règle Agentipedia).`);
     continue;
   }
   try {
@@ -76,7 +76,7 @@ for (const email of emails) {
     console.log(`✅ ${email}`);
     console.log(`   ${link}\n`);
   } catch (e) {
-    console.log(`❌ ${email} — ${e.message}\n`);
+    console.log(`❌ ${email} : ${e.message}\n`);
   }
 }
 console.log("Envoie chaque lien à la personne concernée. Valable ~1 h ; regénère au besoin.");

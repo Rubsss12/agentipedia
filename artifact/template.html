@@ -704,14 +704,14 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
       allDepartments:"All departments", allVendors:"All vendors", allStages:"All stages",
       stProd:"In production", stPilot:"Pilot", stAnnounced:"Announced", stUnknown:"Unknown",
       anyConf:"Any confidence", confHigh:"High (≥ 70%)", confMed:"Medium+ (≥ 50%)", confInd:"Independently sourced",
-      sortAz:"Company A–Z", sortNew:"Newest first", sortConf:"Confidence", sortCoda:"CODA™ maturity (N4 → N1)",
+      sortAz:"Company A to Z", sortNew:"Newest first", sortConf:"Confidence", sortCoda:"CODA™ maturity (N4 → N1)",
       placeholder:"Search company, solution, vendor or use case…  (press / to focus)" },
     fr: { allTypes:"Toutes les fiches", tNamed:"Agents nommés", tUnnamed:"Agents sans nom",
       allSectors:"Tous les secteurs", allRegions:"Toutes les régions", allCountries:"Tous les pays", allIndustries:"Toutes les industries",
       allDepartments:"Tous les départements", allVendors:"Tous les éditeurs", allStages:"Tous les statuts",
       stProd:"En production", stPilot:"Pilote", stAnnounced:"Annoncé", stUnknown:"Inconnu",
       anyConf:"Toute confiance", confHigh:"Élevée (≥ 70 %)", confMed:"Moyenne+ (≥ 50 %)", confInd:"Source indépendante",
-      sortAz:"Entreprise A–Z", sortNew:"Plus récents d'abord", sortConf:"Confiance", sortCoda:"Maturité CODA™ (N4 → N1)",
+      sortAz:"Entreprise A à Z", sortNew:"Plus récents d'abord", sortConf:"Confiance", sortCoda:"Maturité CODA™ (N4 → N1)",
       placeholder:"Rechercher une entreprise, une solution, un éditeur…  (touche / pour cibler)" }
   };
   function t(k){ return L[lang][k]!==undefined ? L[lang][k] : L.en[k]; }
@@ -1588,7 +1588,7 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
 
     <div class="ac-sec">
       <h4>La source</h4>
-      <p>Sans source publique vérifiable, la fiche est refusée — c'est la règle de l'index.</p>
+      <p>Sans source publique vérifiable, la fiche est refusée : c'est la règle de l'index.</p>
       <div class="ac-grid">
         <label class="ac-f full"><span>URL *</span><input id="ac-src-url" placeholder="https://…"></label>
         <label class="ac-f"><span>Titre de la page *</span><input id="ac-src-title"></label>
@@ -1613,7 +1613,7 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
       <div class="ac-grid">
         <label class="ac-f"><span>Chaîne de valeur</span><select id="ac-chain"></select></label>
         <label class="ac-f"><span>Autonomie observée</span><select id="ac-observed"></select></label>
-        <label class="ac-f full"><span>Les 10 maillons — 0 rien · 1 partiel · 2 plein</span><input id="ac-links" placeholder="2120000000" maxlength="14"></label>
+        <label class="ac-f full"><span>Les 10 maillons · 0 rien · 1 partiel · 2 plein</span><input id="ac-links" placeholder="2120000000" maxlength="14"></label>
         <div class="ac-f full"><span>Verrous avec preuve publique</span>
           <div class="ac-locks">
             <label><input type="checkbox" id="ac-lock-data"> donnée fiable</label>
@@ -1651,7 +1651,7 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
 
   function fill(sel,vals,labels){
     sel.innerHTML=vals.map(function(v,i){
-      return '<option value="'+v+'">'+(labels?labels[i]:(v||"— aucune —"))+'</option>';
+      return '<option value="'+v+'">'+(labels?labels[i]:(v||"Aucune"))+'</option>';
     }).join("");
   }
   fill($("ac-region"),REGIONS); fill($("ac-sector"),SECTORS); fill($("ac-stage"),STAGES);
@@ -1714,7 +1714,7 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
     if(!e.solution_name) errs.push("Le nom de l'agent est obligatoire.");
     if(!e.company_country) errs.push("Le pays est obligatoire.");
     if(!e.use_case) errs.push("La description de ce que fait l'agent est obligatoire.");
-    if(!e.sources.length) errs.push("Au moins une source est obligatoire — pas de source, pas de fiche.");
+    if(!e.sources.length) errs.push("Au moins une source est obligatoire : pas de source, pas de fiche.");
     e.sources.forEach(function(s){
       if(!/^https?:\/\/.+/i.test(s.url)) errs.push("L'URL de la source doit commencer par http:// ou https://");
       if(!s.title) errs.push("Le titre de la source est obligatoire.");
@@ -1767,12 +1767,12 @@ document.documentElement.dataset.lang=l;document.documentElement.lang=l;}catch(e
     var entry=collect();
     var errs=validate(entry,store.entries);
     if(errs.length){
-      say("err","<strong>Fiche refusée — "+errs.length+" point"+(errs.length>1?"s":"")+" à corriger :</strong><ul><li>"+errs.join("</li><li>")+"</li></ul>");
+      say("err","<strong>Fiche refusée : "+errs.length+" point"+(errs.length>1?"s":"")+" à corriger :</strong><ul><li>"+errs.join("</li><li>")+"</li></ul>");
       return;
     }
     if(!ART){ say("err","La publication n'est pas disponible dans cette vue (lecture seule)."); return; }
     var btn=$("ac-submit"); btn.disabled=true; btn.textContent="Publication…";
-    say("ok","Publication en cours — la page se rechargera sur la nouvelle version.");
+    say("ok","Publication en cours, la page se rechargera sur la nouvelle version.");
 
     store.entries.push(entry);
     store.entries.sort(function(a,b){return a.id.localeCompare(b.id);});

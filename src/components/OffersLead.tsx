@@ -25,8 +25,8 @@ const OFFERS: Offer[] = [
     eyebrowFr: "Conseil",
     titleEn: "Agentic Business Advisory",
     titleFr: "Agentic Business Advisory",
-    descEn: "Frame and deploy your AI agents — from strategy to execution — with the team behind this observatory.",
-    descFr: "Cadrez et déployez vos agents IA — de la stratégie à l'exécution — avec l'équipe derrière cet observatoire.",
+    descEn: "Frame and deploy your AI agents, from strategy to execution, with the team behind this observatory.",
+    descFr: "Cadrez et déployez vos agents IA, de la stratégie à l'exécution, avec l'équipe derrière cet observatoire.",
     href: `${base}/conseil/agentic-business-advisory?${UTM}`,
     tone: "navy",
   },
@@ -158,8 +158,8 @@ export default function OffersLead() {
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-white/70">
                 <Bi
-                  en="Send us a line and our team gets back to you to scope your priorities — audit, use cases, roadmap or training."
-                  fr="Écrivez-nous et notre équipe revient vers vous pour cadrer vos priorités — audit, cas d'usage, feuille de route ou formation."
+                  en="Send us a line and our team gets back to you to scope your priorities: audit, use cases, roadmap or training."
+                  fr="Écrivez-nous et notre équipe revient vers vous pour cadrer vos priorités : audit, cas d'usage, feuille de route ou formation."
                 />
               </p>
               <dl className="mt-6 flex flex-wrap gap-x-8 gap-y-4">

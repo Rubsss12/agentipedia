@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Ajout manuel d'un cas d'usage dans Agentipedia (cas clients HUB, cas repérés
-// à la main, etc.) — sans passer par le moteur de curation.
+// à la main, etc.), sans passer par le moteur de curation.
 //
 //   npm run add-case                  → saisie guidée, question par question
 //   npm run add-case -- fiche.json    → ingestion d'une fiche déjà rédigée
@@ -99,10 +99,10 @@ function finalize(draft) {
 }
 
 function report(entry) {
-  // validateEntry renvoie { ok, errors } — surtout pas un tableau.
+  // validateEntry renvoie { ok, errors }, surtout pas un tableau.
   const { ok, errors } = validateEntry(entry);
   if (!ok) {
-    console.error(`\n${c.r("✗ Fiche refusée")} — ${errors.length} problème(s) :`);
+    console.error(`\n${c.r("✗ Fiche refusée")} : ${errors.length} problème(s)`);
     for (const e of errors) console.error(`   • ${e}`);
     console.error(c.dim("\nRien n'a été écrit. Corrigez puis relancez."));
     return false;
@@ -175,7 +175,7 @@ async function interactive() {
   console.log(c.m("\n── Résultats rapportés ") + c.dim("(entrée vide pour arrêter)"));
   const reported_outcomes = [];
   while (true) {
-    const metric = await ask(`Résultat ${reported_outcomes.length + 1} — ce qui est mesuré`, { required: false });
+    const metric = await ask(`Résultat ${reported_outcomes.length + 1} : ce qui est mesuré`, { required: false });
     if (!metric) break;
     const value = await ask("   valeur publiée");
     const source_type = await ask("   type de source", { choices: SOURCE_TYPES, def: "company_official" });
@@ -185,7 +185,7 @@ async function interactive() {
   console.log(c.m("\n── Sources ") + c.dim("(au moins une, avec URL)"));
   const sources = [];
   while (true) {
-    const url = await ask(`Source ${sources.length + 1} — URL`, { required: sources.length === 0 });
+    const url = await ask(`Source ${sources.length + 1} : URL`, { required: sources.length === 0 });
     if (!url) break;
     const title = await ask("   titre de la page");
     const publisher = await ask("   éditeur de la page");

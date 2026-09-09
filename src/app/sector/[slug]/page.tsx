@@ -42,7 +42,7 @@ export default async function SectorPage({ params }: Props) {
     "@graph": [
       {
         "@type": "CollectionPage",
-        name: `${sector.name} — AI agent deployments`,
+        name: `${sector.name}: AI agent deployments`,
         description: `${sector.entries} verified AI-agent deployments in the ${sector.name} sector, with named companies, named solutions and sources.`,
         url,
         isPartOf: { "@type": "WebSite", name: "Agentipedia", url: SITE_URL },

@@ -4,7 +4,7 @@
  * Everything is served statically except POST /api/add-case, which lets the
  * team add a use case by hand from /admin on the site. The handler validates
  * the draft against the same rule as the curation engine, then commits it to
- * data/manual-cases.json on GitHub — which triggers the deploy workflow, so the
+ * data/manual-cases.json on GitHub, which triggers the deploy workflow, so the
  * fiche is live a couple of minutes later.
  *
  * Manual cases go to their own file because data/entries.json is over GitHub's

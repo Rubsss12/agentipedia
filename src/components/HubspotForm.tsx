@@ -3,7 +3,7 @@
 // Custom lead form that replicates the HUB Institute "Agentic Business Advisory"
 // form ("Être recontacté sous 24h") and posts straight to it via the HubSpot
 // Forms Submission API. Targeting the same form means HubSpot records a real
-// submission — the lead lands in the CRM and the form's notification emails fire
+// submission: the lead lands in the CRM and the form's notification emails fire
 // like the native embed. Bilingual, in the Agentic palette with the HUB pink CTA.
 import { useState } from "react";
 import { useLang } from "@/lib/lang";
