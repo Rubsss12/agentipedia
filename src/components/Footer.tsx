@@ -26,7 +26,7 @@ const COMMUNITIES: L[] = [
 const EXPERTISE: L[] = [
   { en: "Membership", fr: "Membership", href: hub("/membership") },
   { en: "Agentic Business Advisory", fr: "Agentic Business Advisory", href: hub("/conseil/agentic-business-advisory") },
-  { en: "Generative AI consulting", fr: "Conseil en IA générative", href: hub("/ai-consulting") },
+  { en: "AI consulting", fr: "Conseil en IA", href: `https://agenticbusinessforum.hubinstitute.com/?${UTM}` },
   { en: "Digital transformation consulting", fr: "Conseil en transformation digitale", href: hub("/regie-expert") },
   { en: "Training", fr: "Formations", href: hub("/formations") },
   { en: "Keynotes", fr: "Keynotes", href: hub("/toutes-nos-keynotes") },
@@ -38,7 +38,7 @@ const EXPERTISE: L[] = [
 const AGENTIPEDIA: L[] = [
   { en: "The index", fr: "L'index", href: "/#index" },
   { en: "Browse by sector", fr: "Parcourir par secteur", href: "/#sectors" },
-  { en: "The index in figures", fr: "L'index en chiffres", href: "/figures/" },
+  { en: "Agentipedia in figures", fr: "L'Agentipedia en chiffres", href: "/figures/" },
   { en: "Methodology", fr: "Méthodologie", href: "/methodology/" },
   { en: "FAQ", fr: "FAQ", href: "/faq/" },
 ];

@@ -49,7 +49,7 @@ export function takeaways(e: Entry): Takeaway[] {
     fr:
       `${e.company}${country ? ` (${countryFr(country)})` : ""} exploite ${named ? "un agent sans nom public" : e.solution_name}` +
       `${vendorFr} sur le périmètre ${e.department || e.industry || sectorFr(e.sector)}. ` +
-      `Stade : ${STAGE_LABELS_FR[e.deployment_stage].toLowerCase()}.`,
+      `Statut : ${STAGE_LABELS_FR[e.deployment_stage].toLowerCase()}.`,
   });
 
   // 2. The CODA reading, which is the whole point of the index.

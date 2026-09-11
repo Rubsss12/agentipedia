@@ -4,6 +4,7 @@ import { getEntries, getStats } from "@/lib/data";
 
 export const metadata: Metadata = { alternates: { canonical: "/" } };
 import { getSectors } from "@/lib/sectors";
+import { sectorFr } from "@/lib/labels";
 import { formatTimestamp } from "@/lib/format";
 import Explorer from "@/components/Explorer";
 import Marquee from "@/components/Marquee";
@@ -128,14 +129,6 @@ export default function Home() {
                     <Bi en="countries" fr="pays" />
                   </p>
                 </div>
-                <div>
-                  <p className="text-4xl font-black text-mauve-glow md:text-5xl" data-count={stats.regions}>
-                    {stats.regions}
-                  </p>
-                  <p className="kicker mt-1 text-white/60">
-                    <Bi en="world regions" fr="régions du monde" />
-                  </p>
-                </div>
               </div>
 
               <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -166,7 +159,7 @@ export default function Home() {
             <div className="rounded-3xl border border-white/15 bg-white/[0.05] p-4 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.8)] backdrop-blur-sm md:p-5">
               <div className="mb-2 flex items-baseline justify-between gap-3">
                 <p className="kicker text-mauve-bright">
-                  <Bi en="Top use cases" fr="Les meilleurs cas d'usage" />
+                  <Bi en="Top AI use cases" fr="Les meilleurs cas d'usage IA" />
                 </p>
                 <p className="text-xs text-white/55">
                   {stats.countries} <Bi en="countries" fr="pays" />
@@ -176,11 +169,11 @@ export default function Home() {
               <div className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-[0.68rem] font-bold text-white/60">
                 <span className="inline-flex items-center gap-1.5">
                   <span className="h-2 w-2 rounded-full" style={{ background: "#e62ec8" }} aria-hidden />
-                  <Bi en="Named agents" fr="Agents nommés" />
+                  <Bi en="Named AI agents" fr="Agents IA nommés" />
                 </span>
                 <span className="inline-flex items-center gap-1.5">
                   <span className="h-2 w-2 rounded-full" style={{ background: "#f2764f" }} aria-hidden />
-                  <Bi en={`Unnamed (${unnamedCount})`} fr={`Sans nom (${unnamedCount})`} />
+                  <Bi en={`Unnamed AI agents (${unnamedCount})`} fr={`Agents IA sans nom (${unnamedCount})`} />
                 </span>
               </div>
               <p className="kicker mt-2 text-center text-white/50">
@@ -198,7 +191,7 @@ export default function Home() {
       </section>
 
       {/* ===== The shelves (compact) ===== */}
-      <section id="sectors" className="mx-auto max-w-6xl scroll-mt-20 px-6 pt-14">
+      <section id="sectors" className="mx-auto max-w-6xl scroll-mt-28 px-6 pt-14 lg:scroll-mt-20">
         <div className="flex flex-wrap items-baseline justify-between gap-3" data-reveal>
           <div>
             <p className="kicker text-mauve">
@@ -208,12 +201,6 @@ export default function Home() {
               <Bi en="Browse by sector" fr="Parcourir par secteur" />
             </h2>
           </div>
-          <p className="max-w-md text-sm text-muted">
-            <Bi
-              en="Every deployment is filed under exactly one sector. Open one to see who runs what inside it."
-              fr="Chaque déploiement est rangé dans un seul secteur. Ouvrez-en un pour voir qui y déploie quoi."
-            />
-          </p>
         </div>
         <ul className="mt-6 grid gap-2.5 sm:grid-cols-2 lg:grid-cols-4">
           {sectors.map((s, i) => (
@@ -226,7 +213,9 @@ export default function Home() {
                   {s.entries}
                 </span>
                 <span className="min-w-0 flex-1">
-                  <span className="block text-[0.82rem] font-extrabold leading-tight">{s.name}</span>
+                  <span className="block text-[0.82rem] font-extrabold leading-tight">
+                    <Bi en={s.name} fr={sectorFr(s.name)} />
+                  </span>
                   <span className="mt-0.5 block truncate text-[0.7rem] text-muted">
                     {s.countries}{" "}
                     {s.countries > 1 ? <Bi en="countries" fr="pays" /> : <Bi en="country" fr="pays" />} ·{" "}
@@ -239,39 +228,30 @@ export default function Home() {
         </ul>
       </section>
 
-      {/* ===== CODA lens: four postures of adoption, click to filter the index ===== */}
-      <section id="coda" className="mx-auto max-w-6xl scroll-mt-20 px-6 pt-14">
-        <div className="flex flex-wrap items-baseline justify-between gap-3" data-reveal>
-          <div>
+      {/* ===== CODA scoring map, on a tinted band so it reads as its own section ===== */}
+      <div className="mt-16 border-y border-lavender-line bg-lilac-soft/60">
+        <section id="coda" className="mx-auto max-w-6xl scroll-mt-28 px-6 py-14 lg:scroll-mt-20">
+          <div data-reveal>
             <p className="kicker text-mauve">
-              <Bi en="The CODA™ scoring map · HUB Institute" fr="La carte du scoring CODA™ · HUB Institute" />
+              <Bi en="Scoring map, CODA™ method" fr="Carte de scoring selon la méthode CODA™" />
             </p>
             <h2 className="mt-2 text-2xl font-extrabold tracking-tight md:text-3xl">
-              <Bi en="Every agent, placed on two axes" fr="Chaque agent, placé sur deux axes" />
+              <Bi
+                en="Every agent placed by autonomy level and value chain"
+                fr="Chaque agent placé par niveau d'autonomie et chaîne de valeur"
+              />
             </h2>
           </div>
-          <p className="max-w-md text-sm text-muted">
-            <Bi
-              en="Autonomy N1-N4 as the journals attest it (the 24-hour test), instrumented value-chain maillons 1-10 as the scope. The quadrant follows from the two axes; each entry carries its own score card."
-              fr="L'autonomie N1-N4 telle que les journaux l'attestent (le test des 24 heures), les maillons instrumentés 1-10 comme portée. Le quadrant découle des deux axes ; chaque fiche porte sa propre score card."
-            />
-          </p>
-        </div>
-        <CodaMatrix points={codaPoints} />
-        <p className="mt-5 text-xs text-muted" data-reveal>
-          <Bi
-            en="Declared = min(observed, authorized by the documented locks) - the anti agent-washing clause. Placement is our analytical reading of each deployment, never a claim made by the source."
-            fr="Déclaré = min(observé, autorisé par les verrous documentés) - la clause anti agent-washing. Le placement est notre lecture analytique de chaque déploiement, jamais une affirmation de la source."
-          />
-        </p>
-      </section>
+          <CodaMatrix points={codaPoints} />
+        </section>
+      </div>
 
       {/* ===== Index (filters + everything), right after the shelves ===== */}
-      <section id="index" className="mx-auto max-w-6xl scroll-mt-20 px-6 pt-14">
+      <section id="index" className="mx-auto max-w-6xl scroll-mt-28 px-6 pt-16 lg:scroll-mt-20">
         <div className="flex flex-wrap items-baseline justify-between gap-3" data-reveal>
           <div>
             <p className="kicker text-mauve">
-              <Bi en="Deployment index" fr="Index des déploiements" />
+              <Bi en="AI & agentic deployment index" fr="Index des déploiements IA et agentiques" />
             </p>
             <h2 className="mt-2 text-2xl font-extrabold tracking-tight md:text-3xl">
               <Bi en="Who runs what, where" fr="Qui déploie quoi, où" />
@@ -279,8 +259,8 @@ export default function Home() {
           </div>
           <p className="max-w-md text-sm text-muted">
             <Bi
-              en="Search companies, solutions and vendors, or narrow by sector, geography, industry, department, stage and confidence."
-              fr="Cherchez entreprises, solutions et éditeurs, ou filtrez par secteur, géographie, industrie, département, stade et confiance."
+              en="Search companies, solutions and vendors, or narrow by sector, geography, industry, department, status and confidence."
+              fr="Cherchez entreprises, solutions et éditeurs, ou filtrez par secteur, géographie, industrie, département, statut et confiance."
             />
           </p>
         </div>

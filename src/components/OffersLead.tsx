@@ -25,19 +25,19 @@ const OFFERS: Offer[] = [
     eyebrowFr: "Conseil",
     titleEn: "Agentic Business Advisory",
     titleFr: "Agentic Business Advisory",
-    descEn: "Frame and deploy your AI agents, from strategy to execution, with the team behind this observatory.",
-    descFr: "Cadrez et déployez vos agents IA, de la stratégie à l'exécution, avec l'équipe derrière cet observatoire.",
+    descEn: "Design, prioritise and test your AI agents, from strategy to POC, with the team behind this observatory.",
+    descFr: "Concevez, priorisez et testez vos agents IA, de la stratégie au POC, avec l'équipe derrière cet observatoire.",
     href: `${base}/conseil/agentic-business-advisory?${UTM}`,
     tone: "navy",
   },
   {
     eyebrowEn: "Consulting",
     eyebrowFr: "Conseil",
-    titleEn: "Generative AI consulting",
-    titleFr: "Conseil en IA générative",
+    titleEn: "AI consulting",
+    titleFr: "Conseil en IA",
     descEn: "Audit, roadmap, steering and operational activation on your strategic priorities.",
     descFr: "Audit, feuille de route, pilotage et activation opérationnelle sur vos priorités stratégiques.",
-    href: `${base}/ai-consulting?${UTM}`,
+    href: `https://agenticbusinessforum.hubinstitute.com/?${UTM}`,
   },
   {
     eyebrowEn: "Training",
@@ -70,7 +70,7 @@ function Arrow() {
 
 export default function OffersLead() {
   return (
-    <section id="offres" className="scroll-mt-20 pt-20">
+    <section id="offres" className="scroll-mt-28 pt-20 lg:scroll-mt-20">
       <div className="border-t border-lavender-line bg-lilac-soft">
         <div className="mx-auto max-w-6xl px-6 py-16">
           {/* heading: tie the proof on the site to HUB Institute action */}
@@ -80,8 +80,8 @@ export default function OffersLead() {
             </p>
             <h2 className="mt-2 text-2xl font-extrabold tracking-tight md:text-3xl">
               <Bi
-                en="You've seen the proof. Now deploy it inside your company."
-                fr="Vous avez vu les preuves. Déployez-les maintenant dans votre entreprise."
+                en="You've seen the proof in action. Put it to work in your company, starting now."
+                fr="Vous avez vu les preuves en action. Mettez-les en application dans votre entreprise dès maintenant."
               />
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-ink-soft md:text-base">
@@ -152,8 +152,8 @@ export default function OffersLead() {
               </p>
               <h3 className="mt-2 text-xl font-extrabold tracking-tight md:text-2xl">
                 <Bi
-                  en="Tell us where you want AI agents to work"
-                  fr="Dites-nous où vous voulez faire travailler des agents IA"
+                  en="Let's build your agentic roadmap together"
+                  fr="Construisons ensemble votre roadmap agentique"
                 />
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-white/70">

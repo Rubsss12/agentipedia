@@ -11,7 +11,14 @@ export interface SectorSummary {
   companies: string[]; // sample of company names, alphabetical
 }
 
+// A renamed sector keeps its original slug, so URLs already indexed and shared
+// keep resolving. Luxury joined Healthcare & Life Sciences in September 2026.
+const SLUG_OVERRIDE: Record<string, string> = {
+  "Healthcare, Life Sciences & Luxury": "healthcare-and-life-sciences",
+};
+
 export function sectorSlug(name: string): string {
+  if (SLUG_OVERRIDE[name]) return SLUG_OVERRIDE[name];
   return name
     .toLowerCase()
     .normalize("NFD")

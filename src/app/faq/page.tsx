@@ -85,7 +85,7 @@ export default function FaqPage() {
           </li>
           <li>
             <Link href="/figures/" className="text-mauve hover:underline">
-              <Bi en="The index in figures →" fr="L'index en chiffres →" />
+              <Bi en="Agentipedia in figures →" fr="L'Agentipedia en chiffres →" />
             </Link>
           </li>
           <li>

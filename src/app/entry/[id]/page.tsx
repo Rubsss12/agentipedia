@@ -13,6 +13,7 @@ import Bi from "@/components/Bi";
 import JsonLd from "@/components/JsonLd";
 import { SITE_URL, PUBLISHER, OG_IMAGE } from "@/lib/site";
 import { takeaways, takeawaySentence } from "@/lib/takeaway";
+import { sectorFr, regionFr, countryFr } from "@/lib/labels";
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -42,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-function Fact({ label, value }: { label: React.ReactNode; value: string }) {
+function Fact({ label, value }: { label: React.ReactNode; value: React.ReactNode }) {
   return (
     <div className="rounded-xl border border-lavender-line bg-lilac-soft px-4 py-3">
       <p className="kicker text-muted">{label}</p>
@@ -111,9 +112,10 @@ export default async function EntryPage({ params }: Props) {
       <header className="mt-6">
         <p className="kicker text-mauve">
           <Link href={`/sector/${sectorSlug(entry.sector)}`} className="hover:underline">
-            {entry.sector}
+            <Bi en={entry.sector} fr={sectorFr(entry.sector)} />
           </Link>{" "}
-          · {entry.region} · {entry.company_country}
+          · <Bi en={entry.region} fr={regionFr(entry.region)} /> ·{" "}
+          <Bi en={entry.company_country} fr={countryFr(entry.company_country)} />
         </p>
         <h1 className="mt-2 text-3xl font-black uppercase leading-tight tracking-tight md:text-4xl">
           {entry.company}
@@ -144,7 +146,16 @@ export default async function EntryPage({ params }: Props) {
         )}
       </header>
 
-      {/* Key facts first: the block a reader, or a model, can lift whole,
+      {/* What the agent does comes first, in the fuchsia of the lead CTA. */}
+      <section className="mt-8 rounded-2xl border-l-4 border-[#e11e8c] bg-[#fdeef6] px-5 py-4">
+        <p className="kicker text-[#e11e8c]">
+          <Bi en="What the agent does" fr="Ce que fait l'agent" />
+        </p>
+        <p className="mt-2 text-lg leading-relaxed text-ink">{entry.use_case}</p>
+        <p className="lang-fr mt-1 text-xs text-muted">Fiche rédigée en anglais.</p>
+      </section>
+
+      {/* Key facts next: the block a reader, or a model, can lift whole,
           assembled from the fiche's own fields so it reads in both languages. */}
       <section className="mt-8 rounded-2xl border border-lavender-line bg-lilac-soft px-5 py-5">
         <p className="kicker text-mauve">
@@ -162,21 +173,13 @@ export default async function EntryPage({ params }: Props) {
         </ul>
       </section>
 
-      <section className="mt-8">
-        <p className="kicker text-muted">
-          <Bi en="What the agent does" fr="Ce que fait l'agent" />
-        </p>
-        <p className="mt-2 text-lg leading-relaxed text-ink-soft">{entry.use_case}</p>
-        <p className="lang-fr mt-1 text-xs text-muted">Fiche rédigée en anglais.</p>
-      </section>
-
       <section className="mt-8 grid gap-3 sm:grid-cols-2 md:grid-cols-3">
-        <Fact label={<Bi en="Sector" fr="Secteur" />} value={entry.sector} />
+        <Fact label={<Bi en="Sector" fr="Secteur" />} value={<Bi en={entry.sector} fr={sectorFr(entry.sector)} />} />
         <Fact label={<Bi en="Industry" fr="Industrie" />} value={entry.industry} />
         <Fact label={<Bi en="Department" fr="Département" />} value={entry.department} />
         <Fact label={<Bi en="Vendor" fr="Éditeur" />} value={entry.vendor} />
-        <Fact label={<Bi en="Country" fr="Pays" />} value={entry.company_country} />
-        <Fact label={<Bi en="Region" fr="Région" />} value={entry.region} />
+        <Fact label={<Bi en="Country" fr="Pays" />} value={entry.company_country ? <Bi en={entry.company_country} fr={countryFr(entry.company_country)} /> : ""} />
+        <Fact label={<Bi en="Region" fr="Région" />} value={entry.region ? <Bi en={entry.region} fr={regionFr(entry.region)} /> : ""} />
         <Fact label={<Bi en="First catalogued" fr="Ajouté le" />} value={formatDate(entry.first_seen_date)} />
       </section>
 
@@ -303,13 +306,15 @@ export default async function EntryPage({ params }: Props) {
         </p>
       </section>
 
-      {/* Dig deeper into this use case: lead CTA */}
+      {/* Dig deeper into this use case: lead CTA, signed with the HUB mark */}
       <section className="mt-12 rounded-2xl bg-mauve-night p-6 text-white md:p-8">
-        <p className="kicker text-mauve-bright">
-          <Bi en="Dig deeper into this use case" fr="Creuser ce cas d'usage" />
-        </p>
-        <h2 className="mt-2 text-xl font-extrabold tracking-tight md:text-2xl">
-          <Bi en="Want to run an agent like this?" fr="Envie de déployer un agent comme celui-ci ?" />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/hub-institute-logo-white.svg" alt="HUB Institute" className="h-14 w-auto md:h-16" />
+        <h2 className="mt-5 text-xl font-extrabold tracking-tight md:text-2xl">
+          <Bi
+            en="Want to dig into this use case with HUB Institute?"
+            fr="Envie de creuser ce cas d'usage avec le HUB Institute ?"
+          />
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/75 md:text-base">
           <Bi

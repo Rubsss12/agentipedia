@@ -5,7 +5,7 @@
 // data/manual-cases.json, puis le site se reconstruit et se redéploie tout seul.
 import { useState } from "react";
 
-const SECTORS = ["Financial Services","Insurance","Healthcare & Life Sciences","Retail & E-commerce","Consumer Goods & Manufacturing","Automotive & Mobility","Technology & Software","Telecommunications","Media & Entertainment","Travel & Transportation","Hospitality & Food","Energy & Utilities","Public Sector & Education","Professional & Business Services"];
+const SECTORS = ["Financial Services","Insurance","Healthcare, Life Sciences & Luxury","Retail & E-commerce","Consumer Goods & Manufacturing","Automotive & Mobility","Technology & Software","Telecommunications","Media & Entertainment","Travel & Transportation","Hospitality & Food","Energy & Utilities","Public Sector & Education","Professional & Business Services"];
 const REGIONS = ["North America","Latin America","Europe","Middle East","Africa","South Asia","East Asia","Southeast Asia","Oceania","Antarctica"];
 const STAGES: [string, string][] = [["production","En production"],["pilot","Pilote"],["announced","Annoncé"],["unknown","Inconnu"]];
 const STYPES: [string, string][] = [["company_official","Source officielle de l'entreprise"],["news_media","Presse"],["earnings_call","Résultats financiers"],["conference_talk","Conférence"],["vendor_case_study","Étude de cas éditeur"],["press_release","Communiqué"],["other","Autre"]];
@@ -112,7 +112,7 @@ export default function AddCaseForm() {
         <div><label className={label}>Industrie</label><input className={input} value={f.industry} onChange={(e) => set("industry", e.target.value)} placeholder="Sous-secteur" /></div>
         <div><label className={label}>Département</label><input className={input} value={f.department} onChange={(e) => set("department", e.target.value)} placeholder="Service client, Sinistres…" /></div>
         <div><label className={label}>Éditeur</label><input className={input} value={f.vendor} onChange={(e) => set("vendor", e.target.value)} placeholder="Éditeur, In-house, ou vide" /></div>
-        <div><label className={label}>Stade</label><select className={input} value={f.deployment_stage} onChange={(e) => set("deployment_stage", e.target.value)}>{STAGES.map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select></div>
+        <div><label className={label}>Statut</label><select className={input} value={f.deployment_stage} onChange={(e) => set("deployment_stage", e.target.value)}>{STAGES.map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select></div>
         <div className="sm:col-span-2"><label className={label}>Ce que fait l&apos;agent *</label><textarea className={`${input} min-h-24`} required value={f.use_case} onChange={(e) => set("use_case", e.target.value)} placeholder="Le périmètre fonctionnel, tel que la source le décrit." /></div>
       </div>
 

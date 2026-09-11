@@ -18,7 +18,7 @@
  */
 
 const FILE = "data/manual-cases.json";
-const SECTORS = ["Financial Services","Insurance","Healthcare & Life Sciences","Retail & E-commerce","Consumer Goods & Manufacturing","Automotive & Mobility","Technology & Software","Telecommunications","Media & Entertainment","Travel & Transportation","Hospitality & Food","Energy & Utilities","Public Sector & Education","Professional & Business Services"];
+const SECTORS = ["Financial Services","Insurance","Healthcare, Life Sciences & Luxury","Retail & E-commerce","Consumer Goods & Manufacturing","Automotive & Mobility","Technology & Software","Telecommunications","Media & Entertainment","Travel & Transportation","Hospitality & Food","Energy & Utilities","Public Sector & Education","Professional & Business Services"];
 const REGIONS = ["North America","Latin America","Europe","Middle East","Africa","South Asia","East Asia","Southeast Asia","Oceania","Antarctica"];
 const STAGES = ["pilot","production","announced","unknown"];
 const STYPES = ["company_official","earnings_call","news_media","conference_talk","vendor_case_study","press_release","other"];

@@ -11,12 +11,12 @@ import { SITE_URL, PUBLISHER, OG_IMAGE } from "@/lib/site";
 import type { Row } from "@/lib/figures";
 
 export const metadata: Metadata = {
-  title: "The index in figures",
+  title: "Agentipedia in figures",
   description:
     "How AI agents actually break down across autonomy levels, scope, sectors and countries, measured on the deployments catalogued in Agentipedia rather than forecast.",
   alternates: { canonical: "/figures" },
   openGraph: {
-    title: "The index in figures · Agentipedia",
+    title: "Agentipedia in figures",
     description:
       "How AI agents actually break down across autonomy levels, scope, sectors and countries, measured rather than forecast.",
     url: "/figures",
@@ -140,7 +140,7 @@ export default function FiguresPage() {
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Agentipedia", item: SITE_URL },
-          { "@type": "ListItem", position: 2, name: "The index in figures", item: `${SITE_URL}/figures/` },
+          { "@type": "ListItem", position: 2, name: "Agentipedia in figures", item: `${SITE_URL}/figures/` },
         ],
       },
     ],
@@ -151,15 +151,15 @@ export default function FiguresPage() {
       <JsonLd data={jsonLd} />
 
       <p className="kicker text-mauve">
-        <Bi en="The index in figures" fr="L'index en chiffres" />
+        <Bi en="Agentipedia in figures" fr="L'Agentipedia en chiffres" />
       </p>
       <h1 className="mt-2 text-4xl font-black uppercase tracking-tight">
         <Bi en="What the deployments actually say" fr="Ce que disent vraiment les déploiements" />
       </h1>
       <p className="mt-4 text-lg leading-relaxed text-ink-soft">
         <Bi
-          en={`Every number below is counted from the ${f.total} deployments catalogued in Agentipedia. These are observed cases, each with its sources, not a survey and not a forecast. Figures are free to cite with attribution to HUB Institute.`}
-          fr={`Chaque chiffre ci-dessous est compté sur les ${f.total} déploiements catalogués dans Agentipedia. Ce sont des cas observés, chacun avec ses sources, ni sondage ni prévision. Les chiffres sont librement citables en créditant le HUB Institute.`}
+          en={`Every number below is counted from the ${f.total} deployments catalogued in Agentipedia.`}
+          fr={`Chaque chiffre ci-dessous est compté sur les ${f.total} déploiements catalogués dans Agentipedia.`}
         />
       </p>
       {updated && (
@@ -227,7 +227,7 @@ export default function FiguresPage() {
       />
       <Table
         captionEn="Deployment stage"
-        captionFr="Stade de déploiement"
+        captionFr="Statut de déploiement"
         rows={f.byStage}
         total={f.total}
       />
@@ -254,8 +254,8 @@ export default function FiguresPage() {
         labelFr={countryFr}
       />
       <Table
-        captionEn="Vendor or platform (top 15)"
-        captionFr="Éditeur ou plateforme (top 15)"
+        captionEn="Declared vendor or platform (top 15)"
+        captionFr="Éditeur ou plateforme déclarée (top 15)"
         rows={f.byVendor}
         total={f.total}
       />
@@ -266,8 +266,8 @@ export default function FiguresPage() {
         </h2>
         <p className="mt-2 text-sm leading-relaxed text-ink-soft">
           <Bi
-            en="Free to reuse with attribution: “Agentipedia, HUB Institute” and a link to this page. Every figure traces back to a fiche, and every fiche to its sources."
-            fr="Réutilisation libre avec attribution : « Agentipedia, HUB Institute » et un lien vers cette page. Chaque chiffre remonte à une fiche, et chaque fiche à ses sources."
+            en="Free to reuse with attribution: “Agentipedia, HUB Institute” and a link to this page."
+            fr="Réutilisation libre avec attribution : « Agentipedia, HUB Institute » et un lien vers cette page."
           />
         </p>
         <p className="mt-3 text-sm font-bold">

@@ -1,17 +1,31 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 // Site-wide motion runtime: scroll reveals for [data-reveal] and count-up
 // animation for [data-count]. No-ops entirely when the visitor prefers
 // reduced motion.
+//
+// This lives in the root layout, which does NOT remount on client-side
+// navigation. Scanning the DOM once at first load therefore missed every page
+// reached by a link afterwards: arriving on "/#index" from a fiche left the
+// sectors and the CODA map at opacity 0 for good. So the scan re-runs on every
+// route change, and a MutationObserver picks up anything mounted later (the
+// new page streaming in, the index paginating).
 export default function Motion() {
+  const pathname = usePathname();
+
   useEffect(() => {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     if (reduced) {
-      document.querySelectorAll<HTMLElement>("[data-reveal]").forEach((el) => el.classList.add("in"));
-      return;
+      const showAll = () =>
+        document.querySelectorAll<HTMLElement>("[data-reveal]").forEach((el) => el.classList.add("in"));
+      showAll();
+      const mo = new MutationObserver(showAll);
+      mo.observe(document.body, { childList: true, subtree: true });
+      return () => mo.disconnect();
     }
 
     const countUp = (el: HTMLElement) => {
@@ -43,9 +57,26 @@ export default function Motion() {
       { threshold: 0.15 },
     );
 
-    document.querySelectorAll("[data-reveal], [data-count]").forEach((el) => io.observe(el));
-    return () => io.disconnect();
-  }, []);
+    const SELECTOR = "[data-reveal]:not(.in), [data-count]:not([data-counted])";
+    const watch = (root: ParentNode) => root.querySelectorAll(SELECTOR).forEach((el) => io.observe(el));
+    watch(document);
+
+    const mo = new MutationObserver((muts) => {
+      for (const m of muts) {
+        m.addedNodes.forEach((n) => {
+          if (!(n instanceof Element)) return;
+          if (n.matches(SELECTOR)) io.observe(n);
+          watch(n);
+        });
+      }
+    });
+    mo.observe(document.body, { childList: true, subtree: true });
+
+    return () => {
+      io.disconnect();
+      mo.disconnect();
+    };
+  }, [pathname]);
 
   return null;
 }

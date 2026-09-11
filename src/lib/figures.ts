@@ -56,7 +56,7 @@ export function getFigures() {
     production: ["In production", "En production"],
     pilot: ["Pilot", "Pilote"],
     announced: ["Announced", "Annoncé"],
-    unknown: ["Stage unknown", "Stade inconnu"],
+    unknown: ["Stage unknown", "Statut inconnu"],
   };
   const byStage: Row[] = sortRows(
     (Object.keys(STAGE) as DeploymentStage[]).map((s) => ({

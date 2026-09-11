@@ -6,10 +6,10 @@ export default function Logo({ on = "light" }: { on?: "light" | "dark" }) {
   const wordmark = on === "light" ? "text-ink" : "text-white";
   const src = on === "dark" ? "/hub-institute-logo-white.svg" : "/hub-institute-logo.svg";
   return (
-    <span className="flex items-center gap-2.5">
+    <span className="flex min-w-0 items-center gap-2 sm:gap-2.5">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={src} alt="HUB Institute" className="h-9 w-auto shrink-0" />
-      <span className={`text-[1.02rem] font-extrabold uppercase tracking-[0.08em] ${wordmark}`}>
+      <img src={src} alt="HUB Institute" className="h-8 w-auto shrink-0 sm:h-9" />
+      <span className={`truncate text-[0.85rem] font-extrabold uppercase tracking-[0.06em] sm:text-[1.02rem] sm:tracking-[0.08em] ${wordmark}`}>
         Agentipedia
       </span>
     </span>

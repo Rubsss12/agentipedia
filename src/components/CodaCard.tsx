@@ -4,7 +4,6 @@ import {
   CODA,
   LEVELS,
   LOCKS,
-  TEST_24H,
   codaDeclared,
   codaQuadrant,
   codaScope,
@@ -278,10 +277,9 @@ export default function CodaCard({ a, name }: { a: CodaAssessment; name: string 
             <Bi en="declared = min(observed, authorized by the locks)." fr="déclaré = min(observé, autorisé par les verrous)." />
           </span>{" "}
           <Bi
-            en="A lock without public evidence counts as closed - the anti agent-washing clause. "
-            fr="Un verrou sans preuve publique est réputé fermé - la clause anti agent-washing. "
+            en="A lock without public evidence counts as closed: that is the anti agent-washing clause. "
+            fr="Un verrou sans preuve publique est réputé fermé : c'est la clause anti agent-washing. "
           />
-          <Bi en={TEST_24H.en} fr={TEST_24H.fr} />{" "}
           <Bi
             en="Analytical placement on the HUB Institute CODA™ matrix, from public sources; never a claim made by the company."
             fr="Placement analytique sur la matrice CODA™ du HUB Institute, sur la base de sources publiques ; jamais une affirmation de l'entreprise."

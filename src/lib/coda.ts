@@ -99,7 +99,7 @@ export const LEVELS: Record<CodaLevel, {
   },
   2: {
     n: "N2", en: "Validated execution", fr: "Exécution validée", verbEn: "Prepares", verbFr: "Prépare",
-    descEn: "The agent does, the human validates before impact - the systematic human-in-the-loop of orchestrated processes. Answering is not executing: a purely informational agent stays here.",
+    descEn: "The agent does, the human validates before impact: the systematic human-in-the-loop of orchestrated processes. Answering is not executing: a purely informational agent stays here.",
     descFr: "L'agent fait, l'humain valide avant impact : le human-in-the-loop systématique des processus orchestrés. Répondre n'est pas exécuter : un agent purement informationnel reste ici.",
     color: "#4e77b0",
   },
@@ -118,21 +118,21 @@ export const LEVELS: Record<CodaLevel, {
 };
 
 export const TEST_24H = {
-  en: "The 24-hour test - \"If the human does nothing for 24 hours, does the decision still get made?\" No: N1-N2. Yes, within written bounds: N3. Yes, re-arbitrations included, under reviews: N4.",
-  fr: "Le test des 24 heures - « Si l'humain ne fait rien pendant 24 heures, la décision se prend-elle ? » Non : N1-N2. Oui, dans des bornes écrites : N3. Oui, ré-arbitrages compris, sous revues : N4.",
+  en: "The 24-hour test: \"If the human does nothing for 24 hours, does the decision still get made?\" No: N1 or N2. Yes, within written bounds: N3. Yes, re-arbitrations included, under reviews: N4.",
+  fr: "Le test des 24 heures : « Si l'humain ne fait rien pendant 24 heures, la décision se prend-elle ? » Non : N1 ou N2. Oui, dans des bornes écrites : N3. Oui, ré-arbitrages compris, sous revues : N4.",
 };
 
 /** The four locks; 1-3 open level N3, lock 4 opens N4. Undocumented = closed. */
 export const LOCKS: { key: LockKey; en: string; fr: string; testEn: string; testFr: string; forLevel: 3 | 4 }[] = [
   {
     key: "data", en: "Reliable data", fr: "La donnée fiable", forLevel: 3,
-    testEn: "Freshness, completeness and consistency measured on the case's perimeter - without it the agent hallucinates instead of deciding.",
-    testFr: "Fraîcheur, complétude et cohérence mesurées sur le périmètre du cas - sans elle, l'agent hallucine au lieu de décider.",
+    testEn: "Freshness, completeness and consistency measured on the case's perimeter: without it the agent hallucinates instead of deciding.",
+    testFr: "Fraîcheur, complétude et cohérence mesurées sur le périmètre du cas : sans elle, l'agent hallucine au lieu de décider.",
   },
   {
     key: "mandate", en: "Written mandate", fr: "Le mandat écrit", forLevel: 3,
-    testEn: "Perimeter, numbered bounds, testable prohibitions, escalations, reversibility - signed by the use-case owner.",
-    testFr: "Périmètre, bornes chiffrées, interdits testables, escalades, réversibilité - signé par le propriétaire du cas d'usage.",
+    testEn: "Perimeter, numbered bounds, testable prohibitions, escalations, reversibility, signed by the use-case owner.",
+    testFr: "Périmètre, bornes chiffrées, interdits testables, escalades, réversibilité, signé par le propriétaire du cas d'usage.",
   },
   {
     key: "supervision", en: "Tooled supervision", fr: "La supervision outillée", forLevel: 3,
@@ -141,8 +141,8 @@ export const LOCKS: { key: LockKey; en: string; fr: string; testEn: string; test
   },
   {
     key: "compliance", en: "Audited compliance", fr: "La conformité auditée", forLevel: 4,
-    testEn: "AI Act risk class, sector rules, GDPR - verified by a second line independent from the operators.",
-    testFr: "AI Act (classification de risque), règles sectorielles, RGPD - vérifiée par une seconde ligne indépendante des opérateurs.",
+    testEn: "AI Act risk class, sector rules, GDPR, verified by a second line independent from the operators.",
+    testFr: "AI Act (classification de risque), règles sectorielles, RGPD, vérifiée par une seconde ligne indépendante des opérateurs.",
   },
 ];
 

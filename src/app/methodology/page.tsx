@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { getStats } from "@/lib/data";
-import { formatTimestamp } from "@/lib/format";
+import Link from "next/link";
 import Bi from "@/components/Bi";
 import { OG_IMAGE } from "@/lib/site";
+import { CODA, CODA_ORDER, LEVELS, type CodaLevel } from "@/lib/coda";
 
 export const metadata: Metadata = {
   title: "Methodology",
   description:
-    "The two-field rule, the sourcing standard and the confidence policy behind every Agentipedia entry.",
+    "The two-field rule, the CODA™ score card, the sourcing thesis and the confidence score behind every Agentipedia entry.",
   alternates: { canonical: "/methodology" },
   openGraph: {
     title: "Methodology · Agentipedia",
     description:
-      "The two-field rule, the sourcing standard and the confidence policy behind every Agentipedia entry.",
+      "The two-field rule, the CODA™ score card, the sourcing thesis and the confidence score behind every Agentipedia entry.",
     url: "/methodology",
     type: "website",
     siteName: "Agentipedia by HUB Institute",
@@ -20,20 +20,45 @@ export const metadata: Metadata = {
   },
 };
 
+// The ladder as the methodology explains it: richer than the one-line
+// descriptions in lib/coda, but coloured with the same level colours so the
+// page reads in the CODA palette used by the map and the score cards.
+const RUNGS: { n: CodaLevel; en: React.ReactNode; fr: React.ReactNode }[] = [
+  {
+    n: 1,
+    en: "The agent proposes, the human does. Every output is reworked: writing, analysis and code copilots.",
+    fr: "L'agent propose, l'humain fait. Chaque sortie est reprise : copilotes de rédaction, d'analyse, de code.",
+  },
+  {
+    n: 2,
+    en: "The agent does, the human validates before impact. Answering is not executing: a purely informational agent stays at N2 even when no one reviews each reply.",
+    fr: "L'agent fait, l'humain valide avant impact. Répondre n'est pas exécuter : un agent purement informationnel reste en N2 même quand personne ne relit chaque réponse.",
+  },
+  {
+    n: 3,
+    en: "The agent does and commits (refunds, blocks, publishes prices); the human handles exceptions within written bounds.",
+    fr: "L'agent fait et engage (rembourse, bloque, publie des prix) ; l'humain traite les exceptions dans des bornes écrites.",
+  },
+  {
+    n: 4,
+    en: "The agent chains decisions end to end; the human governs through reviews, journals and veto rights.",
+    fr: "L'agent enchaîne les décisions de bout en bout ; l'humain gouverne par les revues, les journaux et le droit de veto.",
+  },
+];
+
 export default function MethodologyPage() {
-  const stats = getStats();
   return (
     <main className="mx-auto max-w-3xl px-6 pb-8 pt-12">
       <p className="kicker text-mauve">
         <Bi en="Methodology" fr="Méthodologie" />
       </p>
       <h1 className="mt-2 text-4xl font-black uppercase tracking-tight">
-        <Bi en="How an entry earns its place" fr="Comment une fiche gagne sa place" />
+        <Bi en="How a use-case entry gets in" fr="Comment une fiche de cas d'usage s'intègre" />
       </h1>
       <p className="mt-4 text-lg leading-relaxed text-ink-soft">
         <Bi
-          en="Agentipedia is curated by an autonomous engine that searches the live web, extracts candidate deployments and applies one strict rule. A smaller accurate encyclopedia beats a larger fabricated one, so the engine rejects anything it cannot verify, and logs every rejection."
-          fr="Agentipedia est alimenté par un moteur autonome qui interroge le web en direct, extrait des déploiements candidats et applique une règle stricte. Une encyclopédie plus petite mais exacte vaut mieux qu'une grande inventée : le moteur rejette tout ce qu'il ne peut pas vérifier, et journalise chaque rejet."
+          en="Agentipedia is fed by an engine that searches the live web, extracts candidate deployments and applies one strict rule. A smaller accurate encyclopedia beats a larger fabricated one, so the engine rejects anything it cannot verify."
+          fr="Agentipedia est alimenté par un moteur qui interroge le web en direct, extrait des déploiements candidats et applique une règle stricte. Une encyclopédie plus petite mais exacte vaut mieux qu'une grande inventée : le moteur rejette tout ce qu'il ne peut pas vérifier."
         />
       </p>
 
@@ -98,61 +123,32 @@ export default function MethodologyPage() {
         </ol>
         <p className="mt-4 text-sm leading-relaxed text-ink-soft">
           <Bi
-            en={
-              <>
-                If either field is missing, generic or unverifiable against a source the engine
-                actually retrieved, the candidate is rejected. Rejections are recorded with a
-                one-line reason in a public log (
-                <code className="rounded bg-lilac px-1 py-0.5 text-xs">data/rejections.json</code>
-                ). Accepted entries are filed on exactly one of 14 canonical sector shelves, so the
-                Index Live can be browsed the way analysts actually look for precedents: by industry.
-              </>
-            }
-            fr={
-              <>
-                Si l&apos;un des deux champs manque, reste générique ou ne peut pas être vérifié
-                dans une source réellement consultée, le candidat est rejeté. Chaque rejet est
-                consigné avec sa raison dans un journal public (
-                <code className="rounded bg-lilac px-1 py-0.5 text-xs">data/rejections.json</code>
-                ). Les fiches acceptées sont rangées sur un seul des 14 rayons sectoriels, pour
-                parcourir l&apos;Index Live comme les analystes cherchent leurs précédents : par
-                industrie.
-              </>
-            }
+            en="If either field is missing, generic or unverifiable against a source the engine actually retrieved, the candidate is rejected. Accepted entries are filed in exactly one of 14 sectors, so the index can be browsed the way analysts actually look for precedents: by industry."
+            fr="Si l'un des deux champs manque, reste générique ou ne peut pas être vérifié dans une source réellement consultée, le candidat est rejeté. Les fiches acceptées sont rangées dans un seul des 14 secteurs, pour parcourir l'index comme les analystes cherchent leurs précédents : par industrie."
           />
         </p>
       </section>
 
       <section className="mt-10 rounded-2xl border border-lavender-line bg-coral-bg/40 p-6">
         <h2 className="text-xl font-black uppercase tracking-tight text-coral-deep">
-          <Bi en="The unnamed collection" fr="La collection sans nom" />
+          <Bi en="Unnamed agents" fr="Les agents sans nom" />
         </h2>
         <p className="mt-3 text-sm leading-relaxed text-ink-soft">
           <Bi
             en={
               <>
-                Some deployments are certain, yet the agent has no public product name: a CEO
-                quantifies its impact on an earnings call, official pages describe it, the press
-                covers it. Refusing them would hide real adoption; inventing a name would break the
-                rule. So they live in a second, clearly separated collection: the entry is marked{" "}
-                <strong className="text-coral-deep">Unnamed agent</strong>, the solution field
-                carries our descriptor (never a guessed brand), and the evidence bar is stricter:
-                at least one non-marketing source (company official, earnings call, news media or
-                conference talk) is required. On the globe they appear as coral dots.
+                Some deployments are certain, but the agent has no public name. We keep them,
+                marked <strong className="text-coral-deep">Unnamed agent</strong>, with our own
+                descriptor instead of a guessed brand, and a stricter bar: at least one
+                non-marketing source.
               </>
             }
             fr={
               <>
-                Certains déploiements sont certains, mais l&apos;agent n&apos;a pas de nom public :
-                un PDG chiffre son impact en résultats, les pages officielles le décrivent, la
-                presse le couvre. Les refuser cacherait une adoption réelle ; inventer un nom
-                briserait la règle. Ils vivent donc dans une seconde collection clairement
-                séparée : la fiche porte le badge{" "}
-                <strong className="text-coral-deep">Agent sans nom</strong>, le champ solution
-                contient notre descriptif (jamais une marque devinée), et la barre de preuve est
-                plus stricte : au moins une source non marketing (officiel entreprise, résultats
-                financiers, presse ou conférence) est exigée. Sur le globe, ils apparaissent en
-                points corail.
+                Certains déploiements sont avérés, mais l&apos;agent n&apos;a pas de nom public. Nous
+                les gardons, marqués <strong className="text-coral-deep">Agent sans nom</strong>, avec
+                notre propre descriptif plutôt qu&apos;une marque devinée, et une exigence plus
+                stricte : au moins une source non marketing.
               </>
             }
           />
@@ -171,71 +167,90 @@ export default function MethodologyPage() {
         </p>
       </section>
 
-      <section className="mt-10 rounded-2xl border border-lavender-line p-6">
-        <h2 className="text-xl font-black uppercase tracking-tight">
-          <Bi en="The CODA™ score card (HUB Institute)" fr="La CODA™ Score Card (HUB Institute)" />
-        </h2>
-        <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-          <Bi
-            en="Every entry carries a CODA™ score card: its position on the HUB Institute matrix, built from two measured axes. The vertical axis is the autonomy ladder N1-N4; the horizontal axis counts the maillons of the entry's value-chain frieze that the agent measurably instruments. The quadrant - Copiloted, Orchestrated, Delegated, Agentic - follows from the two axes (high autonomy = N3+, broad scope = 6+ maillons); it is never assigned directly."
-            fr="Chaque fiche porte une CODA™ Score Card : sa position sur la matrice du HUB Institute, construite à partir de deux axes mesurés. L'axe vertical est l'escalier d'autonomie N1-N4 ; l'axe horizontal compte les maillons de la frise de la chaîne de valeur que l'agent instrumente de façon mesurable. Le quadrant - Copiloté, Orchestré, Délégué, Agentique - découle des deux axes (autonomie forte = N3+, portée large = 6 maillons et plus) ; il n'est jamais attribué directement."
-          />
-        </p>
-        <ol className="mt-4 space-y-2 text-sm leading-relaxed">
-          <li className="rounded-xl bg-lilac-soft p-3">
+      {/* The CODA score card, in the CODA palette: quadrant tints and level colours
+          match the scoring map on the home page and the card on every fiche. */}
+      <section className="mt-10 overflow-hidden rounded-2xl border border-lavender-line">
+        <div className="bg-mauve-night px-6 py-4 text-white">
+          <h2 className="text-xl font-black uppercase tracking-tight">
+            <Bi en="The CODA™ score card" fr="La CODA™ Score Card" />
+          </h2>
+        </div>
+        {/* the four quadrant colours as a band under the title */}
+        <div className="flex h-1.5" aria-hidden>
+          {CODA_ORDER.map((k) => (
+            <span key={k} className="flex-1" style={{ background: CODA[k].color }} />
+          ))}
+        </div>
+        <div className="p-6">
+          <p className="text-sm leading-relaxed text-ink-soft">
             <Bi
-              en={<><strong className="text-ink">N1 · Assistance.</strong>{" "}The agent proposes, the human does. Every output is reworked: writing, analysis and code copilots.</>}
-              fr={<><strong className="text-ink">N1 · Assistance.</strong>{" "}L&apos;agent propose, l&apos;humain fait. Chaque sortie est reprise : copilotes de rédaction, d&apos;analyse, de code.</>}
+              en="Every entry carries a CODA™ score card: its position on the matrix, built from two measured axes. The vertical axis is the autonomy ladder, N1 to N4; the horizontal axis counts the Maillons of the entry's value-chain frieze that the agent measurably instruments. The quadrant follows from the two axes (high autonomy means N3 or above, broad scope means 6 Maillons or more); it is never assigned directly."
+              fr="Chaque fiche porte une CODA™ Score Card : sa position sur la matrice, construite à partir de deux axes mesurés. L'axe vertical est l'escalier d'autonomie, de N1 à N4 ; l'axe horizontal compte les Maillons de la frise de la chaîne de valeur que l'agent instrumente de façon mesurable. Le quadrant découle des deux axes (autonomie forte à partir de N3, portée large à partir de 6 Maillons) ; il n'est jamais attribué directement."
             />
-          </li>
-          <li className="rounded-xl bg-lilac-soft p-3">
+          </p>
+
+          <ul className="mt-5 grid gap-2.5 sm:grid-cols-2">
+            {CODA_ORDER.map((k) => {
+              const q = CODA[k];
+              return (
+                <li key={k} className="rounded-xl border-l-4 p-3" style={{ borderColor: q.color, background: q.fill }}>
+                  <p className="text-sm font-black" style={{ color: q.color }}>
+                    {k} · <Bi en={q.en} fr={q.fr} />
+                  </p>
+                  <p className="mt-0.5 text-xs leading-snug text-ink-soft">
+                    <Bi en={q.taglineEn} fr={q.taglineFr} />
+                  </p>
+                </li>
+              );
+            })}
+          </ul>
+
+          <ol className="mt-5 space-y-2 text-sm leading-relaxed">
+            {RUNGS.map((r) => {
+              const l = LEVELS[r.n];
+              return (
+                <li key={r.n} className="flex items-start gap-3 rounded-xl border border-lavender-line bg-paper p-3">
+                  <span
+                    className="mt-0.5 grid h-6 min-w-[2.4rem] shrink-0 place-items-center rounded-md px-1 text-xs font-black text-white"
+                    style={{ background: l.color }}
+                  >
+                    N{r.n}
+                  </span>
+                  <span className="text-ink-soft">
+                    <strong className="text-ink">
+                      <Bi en={l.en} fr={l.fr} />.
+                    </strong>{" "}
+                    <Bi en={r.en} fr={r.fr} />
+                  </span>
+                </li>
+              );
+            })}
+          </ol>
+
+          <p className="mt-4 rounded-xl bg-lilac-soft p-3 text-sm leading-relaxed text-ink-soft">
             <Bi
-              en={<><strong className="text-ink">N2 · Validated execution.</strong>{" "}The agent does, the human validates before impact. Answering is not executing: a purely informational agent stays at N2 even when no one reviews each reply.</>}
-              fr={<><strong className="text-ink">N2 · Exécution validée.</strong>{" "}L&apos;agent fait, l&apos;humain valide avant impact. Répondre n&apos;est pas exécuter : un agent purement informationnel reste en N2 même quand personne ne relit chaque réponse.</>}
+              en={<><strong className="text-ink">The counting rule (X axis).</strong>{" "}Each entry is read against a frieze of 10 Maillons of its own process (customer-care journey, purchase journey, procurement, claims, fraud, pricing, and so on). A Maillon counts when the agent does measurable work there (reading, analysis, action); a Maillon merely fed by its results does not. Scope = full Maillons + half the partial ones: restricted from 1 to 2, intermediate from 3 to 6, extended from 7 to 10.</>}
+              fr={<><strong className="text-ink">La règle de comptage (axe X).</strong>{" "}Chaque fiche est lue contre une frise de 10 Maillons propre à son processus (parcours service client, parcours d&apos;achat, achats, sinistres, fraude, pricing, etc.). Un Maillon compte si l&apos;agent y accomplit un travail mesurable (lecture, analyse, action) ; un Maillon simplement alimenté par ses résultats ne compte pas. Portée = Maillons pleins + moitié des partiels : restreinte de 1 à 2, intermédiaire de 3 à 6, étendue de 7 à 10.</>}
             />
-          </li>
-          <li className="rounded-xl bg-lilac-soft p-3">
+          </p>
+          <p className="mt-3 rounded-xl bg-lilac-soft p-3 text-sm leading-relaxed text-ink-soft">
             <Bi
-              en={<><strong className="text-ink">N3 · Delegation under mandate.</strong>{" "}The agent does and commits (refunds, blocks, publishes prices); the human handles exceptions within written bounds.</>}
-              fr={<><strong className="text-ink">N3 · Délégation sous mandat.</strong>{" "}L&apos;agent fait et engage (rembourse, bloque, publie des prix) ; l&apos;humain traite les exceptions dans des bornes écrites.</>}
+              en={<><strong className="text-ink">The four locks.</strong>{" "}Reliable data, a written mandate and tooled supervision open level N3; audited compliance opens N4. The declared level is the lower of the observed level and the level the locks authorize, and a lock without public evidence counts as closed. When an agent&apos;s observed autonomy exceeds what its documented locks authorize, the card shows both: the solid dot is the declared level, the amber outline the observed one.</>}
+              fr={<><strong className="text-ink">Les quatre verrous.</strong>{" "}La donnée fiable, le mandat écrit et la supervision outillée ouvrent le niveau N3 ; la conformité auditée ouvre le N4. Le niveau déclaré est le plus bas entre le niveau observé et celui qu&apos;autorisent les verrous, et un verrou sans preuve publique est réputé fermé. Quand l&apos;autonomie observée d&apos;un agent dépasse ce que ses verrous documentés autorisent, la carte montre les deux : le point plein est le niveau déclaré, le contour ambre le niveau observé.</>}
             />
-          </li>
-          <li className="rounded-xl bg-lilac-soft p-3">
+          </p>
+          <p className="mt-4 text-sm leading-relaxed text-ink-soft">
             <Bi
-              en={<><strong className="text-ink">N4 · Audited autonomy.</strong>{" "}The agent chains decisions end to end; the human governs through reviews, journals and veto rights.</>}
-              fr={<><strong className="text-ink">N4 · Autonomie auditée.</strong>{" "}L&apos;agent enchaîne les décisions de bout en bout ; l&apos;humain gouverne par les revues, les journaux et le droit de veto.</>}
+              en="The same grid reads agentic commerce: there the mandate is the purchase itself. An agent that discovers, compares and prepares while the customer confirms and pays holds no mandate (N2 on the purchase journey); the level rises only when the agent transacts within bounds the customer wrote. Placement is our analytical judgment from public sources, never a label the company or vendor applied; when the sources are too thin to place a deployment, the card stays unset."
+              fr="La même grille lit le commerce agentique : le mandat y est l'achat lui-même. Un agent qui découvre, compare et prépare pendant que le client confirme et paie n'a pas de mandat (N2 sur le parcours d'achat) ; le niveau ne monte que quand l'agent transige dans des bornes écrites par le client. Le placement relève de notre jugement analytique sur sources publiques, jamais d'une étiquette posée par l'entreprise ou l'éditeur ; quand les sources sont trop minces, la carte reste vide."
             />
-          </li>
-        </ol>
-        <p className="mt-4 rounded-xl bg-lilac-soft p-3 text-sm leading-relaxed text-ink-soft">
-          <Bi
-            en={<><strong className="text-ink">The 24-hour test.</strong>{" "}&ldquo;If the human does nothing for 24 hours, does the decision still get made?&rdquo; No: N1-N2. Yes, within written bounds: N3. Yes, re-arbitrations included, under reviews: N4. One proof criterion: what the journals attest, not what the agent&apos;s manager declares - so a vendor-only sourced entry can never be observed beyond N2.</>}
-            fr={<><strong className="text-ink">Le test des 24 heures.</strong>{" "}« Si l&apos;humain ne fait rien pendant 24 heures, la décision se prend-elle ? » Non : N1-N2. Oui, dans des bornes écrites : N3. Oui, ré-arbitrages compris, sous revues : N4. Un seul critère de preuve : ce que les journaux constatent, pas ce que le gestionnaire d&apos;agent déclare - une fiche sourcée uniquement éditeur ne peut donc jamais être observée au-delà de N2.</>}
-          />
-        </p>
-        <p className="mt-3 rounded-xl bg-lilac-soft p-3 text-sm leading-relaxed text-ink-soft">
-          <Bi
-            en={<><strong className="text-ink">The counting rule (X axis).</strong>{" "}Each entry is read against a 10-maillon frieze of its own process (customer-care journey, purchase journey, procurement, claims, fraud, pricing, and so on). A maillon counts when the agent does measurable work there - reading, analysis, action; a maillon merely fed by its results does not. Scope = full maillons + half the partial ones: restricted 1-2, intermediate 3-6, extended 7-10.</>}
-            fr={<><strong className="text-ink">La règle de comptage (axe X).</strong>{" "}Chaque fiche est lue contre une frise de 10 maillons propre à son processus (parcours service client, parcours d&apos;achat, achats, sinistres, fraude, pricing, etc.). Un maillon compte si l&apos;agent y accomplit un travail mesurable - lecture, analyse, action ; un maillon simplement alimenté par ses résultats ne compte pas. Portée = maillons pleins + moitié des partiels : restreint 1-2, intermédiaire 3-6, étendu 7-10.</>}
-          />
-        </p>
-        <p className="mt-3 rounded-xl bg-lilac-soft p-3 text-sm leading-relaxed text-ink-soft">
-          <Bi
-            en={<><strong className="text-ink">The four locks and the anti agent-washing clause.</strong>{" "}Reliable data, a written mandate and tooled supervision open level N3; audited compliance opens N4. Declared level = min(observed level, level authorized by the locks) - and a lock without public evidence counts as closed. When an agent&apos;s observed autonomy exceeds what its documented locks authorize, the card shows both: the solid dot is the declared level, the amber outline the observed one.</>}
-            fr={<><strong className="text-ink">Les quatre verrous et la clause anti agent-washing.</strong>{" "}La donnée fiable, le mandat écrit et la supervision outillée ouvrent le niveau N3 ; la conformité auditée ouvre le N4. Niveau déclaré = min(niveau observé, niveau autorisé par les verrous) - et un verrou sans preuve publique est réputé fermé. Quand l&apos;autonomie observée d&apos;un agent dépasse ce que ses verrous documentés autorisent, la carte montre les deux : le point plein est le niveau déclaré, le contour ambre le niveau observé.</>}
-          />
-        </p>
-        <p className="mt-4 text-sm leading-relaxed text-ink-soft">
-          <Bi
-            en="The same grid reads agentic commerce: there the mandate is the purchase itself - an agent that discovers, compares and prepares while the customer confirms and pays holds no mandate (N2 on the purchase journey); the level rises only when the agent transacts within bounds the customer wrote. Placement is our analytical judgment from public sources, never a label the company or vendor applied; when the sources are too thin to place a deployment, the card stays unset."
-            fr="La même grille lit le commerce agentique : le mandat y est l'achat lui-même - un agent qui découvre, compare et prépare pendant que le client confirme et paie n'a pas de mandat (N2 sur le parcours d'achat) ; le niveau ne monte que quand l'agent transige dans des bornes écrites par le client. Le placement relève de notre jugement analytique sur sources publiques, jamais d'une étiquette posée par l'entreprise ou l'éditeur ; quand les sources sont trop minces, la carte reste vide."
-          />
-        </p>
+          </p>
+        </div>
       </section>
 
       <section className="mt-10">
         <h2 className="text-xl font-black uppercase tracking-tight">
-          <Bi en="The sourcing standard" fr="Le standard de sourcing" />
+          <Bi en="The sourcing thesis" fr="La thèse du sourcing" />
         </h2>
         <ul className="mt-4 space-y-3 text-sm leading-relaxed text-ink-soft">
           <li className="rounded-xl border border-lavender-line p-4">
@@ -349,70 +364,44 @@ export default function MethodologyPage() {
         </h2>
         <p className="mt-3 text-sm leading-relaxed text-ink-soft">
           <Bi
-            en={
-              <>
-                A scheduled curation run executes daily without human input: it generates fresh
-                discovery queries across sectors, industries, regions and languages (the matrix
-                rotates so non-English press is searched, not just US and EU coverage), searches
-                the live web, applies the rule in deterministic code, deduplicates against the
-                existing catalog (the same company plus the same solution is an update, never a second entry) and rebuilds this site. The data store (
-                <code className="rounded bg-lilac px-1 py-0.5 text-xs">data/entries.json</code>) is
-                the single source of truth, so any entry can be audited or corrected by hand.
-              </>
-            }
-            fr={
-              <>
-                Une curation planifiée s&apos;exécute chaque jour sans intervention humaine : elle
-                génère de nouvelles requêtes de découverte par secteur, industrie, région et langue
-                (la matrice tourne pour couvrir la presse non anglophone, pas seulement les États-Unis
-                et l&apos;Europe), interroge le web en direct, applique la règle dans du code
-                déterministe, déduplique contre le catalogue (même entreprise plus même solution
-                égale mise à jour, jamais un doublon) et reconstruit ce site. Le magasin de données
-                (<code className="rounded bg-lilac px-1 py-0.5 text-xs">data/entries.json</code>)
-                est l&apos;unique source de vérité : toute fiche peut être auditée ou corrigée à la
-                main.
-              </>
-            }
+            en="A scheduled curation run generates fresh discovery queries across sectors, industries, regions and languages (the matrix rotates so non-English press is searched, not just US and EU coverage), searches the live web, applies the rule in deterministic code, deduplicates against the existing catalog (the same company plus the same solution is an update, never a second entry) and rebuilds this site."
+            fr="Une curation planifiée génère de nouvelles requêtes de découverte par secteur, industrie, région et langue (la matrice tourne pour couvrir la presse non anglophone, pas seulement les États-Unis et l'Europe), interroge le web en direct, applique la règle dans du code déterministe, déduplique contre le catalogue (même entreprise plus même solution égale mise à jour, jamais un doublon) et reconstruit ce site."
           />
-        </p>
-        <p className="mt-4 text-sm text-muted">
-          <Bi en="Catalog now:" fr="Catalogue actuel :" /> {stats.entries}{" "}
-          <Bi en="entries" fr="fiches" /> · {stats.countries} <Bi en="countries" fr="pays" /> ·{" "}
-          <Bi en="last updated" fr="dernière mise à jour" />{" "}
-          {stats.updatedAt ? (
-            formatTimestamp(stats.updatedAt)
-          ) : (
-            <Bi en="(awaiting first run)" fr="(en attente de la première curation)" />
-          )}
-          .
         </p>
       </section>
 
       <section className="mt-10 rounded-2xl border border-lavender-line bg-lilac-soft p-6">
         <h2 className="text-xl font-black uppercase tracking-tight">
-          <Bi en="Who's behind this" fr="Qui est derrière" />
+          <Bi en="Who leads the initiative" fr="Qui porte l'initiative" />
         </h2>
         <p className="mt-2 text-sm leading-relaxed text-ink-soft">
           <Bi
             en={
               <>
-                Agentipedia is the AI observatory of <strong>HUB Institute</strong>, the Paris-based
-                think tank that helps decision-makers move from promise to business proof, the
-                team behind HUBFORUM and the HUB Institute communities. The Index Live exists to give
-                those decision-makers hard precedents: who deployed what, where, with which
-                results, and on whose word.
+                Agentipedia is the AI observatory of <strong>HUB Institute</strong>, the consulting
+                firm and think tank that helps decision-makers move from promise to business proof,
+                the team behind HUBFORUM and the HUB Institute communities. The index exists to give
+                those decision-makers hard precedents: who deployed what, where, with which results,
+                and on whose word.
               </>
             }
             fr={
               <>
-                Agentipedia est l&apos;observatoire IA du <strong>HUB Institute</strong>, le think
-                tank parisien qui aide les décideurs à passer de la promesse à la preuve business, l&apos;équipe derrière HUBFORUM et les communautés HUB Institute. L&apos;Index Live
+                Agentipedia est l&apos;observatoire IA du <strong>HUB Institute</strong>, le cabinet de
+                conseil et think tank qui aide les décideurs à passer de la promesse à la preuve
+                business, l&apos;équipe derrière HUBFORUM et les communautés HUB Institute. L&apos;index
                 existe pour donner à ces décideurs des précédents solides : qui a déployé quoi, où,
                 avec quels résultats, et sur la parole de qui.
               </>
             }
           />
         </p>
+        <Link
+          href="/#offres"
+          className="mt-5 inline-flex items-center gap-2 rounded-full bg-[#e11e8c] px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#c4157a]"
+        >
+          <Bi en="Discover our offers" fr="Découvrir nos offres" /> →
+        </Link>
       </section>
     </main>
   );

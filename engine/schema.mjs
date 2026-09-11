@@ -56,7 +56,7 @@ export const CODA_LOCKS = ["data", "mandate", "supervision", "compliance"];
 export const SECTORS = [
   "Financial Services",
   "Insurance",
-  "Healthcare & Life Sciences",
+  "Healthcare, Life Sciences & Luxury",
   "Retail & E-commerce",
   "Consumer Goods & Manufacturing",
   "Automotive & Mobility",

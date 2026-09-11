@@ -25,8 +25,8 @@ export function faq(count: number, sectors: number, countries: number): Qa[] {
     {
       qEn: "How does a deployment earn a place in the index?",
       qFr: "Comment un déploiement entre-t-il dans l'index ?",
-      aEn: "Three conditions, all required. The company must be named for real, never \"a large retailer\". The solution must be a named product, platform or internally branded agent, never \"a chatbot\". And at least one retrieved public source must name both. Anything that fails is rejected and logged. The exception is a case a company shares with HUB Institute directly, which is labelled \"client-sourced\" so the reader knows there is no public source.",
-      aFr: "Trois conditions, toutes obligatoires. L'entreprise doit être nommée pour de vrai, jamais « un grand distributeur ». La solution doit être un produit, une plateforme ou un agent interne portant un nom, jamais « un chatbot ». Et au moins une source publique réellement consultée doit nommer les deux. Tout ce qui échoue est rejeté et journalisé. Seule exception : un cas transmis directement au HUB Institute par l'entreprise, étiqueté « source client » pour que le lecteur sache qu'il n'y a pas de source publique.",
+      aEn: "Three conditions, all required. The company must be named for real, never \"a large retailer\". The solution must be a named product, platform or internally branded agent, never \"a chatbot\". And at least one retrieved public source must name both. Anything that fails is rejected. The exception is a case a company shares with HUB Institute directly, which is labelled \"client-sourced\" so the reader knows there is no public source.",
+      aFr: "Trois conditions, toutes obligatoires. L'entreprise doit être nommée pour de vrai, jamais « un grand distributeur ». La solution doit être un produit, une plateforme ou un agent interne portant un nom, jamais « un chatbot ». Et au moins une source publique réellement consultée doit nommer les deux. Tout ce qui échoue est rejeté. Seule exception : un cas transmis directement au HUB Institute par l'entreprise, étiqueté « source client » pour que le lecteur sache qu'il n'y a pas de source publique.",
     },
     {
       qEn: "What is the CODA™ method?",
@@ -37,8 +37,8 @@ export function faq(count: number, sectors: number, countries: number): Qa[] {
     {
       qEn: "What do the autonomy levels N1 to N4 mean?",
       qFr: "Que signifient les niveaux d'autonomie N1 à N4 ?",
-      aEn: "N1, the agent proposes and a human does. N2, the agent does and a human validates before impact. N3, the agent executes and commits within written bounds, the human handles exceptions. N4, the agent chains decisions end to end and the human governs through reviews and veto rights. The test is simple: if the human does nothing for 24 hours, does the decision still get made?",
-      aFr: "N1, l'agent propose et l'humain fait. N2, l'agent fait et l'humain valide avant impact. N3, l'agent exécute et engage dans des bornes écrites, l'humain traite les exceptions. N4, l'agent enchaîne les décisions de bout en bout et l'humain gouverne par les revues et le droit de veto. Le test est simple : si l'humain ne fait rien pendant 24 heures, la décision se prend-elle ?",
+      aEn: "N1, the agent proposes and a human does. N2, the agent does and a human validates before impact. N3, the agent executes and commits within written bounds, the human handles exceptions. N4, the agent chains decisions end to end and the human governs through reviews and veto rights.",
+      aFr: "N1, l'agent propose et l'humain fait. N2, l'agent fait et l'humain valide avant impact. N3, l'agent exécute et engage dans des bornes écrites, l'humain traite les exceptions. N4, l'agent enchaîne les décisions de bout en bout et l'humain gouverne par les revues et le droit de veto.",
     },
     {
       qEn: "What does a scope of 3/10 or 7/10 mean?",

@@ -10,7 +10,7 @@
 export const SECTOR_FR: Record<string, string> = {
   "Financial Services": "Services financiers",
   "Public Sector & Education": "Secteur public & éducation",
-  "Healthcare & Life Sciences": "Santé & sciences du vivant",
+  "Healthcare, Life Sciences & Luxury": "Santé, sciences du vivant & luxe",
   "Retail & E-commerce": "Commerce & e-commerce",
   "Travel & Transportation": "Voyage & transport",
   "Media & Entertainment": "Médias & divertissement",

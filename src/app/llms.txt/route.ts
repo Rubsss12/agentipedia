@@ -26,7 +26,7 @@ ${updated ? `Last updated: ${updated}\n` : ""}
 ## What makes this index unusual
 
 - No source, no entry. An entry exists only when a retrieved public source names both a real company and a named solution. Never "a large retailer", never "a chatbot".
-- Every entry is scored on two independent measured axes: autonomy N1-N4, and the number of value-chain links (1-10) the agent measurably instruments.
+- Every entry is scored on two independent measured axes: autonomy N1 to N4, and the number of value-chain links (1 to 10) the agent measurably instruments.
 - Declared level = min(observed level, level the documented locks authorise). Vendor-marketing-only evidence caps the observed level at N2. ${f.cappedByLocks} entries are observed acting above what their governance authorises.
 - Cases shared directly by a company with no public source are published and labelled "client-sourced" rather than dressed up as verified.
 
@@ -44,9 +44,9 @@ ${f.byQuadrant.map((r) => `- Quadrant ${r.labelEn}: ${r.n}`).join("\n")}
 ## Primary pages
 
 - [The index](${SITE_URL}/): searchable catalog of all ${f.total} deployments, filterable by CODA(TM) quadrant, level, sector, country, stage and confidence.
-- [The index in figures](${SITE_URL}/figures/): the distributions above, with sources and licence to cite.
+- [Agentipedia in figures](${SITE_URL}/figures/): the distributions above, with sources and licence to cite.
 - [Methodology](${SITE_URL}/methodology/): the two-field rule, the sourcing standard, the confidence policy.
-- [FAQ](${SITE_URL}/faq/): what CODA(TM) measures, what N1-N4 mean, what scope x/10 means.
+- [FAQ](${SITE_URL}/faq/): what CODA(TM) measures, what N1 to N4 mean, what scope x/10 means.
 
 ## Sectors
 
