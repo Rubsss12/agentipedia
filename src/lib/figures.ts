@@ -46,9 +46,9 @@ export function getFigures() {
   const scopes = scored.map((e) => codaScope(e.coda!.links));
   const band = (lo: number, hi: number) => scopes.filter((s) => s >= lo && s <= hi).length;
   const byScope: Row[] = [
-    { key: "1-2", labelEn: "Restricted · 1 to 2 links", labelFr: "Restreinte · 1 à 2 maillons", n: band(1, 2) },
-    { key: "3-6", labelEn: "Intermediate · 3 to 6 links", labelFr: "Intermédiaire · 3 à 6 maillons", n: band(3, 6) },
-    { key: "7-10", labelEn: "Extended · 7 to 10 links", labelFr: "Étendue · 7 à 10 maillons", n: band(7, 10) },
+    { key: "1-2", labelEn: "Restricted · 1 to 2 links", labelFr: "Restreint · 1 à 2 Maillons", n: band(1, 2) },
+    { key: "3-6", labelEn: "Intermediate · 3 to 6 links", labelFr: "Intermédiaire · 3 à 6 Maillons", n: band(3, 6) },
+    { key: "7-10", labelEn: "Extended · 7 to 10 links", labelFr: "Étendu · 7 à 10 Maillons", n: band(7, 10) },
   ];
 
   const stages = count(entries.map((e) => e.deployment_stage));

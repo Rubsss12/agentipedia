@@ -18,7 +18,7 @@ export default function Header() {
           <Logo on="dark" />
         </Link>
         <div className="flex shrink-0 items-center gap-2.5 sm:gap-5">
-          <nav aria-label="Sections" className="hidden items-center gap-6 lg:flex">
+          <nav aria-label="Sections" className="hidden items-center gap-1 lg:flex">
             <NavLinks variant="inline" />
           </nav>
           <OffersPill />

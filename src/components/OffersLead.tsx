@@ -31,12 +31,12 @@ const OFFERS: Offer[] = [
     tone: "navy",
   },
   {
-    eyebrowEn: "Consulting",
-    eyebrowFr: "Conseil",
-    titleEn: "AI consulting",
-    titleFr: "Conseil en IA",
-    descEn: "Audit, roadmap, steering and operational activation on your strategic priorities.",
-    descFr: "Audit, feuille de route, pilotage et activation opérationnelle sur vos priorités stratégiques.",
+    eyebrowEn: "AI consulting",
+    eyebrowFr: "Conseil en IA",
+    titleEn: "Agentic Business Forum",
+    titleFr: "Agentic Business Forum",
+    descEn: "The forum where 700 decision-makers come to build their agentic roadmap, with the CODA™ matrix to arbitrate it. 31 March 2027, Paris.",
+    descFr: "Le forum où 700 décideurs viennent construire leur roadmap agentique, avec la matrice CODA™ pour l'arbitrer. Le 31 mars 2027 à Paris.",
     href: `https://agenticbusinessforum.hubinstitute.com/?${UTM}`,
   },
   {

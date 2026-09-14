@@ -189,7 +189,7 @@ export default function FiguresPage() {
           <li>
             <Bi
               en={`Scope is narrow: ${f.byScope[0].n + f.byScope[1].n} deployments instrument 6 or fewer of the 10 links of their value chain. Agents are being deployed on segments of a process, not on whole processes.`}
-              fr={`La portée est étroite : ${f.byScope[0].n + f.byScope[1].n} déploiements instrumentent 6 maillons ou moins sur les 10 de leur chaîne de valeur. Les agents sont déployés sur des segments de processus, pas sur des processus entiers.`}
+              fr={`La portée est étroite : ${f.byScope[0].n + f.byScope[1].n} déploiements instrumentent 6 Maillons ou moins sur les 10 de leur chaîne de valeur. Les agents sont déployés sur des segments de processus, pas sur des processus entiers.`}
             />
           </li>
           <li>

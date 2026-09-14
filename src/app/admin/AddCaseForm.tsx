@@ -142,7 +142,7 @@ export default function AddCaseForm() {
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           <div><label className={label}>Chaîne de valeur</label><select className={input} value={f.chain} onChange={(e) => set("chain", e.target.value)}>{CHAINS.map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select></div>
           <div><label className={label}>Autonomie observée</label><select className={input} value={f.observed} onChange={(e) => set("observed", e.target.value)}><option value="1">N1 · propose</option><option value="2">N2 · prépare</option><option value="3">N3 · exécute</option><option value="4">N4 · transige</option></select></div>
-          <div className="sm:col-span-2"><label className={label}>Les 10 maillons · 0 rien · 1 partiel · 2 plein</label><input className={input} value={f.links} onChange={(e) => set("links", e.target.value)} placeholder="2120000000" maxLength={14} /></div>
+          <div className="sm:col-span-2"><label className={label}>Les 10 Maillons · 0 rien · 1 partiel · 2 plein</label><input className={input} value={f.links} onChange={(e) => set("links", e.target.value)} placeholder="2120000000" maxLength={14} /></div>
           <div className="sm:col-span-2">
             <label className={label}>Verrous avec preuve publique</label>
             <div className="flex flex-wrap gap-4 text-sm">

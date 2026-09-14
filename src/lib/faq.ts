@@ -32,7 +32,7 @@ export function faq(count: number, sectors: number, countries: number): Qa[] {
       qEn: "What is the CODA™ method?",
       qFr: "Qu'est-ce que la méthode CODA™ ?",
       aEn: "CODA™ is HUB Institute's framework for scoring an AI agent on two independent axes: how autonomous it is (N1 to N4, as independent sources attest) and how much of the value chain it instruments (1 to 10 links). The quadrant (Copiloted, Orchestrated, Delegated, Agentic) follows from the two axes rather than being asserted.",
-      aFr: "CODA™ est le cadre du HUB Institute pour scorer un agent IA sur deux axes indépendants : son autonomie (N1 à N4, telle que des sources indépendantes l'attestent) et la part de la chaîne de valeur qu'il instrumente (1 à 10 maillons). Le quadrant (Copiloté, Orchestré, Délégué, Agentique) découle des deux axes au lieu d'être affirmé.",
+      aFr: "CODA™ est le cadre du HUB Institute pour scorer un agent IA sur deux axes indépendants : son autonomie (N1 à N4, telle que des sources indépendantes l'attestent) et la part de la chaîne de valeur qu'il instrumente (1 à 10 Maillons). Le quadrant (Copiloté, Orchestré, Délégué, Agentique) découle des deux axes au lieu d'être affirmé.",
     },
     {
       qEn: "What do the autonomy levels N1 to N4 mean?",
@@ -44,7 +44,7 @@ export function faq(count: number, sectors: number, countries: number): Qa[] {
       qEn: "What does a scope of 3/10 or 7/10 mean?",
       qFr: "Que veut dire une portée de 3/10 ou 7/10 ?",
       aEn: "Scope is the number of links the agent instruments on the ten-step frieze of its own process: a customer-care journey, a procurement process, a claims chain. A link counts only when the agent does measurable work there; a link merely fed by its results does not. Scope = full links + half the partial ones. 1 to 2 is restricted, 3 to 6 intermediate, 7 to 10 extended.",
-      aFr: "La portée est le nombre de maillons que l'agent instrumente sur la frise en dix étapes de son propre processus : parcours service client, processus achats, chaîne sinistres. Un maillon ne compte que si l'agent y accomplit un travail mesurable ; un maillon simplement alimenté par ses résultats, non. Portée = maillons pleins + moitié des partiels. 1 à 2 restreint, 3 à 6 intermédiaire, 7 à 10 étendu.",
+      aFr: "La portée est le nombre de Maillons que l'agent instrumente sur la frise en dix étapes de son propre processus : parcours service client, processus achats, chaîne sinistres. Un Maillon ne compte que si l'agent y accomplit un travail mesurable ; un Maillon simplement alimenté par ses résultats, non. Portée = Maillons pleins + moitié des partiels. 1 à 2 restreint, 3 à 6 intermédiaire, 7 à 10 étendu.",
     },
     {
       qEn: "What separates N2 from N3?",

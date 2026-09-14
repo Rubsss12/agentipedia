@@ -18,7 +18,7 @@ export interface CodaPoint {
 }
 
 const W = 640;
-const H = 452;
+const H = 500;
 // Left margin carries the rotated Y title and the N labels; the bottom one the
 // Maillon numbers, the scope bands and the X title.
 const M = { left: 62, right: 14, top: 14, bottom: 88 };
@@ -37,6 +37,10 @@ function ny(n: number): number {
 const AMBER = "#b45309";
 const INK = "#1b1333";
 
+// The top of the N2 and N4 rows carries the quadrant labels: clusters in those
+// rows start below the label plates, so no dot is ever hidden.
+const reserveFor = (level: CodaLevel) => (level === 2 || level === 4 ? 26 : 0);
+
 export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
   const [lang] = useLang();
   const fr = lang === "fr";
@@ -48,10 +52,10 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
   }, [points]);
 
   // Dots sharing a cell (declared level x scope) are laid out as a small grid
-  // INSIDE that cell. Spacing shrinks per cell until the whole cluster fits, so
-  // a dense cell (a hundred-odd N2 agents) never spills over its neighbours or
-  // over the quadrant labels, while a sparse cell keeps full-size dots.
-  const dots = useMemo(() => {
+  // inside that cell. Every dot on the map has the SAME size: the spacing is set
+  // once, by the most crowded cell, so a dense cell never spills over its
+  // neighbours and a sparse one does not look like a different kind of mark.
+  const { dots, r } = useMemo(() => {
     const groups = new Map<string, CodaPoint[]>();
     for (const p of points) {
       const k = `${p.declared}-${p.scope}`;
@@ -59,21 +63,20 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
       g.push(p);
       groups.set(k, g);
     }
-    const out: { x: number; y: number; r: number; p: CodaPoint }[] = [];
-    for (const [, g] of groups) {
-      // The top of the N2 and N4 rows carries the quadrant labels: clusters in
-      // those rows start below the label plates, so no dot is ever hidden.
-      const reserve = g[0].declared === 2 || g[0].declared === 4 ? 26 : 0;
-      const avail = ROW - 10 - reserve;
-      let s = 10.5;
-      const fits = (sp: number) => {
+    const fits = (sp: number) =>
+      [...groups.values()].every((g) => {
         const perRow = Math.max(1, Math.floor((COL - 6) / sp));
-        return Math.ceil(g.length / perRow) * sp <= avail;
-      };
-      while (s > 3.2 && !fits(s)) s -= 0.25;
+        return Math.ceil(g.length / perRow) * sp <= ROW - 10 - reserveFor(g[0].declared);
+      });
+    let s = 10.5;
+    while (s > 3 && !fits(s)) s -= 0.25;
+    const radius = Math.max(1.6, Math.min(4.4, s * 0.42));
+
+    const out: { x: number; y: number; p: CodaPoint }[] = [];
+    for (const [, g] of groups) {
+      const reserve = reserveFor(g[0].declared);
       const perRow = Math.max(1, Math.min(g.length, Math.floor((COL - 6) / s)));
       const rows = Math.ceil(g.length / perRow);
-      const r = Math.max(1.6, Math.min(4.4, s * 0.42));
       g.forEach((p, i) => {
         const row = Math.floor(i / perRow);
         const col = i % perRow;
@@ -81,12 +84,11 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
         out.push({
           x: mx(p.scope) + (col - (rowCount - 1) / 2) * s,
           y: ny(p.declared) + reserve / 2 + (row - (rows - 1) / 2) * s,
-          r,
           p,
         });
       });
     }
-    return out;
+    return { dots: out, r: radius };
   }, [points]);
 
   const pick = (key: CodaKey) => {
@@ -98,8 +100,7 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
   const midY = M.top + PH / 2;
   const cappedCount = points.filter((p) => p.capped).length;
 
-  // Quadrant names sit on a light plate drawn above the dots, so a crowded cell
-  // can never hide them.
+  // Quadrant names sit on a light plate drawn above the dots.
   const quadLabel = (key: CodaKey, x: number, y: number, anchor: "start" | "end") => {
     const q = CODA[key];
     const text = `${(fr ? q.fr : q.en).toUpperCase()} · ${counts[key]}`;
@@ -108,7 +109,7 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
     return (
       <g pointerEvents="none">
         <rect x={rx} y={y - 14} width={w} height={20} rx={10} fill="#ffffff" fillOpacity={0.92} />
-        <text x={x} y={y} fontSize="12.5" fontWeight="900" letterSpacing=".06em" textAnchor={anchor} fill={q.color}>
+        <text x={x} y={y} fontSize="12.5" fontWeight="900" letterSpacing=".06em" textAnchor={anchor} fill={q.deep}>
           {text}
         </text>
       </g>
@@ -185,7 +186,7 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
               {fr ? "Maillons de la chaîne de valeur instrumentés" : "Instrumented value-chain Maillons"}
             </text>
 
-            {dots.map(({ x, y, r, p }, i) => (
+            {dots.map(({ x, y, p }, i) => (
               <circle
                 key={i}
                 cx={x}
@@ -193,7 +194,7 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
                 r={r}
                 fill={CODA[p.q].color}
                 stroke={p.capped ? AMBER : "#ffffff"}
-                strokeWidth={p.capped ? Math.max(1.2, r * 0.45) : 1}
+                strokeWidth={p.capped ? Math.max(1, r * 0.5) : Math.max(0.5, r * 0.28)}
               />
             ))}
 
@@ -241,32 +242,69 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
         </div>
       </div>
 
-      {/* the four quadrants, each a shortcut into the filtered index */}
-      <ul className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-        {CODA_ORDER.map((key) => {
-          const q = CODA[key];
-          return (
-            <li key={key}>
-              <button
-                onClick={() => pick(key)}
-                className="group flex h-full w-full items-start gap-3 rounded-xl border border-lavender-line bg-paper p-3 text-left transition-colors hover:border-mauve"
-              >
-                <span
-                  className="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-md text-xs font-black text-white"
-                  style={{ background: q.color }}
+      {/* Under the map: the four quadrants as a 2 x 2 of shortcuts, and in the
+          freed corner the CODA matrix itself, as the HUB Institute slide draws it. */}
+      <div className="mt-5 grid gap-4 lg:grid-cols-[minmax(0,1fr)_15rem] lg:items-stretch">
+        <ul className="grid gap-3 sm:grid-cols-2">
+          {CODA_ORDER.map((key) => {
+            const q = CODA[key];
+            return (
+              <li key={key}>
+                <button
+                  onClick={() => pick(key)}
+                  className="group flex h-full w-full items-start gap-3 rounded-xl border border-lavender-line bg-paper p-3 text-left transition-colors hover:border-mauve"
                 >
-                  {key}
-                </span>
-                <span className="min-w-0">
-                  <span className="text-sm font-extrabold group-hover:text-mauve">{fr ? q.fr : q.en}</span>
-                  <span className="ml-2 text-xs font-bold text-muted">{counts[key]}</span>
-                  <span className="block text-xs leading-snug text-muted">{fr ? q.taglineFr : q.taglineEn}</span>
-                </span>
-              </button>
-            </li>
-          );
-        })}
-      </ul>
+                  <span
+                    className="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-md text-xs font-black text-white"
+                    style={{ background: q.color }}
+                  >
+                    {key}
+                  </span>
+                  <span className="min-w-0">
+                    <span className="text-sm font-extrabold group-hover:text-mauve">{fr ? q.fr : q.en}</span>
+                    <span className="ml-2 text-xs font-bold text-muted">{counts[key]}</span>
+                    <span className="block text-xs font-semibold leading-snug text-muted">{fr ? q.taglineFr : q.taglineEn}</span>
+                    <span className="mt-1.5 block text-xs leading-snug text-ink-soft">{fr ? q.descFr : q.descEn}</span>
+                  </span>
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+
+        <figure className="mx-auto w-full max-w-[17rem] rounded-2xl border border-lavender-line bg-paper p-4 lg:max-w-none">
+          <figcaption className="kicker text-mauve">{fr ? "La Matrice CODA™" : "The CODA™ Matrix"}</figcaption>
+          <div className="mt-3 flex gap-2">
+            <p className="kicker shrink-0 rotate-180 text-center text-[0.55rem] leading-tight text-muted [writing-mode:vertical-rl]">
+              {fr ? "Autonomie des agents →" : "Agent autonomy →"}
+            </p>
+            <div className="grid flex-1 grid-cols-2 gap-1">
+              {CODA_GRID.map((key) => {
+                const q = CODA[key];
+                return (
+                  <button
+                    key={key}
+                    onClick={() => pick(key)}
+                    aria-label={`${fr ? q.fr : q.en}: ${counts[key]}`}
+                    className="grid aspect-square place-items-center rounded-md text-white transition-transform hover:scale-[1.03]"
+                    style={{ background: q.color }}
+                  >
+                    <span className="text-center">
+                      <span className="block text-xl font-black leading-none">{key}</span>
+                      <span className="mt-1 block text-[0.52rem] font-extrabold uppercase tracking-wide">
+                        {fr ? q.fr : q.en}
+                      </span>
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+          <p className="kicker mt-2 pl-5 text-center text-[0.55rem] leading-tight text-muted">
+            {fr ? "Portée business, Maillons de la chaîne de valeur →" : "Business scope, value-chain Maillons →"}
+          </p>
+        </figure>
+      </div>
     </div>
   );
 }

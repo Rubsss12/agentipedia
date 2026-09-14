@@ -7,6 +7,12 @@ import Bi from "@/components/Bi";
 
 // The header's section and page links, with the current one lit.
 //
+// Every link is a pill, like "Our offers": the current one fills in white, the
+// others stay outlined by their hover state. "Our offers" is always fuchsia,
+// because it is the call to action, and gains a white ring when the offers band
+// is on screen. Before, it was the only item that changed colour, and only on
+// arrival, which read as a glitch.
+//
 // On the home page the active link follows the scroll (the section whose top
 // has passed under the sticky header); elsewhere it follows the route. One
 // component renders both the inline desktop row and the compact mobile strip,
@@ -63,30 +69,23 @@ export function useActiveSection(): string | null {
   return null;
 }
 
+const PILL = "kicker shrink-0 rounded-full px-3 py-1.5 transition-colors";
+
 export default function NavLinks({ variant }: { variant: "inline" | "strip" }) {
   const active = useActiveSection();
-  const base =
-    variant === "inline"
-      ? "kicker relative shrink-0 py-1 transition-colors"
-      : "kicker relative shrink-0 rounded-full px-3 py-1.5 transition-colors";
-
   return (
     <>
       {ITEMS.map((it) => {
         const on = active === it.id;
-        const cls =
-          variant === "inline"
-            ? `${base} ${on ? "text-white" : "text-white/70 hover:text-mauve-glow"}`
-            : `${base} ${on ? "bg-white/20 text-white" : "text-white/75 hover:text-white"}`;
         return (
-          <Link key={it.id} href={it.href} className={cls} aria-current={on ? (it.page ? "page" : "location") : undefined}>
+          <Link
+            key={it.id}
+            href={it.href}
+            data-variant={variant}
+            aria-current={on ? (it.page ? "page" : "location") : undefined}
+            className={`${PILL} ${on ? "border border-white bg-white text-mauve-ink" : "border border-white/35 text-white/85 hover:bg-white/15 hover:text-white"}`}
+          >
             <Bi en={it.en} fr={it.fr} />
-            {variant === "inline" && (
-              <span
-                aria-hidden
-                className={`absolute inset-x-0 -bottom-1 h-0.5 rounded-full bg-white transition-opacity ${on ? "opacity-100" : "opacity-0"}`}
-              />
-            )}
           </Link>
         );
       })}
@@ -94,14 +93,15 @@ export default function NavLinks({ variant }: { variant: "inline" | "strip" }) {
   );
 }
 
-/** The "Our offers" pill, lit while the offers band is on screen. */
+/** The "Our offers" pill: always fuchsia, ringed while the offers band is on screen. */
 export function OffersPill() {
   const on = useActiveSection() === "offres";
   return (
     <Link
       href="/#offres"
-      className={`shrink-0 rounded-full px-3 py-1.5 text-[0.62rem] font-extrabold uppercase tracking-[0.1em] shadow-sm transition-colors sm:px-4 sm:text-[0.7rem] ${
-        on ? "bg-[#e11e8c] text-white" : "bg-white text-mauve-ink hover:bg-lilac"
+      aria-current={on ? "location" : undefined}
+      className={`shrink-0 rounded-full bg-[#e11e8c] px-3 py-1.5 text-[0.62rem] font-extrabold uppercase tracking-[0.1em] text-white shadow-sm transition-all hover:bg-[#c4157a] sm:px-4 sm:text-[0.7rem] ${
+        on ? "ring-2 ring-white" : ""
       }`}
     >
       <Bi en="Our offers" fr="Nos offres" />

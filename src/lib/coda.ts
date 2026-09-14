@@ -40,8 +40,9 @@ export interface CodaQuadrant {
   fr: string;
   autonomy: "low" | "high";
   scope: "narrow" | "broad";
-  color: string; // solid, badges and dots
+  color: string; // solid, badges and dots (the CODA slide palette)
   fill: string; // light tint, matrix cells on the score card
+  deep: string; // darker shade, for the colour as text on a light background
   taglineEn: string;
   taglineFr: string;
   descEn: string;
@@ -51,29 +52,29 @@ export interface CodaQuadrant {
 export const CODA: Record<CodaKey, CodaQuadrant> = {
   C: {
     key: "C", level: 1, en: "Copiloted", fr: "Copiloté",
-    autonomy: "low", scope: "narrow", color: "#9aa6b8", fill: "#e9edf3",
-    taglineEn: "Low autonomy, narrow scope", taglineFr: "Autonomie faible, périmètre étroit",
+    autonomy: "low", scope: "narrow", color: "#94a7c0", fill: "#e9eef5", deep: "#56677f",
+    taglineEn: "Low autonomy, narrow scope", taglineFr: "Autonomie faible, portée étroite",
     descEn: "Punctual assistants; a person validates or consumes each output. Fast benefits, limited risk. The starting point of most companies in 2026.",
     descFr: "Des assistants ponctuels ; un humain valide ou consomme chaque sortie. Bénéfices rapides, risques limités. Le point de départ de la majorité des entreprises en 2026.",
   },
   O: {
     key: "O", level: 2, en: "Orchestrated", fr: "Orchestré",
-    autonomy: "low", scope: "broad", color: "#4e77b0", fill: "#dfe9f6",
-    taglineEn: "Low autonomy, broad scope", taglineFr: "Autonomie faible, périmètre large",
+    autonomy: "low", scope: "broad", color: "#4f86c6", fill: "#e0ebf7", deep: "#2f629f",
+    taglineEn: "Low autonomy, broad scope", taglineFr: "Autonomie faible, portée large",
     descEn: "AI coordinates whole processes, but the human stays in the loop at every critical step. The favoured model of regulated sectors.",
     descFr: "L'IA coordonne des processus entiers, mais l'humain reste dans la boucle à chaque étape critique. Le modèle privilégié des secteurs régulés.",
   },
   D: {
     key: "D", level: 3, en: "Delegated", fr: "Délégué",
-    autonomy: "high", scope: "narrow", color: "#e0a43b", fill: "#f8eed7",
-    taglineEn: "High autonomy, narrow scope", taglineFr: "Autonomie forte, périmètre étroit",
+    autonomy: "high", scope: "narrow", color: "#f0a93e", fill: "#fdf0dc", deep: "#a8650a",
+    taglineEn: "High autonomy, narrow scope", taglineFr: "Autonomie forte, portée étroite",
     descEn: "Agents execute and commit on targeted tasks; the human handles exceptions within written bounds. The operational-efficiency model.",
     descFr: "Les agents exécutent et engagent sur des tâches ciblées ; l'humain traite les exceptions dans des bornes écrites. Le modèle de l'efficacité opérationnelle.",
   },
   A: {
     key: "A", level: 4, en: "Agentic", fr: "Agentique",
-    autonomy: "high", scope: "broad", color: "#6b2bd9", fill: "#ece7f8",
-    taglineEn: "High autonomy, broad scope", taglineFr: "Autonomie forte, périmètre large",
+    autonomy: "high", scope: "broad", color: "#8b5cf6", fill: "#efe9fe", deep: "#6a3bd8",
+    taglineEn: "High autonomy, broad scope", taglineFr: "Autonomie forte, portée large",
     descEn: "Systems chain decisions across a whole process end to end; the human governs through reviews, journals and veto rights. A few pioneers in 2026.",
     descFr: "Des systèmes enchaînent les décisions sur un processus entier de bout en bout ; l'humain gouverne par les revues, les journaux et le droit de veto. Quelques pionniers en 2026.",
   },
@@ -95,25 +96,25 @@ export const LEVELS: Record<CodaLevel, {
     n: "N1", en: "Assistance", fr: "Assistance", verbEn: "Proposes", verbFr: "Propose",
     descEn: "The agent proposes, the human does. Every output is reworked: writing, analysis and code copilots.",
     descFr: "L'agent propose, l'humain fait. Chaque sortie est reprise : copilotes de rédaction, d'analyse, de code.",
-    color: "#9aa6b8",
+    color: "#94a7c0",
   },
   2: {
     n: "N2", en: "Validated execution", fr: "Exécution validée", verbEn: "Prepares", verbFr: "Prépare",
     descEn: "The agent does, the human validates before impact: the systematic human-in-the-loop of orchestrated processes. Answering is not executing: a purely informational agent stays here.",
     descFr: "L'agent fait, l'humain valide avant impact : le human-in-the-loop systématique des processus orchestrés. Répondre n'est pas exécuter : un agent purement informationnel reste ici.",
-    color: "#4e77b0",
+    color: "#4f86c6",
   },
   3: {
     n: "N3", en: "Delegation under mandate", fr: "Délégation sous mandat", verbEn: "Executes", verbFr: "Exécute",
     descEn: "The agent does and commits; the human handles exceptions and audits a posteriori within written bounds.",
     descFr: "L'agent fait et engage ; l'humain traite les exceptions et audite a posteriori dans des bornes écrites.",
-    color: "#e0a43b",
+    color: "#f0a93e",
   },
   4: {
     n: "N4", en: "Audited autonomy", fr: "Autonomie auditée", verbEn: "Transacts", verbFr: "Transige",
     descEn: "The agent chains decisions end to end; the human governs: reviews, journals and veto rights.",
     descFr: "L'agent enchaîne les décisions de bout en bout ; l'humain gouverne : revues, journaux et droits de veto.",
-    color: "#6b2bd9",
+    color: "#8b5cf6",
   },
 };
 

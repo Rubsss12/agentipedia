@@ -67,7 +67,7 @@ export function takeaways(e: Entry): Takeaway[] {
         (capped ? ` Observed at N${e.coda.observed} but capped at N${declared}: the locks documented publicly do not authorise more.` : ""),
       fr:
         `Scoré N${declared}, ${lvl.fr.toLowerCase()} : l'agent ${lvl.verbFr.toLowerCase()}. Quadrant ${q?.fr ?? "n/d"}, ` +
-        `${scope}/10 maillons de la chaîne de valeur instrumentés sur la matrice CODA™ du HUB Institute.` +
+        `${scope}/10 Maillons de la chaîne de valeur instrumentés sur la matrice CODA™ du HUB Institute.` +
         (capped ? ` Observé à N${e.coda.observed} mais plafonné à N${declared} : les verrous documentés publiquement n'autorisent pas davantage.` : ""),
     });
   }

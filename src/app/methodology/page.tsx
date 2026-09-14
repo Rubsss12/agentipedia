@@ -194,7 +194,7 @@ export default function MethodologyPage() {
               const q = CODA[k];
               return (
                 <li key={k} className="rounded-xl border-l-4 p-3" style={{ borderColor: q.color, background: q.fill }}>
-                  <p className="text-sm font-black" style={{ color: q.color }}>
+                  <p className="text-sm font-black" style={{ color: q.deep }}>
                     {k} · <Bi en={q.en} fr={q.fr} />
                   </p>
                   <p className="mt-0.5 text-xs leading-snug text-ink-soft">

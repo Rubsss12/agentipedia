@@ -82,7 +82,7 @@ function ScoreMap({ a, label }: { a: CodaAssessment; label: string }) {
           ["O", midX + 8, midY + 15],
         ] as const
       ).map(([k, x, y]) => (
-        <text key={k} x={x} y={y} fontSize="10.5" fontWeight="900" letterSpacing=".08em" fill={CODA[k].color}>
+        <text key={k} x={x} y={y} fontSize="10.5" fontWeight="900" letterSpacing=".08em" fill={CODA[k].deep}>
           <tspan className="lang-en">{CODA[k].en.toUpperCase()}</tspan>
           <tspan className="lang-fr">{CODA[k].fr.toUpperCase()}</tspan>
         </text>
@@ -204,8 +204,8 @@ export default function CodaCard({ a, name }: { a: CodaAssessment; name: string 
           </ol>
           <p className="mt-2.5 rounded-lg bg-lilac-soft px-3 py-2 text-xs font-bold text-mauve-deep">
             <Bi
-              en={`Instrumented maillons: ${full} full + ${partial} partial ≈ ${scope}/10`}
-              fr={`Maillons instrumentés : ${full} pleins + ${partial} partiels ≈ ${scope}/10`}
+              en={`Instrumented Maillons: ${full} full + ${partial} partial ≈ ${scope}/10`}
+              fr={`Maillons instrumentés : ${full} plein${full > 1 ? "s" : ""} + ${partial} partiel${partial > 1 ? "s" : ""} ≈ ${scope}/10`}
             />
           </p>
         </div>
@@ -231,7 +231,7 @@ export default function CodaCard({ a, name }: { a: CodaAssessment; name: string 
               </span>
             )}
             <span className="ml-auto">
-              <Bi en="Autonomy (Y) × instrumented maillons (X)" fr="Autonomie (Y) × maillons instrumentés (X)" />
+              <Bi en="Autonomy (Y) × instrumented Maillons (X)" fr="Autonomie (Y) × Maillons instrumentés (X)" />
             </span>
           </div>
         </div>
@@ -239,7 +239,7 @@ export default function CodaCard({ a, name }: { a: CodaAssessment; name: string 
 
       {/* ===== verdict ===== */}
       <div className="border-t border-lavender-line px-4 py-3">
-        <p className="text-sm font-black" style={{ color: q.color }}>
+        <p className="text-sm font-black" style={{ color: q.deep }}>
           <Bi en={q.en} fr={q.fr} /> · N{declared} <Bi en={lvl.en} fr={lvl.fr} />
           <span className="font-bold text-muted">
             {" "}
