@@ -24,7 +24,6 @@ const H = 600;
 const M = { left: 50, right: 8, top: 14, bottom: 88 };
 const PW = W - M.left - M.right;
 const PH = H - M.top - M.bottom;
-const COL = PW / 10;
 
 // Four equal rows, so the four quadrants stay the same size as on the CODA
 // slide. Fractions of the plot height, N1 at the bottom.
@@ -33,9 +32,6 @@ const LEVELS_UP: CodaLevel[] = [1, 2, 3, 4];
 const rowH = (n: CodaLevel) => PH * FRAC[n];
 const rowBottom = (n: CodaLevel) => M.top + PH - LEVELS_UP.filter((k) => k < n).reduce((sum, k) => sum + rowH(k), 0);
 
-function mx(m: number): number {
-  return M.left + ((m - 0.5) / 10) * PW;
-}
 function ny(n: CodaLevel): number {
   return rowBottom(n) - rowH(n) / 2;
 }
@@ -63,11 +59,14 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
   }, [points]);
 
   // Dots sharing a cell (declared level x scope) sit on a small staggered grid
-  // inside that cell. Every dot on the map has the SAME size: the spacing is set
-  // once, by the most crowded cell, so no cluster ever leaves its cell. Dots just
+  // inside that cell. Every dot on the map has the SAME size and the four
+  // quadrants keep equal areas; what adapts is the width of each Maillon column,
+  // which follows the agents it holds (column 2 carries 123 of them, columns 9
+  // and 10 none), while the narrow/broad boundary stays exactly in the middle.
+  // The largest dot size that fits every cell is then used everywhere. Dots just
   // touch, each keeping its white rim; amber-ringed dots are drawn last so their
   // ring is never covered by a neighbour.
-  const { dots, r } = useMemo(() => {
+  const { dots, r, colLeft, colW } = useMemo(() => {
     const groups = new Map<string, CodaPoint[]>();
     for (const p of points) {
       const k = `${p.declared}-${p.scope}`;
@@ -76,31 +75,57 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
       groups.set(k, g);
     }
     const V = Math.sqrt(3) / 2; // row pitch of a hexagonal packing
-    const width = COL - 4;
-    const shape = (n: number, sp: number) => {
-      const even = Math.max(1, Math.floor(width / sp));
-      const odd = even * sp + sp / 2 <= width ? even : Math.max(1, even - 1);
-      let rows = 0;
-      let cap = 0;
-      while (cap < n) {
-        cap += rows % 2 ? odd : even;
-        rows++;
+    const PAD = 6; // breathing room between neighbouring columns
+    const MINW = 26; // no column narrower than this, so its number never crowds
+    const HALF = PW / 2;
+    const HALVES = [
+      [1, 2, 3, 4, 5],
+      [6, 7, 8, 9, 10],
+    ];
+    const EPS = 1e-6;
+    const count = (level: CodaLevel, scope: number) => groups.get(`${level}-${scope}`)?.length ?? 0;
+    const avail = (level: CodaLevel) => rowH(level) - 6 - reserveFor(level);
+
+    // Narrowest column that holds n dots at spacing sp within the row's height.
+    const need = (n: number, level: CodaLevel, sp: number) => {
+      if (!n) return 0;
+      const maxRows = Math.floor((avail(level) - 2 * DOT * sp) / (sp * V) + EPS) + 1;
+      if (maxRows < 1) return Infinity;
+      for (let even = 1; even <= n; even++) {
+        const odd = Math.max(1, even - 1);
+        if (Math.ceil(maxRows / 2) * even + Math.floor(maxRows / 2) * odd >= n) {
+          return (even - 1) * sp + 2 * DOT * sp + (even === 1 ? sp / 2 : 0) + PAD;
+        }
       }
-      return { even, odd, rows };
+      return Infinity;
     };
+    const colNeed = (scope: number, sp: number) =>
+      Math.max(MINW, ...LEVELS_UP.map((l) => need(count(l, scope), l, sp)));
     const fits = (sp: number) =>
-      [...groups.values()].every((g) => {
-        const { rows } = shape(g.length, sp);
-        return (rows - 1) * sp * V + 2 * DOT * sp <= rowH(g[0].declared) - 6 - reserveFor(g[0].declared);
-      });
-    let s = 14;
+      HALVES.every((cols) => cols.reduce((sum, c) => sum + colNeed(c, sp), 0) <= HALF);
+
+    let s = 16;
     while (s > 3 && !fits(s)) s -= 0.1;
-    const radius = s * DOT;
+
+    // Each half gets its needed widths plus an even share of what is left over.
+    const widths = new Array<number>(11).fill(0);
+    for (const cols of HALVES) {
+      const base = cols.map((c) => colNeed(c, s));
+      const slack = (HALF - base.reduce((x, y) => x + y, 0)) / cols.length;
+      cols.forEach((c, i) => (widths[c] = base[i] + slack));
+    }
+    const lefts = new Array<number>(12).fill(M.left);
+    for (let c = 1; c <= 10; c++) lefts[c + 1] = lefts[c] + widths[c];
 
     const out: { x: number; y: number; p: CodaPoint }[] = [];
     for (const [, g] of groups) {
-      const { even, odd, rows } = shape(g.length, s);
-      const cx = mx(g[0].scope);
+      const scope = g[0].scope;
+      const w = widths[scope] - PAD;
+      const even = Math.max(1, Math.floor((w - 2 * DOT * s) / s + EPS) + 1);
+      const odd = (even - 1) * s + s / 2 + 2 * DOT * s <= w + EPS ? even : Math.max(1, even - 1);
+      let rows = 0;
+      for (let cap = 0; cap < g.length; rows++) cap += rows % 2 ? odd : even;
+      const cx = lefts[scope] + widths[scope] / 2;
       const cy = ny(g[0].declared) + shiftFor(g[0].declared);
       // rows of equal length get a quarter-step nudge each way to stay staggered
       const stagger = odd === even ? s / 4 : 0;
@@ -119,7 +144,7 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
       }
     }
     out.sort((a, b) => Number(a.p.capped) - Number(b.p.capped));
-    return { dots: out, r: radius };
+    return { dots: out, r: s * DOT, colLeft: lefts, colW: widths };
   }, [points]);
 
   const pick = (key: CodaKey) => {
@@ -189,13 +214,13 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
 
             {/* X axis: Maillon numbers, scope bands, then its title */}
             {Array.from({ length: 10 }, (_, i) => i + 1).map((m) => (
-              <text key={m} x={mx(m)} y={M.top + PH + 16} fontSize="10.5" fontWeight="700" textAnchor="middle" fill="#6b6f80">
+              <text key={m} x={colLeft[m] + colW[m] / 2} y={M.top + PH + 16} fontSize="10.5" fontWeight="700" textAnchor="middle" fill="#6b6f80">
                 {m}
               </text>
             ))}
             {BANDS.map((b) => {
-              const x1 = M.left + ((b.from - 1) / 10) * PW + 2;
-              const x2 = M.left + (b.to / 10) * PW - 2;
+              const x1 = colLeft[b.from] + 2;
+              const x2 = colLeft[b.to] + colW[b.to] - 2;
               return (
                 <g key={b.from}>
                   <rect x={x1} y={M.top + PH + 24} width={x2 - x1} height={17} rx={8.5} fill="#e3e0f0" />
