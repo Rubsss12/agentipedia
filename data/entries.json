@@ -2251,6 +2251,82 @@
       }
     },
     {
+      "id": "bajaj-finance--unnamed-ai-agent-fleet-for-sales-collections-and-risk-operations",
+      "company": "Bajaj Finance",
+      "company_country": "India",
+      "region": "South Asia",
+      "sector": "Financial Services",
+      "solution_name": "Unnamed AI agent fleet for sales, collections and risk operations",
+      "solution_named": false,
+      "vendor": "",
+      "use_case": "AI voice and text bots run outbound sales and servicing calls, turn call transcripts into new loan offers and now reach debt collection; AI call centers originated about Rs 1,600 crore of loans in Q3 FY26, around 10% of disbursements, with 27 autonomous agents live and more than 600 planned for FY27.",
+      "department": "Sales and collections",
+      "industry": "Non-bank lending",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Share of loan disbursements via AI call centers (Q3 FY26)",
+          "value": "About 10%",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Loan disbursements via the AI call center (Q3 FY26)",
+          "value": "About Rs 1,600 crore",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Customer self-service handled by AI voice and text bots (Q4 FY26)",
+          "value": "72%",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-09-14",
+      "sources": [
+        {
+          "url": "https://www.medianama.com/2026/02/223-bajaj-finance-800-ai-agents-lending-operations/",
+          "title": "Bajaj Finance Plans 800+ Autonomous AI Agents Across Lending and Operations: Q3 FY26 Earnings Call",
+          "publisher": "MediaNama",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-14"
+        },
+        {
+          "url": "https://officechai.com/ai/ai-powered-call-centers-are-now-accounting-for-10-of-all-loan-disbursements-at-bajaj-finance/",
+          "title": "AI-Powered Call Centers Are Now Accounting For 10% Of All Loan Disbursements At Bajaj Finance",
+          "publisher": "OfficeChai",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-14"
+        },
+        {
+          "url": "https://www.medianama.com/2026/05/223-q4fy26-bajaj-finance-autonomous-agent-target-800-600-fy27/",
+          "title": "Bajaj Finance cuts autonomous agent target from 800 to 600",
+          "publisher": "MediaNama",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-14"
+        }
+      ],
+      "confidence": 0.6,
+      "confidence_reason": "Figures stated by the vice chairman on the Q3 and Q4 FY26 earnings calls and reported by independent Indian tech press; the agent fleet has no public brand name, and the target was cut from 800 to 600 agents without explanation.",
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          0,
+          0,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Voice and text bots run outbound calls, turn conversations into loan offers and reach collections, with about 10% of the quarter's disbursements; loan approval itself is not shown as committed by the agents. Observed N2.",
+        "basis_fr": "Les bots vocaux et texte mènent les appels sortants, transforment les conversations en offres de prêt et atteignent le recouvrement, pour environ 10 % des décaissements du trimestre ; l'octroi du prêt n'est pas montré comme engagé par les agents. Observé N2."
+      }
+    },
+    {
       "id": "banco-bradesco--bia-bradesco-inteligencia-artificial-bridge",
       "company": "Banco Bradesco",
       "company_country": "Brazil",
@@ -2896,6 +2972,71 @@
         "locks": [],
         "basis_en": "GenAI conversational tool delivers instant contextual insights to staff to boost operational efficiency; it answers/informs employees, humans act (N2).",
         "basis_fr": "Outil conversationnel GenAI fournissant des insights contextuels instantanes au personnel pour l'efficacite operationnelle ; il repond/informe, les humains agissent (N2)."
+      }
+    },
+    {
+      "id": "bank-of-singapore--sowa-source-of-wealth-assistant",
+      "company": "Bank of Singapore",
+      "company_country": "Singapore",
+      "region": "Southeast Asia",
+      "sector": "Financial Services",
+      "solution_name": "SOWA (Source of Wealth Assistant)",
+      "vendor": "In-house (co-developed with OCBC)",
+      "use_case": "Drafts source of wealth reports for relationship managers during client due diligence, cutting turnaround from about ten days to about one hour; relationship managers review and refine each draft before submitting it.",
+      "department": "Wealth management compliance",
+      "industry": "Private banking",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Time to produce a source of wealth report",
+          "value": "Reduced from about 10 days to about 1 hour",
+          "source_type": "company_official"
+        }
+      ],
+      "first_seen_date": "2026-09-14",
+      "sources": [
+        {
+          "url": "https://www.bankofsingapore.com/media-releases/2025/bank-of-singapore-deploys-agentic-ai-tool-to-automate-writing-of-source-of-wealth-reports.html",
+          "title": "Bank of Singapore Deploys Agentic AI Tool to Automate Writing of Source of Wealth Reports",
+          "publisher": "Bank of Singapore",
+          "source_type": "company_official",
+          "retrieved_date": "2026-09-14"
+        },
+        {
+          "url": "https://sg.finance.yahoo.com/news/bank-singapore-uses-ai-agents-195431610.html",
+          "title": "Bank of Singapore uses AI agents to cut source of wealth report time to one hour",
+          "publisher": "Yahoo Finance Singapore",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-14"
+        },
+        {
+          "url": "https://www.wealthbriefing.com/html/article.php/bank-of-singapore-deploys-ai-to-accelerate-source-of-wealth-verification",
+          "title": "Bank of Singapore Deploys AI To Accelerate Source Of Wealth Verification",
+          "publisher": "WealthBriefing",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-14"
+        }
+      ],
+      "confidence": 0.75,
+      "confidence_reason": "Company press release corroborated by independent wealth management and finance press, with a specific, consistent time saving metric.",
+      "coda": {
+        "chain": "fraude",
+        "links": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The tool drafts the source of wealth report from the client's wealth information, but relationship managers review, refine and submit every draft: it prepares rather than executes. Observed N2.",
+        "basis_fr": "L'outil rédige le rapport de source de fortune à partir des informations patrimoniales du client, mais les chargés de relation relisent, ajustent et soumettent chaque brouillon : il prépare plutôt qu'il n'exécute. Observé N2."
       }
     },
     {
@@ -5911,6 +6052,70 @@
       }
     },
     {
+      "id": "commonwealth-bank--unnamed-ai-customer-service-orchestration-agent",
+      "company": "Commonwealth Bank",
+      "company_country": "Australia",
+      "region": "Oceania",
+      "sector": "Financial Services",
+      "solution_name": "Unnamed AI customer service orchestration agent",
+      "solution_named": false,
+      "vendor": "Microsoft",
+      "use_case": "A central AI orchestration agent, built with Microsoft Copilot Studio and Foundry, triages more than two million retail customer service conversations a month across voice and messaging and routes each one to automated self-service, a controlled process for regulated matters, or a human specialist.",
+      "department": "Customer service",
+      "industry": "Retail banking",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Self-service messaging interactions resolved end to end within the channel (May 2026)",
+          "value": "About 84.6%",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Conversations handled per month across voice and messaging",
+          "value": "More than 2 million",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-09-14",
+      "sources": [
+        {
+          "url": "https://www.itnews.com.au/news/cba-to-take-ai-orchestration-agent-beyond-its-retail-bank-627249",
+          "title": "CBA to take AI orchestration agent beyond its retail bank",
+          "publisher": "iTnews",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-14"
+        },
+        {
+          "url": "https://cfotech.com.au/story/commbank-rolls-out-microsoft-built-customer-service-ai",
+          "title": "CommBank rolls out Microsoft-built customer service AI",
+          "publisher": "CFOtech Australia",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-14"
+        }
+      ],
+      "confidence": 0.65,
+      "confidence_reason": "Independent Australian tech trade press reports the deployment and specific resolution and volume metrics, but no public brand name for the orchestration agent was found, distinct from Commonwealth Bank's named assistant Ceba and its separate fraud detection agent.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          1,
+          2,
+          2,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The orchestration agent triages more than two million conversations a month and resolves about 84.6% of self-service messaging in channel, but its documented work is answering and routing, with regulated matters and vulnerable customers passed to specialists; no account action is shown as committed by the agent. Observed N2.",
+        "basis_fr": "L'agent d'orchestration trie plus de deux millions de conversations par mois et résout environ 84,6 % des échanges de messagerie en libre-service, mais son travail documenté est de répondre et d'orienter, les sujets réglementés et les clients vulnérables étant confiés à des spécialistes ; aucune action sur compte n'est montrée comme engagée par l'agent. Observé N2."
+      }
+    },
+    {
       "id": "commonwealth-bank--unnamed-ai-fraud-detection-agent",
       "company": "Commonwealth Bank",
       "company_country": "Australia",
@@ -6551,6 +6756,58 @@
         "locks": [],
         "basis_en": "Firmwide rollout of Claude to 470,000+ employees with role-tailored versions for accountants and developers, plus Zora AI for finance and procurement; used as a productivity/assistant workbench validated by humans.",
         "basis_fr": "Déploiement de Claude à 470 000+ employés avec versions dédiées comptables/développeurs, plus Zora AI pour la finance et les achats ; usage d'assistant de productivité validé par l'humain."
+      }
+    },
+    {
+      "id": "delta-air-lines--delta-concierge",
+      "company": "Delta Air Lines",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Travel & Transportation",
+      "solution_name": "Delta Concierge",
+      "vendor": "",
+      "use_case": "Gives select SkyMiles members a generative AI assistant in the Delta app, in beta, for real time answers on flight times, seats and gates, eCredit and bag lookups including claim status, and SkyMiles benefits, handing customers to Reservations and Customer Care when it cannot help.",
+      "department": "Customer service",
+      "industry": "Airline",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-09-14",
+      "sources": [
+        {
+          "url": "https://news.delta.com/smarter-journeys-start-here-delta-concierge-now-beta-rollout",
+          "title": "Smarter journeys start here: Delta Concierge now in beta rollout",
+          "publisher": "Delta News Hub",
+          "source_type": "company_official",
+          "retrieved_date": "2026-09-14"
+        },
+        {
+          "url": "https://www.customerexperiencedive.com/news/delta-begins-roll-out-generative-ai-virtual-assistant-concierge/803899/",
+          "title": "Delta begins roll out of generative AI-powered virtual assistant",
+          "publisher": "CX Dive",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-14"
+        }
+      ],
+      "confidence": 0.65,
+      "confidence_reason": "Delta's own newsroom announcement of the beta is corroborated by independent customer-experience trade press; still in beta with select members and no usage metrics yet.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          1,
+          0,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Answers flight, seat and gate questions and looks up eCredits and bags for SkyMiles members in beta, handing off to the care team when it cannot help; it informs rather than acts on bookings. Observed N2.",
+        "basis_fr": "Répond aux questions de vol, de siège et de porte et consulte eCrédits et bagages pour les membres SkyMiles en bêta, en passant la main au service client quand il ne peut pas aider ; il informe sans agir sur les réservations. Observé N2."
       }
     },
     {
@@ -14985,6 +15242,71 @@
       }
     },
     {
+      "id": "mercado-libre--asistente-personal-mercado-pago-personal-assistant",
+      "company": "Mercado Libre",
+      "company_country": "Argentina",
+      "region": "Latin America",
+      "sector": "Financial Services",
+      "solution_name": "Asistente Personal (Mercado Pago Personal Assistant)",
+      "vendor": "",
+      "use_case": "Lets Mercado Pago users in Argentina manage money by voice or text: paying bills from a photo of the invoice, preparing transfers from a chat screenshot, tracking categorized expenses and due dates, and setting reminders, with every critical operation confirmed by the user.",
+      "department": "Personal finance",
+      "industry": "Fintech",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Active functionalities in the assistant",
+          "value": "More than 100",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-09-14",
+      "sources": [
+        {
+          "url": "https://news.mercadolibre.com/asistente-virtual-mercado-pago-argentina-2026",
+          "title": "Asistente Virtual Mercado Pago Argentina 2026",
+          "publisher": "Mercado Libre News",
+          "source_type": "company_official",
+          "retrieved_date": "2026-09-14"
+        },
+        {
+          "url": "https://www.lanacion.com.ar/tecnologia/mercado-pago-presenta-su-asistente-financiero-basado-en-inteligencia-artificial-nid07012026/",
+          "title": "Mercado Pago presenta su asistente financiero basado en inteligencia artificial",
+          "publisher": "La Nacion",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-14"
+        },
+        {
+          "url": "https://www.iprofesional.com/tecnologia/445528-mercado-pago-lanza-un-asistente-personal-con-ia-para-gestionar-finanzas-desde-la-app",
+          "title": "Mercado Pago lanza un Asistente Personal con IA para gestionar finanzas desde la app",
+          "publisher": "iProfesional",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-14"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Company newsroom launch post is corroborated by multiple independent Argentine outlets describing the same functionality, already generally available.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Answers balance and spending questions and prepares bill payments from a photo and transfers from a chat screenshot, but no critical operation runs without the user's explicit confirmation: the user holds the mandate. Observed N2.",
+        "basis_fr": "Répond aux questions de solde et de dépenses, prépare le paiement d'une facture à partir d'une photo et un virement à partir d'une capture de conversation, mais aucune opération critique ne s'exécute sans la confirmation explicite de l'utilisateur : le mandat reste humain. Observé N2."
+      }
+    },
+    {
       "id": "mercado-libre--verdi",
       "company": "Mercado Libre",
       "company_country": "Argentina",
@@ -17556,6 +17878,71 @@
         "locks": [],
         "basis_en": "Pilot conversational shopping assistant searches 18M+ products by text/voice (+37% order value) plus a service assistant on orders, delivery, returns and invoices; guided discovery and service validated by users, N2.",
         "basis_fr": "Assistant d'achat conversationnel en pilote sur 18M+ de produits par texte/voix (+37% de panier) plus un assistant de service (commandes, livraison, retours, factures); decouverte guidee et service valides, N2."
+      }
+    },
+    {
+      "id": "oura-health--decagon",
+      "company": "Oura Health",
+      "company_country": "Finland",
+      "region": "Europe",
+      "sector": "Consumer Goods & Manufacturing",
+      "solution_name": "Decagon",
+      "vendor": "Decagon",
+      "use_case": "A Decagon AI agent handles customer support conversations, such as ring replacement requests, after the Oura Ring 4 launch; deployed in about four weeks, it let Oura absorb the October to December demand spike without hiring about 500 more support staff.",
+      "department": "Customer support",
+      "industry": "Wearable devices",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Additional support hires avoided during the Oura Ring 4 launch",
+          "value": "About 500 (about $15 million)",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-09-14",
+      "sources": [
+        {
+          "url": "https://www.techtarget.com/searchenterpriseai/news/366623313/Deriving-ROI-from-AI-is-more-than-just-monetary-value",
+          "title": "Deriving ROI from AI is more than just monetary value",
+          "publisher": "TechTarget",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-14"
+        },
+        {
+          "url": "https://www.sfexaminer.com/news/technology/decagon-ceo-jesse-zhang-bets-ai-replaces-customer-support/article_c8b46fec-eb3a-4f6c-b638-fa1044572a92.html",
+          "title": "Decagon CEO Jesse Zhang bets AI replaces customer support",
+          "publisher": "San Francisco Examiner",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-14"
+        },
+        {
+          "url": "https://www.accel.com/news/our-continued-partnership-with-decagon-bringing-intelligence-to-every-customer-interaction",
+          "title": "Our Continued Partnership with Decagon: Bringing Intelligence to Every Customer Interaction",
+          "publisher": "Accel (Decagon investor)",
+          "source_type": "other",
+          "retrieved_date": "2026-09-14"
+        }
+      ],
+      "confidence": 0.6,
+      "confidence_reason": "The Oura CEO's own account at Reuters Momentum AI 2025, reported by TechTarget, with the San Francisco Examiner independently naming Oura as a Decagon customer; the ring replacement use comes from Decagon's investor, and no resolution rate is disclosed.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          1,
+          2,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "A customer-facing Decagon agent took on the support surge after the Oura Ring 4 launch, including ring replacement requests; the public record covers the volume absorbed and hires avoided, not actions committed without human review. Observed N2.",
+        "basis_fr": "Un agent Decagon au contact des clients a absorbé le pic de support après le lancement de l'Oura Ring 4, demandes de remplacement de bague comprises ; les sources documentent le volume absorbé et les recrutements évités, pas des actions engagées sans relecture humaine. Observé N2."
       }
     },
     {
@@ -23151,6 +23538,76 @@
         "locks": [],
         "basis_en": "The same industrial copilot applied to machine programming; engineers keep the pen. Observed N1.",
         "basis_fr": "Le même copilote industriel appliqué à la programmation machine ; les ingénieurs gardent la main. Observé N1."
+      }
+    },
+    {
+      "id": "tiendanube--lumi",
+      "company": "Tiendanube",
+      "company_country": "Argentina",
+      "region": "Latin America",
+      "sector": "Retail & E-commerce",
+      "solution_name": "Lumi",
+      "vendor": "",
+      "use_case": "Gives Tiendanube merchants AI inside the store admin panel: Lumi Assistant analyzes sales, orders and store performance, and Lumi Actions drafts SEO product descriptions, calculates shipping from an image, recommends products and edits pages, with merchants reviewing generated content before it is published.",
+      "department": "Merchant operations",
+      "industry": "E-commerce platform",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Stores using Lumi each month",
+          "value": "More than 75,000",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Operational hours saved over six months by stores using Tiendanube's AI tools (Lumi and Chat Nube)",
+          "value": "3 million hours",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-09-14",
+      "sources": [
+        {
+          "url": "https://dplnews.com/tiendanube-lanza-lumi-su-inteligencia-artificial-para-transformar-la-gestion-del-comercio-digital-en-mexico/",
+          "title": "Tiendanube lanza Lumi, su inteligencia artificial para transformar la gestion del comercio digital en Mexico",
+          "publisher": "DPL News",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-14"
+        },
+        {
+          "url": "https://ayuda.tiendanube.com/es_ES/conoce-a-lumi/que-es-lumi-y-como-te-ayuda-en-la-gestion-de-tu-tienda-en-tiendanube",
+          "title": "Que es Lumi y como te ayuda en la gestion de tu tienda en Tiendanube",
+          "publisher": "Tiendanube Ayuda",
+          "source_type": "company_official",
+          "retrieved_date": "2026-09-14"
+        },
+        {
+          "url": "https://www.xataka.com.mx/comercio-electronico/ia-ahorra-3-millones-horas-trabajo-a-tiendas-linea-mexico-tiendanube-invertira-millones-para-impulsar-su-uso",
+          "title": "La IA ahorra 3 millones de horas de trabajo a tiendas en linea en Mexico. Tiendanube invertira en el pais para impulsar su uso",
+          "publisher": "Xataka Mexico",
+          "source_type": "news_media",
+          "retrieved_date": "2026-09-14"
+        }
+      ],
+      "confidence": 0.65,
+      "confidence_reason": "Tiendanube's help center and launch coverage by independent Latin American tech press agree on the features; the adoption and time-saving figures come from the company itself.",
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          1,
+          2,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Lumi analyzes store metrics and drafts descriptions, shipping calculations and page edits, but Tiendanube's own help center tells merchants to review generated content before publishing: the agent prepares, the merchant commits. Observed N2.",
+        "basis_fr": "Lumi analyse les indicateurs de la boutique et prépare descriptions, calculs de livraison et modifications de pages, mais l'aide officielle de Tiendanube demande au marchand de relire avant de publier : l'agent prépare, le marchand engage. Observé N2."
       }
     },
     {
