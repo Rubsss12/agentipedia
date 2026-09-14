@@ -39,7 +39,14 @@
 
 @layer base {
   body {
-    background-color: var(--color-paper);
+    /* Test: a light mauve wash behind every page. Cards keep their white
+       paper, so they lift off it. Fixed, so each screen reads the same tint. */
+    background-color: #f8f5ff;
+    background-image:
+      radial-gradient(60rem 40rem at 100% 0%, rgba(139, 92, 246, 0.1), transparent 60%),
+      radial-gradient(50rem 36rem at 0% 100%, rgba(198, 46, 207, 0.07), transparent 60%),
+      linear-gradient(180deg, #fbf9ff 0%, #f2ecff 100%);
+    background-attachment: fixed;
     color: var(--color-ink);
     font-family: var(--font-sans);
   }
