@@ -207,7 +207,7 @@ export default function Home() {
             <li key={s.slug} data-reveal style={{ "--reveal-delay": `${(i % 8) * 40}ms` } as React.CSSProperties}>
               <Link
                 href={`/sector/${s.slug}`}
-                className="group flex h-full items-center gap-3 rounded-xl border border-lavender-line bg-lilac-soft px-3.5 py-2.5 transition-all hover:-translate-y-0.5 hover:border-mauve hover:shadow-[0_10px_30px_-14px_rgb(107_43_217/0.4)]"
+                className="group flex h-full items-center gap-3 rounded-xl border border-lavender-line bg-paper px-3.5 py-2.5 transition-all hover:-translate-y-0.5 hover:border-mauve hover:shadow-[0_10px_30px_-14px_rgb(107_43_217/0.4)]"
               >
                 <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-mauve/10 text-sm font-black text-mauve">
                   {s.entries}

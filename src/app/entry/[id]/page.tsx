@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 function Fact({ label, value }: { label: React.ReactNode; value: React.ReactNode }) {
   return (
-    <div className="rounded-xl border border-lavender-line bg-lilac-soft px-4 py-3">
+    <div className="rounded-xl border border-lavender-line bg-paper px-4 py-3">
       <p className="kicker text-muted">{label}</p>
       <p className="mt-1 text-sm font-bold">{value || "-"}</p>
     </div>
@@ -157,7 +157,7 @@ export default async function EntryPage({ params }: Props) {
 
       {/* Key facts next: the block a reader, or a model, can lift whole,
           assembled from the fiche's own fields so it reads in both languages. */}
-      <section className="mt-8 rounded-2xl border border-lavender-line bg-lilac-soft px-5 py-5">
+      <section className="mt-8 rounded-2xl border border-lavender-line bg-paper px-5 py-5">
         <p className="kicker text-mauve">
           <Bi en="Key facts" fr="Ce qu'il faut retenir" />
         </p>
