@@ -244,18 +244,18 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
 
       {/* Under the map: the four quadrants as a 2 x 2 of shortcuts, and in the
           freed corner the CODA matrix itself, as the HUB Institute slide draws it. */}
-      <div className="mt-5 grid gap-4 lg:grid-cols-[minmax(0,1fr)_15rem] lg:items-stretch">
-        <ul className="grid gap-3 sm:grid-cols-2">
+      <div className="mt-5 grid gap-4 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:items-stretch">
+        <ul className="grid gap-2.5 sm:grid-cols-2 lg:grid-cols-1">
           {CODA_ORDER.map((key) => {
             const q = CODA[key];
             return (
               <li key={key}>
                 <button
                   onClick={() => pick(key)}
-                  className="group flex h-full w-full items-start gap-3 rounded-xl border border-lavender-line bg-paper p-3 text-left transition-colors hover:border-mauve"
+                  className="group flex h-full w-full items-start gap-2.5 rounded-xl border border-lavender-line bg-paper px-3 py-2.5 text-left transition-colors hover:border-mauve"
                 >
                   <span
-                    className="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-md text-xs font-black text-white"
+                    className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-md text-[0.7rem] font-black text-white"
                     style={{ background: q.color }}
                   >
                     {key}
@@ -264,7 +264,7 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
                     <span className="text-sm font-extrabold group-hover:text-mauve">{fr ? q.fr : q.en}</span>
                     <span className="ml-2 text-xs font-bold text-muted">{counts[key]}</span>
                     <span className="block text-xs font-semibold leading-snug text-muted">{fr ? q.taglineFr : q.taglineEn}</span>
-                    <span className="mt-1.5 block text-xs leading-snug text-ink-soft">{fr ? q.descFr : q.descEn}</span>
+                    <span className="mt-1 block text-[0.72rem] leading-snug text-ink-soft">{fr ? q.descFr : q.descEn}</span>
                   </span>
                 </button>
               </li>
@@ -272,13 +272,13 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
           })}
         </ul>
 
-        <figure className="mx-auto w-full max-w-[17rem] rounded-2xl border border-lavender-line bg-paper p-4 lg:max-w-none">
+        <figure className="flex w-full flex-col rounded-2xl border border-lavender-line bg-paper p-4 md:p-5">
           <figcaption className="kicker text-mauve">{fr ? "La Matrice CODA™" : "The CODA™ Matrix"}</figcaption>
-          <div className="mt-3 flex gap-2">
-            <p className="kicker shrink-0 rotate-180 text-center text-[0.55rem] leading-tight text-muted [writing-mode:vertical-rl]">
+          <div className="mt-3 flex flex-1 gap-2.5">
+            <p className="kicker shrink-0 rotate-180 text-center text-[0.62rem] leading-tight text-muted [writing-mode:vertical-rl]">
               {fr ? "Autonomie des agents →" : "Agent autonomy →"}
             </p>
-            <div className="grid flex-1 grid-cols-2 gap-1">
+            <div className="grid flex-1 grid-cols-2 gap-1.5">
               {CODA_GRID.map((key) => {
                 const q = CODA[key];
                 return (
@@ -286,12 +286,12 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
                     key={key}
                     onClick={() => pick(key)}
                     aria-label={`${fr ? q.fr : q.en}: ${counts[key]}`}
-                    className="grid aspect-square place-items-center rounded-md text-white transition-transform hover:scale-[1.03]"
+                    className="grid min-h-[7.5rem] place-items-center rounded-lg text-white transition-transform hover:scale-[1.02] sm:aspect-[16/10] sm:min-h-0"
                     style={{ background: q.color }}
                   >
                     <span className="text-center">
-                      <span className="block text-xl font-black leading-none">{key}</span>
-                      <span className="mt-1 block text-[0.52rem] font-extrabold uppercase tracking-wide">
+                      <span className="block text-4xl font-black leading-none md:text-5xl">{key}</span>
+                      <span className="mt-2 block text-xs font-extrabold uppercase tracking-wider md:text-sm">
                         {fr ? q.fr : q.en}
                       </span>
                     </span>
@@ -300,7 +300,7 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
               })}
             </div>
           </div>
-          <p className="kicker mt-2 pl-5 text-center text-[0.55rem] leading-tight text-muted">
+          <p className="kicker mt-2.5 pl-6 text-center text-[0.62rem] leading-tight text-muted">
             {fr ? "Portée business, Maillons de la chaîne de valeur →" : "Business scope, value-chain Maillons →"}
           </p>
         </figure>
