@@ -38,7 +38,7 @@ export const REGION_FR: Record<string, string> = {
 
 // Only the countries that actually carry weight in the index are translated;
 // the rest keep their English name, which is usually identical or close enough
-// to read in French (Portugal, Singapore, Qatar…).
+// to read in French (Portugal, Qatar…).
 export const COUNTRY_FR: Record<string, string> = {
   "United States": "États-Unis",
   "United Kingdom": "Royaume-Uni",
@@ -60,6 +60,11 @@ export const COUNTRY_FR: Record<string, string> = {
   China: "Chine",
   India: "Inde",
   "South Korea": "Corée du Sud",
+  Singapore: "Singapour",
+  Taiwan: "Taïwan",
+  Bahrain: "Bahreïn",
+  Ethiopia: "Éthiopie",
+  Estonia: "Estonie",
   Australia: "Australie",
   "New Zealand": "Nouvelle-Zélande",
   Brazil: "Brésil",
