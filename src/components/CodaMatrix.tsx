@@ -26,12 +26,9 @@ const PW = W - M.left - M.right;
 const PH = H - M.top - M.bottom;
 const COL = PW / 10;
 
-// Rows are sized by where the agents are, not split evenly: the N2 row holds
-// most of the index and N4 is empty today. The quadrant boundary still sits
-// between N2 and N3, so the reading of the map is unchanged; the room given to
-// each level follows the data, which is what lets every dot be drawn large.
-// Fractions of the plot height, N1 at the bottom.
-const FRAC: Record<CodaLevel, number> = { 1: 0.25, 2: 0.5, 3: 0.15, 4: 0.1 };
+// Four equal rows, so the four quadrants stay the same size as on the CODA
+// slide. Fractions of the plot height, N1 at the bottom.
+const FRAC: Record<CodaLevel, number> = { 1: 0.25, 2: 0.25, 3: 0.25, 4: 0.25 };
 const LEVELS_UP: CodaLevel[] = [1, 2, 3, 4];
 const rowH = (n: CodaLevel) => PH * FRAC[n];
 const rowBottom = (n: CodaLevel) => M.top + PH - LEVELS_UP.filter((k) => k < n).reduce((sum, k) => sum + rowH(k), 0);
@@ -50,6 +47,8 @@ const INK = "#1b1333";
 // bottom of the N1 row (Copiloté, Orchestré), away from the N2 row. Clusters in
 // those two rows keep clear of the label plates.
 const LABEL = 26;
+// dot radius as a share of the spacing between dot centres (0.5 = touching)
+const DOT = 0.52;
 const reserveFor = (level: CodaLevel) => (level === 4 || level === 1 ? LABEL : 0);
 const shiftFor = (level: CodaLevel) => (level === 4 ? LABEL / 2 : level === 1 ? -LABEL / 2 : 0);
 
@@ -65,7 +64,9 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
 
   // Dots sharing a cell (declared level x scope) sit on a small staggered grid
   // inside that cell. Every dot on the map has the SAME size: the spacing is set
-  // once, by the most crowded cell, so no cluster ever leaves its cell.
+  // once, by the most crowded cell, so no cluster ever leaves its cell. Dots just
+  // touch, each keeping its white rim; amber-ringed dots are drawn last so their
+  // ring is never covered by a neighbour.
   const { dots, r } = useMemo(() => {
     const groups = new Map<string, CodaPoint[]>();
     for (const p of points) {
@@ -90,11 +91,11 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
     const fits = (sp: number) =>
       [...groups.values()].every((g) => {
         const { rows } = shape(g.length, sp);
-        return (rows - 1) * sp * V + sp <= rowH(g[0].declared) - 6 - reserveFor(g[0].declared);
+        return (rows - 1) * sp * V + 2 * DOT * sp <= rowH(g[0].declared) - 6 - reserveFor(g[0].declared);
       });
     let s = 14;
     while (s > 3 && !fits(s)) s -= 0.1;
-    const radius = s * 0.46;
+    const radius = s * DOT;
 
     const out: { x: number; y: number; p: CodaPoint }[] = [];
     for (const [, g] of groups) {
@@ -117,6 +118,7 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
         }
       }
     }
+    out.sort((a, b) => Number(a.p.capped) - Number(b.p.capped));
     return { dots: out, r: radius };
   }, [points]);
 
