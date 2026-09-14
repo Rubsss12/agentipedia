@@ -18,28 +18,37 @@ export interface CodaPoint {
 }
 
 const W = 640;
-const H = 560;
+const H = 600;
 // Left margin carries the rotated Y title and the N labels; the bottom one the
 // Maillon numbers, the scope bands and the X title.
 const M = { left: 50, right: 8, top: 14, bottom: 88 };
 const PW = W - M.left - M.right;
 const PH = H - M.top - M.bottom;
 const COL = PW / 10;
-const ROW = PH / 4;
+
+// Rows are sized by where the agents are, not split evenly: the N2 row holds
+// most of the index and N4 is empty today. The quadrant boundary still sits
+// between N2 and N3, so the reading of the map is unchanged; the room given to
+// each level follows the data, which is what lets every dot be drawn large.
+// Fractions of the plot height, N1 at the bottom.
+const FRAC: Record<CodaLevel, number> = { 1: 0.25, 2: 0.5, 3: 0.15, 4: 0.1 };
+const LEVELS_UP: CodaLevel[] = [1, 2, 3, 4];
+const rowH = (n: CodaLevel) => PH * FRAC[n];
+const rowBottom = (n: CodaLevel) => M.top + PH - LEVELS_UP.filter((k) => k < n).reduce((sum, k) => sum + rowH(k), 0);
 
 function mx(m: number): number {
   return M.left + ((m - 0.5) / 10) * PW;
 }
-function ny(n: number): number {
-  return M.top + PH - ((n - 0.5) / 4) * PH;
+function ny(n: CodaLevel): number {
+  return rowBottom(n) - rowH(n) / 2;
 }
 
 const AMBER = "#b45309";
 const INK = "#1b1333";
 
 // Quadrant labels sit at the top of the N4 row (Délégué, Agentique) and at the
-// bottom of the N1 row (Copiloté, Orchestré), well away from the N2 row, which
-// holds most of the index. Clusters in the two label rows keep clear of the plates.
+// bottom of the N1 row (Copiloté, Orchestré), away from the N2 row. Clusters in
+// those two rows keep clear of the label plates.
 const LABEL = 26;
 const reserveFor = (level: CodaLevel) => (level === 4 || level === 1 ? LABEL : 0);
 const shiftFor = (level: CodaLevel) => (level === 4 ? LABEL / 2 : level === 1 ? -LABEL / 2 : 0);
@@ -54,10 +63,9 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
     return c;
   }, [points]);
 
-  // Dots sharing a cell (declared level x scope) are laid out as a small grid
+  // Dots sharing a cell (declared level x scope) sit on a small staggered grid
   // inside that cell. Every dot on the map has the SAME size: the spacing is set
-  // once, by the most crowded cell, so a dense cell never spills over its
-  // neighbours and a sparse one does not look like a different kind of mark.
+  // once, by the most crowded cell, so no cluster ever leaves its cell.
   const { dots, r } = useMemo(() => {
     const groups = new Map<string, CodaPoint[]>();
     for (const p of points) {
@@ -66,30 +74,48 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
       g.push(p);
       groups.set(k, g);
     }
+    const V = Math.sqrt(3) / 2; // row pitch of a hexagonal packing
+    const width = COL - 4;
+    const shape = (n: number, sp: number) => {
+      const even = Math.max(1, Math.floor(width / sp));
+      const odd = even * sp + sp / 2 <= width ? even : Math.max(1, even - 1);
+      let rows = 0;
+      let cap = 0;
+      while (cap < n) {
+        cap += rows % 2 ? odd : even;
+        rows++;
+      }
+      return { even, odd, rows };
+    };
     const fits = (sp: number) =>
       [...groups.values()].every((g) => {
-        const perRow = Math.max(1, Math.floor((COL - 4) / sp));
-        return Math.ceil(g.length / perRow) * sp <= ROW - 6 - reserveFor(g[0].declared);
+        const { rows } = shape(g.length, sp);
+        return (rows - 1) * sp * V + sp <= rowH(g[0].declared) - 6 - reserveFor(g[0].declared);
       });
-    let s = 10.5;
-    while (s > 3 && !fits(s)) s -= 0.25;
-    const radius = Math.max(1.6, Math.min(4.6, s * 0.46));
+    let s = 14;
+    while (s > 3 && !fits(s)) s -= 0.1;
+    const radius = s * 0.46;
 
     const out: { x: number; y: number; p: CodaPoint }[] = [];
     for (const [, g] of groups) {
-      const shift = shiftFor(g[0].declared);
-      const perRow = Math.max(1, Math.min(g.length, Math.floor((COL - 4) / s)));
-      const rows = Math.ceil(g.length / perRow);
-      g.forEach((p, i) => {
-        const row = Math.floor(i / perRow);
-        const col = i % perRow;
-        const rowCount = Math.min(g.length - row * perRow, perRow);
-        out.push({
-          x: mx(p.scope) + (col - (rowCount - 1) / 2) * s,
-          y: ny(p.declared) + shift + (row - (rows - 1) / 2) * s,
-          p,
-        });
-      });
+      const { even, odd, rows } = shape(g.length, s);
+      const cx = mx(g[0].scope);
+      const cy = ny(g[0].declared) + shiftFor(g[0].declared);
+      // rows of equal length get a quarter-step nudge each way to stay staggered
+      const stagger = odd === even ? s / 4 : 0;
+      let i = 0;
+      for (let row = 0; row < rows; row++) {
+        const cap = row % 2 ? odd : even;
+        const inRow = Math.min(cap, g.length - i);
+        const start = Math.floor((cap - inRow) / 2);
+        for (let j = 0; j < inRow; j++) {
+          out.push({
+            x: cx + (start + j - (cap - 1) / 2) * s + (row % 2 ? stagger : -stagger),
+            y: cy + (row - (rows - 1) / 2) * s * V,
+            p: g[i++],
+          });
+        }
+      }
     }
     return { dots: out, r: radius };
   }, [points]);
@@ -100,7 +126,7 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
   };
 
   const midX = M.left + PW / 2;
-  const midY = M.top + PH / 2;
+  const midY = M.top + PH * (FRAC[4] + FRAC[3]);
   const cappedCount = points.filter((p) => p.capped).length;
 
   // Quadrant names sit on a light plate drawn above the dots.
@@ -134,10 +160,10 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
             aria-label={fr ? "Carte de scoring CODA" : "CODA scoring map"}
             className="h-auto w-full min-w-[34rem] select-none"
           >
-            <rect x={M.left} y={midY} width={PW / 2} height={PH / 2} fill={CODA.C.fill} />
-            <rect x={midX} y={midY} width={PW / 2} height={PH / 2} fill={CODA.O.fill} />
-            <rect x={M.left} y={M.top} width={PW / 2} height={PH / 2} fill={CODA.D.fill} />
-            <rect x={midX} y={M.top} width={PW / 2} height={PH / 2} fill={CODA.A.fill} />
+            <rect x={M.left} y={midY} width={PW / 2} height={M.top + PH - midY} fill={CODA.C.fill} />
+            <rect x={midX} y={midY} width={PW / 2} height={M.top + PH - midY} fill={CODA.O.fill} />
+            <rect x={M.left} y={M.top} width={PW / 2} height={midY - M.top} fill={CODA.D.fill} />
+            <rect x={midX} y={M.top} width={PW / 2} height={midY - M.top} fill={CODA.A.fill} />
             <line x1={midX} x2={midX} y1={M.top} y2={M.top + PH} stroke="#fff" strokeWidth={2.5} />
             <line x1={M.left} x2={M.left + PW} y1={midY} y2={midY} stroke="#fff" strokeWidth={2.5} />
 
@@ -212,7 +238,7 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
                   x={x}
                   y={y}
                   width={PW / 2}
-                  height={PH / 2}
+                  height={q.autonomy === "high" ? midY - M.top : M.top + PH - midY}
                   fill="transparent"
                   className="cursor-pointer"
                   onClick={() => pick(key)}
