@@ -18,10 +18,10 @@ export interface CodaPoint {
 }
 
 const W = 640;
-const H = 500;
+const H = 560;
 // Left margin carries the rotated Y title and the N labels; the bottom one the
 // Maillon numbers, the scope bands and the X title.
-const M = { left: 62, right: 14, top: 14, bottom: 88 };
+const M = { left: 50, right: 8, top: 14, bottom: 88 };
 const PW = W - M.left - M.right;
 const PH = H - M.top - M.bottom;
 const COL = PW / 10;
@@ -37,9 +37,12 @@ function ny(n: number): number {
 const AMBER = "#b45309";
 const INK = "#1b1333";
 
-// The top of the N2 and N4 rows carries the quadrant labels: clusters in those
-// rows start below the label plates, so no dot is ever hidden.
-const reserveFor = (level: CodaLevel) => (level === 2 || level === 4 ? 26 : 0);
+// Quadrant labels sit at the top of the N4 row (Délégué, Agentique) and at the
+// bottom of the N1 row (Copiloté, Orchestré), well away from the N2 row, which
+// holds most of the index. Clusters in the two label rows keep clear of the plates.
+const LABEL = 26;
+const reserveFor = (level: CodaLevel) => (level === 4 || level === 1 ? LABEL : 0);
+const shiftFor = (level: CodaLevel) => (level === 4 ? LABEL / 2 : level === 1 ? -LABEL / 2 : 0);
 
 export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
   const [lang] = useLang();
@@ -65,17 +68,17 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
     }
     const fits = (sp: number) =>
       [...groups.values()].every((g) => {
-        const perRow = Math.max(1, Math.floor((COL - 6) / sp));
-        return Math.ceil(g.length / perRow) * sp <= ROW - 10 - reserveFor(g[0].declared);
+        const perRow = Math.max(1, Math.floor((COL - 4) / sp));
+        return Math.ceil(g.length / perRow) * sp <= ROW - 6 - reserveFor(g[0].declared);
       });
     let s = 10.5;
     while (s > 3 && !fits(s)) s -= 0.25;
-    const radius = Math.max(1.6, Math.min(4.4, s * 0.42));
+    const radius = Math.max(1.6, Math.min(4.6, s * 0.46));
 
     const out: { x: number; y: number; p: CodaPoint }[] = [];
     for (const [, g] of groups) {
-      const reserve = reserveFor(g[0].declared);
-      const perRow = Math.max(1, Math.min(g.length, Math.floor((COL - 6) / s)));
+      const shift = shiftFor(g[0].declared);
+      const perRow = Math.max(1, Math.min(g.length, Math.floor((COL - 4) / s)));
       const rows = Math.ceil(g.length / perRow);
       g.forEach((p, i) => {
         const row = Math.floor(i / perRow);
@@ -83,7 +86,7 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
         const rowCount = Math.min(g.length - row * perRow, perRow);
         out.push({
           x: mx(p.scope) + (col - (rowCount - 1) / 2) * s,
-          y: ny(p.declared) + reserve / 2 + (row - (rows - 1) / 2) * s,
+          y: ny(p.declared) + shift + (row - (rows - 1) / 2) * s,
           p,
         });
       });
@@ -145,9 +148,9 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
               </text>
             ))}
             <text
-              x={16}
+              x={13}
               y={M.top + PH / 2}
-              transform={`rotate(-90 16 ${M.top + PH / 2})`}
+              transform={`rotate(-90 13 ${M.top + PH / 2})`}
               fontSize="13"
               fontWeight="900"
               textAnchor="middle"
@@ -221,8 +224,8 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
 
             {quadLabel("D", M.left + 12, M.top + 22, "start")}
             {quadLabel("A", M.left + PW - 12, M.top + 22, "end")}
-            {quadLabel("C", M.left + 12, midY + 22, "start")}
-            {quadLabel("O", M.left + PW - 12, midY + 22, "end")}
+            {quadLabel("C", M.left + 12, M.top + PH - 12, "start")}
+            {quadLabel("O", M.left + PW - 12, M.top + PH - 12, "end")}
           </svg>
         </div>
         <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 border-t border-lavender-line px-4 py-2.5 text-[0.74rem] font-semibold text-muted">
