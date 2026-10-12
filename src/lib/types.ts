@@ -48,6 +48,12 @@ export interface Entry {
   coda?: CodaAssessment;
   reported_outcomes: Outcome[];
   first_seen_date: string;
+  /**
+   * Publication date of the oldest source found for the fiche, i.e. when the
+   * deployment became public. Merged at build from data/evidence-dates.json
+   * (npm run evidence-dates); absent when no source carries a readable date.
+   */
+  evidence_date?: string;
   sources: Source[];
   confidence: number;
   confidence_reason: string;

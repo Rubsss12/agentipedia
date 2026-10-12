@@ -29,6 +29,12 @@ export function getStore(): Store {
     store.entries.sort((a, b) => a.id.localeCompare(b.id));
   }
 
+  const evidencePath = path.join(dir, "evidence-dates.json");
+  if (fs.existsSync(evidencePath)) {
+    const dates = (JSON.parse(fs.readFileSync(evidencePath, "utf8")) as { entries: Record<string, string> }).entries;
+    for (const e of store.entries) if (dates[e.id]) e.evidence_date = dates[e.id];
+  }
+
   cache = store;
   return cache;
 }
@@ -48,6 +54,14 @@ export function getStats() {
     countries: new Set(entries.map((e) => e.company_country).filter(Boolean)).size,
     regions: new Set(entries.map((e) => e.region)).size,
     vendors: new Set(entries.map((e) => e.vendor).filter(Boolean)).size,
-    updatedAt: getStore().updated_at,
+    // The store stamp only moves on a curation run; hand-added fiches do not
+    // touch it, so the freshness shown is whichever is later.
+    updatedAt: latestOf(getStore().updated_at, entries.map((e) => e.first_seen_date).sort().at(-1)),
   };
+}
+
+function latestOf(stamp: string | null | undefined, latestEntry: string | undefined): string {
+  if (!latestEntry) return stamp ?? "";
+  if (!stamp || latestEntry > stamp.slice(0, 10)) return latestEntry;
+  return stamp;
 }

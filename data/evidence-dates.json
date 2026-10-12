@@ -1,0 +1,3683 @@
+{
+ "updated_at": "2026-10-11T19:04:06.076Z",
+ "entries": {
+  "1-800accountant--agentforce": "2025-08-04",
+  "a-o-shearman--harvey": "2025-10-17",
+  "absa--abby": "2025-06-09",
+  "absa--unnamed-internal-agent-pilots": "2025-06-09",
+  "abu-dhabi-department-of-government-enablement--tamm-autogov-tamm-4-0": "2025-10-14",
+  "accenture--github-copilot": "2026-09-11",
+  "accor--all-concierge": "2026-09-24",
+  "adnoc-abu-dhabi-national-oil-company--energyai": "2025-03-10",
+  "adt--sierra": "2026-05-18",
+  "aeroporti-di-roma--adr-virtual-assistant-adryx": "2025-10-29",
+  "aia-philippines--ai-roleplay": "2026-05-14",
+  "aib-allied-irish-banks--abi-microsoft-365-copilot": "2025-07-10",
+  "air-india--ai-g": "2023-11-10",
+  "air-new-zealand--unnamed-meal-tray-image-recognition-ai": "2025-03-14",
+  "airasia--ask-bo": "2023-02-08",
+  "airtel-nigeria--airtel-assist": "2025-08-14",
+  "albertsons-companies--albertsons-ai-shopping-assistant": "2025-12-05",
+  "alibaba-taobao--taobao-wenwen-qwen-shopping-assistant": "2026-05-10",
+  "allegro--allegro-ai-assistant": "2026-05-11",
+  "altruist--hazel": "2026-08-31",
+  "amazon--rufus-alexa-for-shopping": "2025-11-02",
+  "american-express--unnamed-transaction-fraud-detection-ai": "2026-06-01",
+  "ant-group--ah-bao-alipay-ai-agent-maxiaocai-ai-financial-manager": "2026-06-14",
+  "arcelormittal--arthur-dofasco-big-data-ml-platform-with-aws": "2026-09-10",
+  "arizona-state-university--superhuman-go": "2025-12-11",
+  "associated-press--rover": "2025-07-18",
+  "at-t--ask-at-t-workflows": "2025-11-13",
+  "australian-antarctic-division--unnamed-whale-call-detection-ai": "2023-02-20",
+  "australian-public-service-digital-transformation-agency--govai-chat": "2025-11-11",
+  "avis-budget-group--decagon": "2026-01-30",
+  "aviva--zowie": "2026-04-30",
+  "axa--axa-secure-gpt": "2023-07-28",
+  "bajaj-finance--unnamed-ai-agent-fleet-for-sales-collections-and-risk-operations": "2026-02-12",
+  "banco-bv--google-agentspace": "2025-09-10",
+  "banco-de-credito-del-peru-bcp--clara": "2025-07-09",
+  "banco-do-brasil--nice-copilot": "2026-07-15",
+  "banco-do-brasil--nice-copilot-on-cxone": "2025-06-16",
+  "banco-galicia--github-copilot": "2025-08-19",
+  "bank-of-america--erica": "2025-08-15",
+  "bank-of-china-hong-kong--bochk-genai-assistant": "2026-03-11",
+  "bank-of-singapore--sowa-source-of-wealth-assistant": "2025-10-13",
+  "bank-of-yokohama--mobi-voice": "2023-02-08",
+  "banorte--maya": "2022-07-18",
+  "barmeniagothaer--parloa": "2025-06-24",
+  "bayer--scientific-data-foundry": "2025-11-20",
+  "bbc--style-assist-at-a-glance": "2025-06-27",
+  "bbva--chatgpt-enterprise": "2025-12-12",
+  "bell-canada--gemini-enterprise": "2026-07-22",
+  "best-buy--ask-blue": "2026-08-31",
+  "bharti-airtel--unnamed-spam-and-fraud-detection-ai": "2024-09-25",
+  "bloomberg--ai-powered-earnings-call-summaries-document-insights": "2024-01-22",
+  "blue-star-families--star-saving-time-and-resources-agent-on-agentforce": "2025-12-02",
+  "bmw--bmw-intelligent-personal-assistant-with-alexa": "2026-01-09",
+  "bny--unnamed-payment-repair-digital-employee": "2026-09-30",
+  "bojangles--bo-linda-ai-order-taker": "2023-11-22",
+  "booking-com--ai-trip-planner": "2025-03-12",
+  "booking-holdings--lola": "2026-09-29",
+  "british-antarctic-survey--unnamed-seafloor-imagery-detection-ai": "2025-10-15",
+  "bryan-cave-leighton-paisner-bclp--legora": "2026-03-05",
+  "bt-group-ee--aimee": "2024-12-12",
+  "burger-king--patty": "2026-02-26",
+  "c6-bank--c6-assistant": "2024-12-11",
+  "caixabank--agentforce": "2026-05-01",
+  "california-community-colleges--nectir": "2025-10-06",
+  "carrefour--hopla": "2023-06-11",
+  "casper--sierra": "2024-10-01",
+  "caterpillar--cat-ai-assistant": "2026-01-06",
+  "cathay-financial-holdings--gaia": "2026-04-07",
+  "cbre-group--nexus": "2026-03-04",
+  "china-life-insurance-overseas--oneservice-app-ai-assistant-deepseek-v3-based": "2026-02-27",
+  "china-unicom--c-h-converged-agent-tone-household-ai-agent": "2025-03-05",
+  "chipotle-mexican-grill--ava-cado": "2025-06-15",
+  "citigroup--citi-stylus-workspaces-with-citi-assist": "2025-09-23",
+  "cityblue-hotels--inntelo-ai": "2026-04-01",
+  "clara--financial-analyst": "2025-07-30",
+  "cleveland-clinic--ambience-healthcare-ai-platform": "2025-02-19",
+  "codelco--unnamed-copper-processing-optimization-ai": "2022-08-12",
+  "cognizant--claude-claude-code": "2025-11-04",
+  "commercial-international-bank-cib--zaki": "2022-04-10",
+  "commonwealth-bank--unnamed-ai-customer-service-orchestration-agent": "2026-07-10",
+  "commonwealth-bank--unnamed-ai-fraud-detection-agent": "2026-04-15",
+  "commonwealth-of-pennsylvania-office-of-administration--chatgpt-enterprise": "2026-04-15",
+  "comunidad-de-madrid--cron-ia": "2026-10-05",
+  "dairy-queen--presto-voice": "2026-04-16",
+  "dbs-bank--dbs-joy": "2026-07-28",
+  "decathlon--zowie-ai-decathlon-customer-service-agent": "2022-02-18",
+  "del-taco--presto-voice": "2023-01-10",
+  "delivus--alf": "2026-02-13",
+  "deloitte--claude-plus-zora-ai": "2025-10-06",
+  "delta-air-lines--delta-concierge": "2025-10-28",
+  "delta-air-lines--unnamed-ai-fare-pricing-model": "2025-07-22",
+  "dentsu--dentsu-connect-4-0": "2026-04-14",
+  "department-of-information-and-communications-technology-dict-philippines--ai-agents-for-public-sector-gemini-enterprise-on-egovph": "2024-06-19",
+  "deutsche-bahn--kiana": "2025-08-12",
+  "deutsche-bank--ada": "2026-09-30",
+  "deutsche-bank--db-lumina": "2025-09-23",
+  "deutsche-telekom--decagon": "2026-01-30",
+  "deutsche-telekom--frag-magenta-ask-magenta": "2025-03-22",
+  "dfl-deutsche-fu-ball-liga-bundesliga--captain": "2026-06-02",
+  "dhl-supply-chain--happyrobot-ai-agents": "2025-11-11",
+  "digital-india-bhashini-division-ministry-of-electronics-and-it--bhashini": "2026-03-15",
+  "discovery-bank--discovery-ai": "2026-05-14",
+  "dotdash-meredith--d-cipher": "2025-01-16",
+  "dpr-construction--constructiviq": "2026-01-13",
+  "dubai-electricity-and-water-authority-dewa--rammas": "2025-01-15",
+  "duke-energy--agentic-grid-planning-on-aws": "2026-09-17",
+  "duolingo--decagon": "2026-09-11",
+  "e-etisalat-by-e--gochat-gpt": "2023-06-26",
+  "easypaisa--ello": "2026-02-14",
+  "ebanx--sirius": "2025-09-10",
+  "ecu-health--epic-agent-factory": "2026-08-09",
+  "eli-lilly--kore-ai": "2026-03-30",
+  "emirates-nbd--unnamed-ai-fraud-detection-and-monitoring-system": "2026-06-02",
+  "engine--eva-agentforce": "2026-04-15",
+  "erste-group--financial-health-ai-hey-george": "2023-10-05",
+  "ethiopian-airlines--jupiter-5-0": "2026-05-20",
+  "evm-energieversorgung-mittelrhein--eva": "2026-02-26",
+  "ey--ey-ai-agentic-platform": "2025-03-15",
+  "faw-volkswagen--insights-hub-production-copilot": "2025-01-30",
+  "federal-ministry-of-communications-innovation-and-digital-economy-fmcide-nigeria--govguide-nigeria": "2026-05-21",
+  "fidelity-bank--ivy": "2025-09-12",
+  "financial-services-agency-japan--unnamed-regional-bank-customer-service-agent": "2026-05-08",
+  "finnair--sisu": "2026-06-15",
+  "first-national-bank-fnb--navi": "2026-04-30",
+  "flipkart--flippi-evolving-into-standalone-app-slap-shop-like-a-pro": "2023-10-04",
+  "fonterra--co-op-gpt": "2026-04-20",
+  "formation-bio--muse": "2024-11-12",
+  "forvia-hella--arch-factory-intelligence-platform": "2026-09-30",
+  "french-government-dinum--albert": "2026-05-31",
+  "fujitsu--fujitsu-kozuchi-ai-agent": "2024-10-23",
+  "garanti-bbva--garanti-bbva-agentic-commerce-with-mastercard": "2026-03-09",
+  "garanti-bbva--ugi": "2025-04-16",
+  "general-mills--project-elf-built-on-palantir-aip": "2025-02-19",
+  "georgia-state-university--pounce": "2025-12-31",
+  "globant--claude-powered-ai-pods": "2026-06-30",
+  "goldman-sachs--gs-ai-assistant": "2025-01-21",
+  "government-of-estonia--burokratt": "2022-01-26",
+  "government-of-karnataka-dept-of-school-education--shiksha-copilot": "2024-02-08",
+  "government-of-the-city-of-buenos-aires--boti": "2023-11-16",
+  "grab--chatgpt-enterprise": "2024-05-30",
+  "granite-comfort--avoca-responder-coach-human-in-the-loop": "2025-01-01",
+  "great-ormond-street-hospital-gosh--tortus-ambient-voice-ai-scribe": "2025-09-15",
+  "grupo-casas-bahia--bah-ia": "2025-09-10",
+  "grupo-globo--agentforce": "2025-08-04",
+  "grupo-globo--planejaai": "2026-09-24",
+  "grupo-marista--google-agentspace": "2025-09-10",
+  "guaranty-trust-bank-gtbank--habari-ai-assistant": "2025-07-24",
+  "h2e-power--ecostruxure-automation-expert": "2026-04-16",
+  "hapag-lloyd--haapi-assistant": "2025-01-28",
+  "harman-automotive--arch-factory-intelligence-platform": "2026-09-30",
+  "heirs-insurance-group--prince-ai": "2026-05-13",
+  "hilton--hilton-ai-planner": "2026-03-10",
+  "hospital-for-special-surgery-hss--abridge-ambient-ai-platform": "2025-07-24",
+  "hsbc--gemini-enterprise": "2026-07-22",
+  "hsbc--smart-checking": "2026-09-29",
+  "humana--agent-assist": "2026-02-03",
+  "husqvarna--ai-vision-companion": "2025-03-25",
+  "hyundai-motor-group-42dot--gleo-ai": "2026-05-21",
+  "icici-lombard--ria-plus-voice-ai-customer-enablement-platform": "2026-07-16",
+  "ifood--cris": "2025-08-05",
+  "iheartmedia--agentic-streaming-audio-media-buying-with-butler-till": "2026-08-20",
+  "ikea-ingka-group--billie": "2026-08-03",
+  "imprint--sierra": "2026-05-19",
+  "indosat-ooredoo-hutchison--sahabat-ai": "2025-06-02",
+  "industrial-and-commercial-bank-of-china-icbc--industrial-smart-ocean-financial-large-model": "2025-04-29",
+  "infosys--cognition-devin": "2026-01-07",
+  "infosys--infosys-agentic-ai-foundry-infosys-topaz": "2026-06-03",
+  "instacart--clementine": "2026-09-09",
+  "intel--gemini-enterprise": "2026-07-22",
+  "intuit--writer": "2024-08-23",
+  "itau--ia-i": "2026-07-27",
+  "itau--itau-emps": "2025-07-21",
+  "j-b-hunt-transport-services--overroute": "2026-07-28",
+  "japan-airlines--jal-ai-report": "2025-03-27",
+  "jd-com--jingyan": "2026-05-15",
+  "jll-jones-lang-lasalle--falcon-genai-lease-abstraction-and-jll-serve": "2024-06-18",
+  "jpmorgan-chase--llm-suite": "2024-08-09",
+  "jusbrasil--jus-ia": "2025-09-10",
+  "kbc-group--kate": "2025-11-24",
+  "kddi--au-support-ai-advisor-au-ai": "2026-03-10",
+  "kenya-airways--jupiter-5-0": "2026-05-19",
+  "kia--kia-ai-assistant": "2025-04-16",
+  "klarna--klarna-ai-assistant": "2024-04-02",
+  "klivvr--k-ai": "2026-05-21",
+  "korean-air--ai-contact-center-aicc": "2025-09-15",
+  "kpmg--microsoft-agent-365-and-microsoft-365-copilot": "2026-06-09",
+  "kraft-heinz--the-cookbook": "2025-09-25",
+  "kroger--google-gemini-enterprise": "2026-01-11",
+  "kuehne-nagel--kn-swiftlog-cloud-native-logistics-platform": "2026-07-22",
+  "l-oreal--beauty-genius": "2025-07-02",
+  "laliga--ai-pods": "2025-11-06",
+  "land-o-lakes--oz": "2025-11-12",
+  "latham-watkins--harvey": "2025-08-11",
+  "lemonade--ai-jim": "2023-06-14",
+  "lg-uplus--ixi-o": "2025-11-13",
+  "li-auto--li-xiang-tong-xue-mindgpt-powered-agent": "2025-02-19",
+  "lion-parcel--yellow-ai": "2025-09-02",
+  "liverpool-el-puerto-de-liverpool--commercetools-ai-hub-and-agent-gateway": "2025-11-05",
+  "lloyds-banking-group--athena": "2025-07-16",
+  "loblaw-companies--robin-ai-assistant-for-store-owners-managers": "2026-05-04",
+  "lojas-renner--re": "2026-07-10",
+  "loma-linda-university-health--epic-agent-factory": "2026-08-09",
+  "lotte-hi-mart--havi": "2026-04-02",
+  "lowe-s--google-gemini-enterprise": "2026-01-11",
+  "lowe-s--mylow": "2025-03-06",
+  "ly-corporation--agent-i": "2026-04-20",
+  "m1--m1-advisor": "2026-10-07",
+  "macfarlanes--harvey-amplify": "2023-09-28",
+  "macy-s--gemini-enterprise": "2026-07-22",
+  "magazine-luiza-magalu--lu-do-magalu-ai-commerce-assistant": "2025-11-18",
+  "marriott-international--ask-bonvoy": "2026-06-16",
+  "marriott-international--renai-by-renaissance": "2023-12-06",
+  "marsh-mclennan--lenai": "2026-08-19",
+  "mastercard--mastercard-agent-pay": "2025-05-02",
+  "mayor-s-office-of-bogota-consejeria-tic--chatico": "2025-09-11",
+  "mcdonald-s--archiq-archy-voice-agent": "2026-09-25",
+  "meesho--vaani": "2026-03-25",
+  "meituan--xiaomei": "2026-05-15",
+  "mercado-libre--asistente-personal-mercado-pago-personal-assistant": "2026-01-07",
+  "mercado-libre--verdi": "2024-09-28",
+  "mercedes-benz--chatgpt-in-mo360": "2023-07-11",
+  "merck-co--gpteal": "2025-10-10",
+  "microsoft--employee-self-service-ess-agent": "2025-03-11",
+  "ministry-of-digital-transformation-of-ukraine--diia-ai": "2024-06-19",
+  "mizuho-financial-group--dify-enterprise": "2026-05-26",
+  "morgan-stanley--ai-morgan-stanley-debrief": "2025-01-16",
+  "mount-sinai-health-system--nutriscan-ai": "2024-06-06",
+  "mtn-nigeria--zigi": "2023-08-23",
+  "mufg-bank--agentforce-360-for-financial-services": "2025-08-01",
+  "naranja-x--github-copilot": "2025-08-19",
+  "national-basketball-association-nba--nba-inside-the-game-play-finder": "2025-10-01",
+  "national-football-league-nfl--microsoft-copilot-azure-ai-agents": "2025-08-19",
+  "naver--agent-n": "2025-03-21",
+  "nedgia-naturgy-group--virtual-ai-agent-contact-center-solution": "2025-07-14",
+  "nestle--nesgpt": "2024-07-23",
+  "new-york-metropolitan-transportation-authority-mta--omny-ai-chatbot": "2025-05-28",
+  "nhs-england--microsoft-365-copilot": "2026-06-07",
+  "nio--nomi-gpt": "2024-04-12",
+  "northwell-health--abridge-ambient-ai-platform": "2025-10-14",
+  "novo-nordisk--amazon-bedrock-agentcore": "2026-08-10",
+  "nubank--call-center-copilot-openai-gpt-4o": "2025-03-06",
+  "nubank--sierra": "2026-03-25",
+  "nvidia--cursor": "2025-10-09",
+  "ocbc--ocbc-gpt": "2023-10-24",
+  "octopus-energy--arlo": "2026-07-07",
+  "ola-krutrim--kruti": "2025-06-12",
+  "olukai--sierra": "2024-02-13",
+  "omnicom--omni": "2026-01-08",
+  "opentable--agentforce": "2025-08-04",
+  "optum-unitedhealth-group--optum-real": "2025-10-22",
+  "orange--max-it-multilingual-voice-ai": "2025-11-14",
+  "orange-spain--gemini-enterprise": "2026-10-08",
+  "oscar-health--oswell": "2025-10-20",
+  "otto-group-otto--otto-ai-assistant": "2026-03-06",
+  "oura-health--decagon": "2025-04-28",
+  "oxford-university-hospitals-nhs-foundation-trust--trustedmdt": "2025-11-18",
+  "panasonic-connect--connectai": "2023-03-08",
+  "pandora--salesforce-agentforce": "2025-12-04",
+  "papa-johns--google-gemini-enterprise": "2026-01-11",
+  "penda-health--ai-consult": "2025-10-01",
+  "pepsico--agentforce": "2025-06-24",
+  "pepsico--gemini-enterprise": "2026-07-22",
+  "pernambucanas--google-agentspace": "2025-09-10",
+  "petrobras--chatpetrobras": "2023-12-11",
+  "pfizer--proton": "2025-01-07",
+  "ping-an-insurance--express-service-gateway-ai-service-representatives-incl-ai-doctor": "2026-03-26",
+  "precina-health--agentforce": "2025-02-28",
+  "prudential-financial--just-ask": "2026-05-20",
+  "publicis-groupe--coreai": "2024-01-25",
+  "qantas--unnamed-ai-operations-suite": "2026-01-15",
+  "qatar-ministry-of-commerce-and-industry--ai-agent-factory": "2026-02-07",
+  "rakuten--openai-codex": "2026-09-14",
+  "rakuten--rakuten-ai": "2025-10-23",
+  "ralph-lauren--ask-ralph": "2025-09-11",
+  "ramp--sierra": "2026-03-18",
+  "reach-plc--guten": "2025-08-15",
+  "real-madrid--adobe-genstudio-firefly-services-experience-platform": "2025-11-15",
+  "receita-federal-do-brasil--gemini-on-google-cloud": "2025-09-10",
+  "red--salesforce-agentforce-donor-data-agent": "2026-03-03",
+  "rede-americas--google-agentspace": "2025-09-10",
+  "rede-mater-dei-de-saude--suite-of-12-ai-agents-for-the-hospital-revenue-cycle-contracts-parameterization-": "2026-04-15",
+  "reliance-jio--jio-ai-call-agent-part-of-jio-bharat-iq-reliance-intelligence-suite": "2026-06-19",
+  "relos--v7-go": "2026-01-08",
+  "renault--reno-renault-connected-avatar": "2024-10-30",
+  "reuters-thomson-reuters--reuters-ai-suite-fact-genie-leon-avista": "2025-04-15",
+  "revolut--air-ai-by-revolut": "2026-04-09",
+  "rio-tinto--autohaul": "2026-07-03",
+  "rippling--decagon": "2026-09-11",
+  "roblox--roblox-assistant-agentic-mode": "2026-04-16",
+  "rocket-companies-rocket-mortgage--rocket-logic": "2024-04-09",
+  "ruya-bank--magoneai": "2026-08-07",
+  "safaricom--unnamed-m-pesa-fraud-detection-ai": "2025-03-27",
+  "salesforce--agentforce": "2025-07-10",
+  "sami--google-agentspace": "2025-09-10",
+  "samsung-electronics--samsung-gauss2-ds-assistant": "2024-11-21",
+  "sanofi--plai": "2023-06-13",
+  "saudi-arabia-ministry-of-economy-and-planning--insaights": "2026-07-13",
+  "saudi-aramco--aramco-metabrain-ai": "2025-02-10",
+  "saudi-tourism-authority--sara": "2025-02-13",
+  "schaeffler--siemens-industrial-copilot": "2024-10-18",
+  "schibsted-schibsted-media--aria": "2025-11-15",
+  "schneider-electric--schneider-electric-industrial-copilot-agentic-manufacturing": "2026-04-16",
+  "sebrae-sao-paulo--google-agentspace": "2025-09-10",
+  "seco-energy--capacity-ai-virtual-agents": "2025-10-13",
+  "sephora--sephora-ai-beauty-chat": "2026-05-12",
+  "servicenow--windsurf": "2025-10-17",
+  "seven-eleven-japan--unnamed-ai-ordering-system": "2026-06-01",
+  "shared-services-canada-government-of-canada--canchat": "2025-08-15",
+  "sheba-medical-center--project-k": "2025-03-06",
+  "siam-commercial-bank-scb--scb-easy-easy-store-hyper-personalized-ai": "2024-05-18",
+  "siemens-bad-neustadt-electric-motors-factory-ewn--insights-hub-production-copilot": "2025-01-30",
+  "signal-iduna--gemini-enterprise": "2026-07-22",
+  "simple-attijariwafa-bank--simple-ai": "2026-10-07",
+  "singapore-airlines--agentforce-with-einstein-in-service-cloud-and-data-cloud": "2025-03-11",
+  "singhealth--note-buddy": "2025-10-08",
+  "singtel--sierra": "2026-03-25",
+  "siriusxm--harmony": "2025-12-04",
+  "siriusxm--sierra": "2026-03-25",
+  "sk-telecom--aster": "2025-01-09",
+  "sky-co-ltd--gemini-enterprise-app": "2026-10-06",
+  "sncf--unnamed-predictive-maintenance-ai": "2024-09-12",
+  "sofi--sierra": "2026-03-18",
+  "softbank-corp--sierra": "2026-07-14",
+  "sonos--sierra": "2026-05-18",
+  "spotify--ai-dj-dj-x": "2025-05-13",
+  "sri-lanka-insurance-corporation-general-limited--beechat": "2026-07-08",
+  "standard-chartered--sc-gpt": "2025-08-22",
+  "state-farm--navi": "2026-05-12",
+  "stc-saudi-telecom-company--stc-enterprise-gpt": "2025-02-18",
+  "sumitomo-mitsui-financial-group-smbc--smbc-gai": "2024-05-16",
+  "supremo-tribunal-federal-stf-brazil--victor": "2025-11-15",
+  "swiggy--pyng": "2025-04-17",
+  "swiss-life--parloa-ai-agent-voice-phone-bot": "2025-07-24",
+  "swiss-re--life-guide-scout": "2024-04-22",
+  "synapxe--carescribe": "2025-10-08",
+  "tapestry-kate-spade--kate-spade-ai-gift-concierge": "2026-06-02",
+  "target--store-companion": "2024-06-15",
+  "taskus--decagon-taskus-ai-services": "2026-08-08",
+  "telefonica--aura": "2025-02-24",
+  "telkomsel--veronika": "2023-09-26",
+  "telstra--ask-telstra-one-sentence-summary": "2024-02-07",
+  "tencent--jili-ai-npc-game-for-peace-deepseek-connected": "2026-08-13",
+  "thyssenkrupp-automation-engineering--siemens-industrial-copilot": "2024-10-24",
+  "tiendanube--lumi": "2026-05-22",
+  "tokio-marine-nichido--righttouch-smart-agent": "2025-08-13",
+  "totalenergies--unnamed-production-forecasting-and-maintenance-ai": "2025-01-24",
+  "toyota-motor-corporation--o-beya": "2024-11-19",
+  "tpbank--t-aio": "2026-06-22",
+  "trainline--trainline-assistant": "2025-06-09",
+  "trip-com-group--tripgenie": "2026-03-15",
+  "tsmc--unnamed-fab-defect-detection-ai": "2026-06-01",
+  "turkiye-is-bankasi-isbank--maxi": "2022-02-23",
+  "u-s-general-services-administration-gsa--america-gov": "2026-09-29",
+  "u-s-general-services-administration-gsa--usai": "2025-08-14",
+  "uae-cabinet--cabinet-ai-advisor": "2026-09-02",
+  "uae-ministry-of-energy-and-infrastructure-moei--ask-moei": "2026-08-21",
+  "ubisoft--ghostwriter-neo-npc": "2025-11-21",
+  "uk-department-for-science-innovation-and-technology-dsit-gov-uk--gov-uk-ai-assistant-gov-uk-chat": "2026-01-27",
+  "ulta-beauty--ulta-ai": "2026-04-22",
+  "unilever--multi-agent-procurement-solution-gemini-enterprise-agent-platform": "2026-02-17",
+  "unilever--nova": "2026-09-28",
+  "unionbank-of-the-philippines--ria-customer-service-assistant-and-wealth-rm-assistant": "2025-11-13",
+  "universal-health-services-uhs--hippocratic-ai-generative-ai-healthcare-agents": "2025-06-17",
+  "university-of-california-irvine-uc-irvine--zotgpt": "2024-03-21",
+  "university-of-leicester--welcome-helper": "2026-09-22",
+  "uob-united-overseas-bank--tmrw-chatbot": "2026-03-04",
+  "usaa--eva": "2024-10-23",
+  "verizon--unnamed-rep-assist-ai-on-google-gemini": "2025-04-09",
+  "vibra-energia--google-agentspace": "2025-09-10",
+  "vietinbank--ibot-customer-and-genie-internal-ai-assistant": "2025-01-15",
+  "virgin-media-o2--lumi-ai": "2025-07-15",
+  "vision-bank--noura": "2026-02-11",
+  "vodafone--supertobi": "2024-07-15",
+  "vorwerk--insights-hub-production-copilot": "2025-01-30",
+  "walmart--sparky": "2025-06-06",
+  "weightwatchers--sierra": "2024-02-13",
+  "wells-fargo--fargo": "2022-10-24",
+  "wellspan-health--ana-hippocratic-ai-voice-agent": "2026-07-30",
+  "wendy-s--freshai": "2023-12-11",
+  "white-castle--julia-soundhound-voice-ai-drive-thru": "2023-08-02",
+  "wipro--wega": "2026-02-18",
+  "woolworths--olive": "2025-12-10",
+  "wtw-willis-towers-watson--willis-navigator": "2026-07-30",
+  "ymca-of-san-diego-county--member-services-agent-salesforce-agentforce": "2025-12-02",
+  "zalando--zalando-assistant": "2026-03-12",
+  "zillow--glean": "2025-08-20",
+  "zomato--nugget": "2025-02-17",
+  "zurich-insurance-group--zurichiq-agentiq-claimsiq-guidelineiq-voiceiq": "2026-06-16"
+ },
+ "sources": {
+  "https://www.itnewsafrica.com/2026/03/absa-on-next-generation-ai-in-banking/": {
+   "date": "2026-03-15",
+   "how": "url"
+  },
+  "https://www.harvey.ai/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://purple.law/blog/harvey-ai-review-2025/": {
+   "date": "2025-10-17",
+   "how": "page"
+  },
+  "https://www.bworldonline.com/technology/2026/05/14/749404/aia-philippines-uses-ai-powered-platform-to-train-agency-force/": {
+   "date": "2026-05-14",
+   "how": "url"
+  },
+  "https://www.philstar.com/lifestyle/on-the-radar/2026/05/28/2531160/aia-philippines-launches-ai-powered-training-platform-empower-agents-elevate-more-meaningful-human-first-customer-conversations": {
+   "date": "2026-05-28",
+   "how": "url"
+  },
+  "https://news.microsoft.com/europe/2025/07/10/aib-leading-innovation-in-irish-banking-with-enterprise-scale-deployment-of-microsoft-copilot-tools-to-simplify-work-and-empower-over-10000-employees/": {
+   "date": "2025-07-10",
+   "how": "url"
+  },
+  "https://www.rte.ie/news/business/2025/0710/1522822-aib-announces-ai-rollout-for-bank-staff/": {
+   "date": "2025-07-10",
+   "how": "url"
+  },
+  "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/": {
+   "date": "2025-08-04",
+   "how": "page"
+  },
+  "https://www.presight.ai/news/aiq-announces-340-million-contract-for-large-scale-deployment-of-agentic-ai-across-adnoc-operations": {
+   "date": "2025-03-10",
+   "how": "page"
+  },
+  "https://www.indiatvnews.com/business/news/air-india-generative-ai-virtual-agent-maharaja-microsoft-azure-openai-service-introduce-more-ai-features-to-address-customer-queries-2023-11-10-902160": {
+   "date": "2023-11-10",
+   "how": "url"
+  },
+  "https://newsroom.co.nz/2025/03/14/if-ai-is-a-battlefield-this-might-be-what-decides-who-wins/": {
+   "date": "2025-03-14",
+   "how": "url"
+  },
+  "https://newsroom.servicenow.com/press-releases/details/2025/ServiceNow-Unveils-the-New-ServiceNow-AI-Platform-to-Put-Any-AI-Any-Agent-Any-Model-to-Work-Across-the-Enterprise/default.aspx": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.businesswire.com/news/home/20251022666853/en/Aeroporti-di-Roma-Transforms-Passenger-Experience-with-AI-Virtual-Assistant-Powered-by-Amazon-Web-Services-and-Storm-Reply": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://getperspective.ai/blog/sierra-ai-customer-experience-conversational-agent-research-2026": {
+   "date": "2026-05-18",
+   "how": "page"
+  },
+  "https://sierra.ai/customers": {
+   "date": null,
+   "how": "none"
+  },
+  "https://gulfnews.com/business/energy/adnoc-gets-new-ai-platform-inks-three-robotics-deals-at-adipec-2025-1.500331929": {
+   "date": "2025-11-03",
+   "how": "page"
+  },
+  "https://economymiddleeast.com/news/gitex-global-2025-abu-dhabi-introduces-worlds-first-ai-public-servant-with-customizable-automation-for-over-1100-services/": {
+   "date": "2025-10-14",
+   "how": "page"
+  },
+  "https://guardian.ng/technology/airtel-boosts-customer-experience-with-whatsapp-chatbot/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.absa.africa/our-stories/our-voices/2026/sa-banks-are-already-using-agentic-ai-heres-why-it-matters-for-customers/": {
+   "date": "2026-03-27",
+   "how": "page"
+  },
+  "https://newsroom.airasia.com/news/capital-a-welcomes-ask-bo": {
+   "date": "2023-02-08",
+   "how": "page"
+  },
+  "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2025/Albertsons-Companies-Accelerates-Digital-Transformation-with-the-Albertsons-AI-Shopping-Assistant-Redefining-the-Grocery-Shopping-Experience/default.aspx": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.microsoft.com/en/customers/story/26047-air-india-azure-openai-in-foundry-models": {
+   "date": null,
+   "how": "none"
+  },
+  "https://gfmag.com/award/award-winners/ai-in-finance-awards-2025-consumer-banking/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.scmp.com/tech/tech-trends/article/3353044/alibaba-brings-chat-style-shopping-taobao-and-qwen-amid-ai-gateway-push": {
+   "date": "2026-05-10",
+   "how": "page"
+  },
+  "https://www.allianz.com/en/mediacenter/news/articles/250205-smarter-claims-management-smoother-settlements.html": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://techeconomy.ng/airtel-nigeria-launches-airtel-assist-on-whatsapp/": {
+   "date": "2025-08-14",
+   "how": "page"
+  },
+  "https://fortune.com/2025/11/02/amazon-rufus-ai-shopping-assistant-chatbot-10-billion-sales-monetization/": {
+   "date": "2025-11-02",
+   "how": "url"
+  },
+  "https://www.marketing-interactive.com/airasia-fires-ai-chatbot-ava-and-replaces-her-with-ask-bo": {
+   "date": "2023-02-09",
+   "how": "page"
+  },
+  "https://www.salesforce.com/customer-stories/aaa-washington/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.internationalairportreview.com/news/298895/aeroporti-di-roma-introduces-new-ai-virtual-assistant/": {
+   "date": "2025-10-29",
+   "how": "page"
+  },
+  "https://www.airindia.com/in/en/newsroom/press-release/air-india-successfully-deploys-airline-industry-s-first-generati.html": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.grocerydive.com/news/albertsons-agentic-ai-shopping-assistant/807168/": {
+   "date": "2025-12-05",
+   "how": "page"
+  },
+  "https://www.secondtalent.com/resources/github-copilot-statistics/": {
+   "date": "2026-09-11",
+   "how": "page"
+  },
+  "https://www.forbes.com/sites/cognitiveworld/2020/09/06/how-american-express-uses-ai-to-enhance-security-interview-with-rajat-jain-global-head-for-identity-and-authentication-strategy-at-american-express/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://en.media.allegro.pl/457492-allegro-begins-collaboration-with-openai-to-set-new-standards-in-ai-driven-innovation-in-e-commerce": {
+   "date": "2026-05-11",
+   "how": "page"
+  },
+  "https://www.thestandard.com.hk/innovation/article/334604/Ant-Group-eyes-AI-agent-update-in-Alipay-Bloomberg": {
+   "date": "2026-06-14",
+   "how": "page"
+  },
+  "https://www.aboutamazon.com/news/retail/amazon-rufus-ai-assistant-personalized-shopping-features": {
+   "date": "2025-11-18",
+   "how": "page"
+  },
+  "https://campustechnology.com/articles/2025/12/11/asu-teams-up-with-grammarly-to-deploy-agentic-ai-assistant.aspx": {
+   "date": "2025-12-11",
+   "how": "url"
+  },
+  "https://aws.amazon.com/blogs/machine-learning/how-rufus-scales-conversational-shopping-experiences-to-millions-of-amazon-customers-with-amazon-bedrock/": {
+   "date": "2025-11-20",
+   "how": "page"
+  },
+  "https://corporate.arcelormittal.com/media/news/regulatory-news/arcelormittal-announces-strategic-collaboration-with-aws-to-drive-industrial-automation-and-lower-carbon-construction-globally": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.dge.gov.ae/en/news/2025-gitex-tamm-4": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.modernretail.co/technology/amazon-says-its-ai-shopping-assistant-is-gaining-traction-with-rufus-users-up-115/": {
+   "date": "2026-04-30",
+   "how": "page"
+  },
+  "https://www.modernretail.co/technology/marketplace-briefing-why-amazon-discontinued-its-ai-powered-rufus-chatbot-for-alexa-shopping-agent/": {
+   "date": "2026-05-14",
+   "how": "page"
+  },
+  "https://mediacopilot.substack.com/p/the-aps-ai-playbook-troy-thibodeaux": {
+   "date": "2025-07-18",
+   "how": "page"
+  },
+  "https://luxinnovation.lu/news/arcelormittal-how-ai-reinvented-steel": {
+   "date": "2026-09-10",
+   "how": "page"
+  },
+  "https://www.alibabagroup.com/en-US/document-1991231293551017984": {
+   "date": null,
+   "how": "none"
+  },
+  "https://fintechnews.hk/39226/fintechchina/ant-group-alipay-ai-agent-testing/": {
+   "date": "2026-06-15",
+   "how": "page"
+  },
+  "https://blogs.nvidia.com/blog/american-express-nvidia-ai/": {
+   "date": "2026-06-01",
+   "how": "page"
+  },
+  "https://www.zenml.io/llmops-database/multi-agent-ai-development-assistant-for-clinical-trial-data-analysis": {
+   "date": null,
+   "how": "none"
+  },
+  "https://windsurf.com/blog/athena-health-case-study": {
+   "date": null,
+   "how": "http 429"
+  },
+  "https://bernama.com/en/news.php?id=2162682": {
+   "date": "2023-08-02",
+   "how": "page"
+  },
+  "https://www.aiagentsacademy.ai/blog/ai-customer-service-platforms-scale-millions-without-hallucinations-2026": {
+   "date": "2026-04-30",
+   "how": "page"
+  },
+  "https://getzowie.com/blog/most-accurate-ai-customer-service-agents-2026": {
+   "date": "2026-07-17",
+   "how": "page"
+  },
+  "https://www.workclaw.com/blog/ai-agents-media-teams": {
+   "date": "2026-08-02",
+   "how": "page"
+  },
+  "https://www.medianama.com/2026/02/223-bajaj-finance-800-ai-agents-lending-operations/": {
+   "date": "2026-02-15",
+   "how": "url"
+  },
+  "https://emerj.com/artificial-intelligence-at-allianz-two-use-cases/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.medianama.com/2026/05/223-q4fy26-bajaj-finance-autonomous-agent-target-800-600-fy27/": {
+   "date": "2026-05-15",
+   "how": "url"
+  },
+  "https://www.salesforce.com/customer-stories/amplifon/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://digitalbankerafrica.com/access-bank-helping-customers-access-more/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.googlecloudpresscorner.com/2025-09-10-Google-Cloud-Brings-a-New-Era-of-AI-Innovation-to-Brazil": {
+   "date": "2025-09-10",
+   "how": "url"
+  },
+  "https://www.cmswire.com/contact-center/decagon-triples-valuation-to-45b-with-250m-series-d/": {
+   "date": "2026-01-30",
+   "how": "page"
+  },
+  "https://www.intelligentcio.com/latam/2026/07/15/banco-do-brasil-deploys-nice-copilot-agentic-ai-to-enhance-relationship-banking-and-customer-service/": {
+   "date": "2026-07-15",
+   "how": "url"
+  },
+  "https://www.reinsurancene.ws/axa-deploys-secure-generative-ai-to-employees/": {
+   "date": "2023-07-28",
+   "how": "page"
+  },
+  "https://coletivo.tech/noticias/banco-do-brasil-copiloto-nice-atendimento-ia/": {
+   "date": "2026-08-05",
+   "how": "page"
+  },
+  "https://www.canberratimes.com.au/story/9109838/public-servants-to-have-access-to-govai-chat-under-aps-ai-plan/": {
+   "date": "2025-11-11",
+   "how": "page"
+  },
+  "https://iafrica.com/absa-becomes-first-african-bank-to-launch-agentic-ai-for-customers/": {
+   "date": "2025-06-09",
+   "how": "page"
+  },
+  "https://about.att.com/blogs/2025/agentic-ai.html": {
+   "date": "2025-11-13",
+   "how": "page"
+  },
+  "https://www.akbanklab.com/en/news/newsroom/money-transfer-by-messaging-with-chatbot-in-akbank": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.fintechfutures.com/ai-in-fintech/santander-charts-data-and-ai-first-future-with-new-openai-partnership": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://finsidersbrasil.com.br/tecnologia-para-fintechs/uso-da-ia-pelos-bancos-avanca-para-alem-do-atendimento/": {
+   "date": "2025-06-16",
+   "how": "page"
+  },
+  "https://finance.yahoo.com/technology/ai/articles/banco-brasil-embeds-agentic-ai-120000191.html": {
+   "date": null,
+   "how": "fetch failed"
+  },
+  "https://news.microsoft.com/source/latam/features/ai/galicia-naranja-x-github-copilot/?lang=en": {
+   "date": "2025-08-19",
+   "how": "page"
+  },
+  "https://elcomercio.pe/publirreportaje/atencion-mas-personalizada-e-inteligente-el-whatsapp-del-bcp-se-potencia-con-inteligencia-artificial-generativa-noticia/": {
+   "date": "2025-07-09",
+   "how": "page"
+  },
+  "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2025/08/a-decade-of-ai-innovation--bofa-s-virtual-assistant-erica-surpas.html.html": {
+   "date": "2025-08-15",
+   "how": "url"
+  },
+  "https://www.santander.com/en/stories/santander-data-ai-first-strategy-accelerates-through-openai-collaboration": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.microsoft.com/en/customers/story/25660-banco-bradesco-sa-azure-ai-foundry": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.nvidia.com/en-us/case-studies/astellas-pharma/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.microsoft.com/en/customers/story/1760377839901581759-axa-gie-azure-insurance-en-france": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.finextra.com/newsarticle/34383/digital-human-fatema-takes-a-bow-at-bank-abc": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://officechai.com/ai/ai-powered-call-centers-are-now-accounting-for-10-of-all-loan-disbursements-at-bajaj-finance/": {
+   "date": "2026-02-12",
+   "how": "page"
+  },
+  "https://www.axa.com/en/press/press-releases/axa-offers-securegenerative-ai-to-employees": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.govai.gov.au/govai-chat": {
+   "date": null,
+   "how": "none"
+  },
+  "https://sg.finance.yahoo.com/news/bank-singapore-uses-ai-agents-195431610.html": {
+   "date": null,
+   "how": "fetch failed"
+  },
+  "https://www.humasindonesia.id/berita/asisten-virtual-berbasis-ai-milik-bri-raih-predikat-%E2%80%98-chatbot--bank-terbaik-2024-2081": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.wealthbriefing.com/html/article.php/bank-of-singapore-deploys-ai-to-accelerate-source-of-wealth-verification": {
+   "date": "2025-10-13",
+   "how": "page"
+  },
+  "https://www.bank-abc.com/en/Media%20Relations/PressRelease/digitalemployee": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.customerexperiencedive.com/news/bank-of-america-erica-virtual-assistants/758334/": {
+   "date": "2025-08-25",
+   "how": "page"
+  },
+  "https://www.newscaststudio.com/2025/06/27/bbc-begins-public-trials-of-two-generative-ai-news-production-tools/": {
+   "date": "2025-06-27",
+   "how": "url"
+  },
+  "https://www.forbes.com/sites/ronschmelzer/2025/06/29/bbc-rolls-out-ai-summaries-and-style-tool-in-newsroom-test/": {
+   "date": "2025-06-29",
+   "how": "url"
+  },
+  "https://thedigitalbanker.com/generative-ai-powers-a-new-era-of-efficiency-for-bank-of-china-hong-kong/": {
+   "date": "2026-03-11",
+   "how": "page"
+  },
+  "https://www.fstech.co.uk/fst/BBVA_To_Roll_Out_ChatGPT_Across_120000_Strong_Global_Workforce.php": {
+   "date": "2025-12-12",
+   "how": "page"
+  },
+  "https://www.prnewswire.com/news-releases/tetrascience-and-bayer-expand-partnership-to-advance-scientific-data-management-302620343.html": {
+   "date": "2025-11-20",
+   "how": "page"
+  },
+  "https://keuangan.kontan.co.id/news/mita-vira-sabrina-cinta-dan-aisyah-robot-pintar-pengganti-customer-service-bank": {
+   "date": null,
+   "how": "none"
+  },
+  "https://callcenter-japan.com/article/8439/1/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.bankofsingapore.com/media-releases/2025/bank-of-singapore-deploys-agentic-ai-tool-to-automate-writing-of-source-of-wealth-reports.html": {
+   "date": null,
+   "how": "none"
+  },
+  "https://cognitivebusiness.news/colombian-bank-bancolombia-unveils-tabot-facebook-messenger-chatbot/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.microsoft.com/en/customers/story/19177-banco-bradesco-sa-azure-ai-services": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.parloa.com/customers/how-barmeniagothaer-s-mina-ai-agent-adds-empathy-and-precision/": {
+   "date": "2025-06-24",
+   "how": "page"
+  },
+  "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/": {
+   "date": "2026-07-22",
+   "how": "page"
+  },
+  "https://www.bloomberg.com/company/press/bloomberg-accelerates-financial-analysis-with-gen-ai-document-insights/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.telecomtv.com/content/digital-platforms-services/airtel-launches-india-s-first-ai-powered-network-solution-for-spam-detection-51375/": {
+   "date": "2024-09-27",
+   "how": "page"
+  },
+  "https://www.bmwblog.com/2026/01/09/bmw-alexa-plus-intelligent-personal-assistant/": {
+   "date": "2026-01-09",
+   "how": "url"
+  },
+  "https://aismiley.co.jp/ai_news/yokohama-mobivoice-auto/": {
+   "date": "2023-02-08",
+   "how": "page"
+  },
+  "https://mobilus.co.jp/press-release/49265": {
+   "date": "2025-11-07",
+   "how": "page"
+  },
+  "https://www.qsrmagazine.com/news/bojangles-and-hi-auto-expand-drive-thru-automated-voice-ordering/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.prnewswire.com/news-releases/bloomberg-launches-ai-powered-earnings-call-summaries-302040670.html": {
+   "date": "2024-01-22",
+   "how": "page"
+  },
+  "https://www.artificialintelligence-news.com/news/bbva-embeds-ai-into-banking-workflows-using-chatgpt-enterprise/": {
+   "date": "2025-12-12",
+   "how": "page"
+  },
+  "https://www.cnbc.com/2026/03/11/ai-travel-planners-tourism-popularity-trust-hallucinations.html": {
+   "date": "2026-03-11",
+   "how": "url"
+  },
+  "https://telcomagazine.com/news/why-airtels-ai-cuts-customer-fraud-losses-in-india": {
+   "date": "2025-09-17",
+   "how": "page"
+  },
+  "https://www.antarctica.gov.au/news/2024/listening-to-giants-the-search-for-the-elusive-antarctic-blue-whale/": {
+   "date": "2024-05-06",
+   "how": "page"
+  },
+  "https://www.antarctica.gov.au/news/2023/video-tracking-of-antarctic-blue-whales-provides-behavioural-insights-and-spurs-ai-development/": {
+   "date": "2023-02-20",
+   "how": "page"
+  },
+  "https://www.gdnonline.com/Details/1366565/Bank-ABC%E2%80%99s-Fatema-named-Best-Virtual-Assistant-in-Middle-East": {
+   "date": null,
+   "how": "none"
+  },
+  "https://phys.org/news/2025-10-artificial-intelligence-supercharges-science-antarctic.html": {
+   "date": "2025-10-15",
+   "how": "url"
+  },
+  "https://www.bas.ac.uk/team/science-teams/ai-lab/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.bas.ac.uk/news/artificial-intelligence-supercharges-science-on-the-antarctic-seafloor/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.islamicfinancenews.com/boubyan-bank-launches-ai-based-chatbot-service.html": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.salesforce.com/plus/experience/agentforce_world_tour_washington_dc_2026/series/best_of_agentforce_world_tour_washington_dc_2026/episode/episode-s1e27": {
+   "date": null,
+   "how": "none"
+  },
+  "https://news.booking.com/bookingcom-debuts-agentic-ai-innovations-adding-to-its-robust-suite-of-genai-tools-for-customers/": {
+   "date": "2025-10-09",
+   "how": "page"
+  },
+  "https://www.salesforce.com/news/stories/agentforce-nonprofit-announcement/": {
+   "date": "2025-12-02",
+   "how": "page"
+  },
+  "https://www.press.bmwgroup.com/global/article/detail/T0454477EN/a-milestone-for-human-vehicle-interaction-bmw-intelligent-personal-assistant-expanded-to-include-amazon-alexa-technology?language=en": {
+   "date": null,
+   "how": "none"
+  },
+  "https://carloshankgonzalez.com/banortes-virtual-assistant-maya-named-one-of-the-worlds-best-banking-ai-innovations/": {
+   "date": "2022-07-18",
+   "how": "page"
+  },
+  "https://www.airtel.in/press-release/09-2024/airtel-cracks-down-on-spam-launches-indias-first-ai-powered-network-solution-for-spam-detection/": {
+   "date": "2024-09-25",
+   "how": "page"
+  },
+  "https://openai.com/index/bbva/": {
+   "date": "2026-09-14",
+   "how": "page"
+  },
+  "https://www.fstech.co.uk/fst/CaixaBank_AI_Agent_Will_Be_First_Point_Of_Contact_For_Website_And_App_Chats.php": {
+   "date": "2026-05-01",
+   "how": "page"
+  },
+  "https://www.axios.com/local/san-francisco/2025/10/06/california-community-colleges-ai-nectir-tutors": {
+   "date": "2025-10-06",
+   "how": "url"
+  },
+  "https://www.prnewswire.com/news-releases/as-ai-reshapes-higher-education-nectir-raises-12-5m-to-scale-its-purpose-built-ai-infrastructure-for-schools-302709783.html": {
+   "date": "2026-03-10",
+   "how": "page"
+  },
+  "https://www.nrn.com/quick-service/burger-king-is-launching-an-ai-powered-employee-assistant": {
+   "date": "2026-02-26",
+   "how": "page"
+  },
+  "https://newsroom.bt.com/bt-group-leans-on-ai-to-transform-customer-service-experience/": {
+   "date": "2024-12-12",
+   "how": "page"
+  },
+  "https://www.c6bank.com.br/c6assistant/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://consumidormoderno.com.br/c6-bank-transforma-cx/": {
+   "date": "2024-12-11",
+   "how": "page"
+  },
+  "https://openai.com/index/booking-com/": {
+   "date": "2025-03-12",
+   "how": "page"
+  },
+  "https://www.finextra.com/newsarticle/31796/capital-one-virtual-assistant-can-now-issue-virtual-card-numbers": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.banquemisr.com/en/aboutus/press/Pages/Chat-Bot.aspx": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.ecommercemag.fr/retail-1220/commerce-agentique-carrefour-deploie-ses-services-sur-chatgpt-56728": {
+   "date": "2026-03-26",
+   "how": "page"
+  },
+  "https://www.carrefour.com/en/news/2023/carrefour-integrates-openai-technologies-and-launches-generative-ai-powered-shopping": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.thecharlotteledger.com/p/meet-bo-linda-bojangles-ai-drive-05f": {
+   "date": "2023-11-22",
+   "how": "page"
+  },
+  "https://www.caixabank.com/en/headlines/news/caixabank-launches-the-first-ai-agent-that-assists-customers-in-purchasing-products-from-its-app": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.capitalone.com/digital/tools/eno/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.uctoday.com/unified-communications/bt-group-leverages-sprinklr-ai-to-transform-its-customer-experience/": {
+   "date": "2024-12-16",
+   "how": "page"
+  },
+  "https://legora.com/newsroom/legora-selected-by-bclp-as-firmwide-ai-platform-provider": {
+   "date": "2026-03-05",
+   "how": "page"
+  },
+  "https://sierra.ai/customers/casper": {
+   "date": "2024-10-01",
+   "how": "page"
+  },
+  "https://www.bpi.com.ph/about-bpi/news/bpi-enhances-bea-chat-with-smarter-ai-powered-features-for-customer-support": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.today.com/food/restaurants/burger-king-ai-headsets-track-employee-friendliness-rcna260858": {
+   "date": "2026-03-04",
+   "how": "page"
+  },
+  "https://www.creditcards.com/card-advice/capital-one-eno/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.clubic.com/technologies-d-avenir/intelligence-artificielle/actualite-473772-une-ia-pour-vous-aider-a-faire-vos-courses-carrefour-presente-hopla-base-sur-chatgpt-4.html": {
+   "date": "2023-06-11",
+   "how": "page"
+  },
+  "https://onepetro.org/spepbec/proceedings-abstract/25PBEC/25PBEC/793947": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://publicsector.google/ai/chicago-transit-authority-launches-a-multi-lingual-chatbot-for-more-a-more-seamless-commute/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.assembled.com/page/decagon-ai": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.mobileworldlive.com/china-unicom-develops-worlds-first-cloud-ai-services-for-homes-and-individuals/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://restauranttechnologynews.com/2025/06/chipotle-expands-use-of-ai-hiring-assistant-as-store-openings-accelerate/": {
+   "date": "2025-06-15",
+   "how": "url"
+  },
+  "https://www.cnbc.com/2025/07/28/chipotle-hiring-job-application-ai-workers.html": {
+   "date": "2025-07-28",
+   "how": "url"
+  },
+  "https://funnelleasing.com/funnel-selected-by-camden-property-trust-for-renter-centric-leasing/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://hi.auto/company/newsroom/bojangles-rolls-out-spanish-ai-ordering-across-all-platforms-with-hi-auto/": {
+   "date": "2025-08-04",
+   "how": "page"
+  },
+  "https://www.caterpillar.com/en/news/corporate-press-releases/h/cat-ai-assistant.html": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.telecomtv.com/content/telcos-and-ai-channel/china-unicom-aims-to-bring-ai-to-all-52495/": {
+   "date": "2025-03-05",
+   "how": "page"
+  },
+  "https://boubyan.bankboubyan.com/en/ways-to-bank/msa3ed/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.soa.org/resources/research-reports/2025/ai-insurance-greater-china/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://techafricanews.com/2026/04/01/cityblue-hotels-partners-inntelo-ai-to-deploy-ai-native-concierge-agents-across-africa/": {
+   "date": "2026-04-01",
+   "how": "url"
+  },
+  "https://www.intelligentcio.com/africa/2026/04/01/cityblue-hotels-and-inntelo-ai-sign-first-ai-native-hospitality-venture-in-sub-saharan-africa/": {
+   "date": "2026-04-01",
+   "how": "url"
+  },
+  "https://longbridge.com/quote/601601.SH/news/277123542": {
+   "date": "2026-02-27",
+   "how": "page"
+  },
+  "https://propmodo.com/how-proptechs-biggest-platforms-are-taking-different-approaches-to-ai-agents/": {
+   "date": "2026-06-03",
+   "how": "page"
+  },
+  "https://www.convenience.org/stay-current/news/2026/march/2/3-burger-king-tests-ai-agent-to-coach-workers_tech": {
+   "date": null,
+   "how": "none"
+  },
+  "https://newsroom.clevelandclinic.org/2025/02/19/cleveland-clinic-announces-the-rollout-of-ambience-healthcares-ai-platform": {
+   "date": "2025-02-19",
+   "how": "url"
+  },
+  "https://www.prnewswire.com/news-releases/caterpillar-introduces-cat-ai-assistant-302653877.html": {
+   "date": "2026-01-06",
+   "how": "page"
+  },
+  "https://www.taiwannews.com.tw/news/6335805": {
+   "date": "2026-04-07",
+   "how": "page"
+  },
+  "https://www.moneythor.com/company/cimb-adds-new-features-to-mobile-banking-app-eva/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.citigroup.com/global/news/press-release/2025/citi-unveils-citi-stylus-workspaces-agentic-ai-turbocharging-productivity": {
+   "date": null,
+   "how": "none"
+  },
+  "https://news.cognizant.com/2025-11-04-Cognizant-Adopts-Anthropics-Claude-to-Accelerate-Enterprise-AI-Adoption-at-Scale-and-Deploys-Claude-to-Drive-Internal-AI-Transformation": {
+   "date": "2025-11-04",
+   "how": "url"
+  },
+  "https://www.ukauthority.com/articles/iai-and-citizens-advice-develop-ai-assistant/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.fiercehealthcare.com/ai-and-machine-learning/cleveland-clinic-chooses-ambience-ai-scribe": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://ai.gov.uk/blogs/transforming-civic-engagement-with-caddy/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.itp.net/ai-automation/digital-transformation/cleveland-clinic-abu-dhabi-launches-ai-scientist-to-support-clinical-decision-making": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://en.wikipedia.org/wiki/Commercial_Bank_of_Ceylon": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.dailynewsegypt.com/2022/04/10/cib-egypt-details-its-digital-transformation-results-amid-covid-19/": {
+   "date": "2022-04-10",
+   "how": "url"
+  },
+  "https://www.finextra.com/newsarticle/45889/commerzbank-combines-generative-ai-and-avatar-technology-to-create-new-digital-assistant": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.anthropic.com/news/cognizant-partnership": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.color.com/blog/colors-copilot-and-partnership-with-openai/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.sundaytimes.lk/251116/education/ai-and-banking-sri-lankas-next-leap-forward-621056.html": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.cimb.com/en/newsroom/2021/cimb-unveils-eva-the-first-in-market-chatbot-for-commercial-banking-in-malaysia.html": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.commbank.com.au/articles/newsroom/2026/04/ai-agent-spots-fraud-in-real-time.html": {
+   "date": "2026-04-15",
+   "how": "url"
+  },
+  "https://www.zawya.com/en/press-release/africa-press-releases/africas-fastest-growing-hotel-group-cityblue-hotels-selects-inntelo-ai-to-deploy-artificial-intelligence-ai-rjdaf2fo": {
+   "date": "2026-04-01",
+   "how": "page"
+  },
+  "https://www.fintechexpert.mx/p/clara-lanza-agente-ia-analisis-financiero": {
+   "date": "2025-07-30",
+   "how": "page"
+  },
+  "https://decagon.ai/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.facilitiesdive.com/news/how-commercial-property-management-firms-are-using-ai-and-hope-to-use-it/813798/": {
+   "date": "2026-03-04",
+   "how": "page"
+  },
+  "https://www.bankingdive.com/news/citi-agentic-AI-tools-stylus-workspaces/760868/": {
+   "date": "2025-09-23",
+   "how": "page"
+  },
+  "https://openai.com/index/color-health/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.nrn.com/restaurant-operations/dairy-queen-rolls-out-voice-ai-for-the-drive-thru": {
+   "date": "2026-04-16",
+   "how": "page"
+  },
+  "https://www.restaurantdive.com/news/presto-dairy-queen-drive-thru-voice-automation-franchisees/817574/": {
+   "date": "2026-04-16",
+   "how": "page"
+  },
+  "https://www.crowdfundinsider.com/2026/08/300467-dbs-rolls-out-agentic-ai-tools-to-1500-bankers-aiming-to-significantly-cut-credit-assessment-time/": {
+   "date": "2026-08-15",
+   "how": "url"
+  },
+  "https://www.dbs.com/newsroom/DBS_empowers_its_Customer_Service_Officers_with_Gen_AI_powered_virtual_assistant_to_reduce_toil_and_enhance_customer_experience": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.computerweekly.com/news/366622932/CW-Innovation-Awards-DBS-AI-assistant-slashes-call-times-and-boosts-productivity": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.clevelandclinicabudhabi.ae/en/media-center/news/ccad-collaborates-with-owkin-to-launch-the-worlds-first-clinical-artificial-intelligence-scientist": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.commerzbank.de/group/newsroom/press-releases/avatar.html": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.dbs.com/newsroom/DBS_scales_agentic_AI_to_transform_way_of_working_for_corporate_bankers_freeing_up_time_for_more_strategic_client_engagements": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.deliveryhero.com/newsroom/delivery-hero-unveils-herogen-autonomous-ai-agent-unlocks-130-person-engineering-output/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.glean.com/resources/customer-stories/confluent": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.cnbc.com/2025/10/06/anthropic-deloitte-enterprise-ai.html": {
+   "date": "2025-10-06",
+   "how": "url"
+  },
+  "https://getzowie.com/testimonials/decathlon": {
+   "date": null,
+   "how": "none"
+  },
+  "https://statescoop.com/pennsylvania-expands-generative-ai-tools-3000-employees/": {
+   "date": "2026-04-15",
+   "how": "page"
+  },
+  "https://www.commbank.com.au/guidance/newsroom/cba-launches-chatbot-named-CEBA-201801.html": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.anthropic.com/news/deloitte-anthropic-partnership": {
+   "date": null,
+   "how": "none"
+  },
+  "https://news.delta.com/smarter-journeys-start-here-delta-concierge-now-beta-rollout": {
+   "date": "2025-10-29",
+   "how": "page"
+  },
+  "https://www.df.cl/codelco-recurre-a-inteligencia-artificial-para-extraer-mas-cobre-de": {
+   "date": "2022-08-12",
+   "how": "page"
+  },
+  "https://diginomica.com/decathlon-uk-improves-its-customer-experience-combining-human-expertize-conversational-ai": {
+   "date": "2022-02-18",
+   "how": "page"
+  },
+  "https://www.computerweekly.com/news/366644982/Philippine-government-taps-Google-Cloud-to-deploy-AI-agents": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.pa.gov/content/dam/copapwp-pagov/en/oa/documents/programs/information-technology/documents/openai-pilot-report-2025.pdf": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.finews.asia/finance/45016-dbs-agentic-ai-virtual-banking-assistants": {
+   "date": "2026-07-28",
+   "how": "page"
+  },
+  "https://news.delta.com/delta-responds-misinformation-around-ai-pricing": {
+   "date": "2025-08-07",
+   "how": "page"
+  },
+  "https://abcnews.com/GMA/Travel/delta-ai-ticket-pricing-means-air-travel/story?id=124343088": {
+   "date": "2025-08-05",
+   "how": "page"
+  },
+  "https://www.customerexperiencedive.com/news/delta-begins-roll-out-generative-ai-virtual-assistant-concierge/803899/": {
+   "date": "2025-10-28",
+   "how": "page"
+  },
+  "https://www.adweek.com/agencies/dentsu-revamps-its-ai-platform-for-an-agentic-future/": {
+   "date": "2026-04-14",
+   "how": "page"
+  },
+  "https://dfsud.com/america/mexicana-clara-lanza-su-analista-financiero-con-ia-para-consolidar-su": {
+   "date": "2025-08-29",
+   "how": "page"
+  },
+  "https://www.dentsu.com/news-releases/dentsu-unveils-next-evolution-of-dentsu-connect-industrys-first-truly-agentic-ai-powered-operating-system-for-modern-marketing": {
+   "date": "2026-04-14",
+   "how": "page"
+  },
+  "https://www.railway.supply/db-tests-multilingual-ai-assistant-at-berlin-airport/": {
+   "date": "2025-08-12",
+   "how": "page"
+  },
+  "https://www.cep-research.com/2025/11/11/dhl-supply-chain-deploys-happyrobot-ai-agents-globally/": {
+   "date": "2025-11-11",
+   "how": "url"
+  },
+  "https://www.dfl.de/en/innovation/smart-companion-for-fans-in-the-bundesliga-app-new-ai-feature-captain-provides-video-content-data-and-historical-knowledge-on-individual-request/": {
+   "date": "2026-06-02",
+   "how": "page"
+  },
+  "https://egov.eletsonline.com/2026/03/bhashini-bridging-1-4-billion-citizens-to-services-and-opportunities-via-language-ai/": {
+   "date": "2026-03-15",
+   "how": "url"
+  },
+  "https://cfotech.com.au/story/commbank-rolls-out-microsoft-built-customer-service-ai": {
+   "date": "2026-07-10",
+   "how": "page"
+  },
+  "https://www.news24.com/business/companies/discovery-bank-says-its-ai-security-stopped-r100m-in-fraud-20260514-0692": {
+   "date": "2026-05-14",
+   "how": "url"
+  },
+  "https://www.zenml.io/llmops-database/building-a-multi-agent-llm-platform-for-customer-service-automation": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.pymnts.com/travel-payments/2025/delta-air-lines-tests-ai-powered-personalized-pricing/": {
+   "date": "2025-07-22",
+   "how": "page"
+  },
+  "https://medium.com/@johnreesphotos/the-quiet-ai-revolution-at-deutsche-telekom-a-story-of-bots-culture-and-change-7c20d55e2ca2": {
+   "date": "2025-03-22",
+   "how": "page"
+  },
+  "https://www.db.com/what-we-do/focus-topics/tech/index?language_id=1": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.fintechfutures.com/ai-in-fintech/nordic-bank-dnb-automates-chat-traffic-with-boost-ai-virtual-agents": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.dewa.gov.ae/en/about-us/media-publications/latest-news/2025/01/dewas-investment-in-generative-ai-enhances": {
+   "date": "2025-01-15",
+   "how": "url"
+  },
+  "https://www.deutschebahn.com/en/artificial_intelligence-6935068": {
+   "date": null,
+   "how": "none"
+  },
+  "https://group.dhl.com/en/media-relations/press-releases/2025/dhl-boosts-operational-efficiency-and-customer-communications-with-happyrobots-ai-agents.html": {
+   "date": null,
+   "how": "none"
+  },
+  "https://boost.ai/case-studies/ai-chatbot-banking/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://decagon.ai/case-studies/duolingo": {
+   "date": "2026-09-11",
+   "how": "page"
+  },
+  "https://govinsider.asia/indo-id/article/philippines-dict-to-integrate-ai-agents-in-the-governments-digital-platforms": {
+   "date": "2024-06-19",
+   "how": "page"
+  },
+  "https://www.middleeastainews.com/p/dewa-ai-assistant-two-million-queries": {
+   "date": "2025-08-05",
+   "how": "page"
+  },
+  "https://www.qsrmagazine.com/story/the-allure-and-evolution-of-voice-ai-in-the-drive-thru/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.eon.com/en/about-us/media/press-release/2023/eons-generative-artificial-intelligence-goes-live.html": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.itnews.com.au/news/cba-to-take-ai-orchestration-agent-beyond-its-retail-bank-627249": {
+   "date": null,
+   "how": "none"
+  },
+  "https://flare.pk/2026/02/easypaisa-introduces-ai-chatbot-ello-to-enhance-digital-banking-experience/": {
+   "date": "2026-02-15",
+   "how": "url"
+  },
+  "https://www.dubai92.com/news/uae/dewa-deploys-agentic-ai-across-its-digital-platforms/": {
+   "date": "2026-07-06",
+   "how": "page"
+  },
+  "https://digiday.com/media/media-briefing-dotdash-merediths-jon-roberts-on-the-ai-agenda-in-2025/": {
+   "date": "2025-01-16",
+   "how": "page"
+  },
+  "https://www.microsoft.com/en/customers/story/23562-discovery-bank-azure": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.smart-energy.com/industry-sectors/digitalisation/e-on-launches-generative-ai-assistant/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://constructiviq.com/dpr/": {
+   "date": "2026-01-13",
+   "how": "page"
+  },
+  "https://www.beckerspayer.com/virtual-care/elevance-expands-ai-powered-virtual-assistant-to-22-million-members/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://cloud.google.com/customers/esunbank": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.finextra.com/newsarticle/29796/emirates-nbd-tests-virtual-assistant-eva": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.enr.com/articles/62836-planera-releases-ai-schedule-assistant-dpr-rolls-out-constructiviq-on-120-projects": {
+   "date": "2026-04-15",
+   "how": "page"
+  },
+  "https://intuitionlabs.ai/articles/enterprise-ai-infrastructure-eli-lilly": {
+   "date": "2026-03-30",
+   "how": "page"
+  },
+  "https://channel.io/ko/blog/articles/ai-case-delivus-1cd9ce44": {
+   "date": "2026-02-13",
+   "how": "page"
+  },
+  "https://www.salesforce.com/news/press-releases/2026/04/15/engine-powers-travel-experiences-with-agentforce-slack/": {
+   "date": "2026-04-15",
+   "how": "url"
+  },
+  "https://www.wam.ae/en/article/hszrhem5-etisalat-launches-gochat-gpt-chatbot-celebrating": {
+   "date": null,
+   "how": "none"
+  },
+  "https://kenyanwallstreet.com/the-rise-of-conversational-ai-in-kenyas-banks/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.glean.com/resources/customer-stories/ericsson": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.theasianbanker.com/updates-and-articles/emiratesnbd-leverages-on-virtual-assistant-for-phone-banking-optimisation": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.erstegroup.com/en/news-media/press-releases/2023/10/05/erste-bank-launches-austrias-first-financial-ai": {
+   "date": "2023-10-05",
+   "how": "url"
+  },
+  "https://www.khaleejtimes.com/business/tech/emirates-nbd-fab-and-mashreq-among-gccs-most-ai-advanced-banks": {
+   "date": "2026-06-02",
+   "how": "page"
+  },
+  "https://www.elevancehealth.com/newsroom/elevance-health-expands-virtual-assistant-to-help-members-navigate-healthcare-with-confidence": {
+   "date": null,
+   "how": "none"
+  },
+  "https://cwpakistan.com/easypaisa-introduces-ai-powered-chatbot-ello-for-smarter-banking/": {
+   "date": "2026-02-14",
+   "how": "page"
+  },
+  "https://www.kore.ai/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.salesforce.com/customer-stories/engine/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://telecomreview.com/articles/telecom-operators/7167-etisalat-by-e-s-gochat-gpt-redefines-future-communications/": {
+   "date": "2023-06-26",
+   "how": "page"
+  },
+  "https://www.ey.com/en_gl/newsroom/2025/03/ey-launching-ey-ai-agentic-platform-created-with-nvidia-ai-to-drive-multi-sector-transformation-starting-with-tax-risk-and-finance-domains": {
+   "date": "2025-03-15",
+   "how": "url"
+  },
+  "https://cameroonnewsagency.com/ecobank-launches-rafiki/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.tipranks.com/news/private-companies/glean-highlights-enterprise-scale-ai-adoption-through-ericsson-use-case": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://blogs.sw.siemens.com/insights-hub/2025/01/30/production-copilot-ai-assistant-for-production/": {
+   "date": "2025-01-30",
+   "how": "url"
+  },
+  "https://www.aviationbusinessme.com/analysis/how-ai-is-reshaping-aviation-for-airlines-and-airports": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://techcabal.com/2026/05/22/nigeria-taps-meta-ai-to-help-citizens-access-government-services/": {
+   "date": "2026-05-22",
+   "how": "url"
+  },
+  "https://nairametrics.com/2025/09/12/meet-10-ctos-powering-digital-innovation-in-nigerias-banking-ecosystem/": {
+   "date": "2025-09-12",
+   "how": "url"
+  },
+  "https://www.japantimes.co.jp/business/2026/05/08/tech/fsa-ai-regional-banks/": {
+   "date": "2026-05-08",
+   "how": "url"
+  },
+  "https://www.emiratesnbd.com/en/media-center/emirates-nbd-to-transform-business-operations-and-enhance-productivity-with-generative-ai": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.emiratesnbd.com/en/media-center/emirates-nbd-announces-eva-emirates-nbd-virtual-assistant": {
+   "date": null,
+   "how": "none"
+  },
+  "https://msdynamicsworld.com/story/ignite-2025-microsoft-enterprise-customers-share-real-world-copilot-and-ai-agent-initiatives": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://businessexplainer.co.za/tech/2026/04/30/fnb-turns-to-ai/": {
+   "date": "2026-04-30",
+   "how": "url"
+  },
+  "https://www.restaurantbusinessonline.com/technology/del-taco-add-ai-voice-bots-drive-thrus": {
+   "date": "2023-01-10",
+   "how": "page"
+  },
+  "https://www.medianama.com/2026/01/223-flipkart-conversational-ai-commerce-slap/": {
+   "date": "2026-01-15",
+   "how": "url"
+  },
+  "https://www.salesforce.com/customer-stories/engie/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://indiaai.gov.in/article/scaling-transformation-of-government-services-with-artificial-intelligence-in-india": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.energie-und-management.de/nachrichten/alle/detail/evm-testet-ki-chatbot-eva-2.0-242938": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.evm.de/ueber-uns/presse/pressemitteilungen-2026/schneller-einfacher-effizienter-ki-einsatz-verbessert-kundenservice/": {
+   "date": "2026-02-26",
+   "how": "page"
+  },
+  "https://www.blick-aktuell.de/Wirtschaft/Schneller-einfacher-effizienter-KI-Einsatz-verbessert-Kundenservice-655730.html": {
+   "date": "2026-02-27",
+   "how": "page"
+  },
+  "https://www.prnewswire.com/apac/news-releases/cathay-fhc-advances-ai-adoption-across-the-group-with-openai-302735655.html": {
+   "date": "2026-04-07",
+   "how": "page"
+  },
+  "https://cloud.google.com/blog/topics/financial-services/deutsche-bank-delivers-ai-powered-financial-research-with-db-lumina": {
+   "date": "2025-09-23",
+   "how": "page"
+  },
+  "https://www.business-standard.com/companies/news/flipkart-bets-big-on-generative-ai-to-improve-customer-seller-experience-124042501023_1.html": {
+   "date": "2024-04-25",
+   "how": "page"
+  },
+  "https://corp.formula1.com/formula-1-and-salesforce-expand-launch-of-new-fan-companion-agent-as-part-of-extended-partnership/": {
+   "date": null,
+   "how": "http 475"
+  },
+  "https://www.prnewswire.com/news-releases/formation-bio-collaborates-with-sanofi-and-openai-to-introduce-muse-a-first-of-its-kind-ai-tool-to-accelerate-patient-recruitment-in-drug-development-302301958.html": {
+   "date": "2024-11-12",
+   "how": "page"
+  },
+  "https://www.fujitsu.com/global/about/resources/news/press-releases/2024/1023-01.html": {
+   "date": "2024-10-23",
+   "how": "url"
+  },
+  "https://www.travelandtourworld.com/news/article/0xedtcmffqi3/": {
+   "date": "2026-05-20",
+   "how": "page"
+  },
+  "https://global.fujitsu/en-global/offering/kozuchi-enterprise-ai-factory": {
+   "date": null,
+   "how": "http 429"
+  },
+  "https://nvidianews.nvidia.com/news/nvidia-foxconn-and-taiwan-medical-centers-bring-agentic-and-physical-ai-to-healthy-taiwan": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.dualmedia.fr/en/albert-ai-french-state/": {
+   "date": "2026-05-31",
+   "how": "page"
+  },
+  "https://news.microsoft.com/source/asia/features/how-ai-is-helping-fonterra-work-differently-across-the-co-operative/": {
+   "date": "2026-04-20",
+   "how": "page"
+  },
+  "https://www.formation.bio/press/introducing-muse": {
+   "date": "2024-11-12",
+   "how": "page"
+  },
+  "https://www.bbva.com/en/innovation/garanti-bbvas-smart-assistant-ugi-turns-10-ai-transforming-banking/": {
+   "date": "2026-05-08",
+   "how": "page"
+  },
+  "https://www.bbva.com/en/innovation/garanti-bbva-enhances-its-smart-assistant-ugi-using-generative-artificial-intelligence/": {
+   "date": "2025-04-16",
+   "how": "page"
+  },
+  "https://www.salesforce.com/customer-stories/formula-one/agentic-fan-engagement/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.prnewswire.com/news-releases/ey-launching-eyai-agentic-platform-created-with-nvidia-ai-to-drive-multi-sector-transformation-starting-with-tax-risk-and-finance-domains-302404671.html": {
+   "date": "2025-03-18",
+   "how": "page"
+  },
+  "https://oecd.ai/en/dashboards/policy-initiatives/albert-api": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.cnbc.com/2025/01/21/goldman-sachs-launches-ai-assistant.html": {
+   "date": "2025-01-21",
+   "how": "url"
+  },
+  "https://fortune.com/2025/06/24/goldman-sachs-internal-ai-assistant/": {
+   "date": "2025-06-24",
+   "how": "url"
+  },
+  "https://www.healthcareitnews.com/news/asia/gleneagles-hospital-hong-kong-adopts-llm-based-clinical-solutions-new-day-centre-and-more": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.finnair.com/en/bluewings/world-of-finnair/meet-finnair-s-ai-customer-service-assistant--sisu-4261942": {
+   "date": "2026-06-15",
+   "how": "page"
+  },
+  "https://www.globant.com/news/globant-anthropic-alliance-claude-ai-pods": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.computerweekly.com/news/252510561/AI-assistant-Buerokratt-to-reduce-bureaucracy-in-Estonian-government": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.mastercard.com/news/eemea/en/newsroom/press-releases/en/garanti-bbva-and-mastercard-set-the-stage-for-the-era-of-agentic-commerce-with-first-end-to-end-agentic-commerce-transaction-in-turkiye/": {
+   "date": "2026-03-09",
+   "how": "page"
+  },
+  "https://arxiv.org/abs/2507.00456v2": {
+   "date": null,
+   "how": "none"
+  },
+  "https://jozicaptions.co.za/fnb-upgrades-navi-virtual-assistant-to-strengthen-adviser-led-services/": {
+   "date": "2026-09-09",
+   "how": "page"
+  },
+  "https://fmcide.gov.ng/fmcide-and-meta-launch-govguide-nigeria-an-ai-powered-government-services-chatbot/": {
+   "date": "2026-05-21",
+   "how": "page"
+  },
+  "https://e-estonia.com/estonias-new-virtual-assistant-aims-to-rewrite-the-way-people-interact-with-public-services/": {
+   "date": "2022-01-26",
+   "how": "page"
+  },
+  "https://www.microsoft.com/en/customers/story/21596-government-of-the-city-of-buenos-aires-azure-open-ai-service": {
+   "date": null,
+   "how": "none"
+  },
+  "https://news.microsoft.com/source/asia/features/indias-schoolteachers-are-drafting-better-lesson-plans-faster-thanks-to-a-copilot/": {
+   "date": "2024-02-08",
+   "how": "page"
+  },
+  "https://www.prnewswire.com/news-releases/globant-announces-an-alliance-with-anthropic-to-redefine-enterprise-ai-delivery-with-claude-powered-ai-pods-302813858.html": {
+   "date": "2026-06-30",
+   "how": "page"
+  },
+  "https://fintechzone.hu/2026-os-fokusz-az-erste-nel-proaktiv-hey-george-kenyelmesebb-devizas-fizetesek-es-neobroker-szintu-befektetesi-elmeny-a-george-ban/": {
+   "date": "2026-01-07",
+   "how": "page"
+  },
+  "https://www.gosh.nhs.uk/news/implementing-ai-scribing-into-outpatient-clinics-to-enhance-care-and-reduce-burnout/": {
+   "date": "2025-10-08",
+   "how": "page"
+  },
+  "https://htn.co.uk/2025/10/13/gosh-goes-live-with-ai-scribe-in-outpatient-services/": {
+   "date": "2025-10-13",
+   "how": "url"
+  },
+  "https://www.digitalhealth.net/2025/09/major-nhs-ai-scribe-trial-shows-transformative-patient-benefits/": {
+   "date": "2025-09-15",
+   "how": "url"
+  },
+  "https://www.avoca.ai/": {
+   "date": "2025-01-01",
+   "how": "page"
+  },
+  "https://techcabal.com/2025/07/24/generative-ai-in-nigerian-banks/": {
+   "date": "2025-07-24",
+   "how": "url"
+  },
+  "https://www.tech.gov.sg/products-and-services/for-government-agencies/productivity-and-marketing/pair/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.ciodive.com/news/General-Mills-AI-cost-saving-strategy/740416/": {
+   "date": "2025-02-19",
+   "how": "page"
+  },
+  "https://www.pymnts.com/news/artificial-intelligence/2024/grab-teams-with-openai-integrate-ai-ride-hailing-delivery-business/": {
+   "date": "2024-05-30",
+   "how": "page"
+  },
+  "https://www.palantir.com/assets/xrfr7uokpv1b/1aLBn65y83vdytjpXJKZcO/16989b788b34cb677f6d763d56a72349/Building_an_Intelligent_AI-Driven_Supply_Chain_at_General_Mills_-_AIPCon_March_-24_Impact_Study.pdf": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.thecable.ng/insight-why-using-nigerian-banks-chatbots-feels-like-talking-to-a-wall/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.automation.com/article/schneider-electric-next-generation-agentic-manufacturing-capabilities-microsoft-azure-ai": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://govinsider.asia/intl-en/article/estonia-eyes-cross-border-interoperability-for-burokratt-its-siri-of-public-services": {
+   "date": "2024-06-19",
+   "how": "page"
+  },
+  "https://www.fiercehealthcare.com/ai-and-machine-learning/ai-already-playing-role-countrys-largest-profit-hospital-chain": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.thisdaylive.com/2026/05/13/heirs-insurance-group-launches-multi-language-ai-assistant-to-deepen-insurance-access-in-nigeria/": {
+   "date": "2026-05-13",
+   "how": "url"
+  },
+  "https://techafricanews.com/2026/05/13/heirs-insurance-launches-nigerias-first-multi-language-generative-ai-assistant/": {
+   "date": "2026-05-13",
+   "how": "url"
+  },
+  "https://investor.hcahealthcare.com/news/news-details/2023/HCA-Healthcare-Collaborates-With-Google-Cloud-to-Bring-Generative-AI-to-Hospitals/default.aspx": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.beckershospitalreview.com/healthcare-information-technology/digital-health/google-powered-nurse-handoff-gains-traction-at-hca/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://hansa.news/hapag-lloyd-ai-assistant-for-interface-management/": {
+   "date": "2025-01-28",
+   "how": "page"
+  },
+  "https://www.hitachids.com/blog/hitachi-digital-services-launches-harc-agents-to-power-enterprise-grade-agentic-ai/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.digitalnewsasia.com/business/grab-openai-announce-collaboration-strengthen-grabs-use-ai": {
+   "date": "2024-05-31",
+   "how": "page"
+  },
+  "https://www.businesswire.com/news/home/20250724921291/en/Hospital-for-Special-Surgery-Selects-Abridge-to-Advance-Orthopedic-AI-Documentation": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://corporate.homedepot.com/news/company/home-depot-delivers-customer-store-phone-support-four-times-faster-using-google-clouds": {
+   "date": null,
+   "how": "none"
+  },
+  "https://corporate.homedepot.com/news/partnerships/home-depot-and-google-cloud-launch-agentic-ai-tools-help-customers-and-associates": {
+   "date": null,
+   "how": "none"
+  },
+  "https://claude.com/customers/hubspot": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.microsoft.com/en-us/microsoft-cloud/blog/manufacturing/2025/03/25/industrial-ai-in-action-how-ai-agents-and-digital-threads-will-transform-the-manufacturing-industries/": {
+   "date": "2025-03-25",
+   "how": "url"
+  },
+  "https://www.upi.com/Top_News/World-News/2026/05/21/Hyundai-affiliate-42dot-unveils-in-car-AI-agent-for-natural-conversation/8061779405522/": {
+   "date": "2026-05-21",
+   "how": "url"
+  },
+  "https://www.techtarget.com/healthcarepayers/news/366638654/Humana-taps-Google-Clouds-agentic-AI-for-member-experience": {
+   "date": "2026-02-03",
+   "how": "page"
+  },
+  "https://oecd-opsi.org/innovations/boti-the-citys-whatsapp/": {
+   "date": "2023-11-16",
+   "how": "page"
+  },
+  "https://www.grab.com/sg/press/others/grab-and-openai-announce-strategic-collaboration-first-of-its-kind-in-southeast-asia/": {
+   "date": "2024-05-30",
+   "how": "page"
+  },
+  "https://www.salesforce.com/customer-stories/finnair/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.microsoft.com/en/customers/story/25382-generali-microsoft-365-copilot": {
+   "date": null,
+   "how": "none"
+  },
+  "https://thekoreancarblog.com/hyundais-42dot-unveils-gleo-ai-the-next-generation-in-vehicle-voice-assistant/": {
+   "date": null,
+   "how": "http 429"
+  },
+  "https://www.business-standard.com/industry/banking/insurers-deepen-ai-adoption-to-boost-underwriting-claims-customer-service-126071600883_1.html": {
+   "date": "2026-07-16",
+   "how": "page"
+  },
+  "https://www.britcham.org.sg/news/spore-create-registry-ai-agents-150000-public-officers-amid-ai-push": {
+   "date": null,
+   "how": "none"
+  },
+  "https://talkers.com/2026/08/20/iheartmedia-and-butler-till-bring-ai-powered-media-buying-for-streaming-audio-broadcast-radio-to-be-available-soon/": {
+   "date": "2026-08-20",
+   "how": "url"
+  },
+  "https://inc42.com/buzz/flipkart-launches-chatgpt-powered-shopping-assistant-flippi/": {
+   "date": "2023-10-04",
+   "how": "page"
+  },
+  "https://news.hss.edu/hospital-for-special-surgery-selects-abridge-to-advance-orthopedic-ai-documentation/": {
+   "date": "2025-07-24",
+   "how": "page"
+  },
+  "https://institucional.ifood.com.br/inovacao/ifood-lanca-ia-no-whatsapp-cris-para-impulsionar-gestao-dos-restaurantes/": {
+   "date": "2025-08-05",
+   "how": "page"
+  },
+  "https://www.cxtoday.com/contact-center/ikea-retrains-call-center-staff-ai-billie/": {
+   "date": "2026-08-03",
+   "how": "page"
+  },
+  "https://www.salesforce.com/customer-stories/grupo-falabella/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.goindigo.in/press-releases/indigo-unveils-6eskai.html": {
+   "date": null,
+   "how": "none"
+  },
+  "https://news.humana.com/news/articles/humana-redefines-the-member-experience-with-agent-assist-built-with-google-cloud": {
+   "date": null,
+   "how": "none"
+  },
+  "http://www.china.org.cn/2025-09/17/content_118083565.shtml": {
+   "date": "2025-09-17",
+   "how": "url"
+  },
+  "https://www.hoteldive.com/news/hilton-launches-generative-ai-agent/814424/": {
+   "date": "2026-03-10",
+   "how": "page"
+  },
+  "https://sierra.ai/customers/imprint": {
+   "date": "2026-05-19",
+   "how": "page"
+  },
+  "https://digiday.com/media-buying/butler-till-extends-agentic-media-buying-tests-into-audio-with-iheartmedia/": {
+   "date": "2026-08-20",
+   "how": "page"
+  },
+  "https://news.microsoft.com/source/asia/2026/06/03/infosys-tcs-and-wipro-scale-microsoft-365-copilot-to-over-300000-employees/": {
+   "date": "2026-06-03",
+   "how": "url"
+  },
+  "https://cognition.com/blog/infosys-cognition": {
+   "date": "2026-01-07",
+   "how": "page"
+  },
+  "https://www.foxconn.com/en-us/press-center/press-releases/latest-news/1557": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.higher-education-marketing.com/blog/the-year-of-the-ai-agent-in-higher-education": {
+   "date": "2025-12-31",
+   "how": "page"
+  },
+  "https://www.barchart.com/story/news/32600822/infosys-launches-agentic-ai-foundry-part-of-infosys-topaz-to-accelerate-enterprise-ai-journey": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.ciw.news/p/chinese-banks-llms": {
+   "date": "2025-04-29",
+   "how": "page"
+  },
+  "https://writer.com/blog/intuit-customer-story/": {
+   "date": "2024-08-23",
+   "how": "page"
+  },
+  "https://finsidersbrasil.com.br/bancos-digitais/itau-troca-gerentes-por-ia-em-novo-app-para-atender-pequenas-empresas/": {
+   "date": "2025-07-21",
+   "how": "page"
+  },
+  "https://www.antaranews.com/berita/4873137/goto-indosat-luncurkan-sahabat-ai-berkapasitas-70-miliar-parameter": {
+   "date": "2025-06-02",
+   "how": "page"
+  },
+  "https://global.fujitsu/en-global/customer-stories/cs-jal-en-20251021": {
+   "date": "2025-10-21",
+   "how": "url"
+  },
+  "https://mercadoeconsumo.com.br/05/08/2025/foodservice/ifood-lanca-cris-sua-agente-de-ia-para-auxiliar-na-gestao-de-restaurantes/": {
+   "date": "2025-08-05",
+   "how": "page"
+  },
+  "https://consumidormoderno.com.br/itau-emps-banco-ia/": {
+   "date": "2025-07-21",
+   "how": "page"
+  },
+  "https://www.cnbc.com/2024/08/09/jpmorgan-chase-ai-artificial-intelligence-assistant-chatgpt-openai.html": {
+   "date": "2024-08-09",
+   "how": "url"
+  },
+  "https://grupo.iberia.com/news/05062025/iberia-airlines-transforms-air-travel-through-cloud-and-ai-innovation-with-aws": {
+   "date": null,
+   "how": "none"
+  },
+  "https://news.microsoft.com/source/asia/features/japan-airlines-new-ai-app-will-make-it-easier-for-cabin-attendants-to-report-inflight-events-with-microsofts-phi-4-small-language-model/": {
+   "date": "2025-03-27",
+   "how": "page"
+  },
+  "https://grupo.iberia.com/news/04062025/iberia-launches-iberia-gpt-a-new-conversational-travel-recommendation-channel-on-chatgpt": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.ingka.com/newsroom/ai-and-remote-selling-bring-ikea-design-expertise-to-the-many/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.se.com/ww/en/about-us/newsroom/news/press-releases/Schneider-Electric-unveils-next-generation-agentic-manufacturing-capabilities-powered-by-Microsoft-Azure-AI-at-Hannover-Messe-2026-69e08de2ddabef15890a48f3/": {
+   "date": "2026-04-16",
+   "how": "page"
+  },
+  "https://www.fiercehealthcare.com/ai-and-machine-learning/abridge-scores-250m-series-d-ambient-ai-tech-now-use-100-health-systems": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.facilitiesdive.com/news/jll-serve-cbre-cushman-wakefield-artificial-intelligence-ai-initiatives-integrated-FM/719271/": {
+   "date": "2024-06-18",
+   "how": "page"
+  },
+  "https://www.kbc.com/content/dam/kbccom/doc/newsroom/pressreleases/2025/20251124_Vijf%20jaar%20Kate_EN.pdf": {
+   "date": "2025-11-24",
+   "how": "url"
+  },
+  "https://thenextweb.com/news/chinas-tech-giants-are-replacing-the-search-bar-with-ai-agents-that-shop-for-you": {
+   "date": "2026-05-15",
+   "how": "page"
+  },
+  "https://www.jpmorganchase.com/about/technology/blog/llmsuite-ab-award": {
+   "date": "2025-06-03",
+   "how": "page"
+  },
+  "https://news.mynavi.jp/techplus/article/20260310-4203926/": {
+   "date": "2026-03-10",
+   "how": "url"
+  },
+  "https://hapakenya.com/2026/05/19/how-kenya-airways-is-using-ai-to-offer-competitive-ticket-pricing-to-customers/": {
+   "date": "2026-05-19",
+   "how": "url"
+  },
+  "https://www.ghanamma.com/2026/05/20/kenya-airways-deploys-advanced-ai-pricing-engine-to-optimize-global-fares/": {
+   "date": "2026-05-20",
+   "how": "url"
+  },
+  "https://www.businessworld.in/article/following-air-india-indigo-launches-ai-powered-chat-assistant-6eskai-500213": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.gotocompany.com/news/press/sahabat-ai-semakin-canggih-indosat-dan-goto-luncurkan-model-70-miliar-parameter-dengan-layanan-chat-multibahasa": {
+   "date": null,
+   "how": "none"
+  },
+  "https://newsroom.kbc.com/kate-your-personal-digital-assistant": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.riotimesonline.com/itau-genai-assistant-iai-launch-2026/": {
+   "date": "2026-07-28",
+   "how": "page"
+  },
+  "https://www.automotiveworld.com/news-releases/kia-introduces-ai-voice-assistant-to-enhance-connectivity-and-driver-experience/": {
+   "date": "2025-04-16",
+   "how": "page"
+  },
+  "https://www.ciodive.com/news/JPMorgan-Chase-LLM-Suite-generative-ai-employee-tool/726772/": {
+   "date": "2024-09-11",
+   "how": "page"
+  },
+  "https://techafricanews.com/2026/05/21/klivvr-launches-k-ai-egypts-first-interactive-ai-financial-assistant-for-personal-money-management/": {
+   "date": "2026-05-21",
+   "how": "url"
+  },
+  "https://www.microsoft.com/en/customers/story/26245-kbank-azure-openai-in-foundry-models": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.futuretravelexperience.com/2025/09/singapore-airlines-airasia-indigo-ana-cathay-korean-air-more-among-fte-airline-digital-transformation-power-list-asia-pacific-2025/": {
+   "date": "2025-09-15",
+   "how": "url"
+  },
+  "https://news.microsoft.com/source/2026/06/09/kpmg-and-microsoft-scale-trusted-enterprise-ai-agents-globally-through-deployment-of-agent-365-and-copilot/": {
+   "date": "2026-06-09",
+   "how": "url"
+  },
+  "https://www.americanbanker.com/news/how-jpmorganchase-democratized-employee-access-to-gen-ai": {
+   "date": "2025-05-22",
+   "how": "page"
+  },
+  "https://www.ttnews.com/articles/jb-hunt-deploys-overroute": {
+   "date": "2026-07-28",
+   "how": "page"
+  },
+  "https://blog.pragmaticengineer.com/klarnas-ai-chatbot/": {
+   "date": "2024-08-08",
+   "how": "page"
+  },
+  "https://www.googlecloudpresscorner.com/2026-01-11-Google-Cloud-Brings-Shopping-and-Customer-Service-Together-with-Gemini-Enterprise-for-Customer-Experience": {
+   "date": "2026-01-11",
+   "how": "url"
+  },
+  "https://www.travelandtourworld.com/news/article/ay5lvcd77hv8/": {
+   "date": "2026-06-05",
+   "how": "page"
+  },
+  "https://www.businesswire.com/news/home/20250106155486/en/KRAFTON-Unveiled-Co-Playable-Character-Built-with-NVIDIA-ACE-at-CES-2025": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.insideworldfootball.com/2025/11/10/laliga-embraces-ai-takeover-globant-brought-deploy-optimised-processes/": {
+   "date": "2025-11-10",
+   "how": "url"
+  },
+  "https://www.forbes.com/sites/vitascarosella/2025/11/06/javier-tebas-bets-on-agentic-ai-to-improve-la-liga-fan-experience/": {
+   "date": "2025-11-06",
+   "how": "url"
+  },
+  "https://fortune.com/2025/11/12/why-land-olakes-is-piloting-a-new-ai-tool-called-oz-in-bid-to-help-boost-profits-on-cost-pressured-american-farms/": {
+   "date": "2025-11-12",
+   "how": "url"
+  },
+  "https://news.microsoft.com/source/2025/11/12/land-olakes-and-microsoft-partner-to-accelerate-ai-innovation-in-agriculture/": {
+   "date": "2025-11-12",
+   "how": "url"
+  },
+  "https://ffnews.com/newsarticle/fintech/klivvr-launches-k-ai-egypts-first-interactive-ai-assistant-in-fintech-applications": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.artificiallawyer.com/2025/08/11/latham-watkins-picks-harvey-for-firmwide-deployment/": {
+   "date": "2025-08-11",
+   "how": "url"
+  },
+  "https://www.harvey.ai/blog/harvey-announces-firmwide-ai-deployment-for-latham-and-watkins": {
+   "date": "2025-08-11",
+   "how": "page"
+  },
+  "https://www.wardsauto.com/news/archive-auto-kia-debuts-ai-powered-assistant-ev3-europe/745563/": {
+   "date": "2025-04-18",
+   "how": "page"
+  },
+  "https://www.lemonade.com/blog/lemonade-sets-new-world-record/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://sourcegraph.com/blog/cody-is-enterprise-ready": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.microsoft.com/en/customers/story/25570-loreal-azure-openai": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.reinsurancene.ws/lemonade-shatters-record-by-using-ai-to-settle-a-claim-in-two-seconds/": {
+   "date": "2023-06-14",
+   "how": "page"
+  },
+  "https://openai.com/index/klarna/": {
+   "date": "2024-04-02",
+   "how": "page"
+  },
+  "https://www.ciodive.com/news/kraft-heinz-AI-agent-cookbook-ketchup-production/761046/": {
+   "date": "2025-09-25",
+   "how": "page"
+  },
+  "https://theindustry.beauty/loreal-paris-launches-game-changing-ai-assistant-beauty-genius/": {
+   "date": "2025-07-02",
+   "how": "page"
+  },
+  "https://autonews.gasgoo.com/articles/icv/70036017": {
+   "date": null,
+   "how": "http 468"
+  },
+  "https://www.digitalcommerce360.com/2025/11/07/liverpool-agentic-ai-shopping-commercetools/": {
+   "date": "2025-11-07",
+   "how": "url"
+  },
+  "https://www.pymnts.com/news/banking/2025/lloyds-bank-rolls-out-generative-ai-tool-athena/": {
+   "date": "2025-07-16",
+   "how": "page"
+  },
+  "https://consumergoods.com/kraft-heinz-pilots-ketchup-focused-agent-part-ai-ecosystem-initiative": {
+   "date": "2025-09-25",
+   "how": "page"
+  },
+  "https://www.supplychaininforms.com/press-issues/kuehnenagel-introduces-cloud-native-logistics-platform/": {
+   "date": "2026-07-22",
+   "how": "page"
+  },
+  "https://www.cio.inc/icici-lombards-ai-strategy-automates-customer-services-a-25256": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.asiae.co.kr/en/article/2025091009202963838": {
+   "date": null,
+   "how": "fetch failed"
+  },
+  "https://en.sedaily.com/finance/2026/04/02/lotte-hi-mart-launches-ai-shopping-agent-havi": {
+   "date": "2026-04-02",
+   "how": "url"
+  },
+  "https://www.loblaw.ca/en/loblaw-advances-ai-in-canadian-retail-with-first-of-its-kind-shopping-app-in-chatgpt/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.bitauto.com/global/news/100198299111.html": {
+   "date": "2025-02-19",
+   "how": "page"
+  },
+  "https://www.microsoft.com/en/customers/story/24967-kakao-bank-azure-openai": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.prnewswire.com/news-releases/commercetools-selected-by-liverpool-to-unlock-agentic-commerce-experiences-for-shoppersbuilding-on-a-legacy-of-service-now-accelerating-the-future-of-unified-commerce-302605025.html": {
+   "date": "2025-11-05",
+   "how": "page"
+  },
+  "https://yellow.ai/": {
+   "date": "2025-09-02",
+   "how": "page"
+  },
+  "https://www.insurancetimes.co.uk/news/how-ai-helped-an-insurtech-pay-out-a-uk-claim-in-just-two-seconds/1444812.article": {
+   "date": "2023-06-16",
+   "how": "page"
+  },
+  "https://www.phocuswire.com/swifty-ai-assistant-business-travel": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.supermarketnews.com/grocery-technology/loblaw-steps-further-into-ai": {
+   "date": "2026-05-04",
+   "how": "page"
+  },
+  "https://innovation-runway.lufthansagroup.com/en/focus-areas-projects/customer-experience/swifty.html": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.pymnts.com/news/retail/2025/lowes-teams-with-openai-to-launch-virtual-assistant-mylow": {
+   "date": "2025-03-12",
+   "how": "page"
+  },
+  "https://neofeed.com.br/videos/revolucao-ia/lojas-renner-poe-a-re-sua-agente-de-ia-para-dar-dicas-de-estilo-e-vender-mais/": {
+   "date": "2026-07-10",
+   "how": "page"
+  },
+  "https://www.harvey.ai/customers/macfarlanes": {
+   "date": "2025-03-28",
+   "how": "page"
+  },
+  "https://www.investing.com/news/transcripts/earnings-call-transcript-magazine-luizas-q3-2025-highlights-ai-commerce-and-steady-sales-93CH-4342917": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.salesforce.com/customer-stories/live-nation/agentic-venue-support/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://newsroom.kddi.com/news/detail/kddi_nr-951_4359.html": {
+   "date": "2026-03-10",
+   "how": "page"
+  },
+  "https://www.thepickool.com/ly-corp-launches-unified-ai-agent-agent-i/": {
+   "date": "2026-04-20",
+   "how": "page"
+  },
+  "https://www.lycorp.co.jp/en/news/release/020398/": {
+   "date": "2026-04-20",
+   "how": "page"
+  },
+  "https://news.marriott.com/news/2026/06/16/marriott-international-introduces-ask-bonvoy-a-new-ai-powered-search-experience-transforming-travel-exploration": {
+   "date": "2026-06-16",
+   "how": "url"
+  },
+  "https://www.maersk.com/digital-services/captain-peter": {
+   "date": null,
+   "how": "none"
+  },
+  "https://news.marriott.com/news/2023/12/06/meet-renai-by-renaissance-the-pilot-program-for-renaissance-hotels-new-ai-powered-virtual-concierge-service": {
+   "date": "2023-12-06",
+   "how": "url"
+  },
+  "https://skift.com/2023/12/12/renaissance-hotels-launches-renai-its-new-ai-powered-virtual-concierge/": {
+   "date": "2023-12-12",
+   "how": "url"
+  },
+  "https://www.koreaherald.com/article/10615501": {
+   "date": "2025-11-13",
+   "how": "page"
+  },
+  "https://www.lawfuel.com/legal-ai-macfarlanes-and-harvey/": {
+   "date": "2023-09-28",
+   "how": "page"
+  },
+  "https://p2pi.com/lowes-home-depot-roll-out-ai-assistants": {
+   "date": "2025-03-06",
+   "how": "page"
+  },
+  "https://www.supplychaindive.com/news/Maersk-virtual-assistant-helps-track-cargo/548021/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.advisor.ca/insurance/manulife-updates-underwriting-ai-doubles-instant-approval-rate/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.insurancebusinessmag.com/us/news/technology/inside-marshs-ai-build-one-million-prompts-a-week-and-agents-586696.aspx": {
+   "date": "2026-08-19",
+   "how": "page"
+  },
+  "https://www.pymnts.com/news/artificial-intelligence/2025/visa-mastercard-paypal-fuel-agentic-ai-commerce-boom/": {
+   "date": "2025-05-02",
+   "how": "page"
+  },
+  "https://www.investmentexecutive.com/news/manulife-updates-underwriting-ai-doubles-instant-approval-rate/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.manpowergroup.com/en/news-releases/news/manpowergroup-talent-solutions-partners-with-carv-as-part-of-its-strategy-to-embed-gen-ai-within-recruitment": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.hoteldive.com/news/marriott-debuts-ai-powered-hotel-search-tool-ask-bonvoy/823130/": {
+   "date": "2026-06-17",
+   "how": "page"
+  },
+  "https://www.hoteldive.com/news/marriott-renaissance-hotels-ai-powered-virtual-concierge/701843/": {
+   "date": "2023-12-07",
+   "how": "page"
+  },
+  "https://www.peoplepowered.org/news-content/digital-participation-case-study-bogota": {
+   "date": "2025-09-11",
+   "how": "page"
+  },
+  "https://www.iprofesional.com/tecnologia/445528-mercado-pago-lanza-un-asistente-personal-con-ia-para-gestionar-finanzas-desde-la-app": {
+   "date": "2026-01-07",
+   "how": "page"
+  },
+  "https://www.thelec.net/news/articleView.html?idxno=12001": {
+   "date": "2026-07-08",
+   "how": "page"
+  },
+  "https://theaiworld.org/news/meesho-launches-vaani-ai-voice-shopping-assistant": {
+   "date": "2026-03-25",
+   "how": "page"
+  },
+  "https://www.lanacion.com.ar/tecnologia/mercado-pago-presenta-su-asistente-financiero-basado-en-inteligencia-artificial-nid07012026/": {
+   "date": "2026-01-07",
+   "how": "page"
+  },
+  "https://www.mpgtalentsolutions.com/us/en/insights/customizing-ai-for-workforce-planning": {
+   "date": null,
+   "how": "none"
+  },
+  "https://tiinside.com.br/22/09/2025/itau-emps-adota-ia-generativa-como-condutor-da-contratacao-do-pronampe/": {
+   "date": "2025-09-22",
+   "how": "page"
+  },
+  "https://news.mercadolibre.com/asistente-virtual-mercado-pago-argentina-2026": {
+   "date": "2026-01-07",
+   "how": "page"
+  },
+  "https://www.biometricupdate.com/202607/ukraine-expands-diia-ai-with-voice-based-access-to-government-services": {
+   "date": "2026-07-15",
+   "how": "url"
+  },
+  "https://uk.themedialeader.com/agency-groups-ai-platforms-explained/": {
+   "date": null,
+   "how": "fetch failed"
+  },
+  "https://www.mckinsey.com/about-us/new-at-mckinsey-blog/with-gen-ai-merck-and-mckinsey-transform-clinical-authoring": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://tiinside.com.br/27/07/2026/itau-lanca-ia-i-e-inaugura-nova-fase-da-inteligencia-artificial-nos-servicos-financeiros/": {
+   "date": "2026-07-27",
+   "how": "page"
+  },
+  "https://www.president.gov.ua/en/news/komanda-mincifri-prezentuvala-prezidentu-novi-proyekti-u-sfe-99885": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://intuitionlabs.ai/articles/merck-gpteal-ai-pharma-rd": {
+   "date": "2025-10-10",
+   "how": "page"
+  },
+  "https://sierra.ai/about": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.mobihealthnews.com/news/openai-expands-partnership-moderna-customizable-gpts": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.ada.cx/blog/ada-interact-2025-everything-you-missed-at-the-ai-customer-service-event-of-the-year/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://viatea.es/noticias/mercado-libre-verdi-ia/": {
+   "date": "2024-09-28",
+   "how": "page"
+  },
+  "https://indiaai.gov.in/article/top-generative-ai-adoptions-by-consumer-companies-in-india": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.constellationr.com/insights/news/moderna-uses-openais-chatgpt-enterprise-scale-750-gpts": {
+   "date": null,
+   "how": "none"
+  },
+  "https://openai.com/index/moderna/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://openai.com/index/mercado-libre/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.salesforce.com/jp/news/press-releases/2026/03/25/mufg-customer-news-3/": {
+   "date": "2026-03-25",
+   "how": "url"
+  },
+  "https://www.salesforce.com/jp/news/press-releases/2025/08/01/mufg-customer-news-2/": {
+   "date": "2025-08-01",
+   "how": "url"
+  },
+  "https://baike.baidu.com/en/item/Xiaomei/70362": {
+   "date": null,
+   "how": "none"
+  },
+  "https://legora.com/newsroom/morrison-foerster-accelerates-ai-leadership-with-partnership-and-firmwide-deployment-of-legora": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.sportsvideo.org/2025/10/02/nba-nets-cloud-and-ai-deal-with-aws-will-launch-new-nba-inside-the-game-intelligence-platform/": {
+   "date": "2025-10-02",
+   "how": "url"
+  },
+  "https://www.ai-street.co/p/goldman-joins-jpm-morgan-stanley-releasing-ai-tool": {
+   "date": "2025-01-16",
+   "how": "page"
+  },
+  "https://news.microsoft.com/source/2025/08/20/nfl-and-microsoft-expand-partnership-to-bring-copilot-to-the-sidelines-and-beyond/": {
+   "date": "2025-08-20",
+   "how": "url"
+  },
+  "https://jp.ibtimes.com/mizuho-rolls-out-ai-agent-platform-across-group-101122": {
+   "date": "2026-05-26",
+   "how": "page"
+  },
+  "https://www.prnewswire.com/news-releases/mount-sinai-health-system-named-2024-hearst-health-prize-winner-302166047.html": {
+   "date": "2024-06-06",
+   "how": "page"
+  },
+  "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/how-to-deploy-transformational-enterprise-wide-agents-microsoft-as-customer-zero/": {
+   "date": "2025-03-11",
+   "how": "page"
+  },
+  "https://aws.amazon.com/solutions/case-studies/natura-ia-generativa/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.atmia.com/news/natwest-inks-collaboration-deal-with-openai/22693/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.natwestgroup.com/news-and-insights/news-room/press-releases/data-and-technology/2024/jun/natwest-launches-cora-plus-the-latest-generative-ai-upgrade-to-t.html": {
+   "date": null,
+   "how": "none"
+  },
+  "https://newsroom.ibm.com/2025-07-14-nedgia-transforms-its-customer-service-with-a-pioneering-virtual-ai-agent-solution-together-with-ibm-consulting": {
+   "date": "2025-07-14",
+   "how": "url"
+  },
+  "https://govinsider.asia/intl-en/article/ukraine-launches-worlds-first-government-ai-agent": {
+   "date": "2024-06-19",
+   "how": "page"
+  },
+  "https://www.hrgrapevine.com/us/content/article/2024-07-23-nestl-says-its-genai-tool-saves-employees-45-minutes-a-week": {
+   "date": "2024-07-23",
+   "how": "url"
+  },
+  "https://www.worklife.news/technology/nesgpt-nestle-genai/": {
+   "date": "2024-07-23",
+   "how": "page"
+  },
+  "https://about.ads.microsoft.com/en/resources/discover/case-studies/magazine-luiza-success-story": {
+   "date": "2025-11-18",
+   "how": "page"
+  },
+  "https://www.hcinnovationgroup.com/analytics-ai/artifical-intelligence-machine-learning/news/55057005/mount-sinai-wins-hearst-prize-for-ai-based-nutrition-application": {
+   "date": "2024-06-07",
+   "how": "page"
+  },
+  "https://www.nestleusa.com/stories/unlocking-new-opportunities-gen-ai": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.thecityreporter.nyc/2025/05/28/mta-omny-ai-chat-support-customer-complaints/": {
+   "date": "2025-05-28",
+   "how": "url"
+  },
+  "https://www.zawya.com/en/world/africa/mtn-nigeria-unveils-africas-first-ai-powered-chatbot-f7umzwn7": {
+   "date": null,
+   "how": "http 400"
+  },
+  "https://www.automotivemanufacturingsolutions.com/oems/mercedes-benz-to-implement-chatgpt-across-its-mo360-digital-production-system/538149": {
+   "date": "2023-07-11",
+   "how": "page"
+  },
+  "https://cnevpost.com/2024/04/12/nio-rolls-out-nomi-gpt/": {
+   "date": "2024-04-12",
+   "how": "url"
+  },
+  "https://www.mtn.ng/helppersonal/chatbot-zigi/": {
+   "date": "2023-08-23",
+   "how": "page"
+  },
+  "https://media.nfl.com/news-and-releases/sponsorship/-nfl-and-microsoft-expand-partnership-to-bring-copilot-to-the-si": {
+   "date": "2025-08-19",
+   "how": "page"
+  },
+  "https://www.modernatx.com/en-US/media-center/all-media/blogs/collaboration-with-openai": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.nba.com/news/nba-aws-partnership": {
+   "date": "2025-10-01",
+   "how": "page"
+  },
+  "https://www.interad.com/en/insights/naver-ai-the-ultimate-guide-to-artifitial-intelligence": {
+   "date": "2025-03-21",
+   "how": "page"
+  },
+  "https://ukstories.microsoft.com/features/nhs-england-accelerates-ai-adoption-with-microsoft-365-copilot-to-improve-service-delivery-reduce-costs-and-create-more-time-for-care/": {
+   "date": "2026-06-07",
+   "how": "page"
+  },
+  "https://www.computerweekly.com/news/366592058/Nordic-banks-pursue-AI-in-battle-with-digital-competitors": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.beckershospitalreview.com/healthcare-information-technology/ehrs/northwell-to-expand-ambient-ai-to-28-hospitals/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.fiercebiotech.com/biotech/novo-nordisk-and-aws-sign-ai-drug-discovery-pact-launch-london-innovation-hub": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.finextra.com/newsarticle/45629/nubank-partners-openai-to-smooth-customer-experience": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://techstartups.com/2025/10/09/nvidias-ceo-endorses-cursor-100-of-our-engineers-now-code-with-ai/": {
+   "date": "2025-10-09",
+   "how": "url"
+  },
+  "https://www.northwell.edu/news/the-latest/ambient-ai-tech-abridge-to-ease-clinician-note-taking": {
+   "date": "2025-10-14",
+   "how": "page"
+  },
+  "https://www.fstech.co.uk/fst/Nubank_partners_with_openai_on_gen_ai_rollout.php": {
+   "date": "2025-03-11",
+   "how": "page"
+  },
+  "https://aws.amazon.com/blogs/industries/novo-nordisk-selects-aws-as-strategic-partner-to-accelerate-drug-discovery-with-ai/": {
+   "date": "2026-08-10",
+   "how": "page"
+  },
+  "https://ledge.ai/articles/mufg_salesforce_ai_agentforce_launch": {
+   "date": null,
+   "how": "none"
+  },
+  "https://cursor.com/enterprise": {
+   "date": "2026-09-04",
+   "how": "page"
+  },
+  "https://yourstory.com/ai-story/ola-krutrim-debuts-kruti-ai-assistant-to-book-cabs-and-food-orders": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.businesstoday.in/tech-today/news/story/kruti-explained-the-ai-assistant-that-books-cabs-orders-food-but-can-it-monetise-480227-2025-06-12": {
+   "date": "2025-06-12",
+   "how": "url"
+  },
+  "https://www.techregister.co.uk/octopus-energy-ai-trial-wins-customer-approval/": {
+   "date": "2026-07-07",
+   "how": "page"
+  },
+  "https://octopus.energy/press/more-news-press-releases/octopus-energy-s-ai-trial-wins-customer-approval/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://personal.nedbank.co.za/contact/Enbi-chat.html": {
+   "date": null,
+   "how": "none"
+  },
+  "https://aiweekly.co/alerts/nhs-england-deploys-505000-copilot-seats-for-admin": {
+   "date": "2026-06-09",
+   "how": "page"
+  },
+  "https://sierra.ai/blog/agents-as-a-service": {
+   "date": "2026-03-25",
+   "how": "page"
+  },
+  "https://www.beckerspayer.com/payer/optum-rolls-out-ai-powered-prior-authorization-tools-for-payers-providers/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://voip.review/2025/11/20/orange-leads-multilingual-ai-revolution-african-telecoms/": {
+   "date": "2025-11-20",
+   "how": "url"
+  },
+  "https://www.fiercehealthcare.com/ai-and-machine-learning/optum-teams-microsoft-expand-ai-powered-claims-platform": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.education.nh.gov/news-and-media/khan-academy-extend-its-ai-services-no-cost-new-hampshire-educators-and-students": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.mastercard.com/us/en/news-and-trends/press/2025/october/Mastercard-and-PayPal-join-forces.html": {
+   "date": null,
+   "how": "none"
+  },
+  "https://sierra.ai/customers/olukai": {
+   "date": "2024-02-13",
+   "how": "page"
+  },
+  "https://www.storyboard18.com/how-it-works/wpp-havas-omnicom-are-advertisings-biggest-holdcos-recasting-agencies-as-ai-operating-systems-87203.htm": {
+   "date": "2026-01-08",
+   "how": "page"
+  },
+  "https://www.healthcaredive.com/news/optum-real-ai-speed-claims-review-united-health/803448/": {
+   "date": "2025-10-22",
+   "how": "page"
+  },
+  "https://en.wikipedia.org/wiki/Kruti": {
+   "date": "2025-06-16",
+   "how": "page"
+  },
+  "https://www.microsoft.com/en-us/industry/blog/healthcare/2025/11/18/agentic-ai-in-action-healthcare-innovation-at-microsoft-ignite-2025/": {
+   "date": "2025-11-18",
+   "how": "url"
+  },
+  "https://netflixtechblog.com/mediafm-the-multimodal-ai-foundation-for-media-understanding-at-netflix-e8c28df82e2d": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.abridge.com/press-release/northwell-scales-abridge": {
+   "date": null,
+   "how": "none"
+  },
+  "https://netflixtechblog.com/building-a-media-understanding-platform-for-ml-innovations-9bef9962dcb7": {
+   "date": null,
+   "how": "none"
+  },
+  "https://ir.hioscar.com/news-events-presentations/news-press-releases/news-details/2025/Oscar-Unveils-New-Choices-and-AI-Tools-Shaping-the-Future-of-Individual-Healthcare-for-More-Americans-and-Businesses/default.aspx": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://openai.com/index/nubank/": {
+   "date": "2025-03-06",
+   "how": "page"
+  },
+  "https://www.mobihealthnews.com/news/microsoft-unveils-ai-agent-orchestrator-cancer-care-coordination": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.fiercehealthcare.com/ai-and-machine-learning/microsoft-rolls-out-agentic-ai-orchestrator-begins-cancer-care": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.salesforce.com/uk/news/press-releases/2025/12/04/agentforce-ai-adoption-announcement/?bc=OTH": {
+   "date": "2025-12-04",
+   "how": "url"
+  },
+  "https://kasisto.com/articles/nedbank-launches-enbi-a-new-intelligent-chatbot-assistant/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.statnews.com/2025/10/01/penda-health-open-ai-safety-net-study-kenya-artificial-intelligence/": {
+   "date": "2025-10-01",
+   "how": "url"
+  },
+  "https://www.techtarget.com/searchenterpriseai/news/366623313/Deriving-ROI-from-AI-is-more-than-just-monetary-value": {
+   "date": "2025-04-28",
+   "how": "page"
+  },
+  "https://www.hioscar.ai/blog/iintroducing-oswell-a-health-ai-agent-for-oscar-members": {
+   "date": "2025-10-20",
+   "how": "page"
+  },
+  "https://www.ocbc.com/group/media/release/2023/ocbc-is-first-singapore-bank-to-roll-out-generative-ai-chatbot-to-all-employees-globally.page": {
+   "date": "2023-10-24",
+   "how": "page"
+  },
+  "https://time.com/7304457/ai-prevents-medical-errors-clinics/": {
+   "date": null,
+   "how": "http 406"
+  },
+  "https://www.accel.com/news/our-continued-partnership-with-decagon-bringing-intelligence-to-every-customer-interaction": {
+   "date": "2025-06-23",
+   "how": "page"
+  },
+  "https://ecommercegermany.com/blog/otto-launches-ai-assistants-for-shopping-and-customer-service/": {
+   "date": "2026-03-06",
+   "how": "page"
+  },
+  "https://www.bankingexchange.com/news-feed/item/10536-lloyds-says-genai-delivered-50m-of-value-in-2025": {
+   "date": null,
+   "how": "http 500"
+  },
+  "https://newsroom.orange.com/orange-unveils-its-latest-innovations-at-orange-opentech-2025/": {
+   "date": "2025-11-14",
+   "how": "page"
+  },
+  "https://www.prnewswire.com/news-releases/postera-announces-expansion-to-610m-in-their-ai-drug-discovery-collaboration-with-pfizer-302342047.html": {
+   "date": "2025-01-07",
+   "how": "page"
+  },
+  "https://news.microsoft.com/source/asia/features/not-if-but-when-why-japans-panasonic-connect-is-going-all-in-on-ai/": {
+   "date": "2023-05-11",
+   "how": "page"
+  },
+  "https://www.pepsico.com/newsroom/press-releases/2025/pepsico-leverages-salesforces-agentforce-to-advance-ai-agenda": {
+   "date": "2025-06-24",
+   "how": "page"
+  },
+  "https://en.clickpetroleoegas.com.br/petrobras-usa-inteligencia-artificial-e-reduz-em-80-etapa-da-modelagem-de-reservatorios-de-petroleo/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://fintech.global/2026/05/20/prudential-launches-ai-underwriting-tool-for-advisors/": {
+   "date": "2026-05-20",
+   "how": "url"
+  },
+  "https://cloud.google.com/customers/otto-voice-shopping-ai": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.pharmtech.com/view/postera-expands-pfizer-partnership-ai-lab-adc-collaborations": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://poly.ai/customers/pge": {
+   "date": null,
+   "how": "none"
+  },
+  "https://digiday.com/media/publicis-groupe-debuts-new-coreai-platform-and-e300-million-ai-investment/": {
+   "date": "2024-01-25",
+   "how": "page"
+  },
+  "https://australianaviation.com.au/2026/01/qantas-to-embrace-ai-in-2026-says-hudson/": {
+   "date": "2026-01-15",
+   "how": "url"
+  },
+  "https://www.sfexaminer.com/news/technology/decagon-ceo-jesse-zhang-bets-ai-replaces-customer-support/article_c8b46fec-eb3a-4f6c-b638-fa1044572a92.html": {
+   "date": "2025-07-20",
+   "how": "page"
+  },
+  "https://aimagazine.com/news/how-microsoft-is-powering-the-premier-league-with-ai": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://ibsintelligence.com/ibsi-news/active-ai-powers-zaki-qatar-islamic-bank-ai-virtual-assistant/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.pwc.com/us/en/about-us/newsroom/press-releases/pwc-launches-ai-agent-operating-system-enterprises.html": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.pwc.com/us/en/services/ai/agent-os.html": {
+   "date": null,
+   "how": "none"
+  },
+  "https://note.com/masamasa11_12/n/nb2f6cf2148b6": {
+   "date": "2026-05-29",
+   "how": "page"
+  },
+  "https://thepeninsulaqatar.com/article/07/02/2026/moci-launches-ai-agent-factory-platform-in-collaboration-with-microsoft": {
+   "date": "2026-02-07",
+   "how": "page"
+  },
+  "https://agencia.petrobras.com.br/w/petrobras-cria-ferramenta-com-inteligencia-artificial-generativa-para-apoiar-mais-de-100-mil-trabalhadores": {
+   "date": "2023-12-11",
+   "how": "page"
+  },
+  "https://global.rakuten.com/corp/news/press/2026/0105_02.html": {
+   "date": "2026-01-05",
+   "how": "url"
+  },
+  "https://openai.com/index/ai-clinical-copilot-penda-health/": {
+   "date": "2026-09-08",
+   "how": "page"
+  },
+  "https://www.digitalcommerce360.com/2025/09/12/ralph-lauren-ai-assistant-ask-ralph-microsoft/": {
+   "date": "2025-09-12",
+   "how": "url"
+  },
+  "https://www.pge.com/en/newsroom/currents/customer-service/customer-at-the-heart--powered-by-ai--.html": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.gulf-times.com/article/720134/qatar/qatar-launches-ai-agent-factory-to-boost-efficiency": {
+   "date": "2026-02-08",
+   "how": "page"
+  },
+  "https://www.salesforce.com/mx/customer-success-stories/proteccion/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://asia.nikkei.com/Business/Companies/Panasonic-unit-deploys-ChatGPT-style-AI-to-improve-productivity": {
+   "date": "2023-03-08",
+   "how": "page"
+  },
+  "https://news.adobe.com/news/2025/11/adobe-and-real-madrid-extend-partnership": {
+   "date": "2025-11-15",
+   "how": "url"
+  },
+  "https://www.salesforce.com/news/stories/precina-scale-operations-tailored-care/": {
+   "date": "2025-02-28",
+   "how": "page"
+  },
+  "https://www.marketingdive.com/news/publicis-generative-ai-CoreAI-future-of-agency-work/705581/": {
+   "date": "2024-01-25",
+   "how": "page"
+  },
+  "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/": {
+   "date": "2026-06-19",
+   "how": "url"
+  },
+  "https://openai.com/index/rakuten/": {
+   "date": "2026-09-14",
+   "how": "page"
+  },
+  "https://www.eplaneai.com/news/qantas-chief-defends-airlines-use-of-ai-beyond-staffing": {
+   "date": "2026-05-06",
+   "how": "page"
+  },
+  "https://www.holdthefrontpage.co.uk/2025/news/reach-reveals-new-ways-it-plans-to-use-ai-in-newsrooms/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.globenewswire.com/news-release/2024/10/30/2971643/0/en/Renault-and-Cerence-Partner-to-Bring-Generative-AI-to-Reno-the-Renault-Connected-Avatar.html": {
+   "date": "2024-10-30",
+   "how": "url"
+  },
+  "https://www.v7labs.com/blog/best-ai-tools-for-real-estate": {
+   "date": "2026-01-08",
+   "how": "page"
+  },
+  "https://wan-ifra.org/2025/04/from-lab-to-newsroom-how-reuters-builds-ai-tools-journalists-actually-use/": {
+   "date": "2025-04-15",
+   "how": "url"
+  },
+  "https://aws.amazon.com/blogs/machine-learning/rede-mater-dei-de-saude-monitoring-ai-agents-in-the-revenue-cycle-with-amazon-bedrock-agentcore/": {
+   "date": "2026-04-15",
+   "how": "page"
+  },
+  "https://tech.eu/2026/04/09/revolut-wins-full-uk-banking-licence-as-finally-exits-mobilisation-phase/": {
+   "date": "2026-04-09",
+   "how": "url"
+  },
+  "https://investors.cerence.com/news-events/press-releases/detail/117/renault-and-cerence-partner-to-bring-generative-ai-to-reno-the-renault-connected-avatar": {
+   "date": "2024-10-30",
+   "how": "page"
+  },
+  "https://aws.amazon.com/jp/blogs/news/reach-plc-delivers-impactful-journalism-with-ai-driven-guten-powered-by-aws": {
+   "date": "2025-08-15",
+   "how": "page"
+  },
+  "https://decagon.ai/case-studies/rippling": {
+   "date": "2026-09-11",
+   "how": "page"
+  },
+  "https://www.salesforce.com/customer-stories/precina/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://techcrunch.com/2026/04/16/robloxs-ai-assistant-gets-new-agentic-tools-to-plan-build-and-test-games/": {
+   "date": "2026-04-16",
+   "how": "url"
+  },
+  "https://www.fintechweekly.com/news/revolut-air-ai-assistant-uk-customers-launch-2026": {
+   "date": "2026-04-11",
+   "how": "page"
+  },
+  "https://www.salesforce.com/blog/ai-nonprofit-use-cases/": {
+   "date": "2026-03-03",
+   "how": "page"
+  },
+  "https://www.prnewswire.com/apac/news-releases/ping-an-reports-2025-performance-on-positive-trends-operating-profit1-up-10-3-yoy-302726098.html": {
+   "date": "2026-03-26",
+   "how": "page"
+  },
+  "https://global.rakuten.com/corp/ai/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://ir.rocketcompanies.com/news-and-events/press-releases/press-release-details/2025/Rocket-Companies-Announces-Second-Quarter-2025-Results/default.aspx": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.khaleejtimes.com/business/uae-digital-bank-ruya-deploys-agentic-ai-targets-ai-native-future": {
+   "date": "2026-08-18",
+   "how": "page"
+  },
+  "https://www.codeontrial.ai/p/autonomous-haulage-algorithmic-geology": {
+   "date": "2026-07-03",
+   "how": "page"
+  },
+  "https://www.the-star.co.ke/news/big-read/2025-03-27-how-m-pesa-has-tackled-fraud-security-worries": {
+   "date": "2025-03-27",
+   "how": "url"
+  },
+  "https://www.ibef.org/news/reliance-seeks-to-build-india-s-sovereign-ai-backbone-unveils-jio-call-agent-and-ai-home-platform": {
+   "date": "2026-06-22",
+   "how": "page"
+  },
+  "https://www.cognigy.com/en/case-study/bosch": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.marketingdive.com/news/ralph-lauren-debuts-ask-ralph-ai-shopping-assistant-on-mobile-app/759756/": {
+   "date": "2025-09-11",
+   "how": "page"
+  },
+  "https://fortune.com/2025/07/10/salesforce-surpasses-1-million-ai-agent-customer-conversations-finance-chief-cfo/": {
+   "date": "2025-07-10",
+   "how": "url"
+  },
+  "https://theaiagentindex.com/agents/sierra": {
+   "date": "2026-03-18",
+   "how": "page"
+  },
+  "https://kenyanwallstreet.com/how-safaricom-is-leveraging-ai-to-bolster-m-pesa-security-and-efficiency": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://rakuten.today/blog/how-are-ai-voice-agents-changing-customer-service-rakuten-mobile-collaborates-with-openai-to-integrate-new-technology.html": {
+   "date": "2025-10-23",
+   "how": "page"
+  },
+  "https://rakuten.today/blog/rakutens-new-ai-concierge-is-redefining-the-shopping-experience.html": {
+   "date": "2026-04-07",
+   "how": "page"
+  },
+  "https://www.koreatimes.co.kr/business/tech-science/20241121/samsung-electronics-unveils-generative-ai-gauss2-to-assist-employees": {
+   "date": "2024-11-21",
+   "how": "url"
+  },
+  "https://www.rocketcompanies.com/press-release/rocket-companies-introduces-rocket-logic-ai-platform-to-make-homeownership-faster-and-easier/": {
+   "date": "2024-04-09",
+   "how": "page"
+  },
+  "https://www.sanofi.com/en/media-room/press-releases/2023/2023-06-13-12-00-00-2687072": {
+   "date": "2023-06-13",
+   "how": "url"
+  },
+  "https://sqmagazine.co.uk/ai-agents-statistics/": {
+   "date": "2026-03-25",
+   "how": "page"
+  },
+  "https://finance.biggo.com/news/de57e327-fcb2-48a3-8340-649aa0920a84": {
+   "date": "2026-07-07",
+   "how": "page"
+  },
+  "https://www.fiercepharma.com/pharma/sanofi-goes-all-ai-new-app-support-company-across-areas": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.thomsonreuters.com/en-us/blog/the-tools-that-keep-reuters-journalists-and-its-customers-ahead-of-the-story/": {
+   "date": "2026-07-23",
+   "how": "page"
+  },
+  "https://www.salesforce.com/blog/support-requests-agentforce/": {
+   "date": "2025-11-06",
+   "how": "page"
+  },
+  "https://www.sammobile.com/news/samsung-develops-own-agentic-ai-tools-improves-gauss-ai-models/": {
+   "date": "2025-11-25",
+   "how": "page"
+  },
+  "https://cioafrica.co/safaricoms-chat-bot-zuri-helping-to-ease-tedious-processes/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.offshore-technology.com/news/saudi-aramco-unveils-industry-first-generative-ai-model/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.yicaiglobal.com/news/chinas-ping-an-insurance-shifts-to-ai-agent-centric-services-cto-says": {
+   "date": null,
+   "how": "none"
+  },
+  "https://newsroom.safaricom.co.ke/tracking-zuri-safaricoms-customer-care-chatbot/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.middleeastainews.com/p/saudi-ministry-launches-ai-national": {
+   "date": "2026-07-13",
+   "how": "page"
+  },
+  "https://wan-ifra.org/2025/11/how-schibsted-is-using-ai-to-boost-efficiency-for-their-newsrooms-and-their-readers/": {
+   "date": "2025-11-15",
+   "how": "url"
+  },
+  "https://www.cio.com/article/4049083/sanofi-applies-ai-to-deliver-more-effective-and-accessible-medicines-to-patients.html": {
+   "date": "2025-09-03",
+   "how": "page"
+  },
+  "https://www.safaricom.co.ke/media-center-landing/press-releases/safaricom-introduces-interactive-customer-care-chatbot": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.sephora.com/beauty/ai-beauty-chat": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://newsroom.safaricom.co.ke/innovation/confronting-the-cybersecurity-headache/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://oilreviewmiddleeast.com/technical-focus/how-aramco-is-driving-ai-on-an-industrial-scale": {
+   "date": "2025-02-10",
+   "how": "page"
+  },
+  "https://www.brimindinvest.com/blog/best-ai-agent-stocks": {
+   "date": "2026-06-14",
+   "how": "page"
+  },
+  "https://press.siemens.com/global/en/pressrelease/ai-industry-schaeffler-and-siemens-bring-industrial-copilot-shopfloor": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.govexec.com/technology/2025/08/gsa-introduces-usaigov-streamline-ai-adoption-across-government/407459/": {
+   "date": "2025-08-15",
+   "how": "url"
+  },
+  "https://mena.entrepreneur.com/business-news/uae-islamic-bank-ruya-partners-with-magure-to-build-an-ai-native-banking-model": {
+   "date": "2026-08-10",
+   "how": "page"
+  },
+  "https://thenewstack.io/servicenow-says-windsurf-gave-its-engineers-a-10-productivity-boost/": {
+   "date": "2025-10-17",
+   "how": "page"
+  },
+  "https://www.salesforce.com/customer-stories/agentforce-for-customer-support/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.glossy.co/beauty/beauty-briefing-what-to-know-about-sephoras-and-ultas-ai-partnerships/": {
+   "date": "2026-05-12",
+   "how": "page"
+  },
+  "https://www.salesforce.com/news/press-releases/2025/03/11/singapore-airlines-agentforce-customer-support/": {
+   "date": "2025-03-11",
+   "how": "url"
+  },
+  "https://capacity.com/blog/artificial-intelligence-in-energy-and-utilities/": {
+   "date": "2025-10-13",
+   "how": "page"
+  },
+  "https://www.pymnts.com/news/retail/2026/7-eleven-japan-wrote-blueprint-retail-ai-era/": {
+   "date": "2026-06-01",
+   "how": "page"
+  },
+  "https://www.automationworld.com/factory/digital-transformation/news/55235167/schaeffler-brings-siemens-industrial-copilot-to-its-shop-floor": {
+   "date": "2024-10-18",
+   "how": "page"
+  },
+  "https://www.schaeffler.com/en/media/press-releases/press-releases-detail.jsp?id=88019072": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.rcrwireless.com/20250109/featured/sk-telecom-beta-ai-agent": {
+   "date": "2025-01-09",
+   "how": "url"
+  },
+  "https://europe.aramco.com/en/news-media/news/2025/aramco-deploys-ai": {
+   "date": "2025-03-12",
+   "how": "page"
+  },
+  "https://www.canada.ca/en/shared-services/services/gc-ai/canchat.html": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.softbank.jp/en/corp/news/press/sbkk/2026/20260714_01/": {
+   "date": "2026-07-14",
+   "how": "url"
+  },
+  "https://newsroom.spotify.com/2025-05-13/dj-voice-requests/": {
+   "date": "2025-05-13",
+   "how": "url"
+  },
+  "https://techcrunch.com/2025/10/15/you-can-now-text-spotifys-ai-dj/": {
+   "date": "2025-10-15",
+   "how": "url"
+  },
+  "https://www.europe1.fr/societe/fini-les-pannes-de-train-la-sncf-mise-sur-lintelligence-artificielle-pour-y-arriver-4267030": {
+   "date": "2024-09-12",
+   "how": "page"
+  },
+  "https://www.groupe-sncf.com/fr/innovation/digitalisation/maintenance-predictive": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.spa.gov.sa/en/N2260133": {
+   "date": null,
+   "how": "none"
+  },
+  "https://economymiddleeast.com/news/meet-sara-saudi-tourism-authoritys-new-ai-powered-tour-guide-for-an-immersive-travel-experience/": {
+   "date": "2025-02-13",
+   "how": "page"
+  },
+  "https://www.gccbusinessnews.com/uaes-ruya-partners-with-magure/": {
+   "date": "2026-08-07",
+   "how": "page"
+  },
+  "https://www.singaporeair.com/en_UK/us/corporate/newsroom/press-release/2025/January-March/singapore-airlines-and-salesforce-collaborate-on-ai-powered-cust/": {
+   "date": "2025-03-12",
+   "how": "page"
+  },
+  "https://www.rta.ae/wps/portal/rta/ae/home/news-and-media/all-news/NewsDetails/showcasing-11-ai-projects-and-initiatives-at-gitex-2025": {
+   "date": null,
+   "how": "none"
+  },
+  "https://sierra.ai/blog/siriusxm-adp-announcement": {
+   "date": "2025-12-04",
+   "how": "page"
+  },
+  "https://learn.microsoft.com/en-us/power-platform/guidance/case-studies/scdf-implements-digital-solutions": {
+   "date": null,
+   "how": "none"
+  },
+  "https://island.lk/sri-lankas-first-generative-ai%E2%80%91powered-trilingual-insurance-assistant/": {
+   "date": null,
+   "how": "http 307"
+  },
+  "https://techafricanews.com/2025/02/18/stc-group-unveils-saudi-arabias-first-sovereign-ai-cloud-for-enterprise-innovation/": {
+   "date": "2025-02-18",
+   "how": "url"
+  },
+  "https://www.microsoft.com/en/customers/story/18717-singapore-civil-defence-force-microsoft-365": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.dailymirror.lk/print/business-news/Sri-Lanka-Insurance-Corporation-General-introduces-Beechat-AI-assistant/273-345446": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://portulansinstitute.org/wp-content/uploads/2025/11/Final-ARTIFICIAL-INTELLIGENCE-IN-BRAZILIAN-COURTS-171125-1.pdf": {
+   "date": "2025-11-15",
+   "how": "url"
+  },
+  "https://www.computerweekly.com/news/366641549/In-the-AI-race-a-global-bank-bets-on-the-human-touch": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.businesswire.com/news/home/20251020259555/en/Atropos-Health-Launches-the-Atropos-Evidence-Agent-at-Stanford-Health-Care-and-Collaborates-with-Microsoft-to-Improve-Evidence-Based-Personalized-Medicine-at-the-Point-of-Care": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.fiercehealthcare.com/ai-and-machine-learning/atropos-health-launches-agentic-ai-clinical-evidence-stanford-health-care": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.sc.com/en/about/innovation/artificial-intelligence/": {
+   "date": "2025-08-22",
+   "how": "page"
+  },
+  "https://lifebit.ai/blog/ai-healthcare-singapore/": {
+   "date": "2025-10-08",
+   "how": "page"
+  },
+  "https://www.digitalcommerce360.com/2026/06/03/amazon-applies-ai-shopping-tech-to-customer-retailer-agents-with-aws/": {
+   "date": "2026-06-03",
+   "how": "url"
+  },
+  "https://corporate.target.com/press/release/2024/06/target-to-roll-out-transformative-genai-technology-to-its-store-team-members-chainwide": {
+   "date": "2024-06-15",
+   "how": "url"
+  },
+  "https://www.reinsurancene.ws/swiss-re-enhances-life-guide-with-ai-underwriting-assistant/": {
+   "date": "2024-04-22",
+   "how": "page"
+  },
+  "https://www.calcalistech.com/ctechnews/article/r1snomdjkl": {
+   "date": "2025-03-06",
+   "how": "page"
+  },
+  "https://www.icmif.org/news_story/swiss-re-announces-upgrade-of-life-guide-and-addition-of-ai-underwriting-assistant/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://newsroom.statefarm.com/state-farm-details-next-gen-good-neighbor/": {
+   "date": "2026-05-12",
+   "how": "page"
+  },
+  "https://www.telefonica.com/en/transformation-handbooks/innovation-handbook/aura-telefonicas-artificial-intelligence/": {
+   "date": "2025-02-24",
+   "how": "page"
+  },
+  "https://news.microsoft.com/id-id/2023/09/26/a-customer-service-virtual-assistant-veronika-on-mytelkomsel-is-now-integrated-with-microsoft-azure-openai-service/": {
+   "date": "2023-09-26",
+   "how": "url"
+  },
+  "https://www.smfg.co.jp/english/dx_link/article/0117.html": {
+   "date": "2024-05-16",
+   "how": "page"
+  },
+  "https://www.cxtoday.com/contact-center/taskus-ai-services/": {
+   "date": "2026-08-08",
+   "how": "page"
+  },
+  "https://news.microsoft.com/transform/aura-telefonicas-ai-learns-the-language-of-people-to-transform-customer-engagement/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.pymnts.com/news/artificial-intelligence/2026/state-farm-bets-on-ai-to-take-back-number-one/": {
+   "date": "2026-06-17",
+   "how": "page"
+  },
+  "https://radar.ircai.org/en/tools/victor/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://thedigitalbanker.com/standard-chartereds-ai-journey-accelerates-with-research-safety-first-integration-and-governance/": {
+   "date": "2026-03-10",
+   "how": "page"
+  },
+  "https://www.parloa.com/customers/swiss-life/": {
+   "date": "2025-07-24",
+   "how": "page"
+  },
+  "https://news.microsoft.com/source/2024/10/24/siemens-and-microsoft-scale-industrial-ai/": {
+   "date": "2024-10-24",
+   "how": "url"
+  },
+  "https://www.autocarpro.in/news-national/tata-motors-cars-get-indian-language-voice-assistant-79230": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.newsonjapan.com/article/146940.php": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.hcamag.com/au/specialisation/hr-technology/telstra-expands-rollout-of-in-house-gen-ai-tools-to-more-teams/476422": {
+   "date": "2024-02-09",
+   "how": "page"
+  },
+  "https://www.hrdive.com/news/target-to-launch-generative-ai-employee-app-store-companion/719628/": {
+   "date": "2024-06-24",
+   "how": "page"
+  },
+  "https://finance.biggo.com/news/1c5f0b6a-2859-4290-aa3b-f8ab2afb8335": {
+   "date": "2026-08-13",
+   "how": "page"
+  },
+  "https://www.telstra.com.au/aboutus/media/media-releases/telstra-scales-up-ai-adoption": {
+   "date": "2024-02-07",
+   "how": "page"
+  },
+  "https://www.lankabusinessnews.com/sri-lanka-insurance-corporation-general-limited-launches-beechat-sri-lankas-first-generative-ai-powered-trilingual-insurance-assistant/": {
+   "date": "2026-07-08",
+   "how": "page"
+  },
+  "https://totalenergies.com/news/news/ia-expediting-energy-transition": {
+   "date": "2025-01-24",
+   "how": "page"
+  },
+  "https://dplnews.com/tiendanube-lanza-lumi-su-inteligencia-artificial-para-transformar-la-gestion-del-comercio-digital-en-mexico/": {
+   "date": "2026-05-22",
+   "how": "page"
+  },
+  "https://news.microsoft.com/source/asia/features/toyota-is-deploying-ai-agents-to-harness-the-collective-wisdom-of-engineers-and-innovate-faster/": {
+   "date": "2024-11-19",
+   "how": "page"
+  },
+  "https://www.bangkokpost.com/business/general/2795050/scb-launches-ai-banking-service": {
+   "date": "2024-05-18",
+   "how": "page"
+  },
+  "https://www.microsoft.com/en/customers/story/1739790055278570755-telkomsel-azure-openai-service-telecommunications-en-indonesia": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.thestorythailand.com/en/18/11/2024/142127/": {
+   "date": "2024-11-18",
+   "how": "page"
+  },
+  "https://www.swiggy.com/corporate/press-release/swiggy-launches-pyng-an-ai-powered-platform-to-connect-with-verified-professionals/": {
+   "date": "2025-04-17",
+   "how": "page"
+  },
+  "https://prtimes.jp/main/html/rd/p/000000047.000098678.html": {
+   "date": "2025-08-13",
+   "how": "page"
+  },
+  "https://www.retaildive.com/news/amazon-to-offer-ai-agents-to-other-retailers/821597/": {
+   "date": "2026-06-02",
+   "how": "page"
+  },
+  "https://www.microsoft.com/en/customers/story/1740058425924206437-telstra-telecommunications-azure-openai-service": {
+   "date": null,
+   "how": "none"
+  },
+  "https://ayuda.tiendanube.com/es_ES/conoce-a-lumi/que-es-lumi-y-como-te-ayuda-en-la-gestion-de-tu-tienda-en-tiendanube": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.zenml.io/llmops-database/ai-powered-travel-assistant-for-rail-and-coach-platform": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.traveldailynews.com/technology/global-travel-patterns-emerge-from-three-years-of-tripgenie-ai-usage/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.arabianbusiness.com/business/technology/uae-launches-32-ai-advisers-to-work-with-ministers-24-hours-a-day": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://naavik.co/ai-gaming/chinas-big-bet-on-ai-for-games/": {
+   "date": "2026-08-18",
+   "how": "page"
+  },
+  "https://nvidianews.nvidia.com/news/nvidia-and-tsmc-bring-ai-into-fabs-to-advance-semiconductor-design-and-manufacturing": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.cbot.ai/case-study/isbank/": {
+   "date": "2022-02-23",
+   "how": "page"
+  },
+  "https://www.telkomsel.com/about-us/news/layanan-pelanggan-asisten-virtual-veronika-di-mytelkomsel-kini-terintegrasi-teknologi": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.khaleejtimes.com/uae/uae-launches-cabinet-ai-advisor-support-government-decision-making": {
+   "date": "2026-09-02",
+   "how": "page"
+  },
+  "https://www.forbes.com/sites/pamdanziger/2026/04/22/ulta-partners-with-google-gemini-to-power-agentic-ai-for-beauty-shoppers/": {
+   "date": "2026-04-22",
+   "how": "url"
+  },
+  "https://www.trip.com/newsroom/introducing-tripgenie-groundbreaking-ai-travel-assistant/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://anthropic.com/news/gov-UK-partnership": {
+   "date": null,
+   "how": "none"
+  },
+  "https://tech.yahoo.com/ai/articles/nvidia-tsmc-deploy-ai-chip-135126635.html": {
+   "date": "2026-06-01",
+   "how": "page"
+  },
+  "https://gulfnews.com/uae/government/uae-launches-ai-cabinet-adviser-as-sheikh-mohammed-bin-rashid-sets-priorities-for-new-government-season-1.500661016": {
+   "date": "2026-09-02",
+   "how": "page"
+  },
+  "https://variety.com/2025/gaming/news/ubisoft-generative-ai-game-teammates-neo-npc-developers-1236588038/": {
+   "date": "2025-11-21",
+   "how": "page"
+  },
+  "https://www.gcimagazine.com/retail/digital-e-commerce/news/22965285/ulta-leans-into-googles-ai-checkout-as-sephora-bets-on-chatgpt-discovery": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://guardian.ng/business-services/ubas-leo-launched-on-whatsapp/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://news.railbusinessdaily.com/trainline-launches-uks-first-ai-assistant-for-rail/": {
+   "date": "2025-06-09",
+   "how": "page"
+  },
+  "https://uhs.com/news/universal-health-services-launches-hippocratic-ais-generative-ai-healthcare-agents-to-assist-with-post-discharge-patient-engagement/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.oit.uci.edu/2026/07/22/zotgpt-takes-gold-continues-setting-pace-for-systemwide-ai-excellence/": {
+   "date": "2026-07-22",
+   "how": "url"
+  },
+  "https://www.abridge.com/press-release/uihealth-deploys-abridge-across-care-settings": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.artificialintelligence-news.com/news/anthropic-selected-build-government-ai-assistant-pilot/": {
+   "date": "2026-01-27",
+   "how": "page"
+  },
+  "https://news.ubisoft.com/en-us/article/5qXdxhshJBXoanFZApdG3L/how-ubisofts-new-generative-ai-prototype-changes-the-narrative-for-npcs": {
+   "date": null,
+   "how": "none"
+  },
+  "https://insiderph.com/unionbank-reimagines-next-gen-ai-banking-at-dmaps-digicon-2025": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-launches-usai-to-advance-white-house-americas-ai-action-plan-08142025": {
+   "date": "2025-08-14",
+   "how": "page"
+  },
+  "https://www.ciodive.com/news/unilever-targets-agentic-ai-google-cloud-deal/812365/": {
+   "date": "2026-02-17",
+   "how": "page"
+  },
+  "https://www.govtech.com/education/higher-ed/uc-irvine-develops-custom-genai-platform-zotgpt-chat": {
+   "date": "2024-03-21",
+   "how": "page"
+  },
+  "https://www.prnewswire.com/news-releases/three-years-of-tripgenie-how-travellers-around-the-world-are-using-ai-differently-302713190.html": {
+   "date": "2026-03-15",
+   "how": "page"
+  },
+  "https://www.healthcaredive.com/news/uhs-partners-hippocratic-ai-launch-ai-agents/750892/": {
+   "date": "2025-06-17",
+   "how": "page"
+  },
+  "https://www.clickatell.com/press-center/clickatell-transact-uba-launch-chat-banking-whatsapp/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://its.umich.edu/computing/ai/release-notes": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://record.umich.edu/articles/its-debuts-customized-ai-services-to-u-m-community": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.investing.com/news/stock-market-news/verizon-says-google-ai-for-customer-service-agents-has-led-to-sales-jump-3976363": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.lightreading.com/ai-machine-learning/verizon-emerges-as-google-cloud-s-latest-ai-trophy": {
+   "date": "2025-04-09",
+   "how": "page"
+  },
+  "https://www.ispreview.co.uk/index.php/2025/07/virgin-media-o2-uk-tries-to-boost-customer-service-with-new-lumi-ai-tool.html": {
+   "date": "2025-07-15",
+   "how": "url"
+  },
+  "https://www.finbridge.jp/article/article-10564/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://sloanreview.mit.edu/article/how-genai-helps-usaa-innovate/": {
+   "date": "2024-10-23",
+   "how": "page"
+  },
+  "https://aboitizeyes.aboitiz.com/banking-financial/unionbank-at-digicon-2025-next-gen-ai-driven-banking/": {
+   "date": "2025-11-13",
+   "how": "page"
+  },
+  "https://lacviet.vn/en/ung-dung-ai-trong-ngan-hang/": {
+   "date": "2026-06-22",
+   "how": "page"
+  },
+  "https://getperspective.ai/blog/usaa-s-ai-customer-service-how-a-mission-driven-insurer-built-one-of-the-highest-nps-ai-experiences": {
+   "date": "2026-05-01",
+   "how": "page"
+  },
+  "https://thedigitalbanker.com/ai-in-action-how-uob-is-turning-intelligence-into-impact/": {
+   "date": "2026-03-04",
+   "how": "page"
+  },
+  "https://www.forbesmiddleeast.com/leadership/leaders-insights/vision-bank-saudi-arabias-next-phase-of-banking-growth-will-be-digital-ai-led-and-conversational": {
+   "date": "2026-02-25",
+   "how": "page"
+  },
+  "https://www.theasianbanker.com/updates-and-articles/uob-strengthens-responsible-ai-governance-for-enterprise-deployment": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.ispreview.co.uk/index.php/2024/07/vodafone-invests-120m-to-deploy-new-supertobi-ai-chatbot.html": {
+   "date": "2024-07-15",
+   "how": "url"
+  },
+  "https://news.virginmediao2.co.uk/virgin-media-o2-launches-new-ai-tools-to-supercharge-customer-services-and-better-help-most-vulnerable-customers/": {
+   "date": "2025-07-28",
+   "how": "page"
+  },
+  "https://corporate.walmart.com/news/2025/06/06/walmart-the-future-of-shopping-is-agentic-meet-sparky": {
+   "date": "2025-06-06",
+   "how": "url"
+  },
+  "https://www.digitalcommerce360.com/2026/05/22/walmart-sparky-agent-ai-sales-supply-chain/": {
+   "date": "2026-05-22",
+   "how": "url"
+  },
+  "https://en.wikipedia.org/wiki/Vietcombank": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.techmonitor.ai/digital-economy/ai-and-automation/vodafone-ploughs-140m-into-new-supertobi-chatbot-rollout": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.vodafone.com/news/newsroom/technology/meet-super-tobi-vodafone-s-new-generative-ai-virtual-assistant-now-serving-customers-in-multiple-countries": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.constellationr.com/insights/news/walmarts-sparky-ai-agent-increases-order-value": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.glean.com/resources/customer-stories/webflow": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.thefastmode.com/services-and-innovations/17476-vodacom-south-africa-enables-self-rica-via-chatbot-tobi": {
+   "date": null,
+   "how": "none"
+  },
+  "https://venturebeat.com/ai/wells-fargos-ai-assistant-just-crossed-245-million-interactions-with-zero-humans-in-the-loop-and-zero-pii-to-the-llm": {
+   "date": null,
+   "how": "http 429"
+  },
+  "https://www.microsoft.com/en/customers/story/24262-cognition-ai-azure": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.wellspan.org/articles/2026/07/30/13/05/web---hippocractic-ai-partnership-expansion": {
+   "date": "2026-07-30",
+   "how": "url"
+  },
+  "https://hitconsultant.net/2026/07/30/wellspan-health-expands-hippocratic-ai-partnership-platform-wide-voice-agent/": {
+   "date": "2026-07-30",
+   "how": "url"
+  },
+  "https://www.techbooky.com/uba-leo-chatbot/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.wendys.com/blog/drive-thru-innovation-wendys-freshai": {
+   "date": "2023-12-11",
+   "how": "page"
+  },
+  "https://vnba.org.vn/en/ai-applications-in-banking--optimizing-operational-efficiency--enhancing-customer-experience-16521.htm": {
+   "date": "2025-01-15",
+   "how": "page"
+  },
+  "https://www.adweek.com/commerce/walmart-opens-up-ads-in-gen-ai-shopping-agent-sparky/": {
+   "date": "2026-01-06",
+   "how": "page"
+  },
+  "https://www.restaurantdive.com/news/wendys-deploy-digital-menu-boards-drive-thru-ai-500-restaurants-2025/746977/": {
+   "date": "2025-05-02",
+   "how": "page"
+  },
+  "https://sierra.ai/customers/weightwatchers": {
+   "date": "2024-02-13",
+   "how": "page"
+  },
+  "https://now.vodacom.co.za/trending/meet-tobi-vodacom-s-customer-service-chatbot/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://research.contrary.com/company/sierra": {
+   "date": null,
+   "how": "none"
+  },
+  "https://fpt.ai/news/fpt-smart-cloud-partners-with-vietcombank-to-successfully-initiate-ai-virtual-assistant-vcb-digibot/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.microsoft.com/en/customers/story/838350-vodafone-telecom-azure-cognitive-services": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.fool.com/earnings/call-transcripts/2026/07/30/wtw-wtw-q2-2026-earnings-call-transcript/": {
+   "date": "2026-07-30",
+   "how": "url"
+  },
+  "https://www.microsoft.com/en/customers/story/1770174778560829849-vodafone-group-azure-telecommunications-en-united-kingdom": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.investing.com/news/transcripts/earnings-call-transcript-wtw-tops-q2-2026-estimates-as-shares-rise-42-93CH-4825085": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://gulfnews.com/amp/story/uae/uae-launches-unified-ai-guide-to-redesign-government-services-around-outcomes-1.500647880": {
+   "date": "2026-08-21",
+   "how": "page"
+  },
+  "https://www.sec.gov/Archives/edgar/data/719245/000110465925105149/tm2528795d6_ex1.htm": {
+   "date": null,
+   "how": "none"
+  },
+  "https://economymiddleeast.com/news/saudi-arabia-next-phase-banking-growth-will-be-digital-ai-led-conversational/": {
+   "date": "2026-02-11",
+   "how": "page"
+  },
+  "https://www.americanbanker.com/news/wells-fargo-plans-to-unleash-googles-agentic-ai-bank-wide": {
+   "date": "2025-08-05",
+   "how": "page"
+  },
+  "https://businessmodelanalyst.com/white-castle-ai-drive-thru/": {
+   "date": "2026-06-23",
+   "how": "page"
+  },
+  "https://www.bankingdive.com/news/wells-fargo-taps-google-ai-fargo-virtual-assistant-launch/634754/": {
+   "date": "2022-10-24",
+   "how": "page"
+  },
+  "https://www.restaurantdive.com/news/white-castle-soundhound-ai-voice-drive-thru-100-units-2024/689624/": {
+   "date": "2023-08-02",
+   "how": "page"
+  },
+  "https://www.glean.com/resources/customer-stories/zillow": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.qsrmagazine.com/story/yum-brands-byte-platform-rewrites-playbook-for-restaurant-technology/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.grocerytradenews.com/retail-technology-in-australia-2025/": {
+   "date": "2025-12-10",
+   "how": "page"
+  },
+  "https://blogs.nvidia.com/blog/india-enterprise-ai-agents/": {
+   "date": "2026-02-18",
+   "how": "page"
+  },
+  "https://www.business-standard.com/companies/news/zomato-launches-ai-customer-support-platform-nugget-125021700734_1.html": {
+   "date": "2025-02-17",
+   "how": "page"
+  },
+  "https://www.zenithbank.com/media/news/zenith-bank-launches-intelligent-chatbot-ziva/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.zurich.com/about-us/ai-at-zurich": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.insurancebusinessmag.com/us/news/technology/allianz-leads-the-pack-as-insurers-race-to-turn-ai-investment-into-real-competitive-advantage-579109.aspx": {
+   "date": "2026-06-16",
+   "how": "page"
+  },
+  "https://analyticsindiamag.com/ai-news-updates/zomato-unveils-nugget-ai-powered-no-code-customer-support-platform/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://engineering.zoominfo.com/experience-with-github-copilot-for-developer-productivity-at-zoominfo": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.wipro.com/wipro-intelligence/platforms/wega/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.vietnam.vn/en/ai-dang-dinh-hinh-lai-cuoc-choi-nganh-ngan-hang": {
+   "date": "2025-12-22",
+   "how": "page"
+  },
+  "https://www.retaildetail.eu/news/fashion/how-zalando-is-preparing-for-an-ai-retail-world/": {
+   "date": "2026-03-12",
+   "how": "page"
+  },
+  "https://openai.com/index/zalando/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.canarytechnologies.com/press/canary-wyndham-global-ai-voice": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.soundhound.com/whitecastle-casestudy/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.yum.com/wps/portal/yumbrands/Yumbrands/news/press-releases/introducing+byte+by+yum+an+ai+driven+restaurant+technology+platform+powering+customer+and+team+member+experiences+worldwide": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.nugget.com/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.itnews.com.au/news/woolworths-to-incorporate-agentic-ai-into-its-olive-chatbot-622907": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.zillowgroup.com/news/how-ai-supercharges-zillows-cloud-hq/": {
+   "date": "2025-08-20",
+   "how": "page"
+  },
+  "https://www.xataka.com.mx/comercio-electronico/ia-ahorra-3-millones-horas-trabajo-a-tiendas-linea-mexico-tiendanube-invertira-millones-para-impulsar-su-uso": {
+   "date": null,
+   "how": "fetch failed"
+  },
+  "https://healthsystemcio.com/2026/08/09/epic-agent-factory-health-systems/": {
+   "date": "2026-08-09",
+   "how": "url"
+  },
+  "https://www.hospitalitynet.org/editorial/4134562/accor-deploys-hospitalitys-first-ai-concierge-at-scale-travelers-are-two-years-ahead-of-the-industry-on-ai-the-middle-management-layer-nobody-develops": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.wealthmanagement.com/advisor-support-platforms/altruist-launches-ai-financial-planning-agent": {
+   "date": "2026-08-31",
+   "how": "page"
+  },
+  "https://www.retaildive.com/news/best-buy-ai-shopping-assistant/829049/": {
+   "date": "2026-08-31",
+   "how": "page"
+  },
+  "https://www.engadget.com/2271730/lola-is-bookingcoms-new-ai-travel-agent/": {
+   "date": "2026-09-29",
+   "how": "page"
+  },
+  "https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/": {
+   "date": "2026-09-09",
+   "how": "url"
+  },
+  "https://www.pharmaceutical-technology.com/news/schrodinger-bms-ai-drug-discovery/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.vozpopuli.com/espana/madrid/la-ia-entra-de-lleno-en-la-sanidad-madrilena-para-anticipar-complicaciones-en-pacientes-cronicos.html": {
+   "date": "2026-10-05",
+   "how": "page"
+  },
+  "https://www.googlecloudpresscorner.com/2026-10-08-Orange-Spain-Expands-Partnership-with-Google-Cloud-to-Industrialize-AI-Operations-with-Gemini-Enterprise": {
+   "date": "2026-10-08",
+   "how": "url"
+  },
+  "https://www.restaurantdive.com/news/mcdonalds-archiq-drive-thru-artificial-intelligence-next-strategy/831256/": {
+   "date": "2026-09-25",
+   "how": "page"
+  },
+  "https://www.gtreview.com/news/digital-trade/hsbc-goes-proprietary-on-ai-trade-doc-checking/": {
+   "date": "2026-09-29",
+   "how": "page"
+  },
+  "https://pymnts.com/news/artificial-intelligence/2026/banks-put-ai-agents-through-performance-reviews": {
+   "date": "2026-10-09",
+   "how": "page"
+  },
+  "https://prtimes.jp/main/html/rd/p/000001382.000001552.html": {
+   "date": "2026-10-06",
+   "how": "page"
+  },
+  "https://fedscoop.com/trump-launches-ai-site-america-gov/": {
+   "date": "2026-09-29",
+   "how": "page"
+  },
+  "https://consumergoods.com/how-unilever-scales-ai-predictive-models-agentic-workflows": {
+   "date": "2026-09-28",
+   "how": "page"
+  },
+  "https://www.tdworld.com/smart-utility/news/55406294/aws-duke-energy-use-ai-agents-to-accelerate-interconnection-studies": {
+   "date": "2026-09-18",
+   "how": "page"
+  },
+  "https://blog.google/intl/pt-br/produtos/nas-nuvens/google-cloud-summit-brasil-2026/": {
+   "date": "2026-09-24",
+   "how": "page"
+  },
+  "https://press.aboutamazon.com/aws/2026/9/aws-launches-agentic-grid-planning-program-to-accelerate-interconnection-studies": {
+   "date": "2026-09-17",
+   "how": "page"
+  },
+  "https://fr.le360.ma/economie/simple-lance-simple-ai-un-assistant-bancaire-par-ia-qui-comprend-la-darija_SHISYWL37VGTTJZ4HOSWC4URHU": {
+   "date": "2026-10-07",
+   "how": "page"
+  },
+  "https://wealthmanagement.com/artificial-intelligence/m1-launches-ai-financial-advisor-for-clients": {
+   "date": "2026-10-07",
+   "how": "page"
+  },
+  "https://thefintechtimes.com/sibos-2026-day-two-banks-put-ai-agents-to-work-but-keep-the-judgement-for-people/": {
+   "date": "2026-09-30",
+   "how": "page"
+  },
+  "https://www.assemblymag.com/articles/100437-harman-reports-quality-productivity-gains-from-factory-ai": {
+   "date": "2026-09-30",
+   "how": "page"
+  },
+  "https://www.epic.com/epic/post/at-agent-factory-build-a-thon-health-systems-create-their-own-ai-agents/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.comparethecloud.net/news/university-of-leicester-launches-ai-student-agent-built-on-microsoft-365-copilot": {
+   "date": "2026-09-22",
+   "how": "page"
+  },
+  "https://press.accor.com/?p=70494": {
+   "date": "2026-09-24",
+   "how": "page"
+  },
+  "https://www.synapxe.sg/media-releases/artificial-intelligence/public-healthcare-agentic-ai-platform": {
+   "date": null,
+   "how": "none"
+  }
+ }
+}
