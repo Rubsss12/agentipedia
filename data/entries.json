@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T06:14:48.764Z",
+  "updated_at": "2026-10-11T19:03:55.017Z",
   "entries": [
     {
       "id": "1-800accountant--agentforce",
@@ -431,6 +431,70 @@
         "basis_en": "Tamada answers queries and executes banking transactions from airtime top-ups to fund transfers; the agent commits account actions and money movements initiated by the user.",
         "basis_fr": "Tamada repond aux demandes et execute des transactions bancaires, du rechargement de credit aux virements; l'agent valide actions de compte et mouvements d'argent inities par le client."
       }
+    },
+    {
+      "company": "Accor",
+      "company_country": "France",
+      "region": "Europe",
+      "sector": "Hospitality & Food",
+      "industry": "Hotel group",
+      "department": "Guest services and reservations",
+      "solution_name": "ALL Concierge",
+      "vendor": "In-house",
+      "use_case": "A conversational travel companion that carries a guest from inspiration and hotel comparison through booking management to post stay support, in eleven languages, on ALL.com, the ALL Accor app, WhatsApp and iMessage. Accor says it confirms bookings directly and resolves most requests on its own, handing over to support teams for complex requests.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Guest conversations handled since the pilot started in July 2025",
+          "value": "more than 1 million",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Languages at launch",
+          "value": "11, expanding to all languages by the end of the year",
+          "source_type": "press_release"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://press.accor.com/?p=70494",
+          "title": "Accor reaches a new milestone with ALL Concierge, hospitality's first end-to-end conversational travel companion deployed at scale",
+          "publisher": "Accor",
+          "source_type": "press_release",
+          "retrieved_date": "2026-10-11"
+        },
+        {
+          "url": "https://www.hospitalitynet.org/editorial/4134562/accor-deploys-hospitalitys-first-ai-concierge-at-scale-travelers-are-two-years-ahead-of-the-industry-on-ai-the-middle-management-layer-nobody-develops",
+          "title": "HN Brief: Accor Deploys Hospitality's First AI Concierge at Scale",
+          "publisher": "Hospitality Net",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "commerce",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          2,
+          1,
+          1,
+          2
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Accor's own release says the companion confirms bookings directly and resolves most requests autonomously, which would be delegation, but only that release attests it: the independent coverage describes resolution rates and escalation logic without confirming autonomous booking. Marketing alone cannot establish delegation, so observed is capped at N2.",
+        "basis_fr": "Le communiqué d'Accor affirme que le compagnon confirme directement les réservations et résout seul la plupart des demandes, ce qui relèverait de la délégation, mais seul ce communiqué l'atteste : la couverture indépendante parle de taux de résolution et de logique d'escalade sans confirmer la réservation autonome. Une preuve marketing n'établit pas la délégation, l'observé est donc plafonné à N2."
+      },
+      "id": "accor--all-concierge",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "adnoc-abu-dhabi-national-oil-company--energyai",
@@ -1307,6 +1371,60 @@
         "basis_en": "Project Nemo agentic AI automates multi-step claims workflows (first in Australia) while AllianzGPT serves 60,000+ employees; claims steps prepared with human validation.",
         "basis_fr": "L'IA agentique Project Nemo automatise des workflows de sinistres multi-etapes (d'abord en Australie) tandis qu'AllianzGPT sert 60 000+ employes; etapes de sinistre preparees avec validation humaine."
       }
+    },
+    {
+      "company": "Altruist",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Financial Services",
+      "industry": "RIA custody and wealth technology",
+      "department": "Financial planning",
+      "solution_name": "Hazel",
+      "vendor": "In-house",
+      "use_case": "A financial planning agent on Altruist's Hazel platform that builds comprehensive plans in minutes across retirement, investment optimisation, cash flow, estate planning, tax strategy and insurance, from client documents, meetings and connected sources. Financial computations are handed to dedicated calculation programs rather than generated by the model.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Time to produce a comprehensive financial plan",
+          "value": "minutes, against hours of advisor work previously",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.wealthmanagement.com/advisor-support-platforms/altruist-launches-ai-financial-planning-agent",
+          "title": "Altruist Launches AI Financial Planning Agent",
+          "publisher": "WealthManagement.com",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "pilotage",
+        "links": [
+          2,
+          2,
+          1,
+          0,
+          1,
+          2,
+          2,
+          2,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "data"
+        ],
+        "basis_en": "The agent drafts the plan and models scenarios, while the advisor owns what reaches the client and it places no trades, so it stays at N2. Every figure is produced by dedicated calculation programs rather than by the model, and the platform runs under zero data retention agreements, which documents the data lock.",
+        "basis_fr": "L'agent rédige le plan et simule les scénarios, tandis que le conseiller reste maître de ce qui arrive au client et qu'aucun ordre n'est passé : il reste à N2. Chaque chiffre provient de programmes de calcul dédiés plutôt que du modèle, et la plateforme fonctionne sous accords de non-rétention des données, ce qui documente le verrou données."
+      },
+      "id": "altruist--hazel",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "company": "Amazon",
@@ -3546,6 +3664,52 @@
       }
     },
     {
+      "company": "Best Buy",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Retail & E-commerce",
+      "industry": "Consumer electronics retail",
+      "department": "Customer service",
+      "solution_name": "Ask Blue",
+      "vendor": "",
+      "use_case": "A conversational shopping and support assistant that pulls together product details, customer reviews, availability and pricing so shoppers can compare products and check compatibility. It guides customers to self service options or connects them with a live support specialist when the question goes further, and is being rolled out in phases.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.retaildive.com/news/best-buy-ai-shopping-assistant/829049/",
+          "title": "Best Buy emphasizes expert support with AI shopping assistant",
+          "publisher": "Retail Dive",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "commerce",
+        "links": [
+          1,
+          2,
+          2,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The assistant answers shopping questions and routes to self service or to a human specialist; the fetched source does not describe it completing a purchase, so it informs rather than commits. Observed N2.",
+        "basis_fr": "L'assistant répond aux questions d'achat et oriente vers le self-service ou vers un spécialiste humain ; la source consultée ne décrit pas d'achat finalisé par l'agent, il informe donc sans engager. Observé N2."
+      },
+      "id": "best-buy--ask-blue",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "company": "Bharti Airtel",
       "company_country": "India",
       "region": "South Asia",
@@ -3788,6 +3952,80 @@
       }
     },
     {
+      "company": "BNY",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Financial Services",
+      "industry": "Custody and payments",
+      "department": "Payment operations",
+      "solution_name": "Unnamed payment repair digital employee",
+      "solution_named": false,
+      "vendor": "In-house",
+      "use_case": "A digital employee with its own corporate login and employee number repairs cross border payments that fail straight through processing, reading each field for meaning and checking syntax against ISO 20022 before asking whether the payment makes sense as a movement of value. Human managers review its drafts and keep the release decision.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Payment validation time",
+          "value": "from up to six minutes down to under 30 seconds",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Open payment investigations",
+          "value": "down nearly 80%, bank figures, unaudited",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Digital employees in service at BNY",
+          "value": "about 140",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://pymnts.com/news/artificial-intelligence/2026/banks-put-ai-agents-through-performance-reviews",
+          "title": "Banks Put AI Agents Through Performance Reviews",
+          "publisher": "PYMNTS",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        },
+        {
+          "url": "https://thefintechtimes.com/sibos-2026-day-two-banks-put-ai-agents-to-work-but-keep-the-judgement-for-people/",
+          "title": "Sibos 2026 day two: banks put AI agents to work, but keep the judgement for people",
+          "publisher": "The Fintech Times",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          2,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate",
+          "supervision",
+          "compliance"
+        ],
+        "basis_en": "The digital employee reasons over failed payments and drafts the repair, and a person still releases it, so it stays at N2 by design. BNY documents a 16 step path of review boards, compliance gates and model risk evaluations, live dashboards of volumes, cycle times and approval outcomes, and a Digital Employee Agency that onboards, scores and offboards each agent.",
+        "basis_fr": "L'employé numérique raisonne sur les paiements en échec et rédige la correction, un humain gardant la main sur le relâchement : il reste à N2 par construction. BNY documente un parcours de 16 étapes de comités de revue, de contrôles conformité et d'évaluations de risque modèle, des tableaux de bord de volumes, délais et décisions, et une Digital Employee Agency qui intègre, note et retire chaque agent."
+      },
+      "id": "bny--unnamed-payment-repair-digital-employee",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "bojangles--bo-linda-ai-order-taker",
       "company": "Bojangles",
       "company_country": "United States",
@@ -3923,6 +4161,52 @@
       }
     },
     {
+      "company": "Booking Holdings",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Travel & Transportation",
+      "industry": "Online travel",
+      "department": "Consumer trip planning",
+      "solution_name": "Lola",
+      "vendor": "In-house",
+      "use_case": "A conversational travel assistant backed by Booking Holdings that recommends and reserves hotels, restaurants, events and activities, with live availability, pricing and direct booking inside the conversation. It launched with a free tier plus Plus and VIP memberships at five and twenty five dollars a month, and partners including OpenTable, KAYAK, Priceline, Agoda, SeatGeek and GetYourGuide.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.engadget.com/2271730/lola-is-bookingcoms-new-ai-travel-agent/",
+          "title": "Lola is a new AI travel agent backed by the company behind Booking.com",
+          "publisher": "Engadget",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "commerce",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          2,
+          1,
+          1,
+          1
+        ],
+        "observed": 3,
+        "locks": [],
+        "basis_en": "The assistant searches live availability and books directly inside the conversation, which commits a reservation rather than proposing one, and the coverage lists direct booking among its features. Nothing public documents bounds, supervision or data quality, so the declared level stays at N2.",
+        "basis_fr": "L'assistant interroge les disponibilités en temps réel et réserve directement dans la conversation, ce qui engage une réservation au lieu de la proposer, la réservation directe figurant parmi ses fonctions. Rien de public ne documente de bornes, de supervision ou de qualité de donnée : le niveau déclaré reste à N2."
+      },
+      "id": "booking-holdings--lola",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "boubyan-bank--msa3ed",
       "company": "Boubyan Bank",
       "company_country": "Kuwait",
@@ -4024,6 +4308,52 @@
         "basis_en": "BEA Chat is a 24/7 conversational assistant handling inquiries, self-service, product applications and live-agent escalation with a request tracker and ~3s responses; it answers and intakes, humans validate (N2).",
         "basis_fr": "BEA Chat est un assistant conversationnel 24/7 traitant demandes, self-service, souscriptions produits et escalade vers agent, avec suivi de demande et reponses en ~3s ; il repond et collecte, les humains valident (N2)."
       }
+    },
+    {
+      "company": "Bristol Myers Squibb",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Healthcare, Life Sciences & Luxury",
+      "industry": "Pharmaceuticals",
+      "department": "Research, early drug discovery",
+      "solution_name": "Bunsen",
+      "vendor": "Schrödinger",
+      "use_case": "An agentic AI co scientist deployed across the research organisation to run molecular discovery workflows, executing computational methods and handling the planning and interpretation steps around them. It is paired with RetroSynth for synthesis planning so more chemists can explore chemical space and prioritise molecules.",
+      "deployment_stage": "announced",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.pharmaceutical-technology.com/news/schrodinger-bms-ai-drug-discovery/",
+          "title": "Schrödinger and BMS expand partnership to deploy AI for drug discovery",
+          "publisher": "Pharmaceutical Technology",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "science",
+        "links": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent executes computational chemistry workflows and interprets them, but the scientists decide which molecules advance, and the trade article describes a deployment under way rather than measured results. Observed N2.",
+        "basis_fr": "L'agent exécute des chaînes de calcul et les interprète, mais ce sont les scientifiques qui décident des molécules retenues, et l'article de presse spécialisée décrit un déploiement en cours plutôt que des résultats mesurés. Observé N2."
+      },
+      "id": "bristol-myers-squibb--bunsen",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "company": "British Antarctic Survey",
@@ -6230,6 +6560,52 @@
       }
     },
     {
+      "company": "Comunidad de Madrid",
+      "company_country": "Spain",
+      "region": "Europe",
+      "sector": "Healthcare, Life Sciences & Luxury",
+      "industry": "Regional public health service",
+      "department": "Chronic disease management",
+      "solution_name": "CRON-IA",
+      "vendor": "",
+      "use_case": "A project to monitor home collected data from the region's chronic patients, with hypertension, diabetes, COPD, heart failure or cognitive decline, and to detect early signals of complications without the patient coming to a clinic. Doctors receive the alerts and decide whether and when to intervene.",
+      "deployment_stage": "announced",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.vozpopuli.com/espana/madrid/la-ia-entra-de-lleno-en-la-sanidad-madrilena-para-anticipar-complicaciones-en-pacientes-cronicos.html",
+          "title": "La IA entra de lleno en la sanidad madrileña para anticipar complicaciones en pacientes crónicos",
+          "publisher": "Vozpópuli",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "soin",
+        "links": [
+          1,
+          1,
+          0,
+          2,
+          0,
+          0,
+          0,
+          2,
+          1,
+          2
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The system watches home data and raises early warning signals, and the physician decides on any intervention: it alerts rather than acts. The regional government has announced the project for about two million chronic patients, without a published start date, so it is catalogued as announced.",
+        "basis_fr": "Le système surveille les données du domicile et remonte des signaux d'alerte, le médecin décidant de toute intervention : il alerte sans agir. La région annonce le projet pour environ deux millions de patients chroniques, sans date de mise en service publiée, d'où le statut annoncé."
+      },
+      "id": "comunidad-de-madrid--cron-ia",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "confluent--glean",
       "company": "Confluent",
       "company_country": "United States",
@@ -7049,6 +7425,58 @@
       }
     },
     {
+      "company": "Deutsche Bank",
+      "company_country": "Germany",
+      "region": "Europe",
+      "sector": "Financial Services",
+      "industry": "Corporate banking",
+      "department": "Client onboarding and lending",
+      "solution_name": "Ada",
+      "vendor": "In-house",
+      "use_case": "Ada, named after Ada Lovelace, is the Corporate Bank's agentic framework, which the bank says has moved from experimentation to industrial scale with agents reused across divisions. Using knowledge graphs, its German lending business for smaller companies onboarded a new client and issued a loan in one day, against about a month before.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Time to onboard a client and issue a loan",
+          "value": "one day, against about one month previously",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://thefintechtimes.com/sibos-2026-day-two-banks-put-ai-agents-to-work-but-keep-the-judgement-for-people/",
+          "title": "Sibos 2026 day two: banks put AI agents to work, but keep the judgement for people",
+          "publisher": "The Fintech Times",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "vente",
+        "links": [
+          0,
+          1,
+          0,
+          1,
+          2,
+          0,
+          1,
+          2,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The framework compresses onboarding and loan issuance from a month to a day, but the reporting groups Deutsche Bank with the banks that keep the release decision with people, and no source grants the agent credit authority. Observed N2.",
+        "basis_fr": "Le cadre ramène l'entrée en relation et l'octroi du prêt d'un mois à un jour, mais l'article range Deutsche Bank parmi les banques qui gardent la décision finale côté humain, et aucune source ne confie à l'agent le pouvoir d'engager le crédit. Observé N2."
+      },
+      "id": "deutsche-bank--ada",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "deutsche-bank--db-lumina",
       "company": "Deutsche Bank",
       "company_country": "Germany",
@@ -7679,6 +8107,67 @@
       }
     },
     {
+      "company": "Duke Energy",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Energy & Utilities",
+      "industry": "Electric utility",
+      "department": "Transmission planning",
+      "solution_name": "Agentic Grid Planning on AWS",
+      "vendor": "Amazon Web Services",
+      "use_case": "AI agents prepare study ready power system cases and run steady state transmission studies for Duke Energy's interconnection queue, driving the physics based simulation software, grid models and engineering standards its planners already use. Engineers lead the work and make every final engineering decision.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Data preparation for interconnection studies",
+          "value": "from about two weeks of manual work to hours",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.tdworld.com/smart-utility/news/55406294/aws-duke-energy-use-ai-agents-to-accelerate-interconnection-studies",
+          "title": "AWS, Duke Energy Use AI Agents to Accelerate Interconnection Studies",
+          "publisher": "T&D World",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        },
+        {
+          "url": "https://press.aboutamazon.com/aws/2026/9/aws-launches-agentic-grid-planning-program-to-accelerate-interconnection-studies",
+          "title": "AWS Launches Agentic Grid Planning Program to Accelerate Interconnection Studies",
+          "publisher": "Amazon",
+          "source_type": "press_release",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "pilotage",
+        "links": [
+          2,
+          2,
+          1,
+          0,
+          1,
+          1,
+          2,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "data"
+        ],
+        "basis_en": "The agents automate data preparation and run the studies, cutting two weeks of preparation to hours, but Duke states that engineers lead the work and make all final engineering decisions, so it prepares rather than commits. Running on the grid models and engineering standards the teams already trust documents the data lock.",
+        "basis_fr": "Les agents automatisent la préparation des données et lancent les études, ramenant deux semaines de préparation à quelques heures, mais Duke précise que les ingénieurs pilotent le travail et prennent toutes les décisions finales : ils préparent sans engager. L'usage des modèles de réseau et des standards d'ingénierie déjà éprouvés documente le verrou données."
+      },
+      "id": "duke-energy--agentic-grid-planning-on-aws",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "duolingo--decagon",
       "company": "Duolingo",
       "company_country": "United States",
@@ -8031,6 +8520,67 @@
         "basis_en": "Rafiki handles account inquiries, money transfers, airtime and bill payments, merchant payments and Xpress account opening via WhatsApp/Messenger across pan-African markets, executing financial transactions in chat.",
         "basis_fr": "Rafiki gère les demandes de compte, virements, achats de crédit et factures, paiements marchands et ouverture de compte Xpress via WhatsApp/Messenger sur les marchés panafricains, exécutant des transactions financières en chat."
       }
+    },
+    {
+      "company": "ECU Health",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Healthcare, Life Sciences & Luxury",
+      "industry": "Regional health system, nine hospitals",
+      "department": "Transfer centre",
+      "solution_name": "Epic Agent Factory",
+      "vendor": "Epic",
+      "use_case": "An agent built in Epic Agent Factory summarises every incoming transfer request and identifies which of the nine hospitals can take the case, supporting the handoff between transfer centre staff and the accepting physician. Nurses keep the placement decision, framed by the health system as decision support instead of decision replacement.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Staff time saved on transfer summaries",
+          "value": "about 20 hours a week, half a full time position",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://healthsystemcio.com/2026/08/09/epic-agent-factory-health-systems/",
+          "title": "Epic Agent Factory: Health Systems Build AI Agents",
+          "publisher": "healthsystemCIO",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        },
+        {
+          "url": "https://www.epic.com/epic/post/at-agent-factory-build-a-thon-health-systems-create-their-own-ai-agents/",
+          "title": "At Agent Factory Build-A-Thon, Health Systems Create Their Own AI Agents",
+          "publisher": "Epic",
+          "source_type": "company_official",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "soin",
+        "links": [
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate"
+        ],
+        "basis_en": "The agent writes the transfer summary and names eligible hospitals, while nurses decide the placement: the health system states it is decision support instead of decision replacement, which also documents the bound. Observed N2.",
+        "basis_fr": "L'agent rédige le résumé de transfert et identifie les hôpitaux éligibles, tandis que les infirmières décident du placement : l'établissement parle d'aide à la décision et non de remplacement de la décision, ce qui documente aussi la borne. Observé N2."
+      },
+      "id": "ecu-health--epic-agent-factory",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "elevance-health--unnamed-ai-healthcare-navigation-virtual-assistant",
@@ -9416,6 +9966,52 @@
       }
     },
     {
+      "company": "FORVIA HELLA",
+      "company_country": "Germany",
+      "region": "Europe",
+      "sector": "Automotive & Mobility",
+      "industry": "Automotive components manufacturing",
+      "department": "Surface mount technology lines",
+      "solution_name": "Arch Factory Intelligence Platform",
+      "vendor": "Arch Systems",
+      "use_case": "The supplier has begun testing the platform on its surface mount technology lines, using real time downtime labelling and AI assisted root cause analysis to identify production problems. The scope is deliberately narrow, covering SMT lines rather than the whole plant network.",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.assemblymag.com/articles/100437-harman-reports-quality-productivity-gains-from-factory-ai",
+          "title": "HARMAN Reports Quality, Productivity Gains From Factory AI",
+          "publisher": "Assembly Magazine",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "ops",
+        "links": [
+          2,
+          2,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The platform labels downtime in real time and assists root cause analysis, with engineers acting on the findings, and the deployment is explicitly a test on SMT lines. Observed N2.",
+        "basis_fr": "La plateforme qualifie les arrêts en temps réel et assiste l'analyse des causes, les ingénieurs agissant sur les constats, et le déploiement est explicitement un test sur les lignes CMS. Observé N2."
+      },
+      "id": "forvia-hella--arch-factory-intelligence-platform",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "foxconn-hon-hai-technology-group--foxbrain-citygpt-codoctor-ai-codoclaw",
       "company": "Foxconn (Hon Hai Technology Group)",
       "company_country": "Taiwan",
@@ -10635,6 +11231,68 @@
       }
     },
     {
+      "company": "Grupo Globo",
+      "company_country": "Brazil",
+      "region": "Latin America",
+      "sector": "Media & Entertainment",
+      "industry": "Broadcast and streaming media",
+      "department": "Product and technology",
+      "solution_name": "PlanejaAI",
+      "vendor": "Google Cloud",
+      "use_case": "An internally branded agent solution used by product owners, managers and analysts for quarterly planning and the refinement of engineering epics. It validates and sharpens plans before development starts, collapsing a manual review step from twenty minutes to seconds.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Accuracy of plans before development starts",
+          "value": "+33%",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Validation time",
+          "value": "from 20 minutes to 6 seconds",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Hours saved in one quarter",
+          "value": "127",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/intl/pt-br/produtos/nas-nuvens/google-cloud-summit-brasil-2026/",
+          "title": "Da experimentação ao impacto real: Como o Brasil está liderando na Era Agêntica",
+          "publisher": "Google Brasil",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "delivery",
+        "links": [
+          2,
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent validates and sharpens plans before development starts, and the teams keep the planning decision, so it prepares rather than commits. The only evidence is the cloud partner's own case study, which caps the observed level at N2.",
+        "basis_fr": "L'agent valide et affine les plans avant le démarrage du développement, les équipes gardant la décision de planification : il prépare sans engager. La seule preuve étant le cas client du partenaire cloud, l'observé est plafonné à N2."
+      },
+      "id": "grupo-globo--planejaai",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.5,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
+    },
+    {
       "id": "grupo-marista--google-agentspace",
       "company": "Grupo Marista",
       "company_country": "Brazil",
@@ -10850,6 +11508,70 @@
         "basis_en": "Pilot watsonx assistant helps IT staff manage APIs, answer interface-availability questions and resolve HTTP errors (up to 96% workflow improvement); it assists/answers, humans act.",
         "basis_fr": "Assistant watsonx en pilote aidant l'IT a gerer les API, repondre sur la disponibilite des interfaces et resoudre les erreurs HTTP (jusqu'a 96% d'amelioration); il assiste/repond, les humains agissent."
       }
+    },
+    {
+      "company": "HARMAN Automotive",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Automotive & Mobility",
+      "industry": "Automotive electronics manufacturing",
+      "department": "Manufacturing excellence",
+      "solution_name": "Arch Factory Intelligence Platform",
+      "vendor": "Arch Systems",
+      "use_case": "AI agents combine equipment, MES and enterprise data to investigate quality, planning and operations problems on HARMAN's electronics lines, starting from a lighthouse plant in Suzhou and now live across four sites. Results reach the floor as prioritised alerts, guided workflows and role based actions.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Total placements across four sites",
+          "value": "+30%",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Defects per million units",
+          "value": "37% improvement",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Overall equipment effectiveness",
+          "value": "6 to 8 percentage points",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.assemblymag.com/articles/100437-harman-reports-quality-productivity-gains-from-factory-ai",
+          "title": "HARMAN Reports Quality, Productivity Gains From Factory AI",
+          "publisher": "Assembly Magazine",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "ops",
+        "links": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "data"
+        ],
+        "basis_en": "The agents investigate production problems and push prioritised alerts and guided workflows to operators, and no source claims one changes a machine setting by itself, so they recommend rather than act. Grounding on live equipment, MES and enterprise data documents the data lock.",
+        "basis_fr": "Les agents investiguent les problèmes de production et poussent vers les opérateurs des alertes priorisées et des procédures guidées, et aucune source n'affirme qu'un agent modifie un réglage machine : ils recommandent sans agir. L'ancrage sur les données temps réel des équipements, du MES et de l'entreprise documente le verrou données."
+      },
+      "id": "harman-automotive--arch-factory-intelligence-platform",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "havas--converged-ai",
@@ -11274,6 +11996,61 @@
         "basis_en": "HSBC states it uses Gemini Enterprise to build AI agents supporting wealth management; deployment stage unknown, no outcomes, earnings-call mention only, so at most a proposing tool.",
         "basis_fr": "HSBC declare utiliser Gemini Enterprise pour construire des agents IA en gestion de patrimoine; stade inconnu, aucun resultat, simple mention en earnings-call, donc au plus un outil de proposition."
       }
+    },
+    {
+      "company": "HSBC",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Financial Services",
+      "industry": "Trade finance",
+      "department": "Global Trade Solutions operations",
+      "solution_name": "Smart Checking",
+      "vendor": "In-house",
+      "use_case": "Proprietary AI that digitises, classifies and checks trade finance documents, then reasons over the conditions a transaction must meet using ICC rules and trade specialist knowledge. It runs an exceptions based workflow in Hong Kong, the UAE and the UK, with specialists keeping the judgement calls on edge cases and higher value transactions.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.gtreview.com/news/digital-trade/hsbc-goes-proprietary-on-ai-trade-doc-checking/",
+          "title": "HSBC goes proprietary on AI trade doc checking",
+          "publisher": "Global Trade Review",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        },
+        {
+          "url": "https://thefintechtimes.com/sibos-2026-day-two-banks-put-ai-agents-to-work-but-keep-the-judgement-for-people/",
+          "title": "Sibos 2026 day two: banks put AI agents to work, but keep the judgement for people",
+          "publisher": "The Fintech Times",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          1,
+          0,
+          0,
+          2,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "data"
+        ],
+        "basis_en": "The agent reads and checks documents at scale, while HSBC's own operating model keeps exceptions and the decisions that matter with trade specialists, so it prepares rather than commits. Grounding on ICC rules and specialist knowledge documents the data lock.",
+        "basis_fr": "L'agent lit et contrôle les documents à grande échelle, mais le modèle d'exploitation de HSBC laisse les exceptions et les décisions qui comptent aux spécialistes du trade : il prépare sans engager. L'ancrage sur les règles ICC et le savoir des spécialistes documente le verrou données."
+      },
+      "id": "hsbc--smart-checking",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "hubspot--claude-code",
@@ -12123,6 +12900,52 @@
         "basis_en": "Agentic AI Foundry within Topaz to build/run production agents, plus Microsoft 365 Copilot scaled to over 100,000 employees; concrete evidence is a productivity copilot rollout.",
         "basis_fr": "Agentic AI Foundry dans Topaz pour créer/exécuter des agents, et Microsoft 365 Copilot étendu à plus de 100 000 employés; la preuve concrète est un déploiement de copilote de productivité."
       }
+    },
+    {
+      "company": "Instacart",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Retail & E-commerce",
+      "industry": "Online grocery marketplace",
+      "department": "Consumer shopping",
+      "solution_name": "Clementine",
+      "vendor": "In-house",
+      "use_case": "An assistant that turns a conversation, a grocery list or a recipe into a ready to buy cart, applying household preferences, surfacing deals and suggesting cheaper alternatives. It builds the cart from Instacart's catalogue and order history, and the customer places and pays for the order.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/",
+          "title": "Instacart launches an AI grocery shopping assistant called Clementine",
+          "publisher": "TechCrunch",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "commerce",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent composes a complete cart from a conversation, which is real work across discovery, evaluation and offers, but checkout and payment stay with the shopper, so it stops short of committing. Observed N2.",
+        "basis_fr": "L'agent compose un panier complet à partir d'une conversation, ce qui couvre réellement la découverte, l'évaluation et les offres, mais la validation et le paiement restent au client : il s'arrête avant d'engager. Observé N2."
+      },
+      "id": "instacart--clementine",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "intel--gemini-enterprise",
@@ -14239,6 +15062,65 @@
       }
     },
     {
+      "company": "Loma Linda University Health",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Healthcare, Life Sciences & Luxury",
+      "industry": "Academic health system",
+      "department": "Emergency department, patient flow",
+      "solution_name": "Epic Agent Factory",
+      "vendor": "Epic",
+      "use_case": "An agent built in Epic Agent Factory scans charts every four hours to find emergency department patients who can move to the less crowded East Campus, where beds are available. Clinical operations staff review the candidates and carry out the transfers.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Transfers to the East Campus since go live",
+          "value": "+21%",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "East Campus bed utilisation",
+          "value": "+15%",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://healthsystemcio.com/2026/08/09/epic-agent-factory-health-systems/",
+          "title": "Epic Agent Factory: Health Systems Build AI Agents",
+          "publisher": "healthsystemCIO",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "soin",
+        "links": [
+          0,
+          2,
+          2,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "supervision"
+        ],
+        "basis_en": "The agent reads charts and flags transfer candidates on a four hour cycle; humans make the transfer decision, so it prepares rather than commits. The clinical operations team owns validation and monitoring after go live, which documents supervision.",
+        "basis_fr": "L'agent lit les dossiers et signale les patients transférables toutes les quatre heures ; la décision de transfert revient aux équipes, donc il prépare sans engager. L'équipe des opérations cliniques assure la validation et le suivi depuis la mise en service, ce qui documente la supervision."
+      },
+      "id": "loma-linda-university-health--epic-agent-factory",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "lotte-hi-mart--havi",
       "company": "Lotte Hi-Mart",
       "company_country": "South Korea",
@@ -14501,6 +15383,65 @@
         "basis_en": "One tap opens an agent that coordinates domain agents across 22 lifestyle categories (discovery, evaluation, comparison); the user confirms every transaction. Observed N2 today, the announced trajectory (Agent i Biz) targets the agentic quadrant.",
         "basis_fr": "Un geste ouvre un agent qui coordonne des agents spécialisés sur 22 catégories (découverte, évaluation, comparaison) ; l'utilisateur confirme chaque transaction. Observé N2 aujourd'hui, la trajectoire annoncée (Agent i Biz) vise le quadrant agentique."
       }
+    },
+    {
+      "company": "M1",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Financial Services",
+      "industry": "Digital investing and wealth management",
+      "department": "Client advice",
+      "solution_name": "M1 Advisor",
+      "vendor": "In-house",
+      "use_case": "An AI financial advisor built into M1's investing platform that gives non discretionary advice on investing, cash and borrowing accounts and can read linked outside accounts such as 401(k)s. It answers questions and recommends actions, and the client decides whether to act.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Assets under management at the M1 Advisory Services RIA",
+          "value": "1.85 billion dollars",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Platform client assets and clients",
+          "value": "14 billion dollars and over 400,000 clients in September 2026",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://wealthmanagement.com/artificial-intelligence/m1-launches-ai-financial-advisor-for-clients",
+          "title": "M1 Launches AI Financial Advisor for Its Clients",
+          "publisher": "WealthManagement.com",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          1,
+          2,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "compliance"
+        ],
+        "basis_en": "The article is explicit that the AI cannot act on its own: it answers and advises, and the client takes the action, so it stays at N2. Advice is delivered through M1 Advisory Services, a registered investment adviser bound by fiduciary duty and conflict disclosure, which documents the compliance lock.",
+        "basis_fr": "L'article est explicite : l'IA ne peut pas agir seule, elle répond et conseille, et c'est le client qui agit, d'où N2. Le conseil est délivré par M1 Advisory Services, conseiller en investissement enregistré soumis au devoir fiduciaire et à la déclaration des conflits, ce qui documente le verrou conformité."
+      },
+      "id": "m1--m1-advisor",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "macfarlanes--harvey-amplify",
@@ -15120,6 +16061,63 @@
         "basis_en": "Civic chatbot guides residents through public services and participatory processes; news reports 132,000 votes (89% of digital votes) processed in 13 days and 147,422 consultation entries. It informs and channels participation, so a human still validates outcomes.",
         "basis_fr": "Chatbot civique qui oriente les habitants dans les services publics et la budgetisation participative ; la presse rapporte 132 000 votes (89% des votes numeriques) en 13 jours et 147 422 contributions. Il informe et canalise la participation, l'humain reste decideur."
       }
+    },
+    {
+      "company": "McDonald's",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Hospitality & Food",
+      "industry": "Quick service restaurants",
+      "department": "Restaurant operations",
+      "solution_name": "ArchIQ (Archy voice agent)",
+      "vendor": "",
+      "use_case": "ArchIQ is McDonald's restaurant operating platform: the Archy voice agent takes drive thru orders in English and Spanish, Bluetooth tags track inventory, computer vision watches equipment and accuracy scales weigh orders before the bag leaves the window. Rollout is conditions based, so a restaurant must pass a readiness check before it gets the stack.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Archy drive thru order accuracy",
+          "value": "above 90%",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Inaccurate orders caught before reaching the customer",
+          "value": "10% of those orders",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.restaurantdive.com/news/mcdonalds-archiq-drive-thru-artificial-intelligence-next-strategy/831256/",
+          "title": "McDonald's turns to AI for drive-thru, inventory management, order accuracy",
+          "publisher": "Restaurant Dive",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "ops",
+        "links": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        "observed": 3,
+        "locks": [],
+        "basis_en": "Archy takes drive thru orders and enters them itself at above 90% accuracy, and the accuracy scales intervene on live orders before they reach the customer, so the system executes and commits rather than proposing. No public mandate, supervision or data lock is documented, so the declared level stays capped at N2.",
+        "basis_fr": "Archy prend les commandes au drive et les saisit lui-même avec plus de 90 % d'exactitude, et les balances de contrôle interviennent sur des commandes en cours avant qu'elles n'arrivent au client : le système exécute et engage au lieu de proposer. Aucun verrou de mandat, de supervision ou de donnée n'étant documenté publiquement, le niveau déclaré reste plafonné à N2."
+      },
+      "id": "mcdonald-s--archiq-archy-voice-agent",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "meesho--vaani",
@@ -17753,6 +18751,65 @@
         "basis_en": "Announced multilingual voice AI in the Max it super app (24M+ users) for natural-language telecom, banking and everyday services; a voice assistant that answers, at N2 and still pre-deployment.",
         "basis_fr": "IA vocale multilingue annoncee dans le super-app Max it (24M+ d'utilisateurs) pour le telecom, la banque et les services en langage naturel; assistant vocal qui repond, N2 et encore pre-deploiement."
       }
+    },
+    {
+      "company": "Orange Spain",
+      "company_country": "Spain",
+      "region": "Europe",
+      "sector": "Telecommunications",
+      "industry": "Telecom operator",
+      "department": "IT operations",
+      "solution_name": "Gemini Enterprise",
+      "vendor": "Google Cloud",
+      "use_case": "Employees have built more than a thousand custom agents that triage and categorise incidents, analyse logs and diagnostics for root cause, answer questions against corporate knowledge and handle routine request management. The low code platform lets non technical staff automate their own internal service tasks instead of queuing behind IT.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Custom agents built by employees",
+          "value": "more than 1,000",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Licence activity rate after rollout",
+          "value": "near 100% within 30 days",
+          "source_type": "press_release"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.googlecloudpresscorner.com/2026-10-08-Orange-Spain-Expands-Partnership-with-Google-Cloud-to-Industrialize-AI-Operations-with-Gemini-Enterprise",
+          "title": "Orange Spain Expands Partnership with Google Cloud to Industrialize AI Operations with Gemini Enterprise",
+          "publisher": "Google Cloud",
+          "source_type": "press_release",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          0,
+          1,
+          2,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "data"
+        ],
+        "basis_en": "The agents triage incidents and analyse logs for root cause, which is preparation for a human fix rather than remediation: no source claims an agent repairs the network itself. Retrieval on verified corporate data documents the data lock, and the only evidence is the partner's own release, which caps the observed level at N2.",
+        "basis_fr": "Les agents trient les incidents et analysent les journaux pour en trouver la cause, ce qui prépare une correction humaine plutôt que de la réaliser : aucune source n'affirme qu'un agent répare le réseau lui-même. L'ancrage sur des données d'entreprise vérifiées documente le verrou données, et la seule preuve étant le communiqué du partenaire, l'observé est plafonné à N2."
+      },
+      "id": "orange-spain--gemini-enterprise",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.5,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
     },
     {
       "id": "oscar-health--oswell",
@@ -21791,6 +22848,52 @@
       }
     },
     {
+      "company": "Simple (Attijariwafa Bank)",
+      "company_country": "Morocco",
+      "region": "Africa",
+      "sector": "Financial Services",
+      "industry": "Digital retail banking",
+      "department": "Customer service",
+      "solution_name": "Simple AI",
+      "vendor": "",
+      "use_case": "A conversational and transactional banking assistant inside the app of Simple, Attijariwafa Bank's neobank, addressed by text or voice in Moroccan Darija, Arabic, French, English and two more languages. It answers product questions, guides navigation, returns account information and carries out routine operations such as transfers and bill payments, with the client validating each one.",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://fr.le360.ma/economie/simple-lance-simple-ai-un-assistant-bancaire-par-ia-qui-comprend-la-darija_SHISYWL37VGTTJZ4HOSWC4URHU",
+          "title": "Simple lance «Simple AI», un assistant bancaire par IA qui comprend la darija",
+          "publisher": "Le360",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The assistant prepares operations inside the app, including transfers and bill payments, but the article states the client keeps control of the decision and validates the operation, so it does not commit. It is open to a first community of clients, not to the whole base.",
+        "basis_fr": "L'assistant prépare les opérations dans l'application, virements et paiements de factures compris, mais l'article précise que le client garde la maîtrise de la décision et valide lui-même l'opération : il n'engage donc pas. L'ouverture se fait d'abord à une communauté de clients, pas à toute la base."
+      },
+      "id": "simple-attijariwafa-bank--simple-ai",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "singapore-airlines--agentforce-with-einstein-in-service-cloud-and-data-cloud",
       "company": "Singapore Airlines",
       "company_country": "Singapore",
@@ -22135,6 +23238,58 @@
         "basis_en": "Aster is an agentic personal assistant meant to set goals, plan and complete tasks, launched in beta; announced and unproven, so N2.",
         "basis_fr": "Aster est un assistant personnel agentique cense fixer des objectifs, planifier et executer des taches, lance en beta; annonce et non prouve, donc N2."
       }
+    },
+    {
+      "company": "Sky Co., Ltd.",
+      "company_country": "Japan",
+      "region": "East Asia",
+      "sector": "Technology & Software",
+      "industry": "Software products and ICT services",
+      "department": "Company-wide",
+      "solution_name": "Gemini Enterprise app",
+      "vendor": "Google Cloud",
+      "use_case": "Employees have created more than 25,000 internal agents on the Gemini Enterprise app, built bottom up by staff to automate their own tasks and optimise processes, over 20,000 of them in the first five months. The company certifies advanced practitioners as AI Masters and runs an internal contest judging agents on revenue or cost outcomes rather than convenience.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Internal AI agents created by employees",
+          "value": "more than 25,000, over 20,000 of them in five months",
+          "source_type": "press_release"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000001382.000001552.html",
+          "title": "AIエージェント2万5千個創出の「その先」へ, Ｓｋｙ株式会社が目指す「利益創出型」のAI活用に向けた組織戦略",
+          "publisher": "PR TIMES, Sky Co., Ltd.",
+          "source_type": "press_release",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          0,
+          1,
+          2,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The release counts agents created and the organisation built around them, but never states that any agent acts without a person approving the case, and it is the company's own announcement. Observed N2.",
+        "basis_fr": "Le communiqué compte les agents créés et décrit l'organisation construite autour d'eux, mais n'affirme jamais qu'un agent agit sans validation humaine, et il s'agit de l'annonce de l'entreprise elle-même. Observé N2."
+      },
+      "id": "sky-co-ltd--gemini-enterprise-app",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.5,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
     },
     {
       "company": "SNCF",
@@ -22967,6 +24122,66 @@
         "basis_en": "Generative-AI assistant embedded in the Life Guide manual answers underwriters' natural-language questions with sourced expert responses; it informs, a human decides. Answering keeps it at N2.",
         "basis_fr": "Assistant d'IA generative integre au manuel Life Guide qui repond aux questions des souscripteurs avec des reponses expertes sourcees; il informe, l'humain decide. Repondre le maintient en N2."
       }
+    },
+    {
+      "company": "Synapxe",
+      "company_country": "Singapore",
+      "region": "Southeast Asia",
+      "sector": "Healthcare, Life Sciences & Luxury",
+      "industry": "Public healthcare technology agency",
+      "department": "Company-wide",
+      "solution_name": "AgentSea",
+      "vendor": "Amazon Web Services",
+      "use_case": "A sector wide platform where public healthcare professionals build their own AI agents in plain language, with no coding, to automate multi step workflows: clinical record summarisation, procurement review, roster generation and everyday admin. A National Heart Centre cardiologist built an agent that compiles a patient's history, issues, care plans and outstanding follow ups for the doctor to review before the consultation.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "AI agents created by staff since launch",
+          "value": "over 12,000 in just over two months",
+          "source_type": "company_official"
+        },
+        {
+          "metric": "Agents shared for reuse across the health system",
+          "value": "over 300",
+          "source_type": "company_official"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.synapxe.sg/media-releases/artificial-intelligence/public-healthcare-agentic-ai-platform",
+          "title": "Singapore Empowers Public Healthcare Professionals with Sector-Wide Agentic AI Platform",
+          "publisher": "Synapxe",
+          "source_type": "company_official",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate",
+          "supervision"
+        ],
+        "basis_en": "Agents run multi step workflows across approved tools, but the clinician stays the decision maker: the cardiologist quoted says the agent has not replaced verification or his own clinical assessment. Preparing and summarising is not executing, so observed stays at N2.",
+        "basis_fr": "Les agents enchaînent des étapes sur des outils autorisés, mais le clinicien reste décideur : le cardiologue cité précise que l'agent ne remplace ni la vérification ni son évaluation clinique. Préparer et résumer n'est pas exécuter, donc l'observé reste à N2."
+      },
+      "id": "synapxe--agentsea",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "synapxe--carescribe",
@@ -24056,6 +25271,52 @@
       }
     },
     {
+      "company": "U.S. General Services Administration (GSA)",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Public Sector & Education",
+      "industry": "Federal government digital services",
+      "department": "Citizen services",
+      "solution_name": "America.gov",
+      "vendor": "Google (Gemini), xAI (Grok)",
+      "use_case": "A single AI front door for federal services that answers citizens' questions by drawing on roughly 29,000 government websites, covering passports, replacing a Social Security card or booking a campsite. At launch it points people to the right service; submitting documents and tracking progress inside the platform is planned for 2027.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://fedscoop.com/trump-launches-ai-site-america-gov/",
+          "title": "Trump launches AI-fueled America.gov in bid to tie government services together",
+          "publisher": "FedScoop",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "public",
+        "links": [
+          2,
+          1,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The platform informs and routes: it answers questions and directs users to services, while filing documents and tracking cases is deferred to a planned 2027 expansion. Experts quoted call the launch version the easiest part of the problem. Observed N2.",
+        "basis_fr": "La plateforme informe et oriente : elle répond aux questions et renvoie vers les services, le dépôt de documents et le suivi des dossiers étant reportés à une extension prévue en 2027. Les experts cités estiment que la version lancée traite la partie la plus simple du problème. Observé N2."
+      },
+      "id": "u-s-general-services-administration-gsa--america-gov",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "u-s-general-services-administration-gsa--usai",
       "company": "U.S. General Services Administration (GSA)",
       "company_country": "United States",
@@ -24493,6 +25754,63 @@
       }
     },
     {
+      "company": "Unilever",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Consumer Goods & Manufacturing",
+      "industry": "Fast moving consumer goods",
+      "department": "Customer operations",
+      "solution_name": "Nova",
+      "vendor": "",
+      "use_case": "Nova ingests customer orders arriving by email, interprets their context and writes the data into Unilever's SAP backbone, and works the claims process by validating an order to establish whether the customer is at fault. It is one of eight agents rolled out worldwide and is about to go live in North America.",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [
+        {
+          "metric": "Agents rolled out worldwide",
+          "value": "eight",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Employees trained to build agents in secure environments",
+          "value": "nearly 2,000",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://consumergoods.com/how-unilever-scales-ai-predictive-models-agentic-workflows",
+          "title": "How Unilever Scales AI, From Predictive Models to Agentic Workflows",
+          "publisher": "Consumer Goods Technology",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "supply",
+        "links": [
+          0,
+          0,
+          2,
+          1,
+          0,
+          0,
+          1,
+          2,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Nova interprets incoming orders and writes them into SAP, and validates claims to establish fault, which is close to execution, but no source states that an order or a claim decision is committed without a human, and the North American go live is still ahead. Observed N2.",
+        "basis_fr": "Nova interprète les commandes entrantes et les écrit dans SAP, et valide les réclamations pour établir la responsabilité, ce qui approche l'exécution, mais aucune source n'affirme qu'une commande ou une décision de réclamation est engagée sans humain, et la mise en service nord-américaine reste à venir. Observé N2."
+      },
+      "id": "unilever--nova",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "unionbank-of-the-philippines--ria-customer-service-assistant-and-wealth-rm-assistant",
       "company": "UnionBank of the Philippines",
       "company_country": "Philippines",
@@ -24729,6 +26047,54 @@
         "basis_en": "Secure campus generative-AI platform (ZotGPT Chat, ClassChat, no-code Creator) reached 30,000+ faculty, staff and students and 1,500+ custom bots in two years; an internal AI workbench that answers. N2.",
         "basis_fr": "Plateforme securisee d'IA generative de campus (ZotGPT Chat, ClassChat, Creator sans code) touchant plus de 30 000 enseignants, personnels et etudiants et 1 500+ bots en deux ans; atelier IA interne qui repond. N2."
       }
+    },
+    {
+      "company": "University of Leicester",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Public Sector & Education",
+      "industry": "Higher education",
+      "department": "Student experience",
+      "solution_name": "Welcome Helper",
+      "vendor": "Microsoft",
+      "use_case": "A conversational agent, live since 21 September 2026, that answers new students' questions about joining the university, arrival tasks and Welcome events. It is deliberately grounded on the university's own Welcome website alone, which holds the new starter checklists, arrival guidance and event details.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.comparethecloud.net/news/university-of-leicester-launches-ai-student-agent-built-on-microsoft-365-copilot",
+          "title": "University of Leicester launches AI student agent built on Microsoft 365 Copilot",
+          "publisher": "Compare the Cloud",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-11"
+        }
+      ],
+      "coda": {
+        "chain": "public",
+        "links": [
+          2,
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "data"
+        ],
+        "basis_en": "The agent answers and points to guidance; it enrols nobody and changes no record, so it stays at N2. Grounding is restricted to one defined university content source, which the university presents as its way to reduce hallucination, documenting the data lock.",
+        "basis_fr": "L'agent répond et oriente ; il n'inscrit personne et ne modifie aucun dossier, il reste donc à N2. L'ancrage est volontairement limité à une seule source de contenu de l'université, présentée comme le moyen de réduire les hallucinations, ce qui documente le verrou données."
+      },
+      "id": "university-of-leicester--welcome-helper",
+      "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "university-of-michigan--u-m-maizey-u-m-gpt",
