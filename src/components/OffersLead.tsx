@@ -25,18 +25,18 @@ const OFFERS: Offer[] = [
     eyebrowFr: "Conseil",
     titleEn: "Agentic Business Advisory",
     titleFr: "Agentic Business Advisory",
-    descEn: "Design, prioritise and test your AI agents, from strategy to POC, with the team behind this observatory.",
-    descFr: "Concevez, priorisez et testez vos agents IA, de la stratégie au POC, avec l'équipe derrière cet observatoire.",
+    descEn: "From use-case prioritisation to POC: turn this evidence into a roadmap, with the team that analyses it.",
+    descFr: "De la priorisation des cas d'usage au POC : transformez ces preuves en feuille de route, avec l'équipe qui les analyse.",
     href: `${base}/conseil/agentic-business-advisory?${UTM}`,
     tone: "navy",
   },
   {
-    eyebrowEn: "AI consulting",
-    eyebrowFr: "Conseil en IA",
+    eyebrowEn: "Event",
+    eyebrowFr: "Événement",
     titleEn: "Agentic Business Forum",
     titleFr: "Agentic Business Forum",
-    descEn: "The forum where 700 decision-makers come to build their agentic roadmap, with the CODA™ matrix to arbitrate it. 31 March 2027, Paris.",
-    descFr: "Le forum où 700 décideurs viennent construire leur roadmap agentique, avec la matrice CODA™ pour l'arbitrer. Le 31 mars 2027 à Paris.",
+    descEn: "700 decision-makers, one day to arbitrate your agentic roadmap with the CODA™ matrix. 31 March 2027, Paris.",
+    descFr: "700 décideurs, une journée pour arbitrer votre roadmap agentique avec la matrice CODA™. 31 mars 2027, Paris.",
     href: `https://agenticbusinessforum.hubinstitute.com/?${UTM}`,
   },
   {
@@ -44,8 +44,8 @@ const OFFERS: Offer[] = [
     eyebrowFr: "Formation",
     titleEn: "AI training",
     titleFr: "Formations IA",
-    descEn: "Upskill your teams on generative AI and rethink how work gets done, at scale.",
-    descFr: "Montez vos équipes en compétence sur l'IA générative et repensez le travail, à grande échelle.",
+    descEn: "Upskill your teams on generative and agentic AI, at scale.",
+    descFr: "Faites monter vos équipes en compétence sur l'IA générative et agentique, à grande échelle.",
     href: `${base}/formations?${UTM}`,
   },
   {
@@ -53,8 +53,8 @@ const OFFERS: Offer[] = [
     eyebrowFr: "Membership",
     titleEn: "HUB Institute membership",
     titleFr: "Membership HUB Institute",
-    descEn: "Join 120 member companies and 2,000 decision-makers: intelligence, foresight and direct access to our analysts.",
-    descFr: "Rejoignez 120 entreprises adhérentes et 2 000 décideurs : veille, prospective et accès direct à nos analystes.",
+    descEn: "120 companies, 2,000 decision-makers: intelligence, foresight and direct access to our analysts.",
+    descFr: "120 entreprises, 2 000 décideurs : veille, prospective et accès direct à nos analystes.",
     href: `${base}/membership?${UTM}`,
     tone: "mauve",
   },
@@ -68,7 +68,7 @@ function Arrow() {
   );
 }
 
-export default function OffersLead() {
+export default function OffersLead({ total }: { total: number }) {
   return (
     <section id="offres" className="scroll-mt-28 pt-20 lg:scroll-mt-20">
       <div className="border-t border-lavender-line bg-lilac-soft">
@@ -80,14 +80,14 @@ export default function OffersLead() {
             </p>
             <h2 className="mt-2 text-2xl font-extrabold tracking-tight md:text-3xl">
               <Bi
-                en="You've seen the proof in action. Put it to work in your company, starting now."
-                fr="Vous avez vu les preuves en action. Mettez-les en application dans votre entreprise dès maintenant."
+                en="You've seen what others are doing. Let's build what you will do."
+                fr="Vous avez vu ce que font les autres. Construisons ce que vous ferez."
               />
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-ink-soft md:text-base">
               <Bi
-                en="Agentipedia is the observatory of the HUB Institute think tank. The same experts turn these deployments into your roadmap: advisory, training and a decision-makers' network."
-                fr="Agentipedia est l'observatoire du think tank HUB Institute. Les mêmes experts transforment ces déploiements en votre feuille de route : conseil, formation et réseau de décideurs."
+                en={`The analysts who verify these ${total} deployments help you turn them into your roadmap: advisory, training and a decision-makers' network.`}
+                fr={`Les analystes qui vérifient ces ${total} déploiements vous aident à en tirer votre feuille de route : conseil, formation et réseau de décideurs.`}
               />
             </p>
           </div>
@@ -148,18 +148,15 @@ export default function OffersLead() {
                 className="mb-7 h-16 w-auto self-start md:absolute md:top-10 md:left-10 md:mb-0 md:h-[5.5rem]"
               />
               <p className="kicker text-mauve-bright">
-                <Bi en="Let's talk about your projects" fr="Parlons de vos projets" />
+                <Bi en="Contact" fr="Contact" />
               </p>
               <h3 className="mt-2 text-xl font-extrabold tracking-tight md:text-2xl">
-                <Bi
-                  en="Let's build your agentic roadmap together"
-                  fr="Construisons ensemble votre roadmap agentique"
-                />
+                <Bi en="Let's talk about your agentic roadmap" fr="Parlons de votre roadmap agentique" />
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-white/70">
                 <Bi
-                  en="Send us a line and our team gets back to you to scope your priorities: audit, use cases, roadmap or training."
-                  fr="Écrivez-nous et notre équipe revient vers vous pour cadrer vos priorités : audit, cas d'usage, feuille de route ou formation."
+                  en="Two lines are enough. Our team calls you back within 24h to scope your priorities: audit, use cases, roadmap or training."
+                  fr="Deux lignes suffisent. Notre équipe vous rappelle sous 24 h pour cadrer vos priorités : audit, cas d'usage, feuille de route ou formation."
                 />
               </p>
               <dl className="mt-6 flex flex-wrap gap-x-8 gap-y-4">

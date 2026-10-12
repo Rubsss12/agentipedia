@@ -10,6 +10,18 @@ import { REGIMES, regimeOf, type RegimeKey } from "@/lib/regulation";
 import { CODA, CODA_ORDER, codaQuadrant, codaRank, type CodaKey } from "@/lib/coda";
 import { CodaBadge } from "@/components/badges";
 import Bi from "@/components/Bi";
+import { sectorFr } from "@/lib/labels";
+import {
+  FUNCTIONS,
+  INDUSTRIES,
+  functionOf,
+  groupLabel,
+  hasQuantifiedResult,
+  industryOf,
+  vendorGroups,
+  vendorLabel,
+  vendorOf,
+} from "@/lib/taxonomy";
 
 type ConfidenceFilter = "any" | "high" | "medium" | "independent";
 type TypeFilter = "" | "named" | "unnamed";
@@ -24,10 +36,11 @@ interface Filters {
   region: string;
   country: string;
   industry: string;
-  department: string;
+  fn: string;
   vendor: string;
   stage: string;
   confidence: ConfidenceFilter;
+  withResult: boolean;
 }
 
 const EMPTY: Filters = {
@@ -39,11 +52,15 @@ const EMPTY: Filters = {
   region: "",
   country: "",
   industry: "",
-  department: "",
+  fn: "",
   vendor: "",
   stage: "",
   confidence: "any",
+  withResult: false,
 };
+
+// The filters shown by default; the others fold behind "More filters".
+const PRIMARY: (keyof Filters)[] = ["sector", "fn", "coda", "withResult"];
 
 const MARKETING = new Set(["vendor_case_study", "press_release"]);
 
@@ -64,10 +81,12 @@ const STR = {
     allStages: "All stages", anyConfidence: "Any confidence",
     prod: "In production", pilot: "Pilot", announced: "Announced", unknown: "Unknown",
     high: "High (≥ 70%)", medium: "Medium+ (≥ 50%)", independent: "Independently sourced",
-    az: "Company A to Z", newest: "Newest first", conf: "Confidence first",
+    az: "Company A to Z", newest: "Most recent proof first", conf: "Confidence first", proof: "Made public",
     of: "of", deployments: "deployments", reset: "Reset all filters",
     showMore: "Show more", showAll: "Show all", showing: "Showing",
     dataNote: "Entry records are written in English.",
+    fn: "Function", allFns: "All functions", withResult: "With quantified results",
+    more: "More filters", less: "Fewer filters",
   },
   fr: {
     placeholder: "Rechercher une entreprise, une solution, un éditeur…  (touche / pour cibler)",
@@ -81,10 +100,12 @@ const STR = {
     allStages: "Tous les statuts", anyConfidence: "Toute confiance",
     prod: "En production", pilot: "Pilote", announced: "Annoncé", unknown: "Inconnu",
     high: "Élevée (≥ 70 %)", medium: "Moyenne+ (≥ 50 %)", independent: "Sources indépendantes",
-    az: "Entreprise A à Z", newest: "Plus récents", conf: "Confiance d'abord",
+    az: "Entreprise A à Z", newest: "Preuves les plus récentes", conf: "Confiance d'abord", proof: "Rendu public en",
     of: "sur", deployments: "déploiements", reset: "Réinitialiser les filtres",
     showMore: "Voir plus", showAll: "Tout afficher", showing: "Affichage",
     dataNote: "Les fiches sont rédigées en anglais.",
+    fn: "Fonction", allFns: "Toutes les fonctions", withResult: "Avec résultat chiffré",
+    more: "Plus de filtres", less: "Moins de filtres",
   },
 } satisfies Record<Lang, Record<string, string>>;
 
@@ -102,16 +123,17 @@ function matches(e: Entry, f: Filters): boolean {
   if (f.sector && e.sector !== f.sector) return false;
   if (f.region && e.region !== f.region) return false;
   if (f.country && e.company_country !== f.country) return false;
-  if (f.industry && e.industry !== f.industry) return false;
-  if (f.department && e.department !== f.department) return false;
-  if (f.vendor && e.vendor !== f.vendor) return false;
+  if (f.industry && industryOf(e) !== f.industry) return false;
+  if (f.fn && functionOf(e) !== f.fn) return false;
+  if (f.vendor && vendorOf(e) !== f.vendor) return false;
+  if (f.withResult && !hasQuantifiedResult(e)) return false;
   if (f.stage && e.deployment_stage !== f.stage) return false;
   if (f.confidence === "high" && e.confidence < 0.7) return false;
   if (f.confidence === "medium" && e.confidence < 0.5) return false;
   if (f.confidence === "independent" && e.sources.every((s) => MARKETING.has(s.source_type)))
     return false;
   if (f.q) {
-    const hay = [e.company, e.solution_name, e.vendor, e.use_case, e.company_country, e.industry, e.sector]
+    const hay = [e.company, e.solution_name, e.vendor, e.use_case, e.company_country, e.industry, e.sector, sectorFr(e.sector)]
       .join(" ")
       .toLowerCase();
     if (!hay.includes(f.q.toLowerCase())) return false;
@@ -153,7 +175,10 @@ function Select({
 
 export default function Explorer({ entries }: { entries: Entry[] }) {
   const [f, setF] = useState<Filters>(EMPTY);
-  const [sort, setSort] = useState<SortKey>("az");
+  // Most recent proof first by default: the directory opens on what companies
+  // made public lately, not on the alphabet.
+  const [sort, setSort] = useState<SortKey>("newest");
+  const [more, setMore] = useState(false);
   const [visible, setVisible] = useState(PAGE);
   const [lang] = useLang();
   const t = STR[lang];
@@ -191,6 +216,23 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
     return () => window.removeEventListener("agentipedia:coda", on);
   }, []);
 
+  // The hero search and the home page shortcuts (sector suggestions, function
+  // entries) hand the index a query or a single filter, on a clean slate.
+  useEffect(() => {
+    const onQuery = (e: Event) => setF({ ...EMPTY, q: String((e as CustomEvent).detail ?? "") });
+    const onFilter = (e: Event) => {
+      const { key, value } = (e as CustomEvent).detail as { key: keyof Filters; value: string };
+      setF({ ...EMPTY, [key]: value });
+      if (!PRIMARY.includes(key)) setMore(true);
+    };
+    window.addEventListener("agentipedia:query", onQuery);
+    window.addEventListener("agentipedia:filter", onFilter);
+    return () => {
+      window.removeEventListener("agentipedia:query", onQuery);
+      window.removeEventListener("agentipedia:filter", onFilter);
+    };
+  }, []);
+
   // "/" focuses the search from anywhere on the page.
   useEffect(() => {
     const on = (e: KeyboardEvent) => {
@@ -208,7 +250,13 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
   const results = useMemo(() => {
     const list = entries.filter((e) => matches(e, f));
     if (sort === "newest")
-      list.sort((a, b) => b.first_seen_date.localeCompare(a.first_seen_date) || a.company.localeCompare(b.company));
+      // By first public proof; fiches with no readable source date go last.
+      list.sort(
+        (a, b) =>
+          (b.evidence_date ?? "").localeCompare(a.evidence_date ?? "") ||
+          b.confidence - a.confidence ||
+          a.company.localeCompare(b.company),
+      );
     else if (sort === "confidence")
       list.sort((a, b) => b.confidence - a.confidence || a.company.localeCompare(b.company));
     else if (sort === "coda")
@@ -229,9 +277,15 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
     const r = REGIMES.find((x) => x.key === f.regulation);
     if (r) chips.push({ key: "regulation", label: lang === "fr" ? r.fr : r.en });
   }
-  (["sector", "region", "country", "industry", "department", "vendor"] as const).forEach((k) => {
+  const fr = lang === "fr";
+  if (f.sector) chips.push({ key: "sector", label: fr ? sectorFr(f.sector) : f.sector });
+  if (f.fn) chips.push({ key: "fn", label: groupLabel(FUNCTIONS, f.fn, fr) });
+  (["region", "country"] as const).forEach((k) => {
     if (f[k]) chips.push({ key: k, label: f[k] });
   });
+  if (f.industry) chips.push({ key: "industry", label: groupLabel(INDUSTRIES, f.industry, fr) });
+  if (f.vendor) chips.push({ key: "vendor", label: vendorLabel(f.vendor, fr) });
+  if (f.withResult) chips.push({ key: "withResult", label: t.withResult });
   if (f.stage) chips.push({ key: "stage", label: { production: t.prod, pilot: t.pilot, announced: t.announced, unknown: t.unknown }[f.stage] ?? f.stage });
   if (f.confidence !== "any")
     chips.push({ key: "confidence", label: { high: t.high, medium: t.medium, independent: t.independent, any: "" }[f.confidence] });
@@ -249,81 +303,131 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
           aria-label={t.placeholder}
           className="w-full rounded-xl border border-lavender-line bg-paper px-4 py-3 text-[0.95rem] outline-none transition-colors placeholder:text-muted focus:border-mauve"
         />
-        <div className="mt-4 flex flex-wrap gap-3">
+        <div className="mt-4 flex flex-wrap items-end gap-3">
+          {uniqueValues(entries, "sector").length > 1 && (
+            <Select
+              label={t.sector}
+              value={f.sector}
+              onChange={(v) => set({ sector: v })}
+              options={uniqueValues(entries, "sector").map((v) => ({ value: v, label: fr ? sectorFr(v) : v }))}
+              anyLabel={t.allSectors}
+            />
+          )}
           <Select
-            label={t.type}
-            value={f.type}
-            onChange={(v) => set({ type: v as TypeFilter })}
-            options={[
-              { value: "named", label: t.named },
-              { value: "unnamed", label: t.unnamed },
-            ]}
-            anyLabel={t.allTypes}
+            label={t.fn}
+            value={f.fn}
+            onChange={(v) => set({ fn: v })}
+            options={FUNCTIONS.map((g) => ({ value: g.key, label: fr ? g.fr : g.en }))}
+            anyLabel={t.allFns}
           />
           <Select
             label={t.coda}
             value={f.coda}
             onChange={(v) => set({ coda: v as Filters["coda"] })}
-            options={CODA_ORDER.map((k) => ({ value: k, label: `${k} · ${lang === "fr" ? CODA[k].fr : CODA[k].en}` }))}
+            options={CODA_ORDER.map((k) => ({ value: k, label: `${k} · ${fr ? CODA[k].fr : CODA[k].en}` }))}
             anyLabel={t.allCoda}
           />
           <Select
-            label={t.regulation}
-            value={f.regulation}
-            onChange={(v) => set({ regulation: v as Filters["regulation"] })}
-            options={REGIMES.map((r) => ({ value: r.key, label: lang === "fr" ? r.fr : r.en }))}
-            anyLabel={t.allRegimes}
-          />
-          {uniqueValues(entries, "sector").length > 1 && (
-            <Select label={t.sector} value={f.sector} onChange={(v) => set({ sector: v })} options={opt(uniqueValues(entries, "sector"))} anyLabel={t.allSectors} />
-          )}
-          <Select label={t.region} value={f.region} onChange={(v) => set({ region: v })} options={opt(uniqueValues(entries, "region"))} anyLabel={t.allRegions} />
-          <Select label={t.country} value={f.country} onChange={(v) => set({ country: v })} options={opt(uniqueValues(entries, "company_country"))} anyLabel={t.allCountries} />
-          <Select label={t.industry} value={f.industry} onChange={(v) => set({ industry: v })} options={opt(uniqueValues(entries, "industry"))} anyLabel={t.allIndustries} />
-          <Select label={t.department} value={f.department} onChange={(v) => set({ department: v })} options={opt(uniqueValues(entries, "department"))} anyLabel={t.allDepartments} />
-          <Select label={t.vendor} value={f.vendor} onChange={(v) => set({ vendor: v })} options={opt(uniqueValues(entries, "vendor"))} anyLabel={t.allVendors} />
-          <Select
-            label={t.stage}
-            value={f.stage}
-            onChange={(v) => set({ stage: v })}
-            options={[
-              { value: "production", label: t.prod },
-              { value: "pilot", label: t.pilot },
-              { value: "announced", label: t.announced },
-              { value: "unknown", label: t.unknown },
-            ]}
-            anyLabel={t.allStages}
-          />
-          <Select
-            label={t.confidence}
-            value={f.confidence}
-            onChange={(v) => set({ confidence: v as ConfidenceFilter })}
-            options={[
-              { value: "high", label: t.high },
-              { value: "medium", label: t.medium },
-              { value: "independent", label: t.independent },
-            ]}
-            anyLabel={t.anyConfidence}
-          />
-          <Select
             label={t.sort}
-            value={sort}
-            onChange={(v) => setSort(v as SortKey)}
+            value={sort === "newest" ? "" : sort}
+            onChange={(v) => setSort((v || "newest") as SortKey)}
             options={[
-              { value: "newest", label: t.newest },
               { value: "confidence", label: t.conf },
               { value: "coda", label: t.codaSort },
+              { value: "az", label: t.az },
             ]}
-            anyLabel={t.az}
+            anyLabel={t.newest}
           />
+          <label
+            className={`inline-flex cursor-pointer items-center gap-2 rounded-lg border px-3 py-2 text-sm font-bold transition-colors ${
+              f.withResult ? "border-mauve bg-mauve text-white" : "border-lavender-line bg-paper text-ink hover:border-mauve"
+            }`}
+          >
+            <input
+              type="checkbox"
+              className="sr-only"
+              checked={f.withResult}
+              onChange={(e) => set({ withResult: e.target.checked })}
+            />
+            <span aria-hidden>{f.withResult ? "✓" : "+"}</span>
+            {t.withResult}
+          </label>
+          <button
+            type="button"
+            onClick={() => setMore((m) => !m)}
+            aria-expanded={more}
+            className="px-1 py-2 text-sm font-bold text-mauve transition-colors hover:text-mauve-deep"
+          >
+            {more ? t.less : t.more}
+          </button>
         </div>
+        {more && (
+          <div className="mt-3 flex flex-wrap gap-3 border-t border-lavender-line pt-3">
+            <Select
+              label={t.type}
+              value={f.type}
+              onChange={(v) => set({ type: v as TypeFilter })}
+              options={[
+                { value: "named", label: t.named },
+                { value: "unnamed", label: t.unnamed },
+              ]}
+              anyLabel={t.allTypes}
+            />
+            <Select label={t.region} value={f.region} onChange={(v) => set({ region: v })} options={opt(uniqueValues(entries, "region"))} anyLabel={t.allRegions} />
+            <Select label={t.country} value={f.country} onChange={(v) => set({ country: v })} options={opt(uniqueValues(entries, "company_country"))} anyLabel={t.allCountries} />
+            <Select
+              label={t.industry}
+              value={f.industry}
+              onChange={(v) => set({ industry: v })}
+              options={INDUSTRIES.map((g) => ({ value: g.key, label: fr ? g.fr : g.en }))}
+              anyLabel={t.allIndustries}
+            />
+            <Select
+              label={t.vendor}
+              value={f.vendor}
+              onChange={(v) => set({ vendor: v })}
+              options={vendorGroups(entries).map((k) => ({ value: k, label: vendorLabel(k, fr) }))}
+              anyLabel={t.allVendors}
+            />
+            <Select
+              label={t.stage}
+              value={f.stage}
+              onChange={(v) => set({ stage: v })}
+              options={[
+                { value: "production", label: t.prod },
+                { value: "pilot", label: t.pilot },
+                { value: "announced", label: t.announced },
+                { value: "unknown", label: t.unknown },
+              ]}
+              anyLabel={t.allStages}
+            />
+            <Select
+              label={t.confidence}
+              value={f.confidence}
+              onChange={(v) => set({ confidence: v as ConfidenceFilter })}
+              options={[
+                { value: "high", label: t.high },
+                { value: "medium", label: t.medium },
+                { value: "independent", label: t.independent },
+              ]}
+              anyLabel={t.anyConfidence}
+            />
+            <Select
+              label={t.regulation}
+              value={f.regulation}
+              onChange={(v) => set({ regulation: v as Filters["regulation"] })}
+              options={REGIMES.map((r) => ({ value: r.key, label: fr ? r.fr : r.en }))}
+              anyLabel={t.allRegimes}
+            />
+          </div>
+        )}
 
         {chips.length > 0 && (
           <div className="mt-4 flex flex-wrap items-center gap-2">
             {chips.map((c) => (
               <button
                 key={c.key}
-                onClick={() => set({ [c.key]: c.key === "confidence" ? "any" : "" } as Partial<Filters>)}
+                onClick={() => set({ [c.key]: c.key === "confidence" ? "any" : c.key === "withResult" ? false : "" } as Partial<Filters>)}
                 className="inline-flex items-center gap-1.5 rounded-full bg-mauve px-3 py-1 text-xs font-bold text-white transition-colors hover:bg-mauve-deep"
               >
                 {c.label}
@@ -416,7 +520,17 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
                   {e.solution_named === false && <UnnamedBadge />}
                   <StageBadge stage={e.deployment_stage} />
                   <ConfidenceBadge entry={e} />
-                  <span className="ml-auto text-xs text-muted">
+                  <span className="ml-auto text-right text-xs text-muted">
+                    {e.evidence_date && (
+                      <span className="block font-bold text-ink-soft">
+                        {t.proof}{" "}
+                        {new Date(`${e.evidence_date.slice(0, 7)}-01T00:00:00Z`).toLocaleDateString(lang === "fr" ? "fr-FR" : "en-GB", {
+                          month: "long",
+                          year: "numeric",
+                          timeZone: "UTC",
+                        })}
+                      </span>
+                    )}
                     {e.sources.length} source{e.sources.length > 1 ? "s" : ""}
                     {e.sources[0] ? ` · ${hostOf(e.sources[0].url)}` : ""}
                   </span>

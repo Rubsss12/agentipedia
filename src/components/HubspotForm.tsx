@@ -15,16 +15,16 @@ const ENDPOINT = `https://api.hsforms.com/submissions/v3/integration/submit/${PO
 const T = {
   fr: {
     firstname: "Prénom", lastname: "Nom", email: "Email professionnel", company: "Entreprise",
-    jobtitle: "Fonction", context: "Votre contexte en deux lignes",
+    jobtitle: "Fonction", context: "Votre enjeu en deux lignes",
     emailPh: "prenom.nom@entreprise.com", contextPh: "Secteur, périmètre pressenti, échéance…",
-    submit: "Être recontacté sous 24h", sending: "Envoi…",
+    submit: "Être rappelé sous 24 h", sending: "Envoi…",
     success: "Merci pour votre demande ! Elle a bien été partagée à notre équipe. Nous revenons vers vous très rapidement.",
     error: "Une erreur est survenue. Réessayez ou écrivez-nous à contact@hubinstitute.com.",
     consent: "En envoyant ce formulaire, vous acceptez que le HUB Institute traite vos données pour répondre à votre demande.",
   },
   en: {
     firstname: "First name", lastname: "Last name", email: "Work email", company: "Company",
-    jobtitle: "Job title", context: "Your context in two lines",
+    jobtitle: "Job title", context: "Your challenge in two lines",
     emailPh: "first.last@company.com", contextPh: "Sector, likely scope, timeline…",
     submit: "Get a call back within 24h", sending: "Sending…",
     success: "Thank you for your request! It has been shared with our team. We'll get back to you very soon.",

@@ -9,6 +9,7 @@ import { confidencePercent, formatDate, hostOf } from "@/lib/format";
 import { regimeOf } from "@/lib/regulation";
 import { CodaBadge } from "@/components/badges";
 import CodaCard from "@/components/CodaCard";
+import BadgeEmbed from "@/components/BadgeEmbed";
 import Bi from "@/components/Bi";
 import JsonLd from "@/components/JsonLd";
 import { SITE_URL, PUBLISHER, OG_IMAGE } from "@/lib/site";
@@ -329,6 +330,8 @@ export default async function EntryPage({ params }: Props) {
           <Bi en="Talk to an expert" fr="Parler à un expert" /> →
         </Link>
       </section>
+
+      <BadgeEmbed id={entry.id} company={entry.company} />
     </main>
   );
 }

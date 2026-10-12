@@ -239,7 +239,7 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
               );
             })}
             <text x={M.left + PW / 2} y={H - 14} fontSize="13" fontWeight="900" textAnchor="middle" fill={INK}>
-              {fr ? "Maillons de la chaîne de valeur instrumentés" : "Instrumented value-chain Maillons"}
+              {fr ? "Maillons de la chaîne de valeur instrumentés" : "Instrumented value-chain links"}
             </text>
 
             {dots.map(({ x, y, p }, i) => (
@@ -357,7 +357,7 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
             </div>
           </div>
           <p className="kicker mt-2.5 pl-6 text-center text-[0.62rem] leading-tight text-muted">
-            {fr ? "Portée business, Maillons de la chaîne de valeur →" : "Business scope, value-chain Maillons →"}
+            {fr ? "Périmètre métier, Maillons de la chaîne de valeur →" : "Business scope, value-chain links →"}
           </p>
         </figure>
       </div>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getStats } from "@/lib/data";
-import { formatTimestamp } from "@/lib/format";
+import { formatDate } from "@/lib/format";
 import Bi from "@/components/Bi";
 
 // Footer modelled on the hubinstitute.com footer: deep navy ground, the white
@@ -26,7 +26,8 @@ const COMMUNITIES: L[] = [
 const EXPERTISE: L[] = [
   { en: "Membership", fr: "Membership", href: hub("/membership") },
   { en: "Agentic Business Advisory", fr: "Agentic Business Advisory", href: hub("/conseil/agentic-business-advisory") },
-  { en: "AI consulting", fr: "Conseil en IA", href: `https://agenticbusinessforum.hubinstitute.com/?${UTM}` },
+  { en: "AI consulting", fr: "Conseil en IA", href: hub("/ai-consulting") },
+  { en: "Agentic Business Forum", fr: "Agentic Business Forum", href: `https://agenticbusinessforum.hubinstitute.com/?${UTM}` },
   { en: "Digital transformation consulting", fr: "Conseil en transformation digitale", href: hub("/regie-expert") },
   { en: "Training", fr: "Formations", href: hub("/formations") },
   { en: "Keynotes", fr: "Keynotes", href: hub("/toutes-nos-keynotes") },
@@ -36,7 +37,8 @@ const EXPERTISE: L[] = [
 ];
 // Agentipedia's own pages. Internal links, so `Col` renders them with <Link>.
 const AGENTIPEDIA: L[] = [
-  { en: "The index", fr: "L'index", href: "/#index" },
+  { en: "The proof directory", fr: "L'annuaire des preuves", href: "/#index" },
+  { en: "Your competitors are moving", fr: "Vos concurrents se bougent", href: "/#mouvement" },
   { en: "Browse by sector", fr: "Parcourir par secteur", href: "/#sectors" },
   { en: "Agentipedia in figures", fr: "L'Agentipedia en chiffres", href: "/figures/" },
   { en: "Methodology", fr: "Méthodologie", href: "/methodology/" },
@@ -167,7 +169,7 @@ export default function Footer() {
               fr="© Agentipedia · Insights & Experiences · par HUB Institute, Paris."
             />{" "}
             · {stats.entries} <Bi en="deployments" fr="déploiements" /> ·{" "}
-            <Bi en="updated" fr="màj" /> {stats.updatedAt ? formatTimestamp(stats.updatedAt) : "n/a"}
+            <Bi en="updated" fr="màj" /> {stats.updatedAt ? formatDate(stats.updatedAt.slice(0, 10)) : "n/a"}
           </p>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-1 text-xs text-white/45">
             <a href={`${HUB}/mentions-legales`} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-white">

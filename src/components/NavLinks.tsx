@@ -23,7 +23,7 @@ type Item = { id: string; href: string; en: string; fr: string; page?: boolean }
 const ITEMS: Item[] = [
   { id: "sectors", href: "/#sectors", en: "Sectors", fr: "Secteurs" },
   { id: "coda", href: "/#coda", en: "CODA™", fr: "CODA™" },
-  { id: "index", href: "/#index", en: "Search", fr: "Recherche" },
+  { id: "index", href: "/#index", en: "Directory", fr: "Annuaire" },
   { id: "methodology", href: "/methodology/", en: "Methodology", fr: "Méthodologie", page: true },
   { id: "figures", href: "/figures/", en: "Figures", fr: "Chiffres", page: true },
 ];
