@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11T19:03:55.017Z",
+  "updated_at": "2026-10-23T09:26:07.016Z",
   "entries": [
     {
       "id": "1-800accountant--agentforce",
@@ -51,6 +51,65 @@
         "basis_en": "The 70% autonomous-resolution figure exists only in the vendor's case study, and the documented work is answering tax questions, not acting on accounts. Vendor-only evidence cannot establish delegation: observed N2.",
         "basis_fr": "Le taux de 70 % de résolution autonome ne figure que dans le cas client de l'éditeur, et le travail documenté est de répondre à des questions fiscales, pas d'agir sur les comptes. Une preuve uniquement éditeur n'établit pas la délégation : observé N2."
       }
+    },
+    {
+      "company": "1st Central Group",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Insurance",
+      "industry": "Motor insurance",
+      "department": "Distribution and policy servicing",
+      "solution_name": "Motivo (Kai assistant)",
+      "vendor": "Microsoft",
+      "use_case": "Motivo lets customers buy motor cover, make policy changes and manage payments through Kai, an assistant reached by voice or chat around the clock. It is sold exclusively through Confused.com at launch, running on 1st Central's own Focus policy administration system, with claims support planned for a later phase.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Time to complete comparable customer interactions, from initial testing rather than live measurement",
+          "value": "about 40% of the time previously required",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.insurancetimes.co.uk/news/1st-central-launches-agentic-ai-motor-insurance-proposition/1460061.article",
+          "title": "1st Central launches agentic AI motor insurance proposition",
+          "publisher": "Insurance Times",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        },
+        {
+          "url": "https://ukstories.microsoft.com/features/1st-central-launches-agentic-ai-motor-insurance-powered-by-microsoft/",
+          "title": "1st Central Group launches first agentic AI motor insurance proposition, powered by Microsoft technology",
+          "publisher": "Microsoft UK Stories",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "commerce",
+        "links": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          1,
+          2
+        ],
+        "observed": 3,
+        "locks": [],
+        "basis_en": "The assistant buys the cover, changes the policy and takes payments on the customer's behalf, which commits the insurer and the customer, and the trade press attests it independently of the vendor. The only human backstop named is that specialists stay available when needed, and no mandate, supervision or data lock is published, so the declared level is capped at N2.",
+        "basis_fr": "L'assistant souscrit la couverture, modifie le contrat et encaisse les paiements pour le compte du client, ce qui engage l'assureur comme l'assuré, et la presse spécialisée l'atteste indépendamment de l'éditeur. Le seul garde-fou humain cité est la disponibilité de spécialistes en cas de besoin, et aucun verrou de mandat, de supervision ou de donnée n'est publié : le niveau déclaré est plafonné à N2."
+      },
+      "id": "1st-central-group--motivo-kai-assistant",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "a-o-shearman--harvey",
@@ -707,6 +766,52 @@
         "basis_en": "ADRYX gives Fiumicino passengers real-time info on services, connections, parking and tourism on WhatsApp and the website; it informs only, humans act.",
         "basis_fr": "ADRYX fournit aux passagers de Fiumicino des infos temps reel sur services, correspondances, parking et tourisme via WhatsApp et le site; il informe seulement, les humains agissent."
       }
+    },
+    {
+      "company": "Ahold Delhaize USA",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Retail & E-commerce",
+      "industry": "Grocery retail and retail media",
+      "department": "Marketing & sales",
+      "solution_name": "Agent Klik",
+      "vendor": "In-house",
+      "use_case": "One of three agents the retail media arm deployed this year to test what agents can do. Agent Klik mines how shoppers search for products and brings recommended keywords and trending phrases back to the ad operations team.",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.grocerydive.com/news/ahold-delhaize-usa-ad-retail-media-ai-artifical-intelligence-bobby-watts-groceryshop/831827/",
+          "title": "How Ahold Delhaize is tapping AI to improve retail media",
+          "publisher": "Grocery Dive",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "revenue",
+        "links": [
+          2,
+          1,
+          2,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent mines search behaviour and hands keyword recommendations to the ad operations team, and nothing in the source has it changing a campaign or a bid. It is explicitly a test alongside two other agents. Observed N2.",
+        "basis_fr": "L'agent analyse les recherches des clients et remet des recommandations de mots-clés à l'équipe des opérations publicitaires, et rien dans la source ne lui fait modifier une campagne ou une enchère. Il s'agit explicitement d'un test, aux côtés de deux autres agents. Observé N2."
+      },
+      "id": "ahold-delhaize-usa--agent-klik",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "aia-philippines--ai-roleplay",
@@ -1427,6 +1532,79 @@
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
+      "company": "Amalgamated Bank",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Financial Services",
+      "industry": "Commercial banking",
+      "department": "Financial crime compliance",
+      "solution_name": "FIS AML Investigations Agent",
+      "vendor": "FIS, on Anthropic Claude models",
+      "use_case": "When a transaction monitoring alert opens a case, the agent pulls account history, transaction patterns, customer risk profile and contextual flags from the bank's core systems, compares the activity with known laundering typologies and assembles an analyst ready case summary with citations back to each source record. Amalgamated is the design partner and the first bank running it in production.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Level 1 alert review time, projected by the bank rather than measured after deployment",
+          "value": "down more than 90%",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Level 2 case investigation time, projected",
+          "value": "down about 98%",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Suspicious activity report narrative preparation, projected",
+          "value": "down more than 80%",
+          "source_type": "press_release"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.techtimes.com/articles/329205/20261019/fis-opens-claude-powered-aml-agent-any-us-bank-cutting-investigator-data-assembly-time.htm",
+          "title": "FIS Opens Claude-Powered AML Agent to Any U.S. Bank, Cutting Investigator Data-Assembly Time",
+          "publisher": "Tech Times",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        },
+        {
+          "url": "https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-aml-investigations-agent-now-commercially-available",
+          "title": "FIS AML Investigations Agent Now Commercially Available",
+          "publisher": "FIS",
+          "source_type": "press_release",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "fraude",
+        "links": [
+          2,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          2,
+          2,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "data",
+          "mandate",
+          "supervision"
+        ],
+        "basis_en": "The agent assembles the evidence and recommends, and no case closes without the analyst explicitly confirming the outcome, with the investigator accountable for the determination, so it prepares rather than decides. Every conclusion links to the source record, every action is logged in a full audit trail, and each institution's risk logic and thresholds stay isolated, which documents data, bound and supervision.",
+        "basis_fr": "L'agent réunit les preuves et recommande, et aucun dossier ne se clôt sans confirmation explicite de l'analyste, responsable de la décision : il prépare sans trancher. Chaque conclusion renvoie à l'enregistrement source, chaque action est journalisée dans une piste d'audit complète et la logique de risque de chaque établissement reste isolée, ce qui documente la donnée, la borne et la supervision."
+      },
+      "id": "amalgamated-bank--fis-aml-investigations-agent",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "company": "Amazon",
       "company_country": "United States",
       "region": "North America",
@@ -1803,6 +1981,52 @@
         "basis_en": "Grammarly Superhuman Go, first university deployment, provides contextual student support across siloed data and tools; assistant that answers/informs.",
         "basis_fr": "Superhuman Go de Grammarly, premier deploiement universitaire, offre un soutien contextuel aux etudiants malgre donnees et outils cloisonnes; assistant qui repond/informe."
       }
+    },
+    {
+      "company": "Asiacell",
+      "company_country": "Iraq",
+      "region": "Middle East",
+      "sector": "Telecommunications",
+      "industry": "Mobile network operator",
+      "department": "Customer service",
+      "solution_name": "LAILA",
+      "vendor": "In-house",
+      "use_case": "An agentic assistant built inside Asiacell's customer care department that understands Iraqi local language, processes customer requests, opens technical support tickets and runs surveys. It is connected to the operator's business support systems through APIs, so it supports customer transactions and personalised upselling.",
+      "deployment_stage": "unknown",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.telecomreview.com/articles/reports-and-coverage/30688-how-telecom-should-embed-intelligence-to-achieve-operational-excellence/",
+          "title": "How Telecom Should Embed Intelligence to Achieve Operational Excellence",
+          "publisher": "Telecom Review Middle East",
+          "source_type": "conference_talk",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          0,
+          2,
+          1,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The chief customer officer presented an assistant that handles requests, opens tickets and runs surveys, connected to the business support systems, but the coverage characterises no action it commits alone and does not say whether it is live. Observed N2 and stage unknown.",
+        "basis_fr": "La directrice de la relation client a présenté un assistant qui traite les demandes, ouvre des tickets et mène des enquêtes, connecté aux systèmes de gestion, mais le compte rendu ne caractérise aucune action qu'il engagerait seul et ne dit pas s'il est en service. Observé N2 et statut inconnu."
+      },
+      "id": "asiacell--laila",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "associated-press--rover",
@@ -3441,6 +3665,52 @@
       }
     },
     {
+      "company": "BayCare Health System",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Healthcare, Life Sciences & Luxury",
+      "industry": "Hospital and health system",
+      "department": "Inpatient nursing",
+      "solution_name": "Oracle Health Clinical AI Agent",
+      "vendor": "Oracle Health",
+      "use_case": "BayCare is the named early adopter of Oracle Health's Clinical AI Agent for inpatient nurses, which runs inside the Oracle Health Foundation record. Nurses search and move through the patient record by voice, receive AI written summaries of a patient's history and current condition, and speak their documentation at the bedside for entry into structured chart fields.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://healthsystemcio.com/2026/09/16/oracle-health-ai-nursing-documentation/",
+          "title": "Oracle Health Hospitals Get EHR-Native AI Option for Nursing Documentation",
+          "publisher": "healthsystemCIO",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "soin",
+        "links": [
+          0,
+          2,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent searches the record, summarises the patient and writes dictated documentation into the chart, which is preparation around the nurse rather than a clinical decision. The article notes that Oracle does not say whether voice entries wait for a nurse to accept them, and no results have been published, so nothing supports a higher level.",
+        "basis_fr": "L'agent interroge le dossier, résume le patient et écrit la documentation dictée dans les champs structurés, ce qui prépare le travail de l'infirmière sans décider à sa place. L'article souligne qu'Oracle ne dit pas si les saisies vocales attendent une validation, et aucun résultat n'est publié : rien ne justifie un niveau supérieur."
+      },
+      "id": "baycare-health-system--oracle-health-clinical-ai-agent",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "bayer--scientific-data-foundry",
       "company": "Bayer",
       "company_country": "Germany",
@@ -3788,6 +4058,71 @@
         "basis_en": "1.5B messages and 2.5B calls screened daily in ≈2 ms, 48.3B spam calls flagged in a year, fraud-loss value down 68.7% per I4C data: blocking runs entirely without humans, within network policy bounds, with publicly tracked outcomes. Observed N3.",
         "basis_fr": "1,5 Md de messages et 2,5 Md d'appels filtrés chaque jour en ≈2 ms, 48,3 Md d'appels spam repérés en un an, pertes de fraude -68,7 % selon l'I4C : le blocage tourne sans humain, dans les bornes de la politique réseau, avec des résultats publiquement suivis. Observé N3."
       }
+    },
+    {
+      "company": "Birlasoft",
+      "company_country": "India",
+      "region": "South Asia",
+      "sector": "Technology & Software",
+      "industry": "IT and engineering services",
+      "department": "Operations",
+      "solution_name": "Contract.ai",
+      "vendor": "In-house, on Microsoft Azure",
+      "use_case": "Six specialist agents, coordinated by a planning agent, read client contracts and statements of work, extract the obligations buried in them, validate the outputs and flag inconsistencies. Each requirement is linked back to its source clause, so commitments are captured, assigned, tracked and reviewed before they turn into delivery risk.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Person hours saved a year",
+          "value": "about 4,000",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Statements of work processed a year",
+          "value": "more than 1,000",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Obligations identified per project on average",
+          "value": "more than 10",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://news.microsoft.com/source/asia/features/how-birlasoft-turned-contract-obligations-into-a-delivery-advantage-with-ai-agents-and-microsoft-azure/",
+          "title": "How Birlasoft turned contract obligations into a delivery advantage with AI agents and Microsoft Azure",
+          "publisher": "Microsoft Source Asia",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          1,
+          2,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "data",
+          "supervision"
+        ],
+        "basis_en": "The agents extract, validate and flag obligations, and the delivery head says plainly that the agents cannot be let loose on work carrying financial and legal implications, so people decide. Every requirement is traced back to its source clause and obligations are tracked and reviewed with visibility of what is due, overdue or done, which documents data and supervision.",
+        "basis_fr": "Les agents extraient, valident et signalent les obligations, et le responsable de la delivery dit clairement qu'on ne peut pas les laisser courir seuls sur un travail aux implications financières et juridiques : ce sont les humains qui décident. Chaque exigence est reliée à sa clause d'origine et les obligations sont suivies et revues, avec une visibilité sur ce qui est dû, en retard ou fait, ce qui documente la donnée et la supervision."
+      },
+      "id": "birlasoft--contract-ai",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.5,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
     },
     {
       "id": "bloomberg--ai-powered-earnings-call-summaries-document-insights",
@@ -5197,6 +5532,54 @@
       }
     },
     {
+      "company": "Charles Schwab",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Financial Services",
+      "industry": "Brokerage and wealth management",
+      "department": "Retail client service",
+      "solution_name": "Charley",
+      "vendor": "",
+      "use_case": "Charley answers retail clients by voice or text on balances, transactions, positions, statements, tax documents and quotes, and completes a defined set of account actions itself: watchlists, enrolling eligible securities in dividend reinvestment, adding beneficiaries and trusted contacts, updating contact details and managing alerts. It rolls out in phases to eligible US retail clients from October 2026, and hands over to a representative for anything heavier.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://pressroom.aboutschwab.com/press-releases/press-release/2026/Meet-Charley-Schwabs-New-AI-Powered-Assistant-Designed-to-Help-Clients-Get-Answers-and-Take-Action/default.aspx",
+          "title": "Meet Charley, Schwab's New AI-Powered Assistant Designed to Help Clients Get Answers and Take Action",
+          "publisher": "Charles Schwab",
+          "source_type": "press_release",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          1,
+          2,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "data"
+        ],
+        "basis_en": "Charley completes a closed list of account changes itself, which looks like delegation, but only Schwab's own release attests it and the firm's survey framing keeps meaningful actions with a person, so the observed level is capped at N2. The assistant is grounded in Schwab data, with the release warning that results may be inaccurate and asking users to verify through the provided links.",
+        "basis_fr": "Charley réalise lui-même une liste fermée de modifications de compte, ce qui ressemble à de la délégation, mais seul le communiqué de Schwab l'atteste et l'enquête citée réserve les actions qui comptent à un humain : l'observé est donc plafonné à N2. L'assistant est ancré sur les données de Schwab, le communiqué prévenant que les réponses peuvent être inexactes et invitant à vérifier via les liens fournis."
+      },
+      "id": "charles-schwab--charley",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.5,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
+    },
+    {
       "id": "checkers-rally-s--hi-auto-ai-voice-assistant",
       "company": "Checkers & Rally's",
       "company_country": "United States",
@@ -5357,6 +5740,65 @@
         "basis_en": "Multilingual chatbot gives riders real-time transit updates, answers questions and lets them report issues (250+ incidents/week); single vendor case study caps observed at N2.",
         "basis_fr": "Un chatbot multilingue fournit aux usagers des infos de transport en temps reel, repond aux questions et permet de signaler des problemes (250+ incidents/semaine); l'unique etude de cas fournisseur plafonne l'observe a N2."
       }
+    },
+    {
+      "company": "Chief Digital and Artificial Intelligence Office (CDAO)",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Public Sector & Education",
+      "industry": "Defence and national security",
+      "department": "Company-wide",
+      "solution_name": "Gemini Enterprise",
+      "vendor": "Google Cloud",
+      "use_case": "The CDAO has put Gemini Enterprise in the hands of three million uniformed and non uniformed members of the US armed services, who have built more than a hundred thousand custom agents to streamline everyday tasks. Each agent runs under its own attested identity with least privilege permissions, and every action it takes is written to an audit trail.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "People with access",
+          "value": "3 million uniformed and non uniformed members of the US armed services",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Custom agents built",
+          "value": "more than 100,000",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026",
+          "title": "Welcome to Gemini at Work 2026: Introducing the Gemini agent",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1,
+          2,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "supervision"
+        ],
+        "basis_en": "The source counts users and agents built for everyday tasks without naming a single task an agent commits on its own, so the observed level stays at N2, and the only evidence is the cloud provider's own post. Platform governance is documented: each agent carries an attested identity with least privilege permissions and every action is journalled to an audit trail.",
+        "basis_fr": "La source compte les utilisateurs et les agents créés pour des tâches courantes sans nommer une seule tâche qu'un agent engagerait seul, l'observé reste donc à N2, et la seule preuve est le billet du fournisseur cloud. La gouvernance de la plateforme est documentée : chaque agent porte une identité attestée avec des droits au plus juste, et chacune de ses actions est journalisée."
+      },
+      "id": "chief-digital-and-artificial-intelligence-office-cdao--gemini-enterprise",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.5,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
     },
     {
       "id": "chime--decagon",
@@ -6005,6 +6447,63 @@
       }
     },
     {
+      "company": "CNA/SENAR",
+      "company_country": "Brazil",
+      "region": "Latin America",
+      "sector": "Public Sector & Education",
+      "industry": "Agriculture federation and rural training",
+      "department": "Rural extension",
+      "solution_name": "JoIA",
+      "vendor": "Google Cloud",
+      "use_case": "A conversational assistant on WhatsApp that gives Brazilian rural producers localised input pricing, weather forecasts and farm financial health evaluations, to support decisions taken in the field. Brazil's national agriculture and livestock federation reports 40,000 active users, against a potential reach of five million producers.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Active users",
+          "value": "40,000",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Stated potential reach",
+          "value": "5 million producers nationally",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026",
+          "title": "Welcome to Gemini at Work 2026: Introducing the Gemini agent",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "public",
+        "links": [
+          2,
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The assistant answers producers with prices, forecasts and financial evaluations to inform a decision taken in the field, and nothing in the source has it buying, selling or filing anything. The only evidence is the cloud provider's own post, so the observed level is capped at N2.",
+        "basis_fr": "L'assistant répond aux producteurs avec des prix, des prévisions et des évaluations financières pour éclairer une décision prise au champ, et rien dans la source ne lui fait acheter, vendre ou déposer quoi que ce soit. La seule preuve étant le billet du fournisseur cloud, l'observé est plafonné à N2."
+      },
+      "id": "cna-senar--joia",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.5,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
+    },
+    {
       "company": "Codelco",
       "company_country": "Chile",
       "region": "Latin America",
@@ -6165,6 +6664,54 @@
         "basis_en": "Identifies missing diagnostics and drafts workup plans with a clinician in the loop reviewing every output: the textbook N2 of a regulated pathway.",
         "basis_fr": "Repère les examens manquants et prépare des plans de bilan avec un clinicien dans la boucle qui revoit chaque sortie : le N2 canonique d'un parcours régulé."
       }
+    },
+    {
+      "company": "Colruyt Group",
+      "company_country": "Belgium",
+      "region": "Europe",
+      "sector": "Retail & E-commerce",
+      "industry": "Grocery and online beverage retail",
+      "department": "Marketing & sales",
+      "solution_name": "Babette",
+      "vendor": "In-house",
+      "use_case": "An AI sommelier on BOIR, the group's online beverage platform, where shoppers describe taste, budget and occasion in conversation, for example a pairing for a dish or a gift under twenty euros, and receive a curated selection instead of using filters. When a question goes beyond its scope, it redirects the shopper to customer service and human wine experts.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.esmmagazine.com/technology/colruyt-introduces-ai-powered-sommelier-babette-to-help-choose-wine-323008",
+          "title": "Colruyt Introduces AI-Powered Sommelier Babette To Help Choose Wine",
+          "publisher": "ESM Magazine",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "commerce",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "data"
+        ],
+        "basis_en": "Babette converses and curates a selection, and the shopper buys: nothing in the source has the agent ordering or paying. Recommendations rest entirely on the foundational insights of professional sommeliers and product specialists inherited from Klassewijnen, which documents the data lock.",
+        "basis_fr": "Babette dialogue et compose une sélection, et c'est le client qui achète : rien dans la source ne fait commander ou payer l'agent. Les recommandations reposent entièrement sur le savoir de sommeliers professionnels et de spécialistes produit hérité de Klassewijnen, ce qui documente le verrou données."
+      },
+      "id": "colruyt-group--babette",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "commercial-bank-of-ceylon--aipara-ai-powered-annual-report-assistant",
@@ -6660,6 +7207,79 @@
         "basis_en": "Glean lets Confluent employees surface documents, deal history and Slack knowledge across 20+ systems and build support/CS/sales agents, saving 15,000+ hours monthly; single vendor case study caps observed at N2.",
         "basis_fr": "Glean permet aux employes de Confluent de retrouver documents, historique de deals et savoir Slack sur 20+ systemes et de construire des agents support/CS/vente, economisant 15 000+ heures par mois; l'unique etude de cas fournisseur plafonne l'observe a N2."
       }
+    },
+    {
+      "company": "Cowbell",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Insurance",
+      "industry": "Cyber insurance",
+      "department": "Risk engineering",
+      "solution_name": "Cowbell Risk Advisor",
+      "vendor": "In-house",
+      "use_case": "A policyholder facing agent inside OMNI that explains what drives a company's cyber risk score, which vulnerabilities matter and why a score moved, then ranks remediation steps by urgency and expected risk reduction. It distinguishes confirmed detections from advisory indicators and connects the policyholder with Cowbell's own cybersecurity experts when specialist help is needed.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Data connectors feeding the agent",
+          "value": "more than 60",
+          "source_type": "company_official"
+        },
+        {
+          "metric": "Businesses in the risk pool behind the model",
+          "value": "more than 55 million",
+          "source_type": "company_official"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://cowbell.insure/news-events/pr/cowbell-ai-risk-advisor/",
+          "title": "Cowbell Launches AI Risk Advisor for Cyber Risk Management",
+          "publisher": "Cowbell",
+          "source_type": "company_official",
+          "retrieved_date": "2026-10-23"
+        },
+        {
+          "url": "https://iireporter.com/cowbell-launches-ai-risk-advisor-for-policyholders/",
+          "title": "Cowbell Launches AI Risk Advisor for Policyholders",
+          "publisher": "Insurance Innovation Reporter",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        },
+        {
+          "url": "https://www.postonline.co.uk/news/7961190/cowbell-launches-ai-agent-to-help-smes-tackle-cyber-risk",
+          "title": "Cowbell launches AI agent to help SMEs tackle cyber risk",
+          "publisher": "Insurance Post",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "pilotage",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          0,
+          2,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "data"
+        ],
+        "basis_en": "The agent reads the signals, explains the score and ranks what to fix first, but neither the company page nor the trade coverage says it remediates anything, so it advises without acting. Every recommendation stays linked to the evidence behind it and the model is continuously validated against live data, which documents the data lock.",
+        "basis_fr": "L'agent lit les signaux, explique le score et hiérarchise ce qu'il faut corriger, mais ni la page de l'entreprise ni la presse spécialisée ne lui prêtent la moindre remédiation : il conseille sans agir. Chaque recommandation reste reliée aux preuves qui la fondent et le modèle est validé en continu sur des données réelles, ce qui documente le verrou données."
+      },
+      "id": "cowbell--cowbell-risk-advisor",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "dairy-queen--presto-voice",
@@ -7746,6 +8366,61 @@
       }
     },
     {
+      "company": "Digital Agency of Japan",
+      "company_country": "Japan",
+      "region": "East Asia",
+      "sector": "Public Sector & Education",
+      "industry": "National digital government",
+      "department": "Company-wide",
+      "solution_name": "Gen-nai",
+      "vendor": "In-house",
+      "use_case": "Japan's Digital Agency added agent functions to Gen-nai, the generative AI platform used by civil servants: staff create and run agents through conversation alone, and a single instruction is carried through a sequence of tasks such as web research and drafting documents. A second function, Gen-nai Workshop, is a development environment where the AI writes and modifies code, handles files and runs tests, and is due by December 2026.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Civil servants covered",
+          "value": "about 180,000",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.digitaltoday.co.kr/en/view/117677/japan-to-roll-out-ai-agents-for-180000-civil-servants-to-automate-administrative-work",
+          "title": "Japan to roll out AI agents for 180,000 civil servants to automate administrative work",
+          "publisher": "Digital Today",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          1,
+          1
+        ],
+        "observed": 3,
+        "locks": [
+          "mandate",
+          "compliance"
+        ],
+        "basis_en": "One instruction carries a sequence of tasks through to finished work, and the Workshop environment has the AI write and modify code and run tests on its own, which is execution rather than proposal. The Agency published governance, security and safety standards prepared with the AI Safety Institute of Japan, setting responsibilities for users, administrators and developers, but no grounded data or tooled supervision lock is documented, so the declared level stays at N2.",
+        "basis_fr": "Une seule instruction mène une suite de tâches jusqu'au travail fini, et l'environnement Workshop laisse l'IA écrire et modifier du code puis lancer les tests, ce qui relève de l'exécution et non de la proposition. L'agence a publié des standards de gouvernance, de sécurité et de sûreté élaborés avec l'AI Safety Institute japonais, fixant les responsabilités des utilisateurs, administrateurs et développeurs, mais aucun verrou de donnée ni de supervision outillée n'est documenté : le niveau déclaré reste à N2."
+      },
+      "id": "digital-agency-of-japan--gen-nai",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "digital-india-bhashini-division-ministry-of-electronics-and-it--bhashini",
       "company": "Digital India Bhashini Division (Ministry of Electronics and IT)",
       "company_country": "India",
@@ -8031,6 +8706,65 @@
         "basis_en": "ConstructivIQ's procurement-planning and material-tracking platform was scaled across 100+ (then 120+) DPR projects including hyperscale data centers; it plans and tracks, with humans deciding.",
         "basis_fr": "La plateforme de planification des achats et de suivi matériel ConstructivIQ a été déployée sur plus de 100 (puis 120+) projets DPR dont des data centers hyperscale ; elle planifie et suit, l'humain décide."
       }
+    },
+    {
+      "company": "Dr. Martens",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Retail & E-commerce",
+      "industry": "Footwear brand and retail",
+      "department": "Customer service",
+      "solution_name": "Agentforce",
+      "vendor": "Salesforce",
+      "use_case": "Agentforce handles the first line of customer service, taught the company's own terminology and document context, alongside Service Cloud and Amazon Connect. Live in the UK and Europe since late June 2026 and in the United States and Canada weeks later, with returns and warranty named as the next processes to automate.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Share of customer contacts automated",
+          "value": "about 50%, against about 10% before",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Target share of contacts fully automated",
+          "value": "75%",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://diginomica.com/whats-doc-how-dr-martens-re-invented-customer-service-salesforce",
+          "title": "What's up, Doc? How Dr. Martens re-invented customer service",
+          "publisher": "diginomica",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          0,
+          1,
+          2,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate"
+        ],
+        "basis_en": "The agent resolves about half of contacts on its own, but what it resolves is answering and information: refunds and order changes are not described as its actions, and returns and warranty are still to come. The firm holds a stated principle that there always needs to be a human off ramp, which documents the bound.",
+        "basis_fr": "L'agent traite seul environ la moitié des contacts, mais ce qu'il traite relève de la réponse et de l'information : ni remboursement ni modification de commande ne lui sont attribués, et les retours et garanties restent à venir. L'entreprise pose en principe qu'il faut toujours une sortie vers un humain, ce qui documente la borne."
+      },
+      "id": "dr-martens--agentforce",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "dubai-electricity-and-water-authority-dewa--rammas",
@@ -9411,6 +10145,68 @@
       }
     },
     {
+      "company": "Farmacias del Ahorro",
+      "company_country": "Mexico",
+      "region": "Latin America",
+      "sector": "Retail & E-commerce",
+      "industry": "Pharmacy and drugstore chain",
+      "department": "Company-wide",
+      "solution_name": "PotencIA",
+      "vendor": "Google Cloud",
+      "use_case": "An internal programme that corporate staff in IT, e-commerce and marketing use for their daily business workflows. The retailer presents it as a way to accelerate corporate operational efficiency rather than as a customer facing agent.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Corporate employees using it",
+          "value": "1,000",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Active user adoption",
+          "value": "95%",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Estimated annual productivity gain",
+          "value": "140,000 hours",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026",
+          "title": "Welcome to Gemini at Work 2026: Introducing the Gemini agent",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          1,
+          2,
+          1,
+          1,
+          1,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The source counts employees and adoption for daily workflows without naming one action the programme commits on its own, and it is the cloud provider's own post, so the observed level stays at N2.",
+        "basis_fr": "La source compte les employés et le taux d'adoption pour des tâches quotidiennes sans nommer une seule action que le programme engagerait seul, et il s'agit du billet du fournisseur cloud : l'observé reste à N2."
+      },
+      "id": "farmacias-del-ahorro--potencia",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.5,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
+    },
+    {
       "id": "faw-volkswagen--insights-hub-production-copilot",
       "company": "FAW-Volkswagen",
       "company_country": "China",
@@ -9678,6 +10474,54 @@
       }
     },
     {
+      "company": "First Abu Dhabi Bank Misr (FABMISR)",
+      "company_country": "Egypt",
+      "region": "Africa",
+      "sector": "Financial Services",
+      "industry": "Banking",
+      "department": "IT & data",
+      "solution_name": "IBM watsonx Orchestrate",
+      "vendor": "IBM",
+      "use_case": "The bank has put into operation a retrieval augmented agent giving staff secure and explainable access to internal enterprise knowledge, plus a financial analyst agent built on watsonx.ai that supports analysis and produces actionable insights. The platform runs on the bank's own on premises infrastructure, keeping AI workloads and data inside its controlled environment.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://mea.newsroom.ibm.com/fabmisr-ibm-watsonx",
+          "title": "FABMISR Advances Enterprise AI Adoption with IBM watsonx",
+          "publisher": "IBM",
+          "source_type": "press_release",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          2,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "data"
+        ],
+        "basis_en": "The agents retrieve knowledge and produce analysis for bank staff, and the release never says what an agent may commit on its own, so it informs rather than executes. Retrieval grounded on the bank's own enterprise knowledge, kept on its own infrastructure, documents the data lock, and the only source is the vendor's announcement.",
+        "basis_fr": "Les agents retrouvent la connaissance et produisent de l'analyse pour les équipes de la banque, et le communiqué ne dit jamais ce qu'un agent pourrait engager seul : il informe sans exécuter. L'ancrage sur la base de connaissance de la banque, hébergée sur sa propre infrastructure, documente le verrou données, et la seule source est l'annonce de l'éditeur."
+      },
+      "id": "first-abu-dhabi-bank-misr-fabmisr--ibm-watsonx-orchestrate",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.5,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
+    },
+    {
       "id": "first-national-bank-fnb--navi",
       "company": "First National Bank (FNB)",
       "company_country": "South Africa",
@@ -9843,6 +10687,52 @@
         "basis_en": "Co-op GPT plus Copilot agents and packaging-line monitoring, with 35% of the workforce active monthly: vendor-documented assistance whose outputs humans consume. Observed N1.",
         "basis_fr": "Co-op GPT, agents Copilot et surveillance de ligne d'emballage, 35 % des effectifs actifs par mois : une assistance documentée par l'éditeur, consommée par les humains. Observé N1."
       }
+    },
+    {
+      "company": "Foot Locker",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Retail & E-commerce",
+      "industry": "Sportswear and footwear retail",
+      "department": "Marketing & sales",
+      "solution_name": "Fits",
+      "vendor": "Stylitics",
+      "use_case": "An AI closet builder inside the Foot Locker app, built with Stylitics: a shopper photographs an item they already own and Fits proposes complete outfits around it, shown on a virtual model. Items can be added to the cart straight from the styled look.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.retailtechinnovationhub.com/home/2026/10/15/foot-locker-teams-with-stylitics-as-retailer-taps-ai-technology-to-launch-app-based-closet-builder",
+          "title": "Foot Locker teams with Stylitics as retailer taps AI technology to launch app based closet builder",
+          "publisher": "Retail Technology Innovation Hub",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "commerce",
+        "links": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Fits styles outfits around an item the shopper already owns and shows them on a model, and the shopper adds to the cart and buys, so the agent recommends without committing anything. Observed N2.",
+        "basis_fr": "Fits compose des tenues autour d'un article que le client possède déjà et les montre sur un mannequin virtuel, le client ajoutant lui-même au panier et achetant : l'agent recommande sans rien engager. Observé N2."
+      },
+      "id": "foot-locker--fits",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "formation-bio--muse",
@@ -11837,6 +12727,52 @@
       }
     },
     {
+      "company": "Hogan Lovells Cadwalader",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Professional & Business Services",
+      "industry": "Law firm",
+      "department": "Corporate and finance, litigation, regulatory",
+      "solution_name": "Harvey",
+      "vendor": "Harvey",
+      "use_case": "The firm adopted Harvey across its Corporate and Finance, Litigation and Arbitration, and Regulatory and IP practice groups, where lawyers build custom agents for knowledge management, capital markets and international arbitration, alongside shared playbooks. The stated aim is to capture expertise that already exists across the firm and reapply it in everyday legal work.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.harvey.ai/blog/hogan-lovells-cadwalader-adopts-harvey",
+          "title": "Hogan Lovells Cadwalader adopts Harvey",
+          "publisher": "Harvey",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Lawyers build agents for knowledge management, capital markets and arbitration work, and nothing in the announcement describes an agent filing, signing or advising a client on its own. The only source is the vendor's own post, with no user count or result, so the observed level is capped at N2.",
+        "basis_fr": "Les avocats construisent des agents pour la gestion des connaissances, les marchés de capitaux et l'arbitrage, et rien dans l'annonce ne décrit un agent qui déposerait, signerait ou conseillerait un client seul. La seule source est le billet de l'éditeur, sans nombre d'utilisateurs ni résultat, l'observé est donc plafonné à N2."
+      },
+      "id": "hogan-lovells-cadwalader--harvey",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.5,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
+    },
+    {
       "id": "home-depot--magic-apron",
       "company": "Home Depot",
       "company_country": "United States",
@@ -12216,6 +13152,61 @@
         "basis_en": "Computer-vision companion performs visual quality control on chainsaw production plus chatbots for night-shift troubleshooting, scaling from 2 to 40 factories; vendor-only evidence caps observed at 2 and detection/QC at 1.",
         "basis_fr": "Le compagnon de vision realise le controle qualite visuel sur la production de tronconneuses et des chatbots de depannage de nuit, passant de 2 a 40 usines; preuve fournisseur uniquement, observed plafonne a 2 et detection/QC a 1."
       }
+    },
+    {
+      "company": "Hyundai Motor Company",
+      "company_country": "South Korea",
+      "region": "East Asia",
+      "sector": "Automotive & Mobility",
+      "industry": "Automotive manufacturing",
+      "department": "Manufacturing engineering",
+      "solution_name": "E-FOREST Polaris",
+      "vendor": "In-house",
+      "use_case": "A manufacturing agent that pulls operational, quality and equipment maintenance information from factory systems that were previously scattered, and answers shop floor questions asked in plain language, drawing on internal documents and expert know how. It also stores root cause analyses and corrective measures that used to live in individual workers' experience, so they can be standardised. In pilot at the Ulsan electric vehicle plant since September 2026, and shared with Kia under the E-FOREST programme.",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.mt.co.kr/en/industry/2026/10/18/2026101616321010350",
+          "title": "Hyundai Motor and Kia to show Software Defined Factory technologies at E-FOREST Tech Day 2026",
+          "publisher": "Money Today",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        },
+        {
+          "url": "https://interestingengineering.com/photo-story/smart-agents-to-reshape-hyundai-kias-factories",
+          "title": "Smart agents and digital twins to reshape Hyundai and Kia's factories",
+          "publisher": "Interesting Engineering",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "ops",
+        "links": [
+          1,
+          1,
+          2,
+          0,
+          1,
+          0,
+          0,
+          1,
+          2,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "data"
+        ],
+        "basis_en": "Polaris searches and analyses factory data to answer a worker's question, and no source describes it acting on a line, so it informs rather than executes. It is grounded in the group's own manufacturing systems, internal documents and expert know how, which documents the data lock, and it is still a pilot on one plant.",
+        "basis_fr": "Polaris cherche et analyse les données d'usine pour répondre à la question d'un opérateur, et aucune source ne décrit d'action sur une ligne : il informe sans exécuter. Il est ancré sur les systèmes de production du groupe, ses documents internes et le savoir des experts, ce qui documente le verrou données, et il reste au stade pilote sur une seule usine."
+      },
+      "id": "hyundai-motor-company--e-forest-polaris",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "hyundai-motor-group-42dot--gleo-ai",
@@ -13435,6 +14426,52 @@
         "basis_en": "≈250,000 employees with drafting, summarization, earnings analysis and research: the largest documented workbench, whose outputs feed human work. Observed N1 across a bank-wide scope.",
         "basis_fr": "≈250 000 employés pour la rédaction, la synthèse, l'analyse de résultats et la recherche : le plus grand workbench documenté, dont les sorties nourrissent le travail humain. Observé N1 sur une portée bancaire large."
       }
+    },
+    {
+      "company": "JPMorgan Chase",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Financial Services",
+      "industry": "Banking",
+      "department": "Consumer deposits and cash management",
+      "solution_name": "Smart Cash",
+      "vendor": "In-house",
+      "use_case": "Smart Cash predicts a customer's cash flow and moves their money between accounts at the bank to maximise yield and manage that cash flow. The chief financial officer told the third quarter earnings call that a targeted pilot had started in recent weeks, on the same call where the chief executive said the bank will not let outside agents operate inside customer accounts.",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/jpmorgan-ceo-dimon-warns-customers-155929986.html",
+          "title": "JPMorgan CEO Dimon warns customers of liability transfer with AI",
+          "publisher": "Banking Dive",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          0,
+          1,
+          1,
+          0,
+          2,
+          2,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observed": 3,
+        "locks": [],
+        "basis_en": "Moving a customer's money between accounts is a committed financial action, not a recommendation, and it is reported by the trade press from the bank's own earnings call. Whether each transfer needs the customer's approval is not stated, and no mandate, supervision or data lock is published, so the declared level stays at N2 while the pilot runs.",
+        "basis_fr": "Déplacer l'argent d'un client entre ses comptes est un acte financier engagé, pas une recommandation, et l'information vient de la presse spécialisée à partir des résultats trimestriels de la banque. La source ne dit pas si chaque transfert requiert l'accord du client, et aucun verrou de mandat, de supervision ou de donnée n'est publié : le niveau déclaré reste à N2 pendant le pilote."
+      },
+      "id": "jpmorgan-chase--smart-cash",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "jusbrasil--jus-ia",
@@ -15714,6 +16751,55 @@
       }
     },
     {
+      "company": "Manulife",
+      "company_country": "Canada",
+      "region": "North America",
+      "sector": "Insurance",
+      "industry": "Life and health insurance",
+      "department": "Underwriting and advisor distribution",
+      "solution_name": "Manulife Advisor AI Assistant",
+      "vendor": "In-house",
+      "use_case": "Advisors ask plain language questions and get underwriting guidance drawn from Manulife's own underwriting advisor handbooks, covering life insurance, critical illness and Synergy products, before an application is submitted. It explicitly makes no underwriting decision and gives no binding indication of insurability, premium or coverage; MAUDE, the automated underwriting engine, supports decisions once a case is filed.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://ca.finance.yahoo.com/news/manulife-launches-advisor-ai-assistant-120000922.html",
+          "title": "Manulife launches new Advisor AI Assistant, expanding AI-enabled underwriting support for advisors",
+          "publisher": "Manulife via CNW Group",
+          "source_type": "press_release",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "vente",
+        "links": [
+          0,
+          2,
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "data",
+          "supervision"
+        ],
+        "basis_en": "The assistant answers and prepares, and the release states in terms that it does not make underwriting decisions or bind the insurer, so it stays at N2. It is built on Manulife's own underwriting handbooks, which documents grounded data, and it runs inside an AI governance framework the company says covers human oversight and ongoing monitoring.",
+        "basis_fr": "L'assistant répond et prépare, et le communiqué précise expressément qu'il ne prend aucune décision de souscription et n'engage pas l'assureur : il reste à N2. Il s'appuie sur les manuels de souscription de Manulife, ce qui documente une donnée ancrée, et s'inscrit dans un cadre de gouvernance IA que l'entreprise dit couvrir la supervision humaine et le suivi continu."
+      },
+      "id": "manulife--manulife-advisor-ai-assistant",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.5,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
+    },
+    {
       "id": "manulife--maude-manulife-automated-underwriting-decision-engine",
       "company": "Manulife",
       "company_country": "Canada",
@@ -15953,6 +17039,65 @@
         "basis_en": "Proprietary generative-AI assistant on private OpenAI models for every colleague across 80+ countries, handling ~1M prompts/week for drafting, research and analysis; it prepares outputs staff validate. Agentic features being added.",
         "basis_fr": "Assistant IA generative proprietaire sur modeles OpenAI prives pour tous les collaborateurs dans 80+ pays, traitant ~1M de prompts/semaine (redaction, recherche, analyse); il prepare, les employes valident. Capacites agentiques en ajout."
       }
+    },
+    {
+      "company": "Mashreq",
+      "company_country": "United Arab Emirates",
+      "region": "Middle East",
+      "sector": "Financial Services",
+      "industry": "Banking",
+      "department": "IT & data",
+      "solution_name": "IBM Bob",
+      "vendor": "IBM",
+      "use_case": "Integration engineers work alongside agents on solution design, development, code review and production troubleshooting, with IBM Context Forge giving those agents access to the bank's integration knowledge, API specifications, architecture standards and operational context. About 4,000 agent requests a month reach connected banking, payments and enterprise systems through a secure gateway.",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [
+        {
+          "metric": "Time spent on integration design and troubleshooting, early pilot results",
+          "value": "down 60% to 70%",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Agent requests a month through the secure gateway",
+          "value": "about 4,000",
+          "source_type": "press_release"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://mea.newsroom.ibm.com/mashreq-pilots-ibm-bob-to-advance-agentic-ai-for-integration-engineering",
+          "title": "Mashreq Pilots IBM Bob to Advance Agentic AI for Integration Engineering",
+          "publisher": "IBM",
+          "source_type": "press_release",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "delivery",
+        "links": [
+          1,
+          2,
+          1,
+          2,
+          0,
+          2,
+          1,
+          0,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "data"
+        ],
+        "basis_en": "The bank's own quote has the agents working alongside the teams on design, code reviews and troubleshooting, and the release never says they commit code or configuration, so they assist. Grounding on the bank's API specifications and architecture standards documents the data lock, and the deployment is explicitly a pilot.",
+        "basis_fr": "La citation de la banque place les agents aux côtés des équipes sur la conception, la revue de code et le dépannage, et le communiqué ne dit jamais qu'ils livrent du code ou modifient une configuration : ils assistent. L'ancrage sur les spécifications d'API et les standards d'architecture de la banque documente le verrou données, et le déploiement est explicitement un pilote."
+      },
+      "id": "mashreq--ibm-bob",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.5,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
     },
     {
       "id": "mastercard--mastercard-agent-pay",
@@ -16368,6 +17513,60 @@
       }
     },
     {
+      "company": "Mercadona",
+      "company_country": "Spain",
+      "region": "Europe",
+      "sector": "Retail & E-commerce",
+      "industry": "Grocery retail",
+      "department": "IT & data",
+      "solution_name": "Atenea",
+      "vendor": "In-house",
+      "use_case": "A proprietary platform built by Mercadona's own IT unit that equips specialised agents with the company's development tools, designs and quality benchmarks. More than 500 engineers work with it interactively, and the agents carry out certain development tasks by themselves while engineers keep full control of the final decisions.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Engineers using the platform",
+          "value": "more than 500",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.esmmagazine.com/technology/mercadona-unveils-proprietary-ai-platform-for-software-development-322909",
+          "title": "Mercadona Unveils Proprietary AI Platform For Software Development",
+          "publisher": "ESM Magazine",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "delivery",
+        "links": [
+          1,
+          2,
+          2,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "data"
+        ],
+        "basis_en": "The agents run specific development tasks on their own, but engineers keep full control of the decisions and the chief technology officer states that AI does not replace technical responsibility, it amplifies it. The agents are equipped with the company's own tools, designs and quality benchmarks, which documents the data lock.",
+        "basis_fr": "Les agents exécutent seuls certaines tâches de développement, mais les ingénieurs gardent la maîtrise des décisions et le directeur technique affirme que l'IA ne remplace pas la responsabilité technique, elle l'amplifie. Les agents sont outillés avec les outils, les designs et les critères de qualité de l'entreprise, ce qui documente le verrou données."
+      },
+      "id": "mercadona--atenea",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "company": "Mercedes-Benz",
       "company_country": "Germany",
       "region": "Europe",
@@ -16635,6 +17834,65 @@
         "basis_en": "Customer-experience agent provides 24/7 support and responds in any language for Minted's marketplace. Single vendor case study only caps observed at 2; it answers and informs.",
         "basis_fr": "Agent d'experience client assurant un support 24/7 et repondant dans toutes les langues pour la marketplace Minted. Une seule etude de cas fournisseur plafonne observed a 2 ; il repond et informe."
       }
+    },
+    {
+      "company": "MISUMI Group",
+      "company_country": "Japan",
+      "region": "East Asia",
+      "sector": "Consumer Goods & Manufacturing",
+      "industry": "Industrial components manufacturing and distribution",
+      "department": "Product information management",
+      "solution_name": "Multi-agent product information workflow (Fujitsu Data Intelligence PaaS)",
+      "vendor": "Fujitsu",
+      "use_case": "Nine AI agents run the product information workflow behind MISUMI's e-commerce catalogue: they generate product series names, propose categories, extract technical specifications from supplier material and check for restricted characters across tens of thousands of products. The agents evaluate each other's outputs, and a MISUMI employee gives the final approval before anything is published.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Time to build the agent platform",
+          "value": "about 2.5 months",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Catalogue scope",
+          "value": "tens of thousands of products",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.electronicsmedia.info/2026/10/22/ai-powered-product-information-management/",
+          "title": "Fujitsu Implements AI-Powered Product Information Management for MISUMI",
+          "publisher": "Electronics Media",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          0,
+          2,
+          2,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate"
+        ],
+        "basis_en": "Nine agents draft and cross check catalogue data, but publication is gated on final human approval, so the work is prepared and not committed. MISUMI's own operational judgement criteria and verification methods were encoded into the agents, which documents the written bound.",
+        "basis_fr": "Neuf agents rédigent et contrôlent mutuellement les données catalogue, mais la publication est conditionnée à une approbation humaine finale : le travail est préparé, pas engagé. Les critères de jugement opérationnel et les méthodes de vérification de MISUMI ont été encodés dans les agents, ce qui documente la borne écrite."
+      },
+      "id": "misumi-group--multi-agent-product-information-workflow-fujitsu-data-intelligence-paas",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "mizuho-financial-group--dify-enterprise",
@@ -18225,6 +19483,58 @@
       }
     },
     {
+      "company": "Nutun",
+      "company_country": "South Africa",
+      "region": "Africa",
+      "sector": "Professional & Business Services",
+      "industry": "Business process outsourcing and credit lifecycle management",
+      "department": "Collections",
+      "solution_name": "Zoey",
+      "vendor": "In-house",
+      "use_case": "A voice agent that calls customers in arrears, verifies their identity, then negotiates a payment arrangement and concludes it with no human agent on the line. Customers are told they are speaking to a bot, and complex calls are handed to a live agent with a full summary so the customer does not repeat themselves.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Collection outcomes when human agents and the AI work together, against either alone, since June",
+          "value": "20% to 50% better",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.itweb.co.za/article/nutun-eyes-global-deployment-of-ai-debt-collector/WnxpEv4Yy6Z7V8XL",
+          "title": "Nutun eyes global deployment of AI debt collector",
+          "publisher": "ITWeb",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          2,
+          0,
+          2,
+          1,
+          0
+        ],
+        "observed": 3,
+        "locks": [],
+        "basis_en": "Negotiating a payment arrangement and concluding it without a human on the line commits the customer and the creditor, which is delegation rather than assistance, and the trade press attests it independently. Disclosure to the customer and handover on complex calls are good practice but document no data, mandate or supervision lock, so the declared level is capped at N2.",
+        "basis_fr": "Négocier un plan de paiement et le conclure sans humain en ligne engage le client comme le créancier, ce qui relève de la délégation et non de l'assistance, et la presse spécialisée l'atteste indépendamment. Prévenir le client qu'il parle à un robot et transférer les appels complexes sont de bonnes pratiques, mais ne documentent aucun verrou de donnée, de mandat ou de supervision : le niveau déclaré est plafonné à N2."
+      },
+      "id": "nutun--zoey",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "nvidia--cursor",
       "company": "NVIDIA",
       "company_country": "United States",
@@ -18567,6 +19877,68 @@
         "basis_en": "Marketing-intelligence platform with agentic solutions orchestrating creative, media, commerce and measurement; no outcomes reported and outputs feed human marketing decisions, so N2.",
         "basis_fr": "Plateforme de marketing intelligence avec des solutions agentiques orchestrant creation, media, commerce et mesure; aucun resultat chiffre et les sorties alimentent des decisions humaines, donc N2."
       }
+    },
+    {
+      "company": "On",
+      "company_country": "Switzerland",
+      "region": "Europe",
+      "sector": "Consumer Goods & Manufacturing",
+      "industry": "Sportswear and footwear",
+      "department": "IT & data",
+      "solution_name": "Gemini Enterprise",
+      "vendor": "Google Cloud",
+      "use_case": "Custom internal agents split engineering migration work into codebase analysis, infrastructure configuration, translation pipelines and test validation, mapping deployments across more than twenty repositories and handling script configuration, data replication and validation. Gemini Enterprise is also open to every employee, so non technical staff build no code agents for reporting, market research, scheduling and onboarding.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Migration time per service",
+          "value": "from three months to two weeks",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Core services migrated",
+          "value": "24",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Planned downtime per migrated service",
+          "value": "just under five minutes",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://consumergoods.com/sportswear-company-deploys-ai-agent-workflows",
+          "title": "Sportswear Company Deploys AI Agent Workflows",
+          "publisher": "Consumer Goods Technology",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "delivery",
+        "links": [
+          1,
+          2,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agents prepare and validate the migration work, and the fifteen migrations reported were run by in house engineers, with the chief technology officer stating that human engineers remain accountable for the decisions that matter. Observed N2.",
+        "basis_fr": "Les agents préparent et valident le travail de migration, et les quinze migrations rapportées ont été conduites par les ingénieurs internes, le directeur technique précisant que ce sont eux qui restent responsables des décisions qui comptent. Observé N2."
+      },
+      "id": "on--gemini-enterprise",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "opentable--agentforce",
@@ -19883,6 +21255,52 @@
       }
     },
     {
+      "company": "Princess Cruises",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Travel & Transportation",
+      "industry": "Cruise line",
+      "department": "Marketing & sales",
+      "solution_name": "Princess app in ChatGPT",
+      "vendor": "OpenAI",
+      "use_case": "Guests add the Princess app to their ChatGPT account and tag the brand to find sailings by destination, date and length, compare itineraries and ships, browse ports, excursions and packages, and check current pricing and availability. The line says it intends to extend the experience to other compatible AI platforms.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://cruiseindustrynews.com/cruise-news/2026/09/princess-launches-ai-powered-cruise-planning-app/",
+          "title": "Princess Launches AI-Powered Cruise Planning App",
+          "publisher": "Cruise Industry News",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "commerce",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The app explores, compares and prices cruises inside the conversation, and the article never says a booking can be completed there, so planning stops short of commitment. Observed N2.",
+        "basis_fr": "L'application explore, compare et tarife les croisières dans la conversation, et l'article ne dit jamais qu'une réservation peut y être finalisée : la planification s'arrête avant l'engagement. Observé N2."
+      },
+      "id": "princess-cruises--princess-app-in-chatgpt",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "proteccion--agentforce",
       "company": "Protección",
       "company_country": "Colombia",
@@ -20814,6 +22232,55 @@
       }
     },
     {
+      "company": "Red Sea Global",
+      "company_country": "Saudi Arabia",
+      "region": "Middle East",
+      "sector": "Travel & Transportation",
+      "industry": "Destination management and tourism",
+      "department": "Guest experience",
+      "solution_name": "Agentic Tourism Corridor",
+      "vendor": "Globant with Tourise",
+      "use_case": "Destination agents for Red Sea Global and AlUla talk to each other to extend a visitor's stay: a lead agent coordinates specialist agents for accommodation, transport, dining and activities, checks availability between the two destinations and assembles one journey, including private transfers, a stargazing experience and a heritage visit. The itinerary is presented to the guest for approval, and separate rule based systems handle the actual bookings and payments.",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.arabnews.com/eye-on-ai/saudi-arabia-puts-ai-agents-to-work-in-logistics-and-tourism-3004616",
+          "title": "Saudi Arabia puts AI agents to work in logistics and tourism",
+          "publisher": "Arab News",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "commerce",
+        "links": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate",
+          "supervision"
+        ],
+        "basis_en": "The agents plan and recommend across two destinations and hand the guest a journey ready for approval, while bookings and payments stay with rule based systems, so nothing is committed by the agent. The boundary between what the AI does and does not do is stated deliberately, new participants pass testing and approval before touching live guest data, and agent interactions are logged for auditing.",
+        "basis_fr": "Les agents planifient et recommandent entre deux destinations et remettent au visiteur un séjour prêt à valider, les réservations et les paiements restant à des systèmes à règles : rien n'est engagé par l'agent. La frontière entre ce que fait l'IA et ce qu'elle ne fait pas est posée explicitement, tout nouveau participant passe par des tests et une approbation avant d'accéder aux données réelles des clients, et les échanges entre agents sont journalisés pour l'audit."
+      },
+      "id": "red-sea-global--agentic-tourism-corridor",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "rede-americas--google-agentspace",
       "company": "Rede Américas",
       "company_country": "Brazil",
@@ -21205,6 +22672,52 @@
         "basis_en": "In-app assistant covers spending analysis, investment tracking, subscription management, card freezing and travel support for 13M UK customers; mostly informs, with user-driven account actions validated on request.",
         "basis_fr": "Assistant in-app couvrant analyse des depenses, suivi des investissements, gestion des abonnements, blocage de carte et support voyage pour 13M de clients UK; surtout informatif, avec actions sur compte pilotees par l'utilisateur a la demande."
       }
+    },
+    {
+      "company": "Rio Hotel & Casino",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Hospitality & Food",
+      "industry": "Hotels and casino resorts",
+      "department": "Customer service",
+      "solution_name": "Rio Rita",
+      "vendor": "Traversing.ai",
+      "use_case": "The resort's digital concierge, now reachable inside ChatGPT, where guests book a room, request housekeeping items, contact the bell desk and explore amenities in conversation. The resort calls it the hospitality industry's first fully transactional experience with a generative chatbot.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://news3lv.com/newsletter-daily/booking-las-vegas-resort-room-chatgpt-rio-hotel-casino-nevada-ai-si-chatbot",
+          "title": "You can now book a Las Vegas resort room through ChatGPT",
+          "publisher": "News 3 Las Vegas",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "commerce",
+        "links": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          2
+        ],
+        "observed": 3,
+        "locks": [],
+        "basis_en": "Booking a room inside the conversation commits a reservation, and the local news coverage states it plainly, though it explains neither payment nor confirmation. Nothing public documents bounds, supervision or data quality, so the declared level is capped at N2.",
+        "basis_fr": "Réserver une chambre dans la conversation engage une réservation, et la couverture de la presse locale l'affirme clairement, sans toutefois expliquer ni le paiement ni la confirmation. Rien de public ne documente de bornes, de supervision ou de qualité de donnée : le niveau déclaré est plafonné à N2."
+      },
+      "id": "rio-hotel-casino--rio-rita",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "rio-tinto--autohaul",
@@ -22533,6 +24046,52 @@
       }
     },
     {
+      "company": "Setel",
+      "company_country": "Malaysia",
+      "region": "Southeast Asia",
+      "sector": "Energy & Utilities",
+      "industry": "Fuel retail and mobility payments",
+      "department": "Customer service",
+      "solution_name": "Voice Fuelling",
+      "vendor": "",
+      "use_case": "Drivers say their pump number in English, Bahasa Melayu, Mandarin or Tamil and the feature activates that pump, then processes the transaction with the stored payment method and fuelling preferences. It is in beta in the Setel app, building on the existing One-tap Fuelling.",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://fintechnews.my/61247/e-wallets-malaysia/setel-voice-fuelling-malaysia/",
+          "title": "Setel Introduces Voice Fuelling in Four Languages in Malaysia",
+          "publisher": "Fintech News Malaysia",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "commerce",
+        "links": [
+          2,
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        "observed": 3,
+        "locks": [],
+        "basis_en": "A spoken pump number activates the pump and the transaction is processed on the stored payment method, with no confirmation step described between the two, which commits money. Nothing public documents bounds, supervision or data quality, and the feature is still in beta, so the declared level stays at N2.",
+        "basis_fr": "Un numéro de pompe énoncé à voix haute active la pompe et la transaction est passée sur le moyen de paiement enregistré, sans étape de confirmation décrite entre les deux, ce qui engage de l'argent. Rien de public ne documente de bornes, de supervision ou de qualité de donnée, et la fonction est encore en bêta : le niveau déclaré reste à N2."
+      },
+      "id": "setel--voice-fuelling",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "company": "Seven-Eleven Japan",
       "company_country": "Japan",
       "region": "East Asia",
@@ -23801,6 +25360,61 @@
       }
     },
     {
+      "company": "State of Missouri",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Public Sector & Education",
+      "industry": "State government administration",
+      "department": "Office of Administration",
+      "solution_name": "Gemini for Government Services",
+      "vendor": "Google Public Sector",
+      "use_case": "Missouri is among the first states using Gemini for Government Services, where agents answer questions against state administrative codes and internal policy documents with page and paragraph citations, compare vendor bids against procurement rules, classify citizen documents such as paystubs and leases, and rewrite regulatory language into plain language notices. The state frames it as automating routine work in its workflows, with staff still deciding.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.smartcitiesdive.com/news/google-unveils-agentic-ai-for-government-services/833594/",
+          "title": "Google unveils agentic AI for government services",
+          "publisher": "Smart Cities Dive",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        },
+        {
+          "url": "https://www.googlecloudpresscorner.com/2026-10-20-Google-Public-Sector-Launches-Gemini-for-Government-Services",
+          "title": "Google Public Sector Launches Gemini for Government Services",
+          "publisher": "Google Cloud",
+          "source_type": "press_release",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "public",
+        "links": [
+          0,
+          0,
+          1,
+          2,
+          1,
+          2,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "data"
+        ],
+        "basis_en": "The agents qualify files, compare bids against the rules and draft notices, while the state's director of AI and innovation describes automating routine work and officials keep the decision. Answers are grounded in official regulations and agency files and carry page and paragraph citations, which documents the data lock.",
+        "basis_fr": "Les agents qualifient les dossiers, comparent les offres aux règles et rédigent les notifications, tandis que le directeur IA et innovation de l'État parle d'automatiser le travail de routine, la décision restant aux agents publics. Les réponses s'appuient sur les règlements officiels et les documents des administrations, avec citation de la page et du paragraphe, ce qui documente le verrou données."
+      },
+      "id": "state-of-missouri--gemini-for-government-services",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "stc-saudi-telecom-company--stc-enterprise-gpt",
       "company": "stc (Saudi Telecom Company)",
       "company_country": "Saudi Arabia",
@@ -24924,6 +26538,70 @@
       }
     },
     {
+      "company": "Tottenham Hotspur",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Media & Entertainment",
+      "industry": "Professional football club",
+      "department": "Customer service",
+      "solution_name": "Ask Spurs",
+      "vendor": "Salesforce",
+      "use_case": "A multilingual agent on the club site and app that gives members and guests instant personalised answers on ticketing, memberships, retail and stadium events, in eleven languages. Answers are grounded in club fan data, with over 4.6 million fan accounts unified into SpursID profiles, and unresolved conversations pass to the club's support team.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Engagement rate",
+          "value": "86%",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Interactions resolved by the agent alone",
+          "value": "20%",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Fan accounts unified into SpursID profiles",
+          "value": "more than 4.6 million",
+          "source_type": "press_release"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/press-releases/2026/10/15/tottenham-hotspur-becomes-agentic-enterprise-with-agentforce/",
+          "title": "Tottenham Hotspur Becomes an Agentic Enterprise with Agentforce",
+          "publisher": "Salesforce",
+          "source_type": "press_release",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          0,
+          0,
+          1,
+          2,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "data"
+        ],
+        "basis_en": "The agent answers fans and resolves a fifth of interactions on its own, but it is not described buying tickets or placing orders, so it informs rather than commits. Answers are grounded in trusted club fan data unified into SpursID profiles, which documents the data lock, and the only source is the vendor's release.",
+        "basis_fr": "L'agent répond aux supporters et résout seul un cinquième des interactions, mais rien ne lui attribue l'achat d'un billet ou le passage d'une commande : il informe sans engager. Les réponses sont ancrées sur les données supporters du club réunies dans les profils SpursID, ce qui documente le verrou données, et la seule source est le communiqué de l'éditeur."
+      },
+      "id": "tottenham-hotspur--ask-spurs",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.5,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
+    },
+    {
       "id": "toyota-motor-corporation--o-beya",
       "company": "Toyota Motor Corporation",
       "company_country": "Japan",
@@ -25485,6 +27163,61 @@
       }
     },
     {
+      "company": "Uber",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Travel & Transportation",
+      "industry": "Ride hailing and delivery",
+      "department": "Company-wide",
+      "solution_name": "ChatGPT Work",
+      "vendor": "OpenAI",
+      "use_case": "Uber rolled out ChatGPT Work to all of its more than thirty thousand employees, up from a pilot of about a thousand. The system takes an employee's goal, breaks it into steps and runs them across connected tools such as Google Drive, Gmail, Slack and Calendar, returning finished work in one session, for example a consolidated meeting brief assembled from calendar entries, documents and Slack threads.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Employees with access",
+          "value": "more than 30,000, up from a pilot of about 1,000",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.techtimes.com/articles/329404/20261023/uber-puts-agentic-ai-every-desktop-chatgpt-work-rolls-out-all-30000-employees.htm",
+          "title": "Uber Puts Agentic AI on Every Desktop: ChatGPT Work Rolls Out to All 30,000 Employees",
+          "publisher": "Tech Times",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          0,
+          1,
+          2,
+          0,
+          1
+        ],
+        "observed": 3,
+        "locks": [
+          "mandate",
+          "supervision"
+        ],
+        "basis_en": "The system runs a goal through to finished work across connected apps without a handoff at each step, which is delegated execution rather than drafting. Administrators restrict which plugins, data sources and capabilities each team can reach, see what was done with which data, and important actions above a confidence threshold pause for review, but no grounded data lock is documented, so the declared level stays at N2.",
+        "basis_fr": "Le système mène un objectif jusqu'au livrable fini à travers les outils connectés, sans reprise humaine à chaque étape : c'est de l'exécution déléguée, pas de la rédaction assistée. Les administrateurs limitent les connecteurs, sources et capacités accessibles à chaque équipe, voient ce qui a été fait et avec quelles données, et les actions importantes au-dessus d'un seuil de confiance sont mises en pause pour revue, mais aucun verrou de donnée n'est documenté : le niveau déclaré reste à N2."
+      },
+      "id": "uber--chatgpt-work",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "ubisoft--ghostwriter-neo-npc",
       "company": "Ubisoft",
       "company_country": "France",
@@ -25707,6 +27440,63 @@
         "basis_en": "AI shopping assistant on Ulta.com uses loyalty-member data to deliver personalised beauty guidance and product recommendations, with AI-driven shopping up 115% in 2025; it recommends, the customer buys. N2.",
         "basis_fr": "Assistant d'achat IA sur Ulta.com qui exploite les donnees de fidelite pour proposer des conseils beaute et recommandations personnalisees, achats pilotes par l'IA en hausse de 115% en 2025; il recommande, le client achete. N2."
       }
+    },
+    {
+      "company": "Unicred Brasil",
+      "company_country": "Brazil",
+      "region": "Latin America",
+      "sector": "Financial Services",
+      "industry": "Credit cooperative",
+      "department": "Customer service",
+      "solution_name": "Recupera",
+      "vendor": "Ubots",
+      "use_case": "Autonomous agents open and carry the first phase of preventive collections and of renegotiating debts overdue by one to sixty days, contacting the member directly instead of queueing a human operator. About one third of those contacts then move on to a formal renegotiation handled by staff.",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [
+        {
+          "metric": "Response time to the member",
+          "value": "from 1 hour 1 minute to 14.5 seconds",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Conversations opened by the agent and closed in under 30 minutes",
+          "value": "73%",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://brasilinovador.com.br/ubots-summit-2026-consolida-a-evolucao-dos-agentes-autonomos-de-ia-no-mercado-financeiro-brasileiro/",
+          "title": "Ubots Summit 2026 consolida a evolução dos agentes autônomos de IA no mercado financeiro brasileiro",
+          "publisher": "Brasil Inovador",
+          "source_type": "news_media",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          1,
+          2,
+          2,
+          1,
+          1,
+          0,
+          2,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agents call the member and run the opening conversation themselves, which is real work on contact and qualification, but the formal renegotiation, the part that commits the cooperative, goes to staff for a third of the contacts. It is also still a pilot. Observed N2.",
+        "basis_fr": "Les agents contactent l'adhérent et mènent eux-mêmes la conversation d'ouverture, ce qui constitue un vrai travail de prise de contact et de qualification, mais la renégociation formelle, celle qui engage la coopérative, revient aux équipes pour un tiers des contacts. Le dispositif est de plus encore au stade pilote. Observé N2."
+      },
+      "id": "unicred-brasil--recupera",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "unilever--multi-agent-procurement-solution-gemini-enterprise-agent-platform",
@@ -27364,6 +29154,66 @@
         "basis_en": "Helps bankers spot scams in real time during calls: detection surfaced to a human who decides. Observed N1.",
         "basis_fr": "Aide les banquiers à repérer les arnaques en direct pendant l'appel : la détection est soumise à un humain qui décide. Observé N1."
       }
+    },
+    {
+      "company": "Whitbread",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Hospitality & Food",
+      "industry": "Budget hotels",
+      "department": "Company-wide",
+      "solution_name": "Microsoft 365 Copilot",
+      "vendor": "Microsoft",
+      "use_case": "A location strategy manager at the owner of Premier Inn built an agent that scores potential new hotel sites on driving distances and nearby amenities, giving a data first starting point while people keep the judgement. Copilot is moving from a 270 person pilot to 1,650 support centre colleagues and multi site hotel managers, with more than sixty role specific use cases across eight functions.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Time saved per colleague per day during the pilot, self reported",
+          "value": "24 minutes on average",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Rollout scope",
+          "value": "1,650 support centre colleagues plus multi site hotel managers",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://ukstories.microsoft.com/features/premier-inn-owner-whitbread-gives-microsoft-ai-a-hospitable-welcome/",
+          "title": "Premier Inn owner Whitbread gives Microsoft AI a hospitable welcome",
+          "publisher": "Microsoft UK Stories",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-10-23"
+        }
+      ],
+      "coda": {
+        "chain": "pilotage",
+        "links": [
+          2,
+          2,
+          2,
+          0,
+          1,
+          1,
+          1,
+          2,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate",
+          "supervision"
+        ],
+        "basis_en": "The site agent gathers and scores the data as a starting point, and the manager who built it says the judgement still comes from the human, so it prepares a decision rather than taking one. Whitbread has set up an AI Enablement Office and a review of safety, ownership and cost before an agent can be shared beyond its author, which documents the bound and the oversight.",
+        "basis_fr": "L'agent d'implantation rassemble et note les données comme point de départ, et la manager qui l'a construit précise que le jugement reste humain : il prépare une décision sans la prendre. Whitbread a monté un AI Enablement Office et une revue de sécurité, de responsabilité et de coût avant qu'un agent puisse être partagé au-delà de son auteur, ce qui documente la borne et la supervision."
+      },
+      "id": "whitbread--microsoft-365-copilot",
+      "first_seen_date": "2026-10-23",
+      "provenance": "manual",
+      "confidence": 0.5,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
     },
     {
       "id": "white-castle--julia-soundhound-voice-ai-drive-thru",

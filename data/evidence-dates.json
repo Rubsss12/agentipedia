@@ -1,7 +1,8 @@
 {
- "updated_at": "2026-10-11T19:04:06.076Z",
+ "updated_at": "2026-10-23T09:26:14.822Z",
  "entries": {
   "1-800accountant--agentforce": "2025-08-04",
+  "1st-central-group--motivo-kai-assistant": "2026-10-21",
   "a-o-shearman--harvey": "2025-10-17",
   "absa--abby": "2025-06-09",
   "absa--unnamed-internal-agent-pilots": "2025-06-09",
@@ -11,6 +12,7 @@
   "adnoc-abu-dhabi-national-oil-company--energyai": "2025-03-10",
   "adt--sierra": "2026-05-18",
   "aeroporti-di-roma--adr-virtual-assistant-adryx": "2025-10-29",
+  "ahold-delhaize-usa--agent-klik": "2026-10-01",
   "aia-philippines--ai-roleplay": "2026-05-14",
   "aib-allied-irish-banks--abi-microsoft-365-copilot": "2025-07-10",
   "air-india--ai-g": "2023-11-10",
@@ -21,11 +23,13 @@
   "alibaba-taobao--taobao-wenwen-qwen-shopping-assistant": "2026-05-10",
   "allegro--allegro-ai-assistant": "2026-05-11",
   "altruist--hazel": "2026-08-31",
+  "amalgamated-bank--fis-aml-investigations-agent": "2026-10-19",
   "amazon--rufus-alexa-for-shopping": "2025-11-02",
   "american-express--unnamed-transaction-fraud-detection-ai": "2026-06-01",
   "ant-group--ah-bao-alipay-ai-agent-maxiaocai-ai-financial-manager": "2026-06-14",
   "arcelormittal--arthur-dofasco-big-data-ml-platform-with-aws": "2026-09-10",
   "arizona-state-university--superhuman-go": "2025-12-11",
+  "asiacell--laila": "2026-10-22",
   "associated-press--rover": "2025-07-18",
   "at-t--ask-at-t-workflows": "2025-11-13",
   "australian-antarctic-division--unnamed-whale-call-detection-ai": "2023-02-20",
@@ -45,12 +49,14 @@
   "bank-of-yokohama--mobi-voice": "2023-02-08",
   "banorte--maya": "2022-07-18",
   "barmeniagothaer--parloa": "2025-06-24",
+  "baycare-health-system--oracle-health-clinical-ai-agent": "2026-09-16",
   "bayer--scientific-data-foundry": "2025-11-20",
   "bbc--style-assist-at-a-glance": "2025-06-27",
   "bbva--chatgpt-enterprise": "2025-12-12",
   "bell-canada--gemini-enterprise": "2026-07-22",
   "best-buy--ask-blue": "2026-08-31",
   "bharti-airtel--unnamed-spam-and-fraud-detection-ai": "2024-09-25",
+  "birlasoft--contract-ai": "2026-10-21",
   "bloomberg--ai-powered-earnings-call-summaries-document-insights": "2024-01-22",
   "blue-star-families--star-saving-time-and-resources-agent-on-agentforce": "2025-12-02",
   "bmw--bmw-intelligent-personal-assistant-with-alexa": "2026-01-09",
@@ -70,6 +76,7 @@
   "caterpillar--cat-ai-assistant": "2026-01-06",
   "cathay-financial-holdings--gaia": "2026-04-07",
   "cbre-group--nexus": "2026-03-04",
+  "chief-digital-and-artificial-intelligence-office-cdao--gemini-enterprise": "2026-10-08",
   "china-life-insurance-overseas--oneservice-app-ai-assistant-deepseek-v3-based": "2026-02-27",
   "china-unicom--c-h-converged-agent-tone-household-ai-agent": "2025-03-05",
   "chipotle-mexican-grill--ava-cado": "2025-06-15",
@@ -77,13 +84,16 @@
   "cityblue-hotels--inntelo-ai": "2026-04-01",
   "clara--financial-analyst": "2025-07-30",
   "cleveland-clinic--ambience-healthcare-ai-platform": "2025-02-19",
+  "cna-senar--joia": "2026-10-08",
   "codelco--unnamed-copper-processing-optimization-ai": "2022-08-12",
   "cognizant--claude-claude-code": "2025-11-04",
+  "colruyt-group--babette": "2026-10-06",
   "commercial-international-bank-cib--zaki": "2022-04-10",
   "commonwealth-bank--unnamed-ai-customer-service-orchestration-agent": "2026-07-10",
   "commonwealth-bank--unnamed-ai-fraud-detection-agent": "2026-04-15",
   "commonwealth-of-pennsylvania-office-of-administration--chatgpt-enterprise": "2026-04-15",
   "comunidad-de-madrid--cron-ia": "2026-10-05",
+  "cowbell--cowbell-risk-advisor": "2026-10-05",
   "dairy-queen--presto-voice": "2026-04-16",
   "dbs-bank--dbs-joy": "2026-07-28",
   "decathlon--zowie-ai-decathlon-customer-service-agent": "2022-02-18",
@@ -101,10 +111,12 @@
   "deutsche-telekom--frag-magenta-ask-magenta": "2025-03-22",
   "dfl-deutsche-fu-ball-liga-bundesliga--captain": "2026-06-02",
   "dhl-supply-chain--happyrobot-ai-agents": "2025-11-11",
+  "digital-agency-of-japan--gen-nai": "2026-10-21",
   "digital-india-bhashini-division-ministry-of-electronics-and-it--bhashini": "2026-03-15",
   "discovery-bank--discovery-ai": "2026-05-14",
   "dotdash-meredith--d-cipher": "2025-01-16",
   "dpr-construction--constructiviq": "2026-01-13",
+  "dr-martens--agentforce": "2026-09-22",
   "dubai-electricity-and-water-authority-dewa--rammas": "2025-01-15",
   "duke-energy--agentic-grid-planning-on-aws": "2026-09-17",
   "duolingo--decagon": "2026-09-11",
@@ -119,6 +131,7 @@
   "ethiopian-airlines--jupiter-5-0": "2026-05-20",
   "evm-energieversorgung-mittelrhein--eva": "2026-02-26",
   "ey--ey-ai-agentic-platform": "2025-03-15",
+  "farmacias-del-ahorro--potencia": "2026-10-08",
   "faw-volkswagen--insights-hub-production-copilot": "2025-01-30",
   "federal-ministry-of-communications-innovation-and-digital-economy-fmcide-nigeria--govguide-nigeria": "2026-05-21",
   "fidelity-bank--ivy": "2025-09-12",
@@ -127,6 +140,7 @@
   "first-national-bank-fnb--navi": "2026-04-30",
   "flipkart--flippi-evolving-into-standalone-app-slap-shop-like-a-pro": "2023-10-04",
   "fonterra--co-op-gpt": "2026-04-20",
+  "foot-locker--fits": "2026-10-15",
   "formation-bio--muse": "2024-11-12",
   "forvia-hella--arch-factory-intelligence-platform": "2026-09-30",
   "french-government-dinum--albert": "2026-05-31",
@@ -153,11 +167,13 @@
   "harman-automotive--arch-factory-intelligence-platform": "2026-09-30",
   "heirs-insurance-group--prince-ai": "2026-05-13",
   "hilton--hilton-ai-planner": "2026-03-10",
+  "hogan-lovells-cadwalader--harvey": "2026-10-16",
   "hospital-for-special-surgery-hss--abridge-ambient-ai-platform": "2025-07-24",
   "hsbc--gemini-enterprise": "2026-07-22",
   "hsbc--smart-checking": "2026-09-29",
   "humana--agent-assist": "2026-02-03",
   "husqvarna--ai-vision-companion": "2025-03-25",
+  "hyundai-motor-company--e-forest-polaris": "2026-10-18",
   "hyundai-motor-group-42dot--gleo-ai": "2026-05-21",
   "icici-lombard--ria-plus-voice-ai-customer-enablement-platform": "2026-07-16",
   "ifood--cris": "2025-08-05",
@@ -178,6 +194,7 @@
   "jd-com--jingyan": "2026-05-15",
   "jll-jones-lang-lasalle--falcon-genai-lease-abstraction-and-jll-serve": "2024-06-18",
   "jpmorgan-chase--llm-suite": "2024-08-09",
+  "jpmorgan-chase--smart-cash": "2026-10-13",
   "jusbrasil--jus-ia": "2025-09-10",
   "kbc-group--kate": "2025-11-24",
   "kddi--au-support-ai-advisor-au-ai": "2026-03-10",
@@ -211,6 +228,7 @@
   "macfarlanes--harvey-amplify": "2023-09-28",
   "macy-s--gemini-enterprise": "2026-07-22",
   "magazine-luiza-magalu--lu-do-magalu-ai-commerce-assistant": "2025-11-18",
+  "manulife--manulife-advisor-ai-assistant": "2026-10-14",
   "marriott-international--ask-bonvoy": "2026-06-16",
   "marriott-international--renai-by-renaissance": "2023-12-06",
   "marsh-mclennan--lenai": "2026-08-19",
@@ -221,10 +239,12 @@
   "meituan--xiaomei": "2026-05-15",
   "mercado-libre--asistente-personal-mercado-pago-personal-assistant": "2026-01-07",
   "mercado-libre--verdi": "2024-09-28",
+  "mercadona--atenea": "2026-10-05",
   "mercedes-benz--chatgpt-in-mo360": "2023-07-11",
   "merck-co--gpteal": "2025-10-10",
   "microsoft--employee-self-service-ess-agent": "2025-03-11",
   "ministry-of-digital-transformation-of-ukraine--diia-ai": "2024-06-19",
+  "misumi-group--multi-agent-product-information-workflow-fujitsu-data-intelligence-paas": "2026-10-22",
   "mizuho-financial-group--dify-enterprise": "2026-05-26",
   "morgan-stanley--ai-morgan-stanley-debrief": "2025-01-16",
   "mount-sinai-health-system--nutriscan-ai": "2024-06-06",
@@ -243,12 +263,14 @@
   "novo-nordisk--amazon-bedrock-agentcore": "2026-08-10",
   "nubank--call-center-copilot-openai-gpt-4o": "2025-03-06",
   "nubank--sierra": "2026-03-25",
+  "nutun--zoey": "2026-09-30",
   "nvidia--cursor": "2025-10-09",
   "ocbc--ocbc-gpt": "2023-10-24",
   "octopus-energy--arlo": "2026-07-07",
   "ola-krutrim--kruti": "2025-06-12",
   "olukai--sierra": "2024-02-13",
   "omnicom--omni": "2026-01-08",
+  "on--gemini-enterprise": "2026-10-13",
   "opentable--agentforce": "2025-08-04",
   "optum-unitedhealth-group--optum-real": "2025-10-22",
   "orange--max-it-multilingual-voice-ai": "2025-11-14",
@@ -268,6 +290,7 @@
   "pfizer--proton": "2025-01-07",
   "ping-an-insurance--express-service-gateway-ai-service-representatives-incl-ai-doctor": "2026-03-26",
   "precina-health--agentforce": "2025-02-28",
+  "princess-cruises--princess-app-in-chatgpt": "2026-09-15",
   "prudential-financial--just-ask": "2026-05-20",
   "publicis-groupe--coreai": "2024-01-25",
   "qantas--unnamed-ai-operations-suite": "2026-01-15",
@@ -280,6 +303,7 @@
   "real-madrid--adobe-genstudio-firefly-services-experience-platform": "2025-11-15",
   "receita-federal-do-brasil--gemini-on-google-cloud": "2025-09-10",
   "red--salesforce-agentforce-donor-data-agent": "2026-03-03",
+  "red-sea-global--agentic-tourism-corridor": "2026-10-22",
   "rede-americas--google-agentspace": "2025-09-10",
   "rede-mater-dei-de-saude--suite-of-12-ai-agents-for-the-hospital-revenue-cycle-contracts-parameterization-": "2026-04-15",
   "reliance-jio--jio-ai-call-agent-part-of-jio-bharat-iq-reliance-intelligence-suite": "2026-06-19",
@@ -287,6 +311,7 @@
   "renault--reno-renault-connected-avatar": "2024-10-30",
   "reuters-thomson-reuters--reuters-ai-suite-fact-genie-leon-avista": "2025-04-15",
   "revolut--air-ai-by-revolut": "2026-04-09",
+  "rio-hotel-casino--rio-rita": "2026-10-16",
   "rio-tinto--autohaul": "2026-07-03",
   "rippling--decagon": "2026-09-11",
   "roblox--roblox-assistant-agentic-mode": "2026-04-16",
@@ -307,6 +332,7 @@
   "seco-energy--capacity-ai-virtual-agents": "2025-10-13",
   "sephora--sephora-ai-beauty-chat": "2026-05-12",
   "servicenow--windsurf": "2025-10-17",
+  "setel--voice-fuelling": "2026-10-07",
   "seven-eleven-japan--unnamed-ai-ordering-system": "2026-06-01",
   "shared-services-canada-government-of-canada--canchat": "2025-08-15",
   "sheba-medical-center--project-k": "2025-03-06",
@@ -329,6 +355,7 @@
   "sri-lanka-insurance-corporation-general-limited--beechat": "2026-07-08",
   "standard-chartered--sc-gpt": "2025-08-22",
   "state-farm--navi": "2026-05-12",
+  "state-of-missouri--gemini-for-government-services": "2026-10-20",
   "stc-saudi-telecom-company--stc-enterprise-gpt": "2025-02-18",
   "sumitomo-mitsui-financial-group-smbc--smbc-gai": "2024-05-16",
   "supremo-tribunal-federal-stf-brazil--victor": "2025-11-15",
@@ -347,6 +374,7 @@
   "tiendanube--lumi": "2026-05-22",
   "tokio-marine-nichido--righttouch-smart-agent": "2025-08-13",
   "totalenergies--unnamed-production-forecasting-and-maintenance-ai": "2025-01-24",
+  "tottenham-hotspur--ask-spurs": "2026-10-15",
   "toyota-motor-corporation--o-beya": "2024-11-19",
   "tpbank--t-aio": "2026-06-22",
   "trainline--trainline-assistant": "2025-06-09",
@@ -357,9 +385,11 @@
   "u-s-general-services-administration-gsa--usai": "2025-08-14",
   "uae-cabinet--cabinet-ai-advisor": "2026-09-02",
   "uae-ministry-of-energy-and-infrastructure-moei--ask-moei": "2026-08-21",
+  "uber--chatgpt-work": "2026-10-23",
   "ubisoft--ghostwriter-neo-npc": "2025-11-21",
   "uk-department-for-science-innovation-and-technology-dsit-gov-uk--gov-uk-ai-assistant-gov-uk-chat": "2026-01-27",
   "ulta-beauty--ulta-ai": "2026-04-22",
+  "unicred-brasil--recupera": "2026-09-23",
   "unilever--multi-agent-procurement-solution-gemini-enterprise-agent-platform": "2026-02-17",
   "unilever--nova": "2026-09-28",
   "unionbank-of-the-philippines--ria-customer-service-assistant-and-wealth-rm-assistant": "2025-11-13",
@@ -380,6 +410,7 @@
   "wells-fargo--fargo": "2022-10-24",
   "wellspan-health--ana-hippocratic-ai-voice-agent": "2026-07-30",
   "wendy-s--freshai": "2023-12-11",
+  "whitbread--microsoft-365-copilot": "2026-09-30",
   "white-castle--julia-soundhound-voice-ai-drive-thru": "2023-08-02",
   "wipro--wega": "2026-02-18",
   "woolworths--olive": "2025-12-10",
@@ -3678,6 +3709,158 @@
   "https://www.synapxe.sg/media-releases/artificial-intelligence/public-healthcare-agentic-ai-platform": {
    "date": null,
    "how": "none"
+  },
+  "https://www.techtimes.com/articles/329205/20261019/fis-opens-claude-powered-aml-agent-any-us-bank-cutting-investigator-data-assembly-time.htm": {
+   "date": "2026-10-19",
+   "how": "url"
+  },
+  "https://healthsystemcio.com/2026/09/16/oracle-health-ai-nursing-documentation/": {
+   "date": "2026-09-16",
+   "how": "url"
+  },
+  "https://ukstories.microsoft.com/features/1st-central-launches-agentic-ai-motor-insurance-powered-by-microsoft/": {
+   "date": "2026-10-21",
+   "how": "page"
+  },
+  "https://www.esmmagazine.com/technology/colruyt-introduces-ai-powered-sommelier-babette-to-help-choose-wine-323008": {
+   "date": "2026-10-06",
+   "how": "page"
+  },
+  "https://www.grocerydive.com/news/ahold-delhaize-usa-ad-retail-media-ai-artifical-intelligence-bobby-watts-groceryshop/831827/": {
+   "date": "2026-10-01",
+   "how": "page"
+  },
+  "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026": {
+   "date": "2026-10-08",
+   "how": "page"
+  },
+  "https://www.retailtechinnovationhub.com/home/2026/10/15/foot-locker-teams-with-stylitics-as-retailer-taps-ai-technology-to-launch-app-based-closet-builder": {
+   "date": "2026-10-15",
+   "how": "url"
+  },
+  "https://www.telecomreview.com/articles/reports-and-coverage/30688-how-telecom-should-embed-intelligence-to-achieve-operational-excellence/": {
+   "date": "2026-10-22",
+   "how": "page"
+  },
+  "https://www.mt.co.kr/en/industry/2026/10/18/2026101616321010350": {
+   "date": "2026-10-18",
+   "how": "url"
+  },
+  "https://diginomica.com/whats-doc-how-dr-martens-re-invented-customer-service-salesforce": {
+   "date": "2026-09-22",
+   "how": "page"
+  },
+  "https://pressroom.aboutschwab.com/press-releases/press-release/2026/Meet-Charley-Schwabs-New-AI-Powered-Assistant-Designed-to-Help-Clients-Get-Answers-and-Take-Action/default.aspx": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://www.harvey.ai/blog/hogan-lovells-cadwalader-adopts-harvey": {
+   "date": "2026-10-16",
+   "how": "page"
+  },
+  "https://news.microsoft.com/source/asia/features/how-birlasoft-turned-contract-obligations-into-a-delivery-advantage-with-ai-agents-and-microsoft-azure/": {
+   "date": "2026-10-21",
+   "how": "page"
+  },
+  "https://mea.newsroom.ibm.com/fabmisr-ibm-watsonx": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.electronicsmedia.info/2026/10/22/ai-powered-product-information-management/": {
+   "date": "2026-10-22",
+   "how": "url"
+  },
+  "https://www.esmmagazine.com/technology/mercadona-unveils-proprietary-ai-platform-for-software-development-322909": {
+   "date": "2026-10-05",
+   "how": "page"
+  },
+  "https://www.insurancetimes.co.uk/news/1st-central-launches-agentic-ai-motor-insurance-proposition/1460061.article": {
+   "date": "2026-10-21",
+   "how": "page"
+  },
+  "https://cruiseindustrynews.com/cruise-news/2026/09/princess-launches-ai-powered-cruise-planning-app/": {
+   "date": "2026-09-15",
+   "how": "url"
+  },
+  "https://mea.newsroom.ibm.com/mashreq-pilots-ibm-bob-to-advance-agentic-ai-for-integration-engineering": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.itweb.co.za/article/nutun-eyes-global-deployment-of-ai-debt-collector/WnxpEv4Yy6Z7V8XL": {
+   "date": "2026-09-30",
+   "how": "page"
+  },
+  "https://news3lv.com/newsletter-daily/booking-las-vegas-resort-room-chatgpt-rio-hotel-casino-nevada-ai-si-chatbot": {
+   "date": "2026-10-16",
+   "how": "page"
+  },
+  "https://consumergoods.com/sportswear-company-deploys-ai-agent-workflows": {
+   "date": "2026-10-13",
+   "how": "page"
+  },
+  "https://www.googlecloudpresscorner.com/2026-10-20-Google-Public-Sector-Launches-Gemini-for-Government-Services": {
+   "date": "2026-10-20",
+   "how": "url"
+  },
+  "https://www.salesforce.com/news/press-releases/2026/10/15/tottenham-hotspur-becomes-agentic-enterprise-with-agentforce/": {
+   "date": "2026-10-15",
+   "how": "url"
+  },
+  "https://www.techtimes.com/articles/329404/20261023/uber-puts-agentic-ai-every-desktop-chatgpt-work-rolls-out-all-30000-employees.htm": {
+   "date": "2026-10-23",
+   "how": "url"
+  },
+  "https://iireporter.com/cowbell-launches-ai-risk-advisor-for-policyholders/": {
+   "date": "2026-10-05",
+   "how": "page"
+  },
+  "https://www.arabnews.com/eye-on-ai/saudi-arabia-puts-ai-agents-to-work-in-logistics-and-tourism-3004616": {
+   "date": "2026-10-22",
+   "how": "page"
+  },
+  "https://ca.finance.yahoo.com/news/manulife-launches-advisor-ai-assistant-120000922.html": {
+   "date": "2026-10-14",
+   "how": "page"
+  },
+  "https://ukstories.microsoft.com/features/premier-inn-owner-whitbread-gives-microsoft-ai-a-hospitable-welcome/": {
+   "date": "2026-09-30",
+   "how": "page"
+  },
+  "https://finance.yahoo.com/technology/ai/articles/jpmorgan-ceo-dimon-warns-customers-155929986.html": {
+   "date": "2026-10-13",
+   "how": "page"
+  },
+  "https://fintechnews.my/61247/e-wallets-malaysia/setel-voice-fuelling-malaysia/": {
+   "date": "2026-10-07",
+   "how": "page"
+  },
+  "https://cowbell.insure/news-events/pr/cowbell-ai-risk-advisor/": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.postonline.co.uk/news/7961190/cowbell-launches-ai-agent-to-help-smes-tackle-cyber-risk": {
+   "date": "2026-10-05",
+   "how": "page"
+  },
+  "https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-aml-investigations-agent-now-commercially-available": {
+   "date": null,
+   "how": "none"
+  },
+  "https://interestingengineering.com/photo-story/smart-agents-to-reshape-hyundai-kias-factories": {
+   "date": "2026-10-19",
+   "how": "page"
+  },
+  "https://www.digitaltoday.co.kr/en/view/117677/japan-to-roll-out-ai-agents-for-180000-civil-servants-to-automate-administrative-work": {
+   "date": "2026-10-21",
+   "how": "page"
+  },
+  "https://brasilinovador.com.br/ubots-summit-2026-consolida-a-evolucao-dos-agentes-autonomos-de-ia-no-mercado-financeiro-brasileiro/": {
+   "date": "2026-09-23",
+   "how": "page"
+  },
+  "https://www.smartcitiesdive.com/news/google-unveils-agentic-ai-for-government-services/833594/": {
+   "date": "2026-10-21",
+   "how": "page"
   }
  }
 }
