@@ -281,7 +281,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== Your competitors are moving: pace and latest proofs ===== */}
+      {/* ===== Market momentum: pace and latest proofs ===== */}
       <Momentum />
 
       {/* ===== This week's insight: one shareable finding ===== */}

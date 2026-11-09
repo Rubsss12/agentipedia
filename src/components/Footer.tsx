@@ -38,7 +38,7 @@ const EXPERTISE: L[] = [
 // Agentipedia's own pages. Internal links, so `Col` renders them with <Link>.
 const AGENTIPEDIA: L[] = [
   { en: "The proof directory", fr: "L'annuaire des preuves", href: "/#index" },
-  { en: "Your competitors are moving", fr: "Vos concurrents se bougent", href: "/#mouvement" },
+  { en: "Market momentum", fr: "La dynamique du marché", href: "/#mouvement" },
   { en: "Browse by sector", fr: "Parcourir par secteur", href: "/#sectors" },
   { en: "Agentipedia in figures", fr: "L'Agentipedia en chiffres", href: "/figures/" },
   { en: "Methodology", fr: "Méthodologie", href: "/methodology/" },

@@ -1,5 +1,5 @@
-// "Your competitors are moving": the pace at which AI agent deployments become
-// public, from each fiche's first public proof (evidence_date). Server-only.
+// Market momentum: the pace at which AI agent deployments become public, from
+// each fiche's first public proof (evidence_date). Server-only.
 //
 // Honest by construction: it counts proofs the index has found, dated by
 // their oldest public source. Fiches without a readable source date are left

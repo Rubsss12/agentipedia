@@ -3,9 +3,9 @@ import Bi from "@/components/Bi";
 import { getMomentum } from "@/lib/momentum";
 import { sectorFr } from "@/lib/labels";
 
-// "Your competitors are moving": the quarterly pace of AI agent deployments
-// made public, and the latest proofs. Sits right under the hero, so the page
-// opens on movement rather than on a database.
+// Market momentum: the quarterly pace of AI agent deployments made public,
+// and the latest proofs. Sits right under the hero, so the page opens on
+// movement rather than on a database.
 
 /** Month and year only: a source often dates to the month, never invent a day. */
 export function proofMonth(iso: string, locale: "fr-FR" | "en-GB") {
@@ -20,12 +20,16 @@ export default function Momentum() {
   const bw = gw * 0.58;
   const max = Math.max(1, ...m.quarters.map((q) => q.n));
   const years = [...new Set(m.quarters.map((q) => q.year))];
+  // One colour per year, walking the brand gradient from the deep base to the
+  // violet of the current year, so a reader sees the years without a legend.
+  const YEAR_COLORS = ["#1d1160", "#2439e0", "#6b2bd9", "#c62ecf"];
+  const colorOf = (year: number) => YEAR_COLORS[Math.max(0, YEAR_COLORS.length - years.length) + years.indexOf(year)] ?? "#6b2bd9";
 
   return (
     <section id="mouvement" className="mx-auto max-w-6xl scroll-mt-28 px-6 pt-14 lg:scroll-mt-20">
       <div data-reveal>
         <p className="kicker text-mauve">
-          <Bi en="Your competitors are moving" fr="Vos concurrents se bougent" />
+          <Bi en="Market momentum" fr="La dynamique du marché" />
         </p>
         <h2 className="mt-2 max-w-3xl text-2xl font-extrabold tracking-tight md:text-3xl">
           <Bi
@@ -50,7 +54,7 @@ export default function Momentum() {
               const h = ((H - T - B) * q.n) / max;
               const x = L + gw * i + (gw - bw) / 2;
               const y = H - B - h;
-              const hot = q.year === m.year;
+              const color = colorOf(q.year);
               return (
                 <g key={q.key}>
                   <rect
@@ -59,11 +63,11 @@ export default function Momentum() {
                     width={bw}
                     height={Math.max(1, h)}
                     rx={3}
-                    fill={q.partial ? "#efe9fe" : hot ? "#6d28d9" : "#1d1160"}
-                    stroke={q.partial ? "#6d28d9" : "none"}
+                    fill={q.partial ? "#ffffff" : color}
+                    stroke={q.partial ? color : "none"}
                     strokeDasharray={q.partial ? "4 3" : undefined}
                   />
-                  <text x={x + bw / 2} y={y - 6} fontSize="12" fontWeight="800" textAnchor="middle" fill="#1d1160">
+                  <text x={x + bw / 2} y={y - 6} fontSize="12" fontWeight="800" textAnchor="middle" fill={color}>
                     {q.n}
                   </text>
                   <text x={x + bw / 2} y={H - B + 16} fontSize="10" textAnchor="middle" fill="#7a7599">
@@ -77,7 +81,7 @@ export default function Momentum() {
               const idx = m.quarters.map((q, i) => (q.year === y ? i : -1)).filter((i) => i >= 0);
               const cx = L + gw * ((idx[0] + idx[idx.length - 1]) / 2 + 0.5);
               return (
-                <text key={y} x={cx} y={H - 8} fontSize="13" fontWeight="900" textAnchor="middle" fill={y === m.year ? "#6d28d9" : "#1d1160"}>
+                <text key={y} x={cx} y={H - 8} fontSize="13" fontWeight="900" textAnchor="middle" fill={colorOf(y)}>
                   {y}
                 </text>
               );

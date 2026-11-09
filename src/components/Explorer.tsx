@@ -64,8 +64,10 @@ const PRIMARY: (keyof Filters)[] = ["sector", "fn", "coda", "withResult"];
 
 const MARKETING = new Set(["vendor_case_study", "press_release"]);
 
-// The index paginates client-side: only the first PAGE cards ship in the static
-// HTML (keeps the home page short), the rest reveal in batches on demand.
+// The index paginates client-side: only the first FIRST cards ship in the static
+// HTML, so the directory opens on a readable handful rather than a wall, and the
+// rest reveal in batches of PAGE on demand.
+const FIRST = 6;
 const PAGE = 20;
 
 const STR = {
@@ -179,7 +181,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
   // made public lately, not on the alphabet.
   const [sort, setSort] = useState<SortKey>("newest");
   const [more, setMore] = useState(false);
-  const [visible, setVisible] = useState(PAGE);
+  const [visible, setVisible] = useState(FIRST);
   const [lang] = useLang();
   const t = STR[lang];
   const searchRef = useRef<HTMLInputElement>(null);
@@ -193,7 +195,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
   const [prevBatchKey, setPrevBatchKey] = useState(batchKey);
   if (prevBatchKey !== batchKey) {
     setPrevBatchKey(batchKey);
-    setVisible(PAGE);
+    setVisible(FIRST);
   }
 
   // The globe dispatches this when a marker is clicked: either a country
