@@ -11,7 +11,8 @@
     "validate": "node engine/validate.mjs",
     "artifact": "node artifact/gen.mjs",
     "add-case": "node scripts/add-case.mjs",
-    "evidence-dates": "node scripts/evidence-dates.mjs"
+    "evidence-dates": "node scripts/evidence-dates.mjs",
+    "check-sources": "node scripts/check-sources.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.110.0",
