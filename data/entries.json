@@ -10272,7 +10272,7 @@
       "first_seen_date": "2026-08-27",
       "sources": [
         {
-          "url": "https://www.erstegroup.com/en/news-media/press-releases/2023/10/05/erste-bank-launches-austrias-first-financial-ai",
+          "url": "https://web.archive.org/web/20260616125556/https://www.erstegroup.com/en/news-media/press-releases/2023/10/05/erste-bank-launches-austrias-first-financial-ai",
           "title": "Erste Bank launches Austria's first financial AI",
           "publisher": "Erste Group Bank AG",
           "source_type": "company_official",
@@ -14425,7 +14425,7 @@
       "first_seen_date": "2026-08-27",
       "sources": [
         {
-          "url": "https://www.barchart.com/story/news/32600822/infosys-launches-agentic-ai-foundry-part-of-infosys-topaz-to-accelerate-enterprise-ai-journey",
+          "url": "https://web.archive.org/web/20250722103114/https://www.barchart.com/story/news/32600822/infosys-launches-agentic-ai-foundry-part-of-infosys-topaz-to-accelerate-enterprise-ai-journey",
           "title": "Infosys launches Agentic AI Foundry, part of Infosys Topaz",
           "publisher": "Barchart",
           "source_type": "news_media",
@@ -14839,7 +14839,7 @@
       "first_seen_date": "2026-08-27",
       "sources": [
         {
-          "url": "https://thenextweb.com/news/chinas-tech-giants-are-replacing-the-search-bar-with-ai-agents-that-shop-for-you",
+          "url": "https://web.archive.org/web/20261028075235/https://thenextweb.com/news/chinas-tech-giants-are-replacing-the-search-bar-with-ai-agents-that-shop-for-you",
           "title": "China leads the agentic commerce race as Alibaba, Meituan, and JD.com deploy AI shopping agents at scale",
           "publisher": "The Next Web",
           "source_type": "news_media",
@@ -15017,7 +15017,7 @@
           "retrieved_date": "2026-07-10"
         },
         {
-          "url": "https://www.jpmorganchase.com/about/technology/blog/llmsuite-ab-award",
+          "url": "https://web.archive.org/web/20260831043707/https://www.jpmorganchase.com/about/technology/blog/llmsuite-ab-award",
           "title": "LLM Suite named 2025 \"Innovation of the Year\" by American Banker",
           "publisher": "JPMorgan Chase",
           "source_type": "company_official",
@@ -15436,13 +15436,6 @@
           "url": "https://hapakenya.com/2026/05/19/how-kenya-airways-is-using-ai-to-offer-competitive-ticket-pricing-to-customers/",
           "title": "How Kenya Airways is using AI in its ticket pricing to customers",
           "publisher": "HapaKenya",
-          "source_type": "news_media",
-          "retrieved_date": "2026-07-13"
-        },
-        {
-          "url": "https://www.ghanamma.com/2026/05/20/kenya-airways-deploys-advanced-ai-pricing-engine-to-optimize-global-fares/",
-          "title": "Kenya Airways Deploys Advanced AI Pricing Engine To Optimize Global Fares",
-          "publisher": "Ghanamma",
           "source_type": "news_media",
           "retrieved_date": "2026-07-13"
         },
@@ -17010,13 +17003,6 @@
           "retrieved_date": "2026-07-13"
         },
         {
-          "url": "https://www.thelec.net/news/articleView.html?idxno=12001",
-          "title": "LY Outlines Five-Stage Companywide AI Transformation Strategy",
-          "publisher": "The Elec",
-          "source_type": "news_media",
-          "retrieved_date": "2026-07-13"
-        },
-        {
           "url": "https://www.thepickool.com/ly-corp-launches-unified-ai-agent-agent-i/",
           "title": "LY Corp Launches Unified AI Agent 'Agent i'",
           "publisher": "Pickool",
@@ -17974,17 +17960,10 @@
       "first_seen_date": "2026-08-27",
       "sources": [
         {
-          "url": "https://thenextweb.com/news/chinas-tech-giants-are-replacing-the-search-bar-with-ai-agents-that-shop-for-you",
+          "url": "https://web.archive.org/web/20261028075235/https://thenextweb.com/news/chinas-tech-giants-are-replacing-the-search-bar-with-ai-agents-that-shop-for-you",
           "title": "China's tech giants are replacing the search bar with AI agents that shop for you",
           "publisher": "The Next Web",
           "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        },
-        {
-          "url": "https://baike.baidu.com/en/item/Xiaomei/70362",
-          "title": "Xiaomei (Meituan's first AI agent product)",
-          "publisher": "Baidu Baike",
-          "source_type": "other",
           "retrieved_date": "2026-08-27"
         }
       ],
@@ -21061,7 +21040,7 @@
           "retrieved_date": "2026-08-27"
         },
         {
-          "url": "https://ir.hioscar.com/news-events-presentations/news-press-releases/news-details/2025/Oscar-Unveils-New-Choices-and-AI-Tools-Shaping-the-Future-of-Individual-Healthcare-for-More-Americans-and-Businesses/default.aspx",
+          "url": "https://web.archive.org/web/20251022160945/https://ir.hioscar.com/news-events-presentations/news-press-releases/news-details/2025/Oscar-Unveils-New-Choices-and-AI-Tools-Shaping-the-Future-of-Individual-Healthcare-for-More-Americans-and-Businesses/default.aspx",
           "title": "Oscar Unveils New Choices and AI Tools",
           "publisher": "Oscar Health (IR)",
           "source_type": "press_release",
@@ -23427,13 +23406,6 @@
           "url": "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/",
           "title": "Billionaire Ambani wants AI in every call, app, and home",
           "publisher": "TechCrunch",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        },
-        {
-          "url": "https://www.ibef.org/news/reliance-seeks-to-build-india-s-sovereign-ai-backbone-unveils-jio-call-agent-and-ai-home-platform",
-          "title": "Reliance unveils Jio call agent and AI home platform",
-          "publisher": "IBEF",
           "source_type": "news_media",
           "retrieved_date": "2026-08-27"
         }
@@ -29617,7 +29589,7 @@
           "retrieved_date": "2026-07-10"
         },
         {
-          "url": "https://www.microsoft.com/en/customers/story/838350-vodafone-telecom-azure-cognitive-services",
+          "url": "https://web.archive.org/web/20260329000306/https://www.microsoft.com/en/customers/story/838350-vodafone-telecom-azure-cognitive-services",
           "title": "Vodafone transforms its customer care strategy with digital assistant built on Azure Cognitive Services",
           "publisher": "Microsoft Customer Stories",
           "source_type": "vendor_case_study",

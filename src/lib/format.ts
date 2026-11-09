@@ -25,7 +25,15 @@ export function confidencePercent(c: number): string {
 
 export function hostOf(url: string): string {
   try {
-    return new URL(url).hostname.replace(/^www\./, "");
+    const u = new URL(url);
+    const host = u.hostname.replace(/^www\./, "");
+    // A Wayback link reads as "web.archive.org" and tells the reader nothing
+    // about who published the proof: name the original site, then the archive.
+    if (host === "web.archive.org") {
+      const original = url.match(/\/web\/\d+\w*\/(https?:\/\/.+)$/)?.[1];
+      if (original) return `${hostOf(original)} · web.archive.org`;
+    }
+    return host;
   } catch {
     return url;
   }

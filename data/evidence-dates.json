@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-09T17:58:14.887Z",
+ "updated_at": "2026-11-09T21:24:12.358Z",
  "entries": {
   "1-800accountant--agentforce": "2025-08-04",
   "1st-central-group--motivo-kai-assistant": "2026-10-21",
@@ -3988,6 +3988,30 @@
   "https://wealthprofessional.ca/news/industry-news/wealthsimple-launches-ai-assistant-penny-in-sweeping-product-push/393960": {
    "date": "2026-11-06",
    "how": "page"
+  },
+  "https://web.archive.org/web/20260616125556/https://www.erstegroup.com/en/news-media/press-releases/2023/10/05/erste-bank-launches-austrias-first-financial-ai": {
+   "date": "2023-10-05",
+   "how": "url (archive)"
+  },
+  "https://web.archive.org/web/20250722103114/https://www.barchart.com/story/news/32600822/infosys-launches-agentic-ai-foundry-part-of-infosys-topaz-to-accelerate-enterprise-ai-journey": {
+   "date": null,
+   "how": "none (archive)"
+  },
+  "https://web.archive.org/web/20261028075235/https://thenextweb.com/news/chinas-tech-giants-are-replacing-the-search-bar-with-ai-agents-that-shop-for-you": {
+   "date": "2026-05-15",
+   "how": "page (archive)"
+  },
+  "https://web.archive.org/web/20260831043707/https://www.jpmorganchase.com/about/technology/blog/llmsuite-ab-award": {
+   "date": "2025-06-03",
+   "how": "page (archive)"
+  },
+  "https://web.archive.org/web/20251022160945/https://ir.hioscar.com/news-events-presentations/news-press-releases/news-details/2025/Oscar-Unveils-New-Choices-and-AI-Tools-Shaping-the-Future-of-Individual-Healthcare-for-More-Americans-and-Businesses/default.aspx": {
+   "date": null,
+   "how": "http 403 (archive)"
+  },
+  "https://web.archive.org/web/20260329000306/https://www.microsoft.com/en/customers/story/838350-vodafone-telecom-azure-cognitive-services": {
+   "date": null,
+   "how": "none (archive)"
   }
  }
 }
