@@ -30,3 +30,15 @@ export function hostOf(url: string): string {
     return url;
   }
 }
+
+// A fiche's use_case runs to several sentences: search engines cut a
+// description around 160 characters, so give them one that ends where the
+// writing does. The full text stays on the page and in the JSON-LD.
+export function metaDescription(text: string, max = 158): string {
+  const s = text.trim();
+  if (s.length <= max) return s;
+  const firstSentence = s.match(/^.*?[.!?](?=\s)/)?.[0];
+  if (firstSentence && firstSentence.length <= max) return firstSentence;
+  const cut = s.slice(0, max);
+  return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:]$/, "") + "…";
+}

@@ -5,7 +5,7 @@ import { getEntries, getEntry, isVendorSourced } from "@/lib/data";
 import { SOURCE_TYPE_LABELS, SOURCE_TYPE_LABELS_FR } from "@/lib/types";
 import { ConfidenceBadge, StageBadge, SourceTypeChip, UnnamedBadge, ManualBadge } from "@/components/badges";
 import { sectorSlug } from "@/lib/sectors";
-import { confidencePercent, formatDate, hostOf } from "@/lib/format";
+import { confidencePercent, formatDate, hostOf, metaDescription } from "@/lib/format";
 import { regimeOf } from "@/lib/regulation";
 import { CodaBadge } from "@/components/badges";
 import CodaCard from "@/components/CodaCard";
@@ -28,14 +28,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!e) return {};
   const title = `${e.company} × ${e.solution_name}`;
   const path = `/entry/${e.id}`;
+  const summary = metaDescription(e.use_case);
   return {
     title,
-    description: e.use_case,
+    description: summary,
     keywords: [e.company, e.solution_name, e.vendor, e.sector, e.industry, "AI agent", "agentic AI"].filter(Boolean) as string[],
     alternates: { canonical: path },
     openGraph: {
       title: `${title} · Agentipedia`,
-      description: e.use_case,
+      description: summary,
       url: path,
       type: "article",
       siteName: "Agentipedia by HUB Institute",
