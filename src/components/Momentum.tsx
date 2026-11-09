@@ -47,8 +47,10 @@ export default function Momentum() {
         )}
       </div>
 
+      {/* min-w-0 on both cards: a grid item defaults to min-width:auto, and the
+          proof rows pushed the track past an iPhone screen, scrolling the page sideways. */}
       <div className="mt-6 grid gap-4 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)]">
-        <figure className="flex flex-col justify-between rounded-2xl border border-lavender-line bg-paper p-4 md:p-5" data-reveal>
+        <figure className="flex min-w-0 flex-col justify-between rounded-2xl border border-lavender-line bg-paper p-4 md:p-5" data-reveal>
           <svg viewBox={`0 0 ${W} ${H}`} className="my-auto w-full" role="img" aria-label="Déploiements rendus publics par trimestre">
             {m.quarters.map((q, i) => {
               const h = ((H - T - B) * q.n) / max;
@@ -95,7 +97,7 @@ export default function Momentum() {
           </figcaption>
         </figure>
 
-        <div className="rounded-2xl border border-lavender-line bg-paper p-4 md:p-5" data-reveal>
+        <div className="min-w-0 rounded-2xl border border-lavender-line bg-paper p-4 md:p-5" data-reveal>
           <p className="kicker text-mauve">
             <Bi en="Latest proofs" fr="Dernières preuves" />
           </p>

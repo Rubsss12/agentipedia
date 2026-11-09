@@ -155,8 +155,11 @@ export default function Home() {
         <div className="hero-glow absolute inset-0" aria-hidden />
         <div className="hero-grid absolute inset-0" aria-hidden />
         <div className="relative mx-auto max-w-6xl px-6 pb-10 pt-14 md:pb-14 md:pt-20">
+          {/* min-w-0 on both columns: a grid item defaults to min-width:auto, so the
+              headline and the globe card pushed past an iPhone screen and the
+              section's overflow-hidden silently cut them off. */}
           <div className="grid items-center gap-10 md:grid-cols-[1.05fr_minmax(0,440px)]">
-            <div>
+            <div className="min-w-0">
               <a
                 href="https://agenticbusinessforum.hubinstitute.com/?utm_source=agentipedia&utm_medium=referral&utm_campaign=home-hero"
                 target="_blank"
@@ -247,7 +250,7 @@ export default function Home() {
             </div>
 
             {/* right: the globe, in its own interactive card */}
-            <div className="rounded-3xl border border-white/15 bg-white/[0.05] p-4 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.8)] backdrop-blur-sm md:p-5">
+            <div className="min-w-0 rounded-3xl border border-white/15 bg-white/[0.05] p-4 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.8)] backdrop-blur-sm md:p-5">
               <div className="mb-2 flex items-baseline justify-between gap-3">
                 <p className="kicker text-mauve-bright">
                   <Bi en="Top AI use cases" fr="Les meilleurs cas d'usage IA" />
