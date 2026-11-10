@@ -150,7 +150,7 @@ export default async function EntryPage({ params }: Props) {
 
       {/* What the agent does comes first, in the fuchsia of the lead CTA. */}
       <section className="mt-8 rounded-2xl border-l-4 border-[#e11e8c] bg-[#fdeef6] px-5 py-4">
-        <p className="kicker text-[#e11e8c]">
+        <p className="kicker text-[#c4157a]">
           <Bi en="What the agent does" fr="Ce que fait l'agent" />
         </p>
         <p className="mt-2 text-lg leading-relaxed text-ink">{entry.use_case}</p>

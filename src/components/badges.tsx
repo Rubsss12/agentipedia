@@ -95,7 +95,8 @@ export function CodaBadge({ coda }: { coda: CodaAssessment }) {
   return (
     <span
       className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[0.7rem] font-bold text-white"
-      style={{ background: q.color }}
+      // q.deep, not q.color: white on the lighter shade falls to 2.5:1.
+      style={{ background: q.deep }}
       title={`${q.taglineEn} / ${q.taglineFr} · ${codaScope(coda.links)}/10`}
     >
       <span className="font-black tabular-nums">N{declared}</span>

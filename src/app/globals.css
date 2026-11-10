@@ -12,7 +12,7 @@
   --color-mauve-deep: #4a1fc7; /* pressed / hover violet */
   --color-mauve-ink: #241468; /* deep indigo, text on white pills & chips */
   --color-mauve-night: #1d1160; /* dark base under the hero gradient + footer */
-  --color-mauve-bright: #b9c4ff; /* periwinkle, kickers/labels on the gradient */
+  --color-mauve-bright: #d6ddff; /* periwinkle, kickers/labels on the gradient */
   --color-mauve-glow: #ffffff; /* stat numbers & highlights on the gradient */
   --color-lilac: #ecebff; /* tint chips on light backgrounds */
   --color-lilac-soft: #f7f7ff; /* section tint */
@@ -24,8 +24,8 @@
   --color-electric: #2439e0; /* brand gradient: electric royal blue */
   --color-signal: #e62ec8; /* brand gradient: hot magenta */
   --color-coral: #f2764f; /* warm corner glow, used sparingly */
-  --color-ok: #0e7a5f; /* independently-sourced / high confidence */
-  --color-warn: #a16207; /* vendor-sourced caution */
+  --color-ok: #0b6b53; /* independently-sourced / high confidence */
+  --color-warn: #92590a; /* vendor-sourced caution */
   --color-warn-bg: #fef3c7;
   --color-coral-deep: #b5451f; /* unnamed-collection badge text */
   --color-coral-bg: #fdeadf; /* unnamed-collection badge ground */

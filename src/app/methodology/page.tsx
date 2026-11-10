@@ -212,7 +212,7 @@ export default function MethodologyPage() {
                 <li key={r.n} className="flex items-start gap-3 rounded-xl border border-lavender-line bg-paper p-3">
                   <span
                     className="mt-0.5 grid h-6 min-w-[2.4rem] shrink-0 place-items-center rounded-md px-1 text-xs font-black text-white"
-                    style={{ background: l.color }}
+                    style={{ background: l.deep }}
                   >
                     N{r.n}
                   </span>

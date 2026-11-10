@@ -42,7 +42,8 @@ export interface CodaQuadrant {
   scope: "narrow" | "broad";
   color: string; // solid, badges and dots (the CODA slide palette)
   fill: string; // light tint, matrix cells on the score card
-  deep: string; // darker shade, for the colour as text on a light background
+  deep: string; // darker shade: the colour as text on a light ground, and the
+                // ground under white text, where the lighter shade misses AA
   taglineEn: string;
   taglineFr: string;
   descEn: string;
@@ -66,7 +67,7 @@ export const CODA: Record<CodaKey, CodaQuadrant> = {
   },
   D: {
     key: "D", level: 3, en: "Delegated", fr: "Délégué",
-    autonomy: "high", scope: "narrow", color: "#f0a93e", fill: "#fdf0dc", deep: "#a8650a",
+    autonomy: "high", scope: "narrow", color: "#f0a93e", fill: "#fdf0dc", deep: "#9c5d09",
     taglineEn: "High autonomy, narrow scope", taglineFr: "Autonomie forte, portée étroite",
     descEn: "The agent executes and commits within a defined scope, humans handle exceptions. The operational-efficiency model.",
     descFr: "L'agent exécute et engage sur un périmètre ciblé, l'humain traite les exceptions. Le modèle de l'efficacité opérationnelle.",
@@ -91,30 +92,35 @@ export const LEVELS: Record<CodaLevel, {
   verbEn: string; verbFr: string;
   descEn: string; descFr: string;
   color: string;
+  deep: string; // same role as the quadrants': the ground under white text
 }> = {
   1: {
     n: "N1", en: "Assistance", fr: "Assistance", verbEn: "Proposes", verbFr: "Propose",
     descEn: "The agent proposes, the human does. Every output is reworked: writing, analysis and code copilots.",
     descFr: "L'agent propose, l'humain fait. Chaque sortie est reprise : copilotes de rédaction, d'analyse, de code.",
     color: "#94a7c0",
+    deep: "#56677f",
   },
   2: {
     n: "N2", en: "Validated execution", fr: "Exécution validée", verbEn: "Prepares", verbFr: "Prépare",
     descEn: "The agent does, the human validates before impact: the systematic human-in-the-loop of orchestrated processes. Answering is not executing: a purely informational agent stays here.",
     descFr: "L'agent fait, l'humain valide avant impact : le human-in-the-loop systématique des processus orchestrés. Répondre n'est pas exécuter : un agent purement informationnel reste ici.",
     color: "#4f86c6",
+    deep: "#2f629f",
   },
   3: {
     n: "N3", en: "Delegation under mandate", fr: "Délégation sous mandat", verbEn: "Executes", verbFr: "Exécute",
     descEn: "The agent does and commits; the human handles exceptions and audits a posteriori within written bounds.",
     descFr: "L'agent fait et engage ; l'humain traite les exceptions et audite a posteriori dans des bornes écrites.",
     color: "#f0a93e",
+    deep: "#9c5d09",
   },
   4: {
     n: "N4", en: "Audited autonomy", fr: "Autonomie auditée", verbEn: "Transacts", verbFr: "Transige",
     descEn: "The agent chains decisions end to end; the human governs: reviews, journals and veto rights.",
     descFr: "L'agent enchaîne les décisions de bout en bout ; l'humain gouverne : revues, journaux et droits de veto.",
     color: "#8b5cf6",
+    deep: "#6a3bd8",
   },
 };
 

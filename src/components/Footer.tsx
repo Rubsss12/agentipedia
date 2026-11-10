@@ -163,7 +163,7 @@ export default function Footer() {
       {/* legal bar */}
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-6 py-6">
-          <p className="text-xs text-white/45">
+          <p className="text-xs text-white/60">
             <Bi
               en="© Agentipedia · Insights & Experiences · by HUB Institute, Paris."
               fr="© Agentipedia · Insights & Experiences · par HUB Institute, Paris."
@@ -171,7 +171,7 @@ export default function Footer() {
             · {stats.entries} <Bi en="deployments" fr="déploiements" /> ·{" "}
             <Bi en="updated" fr="màj" /> {stats.updatedAt ? formatDate(stats.updatedAt.slice(0, 10)) : "n/a"}
           </p>
-          <div className="flex flex-wrap items-center gap-x-5 gap-y-1 text-xs text-white/45">
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-1 text-xs text-white/60">
             <a href={`${HUB}/mentions-legales`} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-white">
               <Bi en="Legal notice" fr="Mentions légales" />
             </a>

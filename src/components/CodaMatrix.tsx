@@ -312,7 +312,7 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
                 >
                   <span
                     className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-md text-[0.7rem] font-black text-white"
-                    style={{ background: q.color }}
+                    style={{ background: q.deep }}
                   >
                     {key}
                   </span>
@@ -343,7 +343,7 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
                     onClick={() => pick(key)}
                     aria-label={`${fr ? q.fr : q.en}: ${counts[key]}`}
                     className="grid min-h-[7.5rem] place-items-center rounded-lg text-white transition-transform hover:scale-[1.02] sm:aspect-[16/10] sm:min-h-0"
-                    style={{ background: q.color }}
+                    style={{ background: q.deep }}
                   >
                     <span className="text-center">
                       <span className="block text-4xl font-black leading-none md:text-5xl">{key}</span>

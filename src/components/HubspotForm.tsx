@@ -122,7 +122,7 @@ export default function HubspotForm() {
         {status === "sending" ? t.sending : t.submit}
       </button>
       {status === "error" && <p className="text-xs font-semibold text-[#c4157a]">{t.error}</p>}
-      <p className="text-[0.68rem] leading-relaxed text-[#9aa4bd]">{t.consent}</p>
+      <p className="text-[0.68rem] leading-relaxed text-[#6b7693]">{t.consent}</p>
     </form>
   );
 }
