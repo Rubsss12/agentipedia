@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T08:57:03.349Z",
+  "updated_at": "2026-11-23T09:26:57.041Z",
   "entries": [
     {
       "id": "1-800accountant--agentforce",
@@ -12169,6 +12169,66 @@
       }
     },
     {
+      "company": "Gemeente Zwolle",
+      "company_country": "Netherlands",
+      "region": "Europe",
+      "sector": "Public Sector & Education",
+      "industry": "Municipal government",
+      "department": "Achats",
+      "solution_name": "Joop Inkoop",
+      "vendor": "Microsoft",
+      "use_case": "The municipality's first operational AI agent helps staff pick the right CPV procurement code among more than 12,000 categories, then passes the information to a Power App and an RPA that creates the purchase request in the financial systems. A second agent, Mike Rosoft, supports staff in using Microsoft tools. The procurement process is fully audited, with documented prioritisation by the product owner and registered ownership before launch. The council has not yet set the framework for deploying agents, with authorisation for internal processes expected by the end of the year, and use in the social domain and citizen services is still an open question.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Staff trained to work with AI",
+          "value": "800, close to half the workforce",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Procurement categories covered",
+          "value": "more than 12,000",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.computable.nl/2026/11/06/zwolse-ambtenaren-krijgen-ai-agent-als-collega/",
+          "title": "Zwolse ambtenaren krijgen ai-agent als collega",
+          "publisher": "Computable",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "achats",
+        "links": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1,
+          0
+        ],
+        "observed": 3,
+        "locks": [
+          "data",
+          "supervision"
+        ],
+        "basis_en": "This one acts: the agent hands off to an RPA that creates the purchase request in the financial systems, which is a transaction raised inside the organisation rather than a draft handed to a person. The process is fully audited with named ownership and a defined lifecycle, which documents the oversight and the data boundary, but no written mandate setting what the agent may commit, and the council has not yet set the framework. Observed N3, declared N2.",
+        "basis_fr": "Celui-ci agit : l'agent passe la main à un RPA qui crée la demande d'achat dans les systèmes financiers, c'est-à-dire une opération déclenchée dans l'organisation et non un brouillon remis à un humain. Le processus est entièrement audité, avec une propriété nommée et un cycle de vie défini, ce qui documente la supervision et le périmètre de données, mais aucun mandat écrit ne fixe ce que l'agent peut engager, et le conseil n'a pas encore arrêté le cadre. Observé N3, déclaré N2."
+      },
+      "id": "gemeente-zwolle--joop-inkoop",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "general-mills--project-elf-built-on-palantir-aip",
       "company": "General Mills",
       "company_country": "United States",
@@ -13881,6 +13941,52 @@
       }
     },
     {
+      "company": "Hotel Chocolat",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Retail & E-commerce",
+      "industry": "Chocolate retail",
+      "department": "Marketing & sales",
+      "solution_name": "AI Gift Assistant",
+      "vendor": "Salesforce",
+      "use_case": "A conversational gifting agent on hotelchocolat.com. The shopper describes what they need in free text, the agent asks a follow up question and narrows the selection as details are added, such as a budget, then lets them open the product page, choose the pack size and gifting options and add it to the basket in the same flow. Astound Digital built it, with Salesforce Agentforce and Cimulate semantic search reading the request against product data in Commerce Cloud.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://retailtechinnovationhub.com/home/2026/11/19/hotel-chocolat-works-with-astound-digital-and-salesforce-on-launch-of-ai-gift-assistant",
+          "title": "Hotel Chocolat works with Astound Digital and Salesforce on launch of AI Gift Assistant",
+          "publisher": "Retail Technology Innovation Hub",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "commerce",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent narrows a gift choice and fills the basket; the shopper confirms and pays. Worth noting on the name: the source calls it the AI Gift Assistant, which is a description as much as a name, and no governance control is described. Hotel Chocolat says it will judge the impact over Christmas.",
+        "basis_fr": "L'agent affine un choix de cadeau et remplit le panier ; c'est l'acheteur qui confirme et paie. À noter sur le nom : la source l'appelle AI Gift Assistant, ce qui tient autant de la description que du nom propre, et aucun verrou de gouvernance n'est décrit. Hotel Chocolat annonce qu'il jugera l'effet sur la période de Noël."
+      },
+      "id": "hotel-chocolat--ai-gift-assistant",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "hsbc--gemini-enterprise",
       "company": "HSBC",
       "company_country": "United Kingdom",
@@ -15071,6 +15177,125 @@
         "basis_fr": "L'appel décrit un assistant qui résout des demandes clients et automatise des étapes de processus, sans nommer d'étape où il engagerait de l'argent ou modifierait un compte seul. Un chiffre d'environ 85 pour cent des demandes résolues par l'IA figure dans le résumé de la retranscription : il n'est pas repris ici, faute d'avoir pu être attribué à un intervenant."
       },
       "id": "inter-co--seven",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
+      "company": "Intériale",
+      "company_country": "France",
+      "region": "Europe",
+      "sector": "Insurance",
+      "industry": "Mutual health insurer for public service employees",
+      "department": "Customer service",
+      "solution_name": "Unnamed chatbot, voicebot and mailbot",
+      "solution_named": false,
+      "vendor": "AlloBrain",
+      "use_case": "The mutual insurer is rolling AI across its member contact channels: a chatbot handles exchanges on the site and the app, including outside opening hours; a voicebot answers inbound calls; and a mailbot, in production since 12 October 2026, categorises written requests and drafts replies. Every reply is read and approved by an adviser before it goes out, which the insurer presents as non negotiable in social protection.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Chatbot conversations per month",
+          "value": "more than 4,500, rated 4.6 out of 5",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Inbound calls handled end to end by the voicebot with no human involvement",
+          "value": "one in three",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Mailbot classification accuracy",
+          "value": "93% correct",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Emails for which the mailbot proposes a draft reply",
+          "value": "31%, judged sound on substance in 75% of cases and on tone in 96%",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.lassuranceenmouvement.com/2026/11/18/interiale-deploie-lia-dans-sa-relation-adherent/",
+          "title": "Intériale déploie l'IA dans sa relation adhérent",
+          "publisher": "L'Assurance en Mouvement",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          0,
+          1,
+          2,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate",
+          "supervision"
+        ],
+        "basis_en": "Three bots on three channels, none of them named. The mailbot drafts and an adviser reads and approves every reply before it is sent, which is both the written bound and the oversight, and the insurer says so explicitly. The voicebot handling one call in three end to end is the closest thing to execution here, but the article describes information given, not an operation committed. The vendor's own page carries different figures, 4.7 out of 5 and 36 percent of requests resolved alone: the journal's numbers are the ones carried here and the gap is unexplained.",
+        "basis_fr": "Trois robots sur trois canaux, aucun nommé. Le mailbot rédige et un conseiller relit et valide chaque réponse avant envoi, ce qui constitue à la fois la borne écrite et la supervision, et la mutuelle le dit explicitement. Le voicebot qui traite un appel sur trois de bout en bout est ce qui s'approche le plus de l'exécution, mais l'article décrit de l'information donnée, pas une opération engagée. La page de l'éditeur avance des chiffres différents, 4,7 sur 5 et 36 pour cent de demandes résolues en autonomie : ce sont ceux du journal qui sont repris ici, et l'écart reste inexpliqué."
+      },
+      "id": "interiale--unnamed-chatbot-voicebot-and-mailbot",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
+      "company": "InterRisk",
+      "company_country": "Poland",
+      "region": "Europe",
+      "sector": "Insurance",
+      "industry": "Commercial insurance (VIG group)",
+      "department": "Operations",
+      "solution_name": "IRyd",
+      "vendor": "Beesafe",
+      "use_case": "A tool that reads the documents brokers and agents send in, whatever their format or structure, pulls the information out and feeds it into InterRisk's internal systems so that the data needed to prepare a commercial insurance quote is assembled. It also supports analysis of broker clauses. The insurer states that the decision on cover terms always stays with the InterRisk specialist and that the tool only prepares the information.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://cashless.pl/19925-iryd-interrisk-ai-underwriterzy",
+          "title": "InterRisk usprawni obsługę zapytań ofertowych. Pomoże w tym narzędzie AI o nazwie IRyd",
+          "publisher": "Cashless.pl",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "vente",
+        "links": [
+          1,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate"
+        ],
+        "basis_en": "The tool reads documents and assembles the data; the underwriter decides the cover. The insurer states that the decision on terms always stays with its specialist, which is the written bound. No figure is published, only a claim that time is significantly reduced, and the article is inconsistent on whether the rollout is finished or under way.",
+        "basis_fr": "L'outil lit les documents et constitue les données ; c'est le souscripteur qui décide de la couverture. L'assureur affirme que la décision sur les conditions reste toujours à son spécialiste, c'est la borne écrite. Aucun chiffre n'est publié, seulement une réduction de temps dite significative, et l'article hésite entre déploiement achevé et déploiement en cours."
+      },
+      "id": "interrisk--iryd",
       "first_seen_date": "2026-11-23",
       "provenance": "manual",
       "confidence": 0.75,
@@ -18344,6 +18569,52 @@
       }
     },
     {
+      "company": "mBank",
+      "company_country": "Poland",
+      "region": "Europe",
+      "sector": "Financial Services",
+      "industry": "Retail and corporate banking",
+      "department": "Customer service",
+      "solution_name": "mAsystent AI",
+      "vendor": "",
+      "use_case": "In the pilot the assistant sends several kinds of transfer, changes card limits, blocks a card and manages its settings, breaks and administers a term deposit, sends a loan schedule and a statement of operations, and answers questions on the bank's and its partners' products, on transaction history, fees and navigation in the app. A companion AI search interprets the query and takes the customer to the relevant screen. From 2 December the assistant will only be reachable in the app's new look.",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://cashless.pl/19982-mbank-masystent-nowy-wyglad-aplikacji",
+          "title": "Nowa aplikacja mBanku coraz bliżej? Instytucja rozszerza pilotaż mAsystenta AI",
+          "publisher": "Cashless.pl",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The listed actions reach into the account, transfers, card limits, deposits, which would be execution, but this is a pilot the bank itself calls a test rather than a canonical version, whose features may not survive it, and the article describes no authorisation step and no control beyond the pilot's terms of service. Nothing attests a committed operation, so it stays at validated execution with nothing documented to hold it.",
+        "basis_fr": "Les actions listées touchent au compte, virements, limites de carte, dépôts, ce qui relèverait de l'exécution, mais il s'agit d'un pilote que la banque qualifie elle-même de test et non de version canonique, dont les fonctions peuvent ne pas survivre, et l'article ne décrit aucune étape d'autorisation ni aucun contrôle au-delà du règlement du pilote. Rien n'atteste d'une opération engagée : le niveau reste l'exécution validée, sans rien de documenté pour la borner."
+      },
+      "id": "mbank--masystent-ai",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "company": "McDonald's",
       "company_country": "United States",
       "region": "North America",
@@ -18851,6 +19122,60 @@
         "basis_en": "A voice assistant for production staff to interrogate shop-floor quality data: analysis proposed, humans act. Observed N1.",
         "basis_fr": "Un assistant vocal pour interroger les données qualité de l'atelier : l'analyse est proposée, les humains agissent. Observé N1."
       }
+    },
+    {
+      "company": "Mercedes-Benz",
+      "company_country": "Germany",
+      "region": "Europe",
+      "sector": "Automotive & Mobility",
+      "industry": "Car manufacturing",
+      "department": "Operations & production",
+      "solution_name": "Gemini Robotics 2.5 on Apptronik Apollo 2",
+      "vendor": "Google DeepMind",
+      "use_case": "Humanoid robots driven by Gemini Robotics 2.5, a vision language action model, do automotive picking: taking parts from large bins and placing them in sequencing containers that must reach the assembly line in a fixed order. Field trials are running at the Sindelfingen plant in Germany and Kecskemet in Hungary. The system detects and avoids people and obstacles, and the model is hardened against jailbreaks, including attempts to make the robot carry out a dangerous action.",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [
+        {
+          "metric": "Picking and packing success rate, measured in the earlier proof of concept and not in the field trial",
+          "value": "96%",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.cio.de/article/4248506/mercedes-benz-testet-robotik-ki-von-google-in-der-fertigung.html",
+          "title": "Mercedes-Benz testet Robotik-KI von Google in der Fertigung",
+          "publisher": "CIO.de",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "ops",
+        "links": [
+          2,
+          2,
+          1,
+          0,
+          1,
+          1,
+          2,
+          1,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "supervision"
+        ],
+        "basis_en": "An embodied agent rather than a software one: it picks and places parts on a line, under a field trial the article never calls production. Obstacle and person avoidance plus hardening against jailbreaks document a safety envelope around it. The 96 percent comes from the earlier proof of concept, not from the trial, and the entry says so rather than borrowing it.",
+        "basis_fr": "Un agent incarné plutôt que logiciel : il prélève et place des pièces sur une ligne, dans un essai terrain que l'article ne qualifie jamais de production. L'évitement des personnes et des obstacles et le durcissement contre les détournements documentent une enveloppe de sécurité autour de lui. Les 96 pour cent viennent du proof of concept antérieur, pas de l'essai, et la fiche le dit plutôt que de les emprunter."
+      },
+      "id": "mercedes-benz--gemini-robotics-2-5-on-apptronik-apollo-2",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "merck-co--gpteal",
@@ -19523,6 +19848,65 @@
       }
     },
     {
+      "company": "Mott MacDonald",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Professional & Business Services",
+      "industry": "Engineering and development consultancy",
+      "department": "IT & engineering",
+      "solution_name": "EMMA (Every Mott MacDonald Answer)",
+      "vendor": "Microsoft",
+      "use_case": "EMMA began as a way to find company information and now runs process: through an app in Teams it captures the structured conversation between project managers and principals during monthly reviews, organises the notes around an agreed agenda and surfaces lessons learned and future actions. The adoption programme trains staff to read its output critically, and technical leads are expected to spot weak answers and know when human judgement takes over.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Lessons captured since the review app launched",
+          "value": "more than 10,000",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Agents built by employees across the firm",
+          "value": "more than 8,000",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://ukstories.microsoft.com/features/mott-macdonald-engineering-a-responsible-agentic-ai-future/",
+          "title": "Mott MacDonald: engineering a responsible agentic AI future",
+          "publisher": "Microsoft UK Stories",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "pilotage",
+        "links": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "supervision"
+        ],
+        "basis_en": "EMMA listens, structures and surfaces; the engineers hold the review and own the actions. Critical reading of its output is trained and technical leads are told to catch weak answers, which documents the oversight without a written mandate. The only source is a story published by the vendor, so the figures are self reported and the observed level is capped accordingly.",
+        "basis_fr": "EMMA écoute, structure et fait remonter ; ce sont les ingénieurs qui tiennent la revue et portent les actions. La relecture critique des sorties est enseignée et les responsables techniques doivent repérer les réponses faibles, ce qui documente la supervision sans mandat écrit. La seule source est un récit publié par l'éditeur : les chiffres sont auto-déclarés et le niveau observé est plafonné en conséquence."
+      },
+      "id": "mott-macdonald--emma-every-mott-macdonald-answer",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.5,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
+    },
+    {
       "id": "mount-sinai-health-system--nutriscan-ai",
       "company": "Mount Sinai Health System",
       "company_country": "United States",
@@ -19584,6 +19968,59 @@
         "basis_en": "ML model embedded in the EHR across six hospitals since 2019 flags likely undiagnosed malnutrition and prioritizes dietitians' visits, ~2.5-3x more likely to identify cases; dietitians confirm the diagnosis. It flags and prioritizes for human confirmation, so N2.",
         "basis_fr": "Modele ML integre au dossier patient dans six hopitaux depuis 2019, signale une denutrition probable non diagnostiquee et priorise les visites de dieteticiens (~2,5-3x plus de detections) ; le diagnostic est confirme par un humain, donc N2."
       }
+    },
+    {
+      "company": "MPREIS",
+      "company_country": "Austria",
+      "region": "Europe",
+      "sector": "Retail & E-commerce",
+      "industry": "Food retail",
+      "department": "Operations",
+      "solution_name": "Zebra Companion",
+      "vendor": "Zebra Technologies",
+      "use_case": "A multilingual AI assistant for shop floor staff that answers questions on products, work processes and technical problems, and also spots gaps on the shelf and price discrepancies. The stated aim is less internal communication load and faster support in store. The deployment won Best In-Store Solution at the Austrian retail association's Retail Innovation Awards on 19 November 2026.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://etailment.de/magazin/2026-11-23-ki-steckt-in-allen-siegerprojekten-von-oesterreichs-handelspreis",
+          "title": "KI steckt in allen Siegerprojekten von Österreichs Handelspreis",
+          "publisher": "etailment",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        },
+        {
+          "url": "https://www.handelsverband.at/presse/presseaussendungen/retail-innovation-awards-2026/",
+          "title": "Retail Innovation Awards 2026",
+          "publisher": "Handelsverband Österreich",
+          "source_type": "press_release",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          1,
+          0,
+          2,
+          2,
+          0,
+          0,
+          2,
+          1,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The assistant answers a staff question and flags a gap or a wrong price; a person restocks or corrects it. Neither source says how many shops run it nor uses the word production, so the scope behind this entry is unknown, and the primary source is a trade association press release.",
+        "basis_fr": "L'assistant répond à une question d'un salarié et signale une rupture ou un écart de prix ; c'est un humain qui réapprovisionne ou corrige. Aucune des deux sources ne dit combien de magasins l'utilisent ni n'emploie le mot production : le périmètre derrière cette fiche est inconnu, et la source primaire est un communiqué de fédération professionnelle."
+      },
+      "id": "mpreis--zebra-companion",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "company": "MS Amlin",
@@ -20265,6 +20702,65 @@
         "basis_en": "GenAI virtual agents on phone and digital channels resolve interactions such as inspection appointments and meter-reading access, serving 5.5M+ supply points (~70% of Spain's gas consumers). Press release only caps observed at 2.",
         "basis_fr": "Agents virtuels d'IA generative sur canaux telephonique et numerique traitant des interactions comme les rendez-vous d'inspection et l'acces aux compteurs, pour 5,5M+ points de fourniture (~70% des consommateurs de gaz en Espagne). Communique seul, observed plafonne a 2."
       }
+    },
+    {
+      "company": "Nest Bank",
+      "company_country": "Poland",
+      "region": "Europe",
+      "sector": "Financial Services",
+      "industry": "Retail and SME banking",
+      "department": "Customer service",
+      "solution_name": "N!Asystent",
+      "vendor": "",
+      "use_case": "The second generation of the bank's assistant, first point of contact for every customer since July, handling half of all customer service on its own and closing more than a thousand cases end to end each day. It prepares the instruction but does not execute it: the bank states that the customer approves and authorises every operation themselves in the app. When a case needs a person, the assistant connects the caller to a consultant, bypassing the phone menu, and hands over a summary of the conversation.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Share of all customer service handled by the assistant alone",
+          "value": "50%",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Complete cases closed per day",
+          "value": "more than 1,000",
+          "source_type": "press_release"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://cashless.pl/19921-n-asystent-nest-bank-premiera",
+          "title": "Naturalna rozmowa zastąpi menu: Nest Bank pokazał N!Asystenta nowej generacji",
+          "publisher": "Cashless.pl",
+          "source_type": "press_release",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate"
+        ],
+        "basis_en": "The assistant prepares the instruction and the customer authorises it in the app: the bank states that rule plainly, and it is the written bound. Handover to a consultant with the conversation summary is described, but no oversight of the assistant's own output. The article is labelled partner content, so it is treated as a press release and the figures are the bank's own.",
+        "basis_fr": "L'assistant prépare la dispositon et c'est le client qui l'autorise dans l'application : la banque énonce cette règle explicitement, c'est la borne écrite. Le passage à un conseiller avec le résumé de la conversation est décrit, mais aucune supervision des sorties de l'assistant. L'article est signalé comme contenu partenaire : il est traité comme un communiqué, et les chiffres sont ceux de la banque."
+      },
+      "id": "nest-bank--n-asystent",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.5,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
     },
     {
       "company": "Nestlé",
@@ -21589,6 +22085,56 @@
         "basis_en": "Real-time platform reads payer rules and tells billing staff whether a claim will be paid (96% first-pass, 56% less review time); it informs/answers rather than settling, so N2.",
         "basis_fr": "Plateforme temps reel qui lit les regles payeurs et indique au personnel si une demande sera payee (96% premier passage, -56% temps de revue); elle informe sans decider le reglement, donc N2."
       }
+    },
+    {
+      "company": "Oracle Red Bull Racing",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Media & Entertainment",
+      "industry": "Formula One racing team",
+      "department": "Operations",
+      "solution_name": "Unnamed pit wall rules agent",
+      "solution_named": false,
+      "vendor": "Oracle",
+      "use_case": "An AI agent sits on the pit wall during race weekends. The sporting and technical regulations and past decisions are loaded into a set of language models; the agent retrieves the rule that applies and can propose a decision, which an engineer then reviews. The point, as the team puts it, is that during a race an engineer should be watching the car rather than leafing through documents.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://techinformed.com/las-vegas-grand-prix-inside-red-bull-racings-ai-pit-wall/",
+          "title": "Las Vegas Grand Prix: Inside Red Bull Racing's AI pit wall",
+          "publisher": "TechInformed",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "pilotage",
+        "links": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          0,
+          0,
+          2,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate",
+          "supervision"
+        ],
+        "basis_en": "The agent finds the rule and proposes a call; an engineer reviews it before anything happens. That review is stated in the article in so many words, and it is both the bound and the oversight. The agent carries no public name. The large numbers in the piece, billions of Monte Carlo simulations and terabytes per session, belong to other systems and are deliberately not carried here.",
+        "basis_fr": "L'agent retrouve la règle et propose une décision ; un ingénieur la revoit avant que quoi que ce soit se produise. Cette revue est écrite noir sur blanc dans l'article, et elle constitue à la fois la borne et la supervision. L'agent ne porte pas de nom public. Les grands nombres de l'article, milliards de simulations de Monte-Carlo et téraoctets par séance, concernent d'autres systèmes et ne sont volontairement pas repris ici."
+      },
+      "id": "oracle-red-bull-racing--unnamed-pit-wall-rules-agent",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "orange--max-it-multilingual-voice-ai",
@@ -27325,6 +27871,61 @@
       }
     },
     {
+      "company": "Starling Bank",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Financial Services",
+      "industry": "Digital bank",
+      "department": "Customer service",
+      "solution_name": "Talk to transact (Starling Assistant)",
+      "vendor": "In-house",
+      "use_case": "Personal and joint account holders will be able to say or type an instruction in plain language, such as paying the plumber two hundred pounds, and the Assistant prepares the payment. The customer, not the agent, authorises it: the bank says they approve it with a tap of a button. A business feature is also announced, photographing an invoice so the Assistant reads it, creates the payee and sets up the payment for the right amount, again for a tap to approve.",
+      "deployment_stage": "announced",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.starlingbank.com/news/-talk-to-transact-starling-customers-can-use-their-voice-to-send-money",
+          "title": "'Talk to transact': Starling customers can use their voice to send money",
+          "publisher": "Starling Bank",
+          "source_type": "press_release",
+          "retrieved_date": "2026-11-23"
+        },
+        {
+          "url": "https://www.fstech.co.uk/fst/Starling_Bank_Adds_AI_Powered_Voice_Payments_To_Mobile_App.php",
+          "title": "Starling Bank adds AI powered voice payments to mobile app",
+          "publisher": "FStech",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate"
+        ],
+        "basis_en": "The assistant reads the instruction and sets the payment up; the customer approves it with a tap, which the bank states as the rule and which is the written bound. The release is in the future tense and does not confirm the feature is live, so this is an announcement, not yet a deployment, and the invoice feature has not launched at all.",
+        "basis_fr": "L'assistant comprend l'instruction et prépare le paiement ; c'est le client qui l'approuve d'un geste, règle que la banque énonce et qui constitue la borne écrite. Le communiqué est au futur et ne confirme pas que la fonction est en service : il s'agit d'une annonce, pas encore d'un déploiement, et la fonction facture n'est pas lancée du tout."
+      },
+      "id": "starling-bank--talk-to-transact-starling-assistant",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "state-farm--navi",
       "company": "State Farm",
       "company_country": "United States",
@@ -28998,6 +29599,55 @@
       }
     },
     {
+      "company": "Trasti",
+      "company_country": "Poland",
+      "region": "Europe",
+      "sector": "Insurance",
+      "industry": "Motor insurtech",
+      "department": "Customer service",
+      "solution_name": "Unnamed voice assistant",
+      "solution_named": false,
+      "vendor": "ElevenLabs",
+      "use_case": "A voice assistant running day and night on the phone line and the website, replacing touch tone menus with ordinary conversation: it checks whether a policy is in force, checks whether the premium has been paid, takes customer instructions and sends links by text message. When a matter calls for a non standard decision the assistant puts the caller through to a human consultant, handing over the context and the record of what has already been agreed.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://cashless.pl/19994-trasti-elevenlabs-asystentkaAI",
+          "title": "Asystentka AI od ElevenLabs już w Trasti",
+          "publisher": "Cashless.pl",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          0,
+          1,
+          2,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate"
+        ],
+        "basis_en": "The assistant answers, checks a status and takes an instruction; anything calling for a non standard decision goes to a consultant with the context, which is the written bound. The only figure in the article, automating as much as 70 percent of repetitive queries, is a prospect the company sees rather than a result, and is not carried here. The assistant has no public name.",
+        "basis_fr": "L'assistante répond, vérifie un statut et prend une instruction ; tout ce qui appelle une décision non standard part vers un conseiller avec le contexte, c'est la borne écrite. Le seul chiffre de l'article, l'automatisation de jusqu'à 70 pour cent des demandes répétitives, est une perspective que l'entreprise se donne et non un résultat : il n'est pas repris ici. L'assistante ne porte pas de nom public."
+      },
+      "id": "trasti--unnamed-voice-assistant",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "trip-com-group--tripgenie",
       "company": "Trip.com Group",
       "company_country": "China",
@@ -30360,6 +31010,65 @@
         "basis_en": "An on-screen assistant for 28,000 human reps: it proposes answers, the rep does the work. Observed N1.",
         "basis_fr": "Un assistant à l'écran pour 28 000 conseillers humains : il propose des réponses, le conseiller fait. Observé N1."
       }
+    },
+    {
+      "company": "Vestland fylkeskommune",
+      "company_country": "Norway",
+      "region": "Europe",
+      "sector": "Public Sector & Education",
+      "industry": "Regional government",
+      "department": "Fonctions support",
+      "solution_name": "Mimir",
+      "vendor": "In-house",
+      "use_case": "A Nynorsk AI service that county staff use to draft, summarise, translate and analyse documents they upload themselves. It is connected only to the county's own data and documents, not to the internet. The county director states that it is neither a search engine nor a reference work, that it is not trained on internal data and does not learn from what users type, a choice made under GDPR and the county's AI policy.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Weekly use among staff who have access",
+          "value": "67.5%",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Running and development cost over 2025 and 2026",
+          "value": "9.35 million NOK",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.kode24.no/artikkel/bruker-millioner-pa-ki-tjeneste-stemples-som-ubrukelig/279097",
+          "title": "Bruker millioner på KI-tjeneste. Stemples som «ubrukelig»",
+          "publisher": "kode24",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "data"
+        ],
+        "basis_en": "Staff upload the material and the service drafts, summarises or translates it: a person asks and a person uses the result. The documented bound is the data boundary, no internet, no training on internal data, no learning from input. Worth knowing: the article is critical, quoting an elected member who calls the service close to useless, which is a sign the source is not promotional.",
+        "basis_fr": "Les agents versent eux-mêmes la matière et le service rédige, résume ou traduit : un humain demande, un humain exploite le résultat. La borne documentée est le périmètre de données, pas d'internet, pas d'entraînement sur les données internes, pas d'apprentissage à partir des saisies. À savoir : l'article est critique, citant un élu qui juge le service quasi inutile, ce qui indique une source non promotionnelle."
+      },
+      "id": "vestland-fylkeskommune--mimir",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "vibra-energia--google-agentspace",

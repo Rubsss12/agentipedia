@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23T09:03:39.177Z",
+ "updated_at": "2026-11-23T09:27:04.209Z",
  "entries": {
   "1-800accountant--agentforce": "2025-08-04",
   "1st-central-group--motivo-kai-assistant": "2026-10-21",
@@ -165,6 +165,7 @@
   "gap-inc--bridgette": "2026-10-29",
   "garanti-bbva--garanti-bbva-agentic-commerce-with-mastercard": "2026-03-09",
   "garanti-bbva--ugi": "2025-04-16",
+  "gemeente-zwolle--joop-inkoop": "2026-11-06",
   "general-mills--project-elf-built-on-palantir-aip": "2025-02-19",
   "georgia-state-university--pounce": "2025-12-31",
   "globant--claude-powered-ai-pods": "2026-06-30",
@@ -187,6 +188,7 @@
   "hilton--hilton-ai-planner": "2026-03-10",
   "hogan-lovells-cadwalader--harvey": "2026-10-16",
   "hospital-for-special-surgery-hss--abridge-ambient-ai-platform": "2025-07-24",
+  "hotel-chocolat--ai-gift-assistant": "2026-11-19",
   "hsbc--gemini-enterprise": "2026-07-22",
   "hsbc--smart-checking": "2026-09-29",
   "humana--agent-assist": "2026-02-03",
@@ -206,6 +208,8 @@
   "instacart--clementine": "2026-09-09",
   "intel--gemini-enterprise": "2026-07-22",
   "inter-co--seven": "2026-11-13",
+  "interiale--unnamed-chatbot-voicebot-and-mailbot": "2026-11-18",
+  "interrisk--iryd": "2026-11-06",
   "intuit--writer": "2024-08-23",
   "itau--ia-i": "2026-07-27",
   "itau--itau-emps": "2025-07-21",
@@ -255,6 +259,7 @@
   "marsh-mclennan--lenai": "2026-08-19",
   "mastercard--mastercard-agent-pay": "2025-05-02",
   "mayor-s-office-of-bogota-consejeria-tic--chatico": "2025-09-11",
+  "mbank--masystent-ai": "2026-11-17",
   "mcdonald-s--archiq-archy-voice-agent": "2026-09-25",
   "meesho--vaani": "2026-03-25",
   "meituan--xiaomei": "2026-05-15",
@@ -264,6 +269,7 @@
   "mercadolibre--mago": "2026-11-05",
   "mercadona--atenea": "2026-10-05",
   "mercedes-benz--chatgpt-in-mo360": "2023-07-11",
+  "mercedes-benz--gemini-robotics-2-5-on-apptronik-apollo-2": "2026-11-19",
   "merck-co--gpteal": "2025-10-10",
   "microsoft--employee-self-service-ess-agent": "2025-03-11",
   "ministry-of-digital-transformation-of-ukraine--diia-ai": "2024-06-19",
@@ -272,7 +278,9 @@
   "mondelez-international--chat-mdlz-with-mila": "2026-11-20",
   "morgan-stanley--ai-morgan-stanley-agents": "2026-11-02",
   "morgan-stanley--ai-morgan-stanley-debrief": "2025-01-16",
+  "mott-macdonald--emma-every-mott-macdonald-answer": "2026-11-04",
   "mount-sinai-health-system--nutriscan-ai": "2024-06-06",
+  "mpreis--zebra-companion": "2026-11-23",
   "ms-amlin--wordy-bot": "2026-11-06",
   "mtn-nigeria--zigi": "2023-08-23",
   "mufg-bank--agentforce-360-for-financial-services": "2025-08-01",
@@ -282,6 +290,7 @@
   "national-football-league-nfl--microsoft-copilot-azure-ai-agents": "2025-08-19",
   "naver--agent-n": "2025-03-21",
   "nedgia-naturgy-group--virtual-ai-agent-contact-center-solution": "2025-07-14",
+  "nest-bank--n-asystent": "2026-11-06",
   "nestle--nesgpt": "2024-07-23",
   "new-york-metropolitan-transportation-authority-mta--omny-ai-chatbot": "2025-05-28",
   "nhs-england--microsoft-365-copilot": "2026-06-07",
@@ -301,6 +310,7 @@
   "on--gemini-enterprise": "2026-10-13",
   "opentable--agentforce": "2025-08-04",
   "optum-unitedhealth-group--optum-real": "2025-10-22",
+  "oracle-red-bull-racing--unnamed-pit-wall-rules-agent": "2026-11-19",
   "orange--max-it-multilingual-voice-ai": "2025-11-14",
   "orange-spain--gemini-enterprise": "2026-10-08",
   "oscar-health--oswell": "2025-10-20",
@@ -391,6 +401,7 @@
   "spotify--ai-dj-dj-x": "2025-05-13",
   "sri-lanka-insurance-corporation-general-limited--beechat": "2026-07-08",
   "standard-chartered--sc-gpt": "2025-08-22",
+  "starling-bank--talk-to-transact-starling-assistant": "2026-11-13",
   "state-farm--navi": "2026-05-12",
   "state-of-missouri--gemini-for-government-services": "2026-10-20",
   "stc-saudi-telecom-company--stc-enterprise-gpt": "2025-02-18",
@@ -419,6 +430,7 @@
   "toyota-motor-corporation--o-beya": "2024-11-19",
   "tpbank--t-aio": "2026-06-22",
   "trainline--trainline-assistant": "2025-06-09",
+  "trasti--unnamed-voice-assistant": "2026-11-19",
   "trip-com-group--tripgenie": "2026-03-15",
   "tsmc--unnamed-fab-defect-detection-ai": "2026-06-01",
   "turkiye-is-bankasi-isbank--maxi": "2022-02-23",
@@ -440,6 +452,7 @@
   "uob-united-overseas-bank--tmrw-chatbot": "2026-03-04",
   "usaa--eva": "2024-10-23",
   "verizon--unnamed-rep-assist-ai-on-google-gemini": "2025-04-09",
+  "vestland-fylkeskommune--mimir": "2026-11-20",
   "vibra-energia--google-agentspace": "2025-09-10",
   "vietinbank--ibot-customer-and-genie-internal-ai-assistant": "2025-01-15",
   "virgin-media-o2--lumi-ai": "2025-07-15",
@@ -4134,6 +4147,66 @@
   "https://web.archive.org/web/20260614231009/https://www.cimb.com/en/newsroom/2021/cimb-unveils-eva-the-first-in-market-chatbot-for-commercial-banking-in-malaysia.html": {
    "date": null,
    "how": "none (archive)"
+  },
+  "https://www.computable.nl/2026/11/06/zwolse-ambtenaren-krijgen-ai-agent-als-collega/": {
+   "date": "2026-11-06",
+   "how": "url"
+  },
+  "https://retailtechinnovationhub.com/home/2026/11/19/hotel-chocolat-works-with-astound-digital-and-salesforce-on-launch-of-ai-gift-assistant": {
+   "date": "2026-11-19",
+   "how": "url"
+  },
+  "https://www.lassuranceenmouvement.com/2026/11/18/interiale-deploie-lia-dans-sa-relation-adherent/": {
+   "date": "2026-11-18",
+   "how": "url"
+  },
+  "https://etailment.de/magazin/2026-11-23-ki-steckt-in-allen-siegerprojekten-von-oesterreichs-handelspreis": {
+   "date": "2026-11-23",
+   "how": "url"
+  },
+  "https://techinformed.com/las-vegas-grand-prix-inside-red-bull-racings-ai-pit-wall/": {
+   "date": "2026-11-19",
+   "how": "page"
+  },
+  "https://ukstories.microsoft.com/features/mott-macdonald-engineering-a-responsible-agentic-ai-future/": {
+   "date": "2026-11-04",
+   "how": "page"
+  },
+  "https://www.fstech.co.uk/fst/Starling_Bank_Adds_AI_Powered_Voice_Payments_To_Mobile_App.php": {
+   "date": "2026-11-13",
+   "how": "page"
+  },
+  "https://www.cio.de/article/4248506/mercedes-benz-testet-robotik-ki-von-google-in-der-fertigung.html": {
+   "date": "2026-11-19",
+   "how": "page"
+  },
+  "https://www.kode24.no/artikkel/bruker-millioner-pa-ki-tjeneste-stemples-som-ubrukelig/279097": {
+   "date": "2026-11-20",
+   "how": "page"
+  },
+  "https://www.starlingbank.com/news/-talk-to-transact-starling-customers-can-use-their-voice-to-send-money": {
+   "date": null,
+   "how": "none"
+  },
+  "https://cashless.pl/19921-n-asystent-nest-bank-premiera": {
+   "date": "2026-11-06",
+   "how": "page"
+  },
+  "https://cashless.pl/19982-mbank-masystent-nowy-wyglad-aplikacji": {
+   "date": "2026-11-17",
+   "how": "page"
+  },
+  "https://cashless.pl/19994-trasti-elevenlabs-asystentkaAI": {
+   "date": "2026-11-19",
+   "how": "page"
+  },
+  "https://cashless.pl/19925-iryd-interrisk-ai-underwriterzy": {
+   "date": "2026-11-06",
+   "how": "page"
+  },
+  "https://www.handelsverband.at/presse/presseaussendungen/retail-innovation-awards-2026/": {
+   "date": null,
+   "how": "none"
   }
  }
 }
