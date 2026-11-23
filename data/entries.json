@@ -292,11 +292,17 @@
       "solution_name": "Unnamed internal agent pilots",
       "solution_named": false,
       "vendor": "",
-      "use_case": "Three autonomous AI agents in internal testing at the bank alongside the customer-facing Abby: the first is a co-pilot supporting relationship managers; the others are undisclosed.",
+      "use_case": "Absa describes three internal agents: one supporting staff, one answering common banking questions across eleven languages as a multilingual support assistant, and one monitoring systems that can detect and address many technical problems automatically.",
       "department": "Internal operations",
       "industry": "Banking",
       "deployment_stage": "pilot",
-      "reported_outcomes": [],
+      "reported_outcomes": [
+        {
+          "metric": "Customer service queries resolved without human intervention",
+          "value": "around 40%",
+          "source_type": "news_media"
+        }
+      ],
       "first_seen_date": "2026-07-13",
       "sources": [
         {
@@ -331,10 +337,10 @@
           0,
           0
         ],
-        "observed": 1,
+        "observed": 2,
         "locks": [],
-        "basis_en": "Three internal agents in testing, the first a relationship-manager copilot: pilot-stage assistance. Observed N1.",
-        "basis_fr": "Trois agents internes en test, le premier étant un copilote de chargés de clientèle : de l'assistance au stade pilote. Observé N1."
+        "basis_en": "The bank describes what the agents do rather than leaving them undisclosed, and reports that around 40 percent of customer service queries are resolved without a person. Answering is not executing, so the level is validated execution. No bound and no review mechanism is described.",
+        "basis_fr": "La banque décrit ce que font les agents plutôt que de les laisser non divulgués, et rapporte qu'environ 40 pour cent des demandes de service client se résolvent sans intervention humaine. Répondre n'est pas exécuter : le niveau est l'exécution validée. Aucune borne ni dispositif de revue n'est décrit."
       }
     },
     {
@@ -1228,14 +1234,14 @@
           0,
           0
         ],
-        "observed": 3,
+        "observed": 2,
         "locks": [
           "data",
           "mandate",
           "supervision"
         ],
-        "basis_en": "Press coverage documents executed self-service: flight changes processed in-flow across languages, with refunds and baggage answered. 24-hour test: the service runs without staff, within the airline's service bounds: observed N3, locks evidenced by the bounded task list and years of supervised production.",
-        "basis_fr": "La presse documente du self-service exécuté : changements de vol traités en flux, remboursements et bagages en réponse. Test des 24 h : le service tourne sans agent humain, dans les bornes du transporteur : observé N3, verrous attestés par la liste de tâches bornée et des années de production supervisée."
+        "basis_en": "The release is written as an announcement: guests will be able to change flights, request refunds and choose recovery options, with live human agents arriving by March. Requesting a refund is not a refund paid, and the features are stated as coming rather than running.",
+        "basis_fr": "Le communiqué est rédigé comme une annonce : les passagers pourront changer de vol, demander un remboursement et choisir des options de dédommagement, les conseillers humains en direct arrivant en mars. Demander un remboursement n'est pas un remboursement versé, et les fonctions sont annoncées, pas constatées."
       }
     },
     {
@@ -2578,63 +2584,6 @@
       }
     },
     {
-      "company": "Australian Antarctic Division",
-      "company_country": "Australia",
-      "region": "Antarctica",
-      "sector": "Public Sector & Education",
-      "solution_name": "Unnamed whale-call detection AI",
-      "solution_named": false,
-      "vendor": "",
-      "use_case": "Machine learning built with Cornell's K. Lisa Yang Center and Curtin University that detects blue-whale D-calls in hundreds of thousands of hours of Southern Ocean acoustic recordings faster and more accurately than human analysts, feeding AAD's population monitoring; ship-mounted 360-degree camera AI for live whale detection is in development.",
-      "department": "Science operations",
-      "industry": "Polar research",
-      "deployment_stage": "production",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-07-13",
-      "sources": [
-        {
-          "url": "https://www.antarctica.gov.au/news/2024/listening-to-giants-the-search-for-the-elusive-antarctic-blue-whale/",
-          "title": "Listening to giants: the search for the elusive Antarctic blue whale",
-          "publisher": "Australian Antarctic Program",
-          "source_type": "company_official",
-          "retrieved_date": "2026-07-13"
-        },
-        {
-          "url": "https://www.antarctica.gov.au/news/2023/video-tracking-of-antarctic-blue-whales-provides-behavioural-insights-and-spurs-ai-development/",
-          "title": "From video to AI: learning more about Antarctic blue whales",
-          "publisher": "Australian Antarctic Program",
-          "source_type": "company_official",
-          "retrieved_date": "2026-07-13"
-        }
-      ],
-      "confidence": 0.65,
-      "confidence_reason": "Official Australian Antarctic Program pages document the models in active analysis use; no public product name and no quantified metrics. Region recorded as Antarctica (deployment theatre); the agency is Australian.",
-      "id": "australian-antarctic-division--unnamed-whale-call-detection-ai",
-      "coda": {
-        "chain": "science",
-        "links": [
-          1,
-          1,
-          2,
-          2,
-          2,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "observed": 3,
-        "locks": [
-          "data",
-          "mandate",
-          "supervision"
-        ],
-        "basis_en": "Built with Cornell and Curtin and validated as faster and more accurate than human analysts across hundreds of thousands of hours of audio: the detection task is fully delegated inside a published methodology. Observed N3.",
-        "basis_fr": "Construit avec Cornell et Curtin et validé plus rapide et plus précis que les analystes humains sur des centaines de milliers d'heures d'audio : la tâche de détection est entièrement déléguée dans une méthodologie publiée. Observé N3."
-      }
-    },
-    {
       "id": "australian-public-service-digital-transformation-agency--govai-chat",
       "company": "Australian Public Service (Digital Transformation Agency)",
       "company_country": "Australia",
@@ -3615,14 +3564,14 @@
           0,
           0
         ],
-        "observed": 3,
+        "observed": 2,
         "locks": [
           "data",
           "mandate",
           "supervision"
         ],
-        "basis_en": "3 billion interactions and 58M a month, independently covered: Erica executes account actions (balances, insights, payments) inside the bank's app bounds. 24-hour test: yes, within service limits: N3, with bank-grade journaling and a bounded task set as public locks.",
-        "basis_fr": "3 milliards d'interactions et 58 M par mois, couverts indépendamment : Erica exécute des actions de compte (soldes, alertes, paiements) dans les bornes de l'app. Test des 24 h : oui, dans les limites du service : N3, avec journalisation bancaire et périmètre borné comme verrous publics."
+        "basis_en": "The bank's own account is explicit: Erica solves an inquiry or points the customer down the right path when it cannot act on their behalf, and when someone wants to pay a bill they can do that within Erica. The customer executes; the assistant presents the path.",
+        "basis_fr": "Le compte rendu de la banque est explicite : Erica résout une demande ou oriente le client quand elle ne peut pas agir à sa place, et quand quelqu'un veut payer une facture, il peut le faire dans Erica. C'est le client qui exécute, l'assistant présente le chemin."
       }
     },
     {
@@ -4557,14 +4506,14 @@
           0,
           0
         ],
-        "observed": 3,
+        "observed": 2,
         "locks": [
           "data",
           "mandate",
           "supervision"
         ],
-        "basis_en": "1.5B messages and 2.5B calls screened daily in ≈2 ms, 48.3B spam calls flagged in a year, fraud-loss value down 68.7% per I4C data: blocking runs entirely without humans, within network policy bounds, with publicly tracked outcomes. Observed N3.",
-        "basis_fr": "1,5 Md de messages et 2,5 Md d'appels filtrés chaque jour en ≈2 ms, 48,3 Md d'appels spam repérés en un an, pertes de fraude -68,7 % selon l'I4C : le blocage tourne sans humain, dans les bornes de la politique réseau, avec des résultats publiquement suivis. Observé N3."
+        "basis_en": "The operator's own release says the tool alerts customers in real time to suspected spam calls and messages and flags them accurately. Only the network wide block on malicious URLs is a committed action, and it is a different mechanism from the call and message path this entry describes.",
+        "basis_fr": "Le communiqué de l'opérateur dit que l'outil alerte les clients en temps réel sur les appels et SMS suspects et les signale avec justesse. Seul le blocage des URL malveillantes à l'échelle du réseau est une action engagée, et c'est un mécanisme distinct du chemin appels et messages décrit ici."
       }
     },
     {
@@ -5419,14 +5368,14 @@
           0,
           0
         ],
-        "observed": 3,
+        "observed": 2,
         "locks": [
           "data",
           "mandate",
           "supervision"
         ],
-        "basis_en": "Detects animals in seafloor imagery in seconds instead of hours, replacing manual annotation within a validated research protocol; scientists audit outputs rather than review each image. Observed N3 on a narrow analysis task.",
-        "basis_fr": "Détecte les animaux dans l'imagerie des fonds marins en secondes au lieu d'heures, remplaçant l'annotation manuelle dans un protocole de recherche validé ; les scientifiques auditent les sorties sans revoir chaque image. Observé N3 sur une tâche d'analyse étroite."
+        "basis_en": "The survey describes the tool working alongside human experts to cut annotation to a few seconds per photo. That is a human in the loop on the work itself, not an audit of outputs after the fact.",
+        "basis_fr": "L'institut décrit un outil qui travaille aux côtés des experts humains pour ramener l'annotation à quelques secondes par photo. C'est un humain dans la boucle sur le travail lui-même, pas un audit des sorties après coup."
       }
     },
     {
@@ -7837,7 +7786,7 @@
           "source_type": "company_official"
         },
         {
-          "metric": "Customers with access at launch",
+          "metric": "Customers the bank said would have access in the coming weeks, with 20% of NetBank customers reached at the time of writing",
           "value": "6.2 million",
           "source_type": "company_official"
         }
@@ -7940,52 +7889,6 @@
         "locks": [],
         "basis_en": "The orchestration agent triages more than two million conversations a month and resolves about 84.6% of self-service messaging in channel, but its documented work is answering and routing, with regulated matters and vulnerable customers passed to specialists; no account action is shown as committed by the agent. Observed N2.",
         "basis_fr": "L'agent d'orchestration trie plus de deux millions de conversations par mois et résout environ 84,6 % des échanges de messagerie en libre-service, mais son travail documenté est de répondre et d'orienter, les sujets réglementés et les clients vulnérables étant confiés à des spécialistes ; aucune action sur compte n'est montrée comme engagée par l'agent. Observé N2."
-      }
-    },
-    {
-      "id": "commonwealth-bank--unnamed-ai-fraud-detection-agent",
-      "company": "Commonwealth Bank",
-      "company_country": "Australia",
-      "region": "Oceania",
-      "sector": "Financial Services",
-      "solution_name": "Unnamed AI fraud detection agent",
-      "solution_named": false,
-      "vendor": "",
-      "use_case": "An agentic AI system detects emerging fraud and scam patterns in transaction and payments data and generates the rules needed to help intercept them, part of the bank's broader annual investment in fraud, scam and cyber defence.",
-      "department": "Fraud and financial crime",
-      "industry": "Banking",
-      "deployment_stage": "production",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-08-31",
-      "sources": [
-        {
-          "url": "https://www.commbank.com.au/articles/newsroom/2026/04/ai-agent-spots-fraud-in-real-time.html",
-          "title": "CommBank develops AI agent that spots new fraud and helps build defences",
-          "publisher": "CommBank Newsroom",
-          "source_type": "company_official",
-          "retrieved_date": "2026-08-31"
-        }
-      ],
-      "confidence": 0.55,
-      "confidence_reason": "Named bank confirmed via the bank's own newsroom describing a real, deployed agent with no public product name; single company_official source keeps confidence moderate.",
-      "coda": {
-        "chain": "fraude",
-        "links": [
-          2,
-          2,
-          1,
-          2,
-          0,
-          0,
-          0,
-          0,
-          1,
-          1
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "CommBank's own newsroom describes an agentic AI system that detects emerging fraud and scam patterns and generates candidate rules to intercept them as part of a $1bn annual fraud, scam and cyber investment; it detects and proposes with no evidence of autonomously deploying blocks, so observed N2.",
-        "basis_fr": "Le site d'actualites de CommBank decrit un systeme d'IA agentique qui detecte de nouveaux schemas de fraude et genere des regles candidates pour les intercepter, dans le cadre d'un investissement annuel d'un milliard de dollars contre la fraude et la cybercriminalite ; il detecte et propose sans preuve de blocage autonome, donc observe N2."
       }
     },
     {
@@ -8932,14 +8835,14 @@
           0,
           0
         ],
-        "observed": 3,
+        "observed": 2,
         "locks": [
           "data",
           "mandate",
           "supervision"
         ],
-        "basis_en": "The model sets prices on ≈3% of the domestic network (20% targeted), disclosed to investors with an explicit public prohibition (no pricing on personal data): autonomous price publication within stated bounds. Observed N3.",
-        "basis_fr": "Le modèle fixe les prix sur ≈3 % du réseau domestique (cible 20 %), déclaré aux investisseurs avec un interdit public explicite (pas de prix sur données personnelles) : publication de prix autonome dans des bornes affichées. Observé N3."
+        "basis_en": "Delta calls it a decision support tool that provides informed insights for analysts, who oversee and fine tune the recommendations, and says it is evaluating the pricing functionality in test markets. Recommending a price an analyst validates is validated execution, not autonomous publication.",
+        "basis_fr": "La compagnie décrit un outil d'aide à la décision qui fournit des éclairages à ses analystes, lesquels supervisent et ajustent les recommandations, et dit évaluer la fonction de tarification sur des marchés tests. Recommander un prix qu'un analyste valide, c'est de l'exécution validée, pas une publication autonome."
       }
     },
     {
@@ -11136,55 +11039,6 @@
       }
     },
     {
-      "company": "Etihad Airways",
-      "company_country": "United Arab Emirates",
-      "region": "Middle East",
-      "sector": "Travel & Transportation",
-      "solution_name": "PROS RM",
-      "vendor": "PROS",
-      "use_case": "AI-powered revenue management that forecasts demand and optimizes bid prices across the network, recognized with a 2024 PROS customer award for profit impact.",
-      "department": "Revenue management",
-      "industry": "Airline",
-      "deployment_stage": "production",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-07-13",
-      "sources": [
-        {
-          "url": "https://www.aviationbusinessme.com/analysis/how-ai-is-reshaping-aviation-for-airlines-and-airports",
-          "title": "How AI Is Reshaping Aviation For Airlines And Airports",
-          "publisher": "Aviation Business Middle East",
-          "source_type": "news_media",
-          "retrieved_date": "2026-07-13"
-        }
-      ],
-      "confidence": 0.6,
-      "confidence_reason": "Independent trade coverage names the airline and the PROS RM deployment; single retrieved source, so confidence stays moderate.",
-      "id": "etihad-airways--pros-rm",
-      "coda": {
-        "chain": "revenue",
-        "links": [
-          1,
-          2,
-          0,
-          2,
-          1,
-          0,
-          0,
-          1,
-          0,
-          0
-        ],
-        "observed": 3,
-        "locks": [
-          "data",
-          "mandate",
-          "supervision"
-        ],
-        "basis_en": "Demand forecasting and bid-price optimization across the network, recognized for profit impact: bid prices flow into distribution continuously under RM bounds and supervision. Observed N3.",
-        "basis_fr": "Prévision de demande et optimisation des bid prices sur tout le réseau, primées pour l'impact profit : les prix alimentent la distribution en continu dans les bornes du RM. Observé N3."
-      }
-    },
-    {
       "id": "evm-energieversorgung-mittelrhein--eva",
       "company": "EVM (Energieversorgung Mittelrhein)",
       "company_country": "Germany",
@@ -11709,52 +11563,6 @@
       "provenance": "manual",
       "confidence": 0.75,
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
-    },
-    {
-      "id": "financial-services-agency-japan--unnamed-regional-bank-customer-service-agent",
-      "company": "Financial Services Agency (Japan)",
-      "company_country": "Japan",
-      "region": "East Asia",
-      "sector": "Public Sector & Education",
-      "solution_name": "Unnamed regional-bank customer service agent",
-      "solution_named": false,
-      "vendor": "",
-      "use_case": "Japan's financial regulator is developing an AI agent to help regional banks handle customer service, as reported by The Japan Times in May 2026: a government-built agent intended to be shared across the country's regional banking sector.",
-      "department": "Public services",
-      "industry": "Government / financial regulation",
-      "deployment_stage": "announced",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-07-23",
-      "sources": [
-        {
-          "url": "https://www.japantimes.co.jp/business/2026/05/08/tech/fsa-ai-regional-banks/",
-          "title": "FSA to develop AI agent to help with customer service at regional banks",
-          "publisher": "The Japan Times",
-          "source_type": "news_media",
-          "retrieved_date": "2026-07-23"
-        }
-      ],
-      "confidence": 0.6,
-      "confidence_reason": "Reported by an independent national newspaper; the program is announced and in development, with no production results yet.",
-      "coda": {
-        "chain": "care",
-        "links": [
-          1,
-          0,
-          1,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "observed": 1,
-        "locks": [],
-        "basis_en": "Announced and in development: nothing runs in production to observe yet. Provisional N1 at announcement stage.",
-        "basis_fr": "Annoncé et en développement : rien ne tourne encore en production à constater. N1 provisoire au stade de l'annonce."
-      }
     },
     {
       "company": "FinecoBank",
@@ -20765,14 +20573,14 @@
           0,
           0
         ],
-        "observed": 3,
+        "observed": 2,
         "locks": [
           "data",
           "mandate",
           "supervision"
         ],
-        "basis_en": "Airtime purchases and data-bundle subscriptions executed in-channel 24/7 across four platforms, per the operator and press. Bounded transactional catalogue, telco-grade supervision. Observed N3.",
-        "basis_fr": "Achats de crédit et souscriptions de forfaits exécutés dans le canal 24/7 sur quatre plateformes, selon l'opérateur et la presse. Catalogue transactionnel borné, supervision d'opérateur. Observé N3."
+        "basis_en": "MTN's own page sets the bound: for purchases, customers must register and a one time password is generated for authentication. An authorisation before every purchase is validated execution.",
+        "basis_fr": "La page de MTN pose la borne : pour les achats, le client doit s'enregistrer et un code à usage unique est généré pour l'authentification. Une autorisation avant chaque achat, c'est de l'exécution validée."
       }
     },
     {
@@ -29779,14 +29587,14 @@
           0,
           0
         ],
-        "observed": 3,
+        "observed": 2,
         "locks": [
           "data",
           "mandate",
           "supervision"
         ],
-        "basis_en": "Product information plus executed transactions (top-ups, purchases) across app and messaging channels; self-service interactions grew from 19% to 45%. The transaction set is bounded and supervised by the operator. Observed N3.",
-        "basis_fr": "Information produit et transactions exécutées (recharges, achats) sur l'app et les messageries ; le self-service est passé de 19 % à 45 % des interactions. Le périmètre transactionnel est borné et supervisé par l'opérateur. Observé N3."
+        "basis_en": "The vendor's account has Veronika recommending suitable package choices, offering product knowledge and addressing concerns, and handling repetitive calls. No transaction it carries out is described anywhere.",
+        "basis_fr": "Le récit de l'éditeur montre Veronika recommandant des forfaits adaptés, apportant de la connaissance produit et traitant les préoccupations, et prenant les appels répétitifs. Aucune transaction qu'elle réaliserait n'est décrite."
       }
     },
     {
@@ -30145,52 +29953,6 @@
       "provenance": "manual",
       "confidence": 0.75,
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
-    },
-    {
-      "company": "TotalEnergies",
-      "company_country": "France",
-      "region": "Europe",
-      "sector": "Energy & Utilities",
-      "solution_name": "Unnamed production-forecasting and maintenance AI",
-      "solution_named": false,
-      "vendor": "",
-      "use_case": "AI used for years across exploration and production to forecast and refine output at oil and gas fields, improve predictive maintenance and detect equipment anomalies, industrialized through the company's Digital Factory and its roughly 300 AI and digital experts.",
-      "department": "Exploration & production",
-      "industry": "Oil & gas",
-      "deployment_stage": "production",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-07-13",
-      "sources": [
-        {
-          "url": "https://totalenergies.com/news/news/ia-expediting-energy-transition",
-          "title": "At TotalEnergies, AI accelerates the energy transition",
-          "publisher": "TotalEnergies",
-          "source_type": "company_official",
-          "retrieved_date": "2026-07-13"
-        }
-      ],
-      "confidence": 0.65,
-      "confidence_reason": "Official company page states years of production use across E&P; no independent coverage retrieved this run and no public product name, so confidence stays moderate.",
-      "id": "totalenergies--unnamed-production-forecasting-and-maintenance-ai",
-      "coda": {
-        "chain": "ops",
-        "links": [
-          0,
-          2,
-          1,
-          2,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "Years of production forecasting, anomaly detection and predictive maintenance industrialized by the Digital Factory: detection runs continuously, engineers decide the actions. Observed N2.",
-        "basis_fr": "Des années de prévision de production, de détection d'anomalies et de maintenance prédictive industrialisées par la Digital Factory : la détection tourne en continu, les ingénieurs décident des actions. Observé N2."
-      }
     },
     {
       "company": "Tottenham Hotspur",
@@ -33803,7 +33565,7 @@
           "source_type": "news_media"
         },
         {
-          "metric": "Queries resolved autonomously",
+          "metric": "Customer queries the company says it is designed to handle autonomously, a stated capability rather than a measured result",
           "value": "up to 80%",
           "source_type": "news_media"
         }

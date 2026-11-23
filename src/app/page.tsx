@@ -25,7 +25,7 @@ import { getMomentum } from "@/lib/momentum";
 // Flagship brands for the ticker under the hero, French-led for French
 // visitors. Every name must match a company in the index (checked at build).
 const BRANDS_FR = [
-  "L'Oréal", "Carrefour", "SNCF", "AXA", "TotalEnergies", "Renault", "Orange", "Sanofi", "Decathlon", "ENGIE",
+  "L'Oréal", "Carrefour", "SNCF", "AXA", "Renault", "Orange", "Sanofi", "Decathlon", "ENGIE",
   "Schneider Electric", "Sephora", "Publicis Groupe", "Havas", "Nestlé", "Unilever", "IKEA", "HSBC", "BMW",
   "Mercedes-Benz", "Allianz", "Generali", "Banco Santander", "BBVA", "Deutsche Telekom", "Lufthansa Group",
   "Zalando", "Spotify", "Novo Nordisk", "Maersk",
