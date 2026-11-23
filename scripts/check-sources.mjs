@@ -44,13 +44,23 @@ async function probe(url) {
         signal: AbortSignal.timeout(20000),
         headers: { "user-agent": UA },
       });
-      // Certains serveurs refusent HEAD sans que la page ait disparu.
-      if (method === "HEAD" && (res.status === 405 || res.status === 501)) continue;
+      // Certains serveurs gèrent mal HEAD : les uns le refusent franchement,
+      // les autres répondent 404 à une page qu'un GET sert en 200. Dans les
+      // deux cas on redemande en GET avant de conclure quoi que ce soit.
+      if (method === "HEAD" && [404, 405, 410, 501].includes(res.status)) continue;
       return { status: res.status };
     } catch (err) {
       if (method === "GET") return { status: 0, error: String(err.cause?.code || err.name || err) };
     }
   }
+}
+
+// Un site qui voit arriver huit requêtes d'un coup répond parfois 404 à l'une
+// d'elles. Avant de déclarer une preuve morte, on la redemande seule : sans ce
+// second passage, le rapport accuse des sources qui se portent très bien.
+async function confirm(url) {
+  await new Promise((r) => setTimeout(r, 1500));
+  return probe(url);
 }
 
 const urls = [...byUrl.keys()];
@@ -68,7 +78,14 @@ await Promise.all(
 );
 
 const is = (u, f) => f(status[u]);
-const dead = urls.filter((u) => is(u, (r) => r.status === 404 || r.status === 410 || r.error === "ENOTFOUND"));
+const isDead = (r) => r.status === 404 || r.status === 410 || r.error === "ENOTFOUND";
+const suspects = urls.filter((u) => isDead(status[u]));
+if (suspects.length) {
+  process.stderr.write(`${suspects.length} source(s) à reconfirmer une par une\n`);
+  for (const u of suspects) status[u] = await confirm(u);
+}
+
+const dead = urls.filter((u) => is(u, isDead));
 const refused = urls.filter((u) => is(u, (r) => r.status === 403 || r.status === 429));
 const unreachable = urls.filter((u) => is(u, (r) => r.status === 0 && r.error !== "ENOTFOUND"));
 const ok = urls.filter((u) => is(u, (r) => r.status >= 200 && r.status < 400));
