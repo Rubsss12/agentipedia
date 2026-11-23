@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23T08:57:19.771Z",
+ "updated_at": "2026-11-23T09:03:39.177Z",
  "entries": {
   "1-800accountant--agentforce": "2025-08-04",
   "1st-central-group--motivo-kai-assistant": "2026-10-21",
@@ -4126,6 +4126,14 @@
   "https://view.asiae.co.kr/article/2026112011253150991": {
    "date": "2026-11-20",
    "how": "page"
+  },
+  "https://web.archive.org/web/20261105001317/https://www.microsoft.com/en/customers/story/26047-air-india-azure-openai-in-foundry-models": {
+   "date": null,
+   "how": "none (archive)"
+  },
+  "https://web.archive.org/web/20260614231009/https://www.cimb.com/en/newsroom/2021/cimb-unveils-eva-the-first-in-market-chatbot-for-commercial-banking-in-malaysia.html": {
+   "date": null,
+   "how": "none (archive)"
   }
  }
 }
