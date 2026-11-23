@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T10:25:56.718Z",
+  "updated_at": "2026-11-23T16:07:58.143Z",
   "entries": [
     {
       "id": "1-800accountant--agentforce",
@@ -719,6 +719,51 @@
       }
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "Adobe Population Health",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Healthcare, Life Sciences & Luxury",
+      "use_case": "An agent that retrieves patient data and hands nurses an up to date summary before a visit, in place of manual collection.",
+      "department": "Care management",
+      "industry": "Population health",
+      "deployment_stage": "production",
+      "confidence": 0.4,
+      "confidence_reason": "Named company and named solution, but the only source is Salesforce's own customer page and it publishes no figure.",
+      "coda": {
+        "chain": "soin",
+        "links": [
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent assembles the record and the nurse delivers the care; observed is N2.",
+        "basis_fr": "L'agent assemble le dossier et l'infirmiere dispense le soin; l'observe est N2."
+      },
+      "id": "adobe-population-health--agentforce"
+    },
+    {
       "id": "adt--sierra",
       "company": "ADT",
       "company_country": "United States",
@@ -1405,6 +1450,51 @@
       }
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "Albo",
+      "company_country": "Mexico",
+      "region": "Latin America",
+      "sector": "Financial Services",
+      "solution_name": "Albot",
+      "vendor": "Google Cloud",
+      "use_case": "A chatbot powered by Gemini models that gives round the clock financial advice, handles customer onboarding and answers support questions for millions of first time banking users.",
+      "department": "Customer service",
+      "industry": "Neobank",
+      "deployment_stage": "production",
+      "confidence": 0.45,
+      "confidence_reason": "Named neobank and named agent, but the only source is Google Cloud's own customer list and it publishes no measured result.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          1,
+          2,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Albot advises, onboards and answers; the source shows no decision the agent commits on its own, and it is a vendor page, so observed is N2.",
+        "basis_fr": "Albot conseille, inscrit et repond; la source ne montre aucune decision que l'agent engage seul, et il s'agit d'une page editeur, donc l'observe est N2."
+      },
+      "id": "albo--albot"
+    },
+    {
       "company": "Alcaldía de Bogotá (Línea 195)",
       "company_country": "Colombia",
       "region": "Latin America",
@@ -2085,6 +2175,57 @@
       }
     },
     {
+      "company": "Anthropic",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Technology & Software",
+      "solution_name": "Fin",
+      "vendor": "Salesforce",
+      "use_case": "A customer agent handling the AI company's own support conversations across channels, resolving most of what reaches it without a human.",
+      "department": "Customer support",
+      "industry": "Artificial intelligence",
+      "deployment_stage": "production",
+      "first_seen_date": "2026-11-23",
+      "reported_outcomes": [
+        {
+          "metric": "Conversations reaching the agent that are resolved autonomously",
+          "value": "79%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-job-ready-ai-agents/",
+          "title": "Salesforce Expands Agentforce With a New Portfolio of AI Agents Built for High-Value Work",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Named company, named agent and a published resolution rate, but the only source is Salesforce's own launch announcement, and resolved is not defined there.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent closes most support conversations on its own, which stays within answering and routing, and marketing is the only attestation, so observed is N2.",
+        "basis_fr": "L'agent clot seul la majorite des conversations de support, ce qui reste de la reponse et de l'orientation, et seule une source marketing l'atteste, donc l'observe est N2."
+      },
+      "id": "anthropic--fin"
+    },
+    {
       "company": "Apple Tree Honda & Acura",
       "company_country": "United States",
       "region": "North America",
@@ -2143,6 +2284,51 @@
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "ARCHINERGY",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Professional & Business Services",
+      "solution_name": "Gemini Enterprise",
+      "vendor": "Google Cloud",
+      "use_case": "An agent built on Gemini Enterprise that answers questions about architectural design and the firm's internal documentation faster than its previous search.",
+      "department": "Design",
+      "industry": "Architecture",
+      "deployment_stage": "production",
+      "confidence": 0.35,
+      "confidence_reason": "Named firm and named platform, but the only source is Google Cloud's own customer list and the time gain carries no number.",
+      "coda": {
+        "chain": "pilotage",
+        "links": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent answers design and documentation questions; it decides nothing, so observed is N2.",
+        "basis_fr": "L'agent repond a des questions de conception et de documentation; il ne decide rien, donc l'observe est N2."
+      },
+      "id": "archinergy--gemini-enterprise"
+    },
+    {
       "id": "arizona-state-university--superhuman-go",
       "company": "Arizona State University",
       "company_country": "United States",
@@ -2192,6 +2378,57 @@
         "basis_en": "Grammarly Superhuman Go, first university deployment, provides contextual student support across siloed data and tools; assistant that answers/informs.",
         "basis_fr": "Superhuman Go de Grammarly, premier deploiement universitaire, offre un soutien contextuel aux etudiants malgre donnees et outils cloisonnes; assistant qui repond/informe."
       }
+    },
+    {
+      "company": "Asana",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Technology & Software",
+      "solution_name": "Piper",
+      "vendor": "Salesforce",
+      "use_case": "An inbound pipeline generation agent on the work management company's website, which engages visitors, qualifies them and turns inbound interest into pipeline for the sales and marketing teams.",
+      "department": "Marketing",
+      "industry": "Work management software",
+      "deployment_stage": "production",
+      "first_seen_date": "2026-11-23",
+      "reported_outcomes": [
+        {
+          "metric": "Conversation volume driven by the agent",
+          "value": "four times higher",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-job-ready-ai-agents/",
+          "title": "Salesforce Expands Agentforce With a New Portfolio of AI Agents Built for High-Value Work",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Named company, named agent and a published multiple, but the only source is Salesforce's own launch announcement.",
+      "coda": {
+        "chain": "vente",
+        "links": [
+          1,
+          2,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent engages and qualifies inbound leads and hands them to sellers; observed is N2.",
+        "basis_fr": "L'agent engage et qualifie les leads entrants et les transmet aux commerciaux; l'observe est N2."
+      },
+      "id": "asana--piper"
     },
     {
       "company": "Asiacell",
@@ -2393,6 +2630,62 @@
       }
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Annual saving against the equivalent human coverage",
+          "value": "$575,000",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Targeted engagement",
+          "value": "427% higher",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "Asymbl",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Professional & Business Services",
+      "use_case": "A sales development agent that qualifies inbound, outbound and nurture leads every day, leaving the human representative the strategic outreach.",
+      "department": "Sales development",
+      "industry": "Staffing technology",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named company and named solution with published figures, but the only source is Salesforce's own customer page.",
+      "coda": {
+        "chain": "vente",
+        "links": [
+          2,
+          2,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent qualifies and engages leads, and the human representative takes the conversations that matter; observed is N2.",
+        "basis_fr": "L'agent qualifie et engage les leads, et le commercial humain reprend les conversations qui comptent; l'observe est N2."
+      },
+      "id": "asymbl--agentforce"
+    },
+    {
       "id": "at-t--ask-at-t-workflows",
       "company": "AT&T",
       "company_country": "United States",
@@ -2552,6 +2845,102 @@
         "basis_en": "Announced GovAI Chat lets APS staff draft, summarise and sense-check work in a government-managed environment ($28.5M initial); a drafting assistant staff rework.",
         "basis_fr": "GovAI Chat, annonce, permet aux agents publics de rediger, resumer et verifier leur travail dans un environnement gouvernemental (28,5 M$ initiaux); assistant de redaction retravaille par les agents."
       }
+    },
+    {
+      "company": "Autism Queensland",
+      "company_country": "Australia",
+      "region": "Oceania",
+      "sector": "Public Sector & Education",
+      "solution_name": "Paige",
+      "vendor": "Salesforce",
+      "use_case": "An employee service agent that resolves administrative requests for the staff of the autism services and education provider, across Slack, portals and the tools employees already use.",
+      "department": "Employee services",
+      "industry": "Disability services and education",
+      "deployment_stage": "production",
+      "first_seen_date": "2026-11-23",
+      "reported_outcomes": [
+        {
+          "metric": "Administrative requests resolved by the agent",
+          "value": "70%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-job-ready-ai-agents/",
+          "title": "Salesforce Expands Agentforce With a New Portfolio of AI Agents Built for High-Value Work",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Named organisation, named agent and a published resolution rate, but the only source is Salesforce's own launch announcement.",
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Salesforce says the agent resolves most administrative requests on its own, which is close to execution, but marketing is the only attestation and no bounds or supervision are published, so observed is held at N2.",
+        "basis_fr": "Salesforce indique que l'agent resout seul la majorite des demandes administratives, ce qui approche l'execution, mais seule une source marketing l'atteste et aucune borne ni supervision n'est publiee, donc l'observe est maintenu a N2."
+      },
+      "id": "autism-queensland--paige"
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "AutoZone",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Retail & E-commerce",
+      "solution_name": "Gemini Enterprise",
+      "vendor": "Google Cloud",
+      "use_case": "Gemini Enterprise used to enrich complex merchandising data automatically and to speed up software development through AI driven coding and testing at the car parts retailer.",
+      "department": "Merchandising and IT",
+      "industry": "Automotive parts retail",
+      "deployment_stage": "production",
+      "confidence": 0.4,
+      "confidence_reason": "Named retailer and named platform, but the only source is Google Cloud's own customer list, with no figure.",
+      "coda": {
+        "chain": "supply",
+        "links": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The platform enriches merchandising data and generates code and tests; the source names no decision it commits, so observed is N2.",
+        "basis_fr": "La plateforme enrichit les donnees de merchandising et genere du code et des tests; la source ne nomme aucune decision qu'elle engage, donc l'observe est N2."
+      },
+      "id": "autozone--gemini-enterprise"
     },
     {
       "id": "avis-budget-group--decagon",
@@ -3303,6 +3692,62 @@
         "basis_en": "Conversational assistant trained to understand customer requests and answer banking queries; it informs, a human validates any impact (N2).",
         "basis_fr": "Assistant conversationnel entraine a comprendre les demandes et repondre aux questions bancaires ; il informe, un humain valide tout impact (N2)."
       }
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Customer interactions the agent manages on its own",
+          "value": "95%",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Interactions requiring human intervention",
+          "value": "4%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "company": "Banglalink",
+      "company_country": "Bangladesh",
+      "region": "South Asia",
+      "sector": "Telecommunications",
+      "solution_name": "REN",
+      "vendor": "Google Cloud",
+      "use_case": "A chatbot powered by Gemini for the operator's Ryze digital brand, which handles balance enquiries, package purchases, bill payments and SIM services in English, Bengali and Bengali written in Roman script.",
+      "department": "Customer service",
+      "industry": "Mobile operator",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named operator and named agent with published shares of traffic, but the only source is Google Cloud's own customer list, which is why its autonomy claim is not taken at face value.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "REN is credited with buying packages and paying bills, which would be execution, but Google's own page is the only attestation and no mandate or supervision is published, so observed is held at N2.",
+        "basis_fr": "On attribue a REN l'achat de forfaits et le paiement de factures, ce qui serait de l'execution, mais seule la page de Google l'atteste et aucun mandat ni supervision n'est publie, donc l'observe est maintenu a N2."
+      },
+      "id": "banglalink--ren"
     },
     {
       "id": "bank-abc-arab-banking-corporation--fatema",
@@ -4455,6 +4900,51 @@
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "Bionic",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Professional & Business Services",
+      "use_case": "Agents that take routine tasks off the advisers of a small business services platform, so its 200,000 customers can get support at any hour and the human team keeps the hands on work.",
+      "department": "Customer service",
+      "industry": "Business services",
+      "deployment_stage": "production",
+      "confidence": 0.4,
+      "confidence_reason": "Named company and named solution, but the only source is Salesforce's own customer page and it publishes no result.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent answers customers and hands over what it cannot resolve; it commits nothing on its own, so observed is N2.",
+        "basis_fr": "L'agent repond aux clients et transfere ce qu'il ne peut pas resoudre; il n'engage rien seul, donc l'observe est N2."
+      },
+      "id": "bionic--agentforce"
+    },
+    {
       "company": "Birlasoft",
       "company_country": "India",
       "region": "South Asia",
@@ -5255,6 +5745,51 @@
       }
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "Broadcom",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Technology & Software",
+      "solution_name": "Gemini Code Assist",
+      "vendor": "Google Cloud",
+      "use_case": "An enterprise coding assistant for the semiconductor company's development teams, able to work from the company's own code base, standards and conventions.",
+      "department": "Engineering",
+      "industry": "Semiconductors",
+      "deployment_stage": "production",
+      "confidence": 0.35,
+      "confidence_reason": "Named company and named product, but the only source is Google Cloud's own customer list, with no figure.",
+      "coda": {
+        "chain": "delivery",
+        "links": [
+          0,
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The assistant writes code that engineers review; observed is N2.",
+        "basis_fr": "L'assistant ecrit du code que les ingenieurs relisent; l'observe est N2."
+      },
+      "id": "broadcom--gemini-code-assist"
+    },
+    {
       "id": "bryan-cave-leighton-paisner-bclp--legora",
       "company": "Bryan Cave Leighton Paisner (BCLP)",
       "company_country": "United Kingdom",
@@ -5471,6 +6006,139 @@
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/customers/bunnings",
+          "title": "Bunnings achieves 2x online conversions with Gemini Enterprise for CX",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        },
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Online conversion rate for transactions involving the assistant",
+          "value": "more than double",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Average order value",
+          "value": "significantly higher",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Time to bring the assistant to market",
+          "value": "six weeks",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "company": "Bunnings",
+      "company_country": "Australia",
+      "region": "Oceania",
+      "sector": "Retail & E-commerce",
+      "solution_name": "Buddy",
+      "vendor": "Google Cloud (Gemini Enterprise for CX)",
+      "use_case": "An agentic shopping assistant, built on Gemini Enterprise for Customer Experience, that walks customers through designing a home improvement project online, gives product information and selection advice, reads a photograph of a handwritten list and can put a shopper in touch with a contractor. Safety guardrails were codified with the Google team so that the assistant keeps customers from taking on dangerous jobs themselves.",
+      "department": "Customer experience",
+      "industry": "Hardware retail",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named retailer, named assistant, a quote from its chief information officer and two published results, but both sources are Google's own customer pages and the figures are the vendor's.",
+      "coda": {
+        "chain": "commerce",
+        "links": [
+          0,
+          2,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate"
+        ],
+        "basis_en": "Buddy advises, scopes a project and puts shoppers in touch with contractors, while the checkout stays with the customer, so observed is N2; the prohibitions codified with Google, which stop the assistant from encouraging dangerous work, are a documented written bound.",
+        "basis_fr": "Buddy conseille, cadre un projet et met les clients en relation avec des artisans, le paiement restant au client, donc l'observe est N2; les interdits codifies avec Google, qui empechent l'assistant d'encourager des travaux dangereux, constituent une borne ecrite documentee."
+      },
+      "id": "bunnings--buddy"
+    },
+    {
+      "company": "bunq",
+      "company_country": "Netherlands",
+      "region": "Europe",
+      "sector": "Financial Services",
+      "solution_name": "Finn",
+      "vendor": "In-house, on Amazon Bedrock",
+      "use_case": "The neobank's user service agent, rebuilt three times and now embedded directly in the core banking backend, where it authenticates as the user it is talking to, reads the same data that user can see and carries out actions in their name. A large orchestrator model holds the conversation and delegates narrow jobs, such as finding a missing payment, to smaller sub agents.",
+      "department": "User service",
+      "industry": "Neobank",
+      "deployment_stage": "production",
+      "first_seen_date": "2026-11-23",
+      "reported_outcomes": [
+        {
+          "metric": "User interactions handled by the agent",
+          "value": "97%",
+          "source_type": "other"
+        },
+        {
+          "metric": "User queries resolved autonomously",
+          "value": "87%",
+          "source_type": "other"
+        },
+        {
+          "metric": "User approval rating",
+          "value": "90%",
+          "source_type": "other"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.thestack.technology/bunq-multi-agent-ai-production-use-case/",
+          "title": "This European neobank is doing amazing things with agents in production",
+          "publisher": "The Stack",
+          "source_type": "other",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "confidence": 0.6,
+      "confidence_reason": "A detailed technical interview with the bank's machine learning engineering lead, naming the agent and its figures, but the article carries a sponsored label, so it is not treated as independent reporting.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          1,
+          0
+        ],
+        "observed": 3,
+        "locks": [
+          "mandate"
+        ],
+        "basis_en": "Finn authenticates as the user and carries out actions in their name, resolving 87% of queries without a human, which is delegated execution; bunq describes a scope defined with compliance and legal before each expansion, but the public record documents neither measured data quality nor a named supervisor, so the declared level is held at N2.",
+        "basis_fr": "Finn s'authentifie comme l'utilisateur et execute des actions en son nom, resolvant 87% des demandes sans humain, ce qui est de l'execution deleguee; bunq decrit un perimetre defini avec la conformite et le juridique avant chaque extension, mais le public ne documente ni qualite de donnee mesuree ni superviseur nomme, donc le niveau declare est maintenu a N2."
+      },
+      "id": "bunq--finn"
+    },
+    {
       "id": "burger-king--patty",
       "company": "Burger King",
       "company_country": "United States",
@@ -5652,6 +6320,62 @@
       }
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Campaign return on ad spend after deploying the agents",
+          "value": "35% higher",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Employee time saved on internal manual tasks",
+          "value": "3,000 hours",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "company": "Cadent",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Media & Entertainment",
+      "solution_name": "Gemini Enterprise",
+      "vendor": "Google Cloud",
+      "use_case": "Custom agents that take on complex internal tasks at the advertising platform, from campaign operations to manual back office work.",
+      "department": "Operations",
+      "industry": "Advertising technology",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named company and named platform with two published figures, but the only source is Google Cloud's own customer list.",
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          0,
+          2,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agents run internal tasks and campaign work end to end enough to move return on ad spend, but the source names no decision they commit and no bounds, so observed is N2.",
+        "basis_fr": "Les agents prennent en charge des taches internes et du travail de campagne au point de deplacer le retour sur investissement publicitaire, mais la source ne nomme aucune decision qu'ils engagent ni aucune borne, donc l'observe est N2."
+      },
+      "id": "cadent--gemini-enterprise"
+    },
+    {
       "id": "caixabank--agentforce",
       "company": "CaixaBank",
       "company_country": "Spain",
@@ -5762,6 +6486,51 @@
       }
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "Camanchaca",
+      "company_country": "Chile",
+      "region": "Latin America",
+      "sector": "Consumer Goods & Manufacturing",
+      "solution_name": "Elon",
+      "vendor": "Google Cloud",
+      "use_case": "A virtual assistant built in six weeks to handle customer service on the seafood company's digital channels.",
+      "department": "Customer service",
+      "industry": "Seafood",
+      "deployment_stage": "pilot",
+      "confidence": 0.35,
+      "confidence_reason": "Named company and named assistant, but the only source is Google Cloud's own customer list and it states an aim rather than a result.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Elon is described as aiming to make customer service more efficient on digital channels; it answers, so observed is N2.",
+        "basis_fr": "Elon est presente comme visant un service client plus efficace sur les canaux digitaux; il repond, donc l'observe est N2."
+      },
+      "id": "camanchaca--elon"
+    },
+    {
       "id": "camden-property-trust--amplify-ai-virtual-leasing-agent",
       "company": "Camden Property Trust",
       "company_country": "United States",
@@ -5811,6 +6580,115 @@
         "basis_en": "Amplify automates prospect communication, scheduling and screening across ~171 properties; evidence is a single vendor case study, capping observed at N2 and action maillons at partial.",
         "basis_fr": "Amplify automatise la communication avec les prospects, la prise de rendez-vous et le filtrage sur ~171 residences; la preuve est une seule etude de cas fournisseur, plafonnant l'observe a N2 et les maillons d'action au partiel."
       }
+    },
+    {
+      "company": "Capcom",
+      "company_country": "Japan",
+      "region": "East Asia",
+      "sector": "Media & Entertainment",
+      "solution_name": "Gemini Enterprise Agent Platform",
+      "vendor": "Google Cloud",
+      "use_case": "Specialised playtesting agents, including visual inspection, predictive and institutional knowledge agents, which navigate large game worlds on their own to find bugs, visual glitches and audio inconsistencies, freeing the studio's creative teams from defensive development.",
+      "department": "Quality assurance",
+      "industry": "Video games",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Playtesting logged by the agents",
+          "value": "more than 30,000 hours per month",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-customer-round-up/",
+          "title": "10 leading enterprises show why agents mean business",
+          "publisher": "Google",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        },
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Named studio and named platform with a volume figure, but both sources are Google's own customer pages.",
+      "coda": {
+        "chain": "delivery",
+        "links": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agents run the tests themselves and log what they find, which is an execution step inside testing, but the fixes and the release stay with Capcom's engineers and no bounds are published, so observed is N2.",
+        "basis_fr": "Les agents executent eux-memes les tests et consignent ce qu'ils trouvent, ce qui constitue une execution a l'interieur de la phase de test, mais les corrections et la publication restent aux ingenieurs de Capcom et aucune borne n'est publiee, donc l'observe est N2."
+      },
+      "id": "capcom--gemini-enterprise-agent-platform"
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Time to hire, as a claimed capability",
+          "value": "from months to as little as 24 hours",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "Capita",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Professional & Business Services",
+      "use_case": "Agents deployed on high volume recruitment tasks, as the cornerstone of an outsourcing offer the group plans to sell as recruitment as a service.",
+      "department": "Recruitment",
+      "industry": "Business process outsourcing",
+      "deployment_stage": "production",
+      "confidence": 0.45,
+      "confidence_reason": "Named group and named solution, but the only source is Salesforce's own customer page and its time to hire figure is stated as what the agents can do, not as a measured result.",
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          2,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agents run recruitment tasks and the hiring decision stays human; the headline figure is a capability claim, so observed is N2.",
+        "basis_fr": "Les agents executent des taches de recrutement et la decision d'embauche reste humaine; le chiffre mis en avant est une promesse de capacite, donc l'observe est N2."
+      },
+      "id": "capita--agentforce"
     },
     {
       "company": "Capital One",
@@ -5880,6 +6758,57 @@
         "basis_en": "Eno issues virtual card numbers and flags unusual charges on its own, at bank scale, independently covered. The action set is narrow and bounded; monitoring is the product. Observed N3.",
         "basis_fr": "Eno émet des numéros de carte virtuels et signale seul les transactions inhabituelles, à l'échelle de la banque, sous couverture indépendante. Le périmètre d'action est étroit et borné ; la surveillance est le produit. Observé N3."
       }
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Research time before a call",
+          "value": "92% lower, from up to an hour to a few minutes",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "Carnegie Learning",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Public Sector & Education",
+      "use_case": "An agent that writes account summaries for sales representatives on the spot, replacing manual research before a call.",
+      "department": "Sales",
+      "industry": "Education technology",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named company and named solution with a published time saving, but the only source is Salesforce's own customer page.",
+      "coda": {
+        "chain": "vente",
+        "links": [
+          0,
+          1,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent assembles the summary and the representative makes the call; observed is N2.",
+        "basis_fr": "L'agent assemble la synthese et le commercial passe l'appel; l'observe est N2."
+      },
+      "id": "carnegie-learning--agentforce"
     },
     {
       "id": "carrefour--hopla",
@@ -6623,6 +7552,62 @@
       }
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Click through rate, after deploying the image search and the chatbot",
+          "value": "16% higher",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Average purchase value, same deployment",
+          "value": "122% higher",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "company": "Cia.Hering",
+      "company_country": "Brazil",
+      "region": "Latin America",
+      "sector": "Retail & E-commerce",
+      "solution_name": "Herica",
+      "vendor": "Google Cloud",
+      "use_case": "A chatbot that personalises messages and answers customer questions for the Brazilian clothing retailer, deployed alongside an image search that lets shoppers find a garment from a photo.",
+      "department": "E-commerce",
+      "industry": "Apparel retail",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named retailer and named chatbot with published figures, but the only source is Google Cloud's own customer list and the figures cover the chatbot and the image search together.",
+      "coda": {
+        "chain": "commerce",
+        "links": [
+          0,
+          2,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Herica answers and personalises the conversation, the shopper buys; observed is N2.",
+        "basis_fr": "Herica repond et personnalise la conversation, le client achete; l'observe est N2."
+      },
+      "id": "cia-hering--herica"
+    },
+    {
       "id": "cimb--eva",
       "company": "CIMB",
       "company_country": "Malaysia",
@@ -6673,6 +7658,58 @@
         "basis_en": "EVA is a conversational SME-banking chatbot with sentiment analysis and automated email responses reaching 94% accuracy; it answers and drafts follow-ups that stay validated, so N2.",
         "basis_fr": "EVA est un chatbot conversationnel de banque PME avec analyse de sentiment et reponses email automatisees atteignant 94% de precision; il repond et redige des suivis restant valides, donc N2."
       }
+    },
+    {
+      "company": "Citigroup",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Financial Services",
+      "solution_name": "Citi Sky",
+      "vendor": "Google Cloud and Google DeepMind",
+      "use_case": "An always on AI member of the Citi Wealth team, built on the Gemini Enterprise Agent Platform with Google DeepMind avatar technology, announced in April 2026 for a phased rollout to Citigold clients in the United States. At launch it prompts clients ahead of certificate of deposit maturity events, passes on market insight from Citi Wealth's Chief Investment Office, and converses in English and Spanish.",
+      "department": "Wealth management",
+      "industry": "Wealth management",
+      "deployment_stage": "announced",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.citigroup.com/global/news/press-release/2026/citi-wealth-unveils-citi-sky-ai-powered-member-google-cloud-deepmind-technologies",
+          "title": "Citi Wealth Unveils Citi Sky, An AI-Powered Member of the Citi Wealth Team",
+          "publisher": "Citigroup",
+          "source_type": "press_release",
+          "retrieved_date": "2026-11-23"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-customer-round-up/",
+          "title": "10 leading enterprises show why agents mean business",
+          "publisher": "Google",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Citi's own press release of 22 April 2026 names the agent, its features and its rollout plan, and Google's customer round up repeats it, but both are launch communications: no source in this run confirms the phased rollout reached clients, and none publishes a result.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          1,
+          1,
+          2,
+          1,
+          0,
+          0,
+          2,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Citi's head of Wealth says the client simply asks and acts, bringing insight and execution together, but the press release describes prompts, insight and conversation, with advisors making the client's decisions; interactions are said to be designed for compliance rather than audited, so observed stays at N2.",
+        "basis_fr": "Le responsable de Citi Wealth affirme que le client demande puis agit, reunissant analyse et execution, mais le communique decrit des alertes, de l'analyse et de la conversation, les decisions restant prises avec les conseillers; les interactions sont dites concues pour la conformite et non auditees, donc l'observe reste a N2."
+      },
+      "id": "citigroup--citi-sky"
     },
     {
       "id": "citigroup--citi-stylus-workspaces-with-citi-assist",
@@ -7192,6 +8229,62 @@
         "basis_en": "Cognizant is deploying Claude and Claude Code to up to 350,000 associates for coding, testing, documentation and DevOps; it generates code and docs that engineers review, so N2.",
         "basis_fr": "Cognizant deploie Claude et Claude Code aupres de jusqu'a 350 000 collaborateurs pour le code, les tests, la documentation et le DevOps; il genere code et documentation que les ingenieurs revoient, donc N2."
       }
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Students a coach can serve",
+          "value": "four times as many",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Students served per year in total",
+          "value": "25,000",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "College Possible",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Public Sector & Education",
+      "use_case": "An agent that takes the research work off college access coaches so they can spend their time with students.",
+      "department": "Coaching",
+      "industry": "Education nonprofit",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named nonprofit and named solution with published figures, but the only source is Salesforce's own customer page.",
+      "coda": {
+        "chain": "public",
+        "links": [
+          0,
+          0,
+          2,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent researches and prepares, the coach meets the student; observed is N2.",
+        "basis_fr": "L'agent cherche et prepare, le coach rencontre l'etudiant; l'observe est N2."
+      },
+      "id": "college-possible--agentforce"
     },
     {
       "company": "Color Health",
@@ -7992,6 +9085,118 @@
       }
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Transactional decisions automated in email order processing",
+          "value": "80%",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Average customer response time",
+          "value": "from 42 hours to near real time",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Systems consolidated into a single interface",
+          "value": "5",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "company": "Danfoss",
+      "company_country": "Denmark",
+      "region": "Europe",
+      "sector": "Consumer Goods & Manufacturing",
+      "solution_name": "Go Autonomous",
+      "vendor": "Go Autonomous on Google Cloud",
+      "use_case": "Agents that read incoming customer emails and process the orders they contain, replacing five systems with a single interface for the order desk.",
+      "department": "Order management",
+      "industry": "Industrial components",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named manufacturer and named vendor solution with published figures, but the only source is Google Cloud's own customer list, which is why the autonomy it claims is not taken at face value.",
+      "coda": {
+        "chain": "achats",
+        "links": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          1,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The vendor says the agents automate 80% of transactional decisions, which would be execution, but marketing is the only attestation and no bounds or supervision are published, so observed is held at N2.",
+        "basis_fr": "L'editeur affirme que les agents automatisent 80% des decisions transactionnelles, ce qui serait de l'execution, mais seule une source marketing l'atteste et aucune borne ni supervision n'est publiee, donc l'observe est maintenu a N2."
+      },
+      "id": "danfoss--go-autonomous"
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Day to day chat questions resolved accurately by the agent",
+          "value": "70%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "Datasite",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Technology & Software",
+      "use_case": "An agent that handles the day to day chat questions of a dealmaking platform's customers around the clock, freeing service and sales staff for advisory work.",
+      "department": "Customer support",
+      "industry": "Deal technology",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named company and named solution with a published resolution rate, but the only source is Salesforce's own customer page.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent answers customers and hands over what it cannot resolve; it commits nothing on its own, so observed is N2.",
+        "basis_fr": "L'agent repond aux clients et transfere ce qu'il ne peut pas resoudre; il n'engage rien seul, donc l'observe est N2."
+      },
+      "id": "datasite--agentforce"
+    },
+    {
       "id": "dbs-bank--cso-assistant",
       "company": "DBS Bank",
       "company_country": "Singapore",
@@ -8117,6 +9322,51 @@
         "basis_en": "DBS's own announcement and independent coverage describe Joy going agentic for corporate and SME customers, answering data-backed questions on payment status, transfers and fees within a single chat; the reported actions are lookups rather than committed transactions, so observed N2.",
         "basis_fr": "L'annonce de DBS et la presse independante decrivent Joy devenant agentique pour les clients corporate et PME, repondant a des questions sur le statut des paiements, les virements et les frais au sein d'une seule conversation ; les actions rapportees sont des consultations, pas des transactions engagees, donc observe N2."
       }
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "DeAcero",
+      "company_country": "Mexico",
+      "region": "Latin America",
+      "sector": "Consumer Goods & Manufacturing",
+      "solution_name": "Gemini Enterprise Agent Platform",
+      "vendor": "Google Cloud",
+      "use_case": "Agents that read architectural blueprints in PDF form and turn them into detailed cost proposals, cutting the steel producer's response time to customers.",
+      "department": "Sales engineering",
+      "industry": "Steel",
+      "deployment_stage": "production",
+      "confidence": 0.45,
+      "confidence_reason": "Named producer and named platform with a described function, but the only source is Google Cloud's own customer list and the time gain carries no number.",
+      "coda": {
+        "chain": "vente",
+        "links": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agents produce the cost proposal from the drawings; the quote that goes to the customer is still issued by people, so observed is N2.",
+        "basis_fr": "Les agents produisent le chiffrage a partir des plans; le devis envoye au client est encore emis par des humains, donc l'observe est N2."
+      },
+      "id": "deacero--gemini-enterprise-agent-platform"
     },
     {
       "id": "decathlon--zowie-ai-decathlon-customer-service-agent",
@@ -10070,6 +11320,164 @@
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Inbound requests handled by the agent",
+          "value": "60%",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Queries answered since February",
+          "value": "more than 1,000",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "El Jannah",
+      "company_country": "Australia",
+      "region": "Oceania",
+      "sector": "Hospitality & Food",
+      "use_case": "An agent on the charcoal chicken chain's website that answers guest questions around the clock.",
+      "department": "Customer service",
+      "industry": "Restaurants",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named chain and named solution with published figures, but the only source is Salesforce's own customer page, which also credits the wider platform with its customer growth figures.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent answers customers and hands over what it cannot resolve; it commits nothing on its own, so observed is N2.",
+        "basis_fr": "L'agent repond aux clients et transfere ce qu'il ne peut pas resoudre; il n'engage rien seul, donc l'observe est N2."
+      },
+      "id": "el-jannah--agentforce"
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Unstructured policy and procedure documents processed per manufacturing site",
+          "value": "more than 2,500",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "company": "Elanco",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Healthcare, Life Sciences & Luxury",
+      "solution_name": "Elanco.ai",
+      "vendor": "Google Cloud",
+      "use_case": "An agent inside the animal health company's own platform that sorts, summarises, compares and restructures information from the policy and procedure documents of each manufacturing site, to keep compliance documentation consistent and free of outdated or conflicting instructions.",
+      "department": "Manufacturing compliance",
+      "industry": "Animal health",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named company and named platform with a document volume, but the only source is Google Cloud's own customer list, and the $1.3 million figure it quotes is a risk avoided, not a measured gain.",
+      "coda": {
+        "chain": "ops",
+        "links": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent restructures and checks compliance documents, which people then rely on; the source reports no change it commits alone, so observed is N2.",
+        "basis_fr": "L'agent restructure et controle les documents de conformite, sur lesquels les equipes s'appuient ensuite; la source ne rapporte aucune modification qu'il engage seul, donc l'observe est N2."
+      },
+      "id": "elanco--elanco-ai"
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Agents launched",
+          "value": "5",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "Elements.cloud",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Technology & Software",
+      "use_case": "Five agents launched to take administrative work and manual error risk off employees inside the business analysis platform.",
+      "department": "Internal operations",
+      "industry": "Business analysis software",
+      "deployment_stage": "production",
+      "confidence": 0.4,
+      "confidence_reason": "Named company and named solution with a count of agents, but the only source is Salesforce's own customer page and it publishes no result.",
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agents take on administrative work; the source names no decision they commit, so observed is N2.",
+        "basis_fr": "Les agents prennent en charge du travail administratif; la source ne nomme aucune decision qu'ils engagent, donc l'observe est N2."
+      },
+      "id": "elements-cloud--agentforce"
+    },
+    {
       "id": "elevance-health--unnamed-ai-healthcare-navigation-virtual-assistant",
       "company": "Elevance Health",
       "company_country": "United States",
@@ -10589,6 +11997,53 @@
       }
     },
     {
+      "company": "European Space Agency",
+      "company_country": "France",
+      "region": "Europe",
+      "sector": "Public Sector & Education",
+      "solution_name": "Hera companion",
+      "vendor": "Microsoft",
+      "use_case": "A voice companion for the Hera mission, built on Microsoft Foundry, that anyone can talk to: it listens and answers in real time, switches language mid conversation, and acts on the view, turning the spacecraft to show what is being asked about. Every answer is grounded in the agency's own mission knowledge and checked against the platform's safety controls and the agency's own rules.",
+      "department": "Mission communication",
+      "industry": "Space agency",
+      "deployment_stage": "production",
+      "first_seen_date": "2026-11-23",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/voice-agents-in-microsoft-foundry-agent-service-now-generally-available/4573013",
+          "title": "Voice agents in Microsoft Foundry Agent Service now generally available",
+          "publisher": "Microsoft",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Named agency and named agent, described by an ESA cloud services architect as having moved from proof of concept to an operational experience, but the source is Microsoft's own product announcement and publishes no figure.",
+      "coda": {
+        "chain": "public",
+        "links": [
+          2,
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "data"
+        ],
+        "basis_en": "The companion answers and manipulates the display on request, which is action inside a visitor experience rather than a decision that commits the agency, so observed is N2; grounding every answer in ESA's own mission knowledge with published safety checks is a documented data lock.",
+        "basis_fr": "Le compagnon repond et manipule l'affichage a la demande, ce qui constitue une action dans une experience de visite et non une decision qui engage l'agence, donc l'observe est N2; ancrer chaque reponse dans les connaissances de mission de l'ESA avec des controles de securite publies constitue un verrou donnee documente."
+      },
+      "id": "european-space-agency--hera-companion"
+    },
+    {
       "id": "evm-energieversorgung-mittelrhein--eva",
       "company": "EVM (Energieversorgung Mittelrhein)",
       "company_country": "Germany",
@@ -10781,6 +12236,51 @@
         "basis_en": "EY runs ~41,000 Copilot agents for tax across 21 million documents; these are professional copilots that draft and review, so autonomy is N2.",
         "basis_fr": "EY exploite ~41000 agents Copilot pour la fiscalite sur 21 millions de documents; ce sont des copilotes professionnels qui redigent et revisent, autonomie N2."
       }
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "FairPrice Group",
+      "company_country": "Singapore",
+      "region": "Southeast Asia",
+      "sector": "Retail & E-commerce",
+      "solution_name": "Grocer Genie",
+      "vendor": "Google Cloud",
+      "use_case": "An intelligent app for frontline workers, part of the retailer's Store of Tomorrow alongside smart carts and a digital wine sommelier.",
+      "department": "Store operations",
+      "industry": "Grocery retail",
+      "deployment_stage": "production",
+      "confidence": 0.35,
+      "confidence_reason": "Named retailer and named app, but the only source is Google Cloud's own customer list and it describes the app in one line, with no figure.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Grocer Genie answers the questions of staff on the shop floor; the source credits it with nothing it does alone, so observed is N2.",
+        "basis_fr": "Grocer Genie repond aux questions des equipes en magasin; la source ne lui attribue rien qu'il fasse seul, donc l'observe est N2."
+      },
+      "id": "fairprice-group--grocer-genie"
     },
     {
       "company": "Fanatics",
@@ -11113,6 +12613,62 @@
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Customer service questions to be automated, as a target",
+          "value": "80%",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Onboarding time for a new travel representative, as a target",
+          "value": "25% shorter",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "Finnair",
+      "company_country": "Finland",
+      "region": "Europe",
+      "sector": "Travel & Transportation",
+      "use_case": "Agents being implemented in customer service, with a stated target of automating most service questions and shortening the onboarding of new travel representatives.",
+      "department": "Customer service",
+      "industry": "Airline",
+      "deployment_stage": "pilot",
+      "confidence": 0.4,
+      "confidence_reason": "Named airline and named solution, but the only source is Salesforce's own customer page and its figures are targets the airline is aiming for, not results.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent answers customers and hands over what it cannot resolve; it commits nothing on its own, so observed is N2.",
+        "basis_fr": "L'agent repond aux clients et transfere ce qu'il ne peut pas resoudre; il n'engage rien seul, donc l'observe est N2."
+      },
+      "id": "finnair--agentforce"
+    },
+    {
       "id": "finnair--sisu",
       "company": "Finnair",
       "company_country": "Finland",
@@ -11279,6 +12835,57 @@
         "basis_en": "Navi handles everyday banking tasks in the FNB app and also supports human advisers during live interactions; customer-directed and adviser-assist roles keep autonomy at N2.",
         "basis_fr": "Navi gere les taches bancaires courantes dans l'app FNB et assiste les conseillers humains pendant les interactions; les roles dirige-client et appui-conseiller maintiennent l'autonomie a N2."
       }
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Self service rate",
+          "value": "from 40% to 70%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "Fisher & Paykel",
+      "company_country": "New Zealand",
+      "region": "Oceania",
+      "sector": "Consumer Goods & Manufacturing",
+      "use_case": "An agent grounded on thousands of existing knowledge articles that gives appliance owners product insight and clear next steps from the service page, so they can solve problems themselves.",
+      "department": "Customer service",
+      "industry": "Home appliances",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named manufacturer and named solution with a published before and after, but the only source is Salesforce's own customer page.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          2,
+          2,
+          0,
+          0,
+          1,
+          2,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent answers customers and hands over what it cannot resolve; it commits nothing on its own, so observed is N2.",
+        "basis_fr": "L'agent repond aux clients et transfere ce qu'il ne peut pas resoudre; il n'engage rien seul, donc l'observe est N2."
+      },
+      "id": "fisher-paykel--agentforce"
     },
     {
       "id": "flipkart--flippi-evolving-into-standalone-app-slap-shop-like-a-pro",
@@ -11706,6 +13313,51 @@
         "basis_en": "Albert is a sovereign generative-AI assistant helping civil servants write, summarise and find information across ministries and France Services; it is a productivity copilot, so autonomy is N2.",
         "basis_fr": "Albert est un assistant d'IA generative souverain aidant les agents a rediger, resumer et trouver l'information dans les ministeres et France Services; c'est un copilote de productivite, autonomie N2."
       }
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "Fujitsu",
+      "company_country": "Japan",
+      "region": "East Asia",
+      "sector": "Technology & Software",
+      "use_case": "An agent grounded on release notes that answers customers running Salesforce products as soon as a release drops, as the first line of response during peak product events.",
+      "department": "Customer support",
+      "industry": "IT services",
+      "deployment_stage": "production",
+      "confidence": 0.4,
+      "confidence_reason": "Named company and named solution, but the only source is Salesforce's own customer page and it mixes what the agent does with what it is to do.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent answers customers and hands over what it cannot resolve; it commits nothing on its own, so observed is N2.",
+        "basis_fr": "L'agent repond aux clients et transfere ce qu'il ne peut pas resoudre; il n'engage rien seul, donc l'observe est N2."
+      },
+      "id": "fujitsu--agentforce"
     },
     {
       "id": "fujitsu--fujitsu-kozuchi-ai-agent",
@@ -12325,6 +13977,62 @@
         "basis_en": "The GS AI Assistant lets ~10,000 employees summarize documents, draft content and run data analysis firmwide; it is an internal productivity copilot, so autonomy is N2.",
         "basis_fr": "Le GS AI Assistant permet a ~10000 employes de resumer des documents, rediger du contenu et faire de l'analyse de donnees a l'echelle de la firme; c'est un copilote de productivite interne, autonomie N2."
       }
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Speed of connecting donated goods to communities",
+          "value": "three times faster",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Time the five person team is expected to save each year",
+          "value": "more than 1,000 hours",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "Good360",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Public Sector & Education",
+      "use_case": "An agent that matches donated goods to the communities that need them, for a five person matching team.",
+      "department": "Donation matching",
+      "industry": "Nonprofit distribution",
+      "deployment_stage": "production",
+      "confidence": 0.45,
+      "confidence_reason": "Named nonprofit and named solution with published figures, but the only source is Salesforce's own customer page and the hours saved are given as an annual projection.",
+      "coda": {
+        "chain": "supply",
+        "links": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent proposes and prepares the matches that the team confirms; observed is N2.",
+        "basis_fr": "L'agent propose et prepare les appariements que l'equipe confirme; l'observe est N2."
+      },
+      "id": "good360--agentforce"
     },
     {
       "id": "government-of-estonia--burokratt",
@@ -13042,6 +14750,96 @@
       }
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "Grupo Ruiz",
+      "company_country": "Spain",
+      "region": "Europe",
+      "sector": "Travel & Transportation",
+      "solution_name": "Gemini Enterprise",
+      "vendor": "Google Cloud",
+      "use_case": "Gemini Enterprise used across the sustainable mobility operator's teams to shorten internal processes and make its own data easier to reach.",
+      "department": "Operations",
+      "industry": "Passenger transport",
+      "deployment_stage": "production",
+      "confidence": 0.35,
+      "confidence_reason": "Named operator and named platform, but the only source is Google Cloud's own customer list and it describes productivity in general terms, with no figure and no named agent task.",
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The source describes employees getting answers from their own data; nothing is executed by the platform, so observed is N2.",
+        "basis_fr": "La source decrit des collaborateurs qui obtiennent des reponses a partir de leurs donnees; rien n'est execute par la plateforme, donc l'observe est N2."
+      },
+      "id": "grupo-ruiz--gemini-enterprise"
+    },
+    {
+      "company": "Gulf Air",
+      "company_country": "Bahrain",
+      "region": "Middle East",
+      "sector": "Travel & Transportation",
+      "solution_name": "Microsoft Foundry",
+      "vendor": "Microsoft",
+      "use_case": "The airline's existing voice agents, migrated to and extended on Microsoft Foundry so that voice, enterprise knowledge and tool calling work together in a single experience for its teams and its customers.",
+      "department": "Customer service",
+      "industry": "Airline",
+      "deployment_stage": "production",
+      "first_seen_date": "2026-11-23",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/voice-agents-in-microsoft-foundry-agent-service-now-generally-available/4573013",
+          "title": "Voice agents in Microsoft Foundry Agent Service now generally available",
+          "publisher": "Microsoft",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "confidence": 0.45,
+      "confidence_reason": "Named airline and named platform, quoted by Gulf Air's manager of digital innovation, but the source is Microsoft's own product announcement and publishes no figure.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The voice agents answer callers with the airline's own knowledge; the source credits them with no booking or account action, so observed is N2.",
+        "basis_fr": "Les agents vocaux repondent aux appelants avec les connaissances de la compagnie; la source ne leur attribue ni reservation ni action sur un compte, donc l'observe est N2."
+      },
+      "id": "gulf-air--microsoft-foundry"
+    },
+    {
       "id": "h2e-power--ecostruxure-automation-expert",
       "company": "H2E Power",
       "company_country": "India",
@@ -13337,6 +15135,51 @@
       }
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "HDFC ERGO",
+      "company_country": "India",
+      "region": "South Asia",
+      "sector": "Insurance",
+      "solution_name": "1Up",
+      "vendor": "Google Cloud",
+      "use_case": "Inside the insurer's 1Up app, Vertex AI gives insurance agents context sensitive nudges through the different scenarios of customer onboarding.",
+      "department": "Distribution",
+      "industry": "Non life insurance",
+      "deployment_stage": "production",
+      "confidence": 0.4,
+      "confidence_reason": "Named insurer and named app, but the only source is Google Cloud's own customer list and it publishes no result.",
+      "coda": {
+        "chain": "vente",
+        "links": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0
+        ],
+        "observed": 1,
+        "locks": [],
+        "basis_en": "The system suggests next steps to human insurance agents, who act; that is assistance, so observed is N1.",
+        "basis_fr": "Le systeme suggere les etapes suivantes a des agents humains, qui agissent; c'est de l'assistance, donc l'observe est N1."
+      },
+      "id": "hdfc-ergo--1up"
+    },
+    {
       "id": "heirs-insurance-group--prince-ai",
       "company": "Heirs Insurance Group",
       "company_country": "Nigeria",
@@ -13387,6 +15230,179 @@
         "basis_en": "Multilingual (9-language) WhatsApp/app/web assistant lets customers purchase and renew policies and initiate/track claims end to end; self-service transactions imply the agent executes and commits.",
         "basis_fr": "Assistant multilingue (9 langues) sur WhatsApp/app/web permettant d'acheter et renouveler des polices et d'initier/suivre des sinistres; ces transactions self-service impliquent que l'agent execute et engage."
       }
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Loan approval time, as anticipated by the lender",
+          "value": "30 minutes",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Files expected to go through with no manual check",
+          "value": "75%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "Hero FinCorp",
+      "company_country": "India",
+      "region": "South Asia",
+      "sector": "Financial Services",
+      "use_case": "Agents being deployed in the loan process to review customer and seller inputs, flag discrepancies and confirm they are resolved before the file moves on.",
+      "department": "Loan processing",
+      "industry": "Non banking financial company",
+      "deployment_stage": "announced",
+      "confidence": 0.4,
+      "confidence_reason": "Named lender and named solution, but the only source is Salesforce's own customer page and its approval and straight through processing figures are what the lender anticipates.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agents check inputs and flag problems for humans before the file advances, and the figures are expectations, so observed is N2.",
+        "basis_fr": "Les agents controlent les saisies et signalent les problemes aux humains avant que le dossier avance, et les chiffres sont des previsions, donc l'observe est N2."
+      },
+      "id": "hero-fincorp--agentforce"
+    },
+    {
+      "company": "Hibbett",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Retail & E-commerce",
+      "solution_name": "Hibbett AI",
+      "vendor": "Salesforce",
+      "use_case": "A shopper agent, live six weeks after the project started, that handles the core journeys of the sporting goods retailer's customers, from discovery and comparison to getting questions answered.",
+      "department": "E-commerce",
+      "industry": "Sporting goods retail",
+      "deployment_stage": "production",
+      "first_seen_date": "2026-11-23",
+      "reported_outcomes": [
+        {
+          "metric": "Core shopper journeys handled by the agent",
+          "value": "90%",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Time from start to going live",
+          "value": "six weeks",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-job-ready-ai-agents/",
+          "title": "Salesforce Expands Agentforce With a New Portfolio of AI Agents Built for High-Value Work",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Named retailer, named agent and a published share of journeys, but the only source is Salesforce's own launch announcement.",
+      "coda": {
+        "chain": "commerce",
+        "links": [
+          0,
+          2,
+          2,
+          2,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent carries the shopper through discovery and comparison and answers questions; the source credits it with no purchase committed on its own, so observed is N2.",
+        "basis_fr": "L'agent accompagne le client dans la decouverte et la comparaison et repond a ses questions; la source ne lui attribue aucun achat engage seul, donc l'observe est N2."
+      },
+      "id": "hibbett--hibbett-ai"
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Sidekick interactions over a year, in prompts",
+          "value": "from 1 million to more than 6 million",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Active AI use cases backing the assistant",
+          "value": "74, up 31 on the previous year",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "AI enabled value calculated across Highmark's 74 active use cases in 2025",
+          "value": "$27.9 million",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "company": "Highmark",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Insurance",
+      "solution_name": "Sidekick",
+      "vendor": "Google Cloud",
+      "use_case": "A generative AI assistant for employees, which began as a secure single entry point to AI and now serves 74 active use cases across the health insurer.",
+      "department": "Enterprise functions",
+      "industry": "Health insurance",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named insurer, named assistant and published volumes, but the only source is Google Cloud's own customer list and the dollar value covers all 74 use cases, not Sidekick alone.",
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Sidekick answers employee prompts across 74 use cases; the source describes productivity, not decisions the assistant commits, so observed is N2.",
+        "basis_fr": "Sidekick repond aux sollicitations des collaborateurs sur 74 cas d'usage; la source decrit de la productivite, pas des decisions que l'assistant engage, donc l'observe est N2."
+      },
+      "id": "highmark--sidekick"
     },
     {
       "id": "hilton--hilton-ai-planner",
@@ -13587,6 +15603,51 @@
         "basis_en": "Magic Apron gives customers/associates 24/7 project guidance and product recommendations, with AI voice agents resolving phone support 4x faster (intent in ~10s); it answers/guides, not commits.",
         "basis_fr": "Magic Apron offre conseils projet et recommandations produits 24/7 aux clients/employes, avec des agents vocaux resolvant le support telephonique 4x plus vite (intention en ~10s); il repond/guide sans engager."
       }
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "HomeToGo",
+      "company_country": "Germany",
+      "region": "Europe",
+      "sector": "Travel & Transportation",
+      "solution_name": "AI Sunny",
+      "vendor": "Google Cloud",
+      "use_case": "A travel assistant in the vacation rental app that supports guests while they book, with a plan to extend it into an end to end travel companion called Super AI Sunny.",
+      "department": "Customer experience",
+      "industry": "Vacation rentals",
+      "deployment_stage": "production",
+      "confidence": 0.4,
+      "confidence_reason": "Named company and named assistant, but the only source is Google Cloud's own customer list, with no figure.",
+      "coda": {
+        "chain": "commerce",
+        "links": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "AI Sunny supports guests during booking; the source does not have it book or pay on their behalf, so observed is N2.",
+        "basis_fr": "AI Sunny accompagne les voyageurs pendant la reservation; la source ne le montre ni reserver ni payer a leur place, donc l'observe est N2."
+      },
+      "id": "hometogo--ai-sunny"
     },
     {
       "id": "hospital-for-special-surgery-hss--abridge-ambient-ai-platform",
@@ -13847,6 +15908,57 @@
         "basis_en": "Engineers used Claude Code via MCP to expedite a months-long frontend migration and speed onboarding; it prepares code that engineers review before merge, and vendor-only evidence caps action maillons at 1.",
         "basis_fr": "Les ingenieurs ont utilise Claude Code via MCP pour accelerer une migration frontend de plusieurs mois et l'onboarding; il prepare du code revu avant merge, et la preuve fournisseur plafonne les maillons d'action a 1."
       }
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "New business intake",
+          "value": "from several days to minutes",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "company": "Huge",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Professional & Business Services",
+      "solution_name": "Gemini Enterprise",
+      "vendor": "Google Cloud",
+      "use_case": "Agents built on Gemini Enterprise that run market research and contract analysis for the agency, turning new business intake into a matter of minutes.",
+      "department": "New business",
+      "industry": "Business services agency",
+      "deployment_stage": "production",
+      "confidence": 0.45,
+      "confidence_reason": "Named agency and named platform with a before and after on intake time, but the only source is Google Cloud's own customer list.",
+      "coda": {
+        "chain": "vente",
+        "links": [
+          1,
+          2,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agents research and analyse contracts, and people decide what to pitch; observed is N2.",
+        "basis_fr": "Les agents recherchent et analysent les contrats, et des humains decident quoi proposer; l'observe est N2."
+      },
+      "id": "huge--gemini-enterprise"
     },
     {
       "id": "humana--agent-assist",
@@ -15435,6 +17547,51 @@
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "JoongAng Ilbo",
+      "company_country": "South Korea",
+      "region": "East Asia",
+      "sector": "Media & Entertainment",
+      "solution_name": "Vertex AI Search",
+      "vendor": "Google Cloud",
+      "use_case": "A news search service built on Vertex AI Search and Gemini over 60 years of the newspaper's own archive, which answers readers in natural language with summarised insight and custom agents that read dates correctly, and which restricts retrieval to the paper's own articles to avoid invention.",
+      "department": "Digital products",
+      "industry": "News media",
+      "deployment_stage": "production",
+      "confidence": 0.45,
+      "confidence_reason": "Named newspaper and named platform with a described design, but the only source is Google Cloud's own customer list and no figure is published.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          1,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The service retrieves and summarises the archive for readers; it is an answering system, so observed is N2.",
+        "basis_fr": "Le service retrouve et resume les archives pour les lecteurs; c'est un systeme de reponse, donc l'observe est N2."
+      },
+      "id": "joongang-ilbo--vertex-ai-search"
+    },
+    {
       "id": "jpmorgan-chase--llm-suite",
       "company": "JPMorgan Chase",
       "company_country": "United States",
@@ -15889,6 +18046,51 @@
         "basis_en": "Generative voice assistant enables natural-language, context-aware conversation and control inside Kia vehicles; it answers and assists in-cabin commands, no metrics.",
         "basis_fr": "Assistant vocal génératif permettant conversation contextuelle et contrôle en langage naturel dans les véhicules Kia; il répond et assiste les commandes à bord, sans métriques."
       }
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "Kingfisher",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Retail & E-commerce",
+      "solution_name": "Vertex AI Search for Commerce",
+      "vendor": "Google Cloud",
+      "use_case": "Deployed across more than 1,700 home improvement stores in seven European countries to move beyond keyword search towards shopping assistants that help customers plan complex projects.",
+      "department": "E-commerce",
+      "industry": "Home improvement retail",
+      "deployment_stage": "production",
+      "confidence": 0.4,
+      "confidence_reason": "Named group and named product at a stated scale, but the only source is Google Cloud's own customer list and it publishes no result.",
+      "coda": {
+        "chain": "commerce",
+        "links": [
+          0,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The system finds and recommends products for a project; it buys nothing, so observed is N2.",
+        "basis_fr": "Le systeme trouve et recommande des produits pour un projet; il n'achete rien, donc l'observe est N2."
+      },
+      "id": "kingfisher--vertex-ai-search-for-commerce"
     },
     {
       "id": "klarna--klarna-ai-assistant",
@@ -16538,6 +18740,62 @@
       }
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Marketing videos produced with Google Veo through Cosmos",
+          "value": "up to 95% faster",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Cost of those marketing videos",
+          "value": "99% lower",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "company": "LATAM Airlines",
+      "company_country": "Chile",
+      "region": "Latin America",
+      "sector": "Travel & Transportation",
+      "solution_name": "Cosmos",
+      "vendor": "Google Cloud",
+      "use_case": "A proprietary middleware platform built on Vertex AI that standardises and governs how AI is deployed across the airline group, and carries among other things an AI concierge agent for trip planning.",
+      "department": "Digital",
+      "industry": "Airline",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named airline and named platform, but the only source is Google Cloud's own customer list, and its published figures measure marketing video production rather than the concierge agent.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          1,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The concierge agent plans trips in conversation and the platform governs deployment; no booking or payment is credited to the agent, so observed is N2.",
+        "basis_fr": "L'agent concierge prepare les voyages en conversation et la plateforme encadre les deploiements; aucune reservation ni paiement n'est attribue a l'agent, donc l'observe est N2."
+      },
+      "id": "latam-airlines--cosmos"
+    },
+    {
       "id": "latham-watkins--harvey",
       "company": "Latham & Watkins",
       "company_country": "United States",
@@ -16810,6 +19068,51 @@
         "basis_en": "In-vehicle agent autonomously invokes third-party apps to order (Meituan) and pay parking via QR, committing transactions with personalized memory; it executes end actions, not just proposes.",
         "basis_fr": "Agent embarque qui invoque automatiquement des apps tierces pour commander (Meituan) et payer le stationnement par QR, engageant des transactions avec memoire personnalisee; il execute, ne se limite pas a proposer."
       }
+    },
+    {
+      "company": "LINE Yahoo",
+      "company_country": "Japan",
+      "region": "East Asia",
+      "sector": "Media & Entertainment",
+      "solution_name": "Agent i",
+      "vendor": "In-house, on Gemini Enterprise Agent Platform and OpenAI APIs",
+      "use_case": "The group's consumer AI agent, which merged the Yahoo! JAPAN assistant and LINE AI into one brand, connected to the LINE MUSIC streaming service through a feature called AI PlayList: it profiles a listener's taste from a short questionnaire, proposes playlists, completes a playlist from a few chosen tracks, and builds new ones from listening history, with spoken announcements between songs in its own player.",
+      "department": "Consumer services",
+      "industry": "Music streaming",
+      "deployment_stage": "production",
+      "first_seen_date": "2026-11-23",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.lycorp.co.jp/ja/news/release/020992/",
+          "title": "LINE MUSIC et l'agent Agent i de LINE Yahoo relies par la nouvelle fonction AI PlayList",
+          "publisher": "LY Corporation (LINE Yahoo)",
+          "source_type": "press_release",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "The company's own press release of 17 November 2026 names the agent, the service and the exact feature, and states the app version it needs, but publishes no usage figure.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          1,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Agent i diagnoses taste and proposes or completes playlists that the listener plays; the source credits it with no action beyond the recommendation, so observed is N2.",
+        "basis_fr": "Agent i diagnostique les gouts et propose ou complete des playlists que l'auditeur ecoute; la source ne lui attribue aucune action au-dela de la recommandation, donc l'observe est N2."
+      },
+      "id": "line-yahoo--agent-i"
     },
     {
       "id": "lion-parcel--yellow-ai",
@@ -17380,6 +19683,57 @@
         "basis_en": "Conversational assistant lets travellers search and book flights (piloted on SWISS site, LINE messenger), with 95% targeted query success and sub-2-minute booking; it prepares the booking, traveller confirms. Pilot.",
         "basis_fr": "Assistant conversationnel permettant de chercher et reserver des vols (pilote sur le site SWISS et LINE), 95% de succes sur requetes ciblees, reservation en <2 min; il prepare la reservation, le voyageur confirme. Pilote."
       }
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Workload of human customer service agents",
+          "value": "30% lower",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "company": "LUXGEN",
+      "company_country": "Taiwan",
+      "region": "East Asia",
+      "sector": "Automotive & Mobility",
+      "solution_name": "Vertex AI",
+      "vendor": "Google Cloud",
+      "use_case": "An agent on the electric vehicle brand's official LINE account that answers customer questions.",
+      "department": "Customer service",
+      "industry": "Electric vehicles",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named brand and named platform with a published workload figure, but the only source is Google Cloud's own customer list.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent answers customer questions on a messaging account and takes load off the human team; it decides nothing, so observed is N2.",
+        "basis_fr": "L'agent repond aux questions des clients sur un compte de messagerie et soulage l'equipe humaine; il ne decide rien, donc l'observe est N2."
+      },
+      "id": "luxgen--vertex-ai"
     },
     {
       "company": "LY Corporation",
@@ -17995,6 +20349,51 @@
         "basis_en": "RENAI answers guest chat requests via QR-code text or WhatsApp with local recommendations and deals curated by hotel staff; it informs but does not book, transact or resolve technical issues, so observed N2.",
         "basis_fr": "RENAI repond aux demandes des clients par texto ou WhatsApp via QR code avec des recommandations locales et des offres selectionnees par le personnel de l'hotel ; il informe sans reserver, transiger ni resoudre de probleme technique, donc observe N2."
       }
+    },
+    {
+      "company": "Mars",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Consumer Goods & Manufacturing",
+      "solution_name": "Mars IQ (on Gemini Enterprise)",
+      "vendor": "Google Cloud",
+      "use_case": "Gemini Enterprise chosen as the primary AI operating system for the global workforce, giving associates assistants meant to handle complex multistep tasks, inside the modular architecture of Mars's own AI platform, Mars IQ.",
+      "department": "Global functions",
+      "industry": "Food and petcare",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-customer-round-up/",
+          "title": "10 leading enterprises show why agents mean business",
+          "publisher": "Google",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "confidence": 0.45,
+      "confidence_reason": "Named company and named platform, quoted by the Mars president for global services and digital technologies, but the only source is Google's own customer round up and no result is published.",
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The source describes assistants that handle multistep tasks for associates across functions, without a single documented decision the agent commits on its own, so observed is N2.",
+        "basis_fr": "La source decrit des assistants qui traitent des taches en plusieurs etapes pour les collaborateurs, sans une seule decision documentee que l'agent engage seul, donc l'observe est N2."
+      },
+      "id": "mars--mars-iq-on-gemini-enterprise"
     },
     {
       "id": "marsh-mclennan--lenai",
@@ -18830,6 +21229,102 @@
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "Mercedes-Benz",
+      "company_country": "Germany",
+      "region": "Europe",
+      "sector": "Automotive & Mobility",
+      "solution_name": "MBUX Virtual Assistant",
+      "vendor": "Google Cloud",
+      "use_case": "The in car assistant, powered by Gemini on Vertex AI, which holds natural conversations with drivers and answers questions such as navigation and points of interest.",
+      "department": "Product",
+      "industry": "Automotive",
+      "deployment_stage": "production",
+      "confidence": 0.4,
+      "confidence_reason": "Named manufacturer and named product, but the only source is Google Cloud's own customer list, with no figure.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The assistant answers drivers and sets a destination on request; nothing in the source has it commit anything else, so observed is N2.",
+        "basis_fr": "L'assistant repond au conducteur et fixe une destination a la demande; rien dans la source ne le montre engager autre chose, donc l'observe est N2."
+      },
+      "id": "mercedes-benz--mbux-virtual-assistant"
+    },
+    {
+      "company": "Merck & Co.",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Healthcare, Life Sciences & Luxury",
+      "solution_name": "Gemini Enterprise",
+      "vendor": "Google Cloud",
+      "use_case": "An agentic platform to be deployed across research and development, manufacturing, commercial and corporate operations, with Google Cloud engineers working alongside Merck teams, aimed at digitising data and lifting the productivity of 75,000 employees worldwide.",
+      "department": "Research and development",
+      "industry": "Pharmaceuticals",
+      "deployment_stage": "announced",
+      "reported_outcomes": [
+        {
+          "metric": "Announced value of the agentic platform collaboration with Google Cloud",
+          "value": "up to $1 billion",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-customer-round-up/",
+          "title": "10 leading enterprises show why agents mean business",
+          "publisher": "Google",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "confidence": 0.4,
+      "confidence_reason": "Named company and named platform, quoted by Merck's chief information and digital officer, but the source says Merck will deploy: nothing is reported running, and the billion dollar figure measures the investment, not an agent result.",
+      "coda": {
+        "chain": "science",
+        "links": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "observed": 1,
+        "locks": [],
+        "basis_en": "Merck announces a platform it will deploy; the source describes agents working alongside teams in the future tense and reports nothing in operation, so observed stays at N1.",
+        "basis_fr": "Merck annonce une plateforme qu'il va deployer; la source decrit au futur des agents travaillant aux cotes des equipes et ne rapporte rien en fonctionnement, donc l'observe reste a N1."
+      },
+      "id": "merck-co--gemini-enterprise"
+    },
+    {
       "id": "merck-co--gpteal",
       "company": "Merck & Co.",
       "company_country": "United States",
@@ -18925,6 +21420,51 @@
         "basis_en": "Internally built Copilot Studio agent in Microsoft 365 Copilot answers employees' HR policy and benefits questions to reduce escalations to HR. It answers/informs only, so N2; no outcome metrics disclosed.",
         "basis_fr": "Agent Copilot Studio developpe en interne dans Microsoft 365 Copilot repondant aux questions RH (politiques, avantages) pour reduire les escalades RH. Il ne fait qu'informer, donc N2 ; aucun resultat chiffre."
       }
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "MIMIT Healthcare",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Healthcare, Life Sciences & Luxury",
+      "use_case": "An agent that handles patient referrals, routing the patient's information to the right scheduling flow inside the clinic's compliant Slack workspace, after which an automated workflow books the appointment.",
+      "department": "Patient access",
+      "industry": "Specialty clinics",
+      "deployment_stage": "production",
+      "confidence": 0.45,
+      "confidence_reason": "Named clinic group and named solution with a described flow, but the only source is Salesforce's own customer page and it publishes no figure.",
+      "coda": {
+        "chain": "soin",
+        "links": [
+          2,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Salesforce credits the agent with routing referrals and triggering the booking, which would be execution, but marketing is the only attestation and no bounds are published, so observed is held at N2.",
+        "basis_fr": "Salesforce attribue a l'agent l'orientation des demandes et le declenchement de la prise de rendez-vous, ce qui serait de l'execution, mais seule une source marketing l'atteste et aucune borne n'est publiee, donc l'observe est maintenu a N2."
+      },
+      "id": "mimit-healthcare--agentforce"
     },
     {
       "id": "ministry-of-digital-transformation-of-ukraine--diia-ai",
@@ -19556,6 +22096,51 @@
       }
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "Movistar Plus+",
+      "company_country": "Spain",
+      "region": "Europe",
+      "sector": "Media & Entertainment",
+      "use_case": "An agent on the streaming service's web and mobile chat that answers subscriber questions and recommends content around the clock, including outside business hours when viewing peaks.",
+      "department": "Customer service",
+      "industry": "Pay television and streaming",
+      "deployment_stage": "production",
+      "confidence": 0.4,
+      "confidence_reason": "Named service and named solution, but the only source is Salesforce's own customer page and it publishes no figure.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent answers customers and hands over what it cannot resolve; it commits nothing on its own, so observed is N2.",
+        "basis_fr": "L'agent repond aux clients et transfere ce qu'il ne peut pas resoudre; il n'engage rien seul, donc l'observe est N2."
+      },
+      "id": "movistar-plus--agentforce"
+    },
+    {
       "company": "MPREIS",
       "company_country": "Austria",
       "region": "Europe",
@@ -19784,6 +22369,51 @@
       }
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "Mystifly",
+      "company_country": "Singapore",
+      "region": "Southeast Asia",
+      "sector": "Travel & Transportation",
+      "solution_name": "Mystic",
+      "vendor": "Google Cloud",
+      "use_case": "A chatbot built on Google Cloud conversational and generative AI that gives the travel platform's users self serve options, reducing the need to reach a human agent.",
+      "department": "Customer service",
+      "industry": "Travel technology",
+      "deployment_stage": "production",
+      "confidence": 0.4,
+      "confidence_reason": "Named company and named agent, but the only source is Google Cloud's own customer list, with no figure.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Mystic answers and offers self service; nothing in the source has it change a booking on its own, so observed is N2.",
+        "basis_fr": "Mystic repond et propose du self service; rien dans la source ne le montre modifier seul une reservation, donc l'observe est N2."
+      },
+      "id": "mystifly--mystic"
+    },
+    {
       "company": "Nanjing Iron & Steel",
       "company_country": "China",
       "region": "East Asia",
@@ -19846,6 +22476,57 @@
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Customer service workload saved",
+          "value": "more than 100 hours per month",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "company": "Nanyang Technological University",
+      "company_country": "Singapore",
+      "region": "Southeast Asia",
+      "sector": "Public Sector & Education",
+      "solution_name": "Lyon Housing chatbot",
+      "vendor": "Google Cloud",
+      "use_case": "A chatbot built on Dialogflow CX and Gemini that handles student housing queries for the university.",
+      "department": "Student services",
+      "industry": "Higher education",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named university and named service with a published time saving, but the only source is Google Cloud's own customer list.",
+      "coda": {
+        "chain": "public",
+        "links": [
+          2,
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The chatbot answers housing queries and takes load off the service desk; it decides nothing, so observed is N2.",
+        "basis_fr": "Le chatbot repond aux questions de logement et soulage le service; il ne decide rien, donc l'observe est N2."
+      },
+      "id": "nanyang-technological-university--lyon-housing-chatbot"
+    },
+    {
       "id": "naranja-x--github-copilot",
       "company": "Naranja X",
       "company_country": "Argentina",
@@ -19900,6 +22581,51 @@
         "basis_en": "Coding assistant used by 80%+ of ~560 developers for credit-product development and automated testing, saving 2 to 3 hours a day and cutting troubleshooting time 50%. Copilot proposing code a developer reworks, so N1; single vendor case study.",
         "basis_fr": "Assistant de code utilise par plus de 80% des ~560 developpeurs pour le developpement produit et les tests automatises, 2-3h economisees/jour et -50% de temps de debogage. Copilote proposant du code retravaille par le developpeur, donc N1 ; une seule etude de cas fournisseur."
       }
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "NASA",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Public Sector & Education",
+      "solution_name": "Gemini Enterprise",
+      "vendor": "Google Cloud",
+      "use_case": "Gemini Enterprise agents used to support flight readiness work and astronaut safety for Artemis II, the mission that set the human spaceflight record for distance from Earth.",
+      "department": "Mission operations",
+      "industry": "Space agency",
+      "deployment_stage": "production",
+      "confidence": 0.45,
+      "confidence_reason": "Named agency and named platform on a named mission, but the only source is Google Cloud's own customer list and it says nothing about what the agents decide.",
+      "coda": {
+        "chain": "science",
+        "links": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          2,
+          1,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agents prepare and interpret the material behind flight readiness reviews; the reviews themselves are human, so observed is N2.",
+        "basis_fr": "Les agents preparent et interpretent la matiere des revues d'aptitude au vol; les revues elles-memes sont humaines, donc l'observe est N2."
+      },
+      "id": "nasa--gemini-enterprise"
     },
     {
       "id": "national-basketball-association-nba--nba-inside-the-game-play-finder",
@@ -20633,6 +23359,57 @@
         "basis_en": "AI-upgraded in-car voice companion handles open-domain chat and encyclopedic questions and controls vehicle functions for NIO EV owners. It answers and executes user-commanded vehicle controls, so N2; no outcome metrics.",
         "basis_fr": "Compagnon vocal embarque ameliore par l'IA gerant la conversation ouverte, les questions encyclopediques et le controle de fonctions du vehicule pour les proprietaires NIO. Il repond et execute des commandes vocales du conducteur, donc N2 ; pas de resultat chiffre."
       }
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Call recordings processed by the platform",
+          "value": "10,000 hours per day",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "company": "NoBroker",
+      "company_country": "India",
+      "region": "South Asia",
+      "sector": "Professional & Business Services",
+      "solution_name": "ConvoZen AI",
+      "vendor": "In-house, on Google Cloud",
+      "use_case": "The real estate platform's own conversational AI, powered by Gemini, used to automate customer support across several Indian languages.",
+      "department": "Customer support",
+      "industry": "Real estate platform",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named platform and named solution with a published processing volume, but the only source is Google Cloud's own customer list, and its figures on future call handling and savings are projections.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "ConvoZen AI handles support conversations in several languages; the share of calls it is to take on is given as a projection, so observed is N2.",
+        "basis_fr": "ConvoZen AI prend en charge des conversations de support en plusieurs langues; la part d'appels qu'il doit absorber est donnee comme une projection, donc l'observe est N2."
+      },
+      "id": "nobroker--convozen-ai"
     },
     {
       "id": "northwell-health--abridge-ambient-ai-platform",
@@ -22719,6 +25496,113 @@
       }
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Delivery time for end to end research",
+          "value": "more than 50% faster",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Quality assurance time",
+          "value": "40% lower",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "company": "Populix",
+      "company_country": "Indonesia",
+      "region": "Southeast Asia",
+      "sector": "Professional & Business Services",
+      "solution_name": "Vertex AI",
+      "vendor": "Google Cloud",
+      "use_case": "A research assistant built on Gemini and Vertex AI that automates survey creation and analysis for the consumer insight platform and its panel of one million respondents.",
+      "department": "Research operations",
+      "industry": "Market research",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named company and named platform with two published time savings, but the only source is Google Cloud's own customer list.",
+      "coda": {
+        "chain": "science",
+        "links": [
+          2,
+          2,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The assistant builds the surveys and analyses the answers, and researchers sign off; observed is N2.",
+        "basis_fr": "L'assistant construit les questionnaires et analyse les reponses, et les chercheurs valident; l'observe est N2."
+      },
+      "id": "populix--vertex-ai"
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Estimated annual saving in administrative overhead, per 5,000 patients",
+          "value": "$80,000",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "Precina",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Healthcare, Life Sciences & Luxury",
+      "use_case": "An agent that takes administrative overhead off providers in a diabetes care practice, so they can spend their time on high impact interventions.",
+      "department": "Clinical operations",
+      "industry": "Diabetes care",
+      "deployment_stage": "production",
+      "confidence": 0.45,
+      "confidence_reason": "Named practice and named solution, but the only source is Salesforce's own customer page and its saving is an estimate per patient cohort.",
+      "coda": {
+        "chain": "soin",
+        "links": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent handles administrative follow up and the clinician intervenes; observed is N2.",
+        "basis_fr": "L'agent gere le suivi administratif et le clinicien intervient; l'observe est N2."
+      },
+      "id": "precina--agentforce"
+    },
+    {
       "id": "precina-health--agentforce",
       "company": "Precina Health",
       "company_country": "United States",
@@ -24326,6 +27210,62 @@
       }
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Service conversations handled by the agent",
+          "value": "more than 18,000",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Time to deploy the first agent",
+          "value": "three weeks",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "vendor": "Salesforce",
+      "solution_name": "Mark",
+      "company": "reMarkable",
+      "company_country": "Norway",
+      "region": "Europe",
+      "sector": "Technology & Software",
+      "use_case": "A knowledge based agent, deployed in three weeks, that answers customer questions about the paper tablet maker's products and deflects a growing share of enquiries without a human.",
+      "department": "Customer care",
+      "industry": "Consumer electronics",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named company and named agent with a published volume, but the only source is Salesforce's own customer page.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          2,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent answers customers and hands over what it cannot resolve; it commits nothing on its own, so observed is N2.",
+        "basis_fr": "L'agent repond aux clients et transfere ce qu'il ne peut pas resoudre; il n'engage rien seul, donc l'observe est N2."
+      },
+      "id": "remarkable--mark"
+    },
+    {
       "id": "renault--reno-renault-connected-avatar",
       "company": "Renault",
       "company_country": "France",
@@ -24752,6 +27692,107 @@
         "basis_en": "Rocket Logic automatically verifies documentation and traces earnest-money-deposit funds inside the loan-origination system, processing 80% of EMD purchase agreements and saving nearly 20,000 hours yearly; disclosed via press release and earnings call, so it executes and commits within bounds.",
         "basis_fr": "Rocket Logic verifie automatiquement les documents et trace les fonds de depot de garantie dans le systeme d'origination, traitant 80% des accords d'achat avec EMD et economisant pres de 20 000 heures par an; divulgue via communique et resultats, donc execute et engage dans un cadre defini."
       }
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "ROSHN Group",
+      "company_country": "Saudi Arabia",
+      "region": "Middle East",
+      "sector": "Professional & Business Services",
+      "solution_name": "RoshnAI",
+      "vendor": "Google Cloud",
+      "use_case": "An internal assistant built on Gemini models that draws insights from the property developer's own data sources for its employees.",
+      "department": "Internal knowledge",
+      "industry": "Real estate development",
+      "deployment_stage": "production",
+      "confidence": 0.4,
+      "confidence_reason": "Named developer and named assistant, but the only source is Google Cloud's own customer list, with no figure and no description of what the assistant decides.",
+      "coda": {
+        "chain": "pilotage",
+        "links": [
+          1,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "RoshnAI generates insights from internal data for employees to use; nothing in the source has it act, so observed is N2.",
+        "basis_fr": "RoshnAI produit des analyses a partir des donnees internes, que les collaborateurs exploitent; rien dans la source ne le montre agir, donc l'observe est N2."
+      },
+      "id": "roshn-group--roshnai"
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Marketing production cycle",
+          "value": "from several days to a single day",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Campaign ready assets the creative teams can now produce",
+          "value": "up to 200,000",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "company": "RTL Deutschland",
+      "company_country": "Germany",
+      "region": "Europe",
+      "sector": "Media & Entertainment",
+      "solution_name": "Project Octopus",
+      "vendor": "Google Cloud",
+      "use_case": "A marketing amplifier built on the Gemini Enterprise Agent Platform and the Veo model, which analyses audience behaviour, segments target groups and generates personalised video advertising for the broadcaster.",
+      "department": "Marketing",
+      "industry": "Broadcasting",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named broadcaster and named project with published figures, but the only source is Google Cloud's own customer list.",
+      "coda": {
+        "chain": "revenue",
+        "links": [
+          1,
+          0,
+          2,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Project Octopus segments audiences and generates the advertising itself, but the source shows the creative teams taking it from there, so observed is N2.",
+        "basis_fr": "Project Octopus segmente les audiences et genere lui-meme les publicites, mais la source montre les equipes creatives qui prennent la suite, donc l'observe est N2."
+      },
+      "id": "rtl-deutschland--project-octopus"
     },
     {
       "id": "ruya-bank--magoneai",
@@ -25974,6 +29015,51 @@
       }
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "SharkNinja",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Consumer Goods & Manufacturing",
+      "use_case": "An agent in the customer service chat that answers consumer questions instantly, and feeds representatives details drawn from service records, product manuals and past interactions.",
+      "department": "Customer service",
+      "industry": "Household appliances",
+      "deployment_stage": "production",
+      "confidence": 0.4,
+      "confidence_reason": "Named company and named solution, quoted by its chief information officer, but the only source is Salesforce's own customer page and it publishes no figure.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent answers customers and hands over what it cannot resolve; it commits nothing on its own, so observed is N2.",
+        "basis_fr": "L'agent repond aux clients et transfere ce qu'il ne peut pas resoudre; il n'engage rien seul, donc l'observe est N2."
+      },
+      "id": "sharkninja--agentforce"
+    },
+    {
       "id": "sheba-medical-center--project-k",
       "company": "Sheba Medical Center",
       "company_country": "Israel",
@@ -26730,6 +29816,102 @@
       "provenance": "manual",
       "confidence": 0.5,
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "Slalom",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Professional & Business Services",
+      "use_case": "Agents used inside Slack to automate tasks and give consultants quick access to information for their clients.",
+      "department": "Consulting delivery",
+      "industry": "Consulting",
+      "deployment_stage": "production",
+      "confidence": 0.35,
+      "confidence_reason": "Named firm and named solution, but the only source is Salesforce's own customer page and it describes productivity in general terms, with no figure.",
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agents retrieve information and automate steps for consultants; nothing is committed without them, so observed is N2.",
+        "basis_fr": "Les agents retrouvent l'information et automatisent des etapes pour les consultants; rien n'est engage sans eux, donc l'observe est N2."
+      },
+      "id": "slalom--agentforce"
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Users served by the agent",
+          "value": "13 million",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "Smartsheet",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Technology & Software",
+      "use_case": "An agent that answers the questions of the platform's users, handling help desk and billing issues without a wait or a ticket.",
+      "department": "Customer support",
+      "industry": "Work management software",
+      "deployment_stage": "production",
+      "confidence": 0.45,
+      "confidence_reason": "Named company and named solution at a stated user scale, but the only source is Salesforce's own customer page and it publishes no resolution rate.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent answers customers and hands over what it cannot resolve; it commits nothing on its own, so observed is N2.",
+        "basis_fr": "L'agent repond aux clients et transfere ce qu'il ne peut pas resoudre; il n'engage rien seul, donc l'observe est N2."
+      },
+      "id": "smartsheet--agentforce"
     },
     {
       "company": "SNCF",
@@ -27929,6 +31111,51 @@
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "Talgo",
+      "company_country": "Spain",
+      "region": "Europe",
+      "sector": "Consumer Goods & Manufacturing",
+      "solution_name": "Sophia",
+      "vendor": "Google Cloud",
+      "use_case": "An agent built on Vertex AI that assists the train maker's maintenance teams in conversation, in several languages including English, Russian and Arabic.",
+      "department": "Maintenance",
+      "industry": "Rolling stock",
+      "deployment_stage": "production",
+      "confidence": 0.4,
+      "confidence_reason": "Named manufacturer and named agent, but the only source is Google Cloud's own customer list, with no figure.",
+      "coda": {
+        "chain": "ops",
+        "links": [
+          0,
+          0,
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Sophia answers maintenance teams in their own language; the intervention stays theirs, so observed is N2.",
+        "basis_fr": "Sophia repond aux equipes de maintenance dans leur langue; l'intervention reste la leur, donc l'observe est N2."
+      },
+      "id": "talgo--sophia"
+    },
+    {
       "company": "Tapestry (Kate Spade)",
       "company_country": "United States",
       "region": "North America",
@@ -28185,6 +31412,164 @@
         "basis_en": "In-car voice agent supporting Indian languages lets drivers control vehicle functions and get information by voice, executing only explicit spoken commands with no standing delegation. N2.",
         "basis_fr": "Agent vocal embarque en langues indiennes qui laisse le conducteur commander des fonctions du vehicule et obtenir des informations, executant uniquement des commandes explicites sans delegation permanente. N2."
       }
+    },
+    {
+      "company": "Tata Steel",
+      "company_country": "India",
+      "region": "South Asia",
+      "sector": "Consumer Goods & Manufacturing",
+      "solution_name": "Zen AI and Tata Steel Digital Assistant",
+      "vendor": "Google Cloud",
+      "use_case": "A fleet of specialised agents across global operations, built on Zen AI, a low code platform that lets non data scientists build, test and deploy their own agents, with the Tata Steel Digital Assistant bringing once siloed information into a single interface for decisions, from asset maintenance prediction to customer response times.",
+      "department": "Operations",
+      "industry": "Steel",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Specialised AI agents deployed in nine months",
+          "value": "more than 300",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-customer-round-up/",
+          "title": "10 leading enterprises show why agents mean business",
+          "publisher": "Google",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        },
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Named company and named platform, quoted by Tata Steel's CIO, but both sources are Google's own customer pages.",
+      "coda": {
+        "chain": "ops",
+        "links": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agents predict asset maintenance and shorten customer response times, and the platform lets teams build their own, but the source describes insight and recommendation rather than execution, so observed is N2.",
+        "basis_fr": "Les agents predisent la maintenance des actifs et reduisent les delais de reponse client, et la plateforme permet aux equipes de creer les leurs, mais la source decrit de l'analyse et de la recommandation plutot que de l'execution, donc l'observe est N2."
+      },
+      "id": "tata-steel--zen-ai-and-tata-steel-digital-assistant"
+    },
+    {
+      "company": "TD Bank Group",
+      "company_country": "Canada",
+      "region": "North America",
+      "sector": "Financial Services",
+      "solution_name": "Unnamed agentic AI for real estate secured lending",
+      "solution_named": false,
+      "vendor": "Layer 6 (in-house)",
+      "use_case": "Agents that automate the pre adjudication of mortgage and home equity line of credit applications: they classify client documents, extract the key information, calculate and validate income against selected policy requirements, run consent checks and look for discrepancies, then write a summary memo for the human underwriter.",
+      "department": "Real estate secured lending",
+      "industry": "Retail banking",
+      "deployment_stage": "production",
+      "first_seen_date": "2026-11-23",
+      "reported_outcomes": [
+        {
+          "metric": "Time to produce the pre adjudication summary, early results",
+          "value": "from an average of 15 hours to an average of less than three minutes",
+          "source_type": "company_official"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://stories.td.com/ca/en/news/2026-05-21-td-launches-agentic-ai-to-transform-real-estate-secured-lend",
+          "title": "TD Launches Agentic AI to Transform Real Estate Secured Lending from End to End",
+          "publisher": "TD Bank Group",
+          "source_type": "company_official",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "The bank's own detailed announcement names the team that built it, the exact steps the agents perform and the measured time saving, but gives the model no product name and the figure is described as an early result.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          0,
+          2,
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "supervision",
+          "compliance"
+        ],
+        "basis_en": "The agents assemble and check the file, then hand a memo to an underwriter who decides, so observed is N2; TD documents a Trustworthy AI team that evaluates each model on privacy, security, fairness, accountability and explainability before it meets a human and keeps monitoring it in production.",
+        "basis_fr": "Les agents constituent et controlent le dossier, puis remettent une note a un souscripteur qui decide, donc l'observe est N2; TD documente une equipe Trustworthy AI qui evalue chaque modele sur la confidentialite, la securite, l'equite, la responsabilite et l'explicabilite avant tout contact humain et le surveille ensuite en production."
+      },
+      "id": "td-bank-group--unnamed-agentic-ai-for-real-estate-secured-lending"
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "Technogym",
+      "company_country": "Italy",
+      "region": "Europe",
+      "sector": "Consumer Goods & Manufacturing",
+      "solution_name": "Technogym Coach",
+      "vendor": "Google Cloud",
+      "use_case": "A virtual trainer built on Vertex AI and Model Garden that writes highly personalised fitness programmes for users of the equipment maker's ecosystem.",
+      "department": "Product",
+      "industry": "Fitness equipment",
+      "deployment_stage": "production",
+      "confidence": 0.4,
+      "confidence_reason": "Named company and named product, but the only source is Google Cloud's own customer list and its claims about engagement and outcomes carry no figure.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent produces training programmes that people then follow; the source credits it with no action of its own, so observed is N2.",
+        "basis_fr": "L'agent produit des programmes d'entrainement que les utilisateurs suivent ensuite; la source ne lui attribue aucune action propre, donc l'observe est N2."
+      },
+      "id": "technogym--technogym-coach"
     },
     {
       "id": "telefonica--aura",
@@ -29073,6 +32458,51 @@
       }
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "U.S. Food and Drug Administration",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Public Sector & Education",
+      "solution_name": "Gemini for Government",
+      "vendor": "Google Cloud",
+      "use_case": "Agentic capabilities including multi step AI workflows, being deployed to give the agency's reviewers and scientists tools that take on complex tasks.",
+      "department": "Product review",
+      "industry": "Health regulator",
+      "deployment_stage": "announced",
+      "confidence": 0.4,
+      "confidence_reason": "Named regulator and named platform, but the source is Google Cloud's own customer list, it says the FDA is deploying, and no scope or result is published.",
+      "coda": {
+        "chain": "public",
+        "links": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The source describes multi step workflows handed to reviewers rather than decisions taken without them, and it describes a deployment under way, so observed is N2.",
+        "basis_fr": "La source decrit des enchainements d'etapes remis aux evaluateurs plutot que des decisions prises sans eux, et un deploiement en cours, donc l'observe est N2."
+      },
+      "id": "u-s-food-and-drug-administration--gemini-for-government"
+    },
+    {
       "company": "U.S. General Services Administration (GSA)",
       "company_country": "United States",
       "region": "North America",
@@ -29343,6 +32773,51 @@
       }
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "UChicago Medicine",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Healthcare, Life Sciences & Luxury",
+      "use_case": "Agentforce for Health being integrated into the academic health system's non clinical workflows, to give patients round the clock self service information and support.",
+      "department": "Patient experience",
+      "industry": "Academic health system",
+      "deployment_stage": "pilot",
+      "confidence": 0.4,
+      "confidence_reason": "Named health system and named solution, but the only source is Salesforce's own customer page and it describes an implementation under way.",
+      "coda": {
+        "chain": "soin",
+        "links": [
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent answers patients on non clinical matters; nothing clinical is delegated, so observed is N2.",
+        "basis_fr": "L'agent repond aux patients sur des sujets non cliniques; rien de clinique n'est delegue, donc l'observe est N2."
+      },
+      "id": "uchicago-medicine--agentforce"
+    },
+    {
       "id": "ui-health-university-of-illinois-chicago--abridge",
       "company": "UI Health (University of Illinois Chicago)",
       "company_country": "United States",
@@ -29558,6 +33033,51 @@
       "provenance": "manual",
       "confidence": 0.75,
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
+      "company": "Unilever",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Consumer Goods & Manufacturing",
+      "solution_name": "Gemini Enterprise Agent Platform",
+      "vendor": "Google Cloud",
+      "use_case": "A multi agent solution built on the Gemini Enterprise Agent Platform to help procurement teams make buying decisions faster, part of a wider programme of designing and deploying agents at scale across the group.",
+      "department": "Procurement",
+      "industry": "Consumer goods",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-customer-round-up/",
+          "title": "10 leading enterprises show why agents mean business",
+          "publisher": "Google",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "confidence": 0.45,
+      "confidence_reason": "Named company and named platform, but the only source is Google's own customer round up, and the quote from Unilever's CMO is about personalisation rather than about the procurement agents.",
+      "coda": {
+        "chain": "achats",
+        "links": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agents prepare and inform buying decisions for procurement teams; the source shows no order or contract committed by the agent, so observed is N2.",
+        "basis_fr": "Les agents preparent et eclairent les decisions d'achat des equipes; la source ne montre aucune commande ni contrat engage par l'agent, donc l'observe est N2."
+      },
+      "id": "unilever--gemini-enterprise-agent-platform"
     },
     {
       "company": "Unilever",
@@ -30019,6 +33539,102 @@
       }
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "Vail Resorts",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Hospitality & Food",
+      "solution_name": "My Epic Assistant",
+      "vendor": "Google Cloud",
+      "use_case": "An agentic guide to the slopes, launched for the ski season of 2024 and 2025 and extended since with Gemini models, which helps skiers choose a season pass, reads them the snow report, checks lesson preparations and suggests where to stop.",
+      "department": "Guest experience",
+      "industry": "Ski resorts",
+      "deployment_stage": "production",
+      "confidence": 0.4,
+      "confidence_reason": "Named operator and named assistant, but the only source is Google Cloud's own customer list, with no figure.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "My Epic Assistant answers guests and points them to the right pass or lesson; the source credits it with no purchase or booking, so observed is N2.",
+        "basis_fr": "My Epic Assistant repond aux clients et les oriente vers le bon forfait ou le bon cours; la source ne lui attribue ni achat ni reservation, donc l'observe est N2."
+      },
+      "id": "vail-resorts--my-epic-assistant"
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "Share of Valeo code generated by AI after integrating the assistant",
+          "value": "more than 35%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "company": "Valeo",
+      "company_country": "France",
+      "region": "Europe",
+      "sector": "Automotive & Mobility",
+      "solution_name": "Gemini Code Assist",
+      "vendor": "Google Cloud",
+      "use_case": "An enterprise coding assistant integrated across the automotive supplier's engineering teams, followed by a rollout of Gemini for Workspace to its whole workforce of 100,000 people.",
+      "department": "Engineering",
+      "industry": "Automotive supplier",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named supplier and named product with a published share of code, but the only source is Google Cloud's own customer list and the share covers AI generated code in general, not this assistant alone.",
+      "coda": {
+        "chain": "delivery",
+        "links": [
+          0,
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The assistant writes code that engineers review and merge; the source credits it with no commit of its own, so observed is N2.",
+        "basis_fr": "L'assistant ecrit du code que les ingenieurs relisent et integrent; la source ne lui attribue aucune integration propre, donc l'observe est N2."
+      },
+      "id": "valeo--gemini-code-assist"
+    },
+    {
       "company": "Verizon",
       "company_country": "United States",
       "region": "North America",
@@ -30349,6 +33965,51 @@
       }
     },
     {
+      "company": "Virgin Voyages",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Travel & Transportation",
+      "solution_name": "Rovey",
+      "vendor": "Google Cloud (Gemini Enterprise, Google Distributed Cloud)",
+      "use_case": "A personal concierge agent on board, which gives the crew natural language access to what they need to answer any sailor question, and keeps working on ships with limited connectivity thanks to Google Distributed Cloud.",
+      "department": "Guest services",
+      "industry": "Cruise",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-customer-round-up/",
+          "title": "10 leading enterprises show why agents mean business",
+          "publisher": "Google",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "confidence": 0.45,
+      "confidence_reason": "Named cruise line and named agent, quoted by a Virgin Voyages vice president, but the only source is Google's own customer round up and it publishes no measured result.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          1,
+          1,
+          1,
+          2,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Rovey answers crew and sailor questions in natural language; nothing in the source has it acting on a booking or an account, so observed is N2.",
+        "basis_fr": "Rovey repond en langage naturel aux questions de l'equipage et des passagers; rien dans la source ne le montre agir sur une reservation ou un compte, donc l'observe est N2."
+      },
+      "id": "virgin-voyages--rovey"
+    },
+    {
       "id": "vision-bank--noura",
       "company": "Vision Bank",
       "company_country": "Saudi Arabia",
@@ -30461,6 +34122,51 @@
         "basis_en": "Devin migrates legacy .NET and PHP apps to the cloud with claimed 50% engineering cost cut and 2x productivity; vendor case study only caps observed at 2 and action maillons at 1.",
         "basis_fr": "Devin migre des applications .NET et PHP legacy vers le cloud avec une baisse de couts de 50% et une productivite x2 revendiquees; etude de cas fournisseur uniquement, donc plafond N2 et maillons d'action a 1."
       }
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "vendor": "Salesforce",
+      "solution_name": "Smart Care Virtual Agent",
+      "company": "Vivint",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Technology & Software",
+      "use_case": "An agent announced for customer support, meant to resolve simple requests on its own and otherwise carry the diagnosis as far as it can before handing the customer to a specialist.",
+      "department": "Customer support",
+      "industry": "Smart home",
+      "deployment_stage": "announced",
+      "confidence": 0.4,
+      "confidence_reason": "Named company and named agent, quoted by its senior vice president of engineering, but the only source is Salesforce's own customer page and it describes what the agent will do.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          2,
+          1,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The source describes an agent that will solve simple requests before escalating; it is an announcement, so observed stays at N2.",
+        "basis_fr": "La source decrit un agent qui resoudra les demandes simples avant d'escalader; c'est une annonce, donc l'observe reste a N2."
+      },
+      "id": "vivint--smart-care-virtual-agent"
     },
     {
       "id": "vodacom--tobi",
@@ -30607,6 +34313,51 @@
         "basis_en": "Answers complex billing enquiries in full sentences across 13 countries; first-time resolution improved 50%. The documented work is answering: observed N2.",
         "basis_fr": "Répond en phrases complètes aux questions complexes de facturation dans 13 pays ; résolution au premier contact +50 %. Le travail documenté est la réponse : observé N2."
       }
+    },
+    {
+      "company": "Vodafone",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Telecommunications",
+      "solution_name": "Vodafone Business AI Concierge",
+      "vendor": "Google Cloud",
+      "use_case": "A multimodal voice and data agent for small and medium business customers in Europe, built on the Gemini Enterprise Agent Platform and designed to operate autonomously inside a business environment, announced as the first of a planned suite alongside a managed detection and response service.",
+      "department": "Business customer service",
+      "industry": "Telecom",
+      "deployment_stage": "announced",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-customer-round-up/",
+          "title": "10 leading enterprises show why agents mean business",
+          "publisher": "Google",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "confidence": 0.45,
+      "confidence_reason": "Named operator and named agent, quoted by a Vodafone Business product director, but the source announces a launch and the only publisher is Google.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          1,
+          1,
+          2,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Vodafone describes an agent designed to operate autonomously, but the source announces it rather than showing it work, and publishes no bounds or supervision, so observed is N2.",
+        "basis_fr": "Vodafone decrit un agent concu pour fonctionner de maniere autonome, mais la source l'annonce sans le montrer a l'oeuvre et ne publie ni bornes ni supervision, donc l'observe est N2."
+      },
+      "id": "vodafone--vodafone-business-ai-concierge"
     },
     {
       "company": "Volkswagen Group",
@@ -31115,6 +34866,51 @@
       }
     },
     {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+          "title": "Real-world gen AI use cases from the world's leading organizations",
+          "publisher": "Google Cloud",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [],
+      "company": "West Sussex County Council",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Public Sector & Education",
+      "solution_name": "Dialogflow",
+      "vendor": "Google Cloud",
+      "use_case": "An online chatbot that talks residents through their eligibility for adult social care services and benefits, alongside 14 generative AI agents that let council employees, in particular the adult social care teams, search policy guides, legislation and procedures in conversation.",
+      "department": "Adult social care",
+      "industry": "Local government",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named council and named platform, serving 890,000 residents, but the only source is Google Cloud's own customer list and it publishes no measured result.",
+      "coda": {
+        "chain": "public",
+        "links": [
+          2,
+          0,
+          2,
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The chatbot establishes whether a resident is likely to qualify and the internal agents answer staff questions; the administrative decision stays with the council, so observed is N2.",
+        "basis_fr": "Le chatbot etablit si un habitant est susceptible d'etre eligible et les agents internes repondent aux questions des agents publics; la decision administrative reste au conseil, donc l'observe est N2."
+      },
+      "id": "west-sussex-county-council--dialogflow"
+    },
+    {
       "company": "Westpac",
       "company_country": "Australia",
       "region": "Oceania",
@@ -31419,6 +35215,62 @@
         "basis_en": "Seven years of answering thousands of daily interactions; the agentic upgrade on Gemini is the stated target, not the constaté. Observed N2, target level N3.",
         "basis_fr": "Sept ans à répondre à des milliers d'interactions quotidiennes ; la montée agentique sur Gemini est la cible affichée, pas le constaté. Observé N2, cible N3."
       }
+    },
+    {
+      "first_seen_date": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+          "title": "Agentforce in Action: Customer Success Stories",
+          "publisher": "Salesforce",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "reported_outcomes": [
+        {
+          "metric": "First time case resolution",
+          "value": "75%",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Guests with round the clock access to meeting support",
+          "value": "3,000",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "vendor": "Salesforce",
+      "solution_name": "Agentforce",
+      "company": "World Economic Forum",
+      "company_country": "Switzerland",
+      "region": "Europe",
+      "sector": "Professional & Business Services",
+      "use_case": "An agent inside the Davos meeting app that answered the questions of 3,000 guests, from registration and lost badges to session recommendations and real time updates.",
+      "department": "Event operations",
+      "industry": "International organisation",
+      "deployment_stage": "production",
+      "confidence": 0.5,
+      "confidence_reason": "Named organisation and named solution with a published resolution rate, but the only source is Salesforce's own customer page.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent answered participants and routed what it could not resolve; it took no decision of its own, so observed is N2.",
+        "basis_fr": "L'agent repondait aux participants et transferait ce qu'il ne pouvait pas resoudre; il n'a pris aucune decision propre, donc l'observe est N2."
+      },
+      "id": "world-economic-forum--agentforce"
     },
     {
       "id": "wpp--wpp-open-agent-hub-super-agents",
