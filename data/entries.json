@@ -1173,12 +1173,10 @@
           0,
           0
         ],
-        "observed": 3,
-        "locks": [
-          "data"
-        ],
-        "basis_en": "Computer vision quantified leftovers on ≈30,000 photographed trays autonomously, but the program's bounds and oversight are not publicly documented, so the declared level caps at N2 while the observed execution is N3.",
-        "basis_fr": "La vision par ordinateur a quantifié seule les restes de ≈30 000 plateaux photographiés, mais bornes et supervision du programme ne sont pas documentées publiquement : le niveau déclaré plafonne à N2 quand l'exécution observée est N3."
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The source describes image recognition analysing thirty thousand meal trays to reduce waste and refine the offering. Nothing is committed, and the entry's own text already conceded that the programme's bounds are not publicly documented.",
+        "basis_fr": "La source décrit une reconnaissance d'images qui analyse trente mille plateaux-repas pour réduire le gaspillage et affiner l'offre. Rien n'est engagé, et le texte de la fiche admettait déjà que les bornes du programme ne sont pas documentées publiquement."
       }
     },
     {
@@ -2099,10 +2097,12 @@
           0,
           0
         ],
-        "observed": 3,
-        "locks": [],
-        "basis_en": "Alipay agent Ah Bao books rides, orders coffee and executes wealth actions like buying mutual funds under user authorization; agent commits transactions (pilot).",
-        "basis_fr": "L'agent Alipay Ah Bao reserve des courses, commande du cafe et execute des operations d'epargne comme l'achat de fonds sous autorisation; l'agent valide les transactions (pilote)."
+        "observed": 2,
+        "locks": [
+          "mandate"
+        ],
+        "basis_en": "The source has the agent purchasing mutual funds with user authorisation, and says the new Alipay version has no launch date because it is still in internal testing. The authorisation is the written bound.",
+        "basis_fr": "La source montre l'agent souscrivant des fonds avec l'autorisation de l'utilisateur, et dit que la nouvelle version d'Alipay n'a pas de date de lancement car elle est encore en test interne. Cette autorisation est la borne écrite."
       }
     },
     {
@@ -2526,10 +2526,12 @@
           0,
           0
         ],
-        "observed": 3,
-        "locks": [],
-        "basis_en": "Ask AT&T Workflows agents handle customer service update requests by syncing data across backend systems and pushing real-time updates without human handoff; the agent executes account actions.",
-        "basis_fr": "Les agents Ask AT&T Workflows traitent les demandes de mise a jour en synchronisant les donnees entre systemes et en poussant des mises a jour en temps reel sans relais humain; l'agent execute des actions de compte."
+        "observed": 2,
+        "locks": [
+          "data"
+        ],
+        "basis_en": "The source states that a human always oversees the chain reaction of agents, with required human checkpoints throughout. It also documents what the entry had not recorded: every action logged, data isolation, retention policies and role based access enforced at each handoff.",
+        "basis_fr": "La source indique qu'un humain supervise toujours l'enchaînement des agents, avec des points de contrôle humains obligatoires tout au long. Elle documente aussi ce que la fiche n'avait pas enregistré : chaque action journalisée, isolation des données, politiques de rétention et accès par rôle appliqués à chaque passage de relais."
       }
     },
     {
@@ -3696,18 +3698,7 @@
       "department": "Customer service",
       "industry": "Banking",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "Certificate-reissuance calls completed without a callback (target request type)",
-          "value": "~90%",
-          "source_type": "vendor_case_study"
-        },
-        {
-          "metric": "Estimated annual labor-hours reduced",
-          "value": "~445 hours/year",
-          "source_type": "vendor_case_study"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-17",
       "sources": [
         {
@@ -3748,10 +3739,12 @@
           1,
           0
         ],
-        "observed": 3,
-        "locks": [],
-        "basis_en": "AI voicebot accepts loan-certificate reissuance requests on inbound lines without a callback (~90% of target calls) and cuts dispatch from a week to same-day; it executes the account action end-to-front (N3).",
-        "basis_fr": "Voicebot IA qui prend les demandes de reedition d'attestations de pret sur les lignes entrantes sans rappel (~90% des appels cibles) et reduit l'envoi d'une semaine au jour meme ; il execute l'action de compte (N3)."
+        "observed": 2,
+        "locks": [
+          "supervision"
+        ],
+        "basis_en": "The published flow ends with a person: a head office officer checks the request and issues the certificate, and an operator calls back when a further question is needed. The agent gathers the request; the bank completes it.",
+        "basis_fr": "Le flux publié se termine par un humain : un agent du siège vérifie la demande et émet le certificat, et un opérateur rappelle quand une question complémentaire est nécessaire. L'agent recueille la demande, la banque la conclut."
       }
     },
     {
@@ -3872,18 +3865,7 @@
       "department": "Retail Banking / Customer Service",
       "industry": "Banking",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "monthly messages handled",
-          "value": "~2.5 million",
-          "source_type": "news_media"
-        },
-        {
-          "metric": "first-contact resolution rate",
-          "value": ">90%",
-          "source_type": "news_media"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -5767,10 +5749,12 @@
           0,
           0
         ],
-        "observed": 3,
-        "locks": [],
-        "basis_en": "The in-app/WhatsApp assistant not only answers but executes Pix transfers and payments after biometric authentication, committing financial transactions autonomously within bounds.",
-        "basis_fr": "L'assistant dans l'app/WhatsApp ne fait pas que repondre: il execute des virements Pix et des paiements apres authentification biometrique, engageant des transactions financieres de maniere autonome dans un cadre defini."
+        "observed": 2,
+        "locks": [
+          "mandate"
+        ],
+        "basis_en": "The bank's own page says the assistant identifies the information and prepares the transfer, and the press account says it interprets the transaction and asks the user to confirm. The customer authorises before anything moves.",
+        "basis_fr": "La page de la banque dit que l'assistant identifie les informations et prépare le virement, et la presse qu'il interprète la transaction et demande confirmation à l'utilisateur. Le client autorise avant que quoi que ce soit ne bouge."
       }
     },
     {
@@ -6417,51 +6401,6 @@
       "provenance": "manual",
       "confidence": 0.5,
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
-    },
-    {
-      "id": "checkers-rally-s--hi-auto-ai-voice-assistant",
-      "company": "Checkers & Rally's",
-      "company_country": "United States",
-      "region": "North America",
-      "sector": "Hospitality & Food",
-      "solution_name": "Hi Auto AI voice assistant",
-      "vendor": "Hi Auto",
-      "use_case": "Checkers & Rally's uses Hi Auto's AI voice assistant to take drive-thru orders across its ~800-unit chain.",
-      "department": "Restaurant Operations",
-      "industry": "Quick-service restaurants",
-      "deployment_stage": "production",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://www.qsrmagazine.com/story/the-allure-and-evolution-of-voice-ai-in-the-drive-thru/",
-          "title": "The Allure and Evolution of Voice AI in the Drive-Thru",
-          "publisher": "QSR Magazine",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.55,
-      "confidence_reason": "Named company and named vendor confirmed, but the deployment predates the 2024 to 2026 window and the agent lacks a distinct brand name.",
-      "coda": {
-        "chain": "commerce",
-        "links": [
-          1,
-          2,
-          1,
-          0,
-          1,
-          0,
-          2,
-          0,
-          0,
-          0
-        ],
-        "observed": 3,
-        "locks": [],
-        "basis_en": "Hi Auto's voice assistant takes and confirms drive-thru orders autonomously across ~800 units, committing the order to the kitchen queue while staff handle payment and exceptions.",
-        "basis_fr": "L'assistant vocal Hi Auto prend et confirme les commandes au drive de maniere autonome dans ~800 restaurants, engageant la commande en cuisine tandis que le personnel gere paiement et exceptions."
-      }
     },
     {
       "id": "chevron--physics-informed-agentic-ai-production-engineering-assistant-spe-permian-basin-2",
@@ -8264,11 +8203,6 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "Order processing accuracy",
-          "value": "~90%",
-          "source_type": "news_media"
-        },
-        {
           "metric": "Planned scope",
           "value": "≥25 franchisees across ≥25 states/provinces, targeting ~3,000 drive-thrus",
           "source_type": "news_media"
@@ -8502,10 +8436,10 @@
           1,
           1
         ],
-        "observed": 3,
+        "observed": 2,
         "locks": [],
-        "basis_en": "Zowie autonomously resolves 98.47% of support conversations and drives +20% support-originated revenue and +8% conversion, executing resolutions with escalation for exceptions.",
-        "basis_fr": "Zowie résout de façon autonome 98,47% des conversations de support et génère +20% de revenus issus du support et +8% de conversion, exécutant les résolutions avec escalade pour les exceptions."
+        "basis_en": "Both sources describe an agent that answers and deflects. The deflection figure the retailer publishes is a rise from 30 to 50 percent year on year, not the number this entry carried, and the second source describes a different assistant altogether.",
+        "basis_fr": "Les deux sources décrivent un agent qui répond et déflecte. Le chiffre de déflexion publié par l'enseigne est un passage de 30 à 50 pour cent sur un an, pas celui que portait cette fiche, et la seconde source décrit un tout autre assistant."
       }
     },
     {
@@ -8519,7 +8453,7 @@
       "use_case": "Del Taco deployed Presto's automated voice-ordering AI at drive-thru lanes across select US restaurants.",
       "department": "Restaurant Operations",
       "industry": "Quick-service restaurants",
-      "deployment_stage": "production",
+      "deployment_stage": "pilot",
       "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
@@ -8567,11 +8501,6 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "Progress vs Q1 target",
-          "value": "10x achieved",
-          "source_type": "company_official"
-        },
-        {
           "metric": "Engineering output unlocked",
           "value": "~130-person",
           "source_type": "company_official"
@@ -8603,10 +8532,12 @@
           0,
           0
         ],
-        "observed": 3,
-        "locks": [],
-        "basis_en": "Herogen solves assigned engineering tickets end-to-end without human intervention (generation, bug-fixing, CI/deploy), reportedly unlocking ~130-person output and hitting a 10x target.",
-        "basis_fr": "Herogen résout les tickets d'ingénierie assignés de bout en bout sans intervention humaine (génération, correction, CI/déploiement), débloquant ~130 personnes-équivalent et atteignant un objectif de 10x."
+        "observed": 2,
+        "locks": [
+          "supervision"
+        ],
+        "basis_en": "The release describes a council of agents reviewing the code from several angles before a human does a final check, and built in safeguards enabling intervention. The agent submits a proposal; a person approves it.",
+        "basis_fr": "Le communiqué décrit un conseil d'agents qui relit le code sous plusieurs angles avant qu'un humain ne fasse la vérification finale, et des garde-fous intégrés permettant l'intervention. L'agent soumet une proposition, un humain l'approuve."
       }
     },
     {
@@ -9344,7 +9275,7 @@
       "solution_name": "Gen-nai",
       "vendor": "In-house",
       "use_case": "Japan's Digital Agency added agent functions to Gen-nai, the generative AI platform used by civil servants: staff create and run agents through conversation alone, and a single instruction is carried through a sequence of tasks such as web research and drafting documents. A second function, Gen-nai Workshop, is a development environment where the AI writes and modifies code, handles files and runs tests, and is due by December 2026.",
-      "deployment_stage": "production",
+      "deployment_stage": "pilot",
       "reported_outcomes": [
         {
           "metric": "Civil servants covered",
@@ -9460,11 +9391,6 @@
       "industry": "Banking",
       "deployment_stage": "production",
       "reported_outcomes": [
-        {
-          "metric": "cases fully resolved on first interaction",
-          "value": "~55%",
-          "source_type": "news_media"
-        },
         {
           "metric": "fraud prevented (AI security)",
           "value": "R100 million",
@@ -12450,7 +12376,7 @@
       "solution_name": "Joop Inkoop",
       "vendor": "Microsoft",
       "use_case": "The municipality's first operational AI agent helps staff pick the right CPV procurement code among more than 12,000 categories, then passes the information to a Power App and an RPA that creates the purchase request in the financial systems. A second agent, Mike Rosoft, supports staff in using Microsoft tools. The procurement process is fully audited, with documented prioritisation by the product owner and registered ownership before launch. The council has not yet set the framework for deploying agents, with authorisation for internal processes expected by the end of the year, and use in the social domain and citizen services is still an open question.",
-      "deployment_stage": "production",
+      "deployment_stage": "pilot",
       "reported_outcomes": [
         {
           "metric": "Staff trained to work with AI",
@@ -12486,13 +12412,12 @@
           1,
           0
         ],
-        "observed": 3,
+        "observed": 2,
         "locks": [
-          "data",
           "supervision"
         ],
-        "basis_en": "This one acts: the agent hands off to an RPA that creates the purchase request in the financial systems, which is a transaction raised inside the organisation rather than a draft handed to a person. The process is fully audited with named ownership and a defined lifecycle, which documents the oversight and the data boundary, but no written mandate setting what the agent may commit, and the council has not yet set the framework. Observed N3, declared N2.",
-        "basis_fr": "Celui-ci agit : l'agent passe la main à un RPA qui crée la demande d'achat dans les systèmes financiers, c'est-à-dire une opération déclenchée dans l'organisation et non un brouillon remis à un humain. Le processus est entièrement audité, avec une propriété nommée et un cycle de vie défini, ce qui documente la supervision et le périmètre de données, mais aucun mandat écrit ne fixe ce que l'agent peut engager, et le conseil n'a pas encore arrêté le cadre. Observé N3, déclaré N2."
+        "basis_en": "The agent hands off to an RPA that raises the purchase request, but the council and the executive have not yet set the framework for deploying agents and authorisation for internal processes is only expected by the end of the year, so this is not yet a standing delegation. The audited process with named ownership documents the oversight; no data boundary is described anywhere in the source.",
+        "basis_fr": "L'agent passe la main à un RPA qui crée la demande d'achat, mais le collège et le conseil n'ont pas encore fixé le cadre de déploiement des agents et l'autorisation pour les processus internes n'est attendue qu'en fin d'année : ce n'est donc pas encore une délégation établie. Le processus audité avec propriété nommée documente la supervision ; aucun périmètre de données n'est décrit dans la source."
       },
       "id": "gemeente-zwolle--joop-inkoop",
       "first_seen_date": "2026-11-23",
@@ -12562,10 +12487,12 @@
           0,
           2
         ],
-        "observed": 3,
-        "locks": [],
-        "basis_en": "Project ELF optimizes supply-chain logistics with 70% of up to 400 daily recommendations auto-accepted on ~3,000 orders and ~$14M savings; majority auto-execution within bounds puts autonomy at N3.",
-        "basis_fr": "Project ELF optimise la logistique supply chain avec 70% de jusqu'a 400 recommandations quotidiennes auto-acceptees sur ~3000 commandes et ~14M$ d'economies; l'auto-execution majoritaire dans des bornes situe l'autonomie a N3."
+        "observed": 2,
+        "locks": [
+          "supervision"
+        ],
+        "basis_en": "The figure the entry carried is the measure of the bound: over 70 percent of the recommendations are accepted by a human in the loop. A recommendation a person accepts is validated execution.",
+        "basis_fr": "Le chiffre que portait la fiche est la mesure de la borne : plus de 70 pour cent des recommandations sont acceptées par un humain dans la boucle. Une recommandation qu'un humain accepte, c'est de l'exécution validée."
       }
     },
     {
@@ -13666,10 +13593,12 @@
           0,
           0
         ],
-        "observed": 3,
-        "locks": [],
-        "basis_en": "Orchestrated AI agents run autonomous high-temperature solid-oxide electrolysis, sustaining 6,000+ hours of stable autonomous operation and cutting hydrogen cost up to 10%; agents monitor, diagnose and execute plant control within bounds.",
-        "basis_fr": "Des agents orchestres pilotent en autonomie l'electrolyse haute temperature, avec 6 000+ heures de fonctionnement stable et jusqu'a 10% de baisse du cout hydrogene; ils surveillent, diagnostiquent et executent le controle procede sous contraintes."
+        "observed": 2,
+        "locks": [
+          "supervision"
+        ],
+        "basis_en": "The source has specialised agents automating routine design decisions and validating logic before deployment, under an orchestrator. The hours saved are credited to the platform, not to the agents.",
+        "basis_fr": "La source montre des agents spécialisés qui automatisent des décisions de conception courantes et valident la logique avant déploiement, sous un orchestrateur. Les heures gagnées sont créditées à la plateforme, pas aux agents."
       }
     },
     {
@@ -14873,7 +14802,7 @@
       "deployment_stage": "pilot",
       "reported_outcomes": [
         {
-          "metric": "delivery efficiency vs traditional buys",
+          "metric": "Campaign CPM reduction against the client's own benchmark for direct buying, in a test",
           "value": "42% more efficient",
           "source_type": "news_media"
         }
@@ -15979,7 +15908,7 @@
           "source_type": "news_media"
         },
         {
-          "metric": "Robotic arm parcel tracking accuracy",
+          "metric": "Parcel tracking accuracy of the robotic arms deployed in sorting centres, a separate system from this agent",
           "value": "99.9%",
           "source_type": "news_media"
         }
@@ -16340,10 +16269,10 @@
           0,
           0
         ],
-        "observed": 3,
+        "observed": 2,
         "locks": [],
-        "basis_en": "Conversational AI answers product/financial questions and, via AI Transfer, initiates money transfers by instruction; 5M+ users. Transfer initiation is a committed financial transaction (news corroborates vendor case study).",
-        "basis_fr": "IA conversationnelle répondant aux questions produit/finance et, via AI Transfer, déclenchant des virements sur instruction; 5M+ utilisateurs. Le virement est une transaction engagée (presse corrobore l'étude éditeur)."
+        "basis_en": "The two sources describe AI Search and an AI financial calculator, and the only use they document is informational: about 30 percent of AI Search users get a product recommendation and move to the service page. The transfer capability this entry claimed appears in neither.",
+        "basis_fr": "Les deux sources décrivent AI Search et un calculateur financier, et le seul usage qu'elles documentent est informationnel : environ 30 pour cent des utilisateurs d'AI Search reçoivent une recommandation de produit et passent à la page du service. La capacité de virement qu'affirmait cette fiche ne figure dans aucune des deux."
       }
     },
     {
@@ -16410,8 +16339,8 @@
           "source_type": "company_official"
         },
         {
-          "metric": "Autonomy in Belgium",
-          "value": "82%",
+          "metric": "Customer queries Kate solves independently, across the group's five markets",
+          "value": "70%",
           "source_type": "company_official"
         },
         {
@@ -16453,10 +16382,12 @@
           0,
           0
         ],
-        "observed": 3,
-        "locks": [],
-        "basis_en": "Personal digital assistant answers queries and executes banking tasks across Belgium/Central Europe, reaching ~6M users with 82% autonomy in Belgium and handling 356 FTE of work; it executes and commits within bounds.",
-        "basis_fr": "Assistant numérique personnel répondant et exécutant des opérations bancaires en Belgique/Europe centrale, ~6M utilisateurs, 82% d'autonomie en Belgique et 356 ETP de travail traités; il exécute et engage dans un cadre."
+        "observed": 2,
+        "locks": [
+          "mandate"
+        ],
+        "basis_en": "The bank draws the line itself: agentic AI is being explored, but Kate will never implement anything without explicit customer approval, and customers are completely free to accept a proposal or not.",
+        "basis_fr": "La banque trace elle-même la limite : l'IA agentique est à l'étude, mais Kate ne mettra jamais rien en œuvre sans l'accord explicite du client, et les clients sont entièrement libres d'accepter ou non une proposition."
       }
     },
     {
