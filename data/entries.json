@@ -17657,7 +17657,7 @@
       "use_case": "Real-time AI call assistant that screens calls, blocks spam/voice-phishing and is being extended into an 'actionable AI' agent for subscribers.",
       "department": "Consumer mobile services",
       "industry": "Telecom",
-      "deployment_stage": "production",
+      "deployment_stage": "pilot",
       "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
@@ -19268,7 +19268,7 @@
       "solution_name": "ArchIQ (Archy voice agent)",
       "vendor": "",
       "use_case": "ArchIQ is McDonald's restaurant operating platform: the Archy voice agent takes drive thru orders in English and Spanish, Bluetooth tags track inventory, computer vision watches equipment and accuracy scales weigh orders before the bag leaves the window. Rollout is conditions based, so a restaurant must pass a readiness check before it gets the stack.",
-      "deployment_stage": "production",
+      "deployment_stage": "pilot",
       "reported_outcomes": [
         {
           "metric": "Archy drive thru order accuracy",
@@ -19932,7 +19932,7 @@
       "sector": "Public Sector & Education",
       "solution_name": "Diia.AI",
       "vendor": "Google (Gemini 2.0 Flash)",
-      "use_case": "A national AI agent inside the Diia app that delivers government services directly in chat, checking state registers and issuing documents like income certificates on request.",
+      "use_case": "A national AI agent on the Diia web portal, in open beta, with the government planning to bring it into the mobile app later that delivers government services directly in chat, checking state registers and issuing documents like income certificates on request.",
       "department": "Digital government services",
       "industry": "National government",
       "deployment_stage": "production",
@@ -20285,7 +20285,7 @@
       "department": "IT & data",
       "solution_name": "Chat@MDLZ (with Mila)",
       "vendor": "",
-      "use_case": "A conversational generative business intelligence layer over sales, production and distribution data from 130 factories, which employees question in plain language instead of reading static dashboards. Multi step operations such as invoice approval run through it within governance limits coded into the architecture: standard operating procedures are loaded as procedural files so the AI only executes authorised actions, brand guidelines are held as brand as code, and each step is designated deterministic or exploratory.",
+      "use_case": "A conversational generative business intelligence layer over sales, production and distribution data from 130 factories, which employees question in plain language instead of reading static dashboards. The chief information and digital officer describes it as the personal augmentation assistant of everybody in the enterprise, helping a knowledge worker through email, documents, presentations and research. The same interview describes multi step agentic workflows, invoice approval among them, with standard operating procedures loaded as procedural files so the AI only executes authorised actions, and each step designated deterministic or exploratory, but does not attach those workflows to Chat@MDLZ.",
       "deployment_stage": "production",
       "reported_outcomes": [
         {
@@ -20322,13 +20322,12 @@
           1,
           1
         ],
-        "observed": 3,
+        "observed": 2,
         "locks": [
-          "data",
           "mandate"
         ],
-        "basis_en": "This one goes further than answering: the article describes multi step operations the system carries out, invoice approval among them. The bounds are real and written into the architecture, procedures loaded so that only authorised actions execute, steps marked deterministic or exploratory, which documents the data boundary and the mandate. What is missing is tooled oversight: no human review point is described anywhere on the acting layer, so the declared level is held at validated execution.",
-        "basis_fr": "Ici on va plus loin que répondre : l'article décrit des opérations en plusieurs étapes que le système exécute, dont l'approbation de factures. Les bornes sont réelles et inscrites dans l'architecture, procédures chargées pour que seules les actions autorisées s'exécutent, étapes marquées déterministes ou exploratoires, ce qui documente le périmètre de données et le mandat. Ce qui manque, c'est la supervision outillée : aucun point de revue humaine n'est décrit sur la couche qui agit, le niveau déclaré reste donc l'exécution validée."
+        "basis_en": "This entry previously read the invoice approval workflow as something Chat@MDLZ carries out, and that is not what the source says: the acting layer is described in a separate passage and never tied to this assistant. What is attributable here is an assistant that answers questions over company data, so the level is validated execution. The written bound is real and quotable, procedures loaded so that only authorised actions execute, but it governs the agentic layer rather than a data boundary, so only the mandate is recorded.",
+        "basis_fr": "Cette fiche lisait l'approbation de factures comme une action de Chat@MDLZ, et ce n'est pas ce que dit la source : la couche qui agit est décrite dans un passage distinct, jamais rattachée à cet assistant. Ce qui lui est attribuable, c'est un assistant qui répond sur les données de l'entreprise : le niveau est l'exécution validée. La borne écrite est réelle et citable, des procédures chargées pour que seules les actions autorisées s'exécutent, mais elle encadre la couche agentique et non un périmètre de données : seul le mandat est enregistré."
       },
       "id": "mondelez-international--chat-mdlz-with-mila",
       "first_seen_date": "2026-11-23",
@@ -25803,57 +25802,6 @@
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
-      "id": "rio-tinto--autohaul",
-      "company": "Rio Tinto",
-      "company_country": "Australia",
-      "region": "Oceania",
-      "sector": "Consumer Goods & Manufacturing",
-      "solution_name": "AutoHaul",
-      "vendor": "Hitachi Rail (Ansaldo STS)",
-      "use_case": "Autonomous, AI-controlled long-distance heavy-haul rail network moving iron ore across ~1,700 km with locomotives run by a supervisory control system rather than drivers.",
-      "department": "Rail / Mine operations",
-      "industry": "Mining & metals (iron ore)",
-      "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "autonomous rail network",
-          "value": "~1,700 km of track",
-          "source_type": "news_media"
-        }
-      ],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://www.codeontrial.ai/p/autonomous-haulage-algorithmic-geology",
-          "title": "Autonomous Haulage, Algorithmic Geology and the Emerging Liability Framework for AI in Mining",
-          "publisher": "Code on Trial",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.35,
-      "confidence_reason": "AutoHaul is a genuine, named autonomous operations system, but it is an autonomous rail-control system (initial deployment predates the 2024 to 2026 window) rather than a generative/agentic AI agent, and sourcing here is secondary commentary.",
-      "coda": {
-        "chain": "ops",
-        "links": [
-          1,
-          2,
-          0,
-          1,
-          0,
-          2,
-          2,
-          1,
-          1,
-          1
-        ],
-        "observed": 3,
-        "locks": [],
-        "basis_en": "AutoHaul runs a ~1,700 km driverless heavy-haul iron-ore rail network via a supervisory control system; the agent executes movement end to end with humans on exceptions, evidenced by news media (not vendor marketing).",
-        "basis_fr": "AutoHaul exploite un reseau ferroviaire lourd sans conducteur d'environ 1 700 km via un systeme de controle superviseur; l'agent execute le transport de bout en bout, humains sur exceptions, atteste par la presse (hors marketing fournisseur)."
-      }
-    },
-    {
       "id": "rippling--decagon",
       "company": "Rippling",
       "company_country": "United States",
@@ -27949,8 +27897,8 @@
       "industry": "Private banking",
       "department": "IT & data",
       "solution_name": "Singularity",
-      "vendor": "OpenAI",
-      "use_case": "An internal platform where a network of around twenty agents prepares the banker's work: before each client meeting they pull together information from Salesforce, document management, knowledge bases, profitability data and the product catalogue, and produce recommendations and deliverables. Separate operations agents run the bank reconciliations every five minutes instead of once a day, and AI red teams analyse the attack surface continuously. A cross functional AI governance committee, covering legal compliance, the data protection officer, security and technology and operations, assesses the risk of each platform before it is made available, and every employee must know and sign the bank's AI policy.",
+      "vendor": "",
+      "use_case": "An internal platform through which the bank describes moving to what it calls agentic banking, with artificial intelligence as a cross cutting operating layer. The award citation reports its effect on bankers' daily work through nineteen intelligent workflows, without describing the agents themselves, their perimeter or who validates what.",
       "deployment_stage": "production",
       "reported_outcomes": [
         {
@@ -27977,23 +27925,20 @@
         "chain": "pilotage",
         "links": [
           2,
-          2,
-          2,
-          2,
-          2,
           1,
           1,
-          2,
           1,
+          1,
+          0,
+          0,
+          1,
+          0,
           1
         ],
-        "observed": 3,
-        "locks": [
-          "mandate",
-          "supervision"
-        ],
-        "basis_en": "Reconciling the bank's books every five minutes is an operation carried out, not a draft handed to someone, so this is execution within a scope. The governance is real: a risk assessment by a cross functional committee before any platform is released, an AI policy each employee signs, and continuous model review, which documents the bound and the oversight. What is missing for the next level is a documented data boundary, so the declared level stays at validated execution. Observed N3, declared N2.",
-        "basis_fr": "Rapprocher les comptes de la banque toutes les cinq minutes est une opération réalisée, pas un brouillon remis à quelqu'un : c'est de l'exécution sur un périmètre. La gouvernance est réelle : évaluation du risque par un comité pluridisciplinaire avant toute mise à disposition, politique IA que chaque salarié signe, revue continue des modèles, ce qui documente la borne et la supervision. Il manque un périmètre de données documenté pour le niveau supérieur : le niveau déclaré reste l'exécution validée. Observé N3, déclaré N2."
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The only source is a three paragraph award citation. It carries two figures and nothing else: no description of the agents, no perimeter, no validation step, and no governance mechanism. Everything this entry previously claimed beyond those figures came from an earlier interview that was never cited here, so it is removed. With nothing attesting execution, the level rests at validated execution and no lock is recorded.",
+        "basis_fr": "La seule source est une citation de palmarès de trois paragraphes. Elle porte deux chiffres et rien d'autre : aucune description des agents, aucun périmètre, aucune étape de validation, aucun dispositif de gouvernance. Tout ce que cette fiche affirmait au-delà de ces chiffres venait d'un entretien antérieur jamais cité ici : c'est retiré. Rien n'attestant d'exécution, le niveau reste l'exécution validée et aucun verrou n'est enregistré."
       },
       "id": "singular-bank--singularity",
       "first_seen_date": "2026-11-23",
@@ -30962,13 +30907,13 @@
           0,
           1
         ],
-        "observed": 3,
+        "observed": 2,
         "locks": [
           "mandate",
           "supervision"
         ],
-        "basis_en": "The system runs a goal through to finished work across connected apps without a handoff at each step, which is delegated execution rather than drafting. Administrators restrict which plugins, data sources and capabilities each team can reach, see what was done with which data, and important actions above a confidence threshold pause for review, but no grounded data lock is documented, so the declared level stays at N2.",
-        "basis_fr": "Le système mène un objectif jusqu'au livrable fini à travers les outils connectés, sans reprise humaine à chaque étape : c'est de l'exécution déléguée, pas de la rédaction assistée. Les administrateurs limitent les connecteurs, sources et capacités accessibles à chaque équipe, voient ce qui a été fait et avec quelles données, et les actions importantes au-dessus d'un seuil de confiance sont mises en pause pour revue, mais aucun verrou de donnée n'est documenté : le niveau déclaré reste à N2."
+        "basis_en": "The source describes the control precisely: important actions on connected tools are evaluated before execution, and the agent pauses and surfaces the proposed action for review rather than sending the email or editing the document. A validation before impact is validated execution, not delegation, so the observed level comes down to match what the entry's own locks describe.",
+        "basis_fr": "La source décrit le contrôle avec précision : les actions importantes sur les outils connectés sont évaluées avant exécution, et l'agent s'arrête pour soumettre l'action proposée à revue au lieu d'envoyer le courriel ou de modifier le document. Une validation avant impact, c'est de l'exécution validée et non de la délégation : le niveau observé descend pour coller à ce que les verrous de la fiche décrivent déjà."
       },
       "id": "uber--chatgpt-work",
       "first_seen_date": "2026-10-23",
@@ -31425,7 +31370,7 @@
       "sector": "Financial Services",
       "solution_name": "Leo",
       "vendor": "Clickatell (Clickatell Transact)",
-      "use_case": "Chat-banking assistant on WhatsApp and Facebook Messenger, launched in January 2018, that lets customers check balances, transfer funds and pay bills by chatting with the bank.",
+      "use_case": "Chat-banking assistant on WhatsApp and Facebook Messenger, launched in September 2018, that lets customers check balances, transfer funds and pay bills by chatting with the bank.",
       "department": "Customer service",
       "industry": "Banking",
       "deployment_stage": "production",
@@ -31487,7 +31432,7 @@
       "use_case": "Generative-AI voice agents make post-discharge follow-up outreach calls to patients at UHS hospitals.",
       "department": "Post-discharge patient engagement",
       "industry": "Hospital operator",
-      "deployment_stage": "production",
+      "deployment_stage": "pilot",
       "reported_outcomes": [
         {
           "metric": "deployment sites",
@@ -32791,7 +32736,7 @@
       "sector": "Financial Services",
       "solution_name": "Fargo",
       "vendor": "Google Cloud (Gemini Flash 2.0 / Agentspace)",
-      "use_case": "A customer-facing virtual assistant in the mobile app that handles account queries and transactions like debit-card reordering via natural language, with sensitive data kept away from the LLM.",
+      "use_case": "A customer-facing virtual assistant in the mobile app that handles account queries and transactions like turning a debit card on or off via natural language, with sensitive data kept away from the LLM.",
       "department": "Retail Banking / Customer Service",
       "industry": "Banking",
       "deployment_stage": "production",
@@ -32848,9 +32793,11 @@
           0
         ],
         "observed": 3,
-        "locks": [],
-        "basis_en": "In-app assistant handled over 245M interactions in 2024 and executes account actions like debit-card reordering via natural language; committing account actions is N3, backed by news media.",
-        "basis_fr": "Assistant in-app a traite plus de 245M d'interactions en 2024 et execute des actions de compte comme la recommande de carte de debit; l'execution d'actions de compte releve du N3, atteste par la presse."
+        "locks": [
+          "data"
+        ],
+        "basis_en": "In-app assistant handled over 245M interactions in 2024 and executes account actions like debit-card reordering via natural language; committing account actions is N3, backed by news media. The bank states the data boundary plainly: no sensitive data reaches the model, speech is scrubbed and tokenised by internal systems before it goes anywhere near the language model, and the account APIs never pass through it.",
+        "basis_fr": "Assistant in-app a traite plus de 245M d'interactions en 2024 et execute des actions de compte comme la recommande de carte de debit; l'execution d'actions de compte releve du N3, atteste par la presse. La banque énonce clairement le périmètre de données : aucune donnée sensible n'atteint le modèle, la parole est nettoyée et tokenisée par les systèmes internes avant d'en approcher, et les API de compte n'y passent jamais."
       }
     },
     {
