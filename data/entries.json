@@ -227,7 +227,7 @@
       "sector": "Financial Services",
       "solution_name": "Abby",
       "vendor": "Salesforce (Agentforce)",
-      "use_case": "Customer-facing agentic AI assistant on the Absa Banking App, website and business banking portal: contextual conversations about loans, investments and cross-border payments in all 11 official South African languages.",
+      "use_case": "Absa's conversational assistant for customers. The bank's own account does not name Abby and describes three autonomous agents being tested, one of them a multilingual support assistant answering common banking questions across eleven languages; the trade press names Abby without giving its channels or languages, so neither is claimed here.",
       "department": "Customer service",
       "industry": "Banking",
       "deployment_stage": "production",
@@ -712,10 +712,10 @@
           0,
           0
         ],
-        "observed": 1,
+        "observed": 2,
         "locks": [],
-        "basis_en": "Vague press-release claim of ServiceNow AI agents driving enterprise/IT workflows with no metrics; only marginal IT-function work evidenced.",
-        "basis_fr": "Communique vague evoquant des agents IA ServiceNow sur les workflows entreprise/IT sans metriques; seul un travail marginal sur la fonction IT est atteste."
+        "basis_en": "The source has the agents taking high volume requests such as password resets and certificate management, cutting ticket volumes and resolution times. Resetting a password is an action carried out, not a proposal, so the level is validated execution rather than assistance.",
+        "basis_fr": "La source montre les agents prenant en charge des demandes à fort volume comme la réinitialisation de mots de passe et la gestion de certificats, réduisant le volume de tickets et les délais. Réinitialiser un mot de passe est une action réalisée, pas une proposition : le niveau est l'exécution validée, pas l'assistance."
       }
     },
     {
@@ -778,7 +778,7 @@
       "sector": "Travel & Transportation",
       "solution_name": "ADR Virtual Assistant (ADRYX)",
       "vendor": "Amazon Web Services / Storm Reply",
-      "use_case": "A generative-AI virtual assistant on WhatsApp and the ADR website gives Fiumicino passengers real-time info on services, connections, parking and tourism.",
+      "use_case": "A generative-AI virtual assistant on WhatsApp and the ADR website gives Fiumicino passengers real-time info on services, connections, parking and.",
       "department": "Passenger Experience",
       "industry": "Airport operator",
       "deployment_stage": "production",
@@ -2143,58 +2143,6 @@
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
-      "id": "arcelormittal--arthur-dofasco-big-data-ml-platform-with-aws",
-      "company": "ArcelorMittal",
-      "company_country": "Luxembourg",
-      "region": "Europe",
-      "sector": "Consumer Goods & Manufacturing",
-      "solution_name": "ARTHUR (Dofasco Big Data/ML platform) with AWS",
-      "vendor": "AWS",
-      "use_case": "AI at the point of production for predictive maintenance, computer-vision quality control, process optimization, and digital twins of assets and production lines.",
-      "department": "Operations / Production",
-      "industry": "Steel manufacturing",
-      "deployment_stage": "announced",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://corporate.arcelormittal.com/media/news/regulatory-news/arcelormittal-announces-strategic-collaboration-with-aws-to-drive-industrial-automation-and-lower-carbon-construction-globally",
-          "title": "ArcelorMittal announces strategic collaboration with AWS to drive industrial automation and lower-carbon construction globally",
-          "publisher": "ArcelorMittal",
-          "source_type": "press_release",
-          "retrieved_date": "2026-08-27"
-        },
-        {
-          "url": "https://luxinnovation.lu/news/arcelormittal-how-ai-reinvented-steel",
-          "title": "ArcelorMittal: How AI reinvented steel",
-          "publisher": "Luxinnovation",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.4,
-      "confidence_reason": "ArcelorMittal + AWS collaboration and the named Dofasco 'ARTHUR' ML platform both appear in retrieved results, but ARTHUR is a big-data/ML platform rather than a clearly agentic AI, and the AWS tie-up is an announcement without metrics.",
-      "coda": {
-        "chain": "ops",
-        "links": [
-          0,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          1,
-          0,
-          0
-        ],
-        "observed": 1,
-        "locks": [],
-        "basis_en": "Announced AI for predictive maintenance, computer-vision quality control and digital twins; no outcomes and not yet operating.",
-        "basis_fr": "IA annoncee pour maintenance predictive, controle qualite par vision et jumeaux numeriques; aucun resultat et pas encore operationnel."
-      }
-    },
-    {
       "id": "arizona-state-university--superhuman-go",
       "company": "Arizona State University",
       "company_country": "United States",
@@ -3047,7 +2995,7 @@
       "use_case": "Adoption of Agentspace to build AI agents within the financial institution.",
       "department": "IT / Operations",
       "industry": "Banking",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
@@ -3137,7 +3085,7 @@
       "use_case": "Gives relationship managers and banking assistants contextual, in-workflow guidance on the NiCE CXone platform during customer interactions, including interaction summaries, contact history and sentiment identification, to support more than 90 million customers. It is integrated with WhatsApp and also automates team routines.",
       "department": "Customer service",
       "industry": "Banking",
-      "deployment_stage": "production",
+      "deployment_stage": "pilot",
       "reported_outcomes": [],
       "sources": [
         {
@@ -3429,7 +3377,7 @@
       "sector": "Financial Services",
       "solution_name": "VIRA (Virtual Assistant Chat Banking BCA)",
       "vendor": "",
-      "use_case": "Virtual assistant chat-banking service available across LINE, Facebook Messenger and Google Assistant for customer inquiries.",
+      "use_case": "VIRA provides information and services to make customers' banking easier, according to the source, which gives no channel list for it. The LINE, Facebook Messenger and Telegram channels cited elsewhere belong to Mita, another bank's assistant, and are not claimed here.",
       "department": "Customer Service",
       "industry": "Banking",
       "deployment_stage": "production",
@@ -4191,7 +4139,7 @@
       "use_case": "Bell Canada uses Google's Gemini Enterprise platform to build AI agents for customer engagement.",
       "department": "Customer Engagement",
       "industry": "Telecommunications",
-      "deployment_stage": "unknown",
+      "deployment_stage": "announced",
       "reported_outcomes": [],
       "first_seen_date": "2026-07-27",
       "sources": [
@@ -4624,8 +4572,8 @@
       "region": "North America",
       "sector": "Media & Entertainment",
       "solution_name": "AI-Powered Earnings Call Summaries / Document Insights",
-      "vendor": "Bloomberg (in-house, BloombergGPT)",
-      "use_case": "Generative-AI tools on the Bloomberg Terminal that summarise earnings calls and news into bullet points and let analysts ask conversational questions to surface insights across company documents.",
+      "vendor": "",
+      "use_case": "Generative-AI tools on the Bloomberg Terminal that summarise earnings calls into bullet points and let analysts ask conversational questions to surface insights across company documents.",
       "department": "News / Product",
       "industry": "Financial media",
       "deployment_stage": "production",
@@ -4832,10 +4780,10 @@
           0,
           0
         ],
-        "observed": 1,
+        "observed": 2,
         "locks": [],
-        "basis_en": "Announced in-car conversational assistant on Alexa+ to control vehicle functions and access information in the iX3; announced, not yet deployed, no delegated decisions (N1).",
-        "basis_fr": "Assistant conversationnel embarque annonce sur Alexa+ pour piloter des fonctions du vehicule et acceder a l'information dans l'iX3 ; annonce, pas encore deploye, sans decision deleguee (N1)."
+        "basis_en": "The reporter asked the car to close the windows and it complied immediately, and the assistant explains of its own accord why it declines the action on American vehicles. It acts on command rather than proposing, so the level is validated execution. The rollout itself is still announced for the second half of 2026.",
+        "basis_fr": "Le journaliste a demandé à la voiture de fermer les vitres et elle s'est exécutée immédiatement, l'assistant expliquant de lui-même pourquoi il refuse l'action sur les véhicules américains. Il agit sur commande au lieu de proposer : le niveau est l'exécution validée. Le déploiement, lui, reste annoncé pour le second semestre 2026."
       }
     },
     {
@@ -6567,7 +6515,7 @@
       "sector": "Telecommunications",
       "solution_name": "C&H Converged Agent / Tone household AI agent",
       "vendor": "Huawei (partner)",
-      "use_case": "Converged AI agent stack (AltoC&H architecture) plus 'Tone', a camera-equipped household AI agent that routes media, manages home network quality and responds to voice commands.",
+      "use_case": "A converged agent paired with Tone, a smart home robot offering AI features for entertainment, education and fitness, which integrates multiple applications and reads user intent to act as a digital twin of the user. The network quality and latency figures in the source belong to the operator's network engineering, not to the agent.",
       "department": "Consumer / home services",
       "industry": "Telecom",
       "deployment_stage": "production",
@@ -6863,7 +6811,7 @@
       "use_case": "Conversational and agentic AI concierge agents coordinate guest interactions and service requests and prioritize tasks across CityBlue's hotels in Kenya, Rwanda and Tanzania, freeing staff for in-person service.",
       "department": "Guest services",
       "industry": "Hotels",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [],
       "first_seen_date": "2026-08-31",
       "sources": [
@@ -6922,7 +6870,7 @@
       "use_case": "AI agent within Clara's in-house Clara Intelligence layer that automates financial reports, spend analysis and recommendations for corporate clients on Clara's expense-management platform.",
       "department": "Finance",
       "industry": "Fintech / expense management",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [],
       "sources": [
         {
@@ -7344,58 +7292,6 @@
       "provenance": "manual",
       "confidence": 0.75,
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
-    },
-    {
-      "id": "commercial-bank-of-ceylon--aipara-ai-powered-annual-report-assistant",
-      "company": "Commercial Bank of Ceylon",
-      "company_country": "Sri Lanka",
-      "region": "South Asia",
-      "sector": "Financial Services",
-      "solution_name": "AIPARA (AI-Powered Annual Report Assistant)",
-      "vendor": "",
-      "use_case": "AI-powered interface letting stakeholders navigate and query the bank's annual report data conversationally.",
-      "department": "Investor Relations / Digital",
-      "industry": "Banking",
-      "deployment_stage": "production",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://en.wikipedia.org/wiki/Commercial_Bank_of_Ceylon",
-          "title": "Commercial Bank of Ceylon",
-          "publisher": "Wikipedia",
-          "source_type": "other",
-          "retrieved_date": "2026-08-27"
-        },
-        {
-          "url": "https://www.sundaytimes.lk/251116/education/ai-and-banking-sri-lankas-next-leap-forward-621056.html",
-          "title": "AI and Banking: Sri Lanka's Next Leap Forward",
-          "publisher": "The Sunday Times (Sri Lanka)",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.52,
-      "confidence_reason": "Named tool (AIPARA) attributed to the bank, but sourcing is an encyclopedia entry plus a general news feature, without company-official confirmation or metrics.",
-      "coda": {
-        "chain": "care",
-        "links": [
-          1,
-          0,
-          0,
-          2,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "AIPARA is a conversational interface letting stakeholders navigate and query the bank's annual report data; it answers information queries without executing, so N2.",
-        "basis_fr": "AIPARA est une interface conversationnelle permettant aux parties prenantes de naviguer et interroger les donnees du rapport annuel; il repond aux questions d'information sans executer, donc N2."
-      }
     },
     {
       "id": "commercial-international-bank-cib--zaki",
@@ -9355,7 +9251,7 @@
       "sector": "Media & Entertainment",
       "solution_name": "D/Cipher",
       "vendor": "OpenAI (technology)",
-      "use_case": "An AI-powered contextual ad-targeting tool that draws connections across content internally and across the open web to match ads without third-party cookies.",
+      "use_case": "D/Cipher matches advertising to the intent behind what a reader is reading rather than to the reader, across the publisher's own titles. Extending that matching across the open web is described by the company as coming down the pipeline and deliberately undetailed, not as something the system does today.",
       "department": "Advertising / Ad Tech",
       "industry": "Digital publishing",
       "deployment_stage": "production",
@@ -10651,7 +10547,7 @@
       "use_case": "A GPT-powered financial assistant that answers finance questions and analyzes portfolios, evolving into a proactive 'Hey George' chatbot inside the George banking app.",
       "department": "Digital Banking",
       "industry": "Banking",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
@@ -10690,51 +10586,6 @@
         "locks": [],
         "basis_en": "The GPT-powered 'Hey George' assistant answers finance questions and analyzes portfolios proactively inside the George app; it informs rather than executes, so autonomy is N2.",
         "basis_fr": "L'assistant 'Hey George' base sur GPT repond aux questions financieres et analyse les portefeuilles de facon proactive dans l'app George; il informe sans executer, autonomie N2."
-      }
-    },
-    {
-      "company": "Ethiopian Airlines",
-      "company_country": "Ethiopia",
-      "region": "Africa",
-      "sector": "Travel & Transportation",
-      "solution_name": "Jupiter 5.0",
-      "vendor": "FlyNava Technologies",
-      "use_case": "AI pricing platform adopted by Africa's largest carrier, cited alongside Kenya Airways and RwandAir as pioneering AI-based fare optimization on the continent.",
-      "department": "Revenue management",
-      "industry": "Airline",
-      "deployment_stage": "production",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-07-13",
-      "sources": [
-        {
-          "url": "https://www.travelandtourworld.com/news/article/0xedtcmffqi3/",
-          "title": "Kenya Airways joins Ethiopian Airlines & RwandAir in Pioneering AI Pricing With Jupiter 5.0",
-          "publisher": "Travel And Tour World",
-          "source_type": "news_media",
-          "retrieved_date": "2026-07-13"
-        }
-      ],
-      "confidence": 0.6,
-      "confidence_reason": "Named in independent coverage of the platform's African adopters, but only one retrieved source covers Ethiopian specifically; moderate confidence.",
-      "id": "ethiopian-airlines--jupiter-5-0",
-      "coda": {
-        "chain": "revenue",
-        "links": [
-          1,
-          1,
-          0,
-          2,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "Adoption is reported, execution is not detailed: the platform's autonomy at Ethiopian is cited, not evidenced. Observed N2 pending better sources.",
-        "basis_fr": "L'adoption est rapportée, l'exécution n'est pas détaillée : l'autonomie de la plateforme chez Ethiopian est citée, pas prouvée. Observé N2 en attendant de meilleures sources."
       }
     },
     {
@@ -11052,51 +10903,6 @@
       "provenance": "manual",
       "confidence": 0.5,
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
-    },
-    {
-      "id": "faw-volkswagen--insights-hub-production-copilot",
-      "company": "FAW-Volkswagen",
-      "company_country": "China",
-      "region": "East Asia",
-      "sector": "Automotive & Mobility",
-      "solution_name": "Insights Hub Production Copilot",
-      "vendor": "Siemens",
-      "use_case": "Generative-AI production copilot for real-time production issue troubleshooting and root-cause analytics on the factory floor.",
-      "department": "Production / Manufacturing",
-      "industry": "Automotive manufacturing",
-      "deployment_stage": "unknown",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://blogs.sw.siemens.com/insights-hub/2025/01/30/production-copilot-ai-assistant-for-production/",
-          "title": "Insights Hub Production Copilot: an AI assistant for your production",
-          "publisher": "Siemens",
-          "source_type": "company_official",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.5,
-      "confidence_reason": "FAW-Volkswagen named as a customer success story in Siemens blog, but deployment detail and metrics are thin; vendor-authored source.",
-      "coda": {
-        "chain": "ops",
-        "links": [
-          0,
-          1,
-          2,
-          0,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "The Insights Hub copilot supports real-time production troubleshooting and root-cause analytics on the factory floor; it diagnoses and recommends while a human acts, so autonomy is N2.",
-        "basis_fr": "Le copilote Insights Hub aide au depannage de production en temps reel et a l'analyse de cause racine en atelier; il diagnostique et recommande tandis qu'un humain agit, autonomie N2."
-      }
     },
     {
       "id": "federal-ministry-of-communications-innovation-and-digital-economy-fmcide-nigeria--govguide-nigeria",
@@ -11802,7 +11608,7 @@
       "use_case": "Foxconn's FoxBrain LLM underpins CityGPT for urban infrastructure and the CoDoctor AI multi-agent clinical system (breast-cancer screening, ECG, fundus and coronary analysis) deployed across Taiwan hospitals.",
       "department": "Digital / healthcare solutions",
       "industry": "Electronics manufacturing",
-      "deployment_stage": "pilot",
+      "deployment_stage": "production",
       "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
@@ -11912,7 +11718,7 @@
       "use_case": "AI agent service (part of the Kozuchi platform) that decomposes abstract issues from conversations into discrete tasks, plans them and selects multiple optimal AIs to execute autonomously or with humans.",
       "department": "Enterprise AI platform",
       "industry": "IT services",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
@@ -12018,7 +11824,7 @@
       "sector": "Financial Services",
       "solution_name": "Garanti BBVA Agentic Commerce (with Mastercard)",
       "vendor": "Mastercard",
-      "use_case": "Garanti BBVA and Mastercard completed the first end-to-end agentic commerce transaction in Turkiye's banking sector, letting customers search, compare and securely purchase products via an AI shopping assistant in Garanti BBVA Mobil and Bonus Flas.",
+      "use_case": "The bank and Mastercard showed an agentic commerce solution in which a customer's own AI assistant would search, compare and buy with tokenised card credentials. The source says it will soon be available through the bank's app and loyalty platform, and that the first transaction was a demonstration at a dedicated gathering.",
       "department": "Payments / Digital Banking",
       "industry": "Banking",
       "deployment_stage": "announced",
@@ -12662,7 +12468,7 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "volume",
+          "metric": "Monthly interactions Boti handles overall, the generative part having handled more than 17,000 queries since launch",
           "value": "2M+ queries/month without human intervention",
           "source_type": "vendor_case_study"
         },
@@ -12780,7 +12586,7 @@
       "use_case": "Pilots ChatGPT Enterprise for employee productivity and applies OpenAI vision models to automate map-making from street imagery for GrabMaps.",
       "department": "Company-wide",
       "industry": "Ride-hailing & delivery",
-      "deployment_stage": "pilot",
+      "deployment_stage": "announced",
       "reported_outcomes": [],
       "first_seen_date": "2026-07-10",
       "sources": [
@@ -12893,7 +12699,7 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "increase in direct patient interaction time",
+          "metric": "Increase in direct patient interaction time measured across nine NHS sites in the sponsored study, not at this hospital alone",
           "value": "23.5%",
           "source_type": "news_media"
         },
@@ -13035,7 +12841,7 @@
         },
         {
           "metric": "digital customer-service interactions on WhatsApp (Colombia)",
-          "value": "71% in three weeks",
+          "value": "70%",
           "source_type": "vendor_case_study"
         }
       ],
@@ -13236,58 +13042,6 @@
       }
     },
     {
-      "id": "guaranty-trust-bank-gtbank--habari-ai-assistant",
-      "company": "Guaranty Trust Bank (GTBank)",
-      "company_country": "Nigeria",
-      "region": "Africa",
-      "sector": "Financial Services",
-      "solution_name": "Habari AI Assistant",
-      "vendor": "",
-      "use_case": "GTBank leverages the Habari AI Assistant, embedded in its digital ecosystem, for customer engagement and self-service support.",
-      "department": "Retail Banking / Digital",
-      "industry": "Banking",
-      "deployment_stage": "production",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://techcabal.com/2025/07/24/generative-ai-in-nigerian-banks/",
-          "title": "User insights, new priorities: AI's evolution in Nigerian banks",
-          "publisher": "TechCabal",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        },
-        {
-          "url": "https://www.thecable.ng/insight-why-using-nigerian-banks-chatbots-feels-like-talking-to-a-wall/",
-          "title": "Why using Nigerian banks' chatbots feels like talking to a wall",
-          "publisher": "TheCable",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.55,
-      "confidence_reason": "Named platform and bank confirmed by Nigerian tech media, but sourcing is secondary and coverage is critical/mixed.",
-      "coda": {
-        "chain": "care",
-        "links": [
-          1,
-          0,
-          0,
-          2,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "Habari assistant embedded in GTBank's digital ecosystem handles customer engagement and self-service support; no metrics reported, and it answers/informs rather than executes.",
-        "basis_fr": "L'assistant Habari integre a l'ecosysteme numerique de GTBank gere l'engagement client et le self-service; aucune metrique, il repond/informe sans executer."
-      }
-    },
-    {
       "id": "h2e-power--ecostruxure-automation-expert",
       "company": "H2E Power",
       "company_country": "India",
@@ -13416,7 +13170,7 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "Total placements across four sites",
+          "metric": "Increase in total placements across four manufacturing sites, approximate and reported by the vendor",
           "value": "+30%",
           "source_type": "news_media"
         },
@@ -13519,7 +13273,7 @@
       "sector": "Healthcare, Life Sciences & Luxury",
       "solution_name": "Nurse Handoff",
       "vendor": "Google Cloud (MedLM)",
-      "use_case": "Generative AI app that drafts shift-change summaries from the electronic health record so nurses review and edit instead of writing from scratch, piloted in five hospitals of America's largest hospital network.",
+      "use_case": "Generative AI app that drafts shift-change summaries from the electronic health record so nurses review and edit instead of writing from scratch, piloted in eight hospitals of America's largest hospital network.",
       "department": "Nursing",
       "industry": "Hospitals",
       "deployment_stage": "pilot",
@@ -13690,7 +13444,7 @@
       "use_case": "Enterprise agentic-AI platform covering the full lifecycle from concept to deployment and optimization for building scalable AI systems.",
       "department": "Hitachi Digital Services",
       "industry": "IT services",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [
         {
           "metric": "reduction in time to equip enterprises with AI systems",
@@ -13790,7 +13544,7 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "phone support resolution speed",
+          "metric": "Speed to a solution against navigating traditional phone menus, measured in a 50 store pilot",
           "value": "4x faster; intent understood in ~10 seconds",
           "source_type": "company_official"
         }
@@ -14106,13 +13860,7 @@
       "department": "Member services / contact center",
       "industry": "Health insurance (payer)",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "member advocates supported",
-          "value": "more than 20,000, handling up to 80 million calls annually",
-          "source_type": "company_official"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -14164,13 +13912,7 @@
       "department": "Quality control / Production",
       "industry": "Outdoor power equipment manufacturing",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "factory rollout of Azure IoT Operations",
-          "value": "from 2 to 40 factories globally by summer 2025",
-          "source_type": "vendor_case_study"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -14269,14 +14011,8 @@
       "use_case": "LLM-based in-vehicle voice AI agent enabling natural conversation and direct voice control of in-car functions, first applied to the New Grandeur.",
       "department": "Software-defined vehicle",
       "industry": "Automotive",
-      "deployment_stage": "announced",
-      "reported_outcomes": [
-        {
-          "metric": "target vehicles by 2030",
-          "value": "20 million",
-          "source_type": "news_media"
-        }
-      ],
+      "deployment_stage": "production",
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -15549,7 +15285,7 @@
       "use_case": "AI app that helps cabin crew quickly draft standardized reports of in-flight events using a fine-tuned small language model.",
       "department": "Cabin/inflight operations",
       "industry": "Airline",
-      "deployment_stage": "production",
+      "deployment_stage": "pilot",
       "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
@@ -15699,57 +15435,6 @@
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
-      "id": "jll-jones-lang-lasalle--falcon-genai-lease-abstraction-and-jll-serve",
-      "company": "JLL (Jones Lang LaSalle)",
-      "company_country": "United States",
-      "region": "North America",
-      "sector": "Professional & Business Services",
-      "solution_name": "Falcon (GenAI lease abstraction) and JLL Serve",
-      "vendor": "JLL (in-house)",
-      "use_case": "JLL runs Falcon for GenAI lease abstraction and JLL Serve for AI-powered facilities management across its commercial real-estate services.",
-      "department": "Real Estate Services / Facilities Management",
-      "industry": "Commercial real estate",
-      "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "Labor reduction in lease abstraction",
-          "value": "60%",
-          "source_type": "news_media"
-        }
-      ],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://www.facilitiesdive.com/news/jll-serve-cbre-cushman-wakefield-artificial-intelligence-ai-initiatives-integrated-FM/719271/",
-          "title": "JLL Serve launch highlights ongoing AI initiatives in CRE",
-          "publisher": "Facilities Dive",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.7,
-      "confidence_reason": "Named company and named products (Falcon, JLL Serve) confirmed in trade press with a stated metric.",
-      "coda": {
-        "chain": "fonctions",
-        "links": [
-          0,
-          0,
-          0,
-          0,
-          1,
-          0,
-          0,
-          0,
-          2,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "Falcon abstracts lease data (60% labor reduction) and JLL Serve powers AI facilities management; lease abstraction prepares structured data humans validate.",
-        "basis_fr": "Falcon extrait les données de baux (60% de charge en moins) et JLL Serve pilote la gestion des installations; l'abstraction de baux prépare des données validées par l'humain."
-      }
-    },
-    {
       "id": "jpmorgan-chase--llm-suite",
       "company": "JPMorgan Chase",
       "company_country": "United States",
@@ -15764,7 +15449,7 @@
       "reported_outcomes": [
         {
           "metric": "Employees using LLM Suite",
-          "value": "≈250,000",
+          "value": "200,000",
           "source_type": "news_media"
         },
         {
@@ -15918,57 +15603,6 @@
       }
     },
     {
-      "id": "kaiser-permanente--abridge",
-      "company": "Kaiser Permanente",
-      "company_country": "United States",
-      "region": "North America",
-      "sector": "Healthcare, Life Sciences & Luxury",
-      "solution_name": "Abridge",
-      "vendor": "Abridge",
-      "use_case": "Ambient generative-AI documentation used by clinicians, specialists, and pharmacists across the health system's hospitals and medical offices.",
-      "department": "Clinical documentation",
-      "industry": "Integrated health system / payer-provider",
-      "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "clinicians using Abridge",
-          "value": "over 25,000 across 40 hospitals and 616 medical offices",
-          "source_type": "news_media"
-        }
-      ],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/abridge-scores-250m-series-d-ambient-ai-tech-now-use-100-health-systems",
-          "title": "Abridge scores $250M, adds new AI tool to streamline 'billable notes'",
-          "publisher": "Fierce Healthcare",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.55,
-      "confidence_reason": "Scale figures appear in retrieved trade-press text; named org and solution are clear.",
-      "coda": {
-        "chain": "soin",
-        "links": [
-          1,
-          2,
-          0,
-          0,
-          0,
-          0,
-          1,
-          0,
-          0,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "Ambient generative documentation used by 25,000+ clinicians across 40 hospitals and 616 offices to draft clinical notes; it prepares records clinicians validate.",
-        "basis_fr": "Documentation ambiante générative utilisée par 25 000+ cliniciens dans 40 hôpitaux et 616 cabinets pour rédiger les notes; elle prépare des comptes rendus validés par le clinicien."
-      }
-    },
-    {
       "id": "kakaobank--ai-search-ai-native-incl-ai-transfer",
       "company": "KakaoBank",
       "company_country": "South Korea",
@@ -16024,51 +15658,6 @@
         "locks": [],
         "basis_en": "The two sources describe AI Search and an AI financial calculator, and the only use they document is informational: about 30 percent of AI Search users get a product recommendation and move to the service page. The transfer capability this entry claimed appears in neither.",
         "basis_fr": "Les deux sources décrivent AI Search et un calculateur financier, et le seul usage qu'elles documentent est informationnel : environ 30 pour cent des utilisateurs d'AI Search reçoivent une recommandation de produit et passent à la page du service. La capacité de virement qu'affirmait cette fiche ne figure dans aucune des deux."
-      }
-    },
-    {
-      "id": "kasikornbank-kbank--p-ple-people-helpdesk-ai-agent",
-      "company": "Kasikornbank (KBank)",
-      "company_country": "Thailand",
-      "region": "Southeast Asia",
-      "sector": "Financial Services",
-      "solution_name": "P'Ple (People Helpdesk AI Agent)",
-      "vendor": "Microsoft Azure OpenAI (Foundry Models)",
-      "use_case": "An internal AI agent acting as a one-stop employee service platform for HR/policy questions and routing complex requests to the right teams.",
-      "department": "Human Resources / Employee Services",
-      "industry": "Banking",
-      "deployment_stage": "production",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://www.microsoft.com/en/customers/story/26245-kbank-azure-openai-in-foundry-models",
-          "title": "No employee left behind: KBank's human-first approach to Agentic AI with Azure OpenAI",
-          "publisher": "Microsoft Customer Stories",
-          "source_type": "vendor_case_study",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.5,
-      "confidence_reason": "Named bank and named agent (P'Ple) documented only through a Microsoft vendor case study.",
-      "coda": {
-        "chain": "fonctions",
-        "links": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          1,
-          0,
-          0,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "Internal one-stop employee-service agent answers HR/policy questions and routes complex requests; it answers and triages, vendor case study only.",
-        "basis_fr": "Agent interne de service employé répondant aux questions RH/politiques et orientant les demandes complexes; il répond et trie, étude de cas éditeur uniquement."
       }
     },
     {
@@ -16442,7 +16031,7 @@
       "use_case": "An AI-powered contact center platform using voice-bots and chatbots to answer customer enquiries for the airline.",
       "department": "Customer Service",
       "industry": "Aviation",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
@@ -16740,7 +16329,7 @@
       "use_case": "Migration of the KN SwiftLOG warehouse management system to a cloud-native platform with agentic AI capabilities across contract-logistics operations.",
       "department": "Warehouse / Contract logistics operations",
       "industry": "Contract logistics & warehousing",
-      "deployment_stage": "announced",
+      "deployment_stage": "production",
       "reported_outcomes": [
         {
           "metric": "deployment footprint",
@@ -16793,11 +16382,6 @@
       "industry": "Beauty & Personal Care",
       "deployment_stage": "production",
       "reported_outcomes": [
-        {
-          "metric": "conversations handled",
-          "value": "400,000+ since launch",
-          "source_type": "vendor_case_study"
-        },
         {
           "metric": "response latency",
           "value": "under 5 seconds",
@@ -17023,13 +16607,7 @@
       "department": "Engineering",
       "industry": "Defense / national security IT",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "outcome",
-          "value": "faster, more secure delivery of purpose-built mission software",
-          "source_type": "vendor_case_study"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -17512,7 +17090,7 @@
       "use_case": "An AI agent that gives customers style tips and recommends fashion products available in the shopper's region to speed delivery and lift conversion.",
       "department": "E-commerce / Merchandising",
       "industry": "Fashion retail",
-      "deployment_stage": "production",
+      "deployment_stage": "pilot",
       "reported_outcomes": [
         {
           "metric": "fashion micro-trends identified",
@@ -17599,9 +17177,7 @@
           0
         ],
         "observed": 2,
-        "locks": [
-          "supervision"
-        ],
+        "locks": [],
         "basis_en": "The agent reads charts and flags transfer candidates on a four hour cycle; humans make the transfer decision, so it prepares rather than commits. The clinical operations team owns validation and monitoring after go live, which documents supervision.",
         "basis_fr": "L'agent lit les dossiers et signale les patients transférables toutes les quatre heures ; la décision de transfert revient aux équipes, donc il prépare sans engager. L'équipe des opérations cliniques assure la validation et le suivi depuis la mise en service, ce qui documente la supervision."
       },
@@ -17765,18 +17341,7 @@
       "department": "Innovation / Digital",
       "industry": "Aviation",
       "deployment_stage": "pilot",
-      "reported_outcomes": [
-        {
-          "metric": "targeted query success rate",
-          "value": "95%",
-          "source_type": "news_media"
-        },
-        {
-          "metric": "booking time via LINE",
-          "value": "under 2 minutes",
-          "source_type": "news_media"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -17823,7 +17388,7 @@
       "sector": "Technology & Software",
       "solution_name": "Agent i",
       "vendor": "In-house (LY Corporation)",
-      "use_case": "Consumer AI agent unifying LINE and Yahoo! JAPAN, launched April 20, 2026: one tap opens Agent i, which coordinates domain agents for shopping, travel planning, weather and more across 22 lifestyle categories, with 'Agent i in chat', LINE OA AI Mode for businesses and Agent i Biz announced for later in 2026.",
+      "use_case": "Consumer AI agent unifying LINE and Yahoo! JAPAN, launched April 20, 2026: one tap opens Agent i, which coordinates domain agents for shopping, travel planning, weather and more across seven domain agents, beta versions included, with 'Agent i in chat', LINE OA AI Mode for businesses and Agent i Biz announced for later in 2026.",
       "department": "Consumer products",
       "industry": "Internet services",
       "deployment_stage": "production",
@@ -17987,7 +17552,7 @@
       "sector": "Retail & E-commerce",
       "solution_name": "Gemini Enterprise",
       "vendor": "Google",
-      "use_case": "Macy's uses Google's Gemini Enterprise platform to build AI agents for commerce experiences.",
+      "use_case": "Macy's uses Google's Gemini Enterprise platform for commerce experiences, which is all the source attributes to the retailer for commerce experiences.",
       "department": "E-commerce / Merchandising",
       "industry": "Retail",
       "deployment_stage": "unknown",
@@ -18032,7 +17597,7 @@
       "sector": "Travel & Transportation",
       "solution_name": "Captain Peter",
       "vendor": "Maersk (in-house, Remote Container Management platform)",
-      "use_case": "A reefer-cargo visibility assistant that remotely monitors container temperature, humidity and CO2/O2 levels in real time and proactively alerts customers to delays or deviations via their preferred channel.",
+      "use_case": "A reefer-cargo visibility assistant that remotely monitors container temperature in real time and proactively alerts customers to delays or deviations via their preferred channel.",
       "department": "Logistics / Remote Container Management",
       "industry": "Shipping & logistics",
       "deployment_stage": "production",
@@ -18320,7 +17885,7 @@
       "use_case": "A conversational natural-language search experience that interprets a traveller's query, infers trip purpose and returns curated results from Marriott's verified property data for Bonvoy members.",
       "department": "Digital / Loyalty",
       "industry": "Hotels",
-      "deployment_stage": "production",
+      "deployment_stage": "pilot",
       "reported_outcomes": [
         {
           "metric": "portfolio covered",
@@ -18439,7 +18004,7 @@
       "sector": "Insurance",
       "solution_name": "LenAI",
       "vendor": "Marsh McLennan (private hosted OpenAI models)",
-      "use_case": "A proprietary generative AI assistant made available to every colleague across 80+ countries for drafting, research and analysis, with agentic capabilities being added.",
+      "use_case": "A proprietary generative AI assistant made available to every colleague across 80+ countries to sharpen coverage advice for clients, with agentic capabilities being added.",
       "department": "Enterprise / Employee Productivity",
       "industry": "Insurance Brokerage / Professional Services",
       "deployment_stage": "production",
@@ -18501,7 +18066,7 @@
       "reported_outcomes": [
         {
           "metric": "Time spent on integration design and troubleshooting, early pilot results",
-          "value": "down 60% to 70%",
+          "value": "up to 60% to 70%",
           "source_type": "press_release"
         },
         {
@@ -18554,7 +18119,7 @@
       "sector": "Financial Services",
       "solution_name": "Mastercard Agent Pay",
       "vendor": "Mastercard (agentic commerce platform)",
-      "use_case": "An agentic-payments platform enabling AI agents to make secure transactions, integrated into PayPal's branded checkout wallet for agentic commerce.",
+      "use_case": "An agentic-payments platform enabling AI agents to make secure transactions, announced for integration with PayPal's wallet, which will pilot the acceptance framework for agentic commerce.",
       "department": "Payments / Product",
       "industry": "Payments",
       "deployment_stage": "announced",
@@ -18874,51 +18439,6 @@
       }
     },
     {
-      "id": "meituan--xiaomei",
-      "company": "Meituan",
-      "company_country": "China",
-      "region": "East Asia",
-      "sector": "Retail & E-commerce",
-      "solution_name": "Xiaomei",
-      "vendor": "",
-      "use_case": "Meituan's first consumer AI agent (orchestrator plus execution agent) for local-life services: food delivery ordering, restaurant recommendations, reservations and navigation, integrated into the Meituan app.",
-      "department": "Local services / consumer app",
-      "industry": "On-demand local services",
-      "deployment_stage": "production",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://web.archive.org/web/20261028075235/https://thenextweb.com/news/chinas-tech-giants-are-replacing-the-search-bar-with-ai-agents-that-shop-for-you",
-          "title": "China's tech giants are replacing the search bar with AI agents that shop for you",
-          "publisher": "The Next Web",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.65,
-      "confidence_reason": "Named company and named product (Xiaomei), public beta from Sept 2025 and app integration reported; consumer-facing details vary by source.",
-      "coda": {
-        "chain": "commerce",
-        "links": [
-          1,
-          2,
-          1,
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "Consumer AI agent (orchestrator plus execution agent) for local-life services: food ordering, restaurant recommendations, reservations and navigation in the Meituan app. No outcome metrics; sources are news/other, and the user confirms actions, so it remains N2.",
-        "basis_fr": "Agent IA grand public (orchestrateur et agent d'execution) pour les services locaux : commande de repas, recommandations, reservations et navigation dans l'app Meituan. Aucun resultat chiffre, sources presse/autre ; l'utilisateur confirme, il reste N2."
-      }
-    },
-    {
       "company": "Mengniu Dairy",
       "company_country": "China",
       "region": "East Asia",
@@ -19108,7 +18628,7 @@
       "department": "Customer service",
       "solution_name": "Mago",
       "vendor": "In-house",
-      "use_case": "The fintech assistant of Mercado Pago, which answers customer questions inside the payments app. The shareholder letter filed with the SEC reports 19 million conversations in September alone and links the assistant to higher engagement and an improved net promoter score. A separate shopping agent remains open to only a small part of the base, in the company's three largest markets.",
+      "use_case": "The fintech assistant of Mercado Pago, which answers customer questions inside the payments app. The shareholder letter filed with the SEC reports 19 million conversations in September alone and links the assistant to higher engagement and an improved net promoter score.",
       "deployment_stage": "production",
       "reported_outcomes": [
         {
@@ -19299,9 +18819,7 @@
           1
         ],
         "observed": 2,
-        "locks": [
-          "supervision"
-        ],
+        "locks": [],
         "basis_en": "An embodied agent rather than a software one: it picks and places parts on a line, under a field trial the article never calls production. Obstacle and person avoidance plus hardening against jailbreaks document a safety envelope around it. The 96 percent comes from the earlier proof of concept, not from the trial, and the entry says so rather than borrowing it.",
         "basis_fr": "Un agent incarné plutôt que logiciel : il prélève et place des pièces sur une ligne, dans un essai terrain que l'article ne qualifie jamais de production. L'évitement des personnes et des obstacles et le durcissement contre les détournements documentent une enveloppe de sécurité autour de lui. Les 96 pour cent viennent du proof of concept antérieur, pas de l'essai, et la fiche le dit plutôt que de les emprunter."
       },
@@ -19319,17 +18837,11 @@
       "sector": "Healthcare, Life Sciences & Luxury",
       "solution_name": "GPTeal",
       "vendor": "Merck (in-house) / McKinsey (clinical authoring)",
-      "use_case": "In-house generative AI assistant used enterprise-wide, including AI-assisted authoring of Clinical Study Reports submitted to regulators.",
+      "use_case": "GPTeal is the company's internal generative AI platform, through which employees reach large language models on company data. The source is explicit that the clinical study report gains Merck has reported come from a separate clinical authoring application co-developed with McKinsey's QuantumBlack, which Merck did not identify as GPTeal, so none of those results are claimed here.",
       "department": "R&D / Clinical Authoring",
       "industry": "Pharmaceuticals",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "AI-assisted Clinical Study Reports submitted to regulators",
-          "value": "first live submissions in early 2025",
-          "source_type": "other"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -19496,13 +19008,7 @@
       "department": "Customer Experience / Support",
       "industry": "Online marketplace / stationery & art",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "availability / language coverage",
-          "value": "24/7 availability, engages in any language",
-          "source_type": "vendor_case_study"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-07-27",
       "sources": [
         {
@@ -19885,57 +19391,6 @@
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
-      "id": "morgan-stanley--ai-morgan-stanley-debrief",
-      "company": "Morgan Stanley",
-      "company_country": "United States",
-      "region": "North America",
-      "sector": "Financial Services",
-      "solution_name": "AI @ Morgan Stanley Debrief",
-      "vendor": "OpenAI",
-      "use_case": "An OpenAI-powered meeting assistant that, with client consent, transcribes advisor-client meetings, extracts key points, drafts follow-up emails and logs CRM notes.",
-      "department": "Wealth Management",
-      "industry": "Wealth Management",
-      "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "recognition",
-          "value": "2025 Celent Model Wealth Manager Award (Emerging Technologies)",
-          "source_type": "news_media"
-        }
-      ],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://www.ai-street.co/p/goldman-joins-jpm-morgan-stanley-releasing-ai-tool",
-          "title": "Goldman Joins JPM, Morgan Stanley Releasing AI Tool",
-          "publisher": "AI Street",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.7,
-      "confidence_reason": "Named firm and named product (AI @ Morgan Stanley Debrief) confirmed by company PR and trade coverage.",
-      "coda": {
-        "chain": "fonctions",
-        "links": [
-          0,
-          0,
-          1,
-          2,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "With client consent, transcribes advisor-client meetings, extracts key points, drafts follow-up emails and logs CRM notes for wealth advisors. It prepares outputs an advisor reviews before sending, so N2; won a 2025 Celent award.",
-        "basis_fr": "Avec le consentement du client, transcrit les rendez-vous conseiller-client, extrait les points cles, redige les emails de suivi et consigne des notes CRM. Il prepare des livrables valides par le conseiller avant envoi, donc N2 ; prime Celent 2025."
-      }
-    },
-    {
       "id": "morrison-foerster--legora",
       "company": "Morrison Foerster",
       "company_country": "United States",
@@ -19943,7 +19398,7 @@
       "sector": "Professional & Business Services",
       "solution_name": "Legora",
       "vendor": "Legora",
-      "use_case": "The law firm selected Legora as a core firmwide AI platform for document review, task automation and custom agentic legal workflows for its attorneys.",
+      "use_case": "The law firm selected Legora as a core firmwide AI platform for document review, task automation and agentic capabilities the firm describes as emerging, with the potential to help lawyers execute more complex tasks for its attorneys.",
       "department": "Legal practice",
       "industry": "Legal services",
       "deployment_stage": "production",
@@ -20027,9 +19482,7 @@
           1
         ],
         "observed": 2,
-        "locks": [
-          "supervision"
-        ],
+        "locks": [],
         "basis_en": "EMMA listens, structures and surfaces; the engineers hold the review and own the actions. Critical reading of its output is trained and technical leads are told to catch weak answers, which documents the oversight without a written mandate. The only source is a story published by the vendor, so the figures are self reported and the observed level is capped accordingly.",
         "basis_fr": "EMMA écoute, structure et fait remonter ; ce sont les ingénieurs qui tiennent la revue et portent les actions. La relecture critique des sorties est enseignée et les responsables techniques doivent repérer les réponses faibles, ce qui documente la supervision sans mandat écrit. La seule source est un récit publié par l'éditeur : les chiffres sont auto-déclarés et le niveau observé est plafonné en conséquence."
       },
@@ -20348,12 +19801,12 @@
           "source_type": "news_media"
         },
         {
-          "metric": "New product development cycle",
+          "metric": "New product development cycle reduction across the plant's connected equipment and digital twin programme, not the agents alone",
           "value": "halved",
           "source_type": "news_media"
         },
         {
-          "metric": "Annual cost reduction",
+          "metric": "Annual cost reduction across that same plant wide programme",
           "value": "about 15 million dollars",
           "source_type": "news_media"
         }
@@ -20400,7 +19853,7 @@
       "sector": "Financial Services",
       "solution_name": "GitHub Copilot",
       "vendor": "GitHub / Microsoft",
-      "use_case": "AI coding assistant used by 80%+ of ~560 developers to speed digital-credit product development and automated testing.",
+      "use_case": "AI coding assistant used by approximately 560 developers, more than 80% of the total to speed digital-credit product development and automated testing.",
       "department": "Software Engineering",
       "industry": "Fintech",
       "deployment_stage": "production",
@@ -20496,7 +19949,7 @@
         ],
         "observed": 2,
         "locks": [],
-        "basis_en": "AI platform turns player-tracking data into new stats and a Play Finder that searches and retrieves similar plays across thousands of games. Analytics/retrieval that informs teams (announced stage), so N2.",
+        "basis_en": "AI platform turns player-tracking data into new stats and a Play Finder that searches and retrieves similar plays across thousands of games. Analytics/retrieval that informs fans and broadcasters (announced stage), so N2.",
         "basis_fr": "Plateforme IA transformant les donnees de tracking en nouvelles statistiques et un Play Finder qui recherche des actions similaires dans des milliers de matchs. Analyse/recherche qui informe les equipes (annonce), donc N2."
       }
     },
@@ -20511,7 +19964,7 @@
       "use_case": "Sideline Surface Copilot tablets filter play data during games, and Azure AI agents support player scouting, salary-cap management and combine prospect evaluation.",
       "department": "Football Operations",
       "industry": "Sports league",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [
         {
           "metric": "Surface Copilot devices deployed",
@@ -20630,19 +20083,8 @@
       "use_case": "A generative-AI upgrade to NatWest's Cora digital assistant that gives customers more nuanced, conversational answers to retail banking questions.",
       "department": "Retail Banking / Customer Service",
       "industry": "Banking",
-      "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "retail customer conversations handled by Cora in 2025",
-          "value": "12.9 million",
-          "source_type": "company_official"
-        },
-        {
-          "metric": "improvement in customer satisfaction from Cora+ genAI",
-          "value": "150%",
-          "source_type": "company_official"
-        }
-      ],
+      "deployment_stage": "pilot",
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -20683,51 +20125,6 @@
       }
     },
     {
-      "id": "naver--agent-n",
-      "company": "Naver",
-      "company_country": "South Korea",
-      "region": "East Asia",
-      "sector": "Technology & Software",
-      "solution_name": "Agent N",
-      "vendor": "",
-      "use_case": "Agentic AI framework embedding AI features directly into Naver search (AI Briefing), Shopping and finance, replacing the standalone Clova X chatbot.",
-      "department": "Search / platform",
-      "industry": "Internet platform",
-      "deployment_stage": "production",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://www.interad.com/en/insights/naver-ai-the-ultimate-guide-to-artifitial-intelligence",
-          "title": "Naver AI: The Ultimate Guide to Artificial Intelligence",
-          "publisher": "InterAd",
-          "source_type": "other",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.55,
-      "confidence_reason": "Named company and named framework (Agent N); secondary source only.",
-      "coda": {
-        "chain": "commerce",
-        "links": [
-          0,
-          2,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "Agentic framework embedding AI into Naver search (AI Briefing), Shopping and finance, replacing the Clova X chatbot. No outcome metrics and single 'other' source; it assists discovery, so N2.",
-        "basis_fr": "Cadre agentique integrant l'IA dans la recherche Naver (AI Briefing), le Shopping et la finance, remplacant le chatbot Clova X. Aucun resultat chiffre et source unique ; il assiste la decouverte, donc N2."
-      }
-    },
-    {
       "id": "nedbank--enbi",
       "company": "Nedbank",
       "company_country": "South Africa",
@@ -20735,7 +20132,7 @@
       "sector": "Financial Services",
       "solution_name": "Enbi",
       "vendor": "Kasisto",
-      "use_case": "Enbi is Nedbank's AI-powered chatbot assistant providing 24/7 help with account inquiries, fraud detection and ATM locators; the bank has been evolving it with newer AI capabilities.",
+      "use_case": "Enbi is Nedbank's AI-powered chatbot assistant providing 24/7 help with account inquiries and; the bank has been evolving it with newer AI capabilities.",
       "department": "Retail Banking / Customer Service",
       "industry": "Banking",
       "deployment_stage": "production",
@@ -20793,7 +20190,7 @@
       "sector": "Energy & Utilities",
       "solution_name": "Virtual AI Agent contact-center solution",
       "vendor": "IBM Consulting",
-      "use_case": "Generative-AI virtual agents in telephone and digital channels resolve customer interactions such as inspection appointments and meter-reading access for the gas distributor.",
+      "use_case": "Generative-AI virtual agents in telephone and digital channels are announced to cover inspection appointments and meter-reading access for the gas distributor.",
       "department": "Customer service",
       "industry": "Gas distribution utility",
       "deployment_stage": "production",
@@ -20913,7 +20310,7 @@
           "source_type": "news_media"
         },
         {
-          "metric": "North American employees using the tool (first 3 months)",
+          "metric": "North American employees using the tool in the three months before the one year review",
           "value": "7,000+",
           "source_type": "news_media"
         },
@@ -20981,7 +20378,7 @@
       "use_case": "An internal ML/AI platform running an ensemble of models plus the Marken annotation service and MediaFM multimodal foundation model to analyze, annotate and search video, audio and text assets for studio teams.",
       "department": "Content Engineering / Studio",
       "industry": "Streaming",
-      "deployment_stage": "production",
+      "deployment_stage": "pilot",
       "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
@@ -21033,7 +20430,7 @@
       "use_case": "Khan Academy's AI teaching assistant and student tutor offered at no cost to New Hampshire grade 5 to 12 educators and students.",
       "department": "K-12 education",
       "industry": "State education agency",
-      "deployment_stage": "production",
+      "deployment_stage": "pilot",
       "reported_outcomes": [
         {
           "metric": "eligibility",
@@ -21138,7 +20535,7 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "Staff seats deployed",
+          "metric": "Seats being provisioned under a twelve month onboarding plan, with full deployment targeted for October 2026",
           "value": "505,000",
           "source_type": "company_official"
         },
@@ -21238,57 +20635,6 @@
       }
     },
     {
-      "id": "nordea--nova",
-      "company": "Nordea",
-      "company_country": "Finland",
-      "region": "Europe",
-      "sector": "Financial Services",
-      "solution_name": "Nova",
-      "vendor": "Nordea (language-agnostic conversational AI agents)",
-      "use_case": "A customer-facing AI chatbot operating across multiple Nordic markets and languages to resolve banking queries.",
-      "department": "Customer Service",
-      "industry": "Banking",
-      "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "in-scope resolution rate",
-          "value": "90%",
-          "source_type": "news_media"
-        }
-      ],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://www.computerweekly.com/news/366592058/Nordic-banks-pursue-AI-in-battle-with-digital-competitors",
-          "title": "Nordic banks pursue AI in battle with digital competitors",
-          "publisher": "Computer Weekly",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.6,
-      "confidence_reason": "Named bank and named assistant (Nova) with a resolution metric reported by trade press, from a single source.",
-      "coda": {
-        "chain": "care",
-        "links": [
-          2,
-          1,
-          1,
-          2,
-          0,
-          0,
-          1,
-          0,
-          0,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "Customer-facing banking chatbot across Nordic markets and languages with a 90% in-scope resolution rate; it answers and resolves queries (informing, not executing money movements), keeping it at N2.",
-        "basis_fr": "Chatbot bancaire multilingue sur les marches nordiques avec 90% de resolution dans son perimetre; il repond et resout des demandes (il informe, sans mouvementer de fonds), donc N2."
-      }
-    },
-    {
       "id": "northwell-health--abridge-ambient-ai-platform",
       "company": "Northwell Health",
       "company_country": "United States",
@@ -21299,16 +20645,11 @@
       "use_case": "Deploying Abridge's ambient AI across 28 hospitals to convert patient conversations into clinical notes across inpatient, outpatient and emergency settings.",
       "department": "Clinical Operations / Physician Documentation",
       "industry": "Hospital / health system",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [
         {
           "metric": "hospitals covered",
           "value": "28",
-          "source_type": "company_official"
-        },
-        {
-          "metric": "patients served annually",
-          "value": "3M+",
           "source_type": "company_official"
         }
       ],
@@ -21372,7 +20713,7 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "Ticket resolution speed improvement",
+          "metric": "Ticket resolution time improvement, stated by the vendor as an upper bound rather than an average",
           "value": "34% faster",
           "source_type": "vendor_case_study"
         }
@@ -21420,7 +20761,7 @@
       "use_case": "Autonomous AI agents run across operational workflows while a generative-AI solution on Bedrock lets thousands of employees build productivity chatbots.",
       "department": "R&D and operations",
       "industry": "Pharmaceuticals",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [
         {
           "metric": "employees using the Bedrock-based GenAI solution",
@@ -21653,7 +20994,7 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "engineer adoption",
+          "metric": "Share of engineers the chief executive says are assisted by AI coders, not a measure of this editor's rollout",
           "value": "~100% of engineers coding with AI (Cursor)",
           "source_type": "news_media"
         }
@@ -21855,7 +21196,6 @@
         ],
         "observed": 2,
         "locks": [
-          "data",
           "mandate",
           "supervision"
         ],
@@ -22158,18 +21498,8 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "claims denials reduced across visits at Allina Health",
+          "metric": "Visits the system has helped process at Allina Health, where the tool is in testing",
           "value": "5,000+ visits (outpatient cardiology & radiology)",
-          "source_type": "news_media"
-        },
-        {
-          "metric": "first-pass approval rate",
-          "value": "96%",
-          "source_type": "news_media"
-        },
-        {
-          "metric": "reduction in review time",
-          "value": "56%",
           "source_type": "news_media"
         }
       ],
@@ -22281,13 +21611,7 @@
       "department": "Digital / Middle East & Africa",
       "industry": "Telecommunications",
       "deployment_stage": "announced",
-      "reported_outcomes": [
-        {
-          "metric": "active users of Max it",
-          "value": "24 million+",
-          "source_type": "news_media"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -22380,65 +21704,6 @@
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
     },
     {
-      "company": "Orange Spain",
-      "company_country": "Spain",
-      "region": "Europe",
-      "sector": "Telecommunications",
-      "industry": "Telecom operator",
-      "department": "IT operations",
-      "solution_name": "Gemini Enterprise",
-      "vendor": "Google Cloud",
-      "use_case": "Employees have built more than a thousand custom agents that triage and categorise incidents, analyse logs and diagnostics for root cause, answer questions against corporate knowledge and handle routine request management. The low code platform lets non technical staff automate their own internal service tasks instead of queuing behind IT.",
-      "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "Custom agents built by employees",
-          "value": "more than 1,000",
-          "source_type": "press_release"
-        },
-        {
-          "metric": "Licence activity rate after rollout",
-          "value": "near 100% within 30 days",
-          "source_type": "press_release"
-        }
-      ],
-      "sources": [
-        {
-          "url": "https://www.googlecloudpresscorner.com/2026-10-08-Orange-Spain-Expands-Partnership-with-Google-Cloud-to-Industrialize-AI-Operations-with-Gemini-Enterprise",
-          "title": "Orange Spain Expands Partnership with Google Cloud to Industrialize AI Operations with Gemini Enterprise",
-          "publisher": "Google Cloud",
-          "source_type": "press_release",
-          "retrieved_date": "2026-10-11"
-        }
-      ],
-      "coda": {
-        "chain": "fonctions",
-        "links": [
-          0,
-          0,
-          1,
-          1,
-          2,
-          0,
-          1,
-          2,
-          0,
-          0
-        ],
-        "observed": 2,
-        "locks": [
-          "data"
-        ],
-        "basis_en": "The agents triage incidents and analyse logs for root cause, which is preparation for a human fix rather than remediation: no source claims an agent repairs the network itself. Retrieval on verified corporate data documents the data lock, and the only evidence is the partner's own release, which caps the observed level at N2.",
-        "basis_fr": "Les agents trient les incidents et analysent les journaux pour en trouver la cause, ce qui prépare une correction humaine plutôt que de la réaliser : aucune source n'affirme qu'un agent répare le réseau lui-même. L'ancrage sur des données d'entreprise vérifiées documente le verrou données, et la seule preuve étant le communiqué du partenaire, l'observé est plafonné à N2."
-      },
-      "id": "orange-spain--gemini-enterprise",
-      "first_seen_date": "2026-10-11",
-      "provenance": "manual",
-      "confidence": 0.5,
-      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
-    },
-    {
       "id": "oscar-health--oswell",
       "company": "Oscar Health",
       "company_country": "United States",
@@ -22449,11 +21714,11 @@
       "use_case": "Member-facing health AI agent that pulls from medical records, benefits, and care-guide interactions to explain medications, test results, symptoms, and handle refills.",
       "department": "Member experience",
       "industry": "Health insurance (payer)",
-      "deployment_stage": "production",
+      "deployment_stage": "pilot",
       "reported_outcomes": [
         {
-          "metric": "member base served",
-          "value": "2.1 million members",
+          "metric": "Members Oscar served in total as of 30 June 2025, a company scale rather than the agent's reach",
+          "value": "approximately 2.0 million",
           "source_type": "company_official"
         }
       ],
@@ -22509,16 +21774,6 @@
       "industry": "Online retail",
       "deployment_stage": "pilot",
       "reported_outcomes": [
-        {
-          "metric": "Increase in order value vs classic search (voice)",
-          "value": "37%",
-          "source_type": "company_official"
-        },
-        {
-          "metric": "Average user turns per voice session",
-          "value": "11 (vs 2 text)",
-          "source_type": "company_official"
-        },
         {
           "metric": "Product catalogue covered",
           "value": "18M+ items",
@@ -22833,7 +22088,18 @@
       "department": "Customer Service",
       "industry": "Jewelry Retail",
       "deployment_stage": "production",
-      "reported_outcomes": [],
+      "reported_outcomes": [
+        {
+          "metric": "Customer cases the agents deflect autonomously",
+          "value": "60%",
+          "source_type": "press_release"
+        },
+        {
+          "metric": "Net promoter score improvement with agent first service",
+          "value": "10%",
+          "source_type": "press_release"
+        }
+      ],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -23087,7 +22353,7 @@
       "use_case": "Retailer adopting Agentspace to build AI agents.",
       "department": "IT / Operations",
       "industry": "Retail",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
@@ -23463,7 +22729,7 @@
       "use_case": "Uses Agentforce with Data Cloud and Health Cloud to automate routine patient communication, 24/7 Q&A and appointment scheduling within Precina's virtual diabetes-care program.",
       "department": "Patient engagement",
       "industry": "Digital health / diabetes care",
-      "deployment_stage": "pilot",
+      "deployment_stage": "announced",
       "reported_outcomes": [
         {
           "metric": "Average A1C (blood sugar marker) change in a 50-patient rural Louisiana pilot over 12 weeks",
@@ -23597,9 +22863,12 @@
           1
         ],
         "observed": 2,
-        "locks": [],
-        "basis_en": "The agent watches, ranks and diagnoses, then tells the field crew what to do. The intervention itself is human, so it prepares the fix rather than making it. No written bound or oversight mechanism is described on the call.",
-        "basis_fr": "L'agent surveille, classe et diagnostique, puis indique aux équipes de terrain quoi faire. L'intervention elle-même est humaine : il prépare la correction sans la réaliser. Aucune borne écrite ni dispositif de supervision n'est décrit pendant l'appel."
+        "locks": [
+          "mandate",
+          "supervision"
+        ],
+        "basis_en": "The call states both bounds plainly: every programme starts with a specific outcome written down and measured against a baseline set beforehand, and the AI makes recommendations while the people in the field still make the call. The agent prepares the intervention, within a written frame and under human decision.",
+        "basis_fr": "L'appel énonce les deux bornes clairement : chaque programme démarre sur un résultat écrit à l'avance et mesuré contre une référence posée au départ, et l'IA recommande pendant que les équipes de terrain décident. L'agent prépare l'intervention, dans un cadre écrit et sous décision humaine."
       },
       "id": "presidio-petroleum--field-intelligence",
       "first_seen_date": "2026-11-23",
@@ -23665,13 +22934,7 @@
       "department": "Customer Service",
       "industry": "Pension & severance fund management",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "customers served",
-          "value": "8.5 million+",
-          "source_type": "vendor_case_study"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -23826,14 +23089,8 @@
       "use_case": "An intelligent-system platform layering foundation models, numerous AI agents and an API layer to power predictive marketing and creative production across the agency group's clients.",
       "department": "Technology / Agency Operations",
       "industry": "Advertising & marketing",
-      "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "AI investment",
-          "value": "€300 million",
-          "source_type": "news_media"
-        }
-      ],
+      "deployment_stage": "announced",
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -23887,13 +23144,13 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "AI agents built with Google Cloud",
-          "value": "120+",
+          "metric": "faster workflow build vs traditional",
+          "value": "up to 10x",
           "source_type": "company_official"
         },
         {
-          "metric": "faster workflow build vs traditional",
-          "value": "up to 10x",
+          "metric": "AI agents deployed across the firm for specific tasks",
+          "value": "over 250",
           "source_type": "company_official"
         }
       ],
@@ -23947,19 +23204,8 @@
       "use_case": "AI tools embedded in daily operational planning: flight routing, predictive maintenance, crew and aircraft allocation and turnaround scheduling. CEO Vanessa Hudson publicly credits them for measurable punctuality and fuel gains, without naming the systems.",
       "department": "Operations",
       "industry": "Airline",
-      "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "On-time performance attributed to AI (CEO)",
-          "value": "+3 to 4 points",
-          "source_type": "news_media"
-        },
-        {
-          "metric": "Fuel savings per sector from AI routing (CEO)",
-          "value": "1 to 2%",
-          "source_type": "news_media"
-        }
-      ],
+      "deployment_stage": "pilot",
+      "reported_outcomes": [],
       "first_seen_date": "2026-07-13",
       "sources": [
         {
@@ -24448,13 +23694,7 @@
       "department": "Customer Support",
       "industry": "Fintech",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "case resolution rate",
-          "value": "90%",
-          "source_type": "other"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -24560,7 +23800,7 @@
       "sector": "Media & Entertainment",
       "solution_name": "Guten",
       "vendor": "AWS",
-      "use_case": "An AI tool that recommends relevant content, selects and optimises images for SEO, and orchestrates the publisher's social media channels across its newsrooms.",
+      "use_case": "Guten automates manual, non core tasks for journalists: ingesting news wires, suggesting wire articles, recommending article ideas, adding article tags and drafting content. Recommending related content, selecting and optimising images for SEO and orchestrating social channels are listed by the source as features in active development, not as what the tool does today.",
       "department": "Newsroom / Audience",
       "industry": "News publishing",
       "deployment_stage": "production",
@@ -24873,7 +24113,7 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "reduction in manual effort",
+          "metric": "Reduction in manual effort the company estimates, not a measured result",
           "value": "80%",
           "source_type": "press_release"
         }
@@ -25094,7 +24334,7 @@
       "use_case": "A generative-AI in-car avatar companion that answers vehicle questions, controls features by voice, and makes proactive driving suggestions.",
       "department": "Connected Vehicle / Product",
       "industry": "Automotive Manufacturing",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
@@ -25340,51 +24580,6 @@
         "locks": [],
         "basis_en": "Decagon support agent connected to internal APIs resolves conversations, lifting chat deflection from 38% to over 50%; vendor case study caps delegation at prepare/answer with account actions.",
         "basis_fr": "Agent de support Decagon connecte aux API internes qui resout des conversations, portant le deflection de 38% a plus de 50%; l'etude de cas fournisseur plafonne la delegation au niveau preparation/reponse avec actions sur compte."
-      }
-    },
-    {
-      "id": "roads-and-transport-authority-rta-dubai--mahboub",
-      "company": "Roads and Transport Authority (RTA) Dubai",
-      "company_country": "United Arab Emirates",
-      "region": "Middle East",
-      "sector": "Public Sector & Education",
-      "solution_name": "Mahboub",
-      "vendor": "",
-      "use_case": "Mahboub is RTA Dubai's enterprise chatbot, upgraded with generative AI integration, that handles customer inquiries across RTA's mobility and transport services.",
-      "department": "Customer Happiness / Digital",
-      "industry": "Government / Transport",
-      "deployment_stage": "production",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://www.rta.ae/wps/portal/rta/ae/home/news-and-media/all-news/NewsDetails/showcasing-11-ai-projects-and-initiatives-at-gitex-2025",
-          "title": "Showcasing 11 AI projects and initiatives at GITEX 2025",
-          "publisher": "RTA Dubai",
-          "source_type": "company_official",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.65,
-      "confidence_reason": "Named chatbot and authority confirmed via RTA's own GITEX 2025 announcement, including generative AI integration; limited quantified outcomes.",
-      "coda": {
-        "chain": "care",
-        "links": [
-          2,
-          0,
-          1,
-          2,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "Mahboub is RTA Dubai's GenAI-upgraded chatbot handling customer inquiries across mobility and transport services; answering/informing, no execution metrics.",
-        "basis_fr": "Mahboub est le chatbot de la RTA Dubai enrichi en GenIA qui traite les demandes clients sur les services de mobilite et transport; reponse/information, sans metriques d'execution."
       }
     },
     {
@@ -25865,7 +25060,7 @@
       "use_case": "Health startup adopting Agentspace to build AI agents.",
       "department": "IT / Operations",
       "industry": "Health plan / healthtech",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
@@ -26342,7 +25537,7 @@
       "use_case": "An AI assistant giving newsroom staff real-time, compiled data and insights (accessible via chat), being integrated to make querying more intuitive.",
       "department": "Newsroom / Data",
       "industry": "News publishing",
-      "deployment_stage": "pilot",
+      "deployment_stage": "production",
       "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
@@ -27033,51 +26228,6 @@
       }
     },
     {
-      "id": "siemens-bad-neustadt-electric-motors-factory-ewn--insights-hub-production-copilot",
-      "company": "Siemens (Bad Neustadt Electric Motors Factory / EWN)",
-      "company_country": "Germany",
-      "region": "Europe",
-      "sector": "Consumer Goods & Manufacturing",
-      "solution_name": "Insights Hub Production Copilot",
-      "vendor": "Siemens",
-      "use_case": "Generative-AI shop-floor copilot giving operators real-time root-cause analytics, error-message troubleshooting, and historical-trend analysis for production issues.",
-      "department": "Production / Operations",
-      "industry": "Electric motor manufacturing",
-      "deployment_stage": "pilot",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://blogs.sw.siemens.com/insights-hub/2025/01/30/production-copilot-ai-assistant-for-production/",
-          "title": "Insights Hub Production Copilot: an AI assistant for your production",
-          "publisher": "Siemens",
-          "source_type": "company_official",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.6,
-      "confidence_reason": "Named product verified via Siemens blog; Bad Neustadt (EWN) explicitly named as testing site. No quantified outcomes provided; early testing stage.",
-      "coda": {
-        "chain": "ops",
-        "links": [
-          0,
-          1,
-          2,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          1
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "Shop-floor copilot gives operators real-time root-cause analytics, error troubleshooting and historical trends; a pilot that answers, operators act, so N2.",
-        "basis_fr": "Le copilote d'atelier fournit aux operateurs analyses de cause racine en temps reel, depannage d'erreurs et tendances historiques; pilote qui repond, les operateurs agissent, donc N2."
-      }
-    },
-    {
       "id": "signal-iduna--gemini-enterprise",
       "company": "SIGNAL IDUNA",
       "company_country": "Germany",
@@ -27179,7 +26329,7 @@
       "use_case": "Deploying autonomous AI agents into the airline's customer case management system to automate service tasks and give human agents AI-summarised context, reducing response times.",
       "department": "Customer Service",
       "industry": "Aviation",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
@@ -27444,7 +26594,7 @@
       "sector": "Media & Entertainment",
       "solution_name": "Harmony",
       "vendor": "Sierra",
-      "use_case": "Serves subscribers as SiriusXM's branded AI customer-support agent, and is the first deployment of Sierra's Agent Data Platform for longer-term customer context.",
+      "use_case": "Serves subscribers as SiriusXM's branded AI customer-support agent, and is named as the first business that will adopt Sierra's Agent Data Platform, which the source describes as not yet fully deployed for longer-term customer context.",
       "department": "Customer service",
       "industry": "Media & entertainment",
       "deployment_stage": "production",
