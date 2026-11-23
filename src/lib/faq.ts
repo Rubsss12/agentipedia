@@ -73,8 +73,8 @@ export function faq(count: number, sectors: number, countries: number): Qa[] {
     {
       qEn: "How can a company be added to the index?",
       qFr: "Comment faire ajouter une entreprise à l'index ?",
-      aEn: "Write to contact@hubinstitute.com with the company, the named solution and any public source. The same rule applies to submissions as to anything the engine finds; a case with no public source is published as client-sourced and labelled as such.",
-      aFr: "Écrivez à contact@hubinstitute.com avec l'entreprise, la solution nommée et les sources publiques éventuelles. La même règle s'applique aux propositions qu'à ce que trouve le moteur ; un cas sans source publique est publié en « source client » et étiqueté comme tel.",
+      aEn: "Write to contact@hubinstitute.com with the company, the named solution and any public source. The same rule applies to a submission as to anything a search turns up; a case with no public source is published as client-sourced and labelled as such.",
+      aFr: "Écrivez à contact@hubinstitute.com avec l'entreprise, la solution nommée et les sources publiques éventuelles. La même règle s'applique à une proposition qu'à ce que remonte une recherche ; un cas sans source publique est publié en « source client » et étiqueté comme tel.",
     },
     {
       qEn: "Who publishes Agentipedia?",

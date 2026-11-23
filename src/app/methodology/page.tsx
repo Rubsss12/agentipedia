@@ -86,8 +86,8 @@ export default function MethodologyPage() {
       </h1>
       <p className="mt-4 text-lg leading-relaxed text-ink-soft">
         <Bi
-          en="Agentipedia is fed by an engine that searches the live web, extracts candidate deployments and applies one strict rule. A smaller accurate encyclopedia beats a larger fabricated one, so the engine rejects anything it cannot verify."
-          fr="Agentipedia est alimenté par un moteur qui interroge le web en direct, extrait des déploiements candidats et applique une règle stricte. Une encyclopédie plus petite mais exacte vaut mieux qu'une grande inventée : le moteur rejette tout ce qu'il ne peut pas vérifier."
+          en="Candidate deployments are surfaced by searching the live web, and every one of them is then opened and read at its source before anything is written. One strict rule decides what gets in, the same rule whether the candidate came from a search, from a reader or from us. A smaller accurate directory beats a larger fabricated one, so anything that cannot be verified is rejected."
+          fr="Les déploiements candidats sont remontés par des recherches sur le web en direct, puis chacun d'eux est ouvert et lu à la source avant que la moindre ligne ne soit écrite. Une règle stricte décide de ce qui entre, la même que le candidat vienne d'une recherche, d'un lecteur ou de nous. Un annuaire plus petit mais exact vaut mieux qu'un grand inventé : tout ce qui ne peut pas être vérifié est rejeté."
         />
       </p>
 
@@ -152,8 +152,8 @@ export default function MethodologyPage() {
         </ol>
         <p className="mt-4 text-sm leading-relaxed text-ink-soft">
           <Bi
-            en="If either field is missing, generic or unverifiable against a source the engine actually retrieved, the candidate is rejected. Accepted entries are filed in exactly one of 14 sectors, so the index can be browsed the way analysts actually look for precedents: by industry."
-            fr="Si l'un des deux champs manque, reste générique ou ne peut pas être vérifié dans une source réellement consultée, le candidat est rejeté. Les fiches acceptées sont rangées dans un seul des 14 secteurs, pour parcourir l'index comme les analystes cherchent leurs précédents : par industrie."
+            en="If either field is missing, generic or unverifiable against a source that was actually opened and read, the candidate is rejected. Accepted entries are filed in exactly one of 14 sectors, so the index can be browsed the way analysts actually look for precedents: by industry."
+            fr="Si l'un des deux champs manque, reste générique ou ne peut pas être vérifié dans une source réellement ouverte et lue, le candidat est rejeté. Les fiches acceptées sont rangées dans un seul des 14 secteurs, pour parcourir l'index comme les analystes cherchent leurs précédents : par industrie."
           />
         </p>
       </section>
