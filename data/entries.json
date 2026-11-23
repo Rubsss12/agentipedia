@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T10:13:48.411Z",
+  "updated_at": "2026-11-23T10:25:56.718Z",
   "entries": [
     {
       "id": "1-800accountant--agentforce",
@@ -8254,6 +8254,62 @@
         "basis_en": "Glean lets Confluent employees surface documents, deal history and Slack knowledge across 20+ systems and build support/CS/sales agents, saving 15,000+ hours monthly; single vendor case study caps observed at N2.",
         "basis_fr": "Glean permet aux employes de Confluent de retrouver documents, historique de deals et savoir Slack sur 20+ systemes et de construire des agents support/CS/vente, economisant 15 000+ heures par mois; l'unique etude de cas fournisseur plafonne l'observe a N2."
       }
+    },
+    {
+      "company": "Conselho Superior dos Tribunais Administrativos e Fiscais",
+      "company_country": "Portugal",
+      "region": "Europe",
+      "sector": "Public Sector & Education",
+      "industry": "Administrative and tax courts",
+      "department": "Legal & compliance",
+      "solution_name": "AssessorIA",
+      "vendor": "",
+      "use_case": "First instance judges in Portugal's administrative and tax courts use AssessorIA to summarise procedural documents they load themselves, to structure the report of a judgment, to help select the matters of fact and to flag inconsistencies, contradictions or internal misalignments as a checking aid. It runs as a closed system on official sources only: the Court of Justice of the EU, the European Court of Human Rights, the Supreme Administrative Court, the Central Administrative Courts North and South, the Supreme Court of Justice, the Courts of Appeal, the Constitutional Court and scientific articles. The council states that it is conceived exclusively to support the judge's material work and is in no case prepared or authorised to formulate judicial decisions, the decision remaining human and constitutionally the judge's. Licences are handed out in successive blocks of 50 to 60 judges so consumption and response times can be monitored.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://eco.sapo.pt/2026/02/13/juizes-ja-usam-inteligencia-artificial-para-resumir-processos-e-escrever-sentencas/",
+          "title": "Juízes já usam inteligência artificial para resumir processos e escrever sentenças",
+          "publisher": "ECO",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        },
+        {
+          "url": "https://eco.sapo.pt/2025/10/08/assessoria-juizes-dos-tribunais-administrativos-e-fiscais-terao-sistema-de-ia-para-ajudar-nos-julgamentos/",
+          "title": "AssessorIA: juízes dos tribunais administrativos e fiscais terão sistema de IA para ajudar nos julgamentos",
+          "publisher": "ECO",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "public",
+        "links": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "data",
+          "mandate"
+        ],
+        "basis_en": "The system summarises, structures and flags; the judge writes the decision. The bound is written and unusually explicit for a public deployment: in no case prepared or authorised to formulate judicial decisions, with the decision remaining constitutionally the judge's. A closed corpus of named official sources sets the data boundary. What is not yet in place is the oversight: an AI audit office was announced alongside the ethics charter and is still being set up, and a published critique in the same outlet asked what the consent and impact assessment behind the test phase had been. Deployment is phased, in blocks of 50 to 60 judges.",
+        "basis_fr": "Le système résume, structure et signale ; c'est le juge qui écrit la décision. La borne est écrite et d'une netteté rare pour un déploiement public : en aucun cas préparé ni autorisé à formuler des décisions judiciaires, la décision restant constitutionnellement celle du juge. Un corpus fermé de sources officielles nommées fixe le périmètre de données. Ce qui manque encore, c'est la supervision : un bureau d'audit de l'IA a été annoncé avec la charte éthique et reste en cours de constitution, et une tribune publiée dans le même titre a demandé quels consentement et analyse d'impact avaient entouré la phase de test. Le déploiement est progressif, par blocs de 50 à 60 juges."
+      },
+      "id": "conselho-superior-dos-tribunais-administrativos-e-fiscais--assessoria",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "company": "Cowbell",
