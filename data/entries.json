@@ -27534,7 +27534,7 @@
       "sector": "Telecommunications",
       "solution_name": "Aster",
       "vendor": "SK Telecom (in-house)",
-      "use_case": "An agentic AI personal assistant that understands user intent to set goals, make plans and complete tasks on their behalf, launched in beta targeting North American users.",
+      "use_case": "An agentic AI personal assistant that understands user intent to set goals, make plans and complete tasks on their behalf, announced as a beta release planned targeting North American users.",
       "department": "AI Products",
       "industry": "Telecommunications",
       "deployment_stage": "announced",
@@ -27836,12 +27836,12 @@
       }
     },
     {
-      "id": "sonos--sierra",
+      "id": "sonos--sonos-concierge",
       "company": "Sonos",
       "company_country": "United States",
       "region": "North America",
       "sector": "Consumer Goods & Manufacturing",
-      "solution_name": "Sierra",
+      "solution_name": "Sonos Concierge",
       "vendor": "Sierra",
       "use_case": "Handles tier-1 product support (speaker setup, troubleshooting and multi-room configuration), replacing a queue that drove millions of contacts a year.",
       "department": "Customer service",
@@ -28304,8 +28304,8 @@
       "department": "Office of Administration",
       "solution_name": "Gemini for Government Services",
       "vendor": "Google Public Sector",
-      "use_case": "Missouri is among the first states using Gemini for Government Services, where agents answer questions against state administrative codes and internal policy documents with page and paragraph citations, compare vendor bids against procurement rules, classify citizen documents such as paystubs and leases, and rewrite regulatory language into plain language notices. The state frames it as automating routine work in its workflows, with staff still deciding.",
-      "deployment_stage": "production",
+      "use_case": "Google lists the state among the agencies already using Gemini for government services, in preview. The source describes the platform's capabilities, quoting the state only on automating routine work in its workflows to deliver faster services, and does not document which of those capabilities Missouri actually runs.",
+      "deployment_stage": "pilot",
       "reported_outcomes": [],
       "sources": [
         {
@@ -28357,7 +28357,7 @@
       "region": "Middle East",
       "sector": "Telecommunications",
       "solution_name": "stc Enterprise GPT",
-      "vendor": "stc.AI / Groq (sovereign cloud, Llama 405B)",
+      "vendor": "SambaNova",
       "use_case": "stc Group launched a sovereign AI cloud platform hosting Llama 405B and introduced stc Enterprise GPT, a generative AI solution for enterprise applications, unveiled at LEAP 2025.",
       "department": "stc.AI / Enterprise",
       "industry": "Telecommunications",
@@ -29427,7 +29427,7 @@
       "use_case": "Uses the generative-AI copilot in automation engineering to streamline machine programming and address engineering labor shortages.",
       "department": "Engineering",
       "industry": "Industrial manufacturing",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [],
       "first_seen_date": "2026-07-11",
       "sources": [
@@ -30266,51 +30266,6 @@
       }
     },
     {
-      "id": "uae-ministry-of-energy-and-infrastructure-moei--ask-moei",
-      "company": "UAE Ministry of Energy and Infrastructure (MOEI)",
-      "company_country": "United Arab Emirates",
-      "region": "Middle East",
-      "sector": "Public Sector & Education",
-      "solution_name": "ASK MOEI",
-      "vendor": "",
-      "use_case": "ASK MOEI is a generative-AI-powered platform introduced to help users quickly access information and receive faster responses to enquiries about the ministry's services.",
-      "department": "Digital Government Services",
-      "industry": "Government",
-      "deployment_stage": "production",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://gulfnews.com/amp/story/uae/uae-launches-unified-ai-guide-to-redesign-government-services-around-outcomes-1.500647880",
-          "title": "UAE unveils unified agentic AI guide to redesign government services around outcomes",
-          "publisher": "Gulf News",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.5,
-      "confidence_reason": "Named generative-AI platform and ministry confirmed in Gulf News coverage, but detail is limited and mostly contextual within a broader agentic-AI story.",
-      "coda": {
-        "chain": "public",
-        "links": [
-          1,
-          0,
-          2,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "Generative-AI platform helps users quickly access information and get faster responses about the ministry's services; it informs and orients citizens. N2.",
-        "basis_fr": "Plateforme d'IA generative qui aide les usagers a acceder rapidement a l'information et a obtenir des reponses plus rapides sur les services du ministere; elle informe et oriente les citoyens. N2."
-      }
-    },
-    {
       "company": "Uber",
       "company_country": "United States",
       "region": "North America",
@@ -30366,14 +30321,14 @@
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
-      "id": "ubisoft--ghostwriter-neo-npc",
+      "id": "ubisoft--neo-npc",
       "company": "Ubisoft",
       "company_country": "France",
       "region": "Europe",
       "sector": "Media & Entertainment",
-      "solution_name": "Ghostwriter / NEO NPC",
+      "solution_name": "NEO NPC",
       "vendor": "Inworld AI, NVIDIA",
-      "use_case": "Ghostwriter is an internal LLM tool generating first-draft NPC barks/dialogue; NEO NPC is a generative-AI prototype giving players real-time conversational, reasoning NPCs.",
+      "use_case": "A prototype non player character the studio presented as research rather than a shipped feature: a player speaks to the character in natural language and it answers in character, in real time, instead of following a scripted dialogue tree. Ubisoft frames it as an exploration of what generative AI could do for narrative design, with writers and designers keeping authorship of the character.",
       "department": "Game Development / R&D",
       "industry": "Video games",
       "deployment_stage": "pilot",
@@ -30645,51 +30600,6 @@
       "provenance": "manual",
       "confidence": 0.75,
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
-    },
-    {
-      "id": "unilever--multi-agent-procurement-solution-gemini-enterprise-agent-platform",
-      "company": "Unilever",
-      "company_country": "United Kingdom",
-      "region": "Europe",
-      "sector": "Consumer Goods & Manufacturing",
-      "solution_name": "Multi-agent procurement solution (Gemini Enterprise Agent Platform)",
-      "vendor": "Google Cloud",
-      "use_case": "A multi-agent system built on Google's Gemini Enterprise Agent Platform helps procurement teams make faster, smarter buying decisions.",
-      "department": "Procurement",
-      "industry": "Consumer packaged goods",
-      "deployment_stage": "production",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://www.ciodive.com/news/unilever-targets-agentic-ai-google-cloud-deal/812365/",
-          "title": "Unilever targets agentic AI with Google Cloud deal",
-          "publisher": "CIO Dive",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.55,
-      "confidence_reason": "Named company and named Google Cloud platform for a specific procurement use case; limited detail and no public metrics.",
-      "coda": {
-        "chain": "achats",
-        "links": [
-          1,
-          1,
-          0,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "Multi-agent system on Google's Gemini Enterprise platform helps procurement teams make faster, smarter buying decisions; it supports sourcing and analysis, humans decide. N2.",
-        "basis_fr": "Systeme multi-agents sur la plateforme Gemini Enterprise de Google qui aide les equipes achats a decider plus vite et mieux; il appuie le sourcing et l'analyse, les humains decident. N2."
-      }
     },
     {
       "company": "Unilever",
@@ -31389,7 +31299,7 @@
       "sector": "Financial Services",
       "solution_name": "VCB Digibot",
       "vendor": "FPT Smart Cloud",
-      "use_case": "AI virtual assistant handling 24/7 customer service, account lookups, transaction guidance and product consultation across digital channels.",
+      "use_case": "AI virtual assistant handling 24/7 customer service, ",
       "department": "Customer Service",
       "industry": "Banking",
       "deployment_stage": "production",
@@ -31877,51 +31787,6 @@
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
     },
     {
-      "id": "vorwerk--insights-hub-production-copilot",
-      "company": "Vorwerk",
-      "company_country": "Germany",
-      "region": "Europe",
-      "sector": "Consumer Goods & Manufacturing",
-      "solution_name": "Insights Hub Production Copilot",
-      "vendor": "Siemens",
-      "use_case": "Generative-AI production copilot used to accelerate manufacturing digitalization and give operators real-time production insight.",
-      "department": "Production / Digitalization",
-      "industry": "Household appliance manufacturing",
-      "deployment_stage": "unknown",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://blogs.sw.siemens.com/insights-hub/2025/01/30/production-copilot-ai-assistant-for-production/",
-          "title": "Insights Hub Production Copilot: an AI assistant for your production",
-          "publisher": "Siemens",
-          "source_type": "company_official",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.48,
-      "confidence_reason": "Vorwerk named as a deployment in Siemens blog; minimal detail, no metrics, vendor-authored.",
-      "coda": {
-        "chain": "ops",
-        "links": [
-          0,
-          1,
-          1,
-          0,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "Siemens production copilot gives operators real-time production insight; it monitors and recommends rather than executing, so N2, no quantified outcomes.",
-        "basis_fr": "Copilote de production Siemens donne aux operateurs une vue temps reel; il surveille et recommande sans executer, donc N2, sans resultats chiffres."
-      }
-    },
-    {
       "id": "walmart--sparky",
       "company": "Walmart",
       "company_country": "United States",
@@ -32242,51 +32107,6 @@
         ],
         "basis_en": "In-app assistant handled over 245M interactions in 2024 and executes account actions like debit-card reordering via natural language; committing account actions is N3, backed by news media. The bank states the data boundary plainly: no sensitive data reaches the model, speech is scrubbed and tokenised by internal systems before it goes anywhere near the language model, and the account APIs never pass through it.",
         "basis_fr": "Assistant in-app a traite plus de 245M d'interactions en 2024 et execute des actions de compte comme la recommande de carte de debit; l'execution d'actions de compte releve du N3, atteste par la presse. La banque énonce clairement le périmètre de données : aucune donnée sensible n'atteint le modèle, la parole est nettoyée et tokenisée par les systèmes internes avant d'en approcher, et les API de compte n'y passent jamais."
-      }
-    },
-    {
-      "id": "wells-fargo--servicenow-ai-agents",
-      "company": "Wells Fargo",
-      "company_country": "United States",
-      "region": "North America",
-      "sector": "Financial Services",
-      "solution_name": "ServiceNow AI Agents",
-      "vendor": "ServiceNow",
-      "use_case": "Wells Fargo uses ServiceNow AI to drive measurable operational outcomes across enterprise workflows.",
-      "department": "Enterprise Operations / IT",
-      "industry": "Banking",
-      "deployment_stage": "production",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://newsroom.servicenow.com/press-releases/details/2025/ServiceNow-Unveils-the-New-ServiceNow-AI-Platform-to-Put-Any-AI-Any-Agent-Any-Model-to-Work-Across-the-Enterprise/default.aspx",
-          "title": "ServiceNow Unveils the New ServiceNow AI Platform",
-          "publisher": "ServiceNow",
-          "source_type": "press_release",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.5,
-      "confidence_reason": "Listed among named users in a ServiceNow press release without specific use-case detail.",
-      "coda": {
-        "chain": "fonctions",
-        "links": [
-          0,
-          0,
-          0,
-          0,
-          1,
-          0,
-          0,
-          1,
-          0,
-          0
-        ],
-        "observed": 1,
-        "locks": [],
-        "basis_en": "ServiceNow AI agents claimed to drive operational outcomes across enterprise workflows; press release only with no specifics, so N1.",
-        "basis_fr": "Agents IA ServiceNow revendiques pour piloter des resultats operationnels sur les workflows d'entreprise; communique de presse sans details, donc N1."
       }
     },
     {
@@ -32681,7 +32501,7 @@
       "sector": "Retail & E-commerce",
       "solution_name": "Olive",
       "vendor": "In-house (agentic upgrade on Google Gemini)",
-      "use_case": "Customer-service chatbot handling thousands of daily interactions for the grocery chain, in service for seven years and being upgraded with agentic capabilities on Google Cloud's Gemini.",
+      "use_case": "Olive is the retailer's customer service chatbot, in service for seven years, which the group says it is now set to enhance with agentic AI capabilities. The source describes the upgrade rather than a new deployment, and gives no volume for what Olive handles today.",
       "department": "Customer service",
       "industry": "Grocery retail",
       "deployment_stage": "production",
@@ -32734,7 +32554,7 @@
       "sector": "Media & Entertainment",
       "solution_name": "WPP Open (Agent Hub / Super Agents)",
       "vendor": "WPP (in-house)",
-      "use_case": "An internal AI platform whose Agent Hub app store offers 'Super Agents' trained on proprietary data to carry out marketing tasks under a defined AI agent governance framework.",
+      "use_case": "An internal AI platform whose Agent Hub app store offers 'Super Agents' trained on proprietary data to carry out marketing tasks.",
       "department": "Technology / Agency Operations",
       "industry": "Advertising & marketing",
       "deployment_stage": "production",
