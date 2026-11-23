@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T14:39:10.014Z",
+  "updated_at": "2026-11-23T08:57:03.349Z",
   "entries": [
     {
       "id": "1-800accountant--agentforce",
@@ -983,6 +983,52 @@
       }
     },
     {
+      "company": "AIG",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Insurance",
+      "industry": "Commercial and specialty insurance",
+      "department": "Operations",
+      "solution_name": "Claims Assist",
+      "vendor": "",
+      "use_case": "An AI solution used by AIG's claims adjusters to streamline and accelerate claims adjustment. The chief executive says it helps adjusters cut through complexity and respond faster. The same call credits AI with underwriters reviewing more submissions and quoting faster, without naming the tool behind that.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/11/04/aig-group-aig-q3-2026-earnings-call-transcript/",
+          "title": "AIG (AIG) Q3 2026 Earnings Call Transcript",
+          "publisher": "The Motley Fool",
+          "source_type": "earnings_call",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "claims",
+        "links": [
+          1,
+          2,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The adjuster stays the decision maker: the tool is described as helping them cut through complexity and respond faster, never as settling or paying a claim. AIG publishes no figure for it, and the transcript garbles one sentence about where it is used, so the account here keeps to what is unambiguous.",
+        "basis_fr": "Le gestionnaire reste le décideur : l'outil est décrit comme l'aidant à démêler la complexité et à répondre plus vite, jamais comme réglant ou payant un sinistre. AIG ne publie aucun chiffre le concernant, et la retranscription brouille une phrase sur son périmètre : ce qui est écrit ici s'en tient à ce qui est sans ambiguïté."
+      },
+      "id": "aig--claims-assist",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "air-india--ai-g",
       "company": "Air India",
       "company_country": "India",
@@ -1363,6 +1409,63 @@
         "basis_en": "Shopping assistant plans meals, helps restock and discover products to cut shopping time from ~46 to ~4 minutes; it recommends and prepares carts, purchase stays with the user.",
         "basis_fr": "L'assistant planifie les repas, aide au reassort et a la decouverte pour reduire le temps d'achat de ~46 a ~4 minutes; il recommande et prepare le panier, l'achat reste au client."
       }
+    },
+    {
+      "company": "Alcaldía de Bogotá (Línea 195)",
+      "company_country": "Colombia",
+      "region": "Latin America",
+      "sector": "Public Sector & Education",
+      "industry": "City government services",
+      "department": "Customer service",
+      "solution_name": "Alex",
+      "vendor": "SoundHound AI",
+      "use_case": "A Spanish speaking voice agent that answers residents calling the city's round the clock services line, covering 76 districts and a population of eight million, and handling up to a thousand simultaneous calls. SoundHound describes the deployment as a first phase.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Call abandonment",
+          "value": "down by two thirds",
+          "source_type": "earnings_call"
+        },
+        {
+          "metric": "Inquiries handled, first phase",
+          "value": "up 30%",
+          "source_type": "earnings_call"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/11/06/soundhound-ai-soun-q3-2026-earnings-call-transcript/",
+          "title": "SoundHound AI (SOUN) Q3 2026 Earnings Call Transcript",
+          "publisher": "The Motley Fool",
+          "source_type": "earnings_call",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "public",
+        "links": [
+          2,
+          1,
+          2,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent takes the call, identifies the request and gives information. Nothing in the account has it decide an administrative case or deliver an entitlement, so it answers rather than executes. The figures come from the vendor's earnings call, not from the city.",
+        "basis_fr": "L'agent prend l'appel, qualifie la demande et donne l'information. Rien dans le compte rendu ne le montre instruire un dossier ni délivrer une prestation : il répond, il n'exécute pas. Les chiffres viennent de l'appel de résultats de l'éditeur, pas de la ville."
+      },
+      "id": "alcaldia-de-bogota-linea-195--alex",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "alibaba-taobao--taobao-wenwen-qwen-shopping-assistant",
@@ -1994,6 +2097,64 @@
         "basis_en": "Alipay agent Ah Bao books rides, orders coffee and executes wealth actions like buying mutual funds under user authorization; agent commits transactions (pilot).",
         "basis_fr": "L'agent Alipay Ah Bao reserve des courses, commande du cafe et execute des operations d'epargne comme l'achat de fonds sous autorisation; l'agent valide les transactions (pilote)."
       }
+    },
+    {
+      "company": "Apple Tree Honda & Acura",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Automotive & Mobility",
+      "industry": "Car dealership service department",
+      "department": "Customer service",
+      "solution_name": "Unnamed service voice agent",
+      "solution_named": false,
+      "vendor": "",
+      "use_case": "A voice agent answers the service department's inbound calls and feeds appointment booking, reaching customers who would otherwise have hung up. The fixed operations director says the technology frees staff for complex needs rather than replacing them, and helps the dealership absorb growth without hiring.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Calls handled monthly by the voice agent",
+          "value": "more than 5,000",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Monthly service appointments supported by the department's tools as a whole",
+          "value": "about 1,500, against fewer than 100 before the initiative",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.cbtnews.com/apple-tree-honda-acura-1500-service-apt/",
+          "title": "How Apple Tree Honda & Acura books 1,500 service appointments a month",
+          "publisher": "CBT News",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          1,
+          2,
+          2,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent takes the call and moves the customer towards an appointment. The account does not say whether it writes into the schedule itself, so nothing attests execution, and the appointment figure covers the department's tools together rather than this agent alone, which the entry states. No bound and no oversight are described.",
+        "basis_fr": "L'agent prend l'appel et amène le client vers un rendez-vous. Le compte rendu ne dit pas s'il écrit lui-même dans le planning : rien n'atteste donc d'exécution, et le chiffre de rendez-vous couvre l'ensemble des outils du service, pas ce seul agent, ce que la fiche précise. Aucune borne ni supervision n'est décrite."
+      },
+      "id": "apple-tree-honda-acura--unnamed-service-voice-agent",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "arcelormittal--arthur-dofasco-big-data-ml-platform-with-aws",
@@ -2707,6 +2868,63 @@
         "basis_en": "A secured generative workspace (text, image, code) rolling out from 1,000 to a 140,000-employee target: every output is taken up by an employee. Observed N1.",
         "basis_fr": "Un espace génératif sécurisé (texte, image, code) en déploiement de 1 000 vers 140 000 employés : chaque sortie est reprise par un collaborateur. Observé N1."
       }
+    },
+    {
+      "company": "Babitalk (Carelabs)",
+      "company_country": "South Korea",
+      "region": "East Asia",
+      "sector": "Healthcare, Life Sciences & Luxury",
+      "industry": "Health and beauty platform",
+      "department": "IT & data",
+      "solution_name": "BaaS (Babitalk AI Agent Studio)",
+      "vendor": "In-house",
+      "use_case": "An internal studio that lets any employee build, deploy and share an agent without writing code. At its centre a meta agent takes a task described in plain language and proposes the tools and the configuration for the agent that will do it. Staff have built agents for marketing, service design, HR and data analysis, and used the studio to automate data gathering and design documents while building the company's Babi AI service for foreign users.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Agents built by employees, August to October 2026",
+          "value": "from 23 to 123",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Of those, agents deployed and running in daily work",
+          "value": "89",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://view.asiae.co.kr/article/2026112011253150991",
+          "title": "바비톡, AI 에이전트 'BaaS' 전사 도입… 업무 자동화",
+          "publisher": "아시아경제",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          1,
+          2,
+          1,
+          1,
+          2,
+          0,
+          2,
+          2,
+          0,
+          2
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "A platform on which employees build agents that prepare work: gathering material, drafting documents, analysing data. The article names no step where an agent commits anything outside the company, and describes no approval of what the agents produce. Multi agent collaboration and agent to agent exchange are stated as being prepared, so they are not counted here.",
+        "basis_fr": "Une plateforme sur laquelle les salariés construisent des agents qui préparent du travail : collecte de matière, rédaction de documents, analyse de données. L'article ne nomme aucune étape où un agent engagerait quoi que ce soit à l'extérieur, et ne décrit aucune validation de ce qu'ils produisent. La collaboration multi agents et les échanges entre agents sont annoncés en préparation : ils ne sont donc pas comptés ici."
+      },
+      "id": "babitalk-carelabs--baas-babitalk-ai-agent-studio",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "bajaj-finance--unnamed-ai-agent-fleet-for-sales-collections-and-risk-operations",
@@ -4050,6 +4268,52 @@
       }
     },
     {
+      "company": "Bending Spoons",
+      "company_country": "Italy",
+      "region": "Europe",
+      "sector": "Technology & Software",
+      "industry": "Consumer software group",
+      "department": "R&D & innovation",
+      "solution_name": "Diagram",
+      "vendor": "In-house",
+      "use_case": "A proprietary AI design tool rolled out across the company, with which, in the chief executive's words, every employee can develop a new user experience or a slide deck from only a few natural language prompts. It was built to cut the resources product design and presentations demand. The group's coding agent, a proprietary harness that picks models by task and inference cost, carries no public name.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/11/20/bending-spoons-bsp-q3-2026-earnings-call-transcript/",
+          "title": "Bending Spoons (BSP) Q3 2026 Earnings Call Transcript",
+          "publisher": "The Motley Fool",
+          "source_type": "earnings_call",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          1,
+          2,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          2
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The tool drafts an interface or a deck from a prompt and the employee takes it from there, so it produces material rather than committing anything. The striking figures on that call, 98 percent of pull requests written in whole or in part by AI, belong to the unnamed coding harness and are deliberately not carried on this entry.",
+        "basis_fr": "L'outil produit une interface ou une présentation à partir d'une consigne, et le collaborateur reprend la main : il fabrique de la matière sans rien engager. Les chiffres marquants de cet appel, 98 pour cent des pull requests écrites en tout ou partie par l'IA, concernent l'agent de code sans nom public et ne sont volontairement pas portés sur cette fiche."
+      },
+      "id": "bending-spoons--diagram",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "company": "Best Buy",
       "company_country": "United States",
       "region": "North America",
@@ -4348,6 +4612,52 @@
       "provenance": "manual",
       "confidence": 0.5,
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
+    },
+    {
+      "company": "BJ's Wholesale Club",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Retail & E-commerce",
+      "industry": "Warehouse club retail",
+      "department": "Customer service",
+      "solution_name": "Bev",
+      "vendor": "In-house",
+      "use_case": "A proprietary AI shopping assistant for members, now built into the mobile application, where it helps members shop and gives them real time assistance. The chief executive says it continues to gain momentum and is becoming part of how members shop and get help.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/11/20/bjs-bj-q3-2026-earnings-call-transcript/",
+          "title": "BJ's Wholesale Club (BJ) Q3 2026 Earnings Call Transcript",
+          "publisher": "The Motley Fool",
+          "source_type": "earnings_call",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "commerce",
+        "links": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "A shopping assistant that answers and helps members find what they need. The call reports no purchase, payment or order the assistant completes by itself, and no governance control.",
+        "basis_fr": "Un assistant d'achat qui répond et aide les membres à trouver. L'appel ne rapporte ni achat, ni paiement, ni commande que l'assistant conclurait seul, et aucun verrou de gouvernance."
+      },
+      "id": "bj-s-wholesale-club--bev",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "bloomberg--ai-powered-earnings-call-summaries-document-insights",
@@ -5094,6 +5404,59 @@
         "basis_en": "BCLP deployed Legora firmwide to 1,200 lawyers across practices after a pilot; a legal work copilot that proposes drafts/analysis lawyers rework (N1). Press-release-only evidence caps observed at 2.",
         "basis_fr": "BCLP a deploye Legora a l'echelle du cabinet pour 1 200 avocats apres un pilote ; copilote juridique proposant ebauches/analyses retravaillees par les avocats (N1). Preuve uniquement communique : plafond a 2."
       }
+    },
+    {
+      "company": "BT Group",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Telecommunications",
+      "industry": "Telecoms operator",
+      "department": "Vente & commerce",
+      "solution_name": "Unnamed complex bid agent",
+      "solution_named": false,
+      "vendor": "In-house",
+      "use_case": "An agent BT's team built to improve the complex bids it writes for its more complex business customers. The chief executive describes it on the half year results call as already at work and already cutting the time a bid takes, and frames the opportunity as one to scale. She also notes that the benefits of AI are not yet showing as a direct cost reduction.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Time to produce a complex bid",
+          "value": "from 14 man weeks to three man days",
+          "source_type": "earnings_call"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.telecomtv.com/content/ai/what-s-up-with-bt-qualcomm-6g-56606/",
+          "title": "What's up with... BT, Qualcomm, 6G",
+          "publisher": "TelecomTV",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "vente",
+        "links": [
+          0,
+          1,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent writes the bid and BT's people send it: a proposal is prepared, not a contract committed. Neither the agent nor its vendor is named, and the figure rests on this single report of the chief executive's remarks, with no BT document repeating it.",
+        "basis_fr": "L'agent rédige l'offre et ce sont les équipes de BT qui l'envoient : une proposition est préparée, pas un contrat engagé. Ni l'agent ni son éditeur ne sont nommés, et le chiffre repose sur ce seul compte rendu des propos de la directrice générale, sans document de BT qui le reprenne."
+      },
+      "id": "bt-group--unnamed-complex-bid-agent",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "bt-group-ee--aimee",
@@ -7262,6 +7625,66 @@
         "basis_en": "Ava is an in-app avatar that converses and executes account transactions such as ordering, blocking or unblocking cards and changing limits, committing account actions autonomously within bounds.",
         "basis_fr": "Ava est un avatar dans l'app qui converse et execute des operations de compte telles que commander, bloquer ou debloquer des cartes et modifier les plafonds, engageant des actions de compte de maniere autonome dans un cadre defini."
       }
+    },
+    {
+      "company": "Commonwealth Bank",
+      "company_country": "Australia",
+      "region": "Oceania",
+      "sector": "Financial Services",
+      "industry": "Retail and commercial banking",
+      "department": "IT & data",
+      "solution_name": "Agentic Shield",
+      "vendor": "",
+      "use_case": "Five specialised AI defender agents working as a team inside the bank's Security Operations Centre: one hunts suspicious activity, one gathers further information to assess a threat, others document incidents, and others check that investigations missed nothing and look for gaps in existing detection. The bank states that its human experts stay responsible for weighing the evidence and deciding what to do.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Time from threat intelligence to action",
+          "value": "from four hours to five minutes",
+          "source_type": "company_official"
+        },
+        {
+          "metric": "Signals analysed each week",
+          "value": "more than 265 billion, up 33% year on year",
+          "source_type": "company_official"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.commbank.com.au/articles/newsroom/2026/11/commbank-agentic-shield-ai-cyber-defence.html",
+          "title": "CommBank's Agentic Shield: AI agents in cyber defence",
+          "publisher": "Commonwealth Bank",
+          "source_type": "company_official",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "fraude",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          0,
+          0,
+          1,
+          2,
+          2,
+          2
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate",
+          "supervision"
+        ],
+        "basis_en": "The agents detect, enrich and document; the bank says its cyber experts remain responsible for assessing the evidence and deciding on action, so the agents prepare the response rather than taking it. That stated division of responsibility is both the written bound and the oversight. The only source is the bank's own newsroom.",
+        "basis_fr": "Les agents détectent, enrichissent et documentent ; la banque affirme que ses experts cyber restent responsables de l'appréciation des preuves et de la décision d'agir : les agents préparent la réponse sans la prendre. Ce partage de responsabilité affiché constitue à la fois la borne écrite et la supervision. La seule source est la salle de presse de la banque."
+      },
+      "id": "commonwealth-bank--agentic-shield",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "commonwealth-bank--ceba",
@@ -13894,6 +14317,61 @@
       }
     },
     {
+      "company": "IBK Industrial Bank of Korea",
+      "company_country": "South Korea",
+      "region": "East Asia",
+      "sector": "Financial Services",
+      "industry": "Commercial and SME banking",
+      "department": "IT & engineering",
+      "solution_name": "Geni-Code",
+      "vendor": "In-house",
+      "use_case": "An AI coding agent built on the bank's own infrastructure: an employee asks in plain language, the agent analyses the relevant material, writes code and carries the task out, from report and spreadsheet analysis to building small business programmes. One agent is shared by many employees. The bank built it internally because Korean network separation rules make foreign commercial coding agents hard to use in finance.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=719533",
+          "title": "IBK기업은행, AI 코딩 에이전트 '제니코드' 자체 구축",
+          "publisher": "뉴스프리존",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        },
+        {
+          "url": "https://www.g-enews.com/article/Finance/2026/11/202611161412401758bb91c46fcd_1",
+          "title": "기업은행, AI 코딩 에이전트 '제니코드' 구축",
+          "publisher": "글로벌이코노믹",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "delivery",
+        "links": [
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "data"
+        ],
+        "basis_en": "The agent writes and runs code inside the bank, on internal infrastructure kept apart from the public internet under Korea's network separation rules, which is the one documented bound. Rollout is staged, starting with the transformation leads in head office departments and widening once stability is confirmed. No approval step on the agent's output is described.",
+        "basis_fr": "L'agent écrit et exécute du code dans la banque, sur une infrastructure interne séparée d'internet au titre de la réglementation coréenne de séparation des réseaux : c'est la seule borne documentée. Le déploiement est progressif, d'abord auprès des référents de la transformation dans les directions du siège, puis élargi une fois la stabilité vérifiée. Aucune étape de validation des sorties n'est décrite."
+      },
+      "id": "ibk-industrial-bank-of-korea--geni-code",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "icici-lombard--ria-plus-voice-ai-customer-enablement-platform",
       "company": "ICICI Lombard",
       "company_country": "India",
@@ -14551,6 +15029,52 @@
         "basis_en": "Uses Google Gemini Enterprise to streamline core internal processes; earnings-call mention only, no metrics or stage, indicating assistive copilot use.",
         "basis_fr": "Utilise Google Gemini Enterprise pour fluidifier les processus internes; simple mention en earnings call, sans métriques ni stade, usage de copilote assistif."
       }
+    },
+    {
+      "company": "Inter & Co",
+      "company_country": "Brazil",
+      "region": "Latin America",
+      "sector": "Financial Services",
+      "industry": "Digital bank",
+      "department": "Customer service",
+      "solution_name": "Seven",
+      "vendor": "xAI",
+      "use_case": "A multi agent AI assistant placed at the centre of the customer experience, with its own site seven.co launched during the quarter. Management describes agentic AI automating steps of customer processes and names xAI as a strategic vendor rather than a profit sharing partner. The chief executive remains cautious on maturity, saying the bank is scratching the surface.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/11/13/inter-intr-q3-2026-earnings-call-transcript/",
+          "title": "Inter (INTR) Q3 2026 Earnings Call Transcript",
+          "publisher": "The Motley Fool",
+          "source_type": "earnings_call",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The call describes an assistant resolving customer requests and automating steps of a process, without naming a step where the assistant commits money or changes an account by itself. A figure of about 85 percent of requests resolved by AI appears in the transcript's own summary line and is not carried here, because it could not be traced to a speaker.",
+        "basis_fr": "L'appel décrit un assistant qui résout des demandes clients et automatise des étapes de processus, sans nommer d'étape où il engagerait de l'argent ou modifierait un compte seul. Un chiffre d'environ 85 pour cent des demandes résolues par l'IA figure dans le résumé de la retranscription : il n'est pas repris ici, faute d'avoir pu être attribué à un intervenant."
+      },
+      "id": "inter-co--seven",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "intuit--writer",
@@ -17990,6 +18514,59 @@
       }
     },
     {
+      "company": "Mengniu Dairy",
+      "company_country": "China",
+      "region": "East Asia",
+      "sector": "Consumer Goods & Manufacturing",
+      "industry": "Dairy production",
+      "department": "Operations & production",
+      "solution_name": "Unnamed cattle diagnosis agent",
+      "solution_named": false,
+      "vendor": "Tencent",
+      "use_case": "On Mengniu's dairy farms, a front line operator describes a cow's symptoms to the agent, which returns a precise treatment plan after two exchanges. It was built on Tencent's WorkBuddy by Wang Guoyin, an employee of the milk supply division with no programming training, who fed it reference works and years of field experience after seeing how long remote farms waited for help when a herd fell ill.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Diagnosis turnaround for a single farm",
+          "value": "from 1.5 days to 2 hours",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.news.cn/fortune/20261112/36bca7cc3bc847d6bacfb196a1d50a64/c.html",
+          "title": "智能体加速落地，“数字员工”走进千行百业",
+          "publisher": "新华社 (Xinhua)",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "ops",
+        "links": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent returns a treatment plan and a person on the farm carries it out, so it prepares the intervention rather than making it. No veterinary sign off or any other control is described, and the agent carries no public name: it is published as unnamed on the strength of a Xinhua news feature rather than a vendor page.",
+        "basis_fr": "L'agent rend un plan de traitement et c'est un humain sur l'exploitation qui l'applique : il prépare l'intervention sans la réaliser. Aucune validation vétérinaire ni aucun autre contrôle n'est décrit, et l'agent ne porte pas de nom public : il est publié comme sans nom sur la foi d'un reportage de l'agence Xinhua, pas d'une page d'éditeur."
+      },
+      "id": "mengniu-dairy--unnamed-cattle-diagnosis-agent",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "mercado-libre--asistente-personal-mercado-pago-personal-assistant",
       "company": "Mercado Libre",
       "company_country": "Argentina",
@@ -18116,6 +18693,65 @@
         "basis_en": "A GPT-4o development platform for 17,000 developers powering apps like customer-service mediation (10% of one site's volume): the platform prepares, teams ship under review. Observed N2.",
         "basis_fr": "Une plateforme de développement GPT-4o pour 17 000 développeurs, motorisant par exemple la médiation service client (10 % du volume d'un site) : la plateforme prépare, les équipes livrent sous revue. Observé N2."
       }
+    },
+    {
+      "company": "MercadoLibre",
+      "company_country": "Argentina",
+      "region": "Latin America",
+      "sector": "Financial Services",
+      "industry": "E-commerce and payments platform",
+      "department": "Customer service",
+      "solution_name": "Mago",
+      "vendor": "In-house",
+      "use_case": "The fintech assistant of Mercado Pago, which answers customer questions inside the payments app. The shareholder letter filed with the SEC reports 19 million conversations in September alone and links the assistant to higher engagement and an improved net promoter score. A separate shopping agent remains open to only a small part of the base, in the company's three largest markets.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Conversations held in September 2026",
+          "value": "19 million",
+          "source_type": "company_official"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/0001099590/000109959026000027/meli-20260930xex991.htm",
+          "title": "MercadoLibre third quarter 2026 letter to shareholders",
+          "publisher": "MercadoLibre (SEC filing)",
+          "source_type": "company_official",
+          "retrieved_date": "2026-11-23"
+        },
+        {
+          "url": "https://www.pymnts.com/earnings/2026/mercadolibre-expands-ai-war-chest-by-30-million-in-q3/",
+          "title": "MercadoLibre Expands AI War Chest by $30 Million in Q3",
+          "publisher": "PYMNTS",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "An assistant that converses with customers inside the payments app. The filing describes conversations and satisfaction, never an operation the assistant carries out on an account on its own, so nothing attests execution beyond answering.",
+        "basis_fr": "Un assistant qui dialogue avec les clients dans l'application de paiement. Le document décrit des conversations et de la satisfaction, jamais une opération que l'assistant réaliserait seul sur un compte : rien n'atteste donc d'exécution au-delà de la réponse."
+      },
+      "id": "mercadolibre--mago",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "company": "Mercadona",
@@ -18670,6 +19306,66 @@
         "basis_en": "Ada AI agents power global customer service under a deploy-measure-refine model. Single vendor case study only caps observed at 2; no quantified outcomes and the agent answers support requests.",
         "basis_fr": "Les agents IA Ada assurent le service client mondial selon un modele deployer-mesurer-affiner. Une seule etude de cas fournisseur plafonne observed a 2 ; pas de resultat chiffre, l'agent repond aux demandes."
       }
+    },
+    {
+      "company": "Mondelez International",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Consumer Goods & Manufacturing",
+      "industry": "Snack food manufacturing",
+      "department": "IT & data",
+      "solution_name": "Chat@MDLZ (with Mila)",
+      "vendor": "",
+      "use_case": "A conversational generative business intelligence layer over sales, production and distribution data from 130 factories, which employees question in plain language instead of reading static dashboards. Multi step operations such as invoice approval run through it within governance limits coded into the architecture: standard operating procedures are loaded as procedural files so the AI only executes authorised actions, brand guidelines are held as brand as code, and each step is designated deterministic or exploratory.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Weekly active users of the company's AI platform, not of this tool alone",
+          "value": "25,000",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Factories covered by the data foundation",
+          "value": "130",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://consumergoods.com/mondelez-scales-enterprise-generative-bi-tool-under-cido-catalano",
+          "title": "Mondelez Scales Enterprise Generative BI Tool Under CIDO Catalano",
+          "publisher": "Consumer Goods Technology",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "pilotage",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "observed": 3,
+        "locks": [
+          "data",
+          "mandate"
+        ],
+        "basis_en": "This one goes further than answering: the article describes multi step operations the system carries out, invoice approval among them. The bounds are real and written into the architecture, procedures loaded so that only authorised actions execute, steps marked deterministic or exploratory, which documents the data boundary and the mandate. What is missing is tooled oversight: no human review point is described anywhere on the acting layer, so the declared level is held at validated execution.",
+        "basis_fr": "Ici on va plus loin que répondre : l'article décrit des opérations en plusieurs étapes que le système exécute, dont l'approbation de factures. Les bornes sont réelles et inscrites dans l'architecture, procédures chargées pour que seules les actions autorisées s'exécutent, étapes marquées déterministes ou exploratoires, ce qui documente le périmètre de données et le mandat. Ce qui manque, c'est la supervision outillée : aucun point de revue humaine n'est décrit sur la couche qui agit, le niveau déclaré reste donc l'exécution validée."
+      },
+      "id": "mondelez-international--chat-mdlz-with-mila",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "company": "Morgan Stanley",
@@ -22129,6 +22825,58 @@
       }
     },
     {
+      "company": "Presidio Petroleum",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Energy & Utilities",
+      "industry": "Oil and gas production",
+      "department": "Operations",
+      "solution_name": "Field Intelligence",
+      "vendor": "In-house",
+      "use_case": "An agent running on the company's Mainspring operating system that watches every well against its expected rate, ranks the biggest shortfalls, finds the likely cause and tells the field which well to fix first, why and how. Presidio also retired its first agent, Doug, folding its technology into Mainspring, and has a Deal Intelligence agent still under construction.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Production uplift attributed to all AI programmes in the third quarter, not to this agent alone",
+          "value": "approximately 3.2%, up from 2.3% in the second quarter",
+          "source_type": "earnings_call"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/11/14/presidio-ftw-q3-2026-earnings-call-transcript/",
+          "title": "Presidio (FTW) Q3 2026 Earnings Call Transcript",
+          "publisher": "The Motley Fool",
+          "source_type": "earnings_call",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "ops",
+        "links": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent watches, ranks and diagnoses, then tells the field crew what to do. The intervention itself is human, so it prepares the fix rather than making it. No written bound or oversight mechanism is described on the call.",
+        "basis_fr": "L'agent surveille, classe et diagnostique, puis indique aux équipes de terrain quoi faire. L'intervention elle-même est humaine : il prépare la correction sans la réaliser. Aucune borne écrite ni dispositif de supervision n'est décrit pendant l'appel."
+      },
+      "id": "presidio-petroleum--field-intelligence",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "company": "Princess Cruises",
       "company_country": "United States",
       "region": "North America",
@@ -22662,6 +23410,52 @@
         "basis_en": "Government platform to produce, manage and deploy AI agents across ministry services; a meta IT/engineering enablement layer, no evidence of specific autonomous decisioning.",
         "basis_fr": "Plateforme gouvernementale pour produire, gerer et deployer des agents IA dans les services du ministere; couche d'habilitation IT/ingenierie, sans preuve de decision autonome specifique."
       }
+    },
+    {
+      "company": "Qiaokou District, Wuhan",
+      "company_country": "China",
+      "region": "East Asia",
+      "sector": "Public Sector & Education",
+      "industry": "Municipal district administration",
+      "department": "Customer service",
+      "solution_name": "Baidu Dazi",
+      "vendor": "Baidu",
+      "use_case": "Neighbourhood grid workers enter a resident's request and the agent produces a standard reply based on local community policy and administrative rules, then classifies the request, raises a work order and dispatches it. Xinhua presents it as one of the public service deployments of the current wave of Chinese agents.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.news.cn/fortune/20261112/36bca7cc3bc847d6bacfb196a1d50a64/c.html",
+          "title": "智能体加速落地，“数字员工”走进千行百业",
+          "publisher": "新华社 (Xinhua)",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "public",
+        "links": [
+          2,
+          0,
+          2,
+          2,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The grid worker is the one facing the resident: the agent drafts the reply and routes the request, and the dispatch it performs is internal, not an administrative decision or an entitlement delivered. The dispatch is described in one sentence of a wider feature, with no account of who checks the reply before it goes out.",
+        "basis_fr": "C'est l'agent de quartier qui fait face à l'habitant : l'agent rédige la réponse et oriente la demande, et la répartition qu'il effectue est interne, ni décision administrative ni prestation délivrée. Cette répartition tient en une phrase d'un article plus large, sans indication de qui contrôle la réponse avant son envoi."
+      },
+      "id": "qiaokou-district-wuhan--baidu-dazi",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "qualtrics--cody",
@@ -24489,6 +25283,78 @@
       }
     },
     {
+      "company": "Santen Pharmaceutical",
+      "company_country": "Japan",
+      "region": "East Asia",
+      "sector": "Healthcare, Life Sciences & Luxury",
+      "industry": "Ophthalmic pharmaceuticals",
+      "department": "HR & talent",
+      "solution_name": "Field Coach",
+      "vendor": "Microsoft",
+      "use_case": "A role play agent for medical representatives preparing a doctor visit: the rep speaks, the agent plays the doctor and answers in text on an iPad. It is grounded only on internal training material, product information, MHLW package inserts and the JPMA promotion code, with no personal data on doctors. Santen built it on Microsoft 365 Copilot, which it rolled out to all employees worldwide in October 2025.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "AI agents created in house across the company, all uses",
+          "value": "more than 4,000",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Time freed per person per day, Copilot programme as a whole",
+          "value": "61 minutes",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Weekly active users, Copilot programme as a whole",
+          "value": "85%",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://ai.watch.impress.co.jp/docs/news/2156284.html",
+          "title": "参天製薬、Copilot活用で4,000超のAIエージェントを創出",
+          "publisher": "AI Watch (Impress)",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        },
+        {
+          "url": "https://news.mynavi.jp/techplus/article/20261113-5317368/",
+          "title": "参天製薬の生成AI活用、ロールプレイ用AIエージェント",
+          "publisher": "Mynavi TECH+",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          1,
+          0,
+          2,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate",
+          "supervision"
+        ],
+        "basis_en": "The agent trains a person, it does not face the customer: Santen forbids the AI from recommending a medicine or making a medical judgement, and the information finally given to the doctor is delivered by the representative, in their own words, after reviewing the content. That prohibition and that final human delivery are the written bound and the oversight. The reported figures belong to the company wide Copilot programme, not to this agent, and are labelled as such.",
+        "basis_fr": "L'agent entraîne une personne, il ne fait pas face au client : Santen interdit à l'IA de proposer un médicament ou de porter un jugement médical, et l'information finalement donnée au médecin l'est par le visiteur médical, dans ses propres mots, après examen du contenu. Cette interdiction et cette délivrance humaine finale forment la borne écrite et la supervision. Les chiffres publiés portent sur le programme Copilot de toute l'entreprise, pas sur cet agent, et sont libellés comme tels."
+      },
+      "id": "santen-pharmaceutical--field-coach",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "saudi-arabia-ministry-of-economy-and-planning--insaights",
       "company": "Saudi Arabia Ministry of Economy and Planning",
       "company_country": "Saudi Arabia",
@@ -24920,6 +25786,72 @@
       }
     },
     {
+      "company": "Security Bank",
+      "company_country": "Philippines",
+      "region": "Southeast Asia",
+      "sector": "Financial Services",
+      "industry": "Commercial banking",
+      "department": "Fonctions support",
+      "solution_name": "Unnamed employee-built AI agents",
+      "solution_named": false,
+      "vendor": "Microsoft",
+      "use_case": "Bank staff have themselves built 3,100 AI agents for business and operational tasks, described through examples rather than individually: gathering information, reconciling figures, preparing reports, reviewing documents. The chief digital and technology officer states that AI can recommend, analyse and assist but that accountability cannot be delegated to an algorithm, and that the bank always keeps a human in the loop. A governance framework more than four years old covers data assessment, explainability, mandatory human review points and post deployment monitoring, with human judgement held as indispensable on credit, fraud, risk, compliance and complaints.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "AI agents developed by employees",
+          "value": "3,100",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Employees trained in agentic AI",
+          "value": "more than 3,000",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Daily engagement among the 1,210 holders of a Copilot Premium licence",
+          "value": "98%",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.philstar.com/business/2026/11/15/2570124/security-bank-trains-more-staff-develops-ai-agents",
+          "title": "Security Bank trains more staff, develops AI agents",
+          "publisher": "The Philippine Star",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          2,
+          1,
+          1,
+          2,
+          2,
+          1,
+          2,
+          2,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate",
+          "supervision"
+        ],
+        "basis_en": "The agents gather, reconcile and draft; the bank states plainly that accountability stays human and that a person is always in the loop, and names the decisions AI does not make, which is the written bound. Mandatory review points and post deployment monitoring document the oversight. No agent carries a public name, so this is published as one unnamed deployment on the strength of a newspaper interview.",
+        "basis_fr": "Les agents collectent, rapprochent et rédigent ; la banque affirme clairement que la responsabilité reste humaine et qu'un humain est toujours dans la boucle, et nomme les décisions que l'IA ne prend pas : c'est la borne écrite. Les points de revue obligatoires et le suivi après déploiement documentent la supervision. Aucun agent ne porte de nom public : l'ensemble est publié comme un déploiement sans nom, sur la foi d'un entretien de presse."
+      },
+      "id": "security-bank--unnamed-employee-built-ai-agents",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "sephora--sephora-ai-beauty-chat",
       "company": "Sephora",
       "company_country": "United States",
@@ -25245,6 +26177,63 @@
         "basis_en": "Project K compiles medical histories, summarizes records, recommends tests and helps prioritize critical ED cases; announced decision-support, physicians decide, so N2.",
         "basis_fr": "Project K compile les antecedents, resume les dossiers, recommande des examens et aide a prioriser les cas critiques aux urgences; aide a la decision annoncee, les medecins decident, donc N2."
       }
+    },
+    {
+      "company": "Shopify",
+      "company_country": "Canada",
+      "region": "North America",
+      "sector": "Technology & Software",
+      "industry": "E-commerce platform",
+      "department": "Customer service",
+      "solution_name": "Sidekick",
+      "vendor": "In-house",
+      "use_case": "The AI assistant inside the Shopify admin, which merchants use to run their shop and which builds the platform's automation flows for them. Shopify reports that Sidekick created around two thirds of all Shopify flows in the quarter, and pairs it with Canvas, a newer tool for building storefronts.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Daily active merchants using Sidekick, year on year",
+          "value": "3.7 times",
+          "source_type": "earnings_call"
+        },
+        {
+          "metric": "Cost per Sidekick conversation, quarter on quarter",
+          "value": "down 28%",
+          "source_type": "earnings_call"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/11/03/shopify-shop-q3-2026-earnings-call-transcript/",
+          "title": "Shopify (SHOP) Q3 2026 Earnings Call Transcript",
+          "publisher": "The Motley Fool",
+          "source_type": "earnings_call",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Sidekick builds an automation and the merchant turns it on: the assistant prepares work inside the merchant's own shop, and nothing in the call has it commit an order, a payment or a change the merchant has not accepted. No governance control is described.",
+        "basis_fr": "Sidekick construit une automatisation et c'est le marchand qui l'active : l'assistant prépare du travail dans la boutique, et rien dans l'appel ne le montre engager une commande, un paiement ou une modification que le marchand n'aurait pas acceptée. Aucun verrou de gouvernance n'est décrit."
+      },
+      "id": "shopify--sidekick",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "siam-commercial-bank-scb--scb-easy-easy-store-hyper-personalized-ai",
@@ -25779,6 +26768,58 @@
         "basis_en": "Aster is an agentic personal assistant meant to set goals, plan and complete tasks, launched in beta; announced and unproven, so N2.",
         "basis_fr": "Aster est un assistant personnel agentique cense fixer des objectifs, planifier et executer des taches, lance en beta; annonce et non prouve, donc N2."
       }
+    },
+    {
+      "company": "Sky Co., Ltd.",
+      "company_country": "Japan",
+      "region": "East Asia",
+      "sector": "Technology & Software",
+      "industry": "Software development and IT services",
+      "department": "IT & engineering",
+      "solution_name": "AI Labot",
+      "vendor": "In-house",
+      "use_case": "An automated review agent fitted as standard into the company's internal GitLab, at the centre of an AI driven development infrastructure the company has started operating on itself. Sky built it because faster AI assisted coding had shifted the bottleneck onto review, requirements definition and QA. The release mentions human in the loop and human on the loop designs without saying who signs off what in practice.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Productivity against cost, figure announced by the company with no stated baseline or method",
+          "value": "more than 10 times",
+          "source_type": "press_release"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000001407.000001552.html",
+          "title": "Ｓｋｙ株式会社が自動レビューAIエージェント「AI Labot」を軸にしたプロセス革新で10倍以上の生産性を実現",
+          "publisher": "PR TIMES (Sky)",
+          "source_type": "press_release",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "delivery",
+        "links": [
+          0,
+          1,
+          1,
+          2,
+          1,
+          1,
+          2,
+          0,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent reviews code and returns findings; the engineer decides what to change, and nothing describes it merging or shipping anything. The only source is the company's own press release, where it is both the builder and the user, and the ten fold productivity claim comes with no baseline, method, period or sample: it is carried here as an announced figure, not a measured one.",
+        "basis_fr": "L'agent relit le code et rend ses remarques ; c'est l'ingénieur qui décide des modifications, et rien ne le décrit fusionner ou livrer quoi que ce soit. La seule source est le communiqué de l'entreprise, qui est à la fois conceptrice et utilisatrice, et le facteur dix de productivité est avancé sans référence de départ, sans méthode, sans période ni échantillon : il est porté ici comme un chiffre annoncé, pas mesuré."
+      },
+      "id": "sky-co-ltd--ai-labot",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.5,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
     },
     {
       "company": "Sky Co., Ltd.",
@@ -26988,6 +28029,58 @@
       }
     },
     {
+      "company": "Target",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Retail & E-commerce",
+      "industry": "General merchandise retail",
+      "department": "Customer service",
+      "solution_name": "Ask Target",
+      "vendor": "",
+      "use_case": "An AI shopping assistant on the Target app and website that answers guest questions and guides them towards products. The chief executive described it on the third quarter call as still in beta, with early results encouraging enough to add capabilities over the coming months. Target cites ChatGPT, Gemini and Copilot separately as partner surfaces, not as the engine behind Ask Target.",
+      "deployment_stage": "pilot",
+      "reported_outcomes": [
+        {
+          "metric": "Guests moving to purchase through Ask Target against elsewhere",
+          "value": "about twice the rate",
+          "source_type": "earnings_call"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/11/18/target-tgt-q3-2026-earnings-call-transcript/",
+          "title": "Target (TGT) Q3 2026 Earnings Call Transcript",
+          "publisher": "The Motley Fool",
+          "source_type": "earnings_call",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "commerce",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The assistant answers and guides; the guest chooses and buys. Answering is not executing, so it stays at validated execution. No governance control is described on the call, and the company calls the product a beta.",
+        "basis_fr": "L'assistant répond et oriente ; c'est le client qui choisit et achète. Répondre n'est pas exécuter, le niveau reste donc l'exécution validée. Aucun verrou de gouvernance n'est décrit pendant l'appel, et l'entreprise qualifie le produit de bêta."
+      },
+      "id": "target--ask-target",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "target--store-companion",
       "company": "Target",
       "company_country": "United States",
@@ -27577,6 +28670,58 @@
         "basis_en": "Conversational agent reads visitor web-behaviour and knowledge base with an LLM to detect struggling customers, then surfaces the relevant FAQ or routes to the best channel; it triages and answers, a human handles the case. N2.",
         "basis_fr": "Agent conversationnel qui analyse le comportement web du visiteur et la base de connaissances via un LLM pour detecter les clients en difficulte, puis affiche la FAQ pertinente ou oriente vers le bon canal; il trie et repond, l'humain traite. N2."
       }
+    },
+    {
+      "company": "Tony Burke Motors",
+      "company_country": "Ireland",
+      "region": "Europe",
+      "sector": "Automotive & Mobility",
+      "industry": "Car dealership",
+      "department": "Marketing & sales",
+      "solution_name": "Aran",
+      "vendor": "AutoAgent",
+      "use_case": "A bespoke agent that answers enquiries from the dealership's customers when no member of staff is free, described by its maker as a response optimisation platform that engages a buyer while their interest is at its peak and books them in.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Appointments booked in July 2026, figure given by the vendor's founder",
+          "value": "nine, of which five became sales",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.irishtimes.com/business/2026/11/09/ai-agents-in-car-dealerships-they-never-take-time-off-or-get-sick-and-can-work-out-how-quickly-vehicles-will-sell/",
+          "title": "AI agents in car dealerships: they never take time off or get sick",
+          "publisher": "The Irish Times",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "vente",
+        "links": [
+          1,
+          2,
+          2,
+          2,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent replies to a prospect and books an appointment; a salesperson sells the car. The volumes are small and the figures come from the vendor's founder rather than from the dealership, which the entry states rather than hides. No bound or oversight is described.",
+        "basis_fr": "L'agent répond à un prospect et pose un rendez-vous ; c'est un vendeur qui vend la voiture. Les volumes sont petits et les chiffres viennent du fondateur de l'éditeur, pas du concessionnaire, ce que la fiche dit plutôt que de le masquer. Aucune borne ni supervision n'est décrite."
+      },
+      "id": "tony-burke-motors--aran",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "company": "TotalEnergies",
@@ -31245,6 +32390,69 @@
         "basis_en": "GitHub Copilot deployed to 400+ developers with 33% suggestion acceptance and 72% satisfaction; it proposes code the developer reworks, so N1.",
         "basis_fr": "GitHub Copilot deploye aupres de plus de 400 developpeurs avec 33% d'acceptation des suggestions et 72% de satisfaction; il propose du code retravaille par le developpeur, donc N1."
       }
+    },
+    {
+      "company": "ZTE",
+      "company_country": "China",
+      "region": "East Asia",
+      "sector": "Telecommunications",
+      "industry": "Telecoms equipment manufacturing",
+      "department": "Supply chain & logistics",
+      "solution_name": "Unnamed warehouse optimisation agent",
+      "solution_named": false,
+      "vendor": "",
+      "use_case": "At ZTE's Nanjing Binjiang base, a warehouse optimisation agent reorganises the automated store at night, when no picking is running: it reads the next day's production orders and moves the most frequently used materials closer to the line. A vice president states that several agents decide and issue the instructions for what box reaches which point of the line and when. More than 80 digital workers run on the business lines, some scheduling production, some tracking orders, some handling product lifecycle management.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Monthly picking distance",
+          "value": "from more than 400,000 metres to 160,000 metres",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Digital workers running on the business lines",
+          "value": "more than 80",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Tokens consumed daily, supply chain scenario alone",
+          "value": "more than 9 billion",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.news.cn/fortune/20261112/36bca7cc3bc847d6bacfb196a1d50a64/c.html",
+          "title": "智能体加速落地，“数字员工”走进千行百业",
+          "publisher": "新华社 (Xinhua)",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "supply",
+        "links": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          1,
+          2,
+          1,
+          0,
+          2
+        ],
+        "observed": 3,
+        "locks": [],
+        "basis_en": "The executive quoted says the agents decide and give the orders, and the reorganisation runs at night with nobody in the loop, so this is execution within a scope, not preparation. Nothing is documented to hold it there: the same article reports that fear of data leakage, of actions outside mandate and of losing control of behaviour is what keeps Chinese firms from scaling agents, which is the opposite of a published safeguard. Observed N3, declared N2.",
+        "basis_fr": "Le dirigeant cité dit que les agents décident et donnent les instructions, et la réorganisation tourne la nuit sans personne dans la boucle : c'est de l'exécution sur un périmètre, pas de la préparation. Rien n'est documenté pour la borner : le même article rapporte que la crainte des fuites de données, des actions hors mandat et de la perte de contrôle du comportement est précisément ce qui freine le passage à l'échelle, ce qui est l'inverse d'un garde-fou publié. Observé N3, déclaré N2."
+      },
+      "id": "zte--unnamed-warehouse-optimisation-agent",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "zurich-insurance-group--zurichiq-agentiq-claimsiq-guidelineiq-voiceiq",

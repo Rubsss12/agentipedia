@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-09T21:24:12.358Z",
+ "updated_at": "2026-11-23T08:57:19.771Z",
  "entries": {
   "1-800accountant--agentforce": "2025-08-04",
   "1st-central-group--motivo-kai-assistant": "2026-10-21",
@@ -16,11 +16,13 @@
   "ahold-delhaize-usa--agent-klik": "2026-10-01",
   "aia-philippines--ai-roleplay": "2026-05-14",
   "aib-allied-irish-banks--abi-microsoft-365-copilot": "2025-07-10",
+  "aig--claims-assist": "2026-11-04",
   "air-india--ai-g": "2023-11-10",
   "air-new-zealand--unnamed-meal-tray-image-recognition-ai": "2025-03-14",
   "airasia--ask-bo": "2023-02-08",
   "airtel-nigeria--airtel-assist": "2025-08-14",
   "albertsons-companies--albertsons-ai-shopping-assistant": "2025-12-05",
+  "alcaldia-de-bogota-linea-195--alex": "2026-11-06",
   "alibaba-taobao--taobao-wenwen-qwen-shopping-assistant": "2026-05-10",
   "allegro--allegro-ai-assistant": "2026-05-11",
   "allstate--allie-ask-allstate-smart-concierge": "2026-11-05",
@@ -29,6 +31,7 @@
   "amazon--rufus-alexa-for-shopping": "2025-11-02",
   "american-express--unnamed-transaction-fraud-detection-ai": "2026-06-01",
   "ant-group--ah-bao-alipay-ai-agent-maxiaocai-ai-financial-manager": "2026-06-14",
+  "apple-tree-honda-acura--unnamed-service-voice-agent": "2026-11-20",
   "arcelormittal--arthur-dofasco-big-data-ml-platform-with-aws": "2026-09-10",
   "arizona-state-university--superhuman-go": "2025-12-11",
   "asiacell--laila": "2026-10-22",
@@ -39,6 +42,7 @@
   "avis-budget-group--decagon": "2026-01-30",
   "aviva--zowie": "2026-04-30",
   "axa--axa-secure-gpt": "2023-07-28",
+  "babitalk-carelabs--baas-babitalk-ai-agent-studio": "2026-11-20",
   "bajaj-finance--unnamed-ai-agent-fleet-for-sales-collections-and-risk-operations": "2026-02-12",
   "banco-bv--google-agentspace": "2025-09-10",
   "banco-de-credito-del-peru-bcp--clara": "2025-07-09",
@@ -56,11 +60,13 @@
   "bbc--style-assist-at-a-glance": "2025-06-27",
   "bbva--chatgpt-enterprise": "2025-12-12",
   "bell-canada--gemini-enterprise": "2026-07-22",
+  "bending-spoons--diagram": "2026-11-20",
   "best-buy--ask-blue": "2026-08-31",
   "bharti-airtel--agent-bridge": "2026-11-06",
   "bharti-airtel--unnamed-spam-and-fraud-detection-ai": "2024-09-25",
   "bill--bill-payment-agent": "2026-10-20",
   "birlasoft--contract-ai": "2026-10-21",
+  "bj-s-wholesale-club--bev": "2026-11-20",
   "bloomberg--ai-powered-earnings-call-summaries-document-insights": "2024-01-22",
   "blue-star-families--star-saving-time-and-resources-agent-on-agentforce": "2025-12-02",
   "bmo--ai-agent-assist": "2026-11-06",
@@ -71,6 +77,7 @@
   "booking-holdings--lola": "2026-09-29",
   "british-antarctic-survey--unnamed-seafloor-imagery-detection-ai": "2025-10-15",
   "bryan-cave-leighton-paisner-bclp--legora": "2026-03-05",
+  "bt-group--unnamed-complex-bid-agent": "2026-11-05",
   "bt-group-ee--aimee": "2024-12-12",
   "bumrungrad-international-hospital--intellicare": "2026-11-06",
   "burger-king--patty": "2026-02-26",
@@ -96,6 +103,7 @@
   "cognizant--claude-claude-code": "2025-11-04",
   "colruyt-group--babette": "2026-10-06",
   "commercial-international-bank-cib--zaki": "2022-04-10",
+  "commonwealth-bank--agentic-shield": "2026-11-15",
   "commonwealth-bank--unnamed-ai-customer-service-orchestration-agent": "2026-07-10",
   "commonwealth-bank--unnamed-ai-fraud-detection-agent": "2026-04-15",
   "commonwealth-of-pennsylvania-office-of-administration--chatgpt-enterprise": "2026-04-15",
@@ -185,6 +193,7 @@
   "husqvarna--ai-vision-companion": "2025-03-25",
   "hyundai-motor-company--e-forest-polaris": "2026-10-18",
   "hyundai-motor-group-42dot--gleo-ai": "2026-05-21",
+  "ibk-industrial-bank-of-korea--geni-code": "2026-11-15",
   "icici-lombard--ria-plus-voice-ai-customer-enablement-platform": "2026-07-16",
   "ifood--cris": "2025-08-05",
   "iheartmedia--agentic-streaming-audio-media-buying-with-butler-till": "2026-08-20",
@@ -196,6 +205,7 @@
   "infosys--infosys-agentic-ai-foundry-infosys-topaz": "2026-06-03",
   "instacart--clementine": "2026-09-09",
   "intel--gemini-enterprise": "2026-07-22",
+  "inter-co--seven": "2026-11-13",
   "intuit--writer": "2024-08-23",
   "itau--ia-i": "2026-07-27",
   "itau--itau-emps": "2025-07-21",
@@ -248,8 +258,10 @@
   "mcdonald-s--archiq-archy-voice-agent": "2026-09-25",
   "meesho--vaani": "2026-03-25",
   "meituan--xiaomei": "2026-05-15",
+  "mengniu-dairy--unnamed-cattle-diagnosis-agent": "2026-11-12",
   "mercado-libre--asistente-personal-mercado-pago-personal-assistant": "2026-01-07",
   "mercado-libre--verdi": "2024-09-28",
+  "mercadolibre--mago": "2026-11-05",
   "mercadona--atenea": "2026-10-05",
   "mercedes-benz--chatgpt-in-mo360": "2023-07-11",
   "merck-co--gpteal": "2025-10-10",
@@ -257,6 +269,7 @@
   "ministry-of-digital-transformation-of-ukraine--diia-ai": "2024-06-19",
   "misumi-group--multi-agent-product-information-workflow-fujitsu-data-intelligence-paas": "2026-10-22",
   "mizuho-financial-group--dify-enterprise": "2026-05-26",
+  "mondelez-international--chat-mdlz-with-mila": "2026-11-20",
   "morgan-stanley--ai-morgan-stanley-agents": "2026-11-02",
   "morgan-stanley--ai-morgan-stanley-debrief": "2025-01-16",
   "mount-sinai-health-system--nutriscan-ai": "2024-06-06",
@@ -306,12 +319,14 @@
   "pfizer--proton": "2025-01-07",
   "ping-an-insurance--express-service-gateway-ai-service-representatives-incl-ai-doctor": "2026-03-26",
   "precina-health--agentforce": "2025-02-28",
+  "presidio-petroleum--field-intelligence": "2026-11-14",
   "princess-cruises--princess-app-in-chatgpt": "2026-09-15",
   "prudential-financial--just-ask": "2026-05-20",
   "pt-indo-premier-sekuritas--inai": "2026-11-09",
   "publicis-groupe--coreai": "2024-01-25",
   "qantas--unnamed-ai-operations-suite": "2026-01-15",
   "qatar-ministry-of-commerce-and-industry--ai-agent-factory": "2026-02-07",
+  "qiaokou-district-wuhan--baidu-dazi": "2026-11-12",
   "rakuten--openai-codex": "2026-09-14",
   "rakuten--rakuten-ai": "2025-10-23",
   "ralph-lauren--ask-ralph": "2025-09-11",
@@ -340,6 +355,7 @@
   "sami--google-agentspace": "2025-09-10",
   "samsung-electronics--samsung-gauss2-ds-assistant": "2024-11-21",
   "sanofi--plai": "2023-06-13",
+  "santen-pharmaceutical--field-coach": "2026-11-13",
   "saudi-arabia-ministry-of-economy-and-planning--insaights": "2026-07-13",
   "saudi-aramco--aramco-metabrain-ai": "2025-02-10",
   "saudi-tourism-authority--sara": "2025-02-13",
@@ -348,12 +364,14 @@
   "schneider-electric--schneider-electric-industrial-copilot-agentic-manufacturing": "2026-04-16",
   "sebrae-sao-paulo--google-agentspace": "2025-09-10",
   "seco-energy--capacity-ai-virtual-agents": "2025-10-13",
+  "security-bank--unnamed-employee-built-ai-agents": "2026-11-15",
   "sephora--sephora-ai-beauty-chat": "2026-05-12",
   "servicenow--windsurf": "2025-10-17",
   "setel--voice-fuelling": "2026-10-07",
   "seven-eleven-japan--unnamed-ai-ordering-system": "2026-06-01",
   "shared-services-canada-government-of-canada--canchat": "2025-08-15",
   "sheba-medical-center--project-k": "2025-03-06",
+  "shopify--sidekick": "2026-11-03",
   "siam-commercial-bank-scb--scb-easy-easy-store-hyper-personalized-ai": "2024-05-18",
   "siemens-bad-neustadt-electric-motors-factory-ewn--insights-hub-production-copilot": "2025-01-30",
   "signal-iduna--gemini-enterprise": "2026-07-22",
@@ -364,6 +382,7 @@
   "siriusxm--harmony": "2025-12-04",
   "siriusxm--sierra": "2026-03-25",
   "sk-telecom--aster": "2025-01-09",
+  "sky-co-ltd--ai-labot": "2026-11-13",
   "sky-co-ltd--gemini-enterprise-app": "2026-10-06",
   "sncf--unnamed-predictive-maintenance-ai": "2024-09-12",
   "sofi--sierra": "2026-03-18",
@@ -384,6 +403,7 @@
   "synapxe--carescribe": "2025-10-08",
   "sysco--ai360": "2026-11-06",
   "tapestry-kate-spade--kate-spade-ai-gift-concierge": "2026-06-02",
+  "target--ask-target": "2026-11-18",
   "target--store-companion": "2024-06-15",
   "taskus--decagon-taskus-ai-services": "2026-08-08",
   "telefonica--aura": "2025-02-24",
@@ -393,6 +413,7 @@
   "thyssenkrupp-automation-engineering--siemens-industrial-copilot": "2024-10-24",
   "tiendanube--lumi": "2026-05-22",
   "tokio-marine-nichido--righttouch-smart-agent": "2025-08-13",
+  "tony-burke-motors--aran": "2026-11-09",
   "totalenergies--unnamed-production-forecasting-and-maintenance-ai": "2025-01-24",
   "tottenham-hotspur--ask-spurs": "2026-10-15",
   "toyota-motor-corporation--o-beya": "2024-11-19",
@@ -442,6 +463,7 @@
   "zalando--zalando-assistant": "2026-03-12",
   "zillow--glean": "2025-08-20",
   "zomato--nugget": "2025-02-17",
+  "zte--unnamed-warehouse-optimisation-agent": "2026-11-12",
   "zurich-insurance-group--zurichiq-agentiq-claimsiq-guidelineiq-voiceiq": "2026-06-16"
  },
  "sources": {
@@ -4012,6 +4034,98 @@
   "https://web.archive.org/web/20260329000306/https://www.microsoft.com/en/customers/story/838350-vodafone-telecom-azure-cognitive-services": {
    "date": null,
    "how": "none (archive)"
+  },
+  "https://www.fool.com/earnings/call-transcripts/2026/11/04/aig-group-aig-q3-2026-earnings-call-transcript/": {
+   "date": "2026-11-04",
+   "how": "url"
+  },
+  "https://www.fool.com/earnings/call-transcripts/2026/11/06/soundhound-ai-soun-q3-2026-earnings-call-transcript/": {
+   "date": "2026-11-06",
+   "how": "url"
+  },
+  "https://www.fool.com/earnings/call-transcripts/2026/11/20/bending-spoons-bsp-q3-2026-earnings-call-transcript/": {
+   "date": "2026-11-20",
+   "how": "url"
+  },
+  "https://www.fool.com/earnings/call-transcripts/2026/11/20/bjs-bj-q3-2026-earnings-call-transcript/": {
+   "date": "2026-11-20",
+   "how": "url"
+  },
+  "https://www.commbank.com.au/articles/newsroom/2026/11/commbank-agentic-shield-ai-cyber-defence.html": {
+   "date": "2026-11-15",
+   "how": "url"
+  },
+  "https://www.g-enews.com/article/Finance/2026/11/202611161412401758bb91c46fcd_1": {
+   "date": "2026-11-15",
+   "how": "url"
+  },
+  "https://www.fool.com/earnings/call-transcripts/2026/11/13/inter-intr-q3-2026-earnings-call-transcript/": {
+   "date": "2026-11-13",
+   "how": "url"
+  },
+  "https://www.news.cn/fortune/20261112/36bca7cc3bc847d6bacfb196a1d50a64/c.html": {
+   "date": "2026-11-12",
+   "how": "url"
+  },
+  "https://www.fool.com/earnings/call-transcripts/2026/11/14/presidio-ftw-q3-2026-earnings-call-transcript/": {
+   "date": "2026-11-14",
+   "how": "url"
+  },
+  "https://news.mynavi.jp/techplus/article/20261113-5317368/": {
+   "date": "2026-11-13",
+   "how": "url"
+  },
+  "https://www.philstar.com/business/2026/11/15/2570124/security-bank-trains-more-staff-develops-ai-agents": {
+   "date": "2026-11-15",
+   "how": "url"
+  },
+  "https://www.fool.com/earnings/call-transcripts/2026/11/03/shopify-shop-q3-2026-earnings-call-transcript/": {
+   "date": "2026-11-03",
+   "how": "url"
+  },
+  "https://www.fool.com/earnings/call-transcripts/2026/11/18/target-tgt-q3-2026-earnings-call-transcript/": {
+   "date": "2026-11-18",
+   "how": "url"
+  },
+  "https://www.irishtimes.com/business/2026/11/09/ai-agents-in-car-dealerships-they-never-take-time-off-or-get-sick-and-can-work-out-how-quickly-vehicles-will-sell/": {
+   "date": "2026-11-09",
+   "how": "url"
+  },
+  "https://www.telecomtv.com/content/ai/what-s-up-with-bt-qualcomm-6g-56606/": {
+   "date": "2026-11-05",
+   "how": "page"
+  },
+  "https://www.cbtnews.com/apple-tree-honda-acura-1500-service-apt/": {
+   "date": "2026-11-20",
+   "how": "page"
+  },
+  "https://www.sec.gov/Archives/edgar/data/0001099590/000109959026000027/meli-20260930xex991.htm": {
+   "date": null,
+   "how": "none"
+  },
+  "https://prtimes.jp/main/html/rd/p/000001407.000001552.html": {
+   "date": "2026-11-13",
+   "how": "page"
+  },
+  "https://consumergoods.com/mondelez-scales-enterprise-generative-bi-tool-under-cido-catalano": {
+   "date": "2026-11-20",
+   "how": "page"
+  },
+  "https://www.pymnts.com/earnings/2026/mercadolibre-expands-ai-war-chest-by-30-million-in-q3/": {
+   "date": "2026-11-05",
+   "how": "page"
+  },
+  "https://www.newsfreezone.co.kr/news/articleView.html?idxno=719533": {
+   "date": "2026-11-16",
+   "how": "page"
+  },
+  "https://ai.watch.impress.co.jp/docs/news/2156284.html": {
+   "date": "2026-11-13",
+   "how": "page"
+  },
+  "https://view.asiae.co.kr/article/2026112011253150991": {
+   "date": "2026-11-20",
+   "how": "page"
   }
  }
 }
