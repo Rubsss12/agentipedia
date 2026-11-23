@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T09:26:57.041Z",
+  "updated_at": "2026-11-23T09:49:23.970Z",
   "entries": [
     {
       "id": "1-800accountant--agentforce",
@@ -2870,6 +2870,63 @@
       }
     },
     {
+      "company": "Azimut Capital Management",
+      "company_country": "Italy",
+      "region": "Europe",
+      "sector": "Financial Services",
+      "industry": "Asset management and financial advice",
+      "department": "Fonctions support",
+      "solution_name": "Azi",
+      "vendor": "indigo.ai",
+      "use_case": "Azi reads requests put in plain language by the network's financial advisers and their assistants, and returns the matching procedural kits: client onboarding, product subscription, transfer paperwork and other internal procedures. Its scope is procedural support inside the network, not the end client relationship.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Documents loaded in the first two months",
+          "value": "more than 9,000",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Requests handled without human involvement, first two months",
+          "value": "over 90% of 3,500",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://forbes.it/2026/10/27/indigo-ai-agenti-ia-servizio-clienti",
+          "title": "Come l'agentic AI di indigo.ai trasforma l'assistenza e le vendite",
+          "publisher": "Forbes Italia",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          1,
+          1,
+          1,
+          2,
+          1,
+          0,
+          2,
+          2,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent finds and returns the right procedure; the adviser carries it out. No bound and no review point is described. The article is editorial in form but built entirely around the vendor and its clients, with every figure coming from that side, which is why it is filed as a vendor account and the entry claims nothing beyond answering.",
+        "basis_fr": "L'agent retrouve et restitue la bonne procédure ; c'est le conseiller qui l'exécute. Aucune borne ni point de revue n'est décrit. L'article a la forme d'un papier de rédaction mais il est entièrement construit autour de l'éditeur et de ses clients, et tous les chiffres viennent de ce côté : il est donc classé comme compte rendu d'éditeur, et la fiche ne revendique rien au-delà de la réponse."
+      },
+      "id": "azimut-capital-management--azi",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.5,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
+    },
+    {
       "company": "Babitalk (Carelabs)",
       "company_country": "South Korea",
       "region": "East Asia",
@@ -3835,6 +3892,61 @@
         "basis_en": "Sabrina virtual assistant serves product and service information over WhatsApp, Messenger and Telegram; it answers, a human validates (N2).",
         "basis_fr": "L'assistant virtuel Sabrina fournit des informations produits et services sur WhatsApp, Messenger et Telegram ; il repond, un humain valide (N2)."
       }
+    },
+    {
+      "company": "Bankinter",
+      "company_country": "Spain",
+      "region": "Europe",
+      "sector": "Financial Services",
+      "industry": "Retail and business banking",
+      "department": "Customer service",
+      "solution_name": "Unnamed business banking agents",
+      "solution_named": false,
+      "vendor": "",
+      "use_case": "Agents on the business banking website watch each corporate client's activity, pick out and rank the financial and administrative events that need attention, rejected direct debits, signatures pending, security alerts, and present a prioritised summary with the actions that could be taken. The client can ask for more context on a recommendation before deciding. The bank is explicit that the client is the one who decides which transactions to carry out. This is the first phase, with extension to the overview page planned and later phases, product recommendation and pre filling an operation for the client to review, not yet deployed.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Corporate clients reaching the business banking site who use the feature regularly",
+          "value": "40%",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.pressdigital.es/articulo/economia/2026-11-17/6094610-bankinter-incorpora-ia-agentica-web-banca-empresas-mayor-personalizacion-servicios",
+          "title": "Bankinter incorpora IA agéntica a la web de Banca de Empresas",
+          "publisher": "PressDigital / Europa Press",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          0,
+          1,
+          1,
+          2,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate"
+        ],
+        "basis_en": "The agents watch, rank and propose; the client decides and authorises. The bank states that rule in so many words, and it is the written bound. No agent carries a public name, so this is published as one unnamed deployment, and both reports rest on the same bank statement, whose primary text could not be reached.",
+        "basis_fr": "Les agents surveillent, hiérarchisent et proposent ; c'est le client qui décide et autorise. La banque énonce cette règle noir sur blanc, et c'est la borne écrite. Aucun agent ne porte de nom public : l'ensemble est publié comme un déploiement sans nom, et les deux comptes rendus reposent sur le même communiqué de la banque, dont le texte primaire n'a pas pu être atteint."
+      },
+      "id": "bankinter--unnamed-business-banking-agents",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "banorte--maya",
@@ -6050,6 +6162,63 @@
       }
     },
     {
+      "company": "Casa Financeira",
+      "company_country": "Portugal",
+      "region": "Europe",
+      "sector": "Financial Services",
+      "industry": "Credit, insurance and property intermediation",
+      "department": "Fonctions support",
+      "solution_name": "Vera",
+      "vendor": "Laika Ventures",
+      "use_case": "Specialists across the franchise network question Vera in everyday Portuguese about stalled credit files, the day's tasks or new contacts. She answers within the data each user is entitled to see, opens the relevant screen in the application, explains internal procedures and prepares notes, tasks and draft replies to clients. No draft reaches a client without the specialist reviewing it, every query is logged, and each franchisee is walled off to their own data. The credit rules she applies, effort rate, rate rise simulation, loan to value, APR ceiling, are written by people from Banco de Portugal norms, and the lending decision stays with the financial institution.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://executivedigest.sapo.pt/casa-financeira-lanca-agente-de-ia-com-praticas-que-o-ai-act-so-vai-exigir-em-2027/",
+          "title": "Casa Financeira lança agente de IA com práticas que o AI Act só vai exigir em 2027",
+          "publisher": "Executive Digest",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        },
+        {
+          "url": "https://linktoleaders.com/casa-financeira-recorre-a-agente-de-ia-para-ajudar-especialistas/",
+          "title": "Casa Financeira recorre a agente de IA para ajudar especialistas",
+          "publisher": "Link to Leaders",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [
+          "data",
+          "mandate",
+          "supervision"
+        ],
+        "basis_en": "Unusually well bounded for its size: the agent only sees what its user may see, every query is logged, each franchisee is partitioned, and no draft leaves without review. The credit rules are written by people from the regulator's norms and the lending decision belongs to the institution, which is the written bound. All of that would allow more autonomy than the agent actually takes: it prepares notes, tasks and drafts, so it stays at validated execution on what it does, not on what it is allowed.",
+        "basis_fr": "Inhabituellement bien bornée pour sa taille : l'agent ne voit que ce que son utilisateur peut voir, chaque requête est journalisée, chaque franchisé est cloisonné, et aucun brouillon ne part sans revue. Les règles de crédit sont écrites par des humains d'après les normes du régulateur et la décision de prêt appartient à l'établissement, ce qui constitue la borne écrite. Tout cela autoriserait plus d'autonomie que l'agent n'en prend : il prépare des notes, des tâches et des brouillons, le niveau est donc fixé par ce qu'il fait, pas par ce qu'il aurait le droit de faire."
+      },
+      "id": "casa-financeira--vera",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "company": "Casper",
       "company_country": "United States",
       "region": "North America",
@@ -7966,6 +8135,66 @@
       },
       "id": "comunidad-de-madrid--cron-ia",
       "first_seen_date": "2026-10-11",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
+      "company": "Comunidad de Madrid",
+      "company_country": "Spain",
+      "region": "Europe",
+      "sector": "Public Sector & Education",
+      "industry": "Regional government, schools platform",
+      "department": "Fonctions support",
+      "solution_name": "Unnamed EducaMadrid teaching agent",
+      "solution_named": false,
+      "vendor": "In-house",
+      "use_case": "An agent added to the regional schools platform EducaMadrid that generates personalised material for each pupil in real time, which the teacher can then adapt: revision sheets and reinforcement documents built from the region's own educational sources, self assessment quizzes marked automatically on the platform, per pupil progress tracking, a tool for drafting and checking emails, and multilingual communication between teachers, families and language school users. It is available to every publicly funded school in the region.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Hours a year the regional government projects each teacher will be freed from routine tasks, a forecast rather than a measurement",
+          "value": "about 40",
+          "source_type": "company_official"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.comunidad.madrid/noticias/2026/11/16/comunidad-madrid-incorpora-plataforma-educamadrid-agente-ia-genera-tiempo-real-contenidos-personalizados-cada-estudiante",
+          "title": "La Comunidad de Madrid incorpora a EducaMadrid un agente de IA que genera contenidos personalizados",
+          "publisher": "Comunidad de Madrid",
+          "source_type": "company_official",
+          "retrieved_date": "2026-11-23"
+        },
+        {
+          "url": "https://www.eldiariodemadrid.es/articulo/tecnologia/educamadrid-agente-ia-contenidos-personalizados/20261116101540146986.html",
+          "title": "EducaMadrid incorpora un agente de IA que genera contenidos personalizados",
+          "publisher": "El Diario de Madrid",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "public",
+        "links": [
+          1,
+          1,
+          1,
+          0,
+          2,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent produces material and the teacher adapts it before use, so it drafts rather than decides. Worth stating plainly: the announcement describes no step where the teacher must approve content before it reaches a pupil, and no data protection measure, which is a gap rather than a reassurance. The agent has no public name, and the hours quoted are the regional government's projection, not a measured result.",
+        "basis_fr": "L'agent produit de la matière et l'enseignant l'adapte avant usage : il rédige, il ne décide pas. À dire clairement : l'annonce ne décrit aucune étape où l'enseignant devrait valider un contenu avant qu'il n'arrive à un élève, ni aucune mesure de protection des données, ce qui est une lacune et non une garantie. L'agent n'a pas de nom public, et les heures citées sont une projection du gouvernement régional, pas un résultat mesuré."
+      },
+      "id": "comunidad-de-madrid--unnamed-educamadrid-teaching-agent",
+      "first_seen_date": "2026-11-23",
       "provenance": "manual",
       "confidence": 0.75,
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
@@ -10192,6 +10421,63 @@
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
+      "company": "EDP",
+      "company_country": "Portugal",
+      "region": "Europe",
+      "sector": "Energy & Utilities",
+      "industry": "Electricity utility",
+      "department": "Customer service",
+      "solution_name": "EVA (with Eddy on the Moonshot platform)",
+      "vendor": "Microsoft",
+      "use_case": "EVA is the customer service assistant, answering a share of incoming interactions on its own. Alongside it, Moonshot generates personalised energy efficiency and saving recommendations, delivered to customers through Eddy, EDP's energy assistant, while Mind4EDP is the generative AI tool used by employees. Field operators photograph assets and the system cross references technical manuals with maintenance history.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Customer interactions EVA answers autonomously",
+          "value": "36%",
+          "source_type": "vendor_case_study"
+        },
+        {
+          "metric": "Adoption of Moonshot recommendations",
+          "value": "close to 60%",
+          "source_type": "vendor_case_study"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://jornaleconomico.sapo.pt/noticias/edp-acelera-integracao-da-ia-para-preparar-os-proximos-50-anos/",
+          "title": "EDP acelera integração da IA para preparar os próximos 50 anos",
+          "publisher": "Jornal Económico (conteúdo em parceria com a EDP)",
+          "source_type": "vendor_case_study",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "EVA answers and Eddy recommends; nothing in the account has either act on a contract or a meter. Two things to hold in mind about the source: the page says plainly it was produced in partnership with EDP, so it is a company account rather than independent reporting, and the agent counts EDP gives have moved from several hundred earlier in the year to more than ten thousand here, with no source explaining what changed in the counting. No governance control is described.",
+        "basis_fr": "EVA répond et Eddy recommande ; rien dans le compte rendu ne les montre agir sur un contrat ou un compteur. Deux choses à garder en tête sur la source : la page indique clairement avoir été réalisée en partenariat avec EDP, c'est donc un récit d'entreprise et non du journalisme indépendant, et les comptes d'agents avancés par EDP sont passés de quelques centaines plus tôt dans l'année à plus de dix mille ici, sans qu'aucune source explique ce qui a changé dans le décompte. Aucun verrou de gouvernance n'est décrit."
+      },
+      "id": "edp--eva-with-eddy-on-the-moonshot-platform",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.5,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
+    },
+    {
       "id": "elevance-health--unnamed-ai-healthcare-navigation-virtual-assistant",
       "company": "Elevance Health",
       "company_country": "United States",
@@ -10678,6 +10964,60 @@
         "basis_en": "Employees built nearly 3,000 Glean agents for support, operations and productivity with 20,000+ trained under a tiered governance model; these are internal copilots, so autonomy is N2.",
         "basis_fr": "Les employes ont cree pres de 3000 agents Glean pour le support, les operations et la productivite, 20000+ formes sous une gouvernance a paliers; ce sont des copilotes internes, autonomie N2."
       }
+    },
+    {
+      "company": "ERSM Grupo",
+      "company_country": "Spain",
+      "region": "Europe",
+      "sector": "Insurance",
+      "industry": "Insurance brokerage",
+      "department": "Operations",
+      "solution_name": "Wilfredo and the Foliume Hub",
+      "vendor": "Foliume",
+      "use_case": "The brokerage group is extending Foliume's agents to all its companies after a year of use at ERSM Canarias and ERSM Levante. Wilfredo is the quoting assistant, in service since October 2025; the Foliume Hub carries agents on policy renewal, claims and rejected direct debits, and handles customer contact by phone, WhatsApp and email. Each company adopts the tool at its own pace inside a common framework set by the group. The report states that the decision and the advice given to the client stay with the professionals in each office.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Policies already managed with the solution at two of the group's companies",
+          "value": "more than 25,000",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://segurosnews.com/news/ersm-extiende-a-todo-el-grupo-la-ia-aplicada-a-la-gestion-de-cartera-de-la-mano-de-foliume",
+          "title": "ERSM extiende a todo el grupo la IA aplicada a la gestión de cartera de la mano de Foliume",
+          "publisher": "SegurosNews",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          0,
+          1,
+          1,
+          2,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate"
+        ],
+        "basis_en": "The agents quote, chase a renewal and answer the client; the broker decides and advises, which the article states and which is the written bound. Nothing describes an agent binding cover or moving money on its own, and no oversight mechanism is described either.",
+        "basis_fr": "Les agents cotent, relancent un renouvellement et répondent au client ; c'est le courtier qui décide et conseille, ce que l'article énonce et qui constitue la borne écrite. Rien ne décrit un agent qui engagerait une couverture ou déplacerait de l'argent seul, et aucun dispositif de supervision n'est décrit non plus."
+      },
+      "id": "ersm-grupo--wilfredo-and-the-foliume-hub",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "erste-group--financial-health-ai-hey-george",
@@ -11339,6 +11679,54 @@
         "basis_en": "Announced and in development: nothing runs in production to observe yet. Provisional N1 at announcement stage.",
         "basis_fr": "Annoncé et en développement : rien ne tourne encore en production à constater. N1 provisoire au stade de l'annonce."
       }
+    },
+    {
+      "company": "FinecoBank",
+      "company_country": "Italy",
+      "region": "Europe",
+      "sector": "Financial Services",
+      "industry": "Online banking and brokerage",
+      "department": "Customer service",
+      "solution_name": "Fineco AI",
+      "vendor": "",
+      "use_case": "An assistant that answers clients in plain language on shares and ETFs, with summaries and deeper reading, compares instruments, gives information on the client's own portfolio and relays the main market news, combining data with research from the principal financial sources. The bank states plainly that Fineco AI gives no personalised advice and executes no orders: it is informational support alongside the investor's own judgement. It is free to every trading account holder.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.aziendabanca.it/notizie/banche/fineco-ai-brokerage",
+          "title": "Fineco lancia l'assistente intelligente per il Brokerage",
+          "publisher": "AziendaBanca",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          1,
+          2,
+          2,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate"
+        ],
+        "basis_en": "The bank draws the line itself, in a single sentence: no personalised advice, no orders executed. That is the written bound, and it is also why the assistant stays at answering. Nothing is published on usage or accuracy.",
+        "basis_fr": "La banque trace elle-même la limite, en une phrase : pas de conseil personnalisé, pas d'ordre exécuté. C'est la borne écrite, et c'est aussi pourquoi l'assistant en reste à la réponse. Rien n'est publié sur l'usage ni sur la justesse."
+      },
+      "id": "finecobank--fineco-ai",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "finnair--sisu",
@@ -15046,6 +15434,62 @@
       }
     },
     {
+      "company": "INPS",
+      "company_country": "Italy",
+      "region": "Europe",
+      "sector": "Public Sector & Education",
+      "industry": "National social security institute",
+      "department": "Customer service",
+      "solution_name": "Arianna",
+      "vendor": "In-house",
+      "use_case": "A conversational assistant on the INPS portal and mobile app, built on a multi agent architecture where separate components handle reading the request, finding the information and composing the answer. It guides citizens through more than 400 benefits, covering pensions, work, financial support, allowances and services for companies and the self employed, in plain language and without needing to know a benefit's name. Answers draw only on sources INPS has verified, and the assistant does not yet act on a citizen's file: authenticated scenarios, simulators and help filling in a claim are announced as later work. It is reachable without a digital identity credential.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://www.mysolution.it/lavoro/informazioni/news/2026/11/02/inps-presentato-arianna-lassistente-digitale-basato-sullia/",
+          "title": "INPS presenta Arianna, assistente digitale IA per servizi e informazioni",
+          "publisher": "MySolution",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        },
+        {
+          "url": "https://www.01net.it/inps-arianna-assistente-ai-multi-agente-servizi-cittadini/",
+          "title": "INPS, Arianna: l'assistente AI multi-agente per i servizi ai cittadini",
+          "publisher": "01net",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "public",
+        "links": [
+          2,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "data",
+          "mandate"
+        ],
+        "basis_en": "The assistant informs and orients; it is stated not to touch a file, and the operations that would make it act are announced for later. Answers drawn only from sources the institute has verified set the data boundary, and that stated refusal to act is the written bound. The institute published test figures, a 97 percent completion rate among the use cases tested among them, which are not carried here because the only page reporting them refused to open for checking.",
+        "basis_fr": "L'assistant informe et oriente ; il est précisé qu'il ne touche pas à un dossier, et les opérations qui le feraient agir sont annoncées pour plus tard. Des réponses tirées des seules sources vérifiées par l'institut fixent le périmètre de données, et ce refus d'agir affiché constitue la borne écrite. L'institut a publié des chiffres de test, dont 97 pour cent de cas d'usage testés menés à bien : ils ne sont pas repris ici, la seule page qui les rapporte ayant refusé de s'ouvrir à la vérification."
+      },
+      "id": "inps--arianna",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "company": "Instacart",
       "company_country": "United States",
       "region": "North America",
@@ -18609,6 +19053,54 @@
         "basis_fr": "Les actions listées touchent au compte, virements, limites de carte, dépôts, ce qui relèverait de l'exécution, mais il s'agit d'un pilote que la banque qualifie elle-même de test et non de version canonique, dont les fonctions peuvent ne pas survivre, et l'article ne décrit aucune étape d'autorisation ni aucun contrôle au-delà du règlement du pilote. Rien n'atteste d'une opération engagée : le niveau reste l'exécution validée, sans rien de documenté pour la borner."
       },
       "id": "mbank--masystent-ai",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
+      "company": "MC (Continente)",
+      "company_country": "Portugal",
+      "region": "Europe",
+      "sector": "Retail & E-commerce",
+      "industry": "Food retail",
+      "department": "Marketing & sales",
+      "solution_name": "Continente app for ChatGPT",
+      "vendor": "OpenAI",
+      "use_case": "Inside ChatGPT, the retailer's app finds products, compares alternatives, spots promotions, applies Cartão Continente coupons and builds the basket. It can assemble a list from a goal such as a week of meals, or from a photograph of the fridge, the larder or a handwritten list. The customer must add the app and sign in with their Continente Online account. The order is not completed in ChatGPT: the basket syncs to Continente Online and the Continente app, where the purchase is finished.",
+      "deployment_stage": "production",
+      "reported_outcomes": [],
+      "sources": [
+        {
+          "url": "https://grandeconsumo.com/continente-compras-supermercado-chatgpt-inteligencia-artificial/",
+          "title": "Continente integra compras de supermercado no ChatGPT",
+          "publisher": "Grande Consumo",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "commerce",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate"
+        ],
+        "basis_en": "It discovers, selects and organises, and the article is explicit that the order is completed on Continente's own channels, not in the conversation, which is the written bound. On the name: the coverage calls it the Continente app in ChatGPT, a description rather than a brand, and no source names the technical partner.",
+        "basis_fr": "Il découvre, sélectionne et organise, et l'article précise que la commande se termine sur les canaux de Continente, pas dans la conversation : c'est la borne écrite. Sur le nom : la couverture parle de l'app Continente dans ChatGPT, ce qui tient de la description plus que de la marque, et aucune source ne nomme le partenaire technique."
+      },
+      "id": "mc-continente--continente-app-for-chatgpt",
       "first_seen_date": "2026-11-23",
       "provenance": "manual",
       "confidence": 0.75,
@@ -22195,6 +22687,58 @@
       }
     },
     {
+      "company": "Orange España",
+      "company_country": "Spain",
+      "region": "Europe",
+      "sector": "Telecommunications",
+      "industry": "Telecoms operator",
+      "department": "IT & engineering",
+      "solution_name": "Gemini Enterprise",
+      "vendor": "Google Cloud",
+      "use_case": "The operator says it has built more than a thousand custom agents on Gemini Enterprise, moving from isolated pilots to a company wide AI factory covering HR, IT, sales and customer service. Four uses are described: triaging incidents by identifying, categorising and routing technical issues, running root cause analysis on system logs and network diagnostics, reaching internal knowledge in plain language, and handling internal service requests. Employees without a technical background build the agents through a low code framework, and answers are grounded on the group's own corporate data.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Custom AI agents built on the platform",
+          "value": "more than 1,000",
+          "source_type": "press_release"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.googlecloudpresscorner.com/2026-10-08-Orange-Spain-Expands-Partnership-with-Google-Cloud-to-Industrialize-AI-Operations-with-Gemini-Enterprise",
+          "title": "Orange Spain expands partnership with Google Cloud to industrialize AI operations with Gemini Enterprise",
+          "publisher": "Google Cloud",
+          "source_type": "press_release",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          2,
+          1,
+          2,
+          2,
+          2,
+          1,
+          2,
+          2,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Routing an incident is closer to acting than to answering, and on another source this would be worth looking at as execution. Here the only account is a joint press release from the vendor and the operator, which is not enough to attest autonomy, so the observed level is held at validated execution. Enterprise grade security and central control of agent orchestration are claimed, but no written bound and no human review point is described.",
+        "basis_fr": "Router un incident relève plus de l'action que de la réponse, et sur une autre source cela mériterait d'être regardé comme de l'exécution. Ici le seul compte rendu est un communiqué commun de l'éditeur et de l'opérateur, ce qui ne suffit pas à attester d'autonomie : le niveau observé reste donc l'exécution validée. Une sécurité de niveau entreprise et un contrôle central de l'orchestration sont revendiqués, mais aucune borne écrite ni point de revue humaine n'est décrit."
+      },
+      "id": "orange-espana--gemini-enterprise",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.5,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées. Capped at 0.5: only vendor marketing sources."
+    },
+    {
       "company": "Orange Spain",
       "company_country": "Spain",
       "region": "Europe",
@@ -24301,6 +24845,71 @@
         "basis_en": "Sierra agent handles support cases with a claimed 90% resolution rate, but the single low-confidence 'other' source does not attest autonomous execution beyond answering.",
         "basis_fr": "L'agent Sierra traite des cas de support avec un taux de resolution annonce de 90%, mais la source unique 'other' peu fiable n'atteste pas d'execution autonome au-dela de la reponse."
       }
+    },
+    {
+      "company": "Randstad Portugal",
+      "company_country": "Portugal",
+      "region": "Europe",
+      "sector": "Professional & Business Services",
+      "industry": "Staffing and recruitment",
+      "department": "HR & talent",
+      "solution_name": "Fred",
+      "vendor": "HireData",
+      "use_case": "The first point of contact on WhatsApp for pre qualification: Fred opens the conversation within minutes of an application arriving from a job board or social media, gives information on the role and checks the candidate is still interested, inside the Carerix applicant tracking system. The product manager states that the whole flow runs under constant and rigorous human supervision, and that the final decision and strategic control stay, non negotiably, with the specialist consultants.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Applications delivered successfully in the first month",
+          "value": "62%",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Conversion of validated profiles in self triage",
+          "value": "above 80%",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Satisfaction rated by the professionals",
+          "value": "4.59 out of 5",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://jornaleconomico.sapo.pt/noticias/randstad-portugal-cria-fred-para-revolucionar-o-recrutamento/",
+          "title": "Randstad Portugal cria Fred para revolucionar o recrutamento",
+          "publisher": "Jornal Económico",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          2,
+          1,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate",
+          "supervision"
+        ],
+        "basis_en": "Fred opens the conversation and checks interest; a consultant decides who moves forward, which Randstad states as non negotiable, and the constant supervision it describes is the oversight. The figures are the company's own and two of them are undefined: what counts as an application delivered successfully is not said, nor how the satisfaction score was collected.",
+        "basis_fr": "Fred engage la conversation et vérifie l'intérêt ; c'est un consultant qui décide de la suite, ce que Randstad pose comme non négociable, et la supervision constante qu'elle décrit constitue le contrôle. Les chiffres sont ceux de l'entreprise et deux d'entre eux ne sont pas définis : ce qui compte comme candidature livrée avec succès n'est pas dit, ni comment la note de satisfaction a été recueillie."
+      },
+      "id": "randstad-portugal--fred",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "reach-plc--guten",
@@ -27181,6 +27790,66 @@
       }
     },
     {
+      "company": "Singular Bank",
+      "company_country": "Spain",
+      "region": "Europe",
+      "sector": "Financial Services",
+      "industry": "Private banking",
+      "department": "IT & data",
+      "solution_name": "Singularity",
+      "vendor": "OpenAI",
+      "use_case": "An internal platform where a network of around twenty agents prepares the banker's work: before each client meeting they pull together information from Salesforce, document management, knowledge bases, profitability data and the product catalogue, and produce recommendations and deliverables. Separate operations agents run the bank reconciliations every five minutes instead of once a day, and AI red teams analyse the attack surface continuously. A cross functional AI governance committee, covering legal compliance, the data protection officer, security and technology and operations, assesses the risk of each platform before it is made available, and every employee must know and sign the bank's AI policy.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Operations executed in 30 days through 19 intelligent workflows",
+          "value": "more than 3,500",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Time saved per banker per day, figure given by the bank",
+          "value": "between 60 and 90 minutes",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.cio.com/article/4232949/cio-50-awards-2026-todos-los-ganadores-de-los-prestigiosos-premios-a-la-comunidad-de-lideres-de-ti-en-espana.html",
+          "title": "CIO 50 Awards 2026: todos los ganadores",
+          "publisher": "CIO España",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "pilotage",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "observed": 3,
+        "locks": [
+          "mandate",
+          "supervision"
+        ],
+        "basis_en": "Reconciling the bank's books every five minutes is an operation carried out, not a draft handed to someone, so this is execution within a scope. The governance is real: a risk assessment by a cross functional committee before any platform is released, an AI policy each employee signs, and continuous model review, which documents the bound and the oversight. What is missing for the next level is a documented data boundary, so the declared level stays at validated execution. Observed N3, declared N2.",
+        "basis_fr": "Rapprocher les comptes de la banque toutes les cinq minutes est une opération réalisée, pas un brouillon remis à quelqu'un : c'est de l'exécution sur un périmètre. La gouvernance est réelle : évaluation du risque par un comité pluridisciplinaire avant toute mise à disposition, politique IA que chaque salarié signe, revue continue des modèles, ce qui documente la borne et la supervision. Il manque un périmètre de données documenté pour le niveau supérieur : le niveau déclaré reste l'exécution validée. Observé N3, déclaré N2."
+      },
+      "id": "singular-bank--singularity",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "siriusxm--harmony",
       "company": "SiriusXM",
       "company_country": "United States",
@@ -27630,6 +28299,62 @@
         "basis_en": "Tier-1 troubleshooting (setup, multi-room) is guided answering; no independent evidence of executed actions. Observed N2.",
         "basis_fr": "Le support de niveau 1 (installation, multiroom) est de la réponse guidée ; aucune preuve indépendante d'action exécutée. Observé N2."
       }
+    },
+    {
+      "company": "SPMS (Linha SNS 24)",
+      "company_country": "Portugal",
+      "region": "Europe",
+      "sector": "Healthcare, Life Sciences & Luxury",
+      "industry": "National health line",
+      "department": "Customer service",
+      "solution_name": "Unnamed SNS 24 pre-triage agent",
+      "solution_named": false,
+      "vendor": "",
+      "use_case": "Before the nurse interview on Portugal's national health line, an AI assistant runs a spoken pre triage: the caller enters their health number on the keypad, answers closed questions, then the assistant greets them by name, asks why they are calling and reads back a summary of the symptoms for confirmation, and proposes an orientation to the nurse. The professionals have to validate and correct the assistant's questions, and the clinical decision stays with the nurse.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "AI supported triages since January 2026",
+          "value": "more than 172,000",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.publico.pt/2026/11/17/sociedade/noticia/borbulhas-corpo-sao-dores-garganta-ia-entrou-linha-sns24-tirar-serio-doentes-enfermeiros-2191639",
+          "title": "A IA entrou na linha SNS24 e está a \"tirar do sério\" doentes e enfermeiros",
+          "publisher": "Público",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "soin",
+        "links": [
+          2,
+          2,
+          2,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "mandate",
+          "supervision"
+        ],
+        "basis_en": "The assistant gathers and proposes an orientation; the nurse validates, corrects and decides, which is both the written bound and the oversight. This entry is worth reading for the source as much as the deployment: the article is critical, reporting complaints from callers, the correction burden the assistant puts on nurses, and a case where skin spots on palms, soles, knees and legs came back summarised as a sore throat. The agent carries no public name. Only the opening of the article could be read without a subscription, so the entry keeps to what is visible there.",
+        "basis_fr": "L'assistante recueille et propose une orientation ; l'infirmier valide, corrige et décide, ce qui constitue à la fois la borne écrite et la supervision. Cette fiche vaut autant pour sa source que pour le déploiement : l'article est critique, rapportant les plaintes d'usagers, la charge de correction imposée aux infirmiers, et un cas où des taches sur les paumes, les plantes, les genoux et les jambes sont revenues résumées en mal de gorge. L'agent ne porte pas de nom public. Seul le début de l'article était lisible sans abonnement : la fiche s'en tient à ce qui y figure."
+      },
+      "id": "spms-linha-sns-24--unnamed-sns-24-pre-triage-agent",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "spotify--ai-dj-dj-x",

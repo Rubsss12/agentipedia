@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23T09:27:04.209Z",
+ "updated_at": "2026-11-23T09:50:08.295Z",
  "entries": {
   "1-800accountant--agentforce": "2025-08-04",
   "1st-central-group--motivo-kai-assistant": "2026-10-21",
@@ -42,6 +42,7 @@
   "avis-budget-group--decagon": "2026-01-30",
   "aviva--zowie": "2026-04-30",
   "axa--axa-secure-gpt": "2023-07-28",
+  "azimut-capital-management--azi": "2026-10-27",
   "babitalk-carelabs--baas-babitalk-ai-agent-studio": "2026-11-20",
   "bajaj-finance--unnamed-ai-agent-fleet-for-sales-collections-and-risk-operations": "2026-02-12",
   "banco-bv--google-agentspace": "2025-09-10",
@@ -53,6 +54,7 @@
   "bank-of-china-hong-kong--bochk-genai-assistant": "2026-03-11",
   "bank-of-singapore--sowa-source-of-wealth-assistant": "2025-10-13",
   "bank-of-yokohama--mobi-voice": "2023-02-08",
+  "bankinter--unnamed-business-banking-agents": "2026-11-17",
   "banorte--maya": "2022-07-18",
   "barmeniagothaer--parloa": "2025-06-24",
   "baycare-health-system--oracle-health-clinical-ai-agent": "2026-09-16",
@@ -86,6 +88,7 @@
   "caixabank--agentforce": "2026-05-01",
   "california-community-colleges--nectir": "2025-10-06",
   "carrefour--hopla": "2023-06-11",
+  "casa-financeira--vera": "2026-11-16",
   "casper--sierra": "2024-10-01",
   "caterpillar--cat-ai-assistant": "2026-01-06",
   "cathay-financial-holdings--gaia": "2026-04-07",
@@ -108,6 +111,7 @@
   "commonwealth-bank--unnamed-ai-fraud-detection-agent": "2026-04-15",
   "commonwealth-of-pennsylvania-office-of-administration--chatgpt-enterprise": "2026-04-15",
   "comunidad-de-madrid--cron-ia": "2026-10-05",
+  "comunidad-de-madrid--unnamed-educamadrid-teaching-agent": "2026-11-16",
   "cowbell--cowbell-risk-advisor": "2026-10-05",
   "dairy-queen--presto-voice": "2026-04-16",
   "dbs-bank--dbs-joy": "2026-07-28",
@@ -140,9 +144,11 @@
   "ebanx--sirius": "2025-09-10",
   "ebay--magical-listing": "2026-10-29",
   "ecu-health--epic-agent-factory": "2026-08-09",
+  "edp--eva-with-eddy-on-the-moonshot-platform": "2026-10-02",
   "eli-lilly--kore-ai": "2026-03-30",
   "emirates-nbd--unnamed-ai-fraud-detection-and-monitoring-system": "2026-06-02",
   "engine--eva-agentforce": "2026-04-15",
+  "ersm-grupo--wilfredo-and-the-foliume-hub": "2026-11-19",
   "erste-group--financial-health-ai-hey-george": "2023-10-05",
   "ethiopian-airlines--jupiter-5-0": "2026-05-20",
   "evm-energieversorgung-mittelrhein--eva": "2026-02-26",
@@ -153,6 +159,7 @@
   "federal-ministry-of-communications-innovation-and-digital-economy-fmcide-nigeria--govguide-nigeria": "2026-05-21",
   "fidelity-bank--ivy": "2025-09-12",
   "financial-services-agency-japan--unnamed-regional-bank-customer-service-agent": "2026-05-08",
+  "finecobank--fineco-ai": "2026-10-14",
   "finnair--sisu": "2026-06-15",
   "first-national-bank-fnb--navi": "2026-04-30",
   "flipkart--flippi-evolving-into-standalone-app-slap-shop-like-a-pro": "2023-10-04",
@@ -205,6 +212,7 @@
   "industrial-and-commercial-bank-of-china-icbc--industrial-smart-ocean-financial-large-model": "2025-04-29",
   "infosys--cognition-devin": "2026-01-07",
   "infosys--infosys-agentic-ai-foundry-infosys-topaz": "2026-06-03",
+  "inps--arianna": "2026-11-02",
   "instacart--clementine": "2026-09-09",
   "intel--gemini-enterprise": "2026-07-22",
   "inter-co--seven": "2026-11-13",
@@ -260,6 +268,7 @@
   "mastercard--mastercard-agent-pay": "2025-05-02",
   "mayor-s-office-of-bogota-consejeria-tic--chatico": "2025-09-11",
   "mbank--masystent-ai": "2026-11-17",
+  "mc-continente--continente-app-for-chatgpt": "2026-11-19",
   "mcdonald-s--archiq-archy-voice-agent": "2026-09-25",
   "meesho--vaani": "2026-03-25",
   "meituan--xiaomei": "2026-05-15",
@@ -312,6 +321,7 @@
   "optum-unitedhealth-group--optum-real": "2025-10-22",
   "oracle-red-bull-racing--unnamed-pit-wall-rules-agent": "2026-11-19",
   "orange--max-it-multilingual-voice-ai": "2025-11-14",
+  "orange-espana--gemini-enterprise": "2026-10-08",
   "orange-spain--gemini-enterprise": "2026-10-08",
   "oscar-health--oswell": "2025-10-20",
   "otto-group-otto--otto-ai-assistant": "2026-03-06",
@@ -341,6 +351,7 @@
   "rakuten--rakuten-ai": "2025-10-23",
   "ralph-lauren--ask-ralph": "2025-09-11",
   "ramp--sierra": "2026-03-18",
+  "randstad-portugal--fred": "2026-11-12",
   "reach-plc--guten": "2025-08-15",
   "real-madrid--adobe-genstudio-firefly-services-experience-platform": "2025-11-15",
   "receita-federal-do-brasil--gemini-on-google-cloud": "2025-09-10",
@@ -389,6 +400,7 @@
   "singapore-airlines--agentforce-with-einstein-in-service-cloud-and-data-cloud": "2025-03-11",
   "singhealth--note-buddy": "2025-10-08",
   "singtel--sierra": "2026-03-25",
+  "singular-bank--singularity": "2026-10-09",
   "siriusxm--harmony": "2025-12-04",
   "siriusxm--sierra": "2026-03-25",
   "sk-telecom--aster": "2025-01-09",
@@ -398,6 +410,7 @@
   "sofi--sierra": "2026-03-18",
   "softbank-corp--sierra": "2026-07-14",
   "sonos--sierra": "2026-05-18",
+  "spms-linha-sns-24--unnamed-sns-24-pre-triage-agent": "2026-11-17",
   "spotify--ai-dj-dj-x": "2025-05-13",
   "sri-lanka-insurance-corporation-general-limited--beechat": "2026-07-08",
   "standard-chartered--sc-gpt": "2025-08-22",
@@ -4207,6 +4220,66 @@
   "https://www.handelsverband.at/presse/presseaussendungen/retail-innovation-awards-2026/": {
    "date": null,
    "how": "none"
+  },
+  "https://forbes.it/2026/10/27/indigo-ai-agenti-ia-servizio-clienti": {
+   "date": "2026-10-27",
+   "how": "url"
+  },
+  "https://www.pressdigital.es/articulo/economia/2026-11-17/6094610-bankinter-incorpora-ia-agentica-web-banca-empresas-mayor-personalizacion-servicios": {
+   "date": "2026-11-17",
+   "how": "url"
+  },
+  "https://www.comunidad.madrid/noticias/2026/11/16/comunidad-madrid-incorpora-plataforma-educamadrid-agente-ia-genera-tiempo-real-contenidos-personalizados-cada-estudiante": {
+   "date": "2026-11-16",
+   "how": "url"
+  },
+  "https://www.mysolution.it/lavoro/informazioni/news/2026/11/02/inps-presentato-arianna-lassistente-digitale-basato-sullia/": {
+   "date": "2026-11-02",
+   "how": "url"
+  },
+  "https://www.publico.pt/2026/11/17/sociedade/noticia/borbulhas-corpo-sao-dores-garganta-ia-entrou-linha-sns24-tirar-serio-doentes-enfermeiros-2191639": {
+   "date": "2026-11-17",
+   "how": "url"
+  },
+  "https://www.01net.it/inps-arianna-assistente-ai-multi-agente-servizi-cittadini/": {
+   "date": null,
+   "how": "http 403"
+  },
+  "https://jornaleconomico.sapo.pt/noticias/edp-acelera-integracao-da-ia-para-preparar-os-proximos-50-anos/": {
+   "date": "2026-10-02",
+   "how": "page"
+  },
+  "https://executivedigest.sapo.pt/casa-financeira-lanca-agente-de-ia-com-praticas-que-o-ai-act-so-vai-exigir-em-2027/": {
+   "date": "2026-11-16",
+   "how": "page"
+  },
+  "https://www.aziendabanca.it/notizie/banche/fineco-ai-brokerage": {
+   "date": "2026-10-14",
+   "how": "page"
+  },
+  "https://grandeconsumo.com/continente-compras-supermercado-chatgpt-inteligencia-artificial/": {
+   "date": "2026-11-19",
+   "how": "page"
+  },
+  "https://jornaleconomico.sapo.pt/noticias/randstad-portugal-cria-fred-para-revolucionar-o-recrutamento/": {
+   "date": "2026-11-12",
+   "how": "page"
+  },
+  "https://www.eldiariodemadrid.es/articulo/tecnologia/educamadrid-agente-ia-contenidos-personalizados/20261116101540146986.html": {
+   "date": "2026-11-16",
+   "how": "page"
+  },
+  "https://www.cio.com/article/4232949/cio-50-awards-2026-todos-los-ganadores-de-los-prestigiosos-premios-a-la-comunidad-de-lideres-de-ti-en-espana.html": {
+   "date": "2026-10-09",
+   "how": "page"
+  },
+  "https://linktoleaders.com/casa-financeira-recorre-a-agente-de-ia-para-ajudar-especialistas/": {
+   "date": "2026-11-17",
+   "how": "page"
+  },
+  "https://segurosnews.com/news/ersm-extiende-a-todo-el-grupo-la-ia-aplicada-a-la-gestion-de-cartera-de-la-mano-de-foliume": {
+   "date": "2026-11-19",
+   "how": "page"
   }
  }
 }
