@@ -2,7 +2,7 @@ import Bi from "@/components/Bi";
 import HubspotForm from "@/components/HubspotForm";
 
 // Lead-generation band at the foot of the home page: promotes the HUB Institute
-// offers that turn the proof on this observatory into action, and embeds the
+// offers that turn the proof in this directory into action, and embeds the
 // live HUB Institute contact form. Offer links carry UTM tags so leads sourced
 // from Agentipedia are attributable in HubSpot.
 const UTM = "utm_source=agentipedia&utm_medium=referral&utm_campaign=home-offres";

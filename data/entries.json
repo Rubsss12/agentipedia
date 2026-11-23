@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T09:49:23.970Z",
+  "updated_at": "2026-11-23T10:13:48.411Z",
   "entries": [
     {
       "id": "1-800accountant--agentforce",
@@ -11635,6 +11635,63 @@
       }
     },
     {
+      "company": "Fieldfisher",
+      "company_country": "United Kingdom",
+      "region": "Europe",
+      "sector": "Professional & Business Services",
+      "industry": "Law firm",
+      "department": "Legal & compliance",
+      "solution_name": "Legora",
+      "vendor": "Legora",
+      "use_case": "The firm is rolling Legora out to around 1,400 lawyers and staff after a six week pilot in which 137 users in its UK and European offices used it on their day to day work. Teams hand multi step tasks to Legora's Agent, review large document sets in a single table, and set up Monitors to follow regulatory and legal developments for clients, across dispute resolution, corporate, technology and data, and regulatory work. The rollout is led by the firm's AI hub in Berlin with its AI board and a director of AI, and Legora's legal engineers are turning the firm's own know how into shared workflows.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Lawyers and staff covered by the rollout",
+          "value": "around 1,400",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Users in the six week pilot that preceded it",
+          "value": "137",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://legaltechnology.com/fieldfisher-rolls-out-legora-firm-wide/",
+          "title": "Fieldfisher rolls out Legora firm-wide",
+          "publisher": "Legal IT Insider",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          2,
+          1
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Lawyers hand the agent a multi step task and take the work back: research, review and drafting all return to a lawyer who signs. Governance exists but only at the strategic level, an AI board, a central hub and a director of AI, with no validation step described on the work itself. Agent is Legora's own product name rather than a name the firm coined.",
+        "basis_fr": "Les avocats confient à l'agent une tâche en plusieurs étapes et reprennent le travail : recherche, revue et rédaction reviennent à un avocat qui signe. La gouvernance existe mais au seul niveau stratégique, un comité IA, un pôle central et un directeur de l'IA, sans étape de validation décrite sur le travail lui-même. Agent est le nom de produit de l'éditeur, pas un nom forgé par le cabinet."
+      },
+      "id": "fieldfisher--legora",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
+    },
+    {
       "id": "financial-services-agency-japan--unnamed-regional-bank-customer-service-agent",
       "company": "Financial Services Agency (Japan)",
       "company_country": "Japan",
@@ -15444,7 +15501,23 @@
       "vendor": "In-house",
       "use_case": "A conversational assistant on the INPS portal and mobile app, built on a multi agent architecture where separate components handle reading the request, finding the information and composing the answer. It guides citizens through more than 400 benefits, covering pensions, work, financial support, allowances and services for companies and the self employed, in plain language and without needing to know a benefit's name. Answers draw only on sources INPS has verified, and the assistant does not yet act on a citizen's file: authenticated scenarios, simulators and help filling in a claim are announced as later work. It is reachable without a digital identity credential.",
       "deployment_stage": "production",
-      "reported_outcomes": [],
+      "reported_outcomes": [
+        {
+          "metric": "Use cases completed successfully in user testing, up 36.6 points on the previous assistant",
+          "value": "97%",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Customer Effort Score",
+          "value": "4.8 out of 5",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Customer Satisfaction Score, up 18.4% on the previous version",
+          "value": "4.5 out of 5",
+          "source_type": "news_media"
+        }
+      ],
       "sources": [
         {
           "url": "https://www.mysolution.it/lavoro/informazioni/news/2026/11/02/inps-presentato-arianna-lassistente-digitale-basato-sullia/",
@@ -15480,8 +15553,8 @@
           "data",
           "mandate"
         ],
-        "basis_en": "The assistant informs and orients; it is stated not to touch a file, and the operations that would make it act are announced for later. Answers drawn only from sources the institute has verified set the data boundary, and that stated refusal to act is the written bound. The institute published test figures, a 97 percent completion rate among the use cases tested among them, which are not carried here because the only page reporting them refused to open for checking.",
-        "basis_fr": "L'assistant informe et oriente ; il est précisé qu'il ne touche pas à un dossier, et les opérations qui le feraient agir sont annoncées pour plus tard. Des réponses tirées des seules sources vérifiées par l'institut fixent le périmètre de données, et ce refus d'agir affiché constitue la borne écrite. L'institut a publié des chiffres de test, dont 97 pour cent de cas d'usage testés menés à bien : ils ne sont pas repris ici, la seule page qui les rapporte ayant refusé de s'ouvrir à la vérification."
+        "basis_en": "The assistant informs and orients; it is stated not to touch a file, and the operations that would make it act are announced for later. Answers drawn only from sources the institute has verified set the data boundary, and that stated refusal to act is the written bound. The test figures are the institute's own, measured against the previous version of the assistant rather than against a human baseline.",
+        "basis_fr": "L'assistant informe et oriente ; il est précisé qu'il ne touche pas à un dossier, et les opérations qui le feraient agir sont annoncées pour plus tard. Des réponses tirées des seules sources vérifiées par l'institut fixent le périmètre de données, et ce refus d'agir affiché constitue la borne écrite. Les chiffres de test sont ceux de l'institut, mesurés contre la version précédente de l'assistant et non contre une référence humaine."
       },
       "id": "inps--arianna",
       "first_seen_date": "2026-11-23",
@@ -16938,6 +17011,66 @@
         "basis_en": "Announced plan to use Agent 365 to manage/monitor/secure agents under a Trusted AI framework and deploy Microsoft 365 Copilot globally; announced, press release only, no live outcomes.",
         "basis_fr": "Projet annoncé d'utiliser Agent 365 pour gérer/surveiller/sécuriser les agents sous un cadre Trusted AI et déployer Microsoft 365 Copilot mondialement; annoncé, communiqué uniquement, sans résultat en production."
       }
+    },
+    {
+      "company": "KPN",
+      "company_country": "Netherlands",
+      "region": "Europe",
+      "sector": "Telecommunications",
+      "industry": "Telecoms operator",
+      "department": "Customer service",
+      "solution_name": "Unnamed customer service voice agents",
+      "solution_named": false,
+      "vendor": "McKinsey QuantumBlack",
+      "use_case": "Voice agents handle routine customer service on a line that takes roughly five million calls a year: verifying customers, checking orders, managing technician appointments and troubleshooting internet connections, with human support still available alongside. The conversations were designed around response times under two seconds and let a caller interrupt the agent mid sentence. Staff review transcripts from up to a hundred calls every day and feed what they find back into the agents, and frontline employees helped build and test the service.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Customer satisfaction score, described as comparable to calls handled by people",
+          "value": "83",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Customer calls the line takes a year",
+          "value": "roughly 5 million",
+          "source_type": "news_media"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/telecom-companies-give-ai-agents-more-responsibility/",
+          "title": "Telecom companies give AI agents more responsibility",
+          "publisher": "PYMNTS",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-23"
+        }
+      ],
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          2,
+          2,
+          1,
+          1
+        ],
+        "observed": 2,
+        "locks": [
+          "supervision"
+        ],
+        "basis_en": "The agents verify, check and troubleshoot on the call, and a person stays reachable throughout. Reviewing up to a hundred transcripts a day is a real oversight mechanism and it is the one documented control, with no written bound on what the agents may commit. The agents carry no public name, the account reaches the press through a McKinsey case study, so the figures come from the firm that built them, and the 10 to 20 percent of calls cited elsewhere is a 2027 target rather than a result.",
+        "basis_fr": "Les agents vérifient, contrôlent et dépannent pendant l'appel, un humain restant joignable. Relire jusqu'à cent transcriptions par jour est un vrai dispositif de supervision et c'est le seul contrôle documenté, sans borne écrite sur ce que les agents peuvent engager. Les agents ne portent pas de nom public, le récit arrive à la presse via une étude de cas McKinsey, donc les chiffres viennent de ceux qui les ont construits, et les 10 à 20 pour cent d'appels cités ailleurs sont une cible 2027, pas un résultat."
+      },
+      "id": "kpn--unnamed-customer-service-voice-agents",
+      "first_seen_date": "2026-11-23",
+      "provenance": "manual",
+      "confidence": 0.75,
+      "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
       "id": "kraft-heinz--the-cookbook",

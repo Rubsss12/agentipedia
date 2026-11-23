@@ -51,7 +51,7 @@ export default function AgentWashingInsight() {
     <main className="mx-auto max-w-4xl px-6 pb-16 pt-12">
       <JsonLd data={jsonLd} />
       <p className="kicker text-mauve">
-        <Bi en={`This week's insight · ${dateEn}`} fr={`L'insight de la semaine · ${dateFr}`} />
+        <Bi en={`The current insight · published ${dateEn}, figures recomputed with the index`} fr={`L'insight du moment · publié le ${dateFr}, chiffres recalculés avec l'index`} />
       </p>
       <h1 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">
         <Bi

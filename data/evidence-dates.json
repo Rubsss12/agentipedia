@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23T09:50:08.295Z",
+ "updated_at": "2026-11-23T10:13:48.840Z",
  "entries": {
   "1-800accountant--agentforce": "2025-08-04",
   "1st-central-group--motivo-kai-assistant": "2026-10-21",
@@ -158,6 +158,7 @@
   "faw-volkswagen--insights-hub-production-copilot": "2025-01-30",
   "federal-ministry-of-communications-innovation-and-digital-economy-fmcide-nigeria--govguide-nigeria": "2026-05-21",
   "fidelity-bank--ivy": "2025-09-12",
+  "fieldfisher--legora": "2026-11-05",
   "financial-services-agency-japan--unnamed-regional-bank-customer-service-agent": "2026-05-08",
   "finecobank--fineco-ai": "2026-10-14",
   "finnair--sisu": "2026-06-15",
@@ -237,6 +238,7 @@
   "klivvr--k-ai": "2026-05-21",
   "korean-air--ai-contact-center-aicc": "2025-09-15",
   "kpmg--microsoft-agent-365-and-microsoft-365-copilot": "2026-06-09",
+  "kpn--unnamed-customer-service-voice-agents": "2026-11-09",
   "kraft-heinz--the-cookbook": "2025-09-25",
   "kroger--google-gemini-enterprise": "2026-01-11",
   "kuehne-nagel--kn-swiftlog-cloud-native-logistics-platform": "2026-07-22",
@@ -4279,6 +4281,14 @@
   },
   "https://segurosnews.com/news/ersm-extiende-a-todo-el-grupo-la-ia-aplicada-a-la-gestion-de-cartera-de-la-mano-de-foliume": {
    "date": "2026-11-19",
+   "how": "page"
+  },
+  "https://legaltechnology.com/fieldfisher-rolls-out-legora-firm-wide/": {
+   "date": "2026-11-05",
+   "how": "date affichée sur la page, lue au navigateur"
+  },
+  "https://www.pymnts.com/news/artificial-intelligence/2026/telecom-companies-give-ai-agents-more-responsibility/": {
+   "date": "2026-11-09",
    "how": "page"
   }
  }

@@ -407,7 +407,7 @@ export default function MethodologyPage() {
           <Bi
             en={
               <>
-                Agentipedia is the AI observatory of <strong>HUB Institute</strong>, the consulting
+                Agentipedia is the AI and agentic proof directory of <strong>HUB Institute</strong>, the consulting
                 firm and think tank that helps decision-makers move from promise to business proof,
                 the team behind HUBFORUM and the HUB Institute communities. The index exists to give
                 those decision-makers hard precedents: who deployed what, where, with which results,
@@ -416,7 +416,7 @@ export default function MethodologyPage() {
             }
             fr={
               <>
-                Agentipedia est l&apos;observatoire IA du <strong>HUB Institute</strong>, le cabinet de
+                Agentipedia est l&apos;annuaire des preuves IA et agentiques du <strong>HUB Institute</strong>, le cabinet de
                 conseil et think tank qui aide les décideurs à passer de la promesse à la preuve
                 business, l&apos;équipe derrière HUBFORUM et les communautés HUB Institute. L&apos;index
                 existe pour donner à ces décideurs des précédents solides : qui a déployé quoi, où,

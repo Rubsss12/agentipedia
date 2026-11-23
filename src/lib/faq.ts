@@ -79,8 +79,8 @@ export function faq(count: number, sectors: number, countries: number): Qa[] {
     {
       qEn: "Who publishes Agentipedia?",
       qFr: "Qui publie Agentipedia ?",
-      aEn: "HUB Institute, a French think tank on digital transformation that has trained 45,000 executives and counts 120 member companies. Agentipedia is its observatory of the agentic enterprise; the CODA™ framework comes from its masterclass \"L'Entreprise Agentique\".",
-      aFr: "Le HUB Institute, think tank français de la transformation digitale qui a accompagné 45 000 cadres et compte 120 entreprises adhérentes. Agentipedia est son observatoire de l'entreprise agentique ; le cadre CODA™ est issu de sa masterclass « L'Entreprise Agentique ».",
+      aEn: "HUB Institute, a French think tank on digital transformation that has trained 45,000 executives and counts 120 member companies. Agentipedia is its proof directory of the agentic enterprise; the CODA™ framework comes from its masterclass \"L'Entreprise Agentique\".",
+      aFr: "Le HUB Institute, think tank français de la transformation digitale qui a accompagné 45 000 cadres et compte 120 entreprises adhérentes. Agentipedia est son annuaire des preuves de l'entreprise agentique ; le cadre CODA™ est issu de sa masterclass « L'Entreprise Agentique ».",
     },
   ];
 }

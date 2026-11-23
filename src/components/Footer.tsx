@@ -107,8 +107,8 @@ export default function Footer() {
             <img src="/hub-institute-logo-white.svg" alt="HUB Institute" className="h-16 w-auto" />
             <p className="mt-5 max-w-[13rem] text-xs leading-relaxed text-white/55">
               <Bi
-                en="Agentipedia, the AI & Agentic observatory by HUB Institute."
-                fr="Agentipedia, l'observatoire IA et Agentique du HUB Institute."
+                en="Agentipedia, the AI & Agentic proof directory by HUB Institute."
+                fr="Agentipedia, l'annuaire des preuves IA et agentiques du HUB Institute."
               />
             </p>
             <div className="mt-10">

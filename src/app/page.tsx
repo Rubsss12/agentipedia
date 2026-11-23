@@ -287,12 +287,12 @@ export default function Home() {
       {/* ===== Market momentum: pace and latest proofs ===== */}
       <Momentum />
 
-      {/* ===== This week's insight: one shareable finding ===== */}
+      {/* ===== The current insight: one shareable finding ===== */}
       <section className="mx-auto max-w-6xl px-6 pt-10" data-reveal>
         <div className="flex flex-col gap-4 rounded-2xl border border-lavender-line bg-paper p-5 md:flex-row md:items-center md:p-6">
           <div className="min-w-0 flex-1">
             <p className="kicker text-mauve">
-              <Bi en="This week's insight" fr="L'insight de la semaine" />
+              <Bi en="The current insight" fr="L'insight du moment" />
             </p>
             <p className="mt-1.5 text-lg font-extrabold leading-snug md:text-xl">
               <Bi
