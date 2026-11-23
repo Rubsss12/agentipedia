@@ -29,8 +29,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = `${e.company} × ${e.solution_name}`;
   const path = `/entry/${e.id}`;
   const summary = metaDescription(e.use_case);
+  // The layout template appends " · Agentipedia by HUB Institute", 31 characters
+  // a search result has no room for once the company and the solution are long
+  // names in their own right. Past 60 characters the entry keeps the title to
+  // itself: nothing is lost, and what a reader sees is the deployment.
   return {
-    title,
+    title: title.length > 60 ? { absolute: title } : title,
     description: summary,
     keywords: [e.company, e.solution_name, e.vendor, e.sector, e.industry, "AI agent", "agentic AI"].filter(Boolean) as string[],
     alternates: { canonical: path },
@@ -59,7 +63,7 @@ export default async function EntryPage({ params }: Props) {
   const entry = getEntry(id);
   if (!entry) notFound();
   const regime = regimeOf(entry);
-  const url = `${SITE_URL}/entry/${entry.id}`;
+  const url = `${SITE_URL}/entry/${entry.id}/`;
   const title = `${entry.company} × ${entry.solution_name}`;
   const jsonLd = {
     "@context": "https://schema.org",
@@ -87,15 +91,15 @@ export default async function EntryPage({ params }: Props) {
           ...(entry.vendor ? { author: { "@type": "Organization", name: entry.vendor } } : {}),
         },
         keywords: [entry.sector, entry.industry, entry.vendor, "AI agent", "agentic AI"].filter(Boolean).join(", "),
-        isPartOf: { "@type": "WebSite", name: "Agentipedia", url: SITE_URL },
+        isPartOf: { "@type": "WebSite", name: "Agentipedia", url: `${SITE_URL}/` },
         publisher: PUBLISHER,
         ...(entry.sources?.length ? { citation: entry.sources.map((s) => s.url) } : {}),
       },
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Agentipedia", item: SITE_URL },
-          { "@type": "ListItem", position: 2, name: entry.sector, item: `${SITE_URL}/sector/${sectorSlug(entry.sector)}` },
+          { "@type": "ListItem", position: 1, name: "Agentipedia", item: `${SITE_URL}/` },
+          { "@type": "ListItem", position: 2, name: entry.sector, item: `${SITE_URL}/sector/${sectorSlug(entry.sector)}/` },
           { "@type": "ListItem", position: 3, name: title, item: url },
         ],
       },

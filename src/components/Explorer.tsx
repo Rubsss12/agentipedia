@@ -261,8 +261,13 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
       );
     else if (sort === "confidence")
       list.sort((a, b) => b.confidence - a.confidence || a.company.localeCompare(b.company));
-    else if (sort === "coda")
-      list.sort((a, b) => codaRank(a.coda) - codaRank(b.coda) || a.company.localeCompare(b.company));
+    else if (sort === "coda") {
+      // Descendant comme les autres tris : le plus mature d'abord. codaRank
+      // renvoie 9999 pour une fiche non scorée, ce qui la mettrait en tête une
+      // fois l'ordre inversé, d'où le -1 qui la garde en queue.
+      const rank = (c?: Entry["coda"]) => (c ? codaRank(c) : -1);
+      list.sort((a, b) => rank(b.coda) - rank(a.coda) || a.company.localeCompare(b.company));
+    }
     else list.sort((a, b) => a.company.localeCompare(b.company));
     return list;
   }, [entries, f, sort]);
@@ -341,7 +346,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
             anyLabel={t.newest}
           />
           <label
-            className={`inline-flex cursor-pointer items-center gap-2 rounded-lg border px-3 py-2 text-sm font-bold transition-colors ${
+            className={`inline-flex cursor-pointer items-center gap-2 rounded-lg border px-3 py-2 text-sm font-bold transition-colors focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-[#6b2bd9] ${
               f.withResult ? "border-mauve bg-mauve text-white" : "border-lavender-line bg-paper text-ink hover:border-mauve"
             }`}
           >

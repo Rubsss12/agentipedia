@@ -36,7 +36,7 @@ export default async function SectorPage({ params }: Props) {
   const vendors = [...new Set(sector.list.map((e) => e.vendor).filter(Boolean))];
   const vendorHead = vendors.slice(0, 4).join(", ");
   const vendorMore = vendors.length - 4;
-  const url = `${SITE_URL}/sector/${sector.slug}`;
+  const url = `${SITE_URL}/sector/${sector.slug}/`;
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -45,12 +45,12 @@ export default async function SectorPage({ params }: Props) {
         name: `${sector.name}: AI agent deployments`,
         description: `${sector.entries} verified AI-agent deployments in the ${sector.name} sector, with named companies, named solutions and sources.`,
         url,
-        isPartOf: { "@type": "WebSite", name: "Agentipedia", url: SITE_URL },
+        isPartOf: { "@type": "WebSite", name: "Agentipedia", url: `${SITE_URL}/` },
       },
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Agentipedia", item: SITE_URL },
+          { "@type": "ListItem", position: 1, name: "Agentipedia", item: `${SITE_URL}/` },
           { "@type": "ListItem", position: 2, name: sector.name, item: url },
         ],
       },

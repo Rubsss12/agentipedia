@@ -82,7 +82,7 @@ function ScoreMap({ a, label }: { a: CodaAssessment; label: string }) {
           ["O", midX + 8, midY + 15],
         ] as const
       ).map(([k, x, y]) => (
-        <text key={k} x={x} y={y} fontSize="10.5" fontWeight="900" letterSpacing=".08em" fill={CODA[k].deep}>
+        <text key={k} x={x} y={y} fontSize="12.5" fontWeight="900" letterSpacing=".08em" fill={CODA[k].deep}>
           <tspan className="lang-en">{CODA[k].en.toUpperCase()}</tspan>
           <tspan className="lang-fr">{CODA[k].fr.toUpperCase()}</tspan>
         </text>
@@ -90,14 +90,14 @@ function ScoreMap({ a, label }: { a: CodaAssessment; label: string }) {
 
       {/* Y axis: N1..N4 */}
       {([1, 2, 3, 4] as const).map((n) => (
-        <text key={n} x={M.left - 8} y={ny(n) + 3.5} fontSize="10" fontWeight="800" textAnchor="end" fill="#6b6f80">
+        <text key={n} x={M.left - 8} y={ny(n) + 3.5} fontSize="11.5" fontWeight="800" textAnchor="end" fill="#6b6f80">
           N{n}
         </text>
       ))}
 
       {/* X axis: maillons 1..10 */}
       {Array.from({ length: 10 }, (_, i) => i + 1).map((m) => (
-        <text key={m} x={mx(m)} y={M.top + PH + 13} fontSize="9" fontWeight="700" textAnchor="middle" fill="#6b6f80">
+        <text key={m} x={mx(m)} y={M.top + PH + 13} fontSize="11" fontWeight="700" textAnchor="middle" fill="#6b6f80">
           {m}
         </text>
       ))}
@@ -109,7 +109,7 @@ function ScoreMap({ a, label }: { a: CodaAssessment; label: string }) {
         return (
           <g key={b.from}>
             <rect x={x1} y={M.top + PH + 19} width={x2 - x1} height={13} rx={6.5} fill="#e3e0f0" />
-            <text x={(x1 + x2) / 2} y={M.top + PH + 28.5} fontSize="7.6" fontWeight="800" letterSpacing=".05em" textAnchor="middle" fill="#55507a">
+            <text x={(x1 + x2) / 2} y={M.top + PH + 28.5} fontSize="9.5" fontWeight="800" letterSpacing=".05em" textAnchor="middle" fill="#55507a">
               {/* short labels, per the masterclass workshop template */}
               <tspan className="lang-en">{b.en.replace(" scope", "").toUpperCase()}</tspan>
               <tspan className="lang-fr">{b.fr.replace("Périmètre ", "").toUpperCase()}</tspan>
@@ -131,7 +131,7 @@ function ScoreMap({ a, label }: { a: CodaAssessment; label: string }) {
             strokeDasharray="3 3"
           />
           <circle cx={mx(scope)} cy={ny(observed)} r={6.5} fill="none" stroke={AMBER} strokeWidth={2.4} />
-          <text x={mx(scope) + 11} y={ny(observed) + 3.5} fontSize="9" fontWeight="800" fill={AMBER}>
+          <text x={mx(scope) + 11} y={ny(observed) + 3.5} fontSize="11" fontWeight="800" fill={AMBER}>
             <tspan className="lang-en">observed N{observed}</tspan>
             <tspan className="lang-fr">observé N{observed}</tspan>
           </text>

@@ -18,11 +18,11 @@ const archivo = Archivo({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Agentipedia by HUB Institute: the Index Live of AI agents at work",
+    default: "Agentipedia: the proof directory of AI agents actually at work · HUB Institute",
     template: "%s · Agentipedia by HUB Institute",
   },
   description:
-    "A self-updating catalog of real, verified AI agent deployments inside named companies, worldwide. Every entry names the company and the exact solution, with sources.",
+    "Verified AI agent deployments inside named companies, worldwide. Every entry names the company and the solution, and links the sources. No source, no entry.",
   openGraph: {
     title: "Agentipedia by HUB Institute",
     description: "From AI promise to business proof: real companies, named AI agents, verified sources, worldwide.",

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Bi from "@/components/Bi";
-import { OG_IMAGE } from "@/lib/site";
+import { OG_IMAGE, PUBLISHER, SITE_URL } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
 import { CODA, CODA_ORDER, LEVELS, type CodaLevel } from "@/lib/coda";
 
 export const metadata: Metadata = {
@@ -46,9 +47,37 @@ const RUNGS: { n: CodaLevel; en: React.ReactNode; fr: React.ReactNode }[] = [
   },
 ];
 
+// The page that states the rule the whole index rests on, so it says so to
+// machines too: every other page type carries structured data, this one did not.
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      headline: "Agentipedia methodology",
+      description:
+        "The two-field rule, the CODA\u2122 score card, the sourcing thesis and the confidence score behind every Agentipedia entry.",
+      url: `${SITE_URL}/methodology/`,
+      inLanguage: ["en", "fr"],
+      isAccessibleForFree: true,
+      publisher: PUBLISHER,
+      author: PUBLISHER,
+      isPartOf: { "@type": "WebSite", name: "Agentipedia", url: `${SITE_URL}/` },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Agentipedia", item: `${SITE_URL}/` },
+        { "@type": "ListItem", position: 2, name: "Methodology", item: `${SITE_URL}/methodology/` },
+      ],
+    },
+  ],
+};
+
 export default function MethodologyPage() {
   return (
     <main className="mx-auto max-w-3xl px-6 pb-8 pt-12">
+      <JsonLd data={jsonLd} />
       <p className="kicker text-mauve">
         <Bi en="Methodology" fr="Méthodologie" />
       </p>

@@ -44,7 +44,7 @@ export function HeroSearch() {
           e.preventDefault();
           send({ q: q.trim() });
         }}
-        className="flex items-center gap-2 rounded-full border border-white/20 bg-white p-1.5 pl-5 shadow-[0_20px_50px_-25px_rgba(0,0,0,0.8)]"
+        className="flex items-center gap-2 rounded-full border border-white/20 bg-white p-1.5 pl-5 shadow-[0_20px_50px_-25px_rgba(0,0,0,0.8)] focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-[#e11e8c]"
       >
         <svg viewBox="0 0 20 20" className="h-5 w-5 shrink-0 text-mauve" fill="none" aria-hidden>
           <circle cx="9" cy="9" r="6" stroke="currentColor" strokeWidth="2" />

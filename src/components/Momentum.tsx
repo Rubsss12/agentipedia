@@ -69,10 +69,10 @@ export default function Momentum() {
                     stroke={q.partial ? color : "none"}
                     strokeDasharray={q.partial ? "4 3" : undefined}
                   />
-                  <text x={x + bw / 2} y={y - 6} fontSize="12" fontWeight="800" textAnchor="middle" fill={color}>
+                  <text x={x + bw / 2} y={y - 6} fontSize="14" fontWeight="800" textAnchor="middle" fill={color}>
                     {q.n}
                   </text>
-                  <text x={x + bw / 2} y={H - B + 16} fontSize="10" textAnchor="middle" fill="#7a7599">
+                  <text x={x + bw / 2} y={H - B + 16} fontSize="12" textAnchor="middle" fill="#7a7599">
                     T{q.q}
                   </text>
                 </g>
@@ -83,7 +83,7 @@ export default function Momentum() {
               const idx = m.quarters.map((q, i) => (q.year === y ? i : -1)).filter((i) => i >= 0);
               const cx = L + gw * ((idx[0] + idx[idx.length - 1]) / 2 + 0.5);
               return (
-                <text key={y} x={cx} y={H - 8} fontSize="13" fontWeight="900" textAnchor="middle" fill={colorOf(y)}>
+                <text key={y} x={cx} y={H - 8} fontSize="15" fontWeight="900" textAnchor="middle" fill={colorOf(y)}>
                   {y}
                 </text>
               );

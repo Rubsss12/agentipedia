@@ -13,7 +13,7 @@ const PATH = `/insights/${CURRENT_INSIGHT.slug}`;
 export function generateMetadata(): Metadata {
   const { washed } = getAgentWashing();
   const title = `Agent-washing: ${washed.length} AI agents claim more autonomy than they have`;
-  const description = `Of the AI agents catalogued in Agentipedia, ${washed.length} are observed acting above the autonomy their documented governance allows. The CODA™ matrix caps them, and names them.`;
+  const description = `${washed.length} AI agents in Agentipedia are observed acting above the autonomy their documented governance allows. The CODA™ matrix caps them, and names them.`;
   return {
     title,
     description,

@@ -13,7 +13,7 @@ import type { Row } from "@/lib/figures";
 export const metadata: Metadata = {
   title: "Agentipedia in figures",
   description:
-    "How AI agents actually break down across autonomy levels, scope, sectors and countries, measured on the deployments catalogued in Agentipedia rather than forecast.",
+    "How AI agents break down across autonomy levels, scope, sectors and countries, measured on the deployments in Agentipedia rather than forecast.",
   alternates: { canonical: "/figures" },
   openGraph: {
     title: "Agentipedia in figures",
@@ -139,7 +139,7 @@ export default function FiguresPage() {
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Agentipedia", item: SITE_URL },
+          { "@type": "ListItem", position: 1, name: "Agentipedia", item: `${SITE_URL}/` },
           { "@type": "ListItem", position: 2, name: "Agentipedia in figures", item: `${SITE_URL}/figures/` },
         ],
       },
@@ -153,7 +153,7 @@ export default function FiguresPage() {
       <p className="kicker text-mauve">
         <Bi en="Agentipedia in figures" fr="L'Agentipedia en chiffres" />
       </p>
-      <h1 className="mt-2 text-4xl font-black uppercase tracking-tight">
+      <h1 className="mt-2 text-3xl font-black uppercase tracking-tight sm:text-4xl">
         <Bi en="What the deployments actually say" fr="Ce que disent vraiment les déploiements" />
       </h1>
       <p className="mt-4 text-lg leading-relaxed text-ink-soft">

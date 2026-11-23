@@ -281,6 +281,11 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
             {quadLabel("O", M.left + PW - 12, M.top + PH - 12, "end")}
           </svg>
         </div>
+        {/* Below md the map is wider than the card and two of the four quadrants
+            start off screen. The scrollbar is hidden on a touch device, so say it. */}
+        <p className="px-4 pb-1 pt-1.5 text-[0.72rem] font-semibold text-muted md:hidden">
+          {fr ? "Faites glisser la matrice pour voir les quadrants de droite" : "Drag the map sideways to reach the right-hand quadrants"}
+        </p>
         <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 border-t border-lavender-line px-4 py-2.5 text-[0.74rem] font-semibold text-muted">
           {cappedCount > 0 && (
             <span className="inline-flex items-center gap-1.5">
@@ -320,7 +325,7 @@ export default function CodaMatrix({ points }: { points: CodaPoint[] }) {
                     <span className="text-sm font-extrabold group-hover:text-mauve">{fr ? q.fr : q.en}</span>
                     <span className="ml-2 text-xs font-bold text-muted">{counts[key]}</span>
                     <span className="block text-xs font-semibold leading-snug text-muted">{fr ? q.taglineFr : q.taglineEn}</span>
-                    <span className="mt-1 block text-[0.72rem] leading-snug text-ink-soft">{fr ? q.descFr : q.descEn}</span>
+                    <span className="mt-1 block text-[0.78rem] leading-snug text-ink-soft">{fr ? q.descFr : q.descEn}</span>
                   </span>
                 </button>
               </li>

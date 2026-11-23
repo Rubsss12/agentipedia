@@ -115,7 +115,7 @@ export default function Home() {
         "@type": "WebSite",
         name: "Agentipedia",
         alternateName: "Agentipedia by HUB Institute",
-        url: SITE_URL,
+        url: `${SITE_URL}/`,
         inLanguage: ["en", "fr"],
         publisher: PUBLISHER,
       },
@@ -124,7 +124,7 @@ export default function Home() {
         name: "Agentipedia: AI agent deployments at work",
         description:
           "A curated, source-verified catalog of real AI-agent deployments inside named companies worldwide, each scored on the CODA™ maturity matrix. From AI promise to business proof.",
-        url: SITE_URL,
+        url: `${SITE_URL}/`,
         creator: PUBLISHER,
         publisher: PUBLISHER,
         isAccessibleForFree: true,
