@@ -28394,69 +28394,6 @@
       }
     },
     {
-      "id": "tencent--jili-ai-npc-game-for-peace-deepseek-connected",
-      "company": "Tencent",
-      "company_country": "China",
-      "region": "East Asia",
-      "sector": "Media & Entertainment",
-      "solution_name": "'Jili' AI NPC (Game for Peace, DeepSeek-connected)",
-      "vendor": "DeepSeek (model)",
-      "use_case": "AI-powered digital spokesperson/NPC 'Jili' in Game for Peace that players interact with and use as an AI teammate.",
-      "department": "Gaming",
-      "industry": "Video games",
-      "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "cumulative users of AI NPC features",
-          "value": "110 million",
-          "source_type": "news_media"
-        },
-        {
-          "metric": "peak daily active users",
-          "value": "17.7 million",
-          "source_type": "news_media"
-        }
-      ],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://finance.biggo.com/news/1c5f0b6a-2859-4290-aa3b-f8ab2afb8335",
-          "title": "Generative AI Goes Mainstream in China's Gaming Industry",
-          "publisher": "BigGo Finance",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        },
-        {
-          "url": "https://naavik.co/ai-gaming/chinas-big-bet-on-ai-for-games/",
-          "title": "China's Big Bet on AI for Games",
-          "publisher": "Naavik",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.55,
-      "confidence_reason": "Named company and named in-game agent (Jili) with usage metrics; some detail via secondary gaming-industry sources.",
-      "coda": {
-        "chain": "care",
-        "links": [
-          1,
-          0,
-          0,
-          2,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "AI NPC/spokesperson players interact with and use as an AI teammate, reaching 110M cumulative users and 17.7M peak DAU; conversational entertainment interaction, no real-world delegation. N2.",
-        "basis_fr": "PNJ/porte-parole IA avec lequel les joueurs interagissent et jouent comme coequipier, atteignant 110M d'utilisateurs cumules et 17,7M de pics quotidiens; interaction conversationnelle ludique, sans delegation reelle. N2."
-      }
-    },
-    {
       "company": "thyssenkrupp Automation Engineering",
       "company_country": "Germany",
       "region": "Europe",
@@ -28515,12 +28452,12 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "Stores using Lumi each month",
+          "metric": "Stores using Lumi each month, in Mexico",
           "value": "More than 75,000",
           "source_type": "news_media"
         },
         {
-          "metric": "Operational hours saved over six months by stores using Tiendanube's AI tools (Lumi and Chat Nube)",
+          "metric": "Operational hours saved over six months by stores using Tiendanube's AI tools (Lumi and Chat Nube), in Mexico",
           "value": "3 million hours",
           "source_type": "news_media"
         }
@@ -29192,14 +29129,8 @@
       "use_case": "A secure federal generative-AI evaluation suite giving agencies a unified chatbot, API access and model-evaluation console to adopt AI safely at no cost.",
       "department": "Technology Transformation Services",
       "industry": "Federal government",
-      "deployment_stage": "pilot",
-      "reported_outcomes": [
-        {
-          "metric": "launch",
-          "value": "six-month trial from August 2025",
-          "source_type": "company_official"
-        }
-      ],
+      "deployment_stage": "production",
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -29422,10 +29353,10 @@
       "use_case": "Ambient AI captures doctor-patient conversations and generates structured clinical notes across inpatient, outpatient, and emergency settings.",
       "department": "Clinical documentation",
       "industry": "Academic health system",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [
         {
-          "metric": "patient satisfaction ('provider explained in a way you understand')",
+          "metric": "Patient scores reported to Press Ganey during an earlier pilot phase, before this deployment",
           "value": "rose from 91% to 97%",
           "source_type": "press_release"
         },
@@ -29479,13 +29410,7 @@
       "department": "Government Digital Service",
       "industry": "National government",
       "deployment_stage": "pilot",
-      "reported_outcomes": [
-        {
-          "metric": "pilots",
-          "value": "two scaled pilot deployments run in 2025 before app rollout",
-          "source_type": "company_official"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -29537,13 +29462,7 @@
       "department": "Digital / E-commerce",
       "industry": "Beauty Retail",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "AI-driven shopping growth",
-          "value": "+115% in 2025",
-          "source_type": "news_media"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -29708,7 +29627,7 @@
       "use_case": "AI customer-service assistant (voice AI planned) plus a wealth relationship-manager assistant, among 80+ live AI models across the bank.",
       "department": "Customer Service / Wealth",
       "industry": "Banking",
-      "deployment_stage": "announced",
+      "deployment_stage": "production",
       "reported_outcomes": [
         {
           "metric": "live AI models in operation",
@@ -29997,11 +29916,6 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "integration",
-          "value": "Maizey AI tutor embedded in Canvas courses from Aug 2025",
-          "source_type": "company_official"
-        },
-        {
           "metric": "first-mover",
           "value": "first major university to offer a custom AI platform to its whole community",
           "source_type": "company_official"
@@ -30047,69 +29961,6 @@
       }
     },
     {
-      "id": "uob-united-overseas-bank--tmrw-chatbot",
-      "company": "UOB (United Overseas Bank)",
-      "company_country": "Singapore",
-      "region": "Southeast Asia",
-      "sector": "Financial Services",
-      "solution_name": "TMRW chatbot",
-      "vendor": "",
-      "use_case": "Conversational-AI chatbot on the TMRW digital bank blending behavioural analytics to resolve inquiries and send proactive financial reminders and alerts.",
-      "department": "Digital Banking",
-      "industry": "Banking",
-      "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "customer inquiries handled",
-          "value": "2 million+",
-          "source_type": "news_media"
-        },
-        {
-          "metric": "resolution without human intervention",
-          "value": "85%",
-          "source_type": "news_media"
-        }
-      ],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://thedigitalbanker.com/ai-in-action-how-uob-is-turning-intelligence-into-impact/",
-          "title": "AI in action: How UOB is turning intelligence into impact",
-          "publisher": "The Digital Banker",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        },
-        {
-          "url": "https://www.theasianbanker.com/updates-and-articles/uob-strengthens-responsible-ai-governance-for-enterprise-deployment",
-          "title": "UOB strengthens responsible AI governance for enterprise deployment",
-          "publisher": "The Asian Banker",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.6,
-      "confidence_reason": "Named product with resolution metrics in banking trade press; no company-official page retrieved and TMRW chatbot predates the core window.",
-      "coda": {
-        "chain": "care",
-        "links": [
-          2,
-          1,
-          1,
-          2,
-          0,
-          0,
-          1,
-          0,
-          1,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "Conversational AI on the TMRW digital bank blends behavioural analytics to resolve inquiries and send proactive reminders, handling 2M+ inquiries with 85% resolved without human intervention; it resolves informational requests and notifies rather than moving money. N2.",
-        "basis_fr": "IA conversationnelle de la banque digitale TMRW qui combine l'analytique comportementale pour resoudre les demandes et envoyer des rappels proactifs, traitant 2M+ de demandes dont 85% sans intervention humaine; elle resout des demandes informationnelles et notifie plutot que de deplacer de l'argent. N2."
-      }
-    },
-    {
       "id": "usaa--eva",
       "company": "USAA",
       "company_country": "United States",
@@ -30117,7 +29968,7 @@
       "sector": "Insurance",
       "solution_name": "Eva",
       "vendor": "Nuance (with IBM watsonx and Google Gemini expansion)",
-      "use_case": "A member-facing virtual assistant that answers a large share of inbound insurance and banking questions without human escalation, expanded with generative AI.",
+      "use_case": "A member-facing virtual assistant that answers a large share of inbound insurance and banking questions without human escalation, with the bank stating that its generative AI work went to internal employee tools first.",
       "department": "Customer Service",
       "industry": "Insurance & Banking",
       "deployment_stage": "production",
@@ -30235,7 +30086,7 @@
       "department": "Fonctions support",
       "solution_name": "Mimir",
       "vendor": "In-house",
-      "use_case": "A Nynorsk AI service that county staff use to draft, summarise, translate and analyse documents they upload themselves. It is connected only to the county's own data and documents, not to the internet. The county director states that it is neither a search engine nor a reference work, that it is not trained on internal data and does not learn from what users type, a choice made under GDPR and the county's AI policy.",
+      "use_case": "A Nynorsk AI service that county staff use to draft, summarise, translate and analyse documents they upload themselves. It is connected only to the county's own data and documents, not to the internet. The county director says it is connected to the county's own data and documents rather than to the internet; the lines about not being trained on internal data and not learning from user input are Mimir's own answer to the criticism, relayed by him, a choice made under GDPR and the county's AI policy.",
       "deployment_stage": "production",
       "reported_outcomes": [
         {
@@ -30457,13 +30308,7 @@
       "department": "Customer Service",
       "industry": "Telecom operator",
       "deployment_stage": "pilot",
-      "reported_outcomes": [
-        {
-          "metric": "Complaints reduced over the past year",
-          "value": ">50%",
-          "source_type": "company_official"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -30557,7 +30402,7 @@
         ],
         "observed": 2,
         "locks": [],
-        "basis_en": "The only evidence is the bank's own syndicated leadership piece describing Noura opening accounts, adding beneficiaries and transferring money; vendor/press-only sourcing caps observed at N2 despite the transactional description.",
+        "basis_en": "The only evidence is the bank's own syndicated leadership piece describing transactions reached through interactive conversations, which is all the advertorial describes; vendor/press-only sourcing caps observed at N2 despite the transactional description.",
         "basis_fr": "La seule preuve est le texte de direction syndique de la banque elle-meme decrivant Noura ouvrant des comptes, ajoutant des beneficiaires et transferant de l'argent ; une source uniquement editeur/presse plafonne l'observe a N2 malgre la description transactionnelle."
       }
     },
@@ -30581,7 +30426,7 @@
         },
         {
           "metric": "developer productivity",
-          "value": "2x (up to 10x on complex projects)",
+          "value": "up to 2x",
           "source_type": "vendor_case_study"
         }
       ],
@@ -30705,13 +30550,8 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "Improvement in first-time resolution of critical journeys (initial tests)",
-          "value": "50%",
-          "source_type": "company_official"
-        },
-        {
-          "metric": "TOBi footprint being upgraded",
-          "value": "13 countries, 11 languages",
+          "metric": "First time resolution rate for appointment booking at Vodafone Portugal",
+          "value": "from 15% to 60%",
           "source_type": "company_official"
         }
       ],
@@ -30833,7 +30673,7 @@
       "sector": "Retail & E-commerce",
       "solution_name": "Sparky",
       "vendor": "Walmart (in-house)",
-      "use_case": "Serves as Walmart's agentic shopping assistant across the website, app and stores: shoppers state goals (a cookout, weeknight dinners) and Sparky plans, recommends and assembles solutions, with personalized replenishment and meal planning; since March 2026 it also runs inside ChatGPT and Google Gemini.",
+      "use_case": "Walmart's shopping agent inside its app and site. On the fourth quarter call the chief executive reported that usage grew and that baskets expanded, and the retailer added voice and image search, Spanish and French, and launched it in Mexico, Canada and at Sam's Club in the United States. Walmart also opened an Agent Gateway for approved third party agents, with agent profiles, permissions, spending caps and revocable access held by the customer.",
       "department": "E-commerce",
       "industry": "Retail",
       "deployment_stage": "production",
@@ -30974,11 +30814,6 @@
           "metric": "hours saved monthly",
           "value": "300+",
           "source_type": "vendor_case_study"
-        },
-        {
-          "metric": "return on investment",
-          "value": "3x",
-          "source_type": "vendor_case_study"
         }
       ],
       "first_seen_date": "2026-08-27",
@@ -31027,7 +30862,7 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "share of customer sessions handled by agent",
+          "metric": "Cases resolved by the agent in its first week",
           "value": "~70%",
           "source_type": "vendor_case_study"
         },
@@ -31862,9 +31697,9 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "Byte Coach deployment",
+          "metric": "Restaurants Byte Coach is deployed in, per the trade press; the company's own release gives 25,000",
           "value": "35,000+ restaurants",
-          "source_type": "company_official"
+          "source_type": "news_media"
         },
         {
           "metric": "platform scale",
@@ -31925,13 +31760,13 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "customer interactions",
-          "value": "~10 million (early 2026)",
+          "metric": "Increase in product clicks",
+          "value": "23%",
           "source_type": "vendor_case_study"
         },
         {
-          "metric": "return rate for assistant users",
-          "value": "up to 7% lower",
+          "metric": "Increase in products added to the wishlist",
+          "value": "more than 40%",
           "source_type": "vendor_case_study"
         }
       ],
@@ -32302,18 +32137,7 @@
       "department": "Claims / Underwriting",
       "industry": "Insurance",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "annual reduction in underwriting leakage",
-          "value": "$40 million",
-          "source_type": "news_media"
-        },
-        {
-          "metric": "acceleration in claim review times",
-          "value": "58x",
-          "source_type": "news_media"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
