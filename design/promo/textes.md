@@ -11,9 +11,10 @@ images au moment de publier plutôt que de traîner des visuels périmés.
 | `carre.png` | 1080 x 1080 | Post simple LinkedIn, Instagram, X |
 | `carrousel-1` à `carrousel-5` | 1080 x 1350 | Carrousel LinkedIn, à exporter en PDF dans cet ordre |
 
-Les chiffres cités ci-dessous sont ceux du jour de rédaction. **Relisez-les
-contre la sortie du script avant de publier**, le script affiche les valeurs
-courantes à la fin de chaque rendu.
+Ce fichier est un gabarit : les chiffres y sont des champs, pas des valeurs.
+`npm run promo-kit` écrit la version remplie dans `promo-kit/textes.md`, aux
+chiffres du jour. On publie depuis cette sortie, jamais depuis ce gabarit, et
+aucun chiffre périmé ne peut partir.
 
 ---
 
@@ -21,18 +22,18 @@ courantes à la fin de chaque rendu.
 
 > Nous avons passé des mois à vérifier, une par une, les annonces d'agents IA en entreprise.
 >
-> 555 déploiements tiennent la route. Un seul est vraiment agentique.
+> {total} déploiements tiennent la route. Un seul est vraiment agentique.
 >
 > Pas « une grande banque ». Pas « un chatbot IA ». Une fiche n'existe dans l'Agentipedia que si une source publique nomme l'entreprise et nomme la solution. Les contrats signés, les protocoles d'accord et les démonstrations d'éditeurs sans client nommé restent dehors.
 >
 > Ce qui reste dessine un paysage très différent du récit ambiant :
 >
-> 487 déploiements sont copilotés. L'IA assiste, l'humain valide.
-> 48 sont orchestrés sur un processus large, l'humain gardant les étapes critiques.
-> 19 sont délégués : l'agent engage sur un périmètre ciblé.
+> {C} déploiements sont copilotés. L'IA assiste, l'humain valide.
+> {O} sont orchestrés sur un processus large, l'humain gardant les étapes critiques.
+> {D} sont délégués : l'agent engage sur un périmètre ciblé.
 > 1 seul enchaîne les décisions de bout en bout.
 >
-> Et 66 agents sont observés au-dessus de ce que leurs garde-fous publiés autorisent. Ils engagent de l'argent, des commandes ou du code sans mandat écrit ni supervision documentée. Nous les publions au niveau que leurs verrous tiennent, pas à celui qu'ils revendiquent.
+> Et {capped} agents sont observés au-dessus de ce que leurs garde-fous publiés autorisent. Ils engagent de l'argent, des commandes ou du code sans mandat écrit ni supervision documentée. Nous les publions au niveau que leurs verrous tiennent, pas à celui qu'ils revendiquent.
 >
 > L'annuaire est ouvert, sans inscription : agentipedia.hubinstitute.com
 >
@@ -42,7 +43,7 @@ Visuel : `carre.png`, ou le carrousel complet.
 
 ## 2. Post carrousel, accroche courte
 
-> 555 agents IA déployés en entreprise. Un seul est vraiment agentique.
+> {total} agents IA déployés en entreprise. Un seul est vraiment agentique.
 >
 > Cinq slides pour comprendre ce que les annonces disent vraiment, et ce que mesure la matrice CODA™ du HUB Institute.
 >
@@ -69,7 +70,7 @@ un trou à combler. Le script produit déjà le texte qui le dit.
 
 > « Agent autonome. » Nous avons vérifié.
 >
-> Sur les 555 déploiements d'agents IA que nous avons documentés, 66 font plus que leurs garde-fous publiés ne l'autorisent. L'agent engage de l'argent, une commande ou du code, mais aucun mandat écrit, aucune supervision outillée, aucun contrôle de conformité n'est documenté publiquement.
+> Sur les {total} déploiements d'agents IA que nous avons documentés, {capped} font plus que leurs garde-fous publiés ne l'autorisent. L'agent engage de l'argent, une commande ou du code, mais aucun mandat écrit, aucune supervision outillée, aucun contrôle de conformité n'est documenté publiquement.
 >
 > Nous ne les retirons pas de l'annuaire. Nous les publions au niveau que leurs verrous tiennent, et nous le signalons sur la fiche.
 >
@@ -81,7 +82,7 @@ Visuel : `carrousel-4.png`.
 
 ## 5. Format court, X et Bluesky
 
-> 555 agents IA déployés en entreprise, vérifiés un par un. Un seul est vraiment agentique.
+> {total} agents IA déployés en entreprise, vérifiés un par un. Un seul est vraiment agentique.
 > Pas de source, pas de fiche.
 > agentipedia.hubinstitute.com
 
@@ -93,18 +94,18 @@ Visuel : `carrousel-4.png`.
 
 > We spent months checking corporate AI agent announcements, one by one.
 >
-> 555 deployments hold up. Only one is truly agentic.
+> {total} deployments hold up. Only one is truly agentic.
 >
 > Not "a major bank". Not "an AI chatbot". An entry exists in Agentipedia only when a public source names the company and names the solution. Signed contracts, memoranda of understanding and vendor demos with no named customer stay out.
 >
 > What is left looks nothing like the prevailing story:
 >
-> 487 deployments are copiloted. AI assists, a person validates.
-> 48 are orchestrated across a broad process, with people keeping the critical steps.
-> 19 are delegated: the agent commits within a defined scope.
+> {C} deployments are copiloted. AI assists, a person validates.
+> {O} are orchestrated across a broad process, with people keeping the critical steps.
+> {D} are delegated: the agent commits within a defined scope.
 > 1 chains decisions end to end.
 >
-> And 66 agents are observed above what their published safeguards allow. They commit money, orders or code with no written mandate and no documented supervision. We publish them at the level their locks hold, not the one they claim.
+> And {capped} agents are observed above what their published safeguards allow. They commit money, orders or code with no written mandate and no documented supervision. We publish them at the level their locks hold, not the one they claim.
 >
 > The directory is open, no sign-up: agentipedia.hubinstitute.com
 >
@@ -112,7 +113,7 @@ Visuel : `carrousel-4.png`.
 
 ## 2. Carousel caption
 
-> 555 AI agents deployed inside real companies. Only one is truly agentic.
+> {total} AI agents deployed inside real companies. Only one is truly agentic.
 >
 > Five slides on what the announcements actually say, and what the HUB Institute CODA™ matrix measures.
 >
@@ -132,7 +133,7 @@ Visuel : `carrousel-4.png`.
 
 > "Autonomous agent." We checked.
 >
-> Of the 555 AI agent deployments we have documented, 66 reach further than their published safeguards allow. The agent commits money, an order or code, yet no written mandate, no tooled supervision and no compliance control is documented in public.
+> Of the {total} AI agent deployments we have documented, {capped} reach further than their published safeguards allow. The agent commits money, an order or code, yet no written mandate, no tooled supervision and no compliance control is documented in public.
 >
 > We do not remove them from the directory. We publish them at the level their locks hold, and we flag it on the entry.
 >
@@ -142,6 +143,6 @@ Visuel : `carrousel-4.png`.
 
 ## 5. Short form
 
-> 555 corporate AI agents, verified one by one. Only one is truly agentic.
+> {total} corporate AI agents, verified one by one. Only one is truly agentic.
 > No source, no entry.
 > agentipedia.hubinstitute.com

@@ -10,9 +10,11 @@
 // Un visuel qui annonce 487 agents copilotés doit pouvoir être refait le mois
 // suivant sans que personne n'ait à se souvenir d'où venait le chiffre.
 //
-// Le gabarit est design/promo/kit.html : pour changer un texte ou une couleur,
-// c'est là, puis on relance. Les textes de publication sont dans
-// design/promo/textes.md, ils ne sont pas générés.
+// Le gabarit des visuels est design/promo/kit.html : pour changer un texte ou
+// une couleur, c'est là, puis on relance. Les textes de publication sont le
+// gabarit design/promo/textes.md, dont les chiffres sont des champs : le script
+// écrit la version remplie dans promo-kit/textes.md. On publie depuis cette
+// sortie, jamais depuis le gabarit, pour qu'aucun chiffre périmé ne parte.
 import fs from "node:fs";
 import path from "node:path";
 import { chromium } from "playwright";
@@ -63,5 +65,11 @@ for (const id of SLIDES) {
 }
 await browser.close();
 fs.unlinkSync(tmp);
+
+// Les mêmes chiffres dans les textes de publication, pour qu'un visuel à jour
+// ne parte jamais avec une légende d'il y a deux curations.
+const copy = fs.readFileSync(path.join(SRC, "textes.md"), "utf8").replace(/\{(\w+)\}/g, (m, k) => (k in data ? data[k] : m));
+fs.writeFileSync(path.join(ROOT, "promo-kit", "textes.md"), copy);
+console.log("promo-kit/textes.md");
 fs.unlinkSync(path.join(OUT, "hub-institute-logo-white.svg"));
 console.log(`\nchiffres du jour : ${JSON.stringify(data)}`);
