@@ -24205,10 +24205,12 @@
           1,
           0
         ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "Suite of 12 agents automates contracts, ERP parameterization and insurance authorization in the revenue cycle (517% ROI, -66% authorization time); described as autonomous but documented only by a vendor case study, so capped at N2.",
-        "basis_fr": "Suite de 12 agents automatisant contrats, parametrage ERP et autorisations d'assurance dans le cycle de revenu (ROI 517%, -66% de temps d'autorisation); dite autonome mais documentee uniquement par une etude de cas fournisseur, donc plafonnee a N2."
+        "observed": 3,
+        "locks": [
+          "supervision"
+        ],
+        "basis_en": "The hospital describes agents that perceive, decide and act as autonomously as possible, with a parameterisation agent that automatically translates rules into the ERP. No validation before impact is described anywhere, and the documented control is an immutable audit trail of every interaction, rule applied and action taken.",
+        "basis_fr": "L'hôpital décrit des agents qui perçoivent, décident et agissent aussi autonomement que possible, dont un agent de paramétrage qui traduit automatiquement les règles dans l'ERP. Aucune validation avant impact n'est décrite, et le contrôle documenté est une piste d'audit immuable de chaque interaction, règle appliquée et action menée."
       }
     },
     {
@@ -24596,8 +24598,8 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "Employees supported by ROB",
-          "value": "400,000 across 25 countries",
+          "metric": "Countries ROB has been rolled out in, the 400,000 figure being the group's total headcount",
+          "value": "25",
           "source_type": "vendor_case_study"
         },
         {
@@ -24974,19 +24976,9 @@
           "source_type": "news_media"
         },
         {
-          "metric": "Share of visitor issues resolved",
-          "value": "84 to 85%",
+          "metric": "Visitor issues resolved on the Salesforce Help site",
+          "value": "over 75%",
           "source_type": "vendor_case_study"
-        },
-        {
-          "metric": "autonomous resolution rate",
-          "value": "83%",
-          "source_type": "earnings_call"
-        },
-        {
-          "metric": "Agentforce annual recurring revenue",
-          "value": "~$800M, up 169% YoY",
-          "source_type": "earnings_call"
         }
       ],
       "first_seen_date": "2026-07-10",
@@ -25108,8 +25100,8 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "workforce with access",
-          "value": "~60% globally (early 2025)",
+          "metric": "Share of the DX Division's software developers using the code.i assistant, not of the global workforce",
+          "value": "more than 60%",
           "source_type": "news_media"
         }
       ],
@@ -25163,18 +25155,7 @@
       "department": "Company-wide",
       "industry": "Pharmaceuticals & biotech",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "Employees using plai daily",
-          "value": "15,000+",
-          "source_type": "news_media"
-        },
-        {
-          "metric": "Internal data points aggregated",
-          "value": "1 billion+",
-          "source_type": "press_release"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-07-11",
       "sources": [
         {
@@ -25339,10 +25320,10 @@
           0,
           0
         ],
-        "observed": 2,
+        "observed": 1,
         "locks": [],
-        "basis_en": "INSAIGHTS turns plain-language questions into instant analytics drawn from 7,500+ economic and social indicators on the Data Saudi platform; a pilot decision-support tool that informs, human validates.",
-        "basis_fr": "INSAIGHTS transforme des questions en langage naturel en analyses instantanees issues de plus de 7 500 indicateurs economiques et sociaux sur la plateforme Data Saudi; outil d'aide a la decision en pilote qui informe, l'humain valide."
+        "basis_en": "The platform turns plain language questions into instant analysis for decision makers, researchers, analysts and the public. It produces material a person then uses, which is assistance rather than validated execution.",
+        "basis_fr": "La plateforme transforme des questions en langage courant en analyses instantanées pour des décideurs, des chercheurs, des analystes et le public. Elle produit de la matière qu'un humain exploite ensuite : c'est de l'assistance, pas de l'exécution validée."
       }
     },
     {
@@ -25356,18 +25337,7 @@
       "department": "Operations",
       "industry": "Oil & gas",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "AI-trained employees building use cases",
-          "value": "6,000",
-          "source_type": "news_media"
-        },
-        {
-          "metric": "AI use cases in development",
-          "value": "430",
-          "source_type": "news_media"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-07-11",
       "sources": [
         {
@@ -25582,7 +25552,7 @@
       "use_case": "An industrial copilot bringing agentic AI to manufacturing engineering and operations, cutting engineering time and speeding production changes.",
       "department": "Manufacturing / Industrial Automation",
       "industry": "Electrical Equipment Manufacturing",
-      "deployment_stage": "announced",
+      "deployment_stage": "production",
       "reported_outcomes": [
         {
           "metric": "engineering time reduction",
@@ -25735,7 +25705,7 @@
       "solution_name": "Unnamed employee-built AI agents",
       "solution_named": false,
       "vendor": "Microsoft",
-      "use_case": "Bank staff have themselves built 3,100 AI agents for business and operational tasks, described through examples rather than individually: gathering information, reconciling figures, preparing reports, reviewing documents. The chief digital and technology officer states that AI can recommend, analyse and assist but that accountability cannot be delegated to an algorithm, and that the bank always keeps a human in the loop. A governance framework more than four years old covers data assessment, explainability, mandatory human review points and post deployment monitoring, with human judgement held as indispensable on credit, fraud, risk, compliance and complaints.",
+      "use_case": "Bank staff have themselves built 3,100 low level AI agents, as the source calls them for business and operational tasks, described through examples rather than individually: gathering information, reconciling figures, preparing reports, reviewing documents. The chief digital and technology officer states that AI can recommend, analyse and assist but that accountability cannot be delegated to an algorithm, and that the bank always keeps a human in the loop. A governance framework more than four years old covers data assessment, explainability, mandatory human review points and post deployment monitoring, with human judgement held as indispensable on credit, fraud, risk, compliance and complaints.",
       "deployment_stage": "production",
       "reported_outcomes": [
         {
@@ -25946,70 +25916,6 @@
       "confidence_reason": "Fiche ajoutée à la main par l'équipe HUB Institute, sur la base des sources citées."
     },
     {
-      "company": "Seven-Eleven Japan",
-      "company_country": "Japan",
-      "region": "East Asia",
-      "sector": "Retail & E-commerce",
-      "solution_name": "Unnamed AI ordering system",
-      "solution_named": false,
-      "vendor": "",
-      "use_case": "AI-assisted ordering and demand forecasting across roughly 21,000 stores nationwide: store managers adjust orders on tablets using real-time signals such as weather, local events and point-of-sale trends, on top of a cloud-based store system overhaul.",
-      "department": "Merchandising & supply chain",
-      "industry": "Convenience retail",
-      "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "Product-planning meetings",
-          "value": "-80%",
-          "source_type": "news_media"
-        },
-        {
-          "metric": "Sales of AI-assisted product lines vs traditional",
-          "value": "+ over a third",
-          "source_type": "news_media"
-        }
-      ],
-      "first_seen_date": "2026-07-13",
-      "sources": [
-        {
-          "url": "https://www.pymnts.com/news/retail/2026/7-eleven-japan-wrote-blueprint-retail-ai-era/",
-          "title": "7-Eleven Japan Wrote the Blueprint for Retail's AI Era",
-          "publisher": "PYMNTS",
-          "source_type": "news_media",
-          "retrieved_date": "2026-07-13"
-        },
-        {
-          "url": "https://www.newsonjapan.com/article/146940.php",
-          "title": "Seven-Eleven Completes Major Store System Overhaul After Five Years",
-          "publisher": "News On Japan",
-          "source_type": "news_media",
-          "retrieved_date": "2026-07-13"
-        }
-      ],
-      "confidence": 0.7,
-      "confidence_reason": "Two independent publications document the nationwide AI ordering deployment and outcomes; the system itself has no public product name.",
-      "id": "seven-eleven-japan--unnamed-ai-ordering-system",
-      "coda": {
-        "chain": "supply",
-        "links": [
-          2,
-          1,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "observed": 1,
-        "locks": [],
-        "basis_en": "Demand forecasting across ≈21,000 stores whose suggestions store managers adjust on tablets: the human places the order. Observed N1.",
-        "basis_fr": "Une prévision de demande sur ≈21 000 magasins dont les gérants ajustent les suggestions sur tablette : l'humain passe la commande. Observé N1."
-      }
-    },
-    {
       "id": "shared-services-canada-government-of-canada--canchat",
       "company": "Shared Services Canada (Government of Canada)",
       "company_country": "Canada",
@@ -26017,7 +25923,7 @@
       "sector": "Public Sector & Education",
       "solution_name": "CANChat",
       "vendor": "Shared Services Canada (in-house, hosted in Canada)",
-      "use_case": "An in-house multilingual generative-AI chatbot for federal public servants to draft, edit, research and summarise, with data kept and stored in Canada.",
+      "use_case": "An in-house generative-AI chatbot for federal public servants to draft, edit, research and summarise, with data kept and stored in Canada.",
       "department": "Federal IT shared services",
       "industry": "National government",
       "deployment_stage": "pilot",
@@ -26383,8 +26289,8 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "Users benefiting from the Digital Factory portfolio (8 apps incl. NEXA)",
-          "value": "3,000+",
+          "metric": "SCDF officers NEXA is deployed to",
+          "value": "6,000",
           "source_type": "vendor_case_study"
         },
         {
@@ -26890,13 +26796,7 @@
       "department": "Customer Support",
       "industry": "Consumer Fintech",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "NPS improvement",
-          "value": "+33 points",
-          "source_type": "other"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -26979,10 +26879,10 @@
           0,
           0
         ],
-        "observed": 2,
+        "observed": 3,
         "locks": [],
-        "basis_en": "Sierra runs LINEMO customer support in production, raising inquiry resolution 83%->97% and satisfaction 74%->93%; strong answering/resolution but no evidenced committing action, so N2.",
-        "basis_fr": "Sierra assure le support client LINEMO en production, portant la resolution de 83% a 97% et la satisfaction de 74% a 93%; forte reponse/resolution sans action engageante prouvee, donc N2."
+        "basis_en": "The release says the agents autonomously execute follow up tasks, including processing product returns and completing various administrative procedures. Processing a return is a commitment, not an answer.",
+        "basis_fr": "Le communiqué dit que les agents exécutent de façon autonome des tâches de suivi, dont le traitement des retours produits et diverses démarches administratives. Traiter un retour est un engagement, pas une réponse."
       }
     },
     {
@@ -27222,8 +27122,8 @@
           "source_type": "news_media"
         },
         {
-          "metric": "Employees with access",
-          "value": "≈80,000",
+          "metric": "Employees the bank says SC GPT has been rolled out to support, across 41 markets",
+          "value": "over 70,000",
           "source_type": "news_media"
         }
       ],
@@ -27647,7 +27547,7 @@
       "use_case": "An AI system that automates analysis of extraordinary appeals, identifying 'general repercussion' themes to speed admissibility screening at the Supreme Court.",
       "department": "Judiciary / case management",
       "industry": "National courts",
-      "deployment_stage": "production",
+      "deployment_stage": "unknown",
       "reported_outcomes": [
         {
           "metric": "speed",
@@ -27744,16 +27644,16 @@
           0,
           0
         ],
-        "observed": 2,
+        "observed": 1,
         "locks": [],
-        "basis_en": "Pyng is an AI marketplace whose search assistant discovers and matches users to verified professionals across 100+ specializations (1,000+ onboarded); press-release-only caps it at N2.",
-        "basis_fr": "Pyng est une marketplace IA dont l'assistant de recherche decouvre et met en relation les utilisateurs avec des professionnels verifies sur 100+ specialisations (1 000+ integres); source communique uniquement, plafond N2."
+        "basis_en": "The release says the service suggests the most suitable ways to resolve a need, with no obligation to book. The agent recommends and the user books.",
+        "basis_fr": "Le communiqué dit que le service suggère les meilleures façons de répondre à un besoin, sans obligation de réserver. L'agent recommande, l'utilisateur réserve."
       }
     },
     {
-      "id": "swiss-life--parloa-ai-agent-voice-phone-bot",
-      "company": "Swiss Life",
-      "company_country": "Switzerland",
+      "id": "swiss-life-germany--parloa-ai-agent-voice-phone-bot",
+      "company": "Swiss Life Germany",
+      "company_country": "Germany",
       "region": "Europe",
       "sector": "Insurance",
       "solution_name": "Parloa AI Agent (voice phone bot)",
@@ -27878,7 +27778,7 @@
       "department": "Company-wide",
       "solution_name": "AgentSea",
       "vendor": "Amazon Web Services",
-      "use_case": "A sector wide platform where public healthcare professionals build their own AI agents in plain language, with no coding, to automate multi step workflows: clinical record summarisation, procurement review, roster generation and everyday admin. A National Heart Centre cardiologist built an agent that compiles a patient's history, issues, care plans and outstanding follow ups for the doctor to review before the consultation.",
+      "use_case": "A sector wide platform where public healthcare professionals build their own AI agents in plain language, with no coding, to automate multi step workflows: clinical record summarisation, procurement review, roster generation and everyday admin. A National Heart Centre cardiologist built an agent that compiles a patient's history, issues for the doctor to review before the consultation.",
       "deployment_stage": "production",
       "reported_outcomes": [
         {
@@ -27937,17 +27837,11 @@
       "sector": "Healthcare, Life Sciences & Luxury",
       "solution_name": "CareScribe",
       "vendor": "Synapxe (national healthtech agency)",
-      "use_case": "AI that automates nurse handover documentation to streamline shift-to-shift transfer of patient information across Singapore's public healthcare system.",
+      "use_case": "A tool the agency describes as designed to streamline nurse handovers, automatically transcribing and summarising patient information from the previous shift. The source gives no perimeter, no deployment status and no validation step; the nurse approval described in the same article belongs to a different tool at a different organisation.",
       "department": "Nursing / Clinical Documentation",
       "industry": "Public healthtech agency",
-      "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "status",
-          "value": "deployment underway for nurse handover documentation",
-          "source_type": "other"
-        }
-      ],
+      "deployment_stage": "announced",
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -27996,11 +27890,6 @@
           "metric": "Sysco brand mix in local accounts",
           "value": "up 44 basis points",
           "source_type": "news_media"
-        },
-        {
-          "metric": "Cases delivered per mile in routing pilots",
-          "value": "up 2% to 4%",
-          "source_type": "news_media"
         }
       ],
       "sources": [
@@ -28026,12 +27915,12 @@
           2,
           1
         ],
-        "observed": 2,
+        "observed": 1,
         "locks": [
           "mandate"
         ],
-        "basis_en": "The chief executive states that decisions stay entirely in the hands of the sales consultants and that the tool only suggests actions, so it prepares the pitch without engaging the customer. That stated limit is the written bound; the more autonomous bid agent discussed on the same call carries no public name.",
-        "basis_fr": "Le directeur général affirme que les décisions restent entièrement entre les mains des commerciaux et que l'outil se borne à suggérer des actions : il prépare l'argumentaire sans engager le client. Cette limite affichée constitue la borne écrite, et l'agent d'appels d'offres plus autonome évoqué lors de la même conférence n'a pas de nom public."
+        "basis_en": "The source is explicit on who decides: AI360 suggests which items to pitch and which to swap, and the decisions are stated as one hundred percent in the hands of the sales consultants. The agent proposes and a person acts, which is assistance.",
+        "basis_fr": "La source est explicite sur qui décide : AI360 suggère quels articles proposer et lesquels remplacer, et les décisions sont dites rester à cent pour cent entre les mains des commerciaux. L'agent propose et l'humain fait : c'est de l'assistance."
       },
       "id": "sysco--ai360",
       "first_seen_date": "2026-11-09",
@@ -28154,7 +28043,7 @@
       "use_case": "A generative-AI chatbot on associates' handheld devices that answers process and procedure questions and provides on-the-job training across all US stores.",
       "department": "Store Operations",
       "industry": "General Merchandise Retail",
-      "deployment_stage": "production",
+      "deployment_stage": "pilot",
       "reported_outcomes": [
         {
           "metric": "store rollout",
