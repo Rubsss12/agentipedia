@@ -41,3 +41,6 @@ yarn-error.log*
 next-env.d.ts
 artifact/Agentipedia.html
 nouvelle-fiche.json
+
+# Le kit promo se régénère (npm run promo-kit) : les chiffres changent à chaque curation.
+promo-kit/

@@ -12,7 +12,9 @@
     "artifact": "node artifact/gen.mjs",
     "add-case": "node scripts/add-case.mjs",
     "evidence-dates": "node scripts/evidence-dates.mjs",
-    "check-sources": "node scripts/check-sources.mjs"
+    "check-sources": "node scripts/check-sources.mjs",
+    "weekly": "node scripts/weekly.mjs",
+    "promo-kit": "node scripts/promo-kit.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.110.0",

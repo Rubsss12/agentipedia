@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Archivo, system-ui, sans-serif; background: #15102e; }
+  .slide {
+    position: relative; overflow: hidden; color: #fff; display: flex; flex-direction: column;
+    background:
+      radial-gradient(46rem 30rem at 86% 14%, rgb(230 46 200 / 0.62), transparent 62%),
+      radial-gradient(34rem 24rem at 4% 108%, rgb(242 118 79 / 0.5), transparent 58%),
+      radial-gradient(50rem 34rem at 55% 120%, rgb(150 43 217 / 0.55), transparent 65%),
+      linear-gradient(112deg, #2439e0 0%, #3b2fdd 34%, #6b2bd9 62%, #9a29d5 84%, #c62ecf 100%);
+  }
+  .slide::before {
+    content: ""; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(to right, rgb(255 255 255 / 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(255 255 255 / 0.05) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+  .inner { position: relative; height: 100%; display: flex; flex-direction: column; }
+  .mid { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .lockup { display: flex; align-items: center; gap: 16px; }
+  .lockup img { height: 58px; width: auto; display: block; }
+  .lockup span { font-weight: 800; font-size: 26px; letter-spacing: 0.07em; text-transform: uppercase; }
+  .kicker { font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: #d6ddff; }
+  h1 { font-weight: 800; letter-spacing: -0.025em; line-height: 1.03; }
+  em { font-style: normal; color: #e4c9ff; }
+  p.body { font-weight: 600; color: rgb(255 255 255 / 0.88); line-height: 1.42; }
+  .foot { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-top: 26px; border-top: 1px solid rgb(255 255 255 / 0.28); }
+  .url { font-weight: 900; letter-spacing: 0.03em; text-transform: uppercase; color: rgb(255 255 255 / 0.92); }
+  .pill { background: #fff; color: #1d1160; font-weight: 900; letter-spacing: 0.04em; text-transform: uppercase; border-radius: 999px; }
+
+  /* Bannière de post avec lien, format paysage */
+  #annonce { width: 1200px; height: 627px; }
+  #annonce .inner { padding: 54px 70px 46px; }
+  #annonce h1 { margin-top: 36px; font-size: 76px; max-width: 980px; }
+  #annonce p.body { margin-top: 24px; font-size: 25px; max-width: 760px; }
+  #annonce .pill { font-size: 20px; padding: 15px 28px; }
+  #annonce .url { font-size: 19px; }
+
+  /* Visuel carré */
+  #carre { width: 1080px; height: 1080px; }
+  #carre .inner { padding: 72px 72px 64px; }
+  #carre h1 { margin-top: 48px; font-size: 92px; }
+  #carre p.body { margin-top: 36px; font-size: 32px; }
+  #carre .pill { font-size: 24px; padding: 18px 34px; }
+  #carre .url { font-size: 22px; }
+  #carre .kicker { font-size: 22px; }
+
+  /* Carrousel, format portrait 4:5 */
+  .c { width: 1080px; height: 1350px; }
+  .c .inner { padding: 78px 76px 68px; }
+  .c .kicker { font-size: 22px; }
+  .c h1 { margin-top: 28px; font-size: 84px; }
+  .c h2 { font-weight: 800; font-size: 62px; line-height: 1.08; letter-spacing: -0.02em; margin-top: 36px; }
+  .c p.body { margin-top: 32px; font-size: 31px; }
+  .c .url { font-size: 21px; }
+  .c .pageno { font-weight: 900; font-size: 21px; color: rgb(255 255 255 / 0.6); }
+
+  .rows { margin-top: 54px; display: grid; gap: 18px; }
+  .row { display: flex; align-items: center; gap: 24px; background: rgb(255 255 255 / 0.1); border: 1px solid rgb(255 255 255 / 0.22); border-radius: 22px; padding: 26px 30px; }
+  .row .n { font-weight: 900; font-size: 56px; line-height: 1; min-width: 190px; }
+  .row .l { font-weight: 800; font-size: 30px; }
+  .row .d { font-weight: 600; font-size: 22px; color: rgb(255 255 255 / 0.72); margin-top: 4px; }
+  .huge { font-weight: 900; font-size: 230px; line-height: 0.88; letter-spacing: -0.04em; margin-top: 24px; }
+</style>
+</head>
+<body>
+<script id="data" type="application/json">__DATA__</script>
+
+<div class="slide" id="annonce"><div class="inner">
+  <div class="lockup"><img src="hub-institute-logo-white.svg" alt="" /><span>Agentipedia</span></div>
+  <h1><span data-k="total"></span> <t data-fr="agents IA déployés." data-en="AI agents deployed."></t><br /><em><t data-fr="Un seul est vraiment agentique." data-en="Only one is truly agentic."></t></em></h1>
+  <p class="body"><t data-fr="Entreprises nommées, solutions identifiées, sources vérifiables. Pas de source, pas de fiche." data-en="Named companies, identified solutions, verifiable sources. No source, no entry."></t></p>
+  <div class="foot"><div class="url">agentipedia.hubinstitute.com</div><div class="pill"><t data-fr="Par HUB Institute" data-en="By HUB Institute"></t></div></div>
+</div></div>
+
+<div class="slide" id="carre"><div class="inner">
+  <div class="lockup"><img src="hub-institute-logo-white.svg" alt="" /><span>Agentipedia</span></div>
+  <p class="kicker" style="margin-top:40px"><t data-fr="L'annuaire des preuves" data-en="The proof directory"></t></p>
+  <h1><span data-k="total"></span> <t data-fr="agents IA déployés." data-en="AI agents deployed."></t> <em><t data-fr="Un seul est vraiment agentique." data-en="Only one is truly agentic."></t></em></h1>
+  <p class="body"><span data-k="countries"></span> <t data-fr="pays," data-en="countries,"></t> <span data-k="sectors"></span> <t data-fr="secteurs, chaque fiche liée à ses sources publiques." data-en="sectors, every entry linked to its public sources."></t></p>
+  <div class="foot"><div class="url">agentipedia.hubinstitute.com</div><div class="pill"><t data-fr="Par HUB Institute" data-en="By HUB Institute"></t></div></div>
+</div></div>
+
+<div class="slide c" id="carrousel-1"><div class="inner">
+  <div class="lockup"><img src="hub-institute-logo-white.svg" alt="" /><span>Agentipedia</span></div>
+  <div class="mid"><p class="kicker"><t data-fr="L'annuaire des preuves IA & agentiques" data-en="The AI & agentic proof directory"></t></p>
+  <h1><span data-k="total"></span> <t data-fr="agents IA déployés." data-en="AI agents deployed."></t><br /><em><t data-fr="Un seul est vraiment agentique." data-en="Only one is truly agentic."></t></em></h1>
+  <p class="body"><t data-fr="Nous avons vérifié, une par une, les annonces d'agents IA en entreprise. Voici ce qu'elles disent vraiment." data-en="We checked every corporate AI agent announcement, one by one. Here is what they actually say."></t></p>
+  </div>
+  <div class="foot"><div class="url">agentipedia.hubinstitute.com</div><div class="pageno">1 / 5</div></div>
+</div></div>
+
+<div class="slide c" id="carrousel-2"><div class="inner">
+  <div class="mid"><p class="kicker"><t data-fr="La règle" data-en="The rule"></t></p>
+  <h2><t data-fr="Pas de source, pas de fiche." data-en="No source, no entry."></t></h2>
+  <p class="body"><t data-fr="Une fiche n'existe que si une source publique nomme l'entreprise et nomme la solution. Jamais « un grand distributeur ». Jamais « un chatbot IA »." data-en="An entry exists only when a public source names the company and names the solution. Never “a large retailer”. Never “an AI chatbot”."></t></p>
+  <p class="body"><t data-fr="Les contrats signés, les protocoles d'accord et les produits d'éditeurs sans client nommé sont écartés. Ce qui reste est ce qui tourne." data-en="Signed contracts, memoranda of understanding and vendor products with no named customer are turned away. What is left is what actually runs."></t></p>
+  </div>
+  <div class="foot"><div class="url">agentipedia.hubinstitute.com</div><div class="pageno">2 / 5</div></div>
+</div></div>
+
+<div class="slide c" id="carrousel-3"><div class="inner">
+  <div class="mid"><p class="kicker"><t data-fr="Ce que mesure la matrice CODA™" data-en="What the CODA™ matrix measures"></t></p>
+  <h2><t data-fr="L'autonomie réelle, pas celle du communiqué." data-en="Real autonomy, not the press release's."></t></h2>
+  <div class="rows">
+    <div class="row"><div class="n" data-k="C"></div><div><div class="l"><t data-fr="Copilotés" data-en="Copiloted"></t></div><div class="d"><t data-fr="L'IA assiste, l'humain valide" data-en="AI assists, a person validates"></t></div></div></div>
+    <div class="row"><div class="n" data-k="O"></div><div><div class="l"><t data-fr="Orchestrés" data-en="Orchestrated"></t></div><div class="d"><t data-fr="L'IA coordonne, l'humain garde les étapes critiques" data-en="AI coordinates, people keep the critical steps"></t></div></div></div>
+    <div class="row"><div class="n" data-k="D"></div><div><div class="l"><t data-fr="Délégués" data-en="Delegated"></t></div><div class="d"><t data-fr="L'agent engage sur un périmètre ciblé" data-en="The agent commits within a defined scope"></t></div></div></div>
+    <div class="row"><div class="n" data-k="A"></div><div><div class="l"><t data-fr="Agentiques" data-en="Agentic"></t></div><div class="d"><t data-fr="L'agent enchaîne les décisions de bout en bout" data-en="The agent chains decisions end to end"></t></div></div></div>
+  </div>
+  </div>
+  <div class="foot"><div class="url">agentipedia.hubinstitute.com</div><div class="pageno">3 / 5</div></div>
+</div></div>
+
+<div class="slide c" id="carrousel-4"><div class="inner">
+  <div class="mid"><p class="kicker"><t data-fr="Agent washing" data-en="Agent washing"></t></p>
+  <div class="huge" data-k="capped"></div>
+  <h2 style="margin-top:28px;font-size:52px"><t data-fr="agents IA vont plus loin que leurs verrous ne l'autorisent." data-en="AI agents reach further than their locks allow."></t></h2>
+  <p class="body"><t data-fr="Ils engagent de l'argent, des commandes ou du code, sans mandat écrit, sans supervision outillée ni contrôle de conformité publié. Nous les publions au niveau que leurs verrous tiennent, pas à celui qu'ils revendiquent." data-en="They commit money, orders or code with no written mandate, no tooled supervision and no published compliance control. We publish them at the level their locks hold, not the one they claim."></t></p>
+  </div>
+  <div class="foot"><div class="url">agentipedia.hubinstitute.com</div><div class="pageno">4 / 5</div></div>
+</div></div>
+
+<div class="slide c" id="carrousel-5"><div class="inner">
+  <div class="lockup"><img src="hub-institute-logo-white.svg" alt="" /><span>Agentipedia</span></div>
+  <div class="mid"><h2><t data-fr="Cherchez votre secteur. Votre concurrent. Votre éditeur." data-en="Search your sector. Your competitor. Your vendor."></t></h2>
+  <p class="body"><span data-k="total"></span> <t data-fr="déploiements prouvés," data-en="proven deployments,"></t> <span data-k="countries"></span> <t data-fr="pays," data-en="countries,"></t> <span data-k="sectors"></span> <t data-fr="secteurs. Accès libre, sans inscription." data-en="sectors. Free, no sign-up."></t></p>
+  <p class="body" style="margin-top:44px;font-size:40px;font-weight:900;color:#fff">agentipedia.hubinstitute.com</p>
+  </div>
+  <div class="foot"><div class="url"><t data-fr="Par HUB Institute" data-en="By HUB Institute"></t></div><div class="pageno">5 / 5</div></div>
+</div></div>
+
+<script>
+  const D = JSON.parse(document.getElementById("data").textContent);
+  const lang = new URLSearchParams(location.search).get("lang") === "en" ? "en" : "fr";
+  document.documentElement.lang = lang;
+  for (const el of document.querySelectorAll("[data-k]")) el.textContent = D[el.dataset.k];
+  for (const el of document.querySelectorAll("t")) el.textContent = el.dataset[lang];
+</script>
+</body>
+</html>
