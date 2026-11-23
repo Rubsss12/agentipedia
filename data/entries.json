@@ -603,7 +603,8 @@
         ],
         "observed": 2,
         "locks": [
-          "data"
+          "data",
+          "supervision"
         ],
         "basis_en": "The agents gather, forecast and weigh options across production, refining, logistics and trading, and the article states that human experts keep oversight of consequential decisions, so nothing is committed by an agent. The coverage describes a signed agreement with a planned rollout rather than a running system, and grounding on ENERGYai and fifty years of company data documents the data lock.",
         "basis_fr": "Les agents collectent, prévoient et pèsent les options entre production, raffinage, logistique et négoce, et l'article précise que les experts humains gardent la main sur les décisions importantes : rien n'est engagé par un agent. La couverture décrit un accord signé avec un déploiement à venir plutôt qu'un système en marche, et l'ancrage sur ENERGYai et cinquante ans de données documente le verrou données."
@@ -3220,10 +3221,10 @@
       "sector": "Financial Services",
       "solution_name": "NiCE Copilot",
       "vendor": "NiCE",
-      "use_case": "Gives relationship managers and banking assistants contextual, in-workflow guidance on the NiCE CXone platform during customer interactions, including interaction summaries, contact history and sentiment identification, to support more than 90 million customers.",
+      "use_case": "Gives relationship managers and banking assistants contextual, in-workflow guidance on the NiCE CXone platform during customer interactions, including interaction summaries, contact history and sentiment identification, to support more than 90 million customers. It is integrated with WhatsApp and also automates team routines.",
       "department": "Customer service",
       "industry": "Banking",
-      "deployment_stage": "pilot",
+      "deployment_stage": "production",
       "reported_outcomes": [],
       "sources": [
         {
@@ -3239,6 +3240,20 @@
           "publisher": "Yahoo Finance",
           "source_type": "news_media",
           "retrieved_date": "2026-08-24"
+        },
+        {
+          "url": "https://coletivo.tech/noticias/banco-do-brasil-copiloto-nice-atendimento-ia/",
+          "title": "Banco do Brasil leva IA generativa ao atendimento com copiloto NiCE",
+          "publisher": "Coletivo Tech",
+          "source_type": "news_media",
+          "retrieved_date": "2026-08-27"
+        },
+        {
+          "url": "https://finsidersbrasil.com.br/tecnologia-para-fintechs/uso-da-ia-pelos-bancos-avanca-para-alem-do-atendimento/",
+          "title": "Uso da IA pelos bancos avança para além do atendimento",
+          "publisher": "Finsiders Brasil",
+          "source_type": "news_media",
+          "retrieved_date": "2026-08-27"
         }
       ],
       "first_seen_date": "2026-08-24",
@@ -3265,58 +3280,6 @@
       }
     },
     {
-      "id": "banco-do-brasil--nice-copilot-on-cxone",
-      "company": "Banco do Brasil",
-      "company_country": "Brazil",
-      "region": "Latin America",
-      "sector": "Financial Services",
-      "solution_name": "NiCE Copilot (on CXone)",
-      "vendor": "NiCE (with A5 Solutions)",
-      "use_case": "Generative AI copilot embedded in the customer-service platform to assist relationship managers and automate team routines, integrated with WhatsApp.",
-      "department": "Customer Service / Operations",
-      "industry": "Banking",
-      "deployment_stage": "production",
-      "reported_outcomes": [],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://coletivo.tech/noticias/banco-do-brasil-copiloto-nice-atendimento-ia/",
-          "title": "Banco do Brasil leva IA generativa ao atendimento com copiloto NiCE",
-          "publisher": "Coletivo Tech",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        },
-        {
-          "url": "https://finsidersbrasil.com.br/tecnologia-para-fintechs/uso-da-ia-pelos-bancos-avanca-para-alem-do-atendimento/",
-          "title": "Uso da IA pelos bancos avança para além do atendimento",
-          "publisher": "Finsiders Brasil",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.55,
-      "confidence_reason": "Named bank and named solution (NiCE Copilot) reported by Brazilian trade media.",
-      "coda": {
-        "chain": "care",
-        "links": [
-          0,
-          1,
-          1,
-          1,
-          0,
-          0,
-          0,
-          0,
-          1,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "GenAI copilot embedded in CXone assists relationship managers and automates team routines with WhatsApp; it prepares and answers, a human validates (N2).",
-        "basis_fr": "Copilote GenAI integre a CXone qui assiste les charges de clientele et automatise des routines avec WhatsApp ; il prepare et repond, un humain valide (N2)."
-      }
-    },
-    {
       "id": "banco-galicia--github-copilot",
       "company": "Banco Galicia",
       "company_country": "Argentina",
@@ -3332,12 +3295,12 @@
         {
           "metric": "developers reporting higher productivity",
           "value": "~80%",
-          "source_type": "news_media"
+          "source_type": "vendor_case_study"
         },
         {
           "metric": "time to build anti-fraud test cases",
           "value": "60% less",
-          "source_type": "news_media"
+          "source_type": "vendor_case_study"
         }
       ],
       "first_seen_date": "2026-08-27",
@@ -5533,7 +5496,7 @@
         {
           "metric": "Time to produce a complex bid",
           "value": "from 14 man weeks to three man days",
-          "source_type": "earnings_call"
+          "source_type": "news_media"
         }
       ],
       "sources": [
@@ -7708,7 +7671,7 @@
         {
           "metric": "daily interactions",
           "value": "~1,800",
-          "source_type": "vendor_case_study"
+          "source_type": "news_media"
         }
       ],
       "first_seen_date": "2026-08-27",
@@ -11861,7 +11824,7 @@
         },
         {
           "metric": "Customers served per day",
-          "value": "2,000-4,000",
+          "value": "2,000 to 4,000",
           "source_type": "company_official"
         },
         {
@@ -11905,8 +11868,8 @@
         ],
         "observed": 2,
         "locks": [],
-        "basis_en": "Sisu answers travel queries in 15 languages for 2,000-4,000 customers/day with ~7x conversation growth; it answers rather than executes, so autonomy is N2.",
-        "basis_fr": "Sisu repond aux demandes de voyage en 15 langues pour 2000-4000 clients/jour avec une croissance ~7x des conversations; il repond sans executer, autonomie N2."
+        "basis_en": "Sisu answers travel queries in 15 languages for 2,000 to 4,000 customers/day with ~7x conversation growth; it answers rather than executes, so autonomy is N2.",
+        "basis_fr": "Sisu repond aux demandes de voyage en 15 langues pour 2000 à 4000 clients/jour avec une croissance ~7x des conversations; il repond sans executer, autonomie N2."
       }
     },
     {
@@ -17292,7 +17255,7 @@
         {
           "metric": "deployment footprint",
           "value": "1,000+ sites across ~100 countries; phased roll-out from April 2026",
-          "source_type": "press_release"
+          "source_type": "news_media"
         }
       ],
       "first_seen_date": "2026-08-27",
@@ -20448,7 +20411,7 @@
         {
           "metric": "recognition",
           "value": "2025 Celent Model Wealth Manager Award (Emerging Technologies)",
-          "source_type": "press_release"
+          "source_type": "news_media"
         }
       ],
       "first_seen_date": "2026-08-27",
@@ -20956,12 +20919,12 @@
         {
           "metric": "developer time saved daily",
           "value": "2 to 3 hours",
-          "source_type": "news_media"
+          "source_type": "vendor_case_study"
         },
         {
           "metric": "troubleshooting time reduction",
           "value": "50%",
-          "source_type": "news_media"
+          "source_type": "vendor_case_study"
         }
       ],
       "first_seen_date": "2026-08-27",
@@ -24437,7 +24400,7 @@
         {
           "metric": "AI agents built with Google Cloud",
           "value": "120+",
-          "source_type": "press_release"
+          "source_type": "company_official"
         },
         {
           "metric": "faster workflow build vs traditional",
@@ -25595,7 +25558,7 @@
         },
         {
           "metric": "Cost per transaction",
-          "value": "dropped from $300-1,000 to ~$100",
+          "value": "dropped from $300 to $1,000 to ~$100",
           "source_type": "vendor_case_study"
         }
       ],
@@ -29447,12 +29410,12 @@
         {
           "metric": "Sysco brand mix in local accounts",
           "value": "up 44 basis points",
-          "source_type": "earnings_call"
+          "source_type": "news_media"
         },
         {
           "metric": "Cases delivered per mile in routing pilots",
           "value": "up 2% to 4%",
-          "source_type": "earnings_call"
+          "source_type": "news_media"
         }
       ],
       "sources": [
@@ -31703,7 +31666,7 @@
         {
           "metric": "first-mover",
           "value": "first major university to offer a custom AI platform to its whole community",
-          "source_type": "news_media"
+          "source_type": "company_official"
         }
       ],
       "first_seen_date": "2026-08-27",
@@ -32276,12 +32239,12 @@
         {
           "metric": "engineering cost reduction",
           "value": "50%",
-          "source_type": "company_official"
+          "source_type": "vendor_case_study"
         },
         {
           "metric": "developer productivity",
           "value": "2x (up to 10x on complex projects)",
-          "source_type": "company_official"
+          "source_type": "vendor_case_study"
         }
       ],
       "first_seen_date": "2026-08-27",
@@ -32386,7 +32349,7 @@
           "mandate",
           "supervision"
         ],
-        "basis_en": "10,000-20,000 queries solved per day with ≈9 in 10 resolved and escalation to humans on request, per operator and press: resolution at scale with an encoded escalation path. Observed N3 within the operator's bounds.",
+        "basis_en": "10,000 to 20,000 queries solved per day with ≈9 in 10 resolved and escalation to humans on request, per operator and press: resolution at scale with an encoded escalation path. Observed N3 within the operator's bounds.",
         "basis_fr": "10 000 à 20 000 demandes résolues par jour, ≈9 sur 10, avec escalade vers un humain à la demande, selon l'opérateur et la presse : résolution à l'échelle avec chemin d'escalade encodé. Observé N3 dans les bornes de l'opérateur."
       }
     },
@@ -33595,12 +33558,12 @@
         {
           "metric": "Expected staff admin time reduction",
           "value": "50%",
-          "source_type": "vendor_case_study"
+          "source_type": "press_release"
         },
         {
           "metric": "Expected CSAT improvement",
           "value": "20%",
-          "source_type": "vendor_case_study"
+          "source_type": "press_release"
         }
       ],
       "first_seen_date": "2026-08-27",
