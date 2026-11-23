@@ -125,11 +125,6 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "contract review time reduction",
-          "value": "30%",
-          "source_type": "news_media"
-        },
-        {
           "metric": "time saved per staffer weekly",
           "value": "2 to 3 hours",
           "source_type": "news_media"
@@ -185,7 +180,7 @@
       "use_case": "Autonomously handles tow-truck dispatching and pushes live status updates to stranded members, with humans stepping in for urgent or high-priority situations; also aims to surface membership renewal and cross-sell offers.",
       "department": "Roadside assistance",
       "industry": "Motor club / roadside assistance",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [
         {
           "metric": "Expected increase in membership retention from cross-sell/upsell targeting",
@@ -413,13 +408,7 @@
       "department": "Engineering / Technology",
       "industry": "Consulting / IT services",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "developers targeted",
-          "value": "~50,000 developers",
-          "source_type": "news_media"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -632,7 +621,7 @@
       "use_case": "Agentic AI trained on upstream workflows automates seismic analysis, geological modeling, and real-time process monitoring across ADNOC operations.",
       "department": "Upstream operations",
       "industry": "Oil & gas",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [
         {
           "metric": "contract value",
@@ -1529,10 +1518,12 @@
           0,
           0
         ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "Taobao Wenwen answers questions and recommends products across the catalog (5M+ experiences, Qwen 300M MAU); it advises on discovery/evaluation, purchase via user.",
-        "basis_fr": "Taobao Wenwen repond et recommande des produits sur tout le catalogue (5M+ experiences, Qwen 300M MAU); il conseille sur decouverte/evaluation, achat par l'utilisateur."
+        "observed": 3,
+        "locks": [
+          "mandate"
+        ],
+        "basis_en": "Alibaba's release describes a thirty day price tracker where the user sets a target price and the assistant automatically places the order once that threshold is met, and says users can place orders through natural conversation. The target the customer sets is the written bound, and the agent commits inside it.",
+        "basis_fr": "Le communiqué d'Alibaba décrit un suivi de prix sur trente jours où l'utilisateur fixe un prix cible et où l'assistant passe automatiquement la commande une fois ce seuil atteint, et dit que les utilisateurs peuvent commander par la conversation. Le seuil fixé par le client est la borne écrite, et l'agent engage à l'intérieur."
       }
     },
     {
@@ -1547,13 +1538,7 @@
       "department": "E-commerce / Customer Experience",
       "industry": "Online marketplace",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "Users reached",
-          "value": "500,000 (Aug 2026)",
-          "source_type": "press_release"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -1657,7 +1642,7 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "Share of service chat volume handled by Ask Allstate",
+          "metric": "Share of ASC chat volume handled, ASC being the Affordable Simple and Connected product suite rather than all auto service chat",
           "value": "15%",
           "source_type": "earnings_call"
         },
@@ -2011,14 +1996,8 @@
       "use_case": "AI agents autonomously handle appointment confirmations, rescheduling, SMS check-ins and follow-ups for hearing-care patients across the store network.",
       "department": "Patient scheduling / Customer care",
       "industry": "Hearing care retail",
-      "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "Store locations served",
-          "value": "~10,000",
-          "source_type": "vendor_case_study"
-        }
-      ],
+      "deployment_stage": "announced",
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -2226,7 +2205,7 @@
       "use_case": "Agentic AI assistant addresses campus-wide challenges like siloed data and fragmented tools and provides contextual student support.",
       "department": "Teaching, learning and student support",
       "industry": "Higher education",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [
         {
           "metric": "adoption milestone",
@@ -2378,12 +2357,12 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "drug discovery timeline reduction (Boltz-2 NIM)",
+          "metric": "Hit identification timeline reduction on one membrane protein target discovery project, measured with Boltz-2 rather than with this solution",
           "value": "70%",
           "source_type": "vendor_case_study"
         },
         {
-          "metric": "experimental assays reduced",
+          "metric": "Assays avoided on that same single project, measured with Boltz-2 rather than with this solution",
           "value": "90%",
           "source_type": "vendor_case_study"
         }
@@ -2432,18 +2411,7 @@
       "department": "Clinical Development / R&D",
       "industry": "Pharmaceuticals",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "users",
-          "value": "1,000+ across 21 countries",
-          "source_type": "vendor_case_study"
-        },
-        {
-          "metric": "workflow timelines",
-          "value": "reduced from months to weeks",
-          "source_type": "vendor_case_study"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -2597,13 +2565,7 @@
       "department": "Whole-of-government digital services",
       "industry": "National government",
       "deployment_stage": "announced",
-      "reported_outcomes": [
-        {
-          "metric": "investment",
-          "value": "$28.5M initial, plus $137.9M provisioned",
-          "source_type": "news_media"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -3030,8 +2992,8 @@
           "source_type": "vendor_case_study"
         },
         {
-          "metric": "customer interactions handled",
-          "value": "70 million",
+          "metric": "Customers BIA for Customers supports",
+          "value": "roughly 74 million",
           "source_type": "vendor_case_study"
         }
       ],
@@ -3960,16 +3922,6 @@
           "metric": "switchboard workload reduction",
           "value": "90%",
           "source_type": "vendor_case_study"
-        },
-        {
-          "metric": "first-try routing accuracy",
-          "value": "89%",
-          "source_type": "vendor_case_study"
-        },
-        {
-          "metric": "calls handled daily",
-          "value": "up to 6,000",
-          "source_type": "vendor_case_study"
         }
       ],
       "first_seen_date": "2026-08-27",
@@ -4177,7 +4129,7 @@
           "source_type": "vendor_case_study"
         },
         {
-          "metric": "Time saved per employee per week during pilot",
+          "metric": "Weekly time saved per employee as reported across the full rollout, not during the pilot",
           "value": "≈3 hours",
           "source_type": "vendor_case_study"
         }
@@ -4728,7 +4680,7 @@
       "use_case": "This military-family nonprofit is building its STAR agent on Salesforce Agentforce to streamline data-driven decision-making supporting 1.5M military family members.",
       "department": "Programs / Operations",
       "industry": "Nonprofit",
-      "deployment_stage": "pilot",
+      "deployment_stage": "announced",
       "reported_outcomes": [
         {
           "metric": "Population served",
@@ -5042,13 +4994,7 @@
       "department": "E-commerce",
       "industry": "Online travel",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "Travelers intending to use AI for trip planning (37,000-respondent survey)",
-          "value": "89%",
-          "source_type": "company_official"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-07-23",
       "sources": [
         {
@@ -5881,11 +5827,6 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "Annual savings",
-          "value": "$4 to 5 million (from centralizing on Funnel)",
-          "source_type": "vendor_case_study"
-        },
-        {
           "metric": "Portfolio",
           "value": "~171 properties / ~58,300 units",
           "source_type": "vendor_case_study"
@@ -6127,12 +6068,12 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "Resolution rate",
+          "metric": "Resolution rate measured during a Labor Day sale traffic peak, against over 50% of inquiries in normal running",
           "value": "74%",
           "source_type": "vendor_case_study"
         },
         {
-          "metric": "CSAT increase",
+          "metric": "Increase in customer engagement, the CSAT rise being close to one point",
           "value": ">20%",
           "source_type": "vendor_case_study"
         }
@@ -6182,13 +6123,7 @@
       "department": "Field service & equipment operations",
       "industry": "Heavy equipment / construction machinery",
       "deployment_stage": "announced",
-      "reported_outcomes": [
-        {
-          "metric": "data managed via Helios platform",
-          "value": "16+ petabytes from 1.5M connected assets",
-          "source_type": "press_release"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -6239,7 +6174,7 @@
       "use_case": "Enterprise generative-AI framework (knowledge base, model hub, self-service app platform and guardrails) providing AI assistants and agentic workflows across banking and insurance subsidiaries.",
       "department": "Group technology / AI Center of Excellence",
       "industry": "Financial holding",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [
         {
           "metric": "information libraries integrated",
@@ -6294,64 +6229,6 @@
         "locks": [],
         "basis_en": "GAIA is an enterprise generative-AI framework (200+ knowledge libraries, 50+ models, 70 guardrails) providing assistants and agentic workflows across subsidiaries; it prepares and answers for employees who validate.",
         "basis_fr": "GAIA est un cadre d'IA generative d'entreprise (200+ bibliotheques, 50+ modeles, 70 garde-fous) fournissant assistants et flux agentiques aux filiales; il prepare et repond pour des employes qui valident."
-      }
-    },
-    {
-      "id": "cbre-group--nexus",
-      "company": "CBRE Group",
-      "company_country": "United States",
-      "region": "North America",
-      "sector": "Professional & Business Services",
-      "solution_name": "Nexus",
-      "vendor": "CBRE (in-house)",
-      "use_case": "CBRE deploys its Nexus AI platform for facilities management across roughly 1 billion square feet of managed real estate.",
-      "department": "Facilities Management",
-      "industry": "Commercial real estate",
-      "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "Managed footprint",
-          "value": "~1 billion sq ft",
-          "source_type": "news_media"
-        }
-      ],
-      "first_seen_date": "2026-08-27",
-      "sources": [
-        {
-          "url": "https://www.facilitiesdive.com/news/how-commercial-property-management-firms-are-using-ai-and-hope-to-use-it/813798/",
-          "title": "How commercial property management firms are using AI",
-          "publisher": "Facilities Dive",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        },
-        {
-          "url": "https://propmodo.com/how-proptechs-biggest-platforms-are-taking-different-approaches-to-ai-agents/",
-          "title": "How Proptech's Biggest Platforms Are Taking Different Approaches to AI Agents",
-          "publisher": "Propmodo",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-27"
-        }
-      ],
-      "confidence": 0.65,
-      "confidence_reason": "Named company and named platform (Nexus) confirmed in trade press; agentic scope details modest.",
-      "coda": {
-        "chain": "ops",
-        "links": [
-          1,
-          1,
-          1,
-          0,
-          1,
-          1,
-          0,
-          0,
-          0,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "CBRE's Nexus platform supports facilities management across ~1 billion sq ft, monitoring, diagnosing and recommending interventions; evidence is thin news reporting with no execution attested.",
-        "basis_fr": "La plateforme Nexus de CBRE soutient la gestion technique sur ~1 milliard de pieds carres, surveillant, diagnostiquant et recommandant des interventions; les preuves sont de la presse sommaire sans execution attestee."
       }
     },
     {
@@ -6482,7 +6359,7 @@
           "source_type": "vendor_case_study"
         },
         {
-          "metric": "incidents handled",
+          "metric": "Incidents CTA staff review and respond to each week, a staff workload rather than an agent output",
           "value": "250+ per week",
           "source_type": "vendor_case_study"
         }
@@ -6590,13 +6467,7 @@
       "department": "Customer service",
       "industry": "Financial services",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "Resolution rate across chat and voice",
-          "value": "70%",
-          "source_type": "other"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-07-10",
       "sources": [
         {
@@ -6815,13 +6686,7 @@
       "department": "Commercial / SME Banking",
       "industry": "Banking",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "email response accuracy with sentiment analysis",
-          "value": "94%",
-          "source_type": "news_media"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -6874,11 +6739,6 @@
       "industry": "Banking",
       "deployment_stage": "production",
       "reported_outcomes": [
-        {
-          "metric": "employees with access to Stylus Workspaces",
-          "value": "182,000",
-          "source_type": "news_media"
-        },
         {
           "metric": "initial agentic AI pilot group",
           "value": "5,000 employees",
@@ -6948,8 +6808,8 @@
           "source_type": "company_official"
         },
         {
-          "metric": "scale",
-          "value": "used across 40+ local Citizens Advice offices",
+          "metric": "Local Citizens Advice offices Caddy was rolled out to",
+          "value": "6",
           "source_type": "company_official"
         }
       ],
@@ -7117,8 +6977,8 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "pilot scale",
-          "value": "4,000+ clinicians, 1 million patient encounters",
+          "metric": "Pilot scale",
+          "value": "over 300 clinicians and 25,000 encounters across 20 specialties",
           "source_type": "news_media"
         },
         {
@@ -7177,7 +7037,7 @@
       "use_case": "Clinical AI 'scientist' that lets physicians query EHRs, notes, pathology and imaging in natural language for real-time decision support, starting with prostate cancer.",
       "department": "Oncology / Clinical Decision Support",
       "industry": "Hospital",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [
         {
           "metric": "initial scope",
@@ -7293,13 +7153,7 @@
       "department": "Operations",
       "industry": "Copper mining",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "Additional fine copper attributed to AI at Chuquicamata",
-          "value": "≈8,000 tonnes (+ over 2%)",
-          "source_type": "news_media"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-07-13",
       "sources": [
         {
@@ -7555,13 +7409,7 @@
       "department": "Retail & Business Banking / Customer Service",
       "industry": "Banking",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "daily interactions",
-          "value": "~1,800",
-          "source_type": "news_media"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -7844,7 +7692,7 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "time saved",
+          "metric": "Daily time saving estimated by participants in an exit survey of 136 respondents, self reported rather than measured",
           "value": "~95 minutes/day (about 8 hours/week)",
           "source_type": "company_official"
         },
@@ -8023,7 +7871,7 @@
           "source_type": "vendor_case_study"
         },
         {
-          "metric": "employee satisfaction with info access",
+          "metric": "Increase in support team satisfaction, not employee satisfaction overall",
           "value": "+13%",
           "source_type": "vendor_case_study"
         }
@@ -8894,14 +8742,14 @@
       "sector": "Travel & Transportation",
       "solution_name": "Kiana",
       "vendor": "Deutsche Bahn (in-house, LLM-powered)",
-      "use_case": "An LLM-based virtual travel assistant that supplies personalised travel information around the clock in more than 100 languages, displayed to passengers at Berlin Brandenburg Airport.",
+      "use_case": "An LLM-based virtual travel assistant that supplies personalised travel information around the clock in nine languages, displayed to passengers at Berlin Brandenburg Airport.",
       "department": "Passenger Services",
       "industry": "Rail travel",
       "deployment_stage": "pilot",
       "reported_outcomes": [
         {
-          "metric": "languages supported",
-          "value": "over 100",
+          "metric": "Languages supported",
+          "value": "nine",
           "source_type": "news_media"
         }
       ],
@@ -9012,7 +8860,7 @@
         {
           "metric": "Employee coverage",
           "value": "over half of employees",
-          "source_type": "vendor_case_study"
+          "source_type": "company_official"
         }
       ],
       "first_seen_date": "2026-08-27",
@@ -9451,7 +9299,7 @@
       "reported_outcomes": [
         {
           "metric": "Online chat traffic automated",
-          "value": "51%",
+          "value": "more than 50%",
           "source_type": "vendor_case_study"
         },
         {
@@ -9810,7 +9658,7 @@
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "Share of incoming support volume deflected",
+          "metric": "Chat inquiries deflected for the Duolingo English Test, not the whole support volume",
           "value": "80%",
           "source_type": "vendor_case_study"
         }
@@ -9863,7 +9711,7 @@
         {
           "metric": "GoChat app downloads",
           "value": "5 million+",
-          "source_type": "company_official"
+          "source_type": "news_media"
         }
       ],
       "first_seen_date": "2026-08-27",
@@ -10216,7 +10064,7 @@
       "department": "Transfer centre",
       "solution_name": "Epic Agent Factory",
       "vendor": "Epic",
-      "use_case": "An agent built in Epic Agent Factory summarises every incoming transfer request and identifies which of the nine hospitals can take the case, supporting the handoff between transfer centre staff and the accepting physician. Nurses keep the placement decision, framed by the health system as decision support instead of decision replacement.",
+      "use_case": "An agent built in Epic Agent Factory summarises every incoming transfer request while recommending which of the nine hospitals can take the case is described as the next build, with nurses still making the final call, supporting the handoff between transfer centre staff and the accepting physician. Nurses keep the placement decision, framed by the health system as decision support instead of decision replacement.",
       "deployment_stage": "production",
       "reported_outcomes": [
         {
@@ -10342,7 +10190,7 @@
         {
           "metric": "Pilot users who found answers to their questions via the assistant",
           "value": "~90%",
-          "source_type": "news_media"
+          "source_type": "company_official"
         }
       ],
       "sources": [
@@ -10396,13 +10244,7 @@
       "department": "IT Service Desk",
       "industry": "Pharmaceuticals",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "IT service-desk requests handled by AI",
-          "value": "70%",
-          "source_type": "vendor_case_study"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -10513,65 +10355,6 @@
       }
     },
     {
-      "id": "emirates-nbd--unnamed-ai-fraud-detection-and-monitoring-system",
-      "company": "Emirates NBD",
-      "company_country": "United Arab Emirates",
-      "region": "Middle East",
-      "sector": "Financial Services",
-      "solution_name": "Unnamed AI fraud-detection and monitoring system",
-      "solution_named": false,
-      "vendor": "",
-      "use_case": "AI-powered monitoring across more than 50 active AI use cases at the bank, credited with a reduction in fraud losses; part of the bank's wider generative-AI transformation of business operations.",
-      "department": "Fraud and risk",
-      "industry": "Banking",
-      "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "Reduction in fraud losses after deploying AI-powered monitoring",
-          "value": "40%",
-          "source_type": "company_official"
-        }
-      ],
-      "first_seen_date": "2026-08-31",
-      "sources": [
-        {
-          "url": "https://www.emiratesnbd.com/en/media-center/emirates-nbd-to-transform-business-operations-and-enhance-productivity-with-generative-ai",
-          "title": "Emirates NBD to transform business operations and enhance productivity with generative AI",
-          "publisher": "Emirates NBD Media Center",
-          "source_type": "company_official",
-          "retrieved_date": "2026-08-31"
-        },
-        {
-          "url": "https://www.khaleejtimes.com/business/tech/emirates-nbd-fab-and-mashreq-among-gccs-most-ai-advanced-banks",
-          "title": "Emirates NBD, FAB and Mashreq among GCC's most AI-advanced banks",
-          "publisher": "Khaleej Times",
-          "source_type": "news_media",
-          "retrieved_date": "2026-08-31"
-        }
-      ],
-      "confidence": 0.58,
-      "confidence_reason": "Named bank confirmed via its own media center and independent regional business press describing a real fraud-monitoring deployment with a concrete loss-reduction figure, but no public product name for the system.",
-      "coda": {
-        "chain": "fraude",
-        "links": [
-          2,
-          1,
-          2,
-          2,
-          1,
-          0,
-          0,
-          0,
-          1,
-          0
-        ],
-        "observed": 2,
-        "locks": [],
-        "basis_en": "Emirates NBD's own media center reports AI-powered monitoring cutting fraud losses by 40% across more than 50 active AI use cases; the bank does not disclose autonomous blocking or transaction authority for the system, so observed N2.",
-        "basis_fr": "Le centre de presse d'Emirates NBD rapporte qu'une surveillance par IA reduit les pertes liees a la fraude de 40% sur plus de 50 cas d'usage actifs ; la banque ne divulgue pas de pouvoir de blocage ou de transaction autonome pour ce systeme, donc observe N2."
-      }
-    },
-    {
       "id": "engie--agentforce",
       "company": "ENGIE",
       "company_country": "France",
@@ -10591,7 +10374,7 @@
         },
         {
           "metric": "Daily conversations handled",
-          "value": "1,200+",
+          "value": "more than 1,500",
           "source_type": "vendor_case_study"
         },
         {
@@ -10647,16 +10430,6 @@
         {
           "metric": "Average handle time for support cases",
           "value": "−15%",
-          "source_type": "press_release"
-        },
-        {
-          "metric": "Customer cases handled by Agentforce",
-          "value": ">30%",
-          "source_type": "press_release"
-        },
-        {
-          "metric": "Estimated annual service cost savings",
-          "value": "$2 million",
           "source_type": "press_release"
         },
         {
@@ -11050,7 +10823,7 @@
       "use_case": "EY launched its EY.ai Agentic Platform with an initial 150 tax AI agents supporting its tax professionals on data collection, document review and compliance.",
       "department": "Tax",
       "industry": "Consulting / Tax",
-      "deployment_stage": "production",
+      "deployment_stage": "announced",
       "reported_outcomes": [
         {
           "metric": "AI agents in initial deployment",
@@ -11342,11 +11115,6 @@
           "metric": "languages",
           "value": "English, Hausa, Igbo, Yoruba",
           "source_type": "company_official"
-        },
-        {
-          "metric": "coverage",
-          "value": "35+ ministries and 60+ agencies",
-          "source_type": "news_media"
         }
       ],
       "first_seen_date": "2026-08-27",
@@ -11564,7 +11332,7 @@
         {
           "metric": "Conversation volume growth over 7 months",
           "value": "~7x",
-          "source_type": "company_official"
+          "source_type": "vendor_case_study"
         }
       ],
       "first_seen_date": "2026-08-27",
@@ -11881,7 +11649,7 @@
       "deployment_stage": "announced",
       "reported_outcomes": [
         {
-          "metric": "recruitment strategy & content creation time",
+          "metric": "Recruitment strategy and content creation time the company aims to reach, a stated goal rather than a measured result",
           "value": "reduced to minutes",
           "source_type": "press_release"
         }
@@ -11926,29 +11694,18 @@
       }
     },
     {
-      "id": "formula-1--your-tech-director-fan-companion-agent",
+      "id": "formula-1--tech-director-fan-companion-agent",
       "company": "Formula 1",
       "company_country": "United Kingdom",
       "region": "Europe",
       "sector": "Media & Entertainment",
-      "solution_name": "Your Tech Director (fan companion agent)",
+      "solution_name": "Tech Director (fan companion agent)",
       "vendor": "Salesforce Agentforce",
       "use_case": "An AI agent on F1.com answers fan questions about the 2026 regulation changes in plain language, alongside Agentforce Service and Marketing agents for fan support.",
       "department": "Fan Engagement / Marketing",
       "industry": "Motorsport",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "race-day issue resolution speed",
-          "value": "80% faster",
-          "source_type": "vendor_case_study"
-        },
-        {
-          "metric": "marketing click-through rate",
-          "value": "+22%",
-          "source_type": "vendor_case_study"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -12563,13 +12320,7 @@
       "department": "Student success / advising",
       "industry": "Higher education",
       "deployment_stage": "production",
-      "reported_outcomes": [
-        {
-          "metric": "student messages handled",
-          "value": "millions across the program",
-          "source_type": "other"
-        }
-      ],
+      "reported_outcomes": [],
       "first_seen_date": "2026-08-27",
       "sources": [
         {
@@ -12613,7 +12364,7 @@
       "use_case": "Adopting a multimodal LLM-driven patient consultation platform (plus camera-based vital-sign monitoring) at its new day-procedure centre.",
       "department": "Outpatient / Day Procedure",
       "industry": "Private hospital",
-      "deployment_stage": "pilot",
+      "deployment_stage": "announced",
       "reported_outcomes": [
         {
           "metric": "scope",
