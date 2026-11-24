@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T10:57:06.149Z",
+  "updated_at": "2026-11-24T11:18:31.254Z",
   "entries": [
     {
       "id": "1-800accountant--agentforce",
@@ -8502,7 +8502,7 @@
       "sector": "Financial Services",
       "solution_name": "Ceba",
       "vendor": "",
-      "use_case": "Assists banking customers 24/7 with more than 200 tasks such as activating cards, checking balances, making payments and getting cardless cash.",
+      "use_case": "Assists banking customers 24/7 with more than 200 banking tasks such as activating a card, checking a balance, making a payment or getting cardless cash, recognising about 60,000 different ways customers ask for them, and hands over to a person for matters such as reporting fraud or applying for a product. At the time of the release it was available to 20% of NetBank customers, with a broader rollout to come.",
       "department": "Customer service",
       "industry": "Financial services",
       "deployment_stage": "production",
@@ -8513,8 +8513,13 @@
           "source_type": "company_official"
         },
         {
-          "metric": "Customers the bank said would have access in the coming weeks, with 20% of NetBank customers reached at the time of writing",
-          "value": "6.2 million",
+          "metric": "Different ways customers can ask for those tasks, as recognised by the assistant",
+          "value": "about 60,000",
+          "source_type": "company_official"
+        },
+        {
+          "metric": "NetBank customers it was available to at the time of the release, with 6.2 million stated as coming in the following weeks",
+          "value": "20%",
           "source_type": "company_official"
         }
       ],
@@ -8528,8 +8533,8 @@
           "retrieved_date": "2026-07-10"
         }
       ],
-      "confidence": 0.6,
-      "confidence_reason": "Named deployment on the bank's own newsroom; only one source retrieved and no recent independent coverage in this run.",
+      "confidence": 0.5,
+      "confidence_reason": "A named deployment on the bank's own newsroom, and the only source retrieved: a January 2018 launch release, with no recent independent coverage. It gives the task catalogue and the recognition breadth, but puts both the wider rollout and the assistant doing the banking rather than instructing in the future tense.",
       "coda": {
         "chain": "care",
         "links": [
@@ -8544,14 +8549,12 @@
           0,
           0
         ],
-        "observed": 3,
+        "observed": 2,
         "locks": [
-          "data",
-          "mandate",
-          "supervision"
+          "mandate"
         ],
-        "basis_en": "200+ executed banking tasks (card activation, payments, cardless cash) for 6.2M customers, documented by the bank: the agent acts on accounts without per-action review, within a written task catalogue. Observed N3.",
-        "basis_fr": "Plus de 200 tâches bancaires exécutées (activation de carte, paiements, retrait sans carte) pour 6,2 M de clients, documentées par la banque : l'agent agit sur les comptes sans revue unitaire, dans un catalogue de tâches écrit. Observé N3."
+        "basis_en": "The release has Ceba assist customers with more than 200 banking tasks, and the one sentence that would make it execute is in the future tense, in an executive quote: it will be able to do the banking for customers rather than just provide instructions. Assisting with a task catalogue is answering, so observed N2. The bound is that published catalogue plus the handover to a person for fraud and product applications; housing the assistant on the bank's own systems is hosting rather than a measured data perimeter, and no owner, journal, KPI or review is named, so those two locks fail.",
+        "basis_fr": "Le communiqué montre Ceba assister les clients sur plus de 200 opérations bancaires, et la seule phrase qui en ferait un exécutant est au futur, dans une citation de dirigeant : il pourra faire la banque à la place du client au lieu de seulement lui expliquer comment faire. Assister sur un catalogue d'opérations, c'est répondre : observé N2. La borne est ce catalogue publié, plus le passage à un humain pour la fraude et les souscriptions ; héberger l'assistant sur les systèmes de la banque relève de l'hébergement et non d'un périmètre de données mesuré, et aucun responsable, journal, indicateur ni revue n'est nommé : ces deux verrous tombent."
       }
     },
     {

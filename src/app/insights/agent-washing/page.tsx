@@ -61,8 +61,16 @@ export default function AgentWashingInsight() {
       </h1>
       <p className="mt-5 max-w-3xl text-lg leading-relaxed text-ink-soft">
         <Bi
-          en={`Among the ${total} AI deployments scored on the CODA™ matrix, ${observedN3} are observed acting with delegated autonomy (N3): they execute and commit without a person validating each step. Yet ${n} of them, ${pctOfN3} %, do not document the governance that level requires. Their declared level is capped at N2.`}
-          fr={`Sur les ${total} déploiements IA scorés sur la matrice CODA™, ${observedN3} sont observés en autonomie déléguée (N3) : ils exécutent et engagent sans qu'un humain valide chaque étape. Or ${n} d'entre eux, soit ${pctOfN3} %, ne documentent pas la gouvernance qu'exige ce niveau. Leur niveau déclaré est plafonné à N2.`}
+          en={
+            n === observedN3
+              ? `Among the ${total} AI deployments scored on the CODA™ matrix, ${observedN3} are observed acting with delegated autonomy (N3): they execute and commit without a person validating each step. Not one of them documents the governance that level requires. Every declared level is capped at N2.`
+              : `Among the ${total} AI deployments scored on the CODA™ matrix, ${observedN3} are observed acting with delegated autonomy (N3): they execute and commit without a person validating each step. Yet ${n} of them, ${pctOfN3} %, do not document the governance that level requires. Their declared level is capped at N2.`
+          }
+          fr={
+            n === observedN3
+              ? `Sur les ${total} déploiements IA scorés sur la matrice CODA™, ${observedN3} sont observés en autonomie déléguée (N3) : ils exécutent et engagent sans qu'un humain valide chaque étape. Aucun d'entre eux ne documente la gouvernance qu'exige ce niveau. Tous les niveaux déclarés sont plafonnés à N2.`
+              : `Sur les ${total} déploiements IA scorés sur la matrice CODA™, ${observedN3} sont observés en autonomie déléguée (N3) : ils exécutent et engagent sans qu'un humain valide chaque étape. Or ${n} d'entre eux, soit ${pctOfN3} %, ne documentent pas la gouvernance qu'exige ce niveau. Leur niveau déclaré est plafonné à N2.`
+          }
         />
       </p>
 
