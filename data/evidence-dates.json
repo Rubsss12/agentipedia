@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23T16:06:29.543Z",
+ "updated_at": "2026-11-24T10:57:48.430Z",
  "entries": {
   "1-800accountant--agentforce": "2025-08-04",
   "1st-central-group--motivo-kai-assistant": "2026-10-21",
@@ -16,7 +16,7 @@
   "aeroporti-di-roma--adr-virtual-assistant-adryx": "2025-10-29",
   "ahold-delhaize-usa--agent-klik": "2026-10-01",
   "aia-philippines--ai-roleplay": "2026-05-14",
-  "aib-allied-irish-banks--abi-microsoft-365-copilot": "2025-07-10",
+  "aib-allied-irish-banks--microsoft-365-copilot": "2025-07-10",
   "aig--claims-assist": "2026-11-04",
   "air-india--ai-g": "2023-11-10",
   "air-new-zealand--unnamed-meal-tray-image-recognition-ai": "2025-03-14",
@@ -106,14 +106,14 @@
   "casa-financeira--vera": "2026-11-16",
   "casper--sierra": "2024-10-01",
   "caterpillar--cat-ai-assistant": "2026-01-06",
-  "cathay-financial-holdings--gaia": "2026-04-07",
+  "cathay-financial-holdings--chatgpt-enterprise": "2026-04-07",
   "chief-digital-and-artificial-intelligence-office-cdao--gemini-enterprise": "2026-10-08",
   "china-life-insurance-overseas--oneservice-app-ai-assistant-deepseek-v3-based": "2026-02-27",
   "china-unicom--c-h-converged-agent-tone-household-ai-agent": "2025-03-05",
   "chipotle-mexican-grill--ava-cado": "2025-06-15",
   "cia-hering--herica": "2026-04-22",
   "citigroup--citi-sky": "2026-04-22",
-  "citigroup--citi-stylus-workspaces-with-citi-assist": "2025-09-23",
+  "citigroup--citi-stylus-workspaces": "2025-09-23",
   "cityblue-hotels--inntelo-ai": "2026-04-01",
   "clara--financial-analyst": "2025-07-30",
   "cleveland-clinic--ambience-healthcare-ai-platform": "2025-02-19",
@@ -135,10 +135,9 @@
   "datasite--agentforce": "2025-08-04",
   "dbs-bank--dbs-joy": "2026-07-28",
   "deacero--gemini-enterprise-agent-platform": "2026-04-22",
-  "decathlon--zowie-ai-decathlon-customer-service-agent": "2022-02-18",
   "del-taco--presto-voice": "2023-01-10",
   "delivus--alf": "2026-02-13",
-  "deloitte--claude-plus-zora-ai": "2025-10-06",
+  "deloitte--claude": "2025-10-06",
   "delta-air-lines--delta-concierge": "2025-10-28",
   "delta-air-lines--unnamed-ai-fare-pricing-model": "2025-07-22",
   "dentsu--dentsu-connect-4-0": "2026-04-14",
@@ -405,11 +404,11 @@
   "reddoorz--inspecto": "2026-10-28",
   "rede-americas--google-agentspace": "2025-09-10",
   "rede-mater-dei-de-saude--suite-of-12-ai-agents-for-the-hospital-revenue-cycle-contracts-parameterization-": "2026-04-15",
-  "reliance-jio--jio-ai-call-agent-part-of-jio-bharat-iq-reliance-intelligence-suite": "2026-06-19",
+  "reliance-jio--jio-call-agent": "2026-06-19",
   "relos--v7-go": "2026-01-08",
   "remarkable--mark": "2025-08-04",
   "renault--reno-renault-connected-avatar": "2024-10-30",
-  "reuters-thomson-reuters--reuters-ai-suite-fact-genie-leon-avista": "2025-04-15",
+  "reuters-thomson-reuters--fact-genie-leon-and-avista": "2025-04-15",
   "revolut--air-ai-by-revolut": "2026-04-09",
   "rio-hotel-casino--rio-rita": "2026-10-16",
   "rippling--decagon": "2026-09-11",
@@ -433,10 +432,8 @@
   "sebrae-sao-paulo--google-agentspace": "2025-09-10",
   "seco-energy--capacity-ai-virtual-agents": "2025-10-13",
   "security-bank--unnamed-employee-built-ai-agents": "2026-11-15",
-  "sephora--sephora-ai-beauty-chat": "2026-05-12",
   "servicenow--windsurf": "2025-10-17",
   "setel--voice-fuelling": "2026-10-07",
-  "shared-services-canada-government-of-canada--canchat": "2025-08-15",
   "sharkninja--agentforce": "2025-08-04",
   "sheba-medical-center--project-k": "2025-03-06",
   "shopify--sidekick": "2026-11-03",
@@ -504,7 +501,7 @@
   "uber--chatgpt-work": "2026-10-23",
   "ubisoft--neo-npc": "2025-11-21",
   "uchicago-medicine--agentforce": "2025-08-04",
-  "uk-department-for-science-innovation-and-technology-dsit-gov-uk--gov-uk-ai-assistant-gov-uk-chat": "2026-01-27",
+  "uk-department-for-science-innovation-and-technology-dsit-gov-uk--gov-uk-ai-assistant": "2026-01-27",
   "ulta-beauty--ulta-ai": "2026-04-22",
   "unicred-brasil--recupera": "2026-09-23",
   "unilever--gemini-enterprise-agent-platform": "2026-04-22",
@@ -4380,6 +4377,14 @@
   "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/voice-agents-in-microsoft-foundry-agent-service-now-generally-available/4573013": {
    "date": "2026-11-18",
    "how": "page"
+  },
+  "https://cloud.google.com/customers/bunnings": {
+   "date": null,
+   "how": "none"
+  },
+  "https://www.citigroup.com/global/news/press-release/2026/citi-wealth-unveils-citi-sky-ai-powered-member-google-cloud-deepmind-technologies": {
+   "date": null,
+   "how": "none"
   }
  }
 }
