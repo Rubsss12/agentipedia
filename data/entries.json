@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T11:18:31.254Z",
+  "updated_at": "2026-11-24T13:22:17.387Z",
   "entries": [
     {
       "id": "1-800accountant--agentforce",
@@ -19927,20 +19927,30 @@
       "region": "Latin America",
       "sector": "Retail & E-commerce",
       "solution_name": "Lu do Magalu (AI commerce assistant)",
-      "vendor": "Microsoft (Advertising) with Monks",
-      "use_case": "The retailer's virtual-persona assistant powers an end-to-end AI commerce experience over WhatsApp, guiding shoppers from product discovery through payment and post-sale.",
+      "vendor": "In-house (Google Cloud as main cloud partner, part of the agent models on Magalu Cloud)",
+      "use_case": "The retailer's twenty-year-old virtual persona now fronts a multi-agent commerce experience on her WhatsApp, which the chief executive presented one week after launch as running from product consideration through payment by instant transfer or card to the post-sale process, with the client's card and delivery address already known so the purchase never leaves the conversation. It was opened to 1 million clients out of the 15 million already enabled for her messages.",
       "department": "E-commerce / Marketing",
       "industry": "Omnichannel Retail",
       "deployment_stage": "production",
       "reported_outcomes": [
         {
-          "metric": "WhatsApp channel sales",
-          "value": "R$100M+ in 8 months",
-          "source_type": "news_media"
+          "metric": "Clients the experience was opened to at launch, out of 15 million already enabled for the persona's WhatsApp messages",
+          "value": "1 million",
+          "source_type": "earnings_call"
         },
         {
-          "metric": "Black Friday GMV growth",
-          "value": "+42% YoY",
+          "metric": "Net promoter score reported for the first clients to use the experience",
+          "value": "90",
+          "source_type": "earnings_call"
+        },
+        {
+          "metric": "Payment mix in the channel at the time of the call",
+          "value": "68% instant transfer, 32% credit card",
+          "source_type": "earnings_call"
+        },
+        {
+          "metric": "Gross merchandise value year on year, credited by the case study to Microsoft Shopping campaigns rather than to the assistant",
+          "value": "+42%",
           "source_type": "vendor_case_study"
         }
       ],
@@ -19962,7 +19972,7 @@
         }
       ],
       "confidence": 0.7,
-      "confidence_reason": "Named assistant and AI commerce launch confirmed by a Microsoft case study and referenced in Magalu's Q3 2025 earnings coverage.",
+      "confidence_reason": "The launch, its scope and its figures come from the company's own third-quarter earnings call, one week after the experience opened. The Microsoft case study cited alongside documents a different piece of work, catalogue visibility through Microsoft Shopping campaigns, never mentions the messaging channel, and credits its 42% to those campaigns; the channel sales figure carried in earlier versions of this entry appears in neither source and is contradicted by the call's own timeline.",
       "coda": {
         "chain": "commerce",
         "links": [
@@ -19979,8 +19989,8 @@
         ],
         "observed": 3,
         "locks": [],
-        "basis_en": "Persona assistant runs an end-to-end WhatsApp commerce journey from discovery through payment and post-sale; it confirms and takes payment, committing sales. R$100M+ channel sales in 8 months, +42% Black Friday GMV.",
-        "basis_fr": "Assistant persona operant un parcours de commerce WhatsApp de bout en bout, de la decouverte au paiement et l'apres-vente; il confirme et encaisse, engageant les ventes. R$100M+ de ventes canal en 8 mois, +42% de GMV Black Friday."
+        "basis_en": "The chief executive describes a multi-agent platform that takes the shopper from consideration to payment and post-sale, calls it 100% automated and states plainly that it is not a beta or a test: taking the payment commits the sale, so observed N3. The account is the company's own, a week after launch and for 1 million of its 15 million enabled clients, and no bound, supervision or data lock is published, so the declared level stays at N2.",
+        "basis_fr": "Le directeur général décrit une plateforme multi-agents qui mène l'acheteur de la considération au paiement et à l'après-vente, la qualifie d'automatisée à 100 % et affirme explicitement qu'il ne s'agit ni d'une bêta ni d'un test : encaisser engage la vente, donc observé N3. Le compte rendu est celui de l'entreprise, une semaine après le lancement et pour 1 million de ses 15 millions de clients éligibles, et aucun verrou de borne, de supervision ou de donnée n'est publié : le niveau déclaré reste à N2."
       }
     },
     {
@@ -30168,12 +30178,12 @@
         {
           "metric": "Markets where SC GPT is deployed",
           "value": "41",
-          "source_type": "news_media"
+          "source_type": "company_official"
         },
         {
           "metric": "Employees the bank says SC GPT has been rolled out to support, across 41 markets",
           "value": "over 70,000",
-          "source_type": "news_media"
+          "source_type": "company_official"
         }
       ],
       "first_seen_date": "2026-07-13",
@@ -30201,7 +30211,7 @@
         }
       ],
       "confidence": 0.75,
-      "confidence_reason": "Official company AI page plus two independent publications covering the deployment and its scale (41 markets, ~80,000 employees).",
+      "confidence_reason": "The deployment and both of its figures come from the bank's own AI page, which states the assistant has been rolled out to support over 70,000 employees across 41 markets. Of the two publications cited alongside, the trade outlet gives a different, aim-based figure of over 80,000 employees and no market count, and the Computer Weekly interview never mentions the assistant: its 80,000 is the bank's AI training enrolment.",
       "id": "standard-chartered--sc-gpt",
       "coda": {
         "chain": "fonctions",
@@ -30219,8 +30229,8 @@
         ],
         "observed": 1,
         "locks": [],
-        "basis_en": "A group-wide workbench for ≈80,000 employees across 41 markets, from risk analysis to engineering support: outputs feed human decisions. Observed N1 on a broad scope.",
-        "basis_fr": "Un workbench groupe pour ≈80 000 employés sur 41 marchés, de l'analyse de risque au support d'ingénierie : les sorties nourrissent les décisions humaines. Observé N1 sur une portée large."
+        "basis_en": "A group-wide workbench the bank says has been rolled out to support over 70,000 employees across 41 markets, from risk analysis to engineering support: outputs feed human decisions. Observed N1 on a broad scope.",
+        "basis_fr": "Un établi génératif à l'échelle du groupe, dont la banque indique qu'il a été déployé auprès de plus de 70 000 employés dans 41 marchés, de l'analyse de risque au support d'ingénierie : les sorties nourrissent des décisions humaines. Observé N1 sur un périmètre large."
       }
     },
     {
@@ -30593,14 +30603,14 @@
       "sector": "Public Sector & Education",
       "solution_name": "Victor",
       "vendor": "STF with University of Brasilia (UnB)",
-      "use_case": "An AI system that automates analysis of extraordinary appeals, identifying 'general repercussion' themes to speed admissibility screening at the Supreme Court.",
+      "use_case": "An AI system built by the Supreme Court with the University of Brasilia that automates the analysis of extraordinary appeals in four steps: optical character recognition to turn images into text, splitting the case into separate files, classifying each file by what it represents, and checking whether the case matches one of the most common 'general repercussion' themes. It suggests the relevant themes, which court officials then validate.",
       "department": "Judiciary / case management",
       "industry": "National courts",
       "deployment_stage": "unknown",
       "reported_outcomes": [
         {
-          "metric": "speed",
-          "value": "performs the analysis in ~5 seconds",
+          "metric": "Time to run the four steps, from optical character recognition to matching a general-repercussion theme",
+          "value": "around five seconds",
           "source_type": "other"
         }
       ],
@@ -30610,19 +30620,19 @@
           "url": "https://radar.ircai.org/en/tools/victor/",
           "title": "Victor - AI tools Radar",
           "publisher": "IRCAI (UNESCO)",
-          "source_type": "news_media",
+          "source_type": "other",
           "retrieved_date": "2026-08-27"
         },
         {
           "url": "https://portulansinstitute.org/wp-content/uploads/2025/11/Final-ARTIFICIAL-INTELLIGENCE-IN-BRAZILIAN-COURTS-171125-1.pdf",
           "title": "Artificial Intelligence in Brazilian Courts: A Case Study",
           "publisher": "Portulans Institute",
-          "source_type": "news_media",
+          "source_type": "other",
           "retrieved_date": "2026-08-27"
         }
       ],
       "confidence": 0.55,
-      "confidence_reason": "Named court and named system well documented, but Victor predates the 2024 to 2026 window (established system, still in production).",
+      "confidence_reason": "The court and the system are named by an institutional tools directory sourced from the Council of Europe's CEPEJ and by a think-tank research report, neither of which is press. The system predates the 2024 to 2026 window, and the report states that most available information concerns its initial phases of development and that no public data says how many cases were decided using its assessments, so the stage is recorded as unknown.",
       "coda": {
         "chain": "public",
         "links": [
@@ -30639,8 +30649,8 @@
         ],
         "observed": 2,
         "locks": [],
-        "basis_en": "Victor automates analysis of extraordinary appeals, identifying general-repercussion themes in ~5 seconds to speed admissibility screening; judges decide, so N2.",
-        "basis_fr": "Victor automatise l'analyse des recours extraordinaires, identifiant les themes de repercussion generale en ~5 secondes pour accelerer le tri d'admissibilite; les juges decident, donc N2."
+        "basis_en": "The system converts, splits, classifies and matches appeals against general-repercussion themes in around five seconds, but it suggests the themes and court officials validate them, so it prepares the screening rather than deciding it. Observed N2. Both sources are an institutional directory and a research report, and the second says there is no public data on how the system has been updated or on how many lawsuits were decided using its assessments.",
+        "basis_fr": "Le système convertit, découpe, classe et rapproche les recours des thèmes de répercussion générale en environ cinq secondes, mais il suggère les thèmes et les agents de la cour les valident : il prépare le tri sans le décider. Observé N2. Les deux sources sont un répertoire institutionnel et un rapport de recherche, et la seconde indique qu'aucune donnée publique ne dit comment le système a évolué ni combien de litiges ont été tranchés à partir de ses analyses."
       }
     },
     {
