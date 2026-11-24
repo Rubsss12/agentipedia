@@ -98,33 +98,32 @@ export default function AddCaseForm() {
   return (
     <form onSubmit={submit} className="mt-8">
       <div className="rounded-2xl border border-lavender-line bg-lilac-soft p-5">
-        <label className={label}>Mot de passe de l&apos;équipe</label>
-        <input type="password" className={input} value={f.password} required autoComplete="current-password"
+        <label className={label} htmlFor="f-password">Mot de passe de l&apos;équipe</label><input id="f-password" type="password" className={input} value={f.password} required autoComplete="current-password"
           onChange={(e) => set("password", e.target.value)} placeholder="••••••••" />
       </div>
 
       <div className="mt-6 grid gap-4 sm:grid-cols-2">
-        <div><label className={label}>Entreprise *</label><input className={input} required value={f.company} onChange={(e) => set("company", e.target.value)} placeholder="Nom exact, jamais générique" /></div>
-        <div><label className={label}>Agent / solution *</label><input className={input} required value={f.solution_name} onChange={(e) => set("solution_name", e.target.value)} placeholder="Nom public de l'agent" /></div>
-        <div><label className={label}>Pays *</label><input className={input} required value={f.company_country} onChange={(e) => set("company_country", e.target.value)} placeholder="France, United States…" /></div>
-        <div><label className={label}>Région *</label><select className={input} value={f.region} onChange={(e) => set("region", e.target.value)}>{REGIONS.map((r) => <option key={r}>{r}</option>)}</select></div>
-        <div><label className={label}>Secteur *</label><select className={input} value={f.sector} onChange={(e) => set("sector", e.target.value)}>{SECTORS.map((s) => <option key={s}>{s}</option>)}</select></div>
-        <div><label className={label}>Industrie</label><input className={input} value={f.industry} onChange={(e) => set("industry", e.target.value)} placeholder="Sous-secteur" /></div>
-        <div><label className={label}>Département</label><input className={input} value={f.department} onChange={(e) => set("department", e.target.value)} placeholder="Service client, Sinistres…" /></div>
-        <div><label className={label}>Éditeur</label><input className={input} value={f.vendor} onChange={(e) => set("vendor", e.target.value)} placeholder="Éditeur, In-house, ou vide" /></div>
-        <div><label className={label}>Statut</label><select className={input} value={f.deployment_stage} onChange={(e) => set("deployment_stage", e.target.value)}>{STAGES.map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select></div>
-        <div className="sm:col-span-2"><label className={label}>Ce que fait l&apos;agent *</label><textarea className={`${input} min-h-24`} required value={f.use_case} onChange={(e) => set("use_case", e.target.value)} placeholder="Le périmètre fonctionnel, tel que la source le décrit." /></div>
+        <div><label className={label} htmlFor="f-company">Entreprise *</label><input id="f-company" className={input} required value={f.company} onChange={(e) => set("company", e.target.value)} placeholder="Nom exact, jamais générique" /></div>
+        <div><label className={label} htmlFor="f-solution-name">Agent / solution *</label><input id="f-solution-name" className={input} required value={f.solution_name} onChange={(e) => set("solution_name", e.target.value)} placeholder="Nom public de l'agent" /></div>
+        <div><label className={label} htmlFor="f-company-country">Pays *</label><input id="f-company-country" className={input} required value={f.company_country} onChange={(e) => set("company_country", e.target.value)} placeholder="France, United States…" /></div>
+        <div><label className={label} htmlFor="f-region">Région *</label><select id="f-region" className={input} value={f.region} onChange={(e) => set("region", e.target.value)}>{REGIONS.map((r) => <option key={r}>{r}</option>)}</select></div>
+        <div><label className={label} htmlFor="f-sector">Secteur *</label><select id="f-sector" className={input} value={f.sector} onChange={(e) => set("sector", e.target.value)}>{SECTORS.map((s) => <option key={s}>{s}</option>)}</select></div>
+        <div><label className={label} htmlFor="f-industry">Industrie</label><input id="f-industry" className={input} value={f.industry} onChange={(e) => set("industry", e.target.value)} placeholder="Sous-secteur" /></div>
+        <div><label className={label} htmlFor="f-department">Département</label><input id="f-department" className={input} value={f.department} onChange={(e) => set("department", e.target.value)} placeholder="Service client, Sinistres…" /></div>
+        <div><label className={label} htmlFor="f-vendor">Éditeur</label><input id="f-vendor" className={input} value={f.vendor} onChange={(e) => set("vendor", e.target.value)} placeholder="Éditeur, In-house, ou vide" /></div>
+        <div><label className={label} htmlFor="f-deployment-stage">Statut</label><select id="f-deployment-stage" className={input} value={f.deployment_stage} onChange={(e) => set("deployment_stage", e.target.value)}>{STAGES.map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select></div>
+        <div className="sm:col-span-2"><label className={label} htmlFor="f-use-case">Ce que fait l&apos;agent *</label><textarea id="f-use-case" className={`${input} min-h-24`} required value={f.use_case} onChange={(e) => set("use_case", e.target.value)} placeholder="Le périmètre fonctionnel, tel que la source le décrit." /></div>
       </div>
 
       <div className="mt-8 border-t border-lavender-line pt-6">
         <p className="kicker text-mauve">La source <span className="normal-case tracking-normal text-muted">(facultative)</span></p>
         <p className="mt-1 text-sm text-muted">Avec une source, la fiche est marquée « Confirmé ». Sans source, elle est publiée comme cas transmis par l&apos;équipe.</p>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
-          <div className="sm:col-span-2"><label className={label}>URL</label><input className={input} type="url" value={f.src_url} onChange={(e) => set("src_url", e.target.value)} placeholder="https://…" /></div>
-          <div><label className={label}>Titre de la page</label><input className={input} value={f.src_title} onChange={(e) => set("src_title", e.target.value)} /></div>
-          <div><label className={label}>Éditeur de la page</label><input className={input} value={f.src_publisher} onChange={(e) => set("src_publisher", e.target.value)} /></div>
-          <div><label className={label}>Type</label><select className={input} value={f.src_type} onChange={(e) => set("src_type", e.target.value)}>{STYPES.map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select></div>
-          <div><label className={label}>Date de consultation</label><input className={input} value={f.src_date} onChange={(e) => set("src_date", e.target.value)} placeholder="AAAA-MM-JJ" /></div>
+          <div className="sm:col-span-2"><label className={label} htmlFor="f-src-url">URL</label><input id="f-src-url" className={input} type="url" value={f.src_url} onChange={(e) => set("src_url", e.target.value)} placeholder="https://…" /></div>
+          <div><label className={label} htmlFor="f-src-title">Titre de la page</label><input id="f-src-title" className={input} value={f.src_title} onChange={(e) => set("src_title", e.target.value)} /></div>
+          <div><label className={label} htmlFor="f-src-publisher">Éditeur de la page</label><input id="f-src-publisher" className={input} value={f.src_publisher} onChange={(e) => set("src_publisher", e.target.value)} /></div>
+          <div><label className={label} htmlFor="f-src-type">Type</label><select id="f-src-type" className={input} value={f.src_type} onChange={(e) => set("src_type", e.target.value)}>{STYPES.map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select></div>
+          <div><label className={label} htmlFor="f-src-date">Date de consultation</label><input id="f-src-date" className={input} value={f.src_date} onChange={(e) => set("src_date", e.target.value)} placeholder="AAAA-MM-JJ" /></div>
         </div>
       </div>
 
@@ -132,20 +131,20 @@ export default function AddCaseForm() {
         <p className="kicker text-mauve">Résultat rapporté <span className="normal-case tracking-normal text-muted">(optionnel)</span></p>
         <p className="mt-1 text-sm text-muted">Un chiffre absent des sources n&apos;existe pas sur la fiche : laissez vide si rien n&apos;est publié.</p>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
-          <div><label className={label}>Ce qui est mesuré</label><input className={input} value={f.out_metric} onChange={(e) => set("out_metric", e.target.value)} placeholder="Demandes traitées par mois" /></div>
-          <div><label className={label}>Valeur publiée</label><input className={input} value={f.out_value} onChange={(e) => set("out_value", e.target.value)} placeholder="120 000" /></div>
+          <div><label className={label} htmlFor="f-out-metric">Ce qui est mesuré</label><input id="f-out-metric" className={input} value={f.out_metric} onChange={(e) => set("out_metric", e.target.value)} placeholder="Demandes traitées par mois" /></div>
+          <div><label className={label} htmlFor="f-out-value">Valeur publiée</label><input id="f-out-value" className={input} value={f.out_value} onChange={(e) => set("out_value", e.target.value)} placeholder="120 000" /></div>
         </div>
       </div>
 
       <div className="mt-8 border-t border-lavender-line pt-6">
         <p className="kicker text-mauve">Score CODA™ <span className="normal-case tracking-normal text-muted">(optionnel)</span></p>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
-          <div><label className={label}>Chaîne de valeur</label><select className={input} value={f.chain} onChange={(e) => set("chain", e.target.value)}>{CHAINS.map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select></div>
-          <div><label className={label}>Autonomie observée</label><select className={input} value={f.observed} onChange={(e) => set("observed", e.target.value)}><option value="1">N1 · propose</option><option value="2">N2 · prépare</option><option value="3">N3 · exécute</option><option value="4">N4 · transige</option></select></div>
-          <div className="sm:col-span-2"><label className={label}>Les 10 Maillons · 0 rien · 1 partiel · 2 plein</label><input className={input} value={f.links} onChange={(e) => set("links", e.target.value)} placeholder="2120000000" maxLength={14} /></div>
+          <div><label className={label} htmlFor="f-chain">Chaîne de valeur</label><select id="f-chain" className={input} value={f.chain} onChange={(e) => set("chain", e.target.value)}>{CHAINS.map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select></div>
+          <div><label className={label} htmlFor="f-observed">Autonomie observée</label><select id="f-observed" className={input} value={f.observed} onChange={(e) => set("observed", e.target.value)}><option value="1">N1 · propose</option><option value="2">N2 · prépare</option><option value="3">N3 · exécute</option><option value="4">N4 · transige</option></select></div>
+          <div className="sm:col-span-2"><label className={label} htmlFor="f-links">Les 10 Maillons · 0 rien · 1 partiel · 2 plein</label><input id="f-links" className={input} value={f.links} onChange={(e) => set("links", e.target.value)} placeholder="2120000000" maxLength={14} /></div>
           <div className="sm:col-span-2">
-            <label className={label}>Verrous avec preuve publique</label>
-            <div className="flex flex-wrap gap-4 text-sm">
+            <p className={label} id="locks-label">Verrous avec preuve publique</p>
+            <div role="group" aria-labelledby="locks-label" className="flex flex-wrap gap-4 text-sm">
               {LOCKS.map(([v, l]) => (
                 <label key={v} className="inline-flex items-center gap-2">
                   <input type="checkbox" checked={locks.includes(v)}
@@ -155,7 +154,7 @@ export default function AddCaseForm() {
               ))}
             </div>
           </div>
-          <div className="sm:col-span-2"><label className={label}>Ligne de preuve</label><textarea className={`${input} min-h-20`} value={f.basis} onChange={(e) => set("basis", e.target.value)} placeholder="Ce qui atteste le niveau : volumes, taux, ce que l'agent exécute." /></div>
+          <div className="sm:col-span-2"><label className={label} htmlFor="f-basis">Ligne de preuve</label><textarea id="f-basis" className={`${input} min-h-20`} value={f.basis} onChange={(e) => set("basis", e.target.value)} placeholder="Ce qui atteste le niveau : volumes, taux, ce que l'agent exécute." /></div>
         </div>
       </div>
 

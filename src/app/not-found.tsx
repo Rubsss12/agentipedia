@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Bi from "@/components/Bi";
+
+// Without this the page inherited the site's default title, so a 404 announced
+// itself in the tab, and to a crawler, as the home page.
+export const metadata: Metadata = {
+  title: { absolute: "Page not found · Agentipedia by HUB Institute" },
+  description: "This address is not in the catalog. Everything that is verified lives in the index.",
+  robots: { index: false, follow: true },
+};
 
 export default function NotFound() {
   return (

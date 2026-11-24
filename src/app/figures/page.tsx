@@ -47,16 +47,16 @@ function Table({
         <Bi en={captionEn} fr={captionFr} />
       </h2>
       <div className="mt-3 overflow-x-auto">
-        <table className="w-full min-w-[22rem] border-collapse text-sm">
+        <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b border-lavender-line text-left">
               <th className="kicker py-2 font-bold text-muted">
                 <Bi en={captionEn} fr={captionFr} />
               </th>
-              <th className="kicker py-2 text-right font-bold text-muted">
+              <th className="kicker py-2 pl-3 text-right font-bold text-muted">
                 <Bi en="Deployments" fr="Déploiements" />
               </th>
-              <th className="kicker py-2 text-right font-bold text-muted">
+              <th className="kicker py-2 pl-3 text-right font-bold text-muted">
                 <Bi en="Share" fr="Part" />
               </th>
             </tr>

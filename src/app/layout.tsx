@@ -53,7 +53,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased">
         <ChromeGate><Header /></ChromeGate>
-        {children}
+        <div id="content">{children}</div>
         <ChromeGate><Footer /></ChromeGate>
         <Motion />
         <ChromeGate><ToTop /></ChromeGate>

@@ -112,6 +112,11 @@ export default async function SectorPage({ params }: Props) {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pt-4">
+        {/* The page had a single h1 and nothing under it, so the outline a
+            screen reader walks held one line for a page that is mostly a list. */}
+        <h2 className="sr-only">
+          <Bi en={`${sector.name} deployments`} fr={`Déploiements du secteur ${sector.name}`} />
+        </h2>
         <Explorer entries={toListEntries(sector.list)} />
       </section>
     </main>

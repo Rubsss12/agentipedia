@@ -14,6 +14,7 @@ import Bi from "@/components/Bi";
 import JsonLd from "@/components/JsonLd";
 import { SITE_URL, PUBLISHER, OG_IMAGE } from "@/lib/site";
 import { takeaways, takeawaySentence } from "@/lib/takeaway";
+import { vendorOf, vendorLabel, VENDOR_NONE } from "@/lib/taxonomy";
 import { sectorFr, regionFr, countryFr } from "@/lib/labels";
 
 type Props = { params: Promise<{ id: string }> };
@@ -63,6 +64,24 @@ export default async function EntryPage({ params }: Props) {
   const entry = getEntry(id);
   if (!entry) notFound();
   const regime = regimeOf(entry);
+
+  // Neighbours. A fiche used to link to nothing but the home page, which left
+  // every one of them a dead end: no way to walk from one deployment to a
+  // comparable one, and no path for a crawler either. Same sector first, then
+  // the same platform, closest company names first so the list is stable.
+  const others = getEntries().filter((e) => e.id !== entry.id);
+  const sameSector = others
+    .filter((e) => e.sector === entry.sector)
+    .sort((a, b) => a.company.localeCompare(b.company, "en"))
+    .slice(0, 8);
+  const vendorKey = vendorOf(entry);
+  const sameVendor =
+    vendorKey === VENDOR_NONE
+      ? []
+      : others
+          .filter((e) => vendorOf(e) === vendorKey && !sameSector.some((s) => s.id === e.id))
+          .sort((a, b) => a.company.localeCompare(b.company, "en"))
+          .slice(0, 8);
   const url = `${SITE_URL}/entry/${entry.id}/`;
   const title = `${entry.company} × ${entry.solution_name}`;
   const jsonLd = {
@@ -154,9 +173,9 @@ export default async function EntryPage({ params }: Props) {
 
       {/* What the agent does comes first, in the fuchsia of the lead CTA. */}
       <section className="mt-8 rounded-2xl border-l-4 border-[#e11e8c] bg-[#fdeef6] px-5 py-4">
-        <p className="kicker text-[#c4157a]">
+        <h2 className="kicker text-[#c4157a]">
           <Bi en="What the agent does" fr="Ce que fait l'agent" />
-        </p>
+        </h2>
         <p className="mt-2 text-lg leading-relaxed text-ink">{entry.use_case}</p>
         <p className="lang-fr mt-1 text-xs text-muted">Fiche rédigée en anglais.</p>
       </section>
@@ -164,9 +183,9 @@ export default async function EntryPage({ params }: Props) {
       {/* Key facts next: the block a reader, or a model, can lift whole,
           assembled from the fiche's own fields so it reads in both languages. */}
       <section className="mt-8 rounded-2xl border border-lavender-line bg-paper px-5 py-5">
-        <p className="kicker text-mauve">
+        <h2 className="kicker text-mauve">
           <Bi en="Key facts" fr="Ce qu'il faut retenir" />
-        </p>
+        </h2>
         <ul className="mt-3 grid gap-2.5">
           {takeaways(entry).map((t, i) => (
             <li key={i} className="flex gap-2.5 text-sm leading-relaxed text-ink-soft">
@@ -335,6 +354,64 @@ export default async function EntryPage({ params }: Props) {
           <Bi en="Talk to an expert" fr="Parler à un expert" /> →
         </Link>
       </section>
+
+      {/* Neighbouring fiches: the only links out of a fiche, and the path a
+          crawler needs to reach the whole index from any page. */}
+      {(sameSector.length > 0 || sameVendor.length > 0) && (
+        <section className="mt-12 rounded-2xl border border-lavender-line bg-paper p-6">
+          <h2 className="text-lg font-extrabold tracking-tight">
+            <Bi en="Keep reading" fr="Poursuivre la lecture" />
+          </h2>
+          <div className="mt-5 grid gap-8 md:grid-cols-2">
+            {sameSector.length > 0 && (
+              <div>
+                <h3 className="kicker text-muted">
+                  <Bi en={`Also in ${entry.sector}`} fr={`Aussi dans ${sectorFr(entry.sector)}`} />
+                </h3>
+                <ul className="mt-3 space-y-1.5">
+                  {sameSector.map((e) => (
+                    <li key={e.id} className="text-sm leading-snug">
+                      <Link href={`/entry/${e.id}/`} className="font-bold hover:text-mauve">
+                        {e.company}
+                      </Link>{" "}
+                      <span className="text-muted">{e.solution_name}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href={`/sector/${sectorSlug(entry.sector)}/`}
+                  className="mt-3 inline-block text-xs font-bold text-mauve hover:text-mauve-deep"
+                >
+                  <Bi en="See the whole sector →" fr="Voir tout le secteur →" />
+                </Link>
+              </div>
+            )}
+            {sameVendor.length > 0 && (
+              <div>
+                <h3 className="kicker text-muted">
+                  <Bi
+                    en={`Other deployments on ${vendorLabel(vendorKey, false)}`}
+                    fr={`Autres déploiements sur ${vendorLabel(vendorKey, true)}`}
+                  />
+                </h3>
+                <ul className="mt-3 space-y-1.5">
+                  {sameVendor.map((e) => (
+                    <li key={e.id} className="text-sm leading-snug">
+                      <Link href={`/entry/${e.id}/`} className="font-bold hover:text-mauve">
+                        {e.company}
+                      </Link>{" "}
+                      <span className="text-muted">{e.solution_name}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+          <Link href="/directory/" className="mt-6 inline-block text-xs font-bold text-mauve hover:text-mauve-deep">
+            <Bi en="All deployments, A to Z →" fr="Tous les déploiements, de A à Z →" />
+          </Link>
+        </section>
+      )}
 
       <BadgeEmbed id={entry.id} company={entry.company} />
     </main>

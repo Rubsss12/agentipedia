@@ -38,6 +38,10 @@ const EXPERTISE: L[] = [
 // Agentipedia's own pages. Internal links, so `Col` renders them with <Link>.
 const AGENTIPEDIA: L[] = [
   { en: "The proof directory", fr: "L'annuaire des preuves", href: "/#index" },
+  // The plain list of every fiche. It is in the footer, so it sits one link
+  // from any page: without it the explorer's six server-rendered cards were
+  // the only path into the index, and 520 fiches had no inbound link at all.
+  { en: "All deployments, A to Z", fr: "Tous les déploiements, de A à Z", href: "/directory/" },
   { en: "Market momentum", fr: "La dynamique du marché", href: "/#mouvement" },
   { en: "Browse by sector", fr: "Parcourir par secteur", href: "/#sectors" },
   { en: "Agentipedia in figures", fr: "L'Agentipedia en chiffres", href: "/figures/" },

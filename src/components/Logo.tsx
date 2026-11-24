@@ -9,7 +9,7 @@ export default function Logo({ on = "light" }: { on?: "light" | "dark" }) {
     <span className="flex min-w-0 items-center gap-2 sm:gap-2.5">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={src} alt="HUB Institute" className="h-8 w-auto shrink-0 sm:h-9" />
-      <span className={`truncate text-[0.85rem] font-extrabold uppercase tracking-[0.06em] sm:text-[1.02rem] sm:tracking-[0.08em] ${wordmark}`}>
+      <span className={`whitespace-nowrap text-[0.78rem] font-extrabold uppercase tracking-[0.02em] sm:text-[1.02rem] sm:tracking-[0.08em] ${wordmark}`}>
         Agentipedia
       </span>
     </span>

@@ -11,9 +11,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const indexed = getStats().updatedAt;
   return [
     { url: `${BASE}/`, lastModified: indexed, changeFrequency: "daily", priority: 1 },
-    { url: `${BASE}/methodology/`, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE}/directory/`, lastModified: indexed, changeFrequency: "daily", priority: 0.9 },
+    { url: `${BASE}/methodology/`, lastModified: indexed, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE}/figures/`, lastModified: indexed, changeFrequency: "daily", priority: 0.8 },
-    { url: `${BASE}/faq/`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/faq/`, lastModified: indexed, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/insights/agent-washing/`, lastModified: indexed, changeFrequency: "weekly", priority: 0.7 },
     ...getSectors().map((s) => ({
       url: `${BASE}/sector/${s.slug}/`,

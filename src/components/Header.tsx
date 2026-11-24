@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Bi from "@/components/Bi";
 import Logo from "@/components/Logo";
 import LangToggle from "@/components/LangToggle";
 import NavLinks, { OffersPill } from "@/components/NavLinks";
@@ -13,6 +14,14 @@ export default function Header() {
       className="sticky top-0 z-40 text-white shadow-[0_10px_30px_-18px_rgba(29,17,96,0.9)]"
       style={{ background: "linear-gradient(112deg, #2439e0 0%, #3b2fdd 34%, #6b2bd9 62%, #9a29d5 84%, #c62ecf 100%)" }}
     >
+      {/* First stop for the keyboard: the bar and its two nav rows are long,
+          and without this every page started by tabbing through all of them. */}
+      <a
+        href="#content"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-3 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-bold focus:text-mauve-ink"
+      >
+        <Bi en="Skip to content" fr="Aller au contenu" />
+      </a>
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6 sm:py-3">
         <Link href="/" aria-label="Agentipedia by HUB Institute, home" className="min-w-0 shrink">
           <Logo on="dark" />
