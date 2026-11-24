@@ -13,7 +13,12 @@ import Bi from "@/components/Bi";
 // Confidence semantics: >= 0.7 solid evidence, 0.5-0.7 reported but thinner,
 // <= 0.5 usually vendor-marketing-capped. Vendor-only entries always show the
 // caution treatment no matter the number.
-export function ConfidenceBadge({ entry }: { entry: Entry }) {
+export function ConfidenceBadge({
+  entry,
+}: {
+  // Only the three fields the badge reads, so a trimmed list record fits too.
+  entry: Pick<Entry, "confidence" | "confidence_reason"> & { sources: { source_type: SourceType }[] };
+}) {
   // A case the team entered with no public source is labelled for what it is,
   // the client told us, rather than borrowing the confidence scale, which
   // measures public evidence.
@@ -82,11 +87,11 @@ export function UnnamedBadge() {
   );
 }
 
-import { CODA, codaDeclared, codaQuadrant, codaScope, type CodaAssessment } from "@/lib/coda";
+import { CODA, codaDeclared, codaQuadrant, codaScope, type CodaScore } from "@/lib/coda";
 
 // Quadrant pill computed from the two axes; the amber ring flags an entry
 // whose observed autonomy exceeds what its documented locks authorize.
-export function CodaBadge({ coda }: { coda: CodaAssessment }) {
+export function CodaBadge({ coda }: { coda: CodaScore }) {
   const key = codaQuadrant(coda);
   if (!key) return null;
   const q = CODA[key];

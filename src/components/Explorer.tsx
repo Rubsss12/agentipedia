@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import type { Entry } from "@/lib/types";
+import type { ListEntry } from "@/lib/list";
 import { ConfidenceBadge, StageBadge, UnnamedBadge } from "@/components/badges";
 import { hostOf } from "@/lib/format";
 import { useLang, type Lang } from "@/lib/lang";
@@ -111,13 +111,13 @@ const STR = {
   },
 } satisfies Record<Lang, Record<string, string>>;
 
-function uniqueValues(entries: Entry[], key: keyof Entry): string[] {
+function uniqueValues(entries: ListEntry[], key: keyof ListEntry): string[] {
   return [...new Set(entries.map((e) => String(e[key])).filter(Boolean))].sort((a, b) =>
     a.localeCompare(b),
   );
 }
 
-function matches(e: Entry, f: Filters): boolean {
+function matches(e: ListEntry, f: Filters): boolean {
   if (f.type === "named" && e.solution_named === false) return false;
   if (f.type === "unnamed" && e.solution_named !== false) return false;
   if (f.coda && codaQuadrant(e.coda) !== f.coda) return false;
@@ -175,7 +175,7 @@ function Select({
   );
 }
 
-export default function Explorer({ entries }: { entries: Entry[] }) {
+export default function Explorer({ entries }: { entries: ListEntry[] }) {
   const [f, setF] = useState<Filters>(EMPTY);
   // Most recent proof first by default: the directory opens on what companies
   // made public lately, not on the alphabet.
@@ -265,7 +265,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
       // Descendant comme les autres tris : le plus mature d'abord. codaRank
       // renvoie 9999 pour une fiche non scorée, ce qui la mettrait en tête une
       // fois l'ordre inversé, d'où le -1 qui la garde en queue.
-      const rank = (c?: Entry["coda"]) => (c ? codaRank(c) : -1);
+      const rank = (c?: ListEntry["coda"]) => (c ? codaRank(c) : -1);
       list.sort((a, b) => rank(b.coda) - rank(a.coda) || a.company.localeCompare(b.company));
     }
     else list.sort((a, b) => a.company.localeCompare(b.company));
@@ -539,7 +539,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
                       </span>
                     )}
                     {e.sources.length} source{e.sources.length > 1 ? "s" : ""}
-                    {e.sources[0] ? ` · ${hostOf(e.sources[0].url)}` : ""}
+                    {e.sources[0] ? ` · ${hostOf(e.sources[0].url ?? "")}` : ""}
                   </span>
                 </div>
               </Link>

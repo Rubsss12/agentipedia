@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getSectors, getSectorBySlug } from "@/lib/sectors";
 import Explorer from "@/components/Explorer";
+import { toListEntries } from "@/lib/list";
 import Bi from "@/components/Bi";
 import JsonLd from "@/components/JsonLd";
 import { SITE_URL, OG_IMAGE } from "@/lib/site";
@@ -111,7 +112,7 @@ export default async function SectorPage({ params }: Props) {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pt-4">
-        <Explorer entries={sector.list} />
+        <Explorer entries={toListEntries(sector.list)} />
       </section>
     </main>
   );

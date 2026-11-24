@@ -45,7 +45,7 @@ const FUNCTION_RULES: Rule[] = [
   [/operation|supply|logistic|warehouse|store|restaurant|procurement|claims|underwriting|clinical|nursing|oncology|drug|research|r&d|science|facilit|property|leasing|legal|judiciary|customs|newsroom|news|broadcast|content|network|mortgage|lending|transaction|revenue management|capacity|catering|cabin|agronomy|education|teaching|student|school|emergency|outpatient|nutrition|contract|broking|agency|innovation|programs|delivery|mine|rail|exploration|upstream/i, "ops"],
 ];
 
-export function functionOf(e: Entry): string {
+export function functionOf(e: Pick<Entry, "department">): string {
   return classify(e.department || "", FUNCTION_RULES, "other");
 }
 
@@ -96,7 +96,7 @@ const INDUSTRY_RULES: Rule[] = [
   [/software|saas|technology|tech|internet|platform|ai |cloud|cyber/i, "tech"],
 ];
 
-export function industryOf(e: Entry): string {
+export function industryOf(e: Pick<Entry, "industry">): string {
   return classify(e.industry || "", INDUSTRY_RULES, "other");
 }
 
@@ -125,7 +125,7 @@ const VENDOR_RULES: Rule[] = [
 export const VENDOR_NONE = "none";
 export const VENDOR_OTHER = "other";
 
-export function vendorOf(e: Entry): string {
+export function vendorOf(e: Pick<Entry, "vendor">): string {
   const v = (e.vendor || "").trim();
   if (!v || /in-house|internal|proprietary/i.test(v) && !VENDOR_RULES.some(([re]) => re.test(v))) return VENDOR_NONE;
   return classify(v, VENDOR_RULES, VENDOR_OTHER);
@@ -138,7 +138,7 @@ export function vendorLabel(key: string, fr: boolean): string {
 }
 
 /** Vendor groups present in the data, most used first, with the catch-alls last. */
-export function vendorGroups(entries: Entry[]): string[] {
+export function vendorGroups(entries: Pick<Entry, "vendor">[]): string[] {
   const n = new Map<string, number>();
   for (const e of entries) n.set(vendorOf(e), (n.get(vendorOf(e)) ?? 0) + 1);
   return [...n.keys()]
@@ -153,4 +153,5 @@ export const groupLabel = (list: Group[], key: string, fr: boolean) => {
 };
 
 /** A fiche has a quantified result when one of its outcomes carries a number. */
-export const hasQuantifiedResult = (e: Entry) => e.reported_outcomes.some((o) => /\d/.test(o.value));
+export const hasQuantifiedResult = (e: { reported_outcomes: { value: string }[] }) =>
+  e.reported_outcomes.some((o) => /\d/.test(o.value));

@@ -206,6 +206,37 @@ async function addCase(request, env) {
   return json({ ok: true, id: entry.id, company: entry.company, solution: entry.solution_name }, 200, request);
 }
 
+/**
+ * How long the edge may hold a response.
+ *
+ * Everything under /_next/static carries a content hash in its name, so it can
+ * be cached forever: a new build produces new names.
+ *
+ * Everything else is rewritten by every deploy, the pages above all. They used
+ * to inherit a week-long shared cache, which meant a fiche the audit had
+ * withdrawn kept being served, with a 200, long after it was gone from the
+ * store. A minute of shared cache still absorbs bursts; what it no longer does
+ * is outlive the correction. Browsers revalidate on every view (max-age=0) and
+ * get a 304 when nothing moved, so the short window costs a header exchange,
+ * not a download.
+ */
+const IMMUTABLE = "public, max-age=31536000, immutable";
+const FRESH = "public, max-age=0, s-maxage=60, stale-while-revalidate=300";
+
+/** Entry URLs that moved, built by scripts/redirects.mjs. Read once per isolate. */
+let redirects = null;
+async function movedTo(pathname, env) {
+  if (redirects === null) {
+    try {
+      const res = await env.ASSETS.fetch(new Request("https://assets.local/redirects.json"));
+      redirects = res.ok ? await res.json() : {};
+    } catch {
+      redirects = {};
+    }
+  }
+  return redirects[pathname] || redirects[pathname.endsWith("/") ? pathname.slice(0, -1) : pathname + "/"] || null;
+}
+
 export default {
   async fetch(request, env) {
     try {
@@ -218,7 +249,31 @@ export default {
     } catch (err) {
       return json({ ok: false, errors: [`Erreur interne : ${err && err.message}`] }, 500, request);
     }
+
     // Everything else is the statically exported site.
-    return env.ASSETS.fetch(request);
+    const asset = await env.ASSETS.fetch(request);
+    try {
+      const url = new URL(request.url);
+
+      // A fiche renamed by a correction still has readers and inbound links:
+      // send them to where it lives now rather than to the 404 page. Only on a
+      // miss, so the lookup never touches a normal request.
+      if (asset.status === 404 && (request.method === "GET" || request.method === "HEAD")) {
+        const to = await movedTo(url.pathname, env);
+        if (to) {
+          return new Response(null, {
+            status: 301,
+            headers: { location: to + url.search, "cache-control": FRESH },
+          });
+        }
+      }
+
+      const out = new Response(asset.body, asset);
+      out.headers.set("cache-control", url.pathname.startsWith("/_next/static/") ? IMMUTABLE : FRESH);
+      return out;
+    } catch {
+      // Never let the header pass stand between a reader and the page.
+      return asset;
+    }
   },
 };

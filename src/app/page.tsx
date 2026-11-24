@@ -4,6 +4,7 @@ import { getEntries, getStats } from "@/lib/data";
 import { getSectors } from "@/lib/sectors";
 import { sectorFr } from "@/lib/labels";
 import Explorer from "@/components/Explorer";
+import { toListEntries } from "@/lib/list";
 import Marquee from "@/components/Marquee";
 import OffersLead from "@/components/OffersLead";
 import HashScroll from "@/components/HashScroll";
@@ -409,7 +410,7 @@ export default function Home() {
             />
           </p>
         </div>
-        <Explorer entries={entries} />
+        <Explorer entries={toListEntries(entries)} />
       </section>
 
       {/* ===== Sector alert and contribution: the reason to come back ===== */}

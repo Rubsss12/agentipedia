@@ -72,7 +72,7 @@ export interface Store {
 
 const MARKETING_TYPES: SourceType[] = ["vendor_case_study", "press_release"];
 
-export function isVendorSourced(entry: Entry): boolean {
+export function isVendorSourced(entry: { sources: { source_type: SourceType }[] }): boolean {
   return entry.sources.length > 0 && entry.sources.every((s) => MARKETING_TYPES.includes(s.source_type));
 }
 

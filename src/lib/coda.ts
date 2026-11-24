@@ -20,6 +20,14 @@ export type ChainKey =
   | "delivery" | "science" | "public" | "supply" | "vente";
 
 /** The per-entry CODA assessment stored in the data store. */
+/**
+ * The scored part of an assessment: everything the derivations read.
+ * The two basis paragraphs are prose for the fiche page, so anything that only
+ * computes a level, a scope or a quadrant takes this instead and can be handed
+ * a trimmed record (see lib/list.ts).
+ */
+export type CodaScore = Omit<CodaAssessment, "basis_en" | "basis_fr">;
+
 export interface CodaAssessment {
   chain: ChainKey;
   /** 10 statuses, one per maillon of the chain frieze. */
@@ -415,7 +423,7 @@ export function locksAllow(locks: LockKey[]): CodaLevel {
 }
 
 /** The anti agent-washing clause: declared = min(observed, authorized). */
-export function codaDeclared(a: CodaAssessment): CodaLevel {
+export function codaDeclared(a: CodaScore): CodaLevel {
   return Math.min(a.observed, locksAllow(a.locks)) as CodaLevel;
 }
 
@@ -426,13 +434,13 @@ export function quadrantOf(level: CodaLevel, scope: number): CodaKey {
 }
 
 /** The entry's official quadrant, computed on the DECLARED level. */
-export function codaQuadrant(a?: CodaAssessment): CodaKey | undefined {
+export function codaQuadrant(a?: CodaScore): CodaKey | undefined {
   if (!a) return undefined;
   return quadrantOf(codaDeclared(a), codaScope(a.links));
 }
 
 /** Sort key for the "maturity" sort: declared level first, then scope; unscored entries sort last. */
-export function codaRank(a?: CodaAssessment): number {
+export function codaRank(a?: CodaScore): number {
   if (!a) return 9999;
   return codaDeclared(a) * 100 + codaScope(a.links);
 }
