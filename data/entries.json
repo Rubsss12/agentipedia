@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T08:26:13.598Z",
+  "updated_at": "2026-11-27T09:02:09.753Z",
   "entries": [
     {
       "id": "1-800accountant--agentforce",
@@ -2773,6 +2773,51 @@
         "locks": [],
         "basis_en": "athenahealth rolled out the Windsurf editor to accelerate developers in a HIPAA-compliant environment; a code copilot proposing suggestions, vendor case study only.",
         "basis_fr": "athenahealth a deploye l'editeur Windsurf pour accelerer les developpeurs dans un environnement conforme HIPAA; copilote de code qui propose, etude de cas fournisseur uniquement."
+      }
+    },
+    {
+      "id": "audi--mobile-work-agent",
+      "company": "Audi",
+      "company_country": "Germany",
+      "region": "Europe",
+      "sector": "Automotive & Mobility",
+      "solution_name": "Mobile Work Agent",
+      "vendor": "Cerence AI (on Microsoft Foundry)",
+      "use_case": "A voice agent in the cabin that extends Microsoft 365 into the car, so a driver can review the day's schedule, join a Teams meeting and triage urgent emails by speaking rather than looking at a screen. It is bound into the customer company's own Microsoft tenancy through Intune, Entra and Purview, which is what makes the vehicle an endpoint the employer's IT department will admit to its network. Audi is the first carmaker to co-develop the agent, announced for six 2026 model year cars: A5, Q5, A6, A6 e-tron, Q7 and Q9.",
+      "department": "Connected Vehicle / Product",
+      "industry": "Automotive Manufacturing",
+      "deployment_stage": "announced",
+      "reported_outcomes": [],
+      "first_seen_date": "2026-11-27",
+      "sources": [
+        {
+          "url": "https://aimagazine.com/news/audi-and-cerence-ai-launch-microsoft-365-car-work-agent",
+          "title": "Audi and Cerence AI Launch Microsoft 365 Car Work Agent",
+          "publisher": "AI Magazine",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-27"
+        }
+      ],
+      "confidence": 0.5,
+      "confidence_reason": "Company, agent and vendor are all named, and the trade-press account is detailed about the Microsoft security plumbing. But it rests on a single article built around Cerence's own chief technology officer, with no independent test of the agent, and the shipping language is ambiguous: the six 2026 model year cars \"will have\" it, which reads as announced rather than on the road. Held at announced until a delivery is attested.",
+      "coda": {
+        "chain": "care",
+        "links": [
+          2,
+          2,
+          1,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The driver speaks each request and the agent carries it out: joining a meeting or triaging an email is execution, not a proposal, so the level is validated execution. Nothing in the source puts it higher, because the agent never acts between two spoken commands. On the locks, the article claims a great deal and documents none of it in the tested sense: Intune, Entra and Purview are named, and GDPR and the EU AI Act are said to be met, but there is no data quality measured on the agent's own perimeter, no written mandate with numbered bounds signed by a use-case owner, and no named human owner with journaling and tracked KPIs. Enterprise security plumbing is not governance, and the three locks stay open.",
+        "basis_fr": "Le conducteur formule chaque demande et l'agent l'exécute : rejoindre une réunion ou trier un courriel relève de l'exécution, pas de la proposition, d'où le niveau d'exécution validée. Rien dans la source ne le place plus haut, car l'agent n'agit jamais entre deux commandes vocales. Sur les verrous, l'article promet beaucoup et ne documente rien au sens du test : Intune, Entra et Purview sont nommés, le RGPD et le règlement européen sur l'IA sont donnés pour respectés, mais aucune qualité de données n'est mesurée sur le périmètre de l'agent, aucun mandat écrit à bornes numérotées n'est signé par un propriétaire de cas d'usage, et aucun responsable humain nommé n'assure journalisation et KPI suivis. La tuyauterie de sécurité d'entreprise n'est pas une gouvernance : les trois verrous restent ouverts."
       }
     },
     {
