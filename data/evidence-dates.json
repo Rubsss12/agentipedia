@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-24T14:40:22.614Z",
+ "updated_at": "2026-11-27T08:26:23.071Z",
  "entries": {
   "1-800accountant--agentforce": "2025-08-04",
   "1st-central-group--motivo-kai-assistant": "2026-10-21",
@@ -80,6 +80,7 @@
   "blue-star-families--star-saving-time-and-resources-agent-on-agentforce": "2025-12-02",
   "bmo--ai-agent-assist": "2026-11-06",
   "bmw--bmw-intelligent-personal-assistant-with-alexa": "2026-01-09",
+  "bny--eliza": "2025-09-29",
   "bny--unnamed-payment-repair-digital-employee": "2026-09-30",
   "bojangles--bo-linda-ai-order-taker": "2023-11-22",
   "booking-com--ai-trip-planner": "2025-03-12",
@@ -200,6 +201,7 @@
   "general-mills--project-elf-built-on-palantir-aip": "2025-02-19",
   "georgia-state-university--pounce": "2025-12-31",
   "globant--claude-powered-ai-pods": "2026-06-30",
+  "goldman-sachs--cognition-devin": "2025-07-11",
   "goldman-sachs--gs-ai-assistant": "2025-01-21",
   "good360--agentforce": "2025-08-04",
   "government-of-estonia--burokratt": "2022-01-26",
@@ -4385,6 +4387,18 @@
   "https://www.citigroup.com/global/news/press-release/2026/citi-wealth-unveils-citi-sky-ai-powered-member-google-cloud-deepmind-technologies": {
    "date": null,
    "how": "none"
+  },
+  "https://fortune.com/2025/09/29/bny-unveils-updated-eliza-platform-as-it-touts-that-majority-of-employees-use-ai-tools-daily/": {
+   "date": "2025-09-29",
+   "how": "url"
+  },
+  "https://www.investmentnews.com/wirehouses/bny-goldman-double-down-on-tech-with-digital-employees-and-ai-agents/265198": {
+   "date": "2026-02-09",
+   "how": "page"
+  },
+  "https://www.nbcchicago.com/news/business/money-report/goldman-sachs-is-piloting-its-first-autonomous-coder-in-major-ai-milestone-for-wall-street/3787263/": {
+   "date": "2025-07-11",
+   "how": "page"
   }
  }
 }

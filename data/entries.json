@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T14:38:33.318Z",
+  "updated_at": "2026-11-27T08:26:13.598Z",
   "entries": [
     {
       "id": "1-800accountant--agentforce",
@@ -5252,6 +5252,74 @@
         "basis_en": "The reporter asked the car to close the windows and it complied immediately, and the assistant explains of its own accord why it declines the action on American vehicles. It acts on command rather than proposing, so the level is validated execution. The rollout itself is still announced for the second half of 2026.",
         "basis_fr": "Le journaliste a demandé à la voiture de fermer les vitres et elle s'est exécutée immédiatement, l'assistant expliquant de lui-même pourquoi il refuse l'action sur les véhicules américains. Il agit sur commande au lieu de proposer : le niveau est l'exécution validée. Le déploiement, lui, reste annoncé pour le second semestre 2026."
       }
+    },
+    {
+      "company": "BNY",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Financial Services",
+      "industry": "Custody and payments",
+      "department": "Company-wide",
+      "solution_name": "Eliza",
+      "vendor": "In-house (external models from Anthropic, Google and OpenAI)",
+      "use_case": "The bank's own AI platform, on which employees create bespoke agents and run tasks on company data. Its executives name three uses already adopted, reconciling weekly transactions, repairing payments and writing code, and give client briefings in minutes rather than hours as the aim of the latest version. The platform connects a mix of open-source and commercial models to the bank's data and compliance systems, under what the bank calls a walled garden approach to training, with red team testing.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Employees trained on generative AI, figure given by a bank spokesperson",
+          "value": "98%",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Employees who have completed the ten hour training on the platform",
+          "value": "nearly all, with thousands also in multi-day bootcamps",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Time to develop a client briefing, stated by two executives as what the upgrade would allow rather than a measured result",
+          "value": "minutes rather than hours",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-11-27",
+      "sources": [
+        {
+          "url": "https://fortune.com/2025/09/29/bny-unveils-updated-eliza-platform-as-it-touts-that-majority-of-employees-use-ai-tools-daily/",
+          "title": "BNY unveils updated Eliza platform, says 98% of employees are trained on AI",
+          "publisher": "Fortune",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-27"
+        },
+        {
+          "url": "https://www.investmentnews.com/wirehouses/bny-goldman-double-down-on-tech-with-digital-employees-and-ai-agents/265198",
+          "title": "BNY, Goldman double down on tech with 'digital employees' and AI agents",
+          "publisher": "InvestmentNews",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-27"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Two independent outlets name the bank and the platform and describe the same uses; every figure is the bank's own, given by a spokesperson or quoted from an internal email, and the two accounts date the platform differently, one to 2024 and the other to shortly after 2022, so no launch year is carried here.",
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          1,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0,
+          2,
+          1,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "Employees build agents on the platform and take up what it produces: reconciliations, repaired payments, code and briefings. The one thing on it that acts, the payment repair digital employee, is published separately and a person still releases its work. Observed N2. The walled garden training approach and the red team tests describe how the models are fed and probed, not a measured data perimeter, a written mandate or a named review, so no lock is declared.",
+        "basis_fr": "Les employés construisent des agents sur la plateforme et reprennent ce qu'elle produit : rapprochements, paiements réparés, code et notes de synthèse. La seule chose qui agisse dessus, l'employé numérique de réparation des paiements, fait l'objet d'une fiche distincte où un humain libère encore le travail. Observé N2. L'approche en jardin clos pour l'entraînement et les tests d'intrusion décrivent comment les modèles sont alimentés et éprouvés, pas un périmètre de données mesuré, un mandat écrit ni une revue nommée : aucun verrou n'est déclaré."
+      },
+      "id": "bny--eliza"
     },
     {
       "company": "BNY",
@@ -13846,6 +13914,69 @@
         "basis_en": "Globant gave 28,500 employees internal Claude access and launched agent-orchestrated Claude-powered AI Pods for delivery; the pods are presented as agent-orchestrated delivery units whose work teams take up, and no source describes an act they commit on their own, so autonomy is N2.",
         "basis_fr": "Globant a donne un acces interne a Claude a 28500 employes et lance des AI Pods orchestres par agents pour la delivery; les pods sont presentes comme des unites de delivery orchestrees par agents dont les equipes reprennent le travail, et aucune source ne decrit un acte qu'ils engageraient seuls, autonomie N2."
       }
+    },
+    {
+      "company": "Goldman Sachs",
+      "company_country": "United States",
+      "region": "North America",
+      "sector": "Financial Services",
+      "industry": "Investment Banking",
+      "department": "Engineering",
+      "solution_name": "Cognition Devin",
+      "vendor": "Cognition",
+      "use_case": "An autonomous software engineer from Cognition put to work alongside the bank's 12,000 human developers, on the kind of job engineers consider drudgery, such as updating internal code to newer programming languages. The chief information officer said it would be supervised by human employees and that the bank would start with hundreds of instances, possibly thousands depending on the use cases. Reported as a test in July 2025 and as rolled out to the engineering teams by February 2026.",
+      "deployment_stage": "production",
+      "reported_outcomes": [
+        {
+          "metric": "Instances the chief information officer said the bank would start with, possibly thousands depending on the use cases",
+          "value": "hundreds",
+          "source_type": "news_media"
+        },
+        {
+          "metric": "Productivity against previous AI tools, as the chief information officer's expectation rather than a measured result",
+          "value": "up to three or four times",
+          "source_type": "news_media"
+        }
+      ],
+      "first_seen_date": "2026-11-27",
+      "sources": [
+        {
+          "url": "https://www.nbcchicago.com/news/business/money-report/goldman-sachs-is-piloting-its-first-autonomous-coder-in-major-ai-milestone-for-wall-street/3787263/",
+          "title": "Goldman Sachs is piloting its first autonomous coder in major AI milestone for Wall Street",
+          "publisher": "CNBC",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-27"
+        },
+        {
+          "url": "https://www.investmentnews.com/wirehouses/bny-goldman-double-down-on-tech-with-digital-employees-and-ai-agents/265198",
+          "title": "BNY, Goldman double down on tech with 'digital employees' and AI agents",
+          "publisher": "InvestmentNews",
+          "source_type": "news_media",
+          "retrieved_date": "2026-11-27"
+        }
+      ],
+      "confidence": 0.7,
+      "confidence_reason": "Two independent outlets, the first carrying the chief information officer's own account of the deployment and naming the maker, the second reporting seven months later that it has been rolled out to the engineering teams. No measured result is published: the scale and the productivity multiple are both stated as expectations.",
+      "coda": {
+        "chain": "fonctions",
+        "links": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "observed": 2,
+        "locks": [],
+        "basis_en": "The agent is described as autonomous and as doing work on behalf of the developers, but the chief information officer states in the same account that it is supervised by human employees, and no source shows it merging or shipping anything on its own. Observed N2. That stated supervision names no owner, journal, tracked indicator or review, so it does not meet the lock test and none is declared.",
+        "basis_fr": "L'agent est présenté comme autonome et travaillant pour le compte des développeurs, mais le directeur des systèmes d'information précise dans le même récit qu'il est supervisé par des employés humains, et aucune source ne le montre fusionner ou livrer quoi que ce soit seul. Observé N2. Cette supervision affichée ne nomme ni responsable, ni journal, ni indicateur suivi, ni revue : elle ne satisfait pas le test des verrous, aucun n'est déclaré."
+      },
+      "id": "goldman-sachs--cognition-devin"
     },
     {
       "id": "goldman-sachs--gs-ai-assistant",
